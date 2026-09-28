@@ -1,0 +1,14 @@
+datasets/
+.hf_cache/
+__pycache__/
+*.py[cod]
+.tools/
+results/
+.venv/
+.env
+.env.*
+*.pem
+*.key
+scripts/*runpod*.ps1
+RUN_STATUS.md
+EIGHT_HOUR_REPORT.md
