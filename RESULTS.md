@@ -16,9 +16,9 @@ RICES 按 CLIP 相似度取最近的四个训练样本；GPT-MM 按生成答案�
 | FGVC Aircraft variant（6,667 / 3,333 / 100） | 1,989/3,333 · 59.68% | 2,312/3,333 · 69.37% | 2,279/3,333 · 68.38% | 2,461/3,333 · 73.84% | **2,609/3,333 · 78.28%** |
 | Oxford-IIIT Pet（3,680 / 3,669 / 37） | 3,358/3,669 · 91.52% | 3,407/3,669 · 92.86% | 3,390/3,669 · 92.40% | 3,484/3,669 · 94.96% | **3,501/3,669 · 95.42%** |
 | CUB-200-2011（5,994 / 5,794 / 200） | 4,126/5,794 · 71.21% | 4,209/5,794 · 72.64% | 3,987/5,794 · 68.81% | 4,722/5,794 · 81.50% | **4,857/5,794 · 83.83%** |
-| Stanford Dogs（12,000 / 8,580 / 120） | 6,377/8,580 · 74.32% | 6,751/8,580 · 78.68% | 6,665/8,580 · 77.68% | — | — |
+| Stanford Dogs（12,000 / 8,580 / 120） | 6,377/8,580 · 74.32% | 6,751/8,580 · 78.68% | 6,665/8,580 · 77.68% | 7,119/8,580 · 82.97% | **7,299/8,580 · 85.07%** |
 
-目前 RICES、GPT-MM、DeTriever 在五个数据集上均有完整结果；Behavior 系列在 DTD、Aircraft、Pets、CUB 完成，Dogs 尚未完成。不能用这四个数据集的 Behavior 数字宣称五数据集一致提升；所有结果也只有一个模型、一个 seed。
+五种方法在五个数据集的官方完整 test 划分上均有已校验结果。此 Qwen3-VL-4B-Instruct、seed 73 协议下，Behavior-Learn 在五个数据集上均为表中最高；这不能外推为其他模型或 seed 的一致提升。
 
 ## Behavior 系列内部比较
 
@@ -30,16 +30,18 @@ RICES 按 CLIP 相似度取最近的四个训练样本；GPT-MM 按生成答案�
 | Aircraft | +4.44 pp | [+3.18, +5.70] | 4.74×10⁻¹² |
 | Pets | +0.46 pp | [−0.03, +0.95] | 0.0784 |
 | CUB | +2.33 pp | [+1.52, +3.16] | 3.85×10⁻⁸ |
+| Dogs | +2.10 pp | [+1.49, +2.70] | 9.59×10⁻¹² |
 
-Behavior-Learn 与 DeTriever 的准确率差在 DTD 为 **+8.25 pp**、Aircraft 为 **+9.90 pp**、Pets 为 **+3.03 pp**、CUB 为 **+15.02 pp**。Pets 上两者同 query 配对的 20,000 次 bootstrap 95% CI 为 **[+2.29,+3.76] pp**，双侧 exact McNemar p=2.26×10⁻¹⁶；CUB 为 **[+13.84,+16.17] pp**、p=3.30×10⁻¹³⁸。这里未把不同训练目标、参数规模和训练步数的影响解释为逐层匹配机制的独立因果效应；配对区间也不涵盖其他 seed 或模型。
+Behavior-Learn 与 DeTriever 的准确率差在 DTD 为 **+8.25 pp**、Aircraft 为 **+9.90 pp**、Pets 为 **+3.03 pp**、CUB 为 **+15.02 pp**、Dogs 为 **+7.39 pp**。Pets 上两者同 query 配对的 20,000 次 bootstrap 95% CI 为 **[+2.29,+3.76] pp**，双侧 exact McNemar p=2.26×10⁻¹⁶；CUB 为 **[+13.84,+16.17] pp**、p=3.30×10⁻¹³⁸；Dogs 为 **[+6.61,+8.17] pp**、p=2.83×10⁻⁷⁵。这里未把不同训练目标、参数规模和训练步数的影响解释为逐层匹配机制的独立因果效应；配对区间也不涵盖其他 seed 或模型。
 
-Behavior 的原始预测与训练 checkpoint 分别保存在 [DTD 独立备份](results/cloud_trial/jiirguh96xew6j-decision/dtd/seed_73)、[Aircraft 独立备份](results/cloud_trial/nwbxy265c6vqvw-aircraft/decision/aircraft/qwen3vl4b/seed_73)、[Pets 独立备份](results/cloud_trial/pbzipnh9i4d180-decision/pets/seed_73)和 [CUB 独立备份](results/cloud_trial/pbzipnh9i4d180-decision/cub/seed_73)。Pets 和 CUB 均已通过云端含源缓存的完整校验及本地 `--skip-source-cache` 校验，两法各覆盖全部 query、合法标签、bank 示例、无重复键、训练 checkpoint/metadata 均通过；与其他三基线的 query ID、标签、划分及顺序一致。DeTriever 的五个独立 tuple 已经完成合法标签、bank 选择、完整预测与本 tuple checkpoint 校验；其 [DTD 输出](results/cloud_trial/jiirguh96xew6j-detriever/dtd/seed_73)和 [Aircraft 输出](results/cloud_trial/jiirguh96xew6j-detriever/aircraft/seed_73)与 Behavior 使用相同 query 身份。Aircraft 的 RICES 预测曾跨本机、MIG 和 RTX 4090 续跑，硬件差异应在正式报告中披露。
+Behavior 的原始预测与训练 checkpoint 分别保存在 [DTD 独立备份](results/cloud_trial/jiirguh96xew6j-decision/dtd/seed_73)、[Aircraft 独立备份](results/cloud_trial/nwbxy265c6vqvw-aircraft/decision/aircraft/qwen3vl4b/seed_73)、[Pets 独立备份](results/cloud_trial/pbzipnh9i4d180-decision/pets/seed_73)、[CUB 独立备份](results/cloud_trial/pbzipnh9i4d180-decision/cub/seed_73)和 [Dogs 独立备份](results/cloud_trial/pbzipnh9i4d180-decision/dogs/seed_73)。Pets、CUB、Dogs 均已通过云端含源缓存的完整校验及本地 `--skip-source-cache` 校验，两法各覆盖全部 query、合法标签、bank 示例、无重复键、训练 checkpoint/metadata 均通过；与其他三基线的 query ID、标签、划分及顺序一致。DeTriever 的五个独立 tuple 已经完成合法标签、bank 选择、完整预测与本 tuple checkpoint 校验；其 [DTD 输出](results/cloud_trial/jiirguh96xew6j-detriever/dtd/seed_73)和 [Aircraft 输出](results/cloud_trial/jiirguh96xew6j-detriever/aircraft/seed_73)与 Behavior 使用相同 query 身份。Aircraft 的 RICES 预测曾跨本机、MIG 和 RTX 4090 续跑，硬件差异应在正式报告中披露。
 
 ## Behavior 补跑时间成本
 
-时间按云端串行日志的 UTC 阶段切换记录计算；“Behavior 运行”包含检索选择、Learn 训练和两方法测试预测，日志没有这些子阶段各自的精确起止时间，不拆分估算。总 Pod 计费时长及费用待停止并确认 `EXITED` 后填写；数据准备、传输和空闲时间计入 Pod 费用，但不计为方法运行时间。存储费用另计，当前无账单实数。
+时间按云端串行日志的 UTC 阶段切换记录计算；“Behavior 运行”包含检索选择、Learn 训练和两方法测试预测，日志没有这些子阶段各自的精确起止时间，不拆分估算。RTX 6000 Ada Pod `pbzipnh9i4d180` 从 2026-09-30 09:55:29.383 UTC 创建至 15:40:21 UTC 确认停止，合计 **5小时44分52秒**；按 US$0.84/小时粗估 GPU 费用 **US$4.83**，并非账单实数。数据准备、传输和空闲时间计入 Pod 费用，但不计为方法运行时间。50GB 持久盘的存储费另计，当前无账单实数；Pod 已确认 `EXITED`/`stopped`，停止后持久盘仍可能计费。
 
 | 数据集 | 数据准备/核对 | 冻结状态抽取 | Behavior 运行 | 完整校验 | 数据集阶段合计 |
 |---|---:|---:|---:|---:|---:|
 | Pets | 1分30秒 | 12分50秒 | 32分46秒 | 1秒内 | 47分06秒 |
 | CUB | 59秒 | 44分24秒 | 1小时19分28秒 | 约1秒 | 2小时04分52秒 |
+| Dogs | 3分05秒 | 1小时08分03秒 | 1小时27分18秒 | 约1秒 | 2小时38分27秒 |
