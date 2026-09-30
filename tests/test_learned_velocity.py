@@ -27,6 +27,13 @@ class LearnedVelocityTests(unittest.TestCase):
         self.assertEqual(tuple(encoded.shape), (5, 3, 4))
         torch.testing.assert_close(encoded.norm(dim=-1), torch.ones(5, 3), atol=1e-5, rtol=1e-5)
 
+    def test_state_control_keeps_all_layers_without_subtraction(self):
+        states = torch.tensor([[[3.0, 4.0], [0.0, 5.0], [4.0, 3.0]]])
+        model = learned.StateRetriever(2, 3, None)
+        encoded = model(states)
+        self.assertEqual(tuple(encoded.shape), (1, 3, 2))
+        torch.testing.assert_close(encoded, torch.nn.functional.normalize(states, dim=-1))
+
     def test_contrastive_loss_prefers_same_class(self):
         labels = torch.tensor([0, 0, 1, 1])
         good = torch.tensor(

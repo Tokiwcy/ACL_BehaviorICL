@@ -101,8 +101,27 @@ def move_inputs(inputs: dict, device: str = "cuda") -> dict:
     return {key: value.to(device) if hasattr(value, "to") else value for key, value in inputs.items()}
 
 
-def load_model(spec: ModelSpec, cache_dir: Path):
+def configure_vision_pixels(processor, pixels: int | None) -> None:
+    """Apply an explicit Qwen image-area budget to the actual image processor.
+
+    Per-message resized_height/width hints are ignored by the Transformers
+    apply_chat_template path used here, so those hints are not a pixel limit.
+    """
+    if pixels is None:
+        return
+    if pixels < 1024 or pixels % 1024:
+        raise ValueError("vision_pixels must be a positive multiple of 1024")
+    image_processor = getattr(processor, "image_processor", None)
+    if image_processor is None or not hasattr(image_processor, "size"):
+        raise TypeError("This processor does not expose a configurable image size")
+    image_processor.size = {"shortest_edge": pixels, "longest_edge": pixels}
+
+
+def load_model(spec: ModelSpec, cache_dir: Path, vision_pixels: int | None = None):
+    if vision_pixels is not None and spec.slug != "qwen3vl4b":
+        raise ValueError("Explicit vision_pixels is currently supported only for Qwen3-VL")
     processor = AutoProcessor.from_pretrained(spec.model_id, cache_dir=cache_dir)
+    configure_vision_pixels(processor, vision_pixels)
     model = AutoModelForImageTextToText.from_pretrained(
         spec.model_id, cache_dir=cache_dir, dtype=torch.bfloat16, low_cpu_mem_usage=True
     ).eval().to("cuda")

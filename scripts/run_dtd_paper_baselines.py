@@ -1,14 +1,16 @@
 #!/usr/bin/env python
-"""Paper-faithful DeTriever and GPT-MM adaptations for DTD multimodal ICL.
+"""Legacy DeTriever and GPT-MM adaptations for DTD multimodal ICL.
 
 Neither paper provides a public implementation linked from its publication page.  This
-script follows the published equations and hyperparameters while keeping the existing
-DTD/Qwen3-VL evaluation protocol fixed.
+script follows much of the published architecture and hyperparameters, but its
+DeTriever label-identity proxy is not the paper's output-similarity target. See
+run_detriever_output_proxy.py for the separate corrected adaptation.
 """
 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import random
 import time
@@ -22,6 +24,7 @@ import torch.nn.functional as F
 from numpy.lib.format import open_memmap
 
 import run_dtd_hidden_rices_pilot as base
+from detriever_proxy import output_proxy_candidate_indices
 
 
 METHODS = ("detriever", "gpt_mm")
@@ -73,9 +76,10 @@ def load_samples(path: Path) -> tuple[list[base.Sample], list[base.Sample]]:
     )
 
 
-def detriever_layers(layer_count: int) -> list[int]:
-    """Paper samples layers 0,5,...,40; retain that cadence and the final layer."""
-    layers = [0] + list(range(4, layer_count, 5))
+def detriever_layers(layer_count: int, paper_grid: bool = False) -> list[int]:
+    """Return the legacy grid, or the paper's zero-based every-fifth grid."""
+    layers = ([0] + list(range(5, layer_count, 5)) if paper_grid
+              else [0] + list(range(4, layer_count, 5)))
     if layer_count - 1 not in layers:
         layers.append(layer_count - 1)
     return sorted(set(layers))
@@ -150,8 +154,9 @@ def train_detriever(
     args: argparse.Namespace,
     checkpoint_path: Path,
     metadata_path: Path,
+    output_proxy: np.ndarray | None = None,
 ) -> tuple[DeTriever, list[int], dict]:
-    chosen_layers = detriever_layers(states.shape[1])
+    chosen_layers = detriever_layers(states.shape[1], paper_grid=output_proxy is not None)
     device = torch.device("cuda")
     # CPU tensor remains backed by the mmap until selected minibatches are copied to CUDA.
     train_states = torch.from_numpy(np.asarray(states[:, chosen_layers], dtype=np.float32))
@@ -164,16 +169,32 @@ def train_detriever(
     )
     start_step = 0
     losses: list[float] = []
+    proxy_mode = "gold_input_answer_eos" if output_proxy is not None else "legacy_label_identity"
+    proxy_digest = (
+        hashlib.sha256(np.ascontiguousarray(output_proxy).tobytes()).hexdigest()
+        if output_proxy is not None else None
+    )
     if args.resume and checkpoint_path.exists():
         saved = torch.load(checkpoint_path, map_location=device, weights_only=False)
+        if saved.get("proxy_mode", "legacy_label_identity") != proxy_mode or saved.get("proxy_sha256") != proxy_digest:
+            raise RuntimeError("Checkpoint proxy identity differs; refusing cross-protocol resume")
+        if saved.get("layers_zero_based") != chosen_layers:
+            raise RuntimeError("Checkpoint layer grid differs; refusing cross-protocol resume")
         retriever.load_state_dict(saved["model"])
         optimizer.load_state_dict(saved["optimizer"])
         start_step = int(saved["step"])
         losses = list(saved.get("losses", []))
 
-    positives, negatives = proxy_candidate_indices(
-        labels, args.positive_count, args.negative_count, args.seed
-    )
+    if output_proxy is None:
+        positives, negatives = proxy_candidate_indices(
+            labels, args.positive_count, args.negative_count, args.seed
+        )
+    else:
+        if len(output_proxy) != len(labels) or output_proxy.shape[1] != states.shape[2]:
+            raise ValueError("Gold-output proxy must contain bank rows at the model hidden width")
+        positives, negatives = output_proxy_candidate_indices(
+            output_proxy, args.positive_count, args.negative_count
+        )
     generator = np.random.default_rng(args.seed + start_step)
     memory: torch.Tensor | None = None
     retriever.train()
@@ -212,13 +233,15 @@ def train_detriever(
                     "step": completed,
                     "losses": losses,
                     "layers_zero_based": chosen_layers,
+                    "proxy_mode": proxy_mode,
+                    "proxy_sha256": proxy_digest,
                 },
                 checkpoint_path,
             )
 
     metadata = {
         "paper": "DeTriever (Li et al., COLING 2025)",
-        "implementation": "paper-faithful task adaptation; no official code was published",
+        "implementation": "published-equation adaptation; not author code",
         "layers_one_based": [value + 1 for value in chosen_layers],
         "mlp": "layer-specific 2560->1024->1024->512 with learned softmax layer weights",
         "steps": args.train_steps,
@@ -227,7 +250,8 @@ def train_detriever(
         "negative_count": args.negative_count,
         "temperature": args.temperature,
         "optimizer": "AdamW(lr=1e-4, weight_decay=0.01, betas=(0.9,0.98))",
-        "proxy": "query-only label identity; same-label positives for classification",
+        "proxy": proxy_mode,
+        "proxy_sha256": proxy_digest,
         "memory_refresh_steps": args.memory_refresh,
         "final_loss_mean_100": float(np.mean(losses[-100:])),
         "learned_layer_weights": retriever.layer_logits.softmax(0).detach().cpu().tolist(),

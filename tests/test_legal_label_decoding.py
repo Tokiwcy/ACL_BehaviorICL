@@ -1,16 +1,26 @@
 import sys
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from legal_label_decoding import LegalLabelTrie, exact_generated_label
-from multimodal_model_adapter import task_instruction
+from multimodal_model_adapter import configure_vision_pixels, task_instruction
 
 
 class LegalLabelDecodingTests(unittest.TestCase):
+    def test_explicit_vision_budget_configures_image_processor(self):
+        processor = SimpleNamespace(image_processor=SimpleNamespace(size={"shortest_edge": 65536}))
+        configure_vision_pixels(processor, 50176)
+        self.assertEqual(processor.image_processor.size, {
+            "shortest_edge": 50176, "longest_edge": 50176,
+        })
+        with self.assertRaises(ValueError):
+            configure_vision_pixels(processor, 50000)
+
     def test_trie_only_allows_legal_continuations(self):
         trie = LegalLabelTrie([[1, 2], [1, 3], [4]], eos_token_id=9)
         self.assertEqual(trie.allowed([]), [1, 4])

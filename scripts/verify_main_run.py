@@ -18,7 +18,8 @@ def read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def verify(run_dir: Path) -> dict:
+def verify(run_dir: Path, expected_methods: set[str] | None = None,
+           check_cache_files: bool = True) -> dict:
     problems: list[str] = []
 
     def check(condition: bool, message: str) -> None:
@@ -27,6 +28,8 @@ def verify(run_dir: Path) -> dict:
 
     identity = read_json(run_dir / "run_identity.json")
     config = read_json(run_dir / "config.json")
+    methods = set(config["methods"])
+    expected_methods = METHODS if expected_methods is None else expected_methods
     protocol = read_json(run_dir / "protocol.json")
     manifest = read_json(run_dir / "manifest.json")
     bank, query = manifest["bank"], manifest["query"]
@@ -44,32 +47,42 @@ def verify(run_dir: Path) -> dict:
     check(identity["model_slug"] == config["model"], "model identity mismatch")
     check(identity["model_id"] == protocol["model"], "model ID mismatch")
     check(identity["seed"] == config["seed"] == protocol["seed"], "seed identity mismatch")
+    budget = config.get("vision_pixels")
+    check(identity.get("vision_pixels") == budget == protocol.get("vision_pixels"),
+          "vision budget identity mismatch")
+    if budget is not None:
+        check(run_dir.parent.parent.parent.name == f"vision_{budget}",
+              "vision budget run directory mismatch")
     check(protocol["bank_count"] == len(bank), "bank count mismatch")
     check(protocol["query_count"] == len(query), "query count mismatch")
-    check(set(config["methods"]) == METHODS, "configured method set mismatch")
+    check(methods == expected_methods, "configured method set mismatch")
+    check(methods <= METHODS, "unknown configured method")
 
-    for name, progress_name in (
-        ("anchor_states.npy", "anchor_states_progress.json"),
-        ("clip_features.npy", "clip_features.progress.json"),
-        ("gpt_mm_embeddings.npy", "gpt_mm_progress.json"),
-    ):
-        path, progress_path = run_dir / name, run_dir / progress_name
-        if not path.exists() or not progress_path.exists():
-            problems.append(f"missing cache or progress: {name}")
-            continue
-        check(int(read_json(progress_path)["completed"]) == total, f"incomplete cache: {name}")
-        check(np.load(path, mmap_mode="r").shape[0] == total, f"cache shape mismatch: {name}")
+    if check_cache_files:
+        for name, progress_name in (
+            ("anchor_states.npy", "anchor_states_progress.json"),
+            ("clip_features.npy", "clip_features.progress.json"),
+            ("gpt_mm_embeddings.npy", "gpt_mm_progress.json"),
+        ):
+            path, progress_path = run_dir / name, run_dir / progress_name
+            if not path.exists() or not progress_path.exists():
+                problems.append(f"missing cache or progress: {name}")
+                continue
+            check(int(read_json(progress_path)["completed"]) == total, f"incomplete cache: {name}")
+            check(np.load(path, mmap_mode="r").shape[0] == total, f"cache shape mismatch: {name}")
 
-    for checkpoint, metadata in (
-        ("projected_velocity_best.pt", "projected_velocity_metadata.json"),
-        ("detriever_checkpoint.pt", "detriever_metadata.json"),
-    ):
+    training_files = []
+    if "cdr_learn" in methods:
+        training_files.append(("projected_velocity_best.pt", "projected_velocity_metadata.json"))
+    if "detriever" in methods:
+        training_files.append(("detriever_checkpoint.pt", "detriever_metadata.json"))
+    for checkpoint, metadata in training_files:
         check((run_dir / checkpoint).is_file(), f"missing local checkpoint: {checkpoint}")
         check((run_dir / metadata).is_file(), f"missing local training metadata: {metadata}")
 
     selections = read_json(run_dir / "selections.json")
-    check(set(selections) == METHODS, "selection method set mismatch")
-    for method in METHODS & selections.keys():
+    check(set(selections) == methods, "selection method set mismatch")
+    for method in methods & selections.keys():
         selected = selections[method]
         check(set(selected) == query_by_id.keys(), f"{method}: selection query IDs mismatch")
         for query_id, demos in selected.items():
@@ -106,17 +119,17 @@ def verify(run_dir: Path) -> dict:
             continue
         check(row["demo_ids"] == [demo["sample_id"] for demo in demos], f"demo IDs mismatch: {method}/{query_id}")
         check(row["demo_labels"] == [demo["label"] for demo in demos], f"demo labels mismatch: {method}/{query_id}")
-    check(set(counts) == METHODS, "prediction method set mismatch")
-    for method in METHODS:
+    check(set(counts) == methods, "prediction method set mismatch")
+    for method in methods:
         check(counts[method] == len(query), f"{method}: prediction count mismatch")
         check({qid for m, qid in seen if m == method} == query_by_id.keys(), f"{method}: prediction query IDs mismatch")
 
     summary = read_json(run_dir / "summary.json")
     summary = summary.get("summary", summary)
-    for method in METHODS & summary.keys():
+    for method in methods & summary.keys():
         check(summary[method]["correct"] == correct[method], f"{method}: summary correct mismatch")
         check(summary[method]["total"] == len(query), f"{method}: summary total mismatch")
-    check(set(summary) == METHODS, "summary method set mismatch")
+    check(set(summary) == methods, "summary method set mismatch")
 
     result = {
         "run_dir": str(run_dir.resolve()),
@@ -128,6 +141,7 @@ def verify(run_dir: Path) -> dict:
         "prediction_counts": dict(counts),
         "correct_counts": dict(correct),
         "problems": problems,
+        "cache_files_checked": check_cache_files,
         "passed": not problems,
     }
     return result
@@ -136,8 +150,12 @@ def verify(run_dir: Path) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("run_dir", type=Path)
+    parser.add_argument("--expected-methods", nargs="+", choices=sorted(METHODS),
+                        default=sorted(METHODS))
+    parser.add_argument("--skip-cache-files", action="store_true",
+                        help="Verify transferred predictions and metadata without large feature arrays")
     args = parser.parse_args()
-    result = verify(args.run_dir)
+    result = verify(args.run_dir, set(args.expected_methods), not args.skip_cache_files)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if not result["passed"]:
         raise SystemExit(1)

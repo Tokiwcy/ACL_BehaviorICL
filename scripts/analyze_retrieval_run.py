@@ -31,14 +31,23 @@ def main() -> None:
     args = parser.parse_args()
 
     manifest = json.loads((args.run_dir / "manifest.json").read_text(encoding="utf-8"))
+    dataset = json.loads((args.run_dir / "run_identity.json").read_text(encoding="utf-8"))["dataset"]
     selections = json.loads((args.run_dir / "selections.json").read_text(encoding="utf-8"))
     rows = [json.loads(line) for line in (args.run_dir / "predictions.jsonl").read_text(encoding="utf-8").splitlines()]
     for additional_dir in args.additional_run_dirs:
         additional_manifest = json.loads(
             (additional_dir / "manifest.json").read_text(encoding="utf-8")
         )
-        if additional_manifest != manifest:
-            raise ValueError(f"Manifest mismatch in additional run: {additional_dir}")
+        # Independently run cloud tuples can have different Windows/Linux image
+        # paths. Pair only after checking every official sample ID, label and split
+        # in the exact original order; image paths are transport metadata.
+        for split in ("bank", "query"):
+            original = [(row["sample_id"], row["label"], row["split"])
+                        for row in manifest[split]]
+            additional = [(row["sample_id"], row["label"], row["split"])
+                          for row in additional_manifest[split]]
+            if additional != original:
+                raise ValueError(f"{split} identity/order mismatch in additional run: {additional_dir}")
         additional_selections = json.loads(
             (additional_dir / "selections.json").read_text(encoding="utf-8")
         )
@@ -160,12 +169,15 @@ def main() -> None:
         }
         for method in methods
     }
-    (args.run_dir / "summary.json").write_text(
+    # A cross-run analysis combines methods from independent tuples; do not
+    # replace the primary run's own completion summary with that merged view.
+    summary_name = "paired_summary.json" if args.additional_run_dirs else "summary.json"
+    (args.run_dir / summary_name).write_text(
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
     lines = [
-        "# Full DTD hidden-state retrieval analysis",
+        f"# Full {dataset} hidden-state retrieval analysis",
         "",
         f"Queries: {len(query_ids)}. RICES is the paired reference.",
         "",

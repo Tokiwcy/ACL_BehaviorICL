@@ -15,6 +15,11 @@ from multidataset_protocol import Sample
 
 
 class MultidatasetRunnerTests(unittest.TestCase):
+    def test_vision_budget_uses_separate_run_tree(self):
+        root = Path("results/cdr_main")
+        self.assertEqual(runner.vision_run_root(root, None), root)
+        self.assertEqual(runner.vision_run_root(root, 50176), root / "vision_50176")
+
     def test_identity_prevents_cross_run_checkpoint_reuse(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -24,6 +29,8 @@ class MultidatasetRunnerTests(unittest.TestCase):
             changed = {**identity, "dataset": "cub"}
             with self.assertRaises(RuntimeError):
                 runner.validate_or_write_identity(root, changed, resume=True)
+            with self.assertRaises(RuntimeError):
+                runner.validate_or_write_identity(root, {**identity, "vision_pixels": 50176}, resume=True)
 
     def test_nearest_demo_order_is_ascending_within_top_k(self):
         embeddings = np.asarray([[1.0, 0.0], [0.8, 0.2], [0.0, 1.0], [1.0, 0.0]])

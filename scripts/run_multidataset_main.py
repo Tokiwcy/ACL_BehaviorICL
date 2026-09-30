@@ -54,6 +54,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--generation-batch-size", type=int, default=4)
     parser.add_argument("--clip-batch-size", type=int, default=32)
     parser.add_argument("--gpt-mm-new-tokens", type=int, default=12)
+    parser.add_argument(
+        "--vision-pixels", type=int, default=None,
+        help="Explicit Qwen image-area budget per image; changes the experiment protocol",
+    )
     parser.add_argument("--train-steps", type=int, default=1500)
     parser.add_argument("--detriever-steps", type=int, default=10_000)
     parser.add_argument("--methods", nargs="+", choices=METHODS, default=list(METHODS))
@@ -62,6 +66,10 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--resume", action="store_true")
     return parser.parse_args()
+
+
+def vision_run_root(output_root: Path, pixels: int | None) -> Path:
+    return output_root if pixels is None else output_root / f"vision_{pixels}"
 
 
 def write_json(path: Path, value) -> None:
@@ -443,7 +451,7 @@ def validate_generation_resume(run_dir: Path, bank: list[Sample], query: list[Sa
 
 def run_generation(args: argparse.Namespace, spec, bank: list[Sample], query: list[Sample],
                    labels: list[str], run_dir: Path, selections: dict[str, dict[str, list[int]]]) -> None:
-    model, processor = load_model(spec, args.cache_dir)
+    model, processor = load_model(spec, args.cache_dir, args.vision_pixels)
     predictions_path = run_dir / "predictions.jsonl"
     completed: dict[tuple[str, str], dict] = {}
     if args.resume and predictions_path.exists():
@@ -463,7 +471,10 @@ def run_generation(args: argparse.Namespace, spec, bank: list[Sample], query: li
                     model,
                     processor,
                     [
-                        icl_messages(demos, sample, args.dataset, labels, spec.image_size)
+                        icl_messages(
+                            demos, sample, args.dataset, labels,
+                            spec.image_size if args.vision_pixels is None else None,
+                        )
                         for demos, sample in zip(demo_batches, batch)
                     ],
                     labels,
@@ -498,6 +509,11 @@ def run_generation(args: argparse.Namespace, spec, bank: list[Sample], query: li
 
 def main() -> None:
     args = parse_args()
+    if len(set(args.methods)) != len(args.methods):
+        raise ValueError("--methods contains duplicates")
+    if args.vision_pixels is not None:
+        if args.model != "qwen3vl4b" or args.vision_pixels < 1024 or args.vision_pixels % 1024:
+            raise ValueError("--vision-pixels requires Qwen3-VL and a positive multiple of 1024")
     if not torch.cuda.is_available():
         raise RuntimeError("CUDA is required")
     random.seed(args.seed)
@@ -507,7 +523,7 @@ def main() -> None:
     bank, query = load_dataset(args.dataset, args.datasets_root)
     all_samples = bank + query
     labels = sorted({sample.label for sample in bank})
-    run_dir = run_directory(args.output_root, args.dataset, spec.slug, args.seed)
+    run_dir = run_directory(vision_run_root(args.output_root, args.vision_pixels), args.dataset, spec.slug, args.seed)
     run_dir.mkdir(parents=True, exist_ok=True)
     identity = {
         "dataset": args.dataset,
@@ -515,13 +531,24 @@ def main() -> None:
         "model_id": spec.model_id,
         "seed": args.seed,
     }
+    if args.vision_pixels is not None:
+        identity["vision_pixels"] = args.vision_pixels
     validate_or_write_identity(run_dir, identity, args.resume)
     if args.stage == "generation":
         if not args.resume:
             raise RuntimeError("Generation-only stage requires --resume")
         validate_generation_resume(run_dir, bank, query, args.methods, args.shots)
-    write_json(run_dir / "protocol.json", protocol_metadata(args.dataset, spec.model_id, args.seed, bank, query))
-    write_json(run_dir / "manifest.json", {"bank": [asdict(x) for x in bank], "query": [asdict(x) for x in query]})
+    protocol = protocol_metadata(args.dataset, spec.model_id, args.seed, bank, query)
+    if args.vision_pixels is not None:
+        protocol["vision_pixels"] = args.vision_pixels
+    write_json(run_dir / "protocol.json", protocol)
+    manifest = {"bank": [asdict(x) for x in bank], "query": [asdict(x) for x in query]}
+    manifest_path = run_dir / "manifest.json"
+    if args.resume and manifest_path.exists():
+        existing_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        if existing_manifest != manifest:
+            raise RuntimeError("Refusing to resume with a different bank/query manifest")
+    write_json(manifest_path, manifest)
     write_json(run_dir / "config.json", {key: str(value) if isinstance(value, Path) else value for key, value in vars(args).items()})
     if args.stage == "generation":
         selections = load_selections(run_dir / "selections.json", bank)
@@ -540,9 +567,10 @@ def main() -> None:
     # both models resident needlessly pushes 16 GB GPUs close to the OOM edge.
     clip = extract_clip_cache(all_samples, args.cache_dir, args.clip_batch_size, clip_path, args.resume)
     if not (args.resume and state_path.exists() and state_progress.exists() and json.loads(state_progress.read_text())["completed"] == len(all_samples)):
-        model, processor = load_model(spec, args.cache_dir)
+        model, processor = load_model(spec, args.cache_dir, args.vision_pixels)
         states = extract_anchor_cache(
-            model, processor, all_samples, args.dataset, labels, spec.image_size,
+            model, processor, all_samples, args.dataset, labels,
+            spec.image_size if args.vision_pixels is None else None,
             args.extract_batch_size, state_path, state_progress, args.resume,
         )
     else:
@@ -551,10 +579,11 @@ def main() -> None:
         args.resume and gpt_path.exists() and gpt_progress.exists()
         and json.loads(gpt_progress.read_text())["completed"] == len(all_samples)
     ):
-        model, processor = load_model(spec, args.cache_dir)
+        model, processor = load_model(spec, args.cache_dir, args.vision_pixels)
     if model is not None:
         gpt_embedding = extract_gpt_mm_cache(
-            model, processor, all_samples, args.dataset, labels, spec.image_size,
+            model, processor, all_samples, args.dataset, labels,
+            spec.image_size if args.vision_pixels is None else None,
             args.extract_batch_size, args.gpt_mm_new_tokens, gpt_path, gpt_progress,
             gpt_outputs, args.resume,
         )
@@ -571,15 +600,17 @@ def main() -> None:
 
     selections_path = run_dir / "selections.json"
     selections = load_selections(selections_path, bank) if args.resume and selections_path.exists() else {}
-    if "rices" not in selections:
+    if set(selections) - set(args.methods):
+        raise RuntimeError("Existing selections contain methods outside --methods")
+    if "rices" in args.methods and "rices" not in selections:
         selections["rices"] = nearest_from_embeddings(clip, len(bank), query, args.shots)
-    if "gpt_mm" not in selections:
+    if "gpt_mm" in args.methods and "gpt_mm" not in selections:
         selections["gpt_mm"] = nearest_from_embeddings(gpt_embedding, len(bank), query, args.shots)
-    if "cdr_zero" not in selections:
+    if "cdr_zero" in args.methods and "cdr_zero" not in selections:
         selections["cdr_zero"] = cdr_zero_selections(states, len(bank), query, args.shots)
-    if "cdr_learn" not in selections:
+    if "cdr_learn" in args.methods and "cdr_learn" not in selections:
         selections["cdr_learn"], _ = cdr_learn_selections(states, bank, query, args, run_dir)
-    if "detriever" not in selections:
+    if "detriever" in args.methods and "detriever" not in selections:
         selections["detriever"], _ = detriever_selections(states, bank, query, args, run_dir)
     save_selections(selections_path, selections, bank)
     diagnostics = retrieval_diagnostics(selections, bank, query)

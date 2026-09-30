@@ -113,6 +113,16 @@ class VelocityRetriever(nn.Module):
         return torch.einsum("ald,bld,l->ab", left, right, self.weights())
 
 
+class StateRetriever(VelocityRetriever):
+    """Parameter-matched control that scores normalized raw layer states."""
+
+    def forward(self, states: torch.Tensor) -> torch.Tensor:
+        encoded = F.normalize(states.float(), dim=-1)
+        if self.projection is not None:
+            encoded = self.projection(encoded)
+        return F.normalize(encoded, dim=-1)
+
+
 def supervised_contrastive_loss(
     scores: torch.Tensor, labels: torch.Tensor, temperature: float
 ) -> torch.Tensor:
@@ -202,7 +212,10 @@ def train_variant(
     run_dir: Path,
 ) -> tuple[VelocityRetriever, dict]:
     projection_dim = None if variant == "layer_weights" else args.projection_dim
-    model = VelocityRetriever(states.shape[2], states.shape[1] - 1, projection_dim).to("cuda")
+    if variant == "projected_state":
+        model = StateRetriever(states.shape[2], states.shape[1], projection_dim).to("cuda")
+    else:
+        model = VelocityRetriever(states.shape[2], states.shape[1] - 1, projection_dim).to("cuda")
     lr = args.weights_lr if projection_dim is None else args.projection_lr
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.01)
     checkpoint = run_dir / f"{variant}_best.pt"
