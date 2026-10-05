@@ -1,0 +1,36 @@
+{
+  "plan_hash": "6ce80bf47d662198c9d2f593bce04cf83ddc04791dffa07401eb8f3a82f48096",
+  "attachment_hash": "7c4a79175241bedb7ea982fab65c03eaceaf19fcf8ace318d197699b543505f7",
+  "plan_file_sha256": "8c698da4603e416f8c0db67247de54149e07921ceca5fd566322f0bbae11d3f7",
+  "input_file_sha256": "58423785dc0570df2e7a08316ccb04447081c0804ba45d56d707696048a17c19",
+  "scientific_root": "behavior_corrective_labels_full_dtd_cub_v1",
+  "operational_root": "behavior_corrective_labels_full_dtd_cub_cloud_v1",
+  "code_sha256": {
+    "scripts/prepare_behavior_full_test_label_plan.py": "18b2ac98d446505d95108320e99453a10c500ffff375225eb320d7f200938688",
+    "scripts/attach_behavior_label_inputs.py": "52d8e2bef245cbf1708b7b81d76d02fe33d6ba846538b3c5eb8d397facf96aa8",
+    "scripts/prepare_behavior_label_intervention.py": "f3a453e3d13312401c508ad37ce4e95976d1a7efb1e124b8e6263bb77a5cf379",
+    "scripts/run_behavior_priority_analysis.py": "ff3c625f87d40e1e345742018d8db6ec01f36f0e10ab82a9946bba95aec85717",
+    "scripts/analyze_behavior_paper_p0.py": "5c32b5e63071124d5f2718172b5ad6d5d9b07bc0137f9ed46b48f4493e6ebbcb",
+    "scripts/collect_behavior_priority_zero.py": "6f69787a150c086c61f8c08234c56346a7043f9d2339f38097f1558a27a56a73",
+    "scripts/multidataset_protocol.py": "02acc4088193316b01d0d924a9be8a7c7058360acd2ba42abb04729f1c324e8e",
+    "scripts/multimodal_model_adapter.py": "43798054109fa9079c9cd6473640f9b5abc5335e641e12a0a075e1b9ac9990ef",
+    "scripts/legal_label_decoding.py": "1ae64556431accaadff8990605f5c2a699eb875cb26ee4d3ab9bfec790fde1e5",
+    "scripts/run_behavior_full_test_labels.py": "e221315e81ecd99c74886da309aeaba48ac2170d87bcf4a049526d7ebc1d1eb1",
+    "scripts/prepare_behavior_full_test_label_implementation.py": "551356fee2f8fb54625e20a15a62df2e182853ea26e71332ed633dbf4f35fbbb",
+    "scripts/behavior_task_prompt_policy.py": "1284a9bb7f0ce3cfa842b709231c1ed818e2e37c8e35884c5fb5fc8f2b4d017b",
+    "scripts/run_behavior_task_prompt.py": "82686613d06046df87cd5935e670204041f2b6c6964eee37c56195af82d69f85",
+    "scripts/run_behavior_label_intervention.py": "50d2d2378e43ffff7d3614d5565b917bdd50bd7af51645da9534b502ab7c6580",
+    "scripts/behavior_p2_matched_policy.py": "9542a15ea22300d835a67b9ae982b33a56e890d559c35261fac2e4c4467ca28f"
+  },
+  "planned_records": 30696,
+  "planned_generations": 30526,
+  "explicit_missing": 170,
+  "actual_new_predictions": 0,
+  "sampled_prediction_reuse": false,
+  "cloud_entry_implemented": false,
+  "job_hashes": {
+    "dtd": "38c143c56b014d0765b6b361b9009b7d9f3be63701b2744c4b6602bf442e7b63",
+    "cub": "3e04d8785463b714c9f11b9d1e66a32f08a24c3c9535588771044b80751057d5"
+  },
+  "implementation_hash": "5054d46fc48e07f9e2be17f1cb87677e09358ffedea8fed6ed4a673d27befe8b"
+}

@@ -1,0 +1,254 @@
+{
+  "utc": "2026-10-05T16:39:05.410158+00:00",
+  "project_status": "human_paused_current_project_consolidated",
+  "pause_receipt": "analysis/current_project_consolidation_v1/pause_receipt.json",
+  "evidence": [
+    {
+      "id": "main_seed73",
+      "path": "analysis/paper_p1_recheck_v1/audit.json",
+      "sha256": "e2dc5afb6cba36ecb09967bb08eb3bdf797aeb29753548f71f6d6a88090171e2",
+      "state": "complete_single_seed_30_groups",
+      "artifact_status": "all_30_groups_verified",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "repair_match",
+      "path": "analysis/paper_repair_five_dataset_v1/audit.json",
+      "sha256": "b9d2cef21887338177a0f6860f20ceda1b12e7bf472b7ed2aea7ebb88399ad36",
+      "state": "complete_retrospective_five_dataset",
+      "artifact_status": null,
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "task_prompt",
+      "path": "analysis/paper_task_prompt_complete_results_v1/audit.json",
+      "sha256": "430a2e887a4f2f93f564c7d0139c7bd50b1c05c94041b412f02e8fac06965911",
+      "state": "complete_DTD_CUB_full_test",
+      "artifact_status": "complete_verified",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "fixed_labels_full",
+      "path": "analysis/paper_full_test_labels_complete_results_v1/audit.json",
+      "sha256": "ae9f4f442bff51c2ea1bf430048453a9ae96c10875c4e892ff16b536274fdccb",
+      "state": "complete_DTD_CUB_with_explicit_own_missing",
+      "artifact_status": "complete_verified",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "fixed_labels_sampled",
+      "path": "analysis/paired_label_sampled_results_v1/audit.json",
+      "sha256": "92de6fae79c28183c527687701ba7302e9ad4672fb8c916935dc8d9086ae86a7",
+      "state": "complete_five_times_256_sample_only",
+      "artifact_status": "all_five_complete_verified_CPU_analysis",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "qwenvision",
+      "path": "analysis/paper_qwenvision_two_complete_results_v1/audit.json",
+      "sha256": "6e2696e1a0e865639b865a875e204e5aadb3982775cfb8976bdf28fc6c6f9287",
+      "state": "complete_DTD_CUB_full_test",
+      "artifact_status": "complete_verified",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "qwenvision_match",
+      "path": "analysis/paper_qwenvision_match_control_v1/audit.json",
+      "sha256": "4d2fa8ce4c564d5ad007c22db15544c4ba18c2804fda8689146e289282469633",
+      "state": "complete_retrospective_comparison",
+      "artifact_status": "complete_CPU_retrospective_comparison_verified",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "TAM_protocol",
+      "path": "analysis/query_tam_pilot_v1/protocol.json",
+      "sha256": "00fe86823030aa000d7c8f58dd0d4a327c15a66319366c6dbad1df1f678ca851",
+      "state": "prepared_64_runs_no_results",
+      "artifact_status": null,
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "TAM_CPU",
+      "path": "analysis/query_tam_pilot_v1/CPU_review.json",
+      "sha256": "32427cdf980744e8be7b4bc3883d3ffc427bedc2d2f3d939f8704ab7cf561cc1",
+      "state": "CPU_tests_only",
+      "artifact_status": null,
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "TAM_failure",
+      "path": ".tools/query_tam_cloud_v2/controller_failure.json",
+      "sha256": "e507ffe61d78cf14a5b573855647426aef0773ba62a0540412be26b717ddadab",
+      "state": "provider_initialization_deadline_no_native_worker",
+      "artifact_status": null,
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "TAM_stop",
+      "path": "results/cloud_trial/5cngvs2t9ahe5p-tam/session_1/stop_confirmation.json",
+      "sha256": "374494835c64e8430ebb0132247873473678331b4b74d5f66d366a386f659207",
+      "state": "stopped_disk_retained",
+      "artifact_status": null,
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "Intern_failure",
+      "path": "analysis/paper_internvl_five_startup_failure_v77/audit.json",
+      "sha256": "4853424734065f12f411acd81810dab703ed9d4606bc0058ee6224dab351c8df",
+      "state": "full_failure_audit_not_scientific_completion",
+      "artifact_status": "closed_FULL_strict_CLIP_buffer_load_failure_CPU_verified",
+      "not_a_new_experiment": true
+    },
+    {
+      "id": "three_seed_failure",
+      "path": "analysis/paper_qwen_three_seed_startup_failure_v77/audit.json",
+      "sha256": "a1069684696a2e40be258cb2f81d583c311d263b289caca060be791b36e7b478",
+      "state": "control_audit_remote_FULL_unknown_not_scientific_completion",
+      "artifact_status": "local_control_timeout_and_exact_stop_verified_remote_FULL_unknown",
+      "not_a_new_experiment": true
+    }
+  ],
+  "CSV_sources": [
+    {
+      "source": "analysis/paper_p1_recheck_v1/full_test_counts.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/main_seed73_accuracy.csv",
+      "sha256": "0d9cb87a791eaef1b465fb5162229925e8dc608e8fba6b7006d096380d571b35"
+    },
+    {
+      "source": "analysis/paper_task_prompt_complete_results_v1/paired_task_generic.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/task_prompt_paired_effects.csv",
+      "sha256": "6cf55aee4b8121b181da4b6fa4c9e2998dc3a5f70b51bc445667b380069fa47d"
+    },
+    {
+      "source": "analysis/paper_full_test_labels_complete_results_v1/paired_label_effects.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/fixed_labels_full_effects.csv",
+      "sha256": "f8d1ffabb726b0e39f6125321cdc699441f1a2e0f62dfed8c4735c45c88ada25"
+    },
+    {
+      "source": "analysis/paired_label_sampled_results_v1/paired_label_effects.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/fixed_labels_sampled_effects.csv",
+      "sha256": "035585feefd6ebf6fa118f1f762476c6f6d72fcd45979a0a302a5a640596eb7c"
+    },
+    {
+      "source": "analysis/paper_qwenvision_two_complete_results_v1/full_official_accuracy.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/qwenvision_accuracy.csv",
+      "sha256": "f51da8639504b451dd76752238f312792c7d9d08d936c59e641d763f6235a197"
+    },
+    {
+      "source": "analysis/paper_qwenvision_two_complete_results_v1/paired_accuracy_CI.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/qwenvision_paired_effects.csv",
+      "sha256": "c1e6ea1db16a6f5321fb3d06cc09b766180fcc3d70afce5e1e6f099b7612109d"
+    },
+    {
+      "source": "analysis/paper_qwenvision_match_control_v1/paired_differences.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/qwenvision_match_effects.csv",
+      "sha256": "2bbe8d6db974b4625b33b30ae705ef00a0d3dc4bbbdafbb701bbc53bc6dce932"
+    },
+    {
+      "source": "analysis/paper_repair_five_dataset_v1/all_error_repair_summary.csv",
+      "consolidated": "analysis/current_project_consolidation_v1/repair_summary.csv",
+      "sha256": "e616da84698286b8251bf651a5673d9ca62f0f130cdef7499126348248471e1c"
+    }
+  ],
+  "plans": [
+    {
+      "path": "analysis/task_conditioning_prompt_plan_v1/protocol_lock.json",
+      "sha256": "1aa96a01ff2e7bac7c48c119002361641ec131accbbdfef1346a9b2f1458677b"
+    },
+    {
+      "path": "analysis/paired_label_full_test_dtd_cub_plan_v1/query_arm_lock.json",
+      "sha256": "8c698da4603e416f8c0db67247de54149e07921ceca5fd566322f0bbae11d3f7"
+    },
+    {
+      "path": "analysis/paired_label_full_test_implementation_v1/implementation_lock.json",
+      "sha256": "0cf6f7c8f9ddf7fcb92e5443af52da4aebc7462e5feb35bc3e3650b3f700c7b1"
+    },
+    {
+      "path": "analysis/paper_qwenvision_dtd_cub_v1/plan_lock.json",
+      "sha256": "53dc789ca449c7181d50106ba60e3209290d0c682ba0affab024c5c3f19878e7"
+    },
+    {
+      "path": "analysis/qwenvision_two_host_v1/implementation_lock.json",
+      "sha256": "10b37c99d1e376271b66210abde22fe5b039ad2847ed74bb21371a8a606aaa94"
+    },
+    {
+      "path": "analysis/qwenvision_two_fresh_v1/implementation_lock.json",
+      "sha256": "2c4fbac0f50ce57fd9b503ffbb594c0625aeb896861a3a349136addb5a76d192"
+    },
+    {
+      "path": "analysis/qwenvision_two_cloud_v1/implementation_lock.json",
+      "sha256": "d39421f747ec0b41996dd262b125199a93bda67f5dc2dbd44f9300457c560e3e"
+    },
+    {
+      "path": "analysis/second_vlm_five_dataset_v2/plan_lock.json",
+      "sha256": "68619bc51a85a6b0d12342abaf5764c0270c4ebe0fa8efa82fa821a6d126ef4d"
+    },
+    {
+      "path": "analysis/internvl_five_native_training_implementation_v3/implementation_lock.json",
+      "sha256": "b962f50cbd1f462ac949e595f72fce58e64ef06dab3bb3aea3c6ba8f28281554"
+    },
+    {
+      "path": "analysis/paper_qwen_three_seed_plan_v1/plan_lock.json",
+      "sha256": "70be321c4b0cb92df27d3a78a4662ee4489f76b7a0fa595398dee7e4dd180d7a"
+    },
+    {
+      "path": "analysis/qwen_three_seed_cloud_implementation_v1/implementation_lock.json",
+      "sha256": "4249a8f83ac3e449883250badc69149ef45e55297ac1f6dc90265a998bc75982"
+    },
+    {
+      "path": "analysis/paper_supervision_queue_v3/queue.json",
+      "sha256": "640f1392cb292eee6eee0ebd4b040e692e9e7d9466ccdbca98af8bb114cd7388"
+    },
+    {
+      "path": ".tools/paper_active_jobs_v1.json",
+      "sha256": "d2a45a7e3b5807195de39e695cf582add34c218a135752e756c31f9fefa4d756"
+    }
+  ],
+  "code_groups": {
+    "method": [
+      "multimodal_model_adapter.py",
+      "multidataset_protocol.py",
+      "legal_label_decoding.py",
+      "run_dtd_decision_states.py",
+      "run_dtd_learned_velocity.py",
+      "run_behavior_ablation.py",
+      "run_multidataset_main.py",
+      "prepare_detriever_input_states.py",
+      "run_detriever_output_proxy.py"
+    ],
+    "completed_controls": [
+      "run_behavior_task_prompt.py",
+      "behavior_task_prompt_policy.py",
+      "run_behavior_full_test_labels.py",
+      "run_behavior_qwenvision_two_native_v1.py",
+      "run_behavior_qwenvision_two_host_v1.py",
+      "run_behavior_qwenvision_two_control_v1.py",
+      "behavior_qwenvision_two_fresh_capture_v1.py"
+    ],
+    "CPU_audits": [
+      "audit_behavior_p1_recheck.py",
+      "analyze_behavior_task_prompt_complete_cpu.py",
+      "analyze_behavior_full_test_labels_complete_cpu.py",
+      "analyze_behavior_qwenvision_two_complete_cpu_v3.py",
+      "analyze_behavior_qwenvision_match_control_v1.py",
+      "analyze_behavior_queue_complete_cpu_v2.py"
+    ],
+    "TAM_prepared_not_executed": [
+      "prepare_query_tam_pilot_v1.py",
+      "query_tam_adapter_v1.py",
+      "run_query_tam_pilot_v1.py",
+      "analyze_query_tam_pilot_v1.py",
+      "check_query_tam_live_v1.py"
+    ],
+    "deferred_not_complete": [
+      "run_behavior_internvl_five_v2.py",
+      "behavior_internvl_five_v2_adapter.py",
+      "behavior_internvl_native_training_v3.py",
+      "run_behavior_qwen_three_seed.py",
+      "run_behavior_qwen_three_seed_proj.py"
+    ]
+  },
+  "original_frozen_files_preserved": true,
+  "old_startup_entry_reuse_allowed": false,
+  "new_GPU_or_model_execution": false
+}

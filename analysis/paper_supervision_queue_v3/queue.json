@@ -1,0 +1,181 @@
+{
+  "version": 3,
+  "recorded_utc": "2026-10-05T01:45:00+00:00",
+  "human_authorized_execution_and_continuation": true,
+  "human_task_list": "任务提示 vs 通用提示 DTD＋CUB 完整 test；QwenVision＋SupCon 五组完整 test；固定 demo 标签干预新版 DTD＋CUB 完整 test；第二 VLM 五组完整test；第一 VLM 3 seed",
+  "first_VLM_methods_confirmed": true,
+  "maximum_cloud_GPUs": 2,
+  "local_CUDA_execution": false,
+  "duplicate_existing_jobs": false,
+  "scheduler": {
+    "continue_current_jobs": [
+      "task_prompt",
+      "full_labels"
+    ],
+    "remaining_priority": [
+      "qwenvision",
+      "internvl_five",
+      "qwen_three_seed"
+    ],
+    "ordering_basis": "Follow the latest task list for tasks not yet started; existing parallel jobs continue. This supersedes the older two-dataset InternVL-first dispatcher.",
+    "start_next_when": "A current job finishes its full official test, all new evidence is retrieved and hash-verified, the exact Pod is stopped, and an independent CPU audit passes. Use an available suitable cloud GPU autonomously, at most two cards, with a new tested operation entry; never repeat consumed failed entries.",
+    "while_waiting": "Prepare and test missing independent protocols/runners/operation entries proactively. Do not wait for another user message or keep a paid GPU idle for CPU preparation.",
+    "failure": "Preserve artifacts, take back evidence, stop the exact affected Pod, diagnose the concrete fault and resume safely through a new audited operation. Do not count failed/smoke/sampled work as complete."
+  },
+  "monitor": {
+    "heartbeat_minutes": 30,
+    "incremental_backup_seconds": 120,
+    "check": "scripts/check_behavior_paper_two_qv_v1_live.py",
+    "registry": ".tools/paper_active_jobs_v1.json",
+    "current_roles_only_until_new_scope_entries_exist": true,
+    "quiet_when_unchanged": true,
+    "report": [
+      "meaningful_phase_change",
+      "completion",
+      "failure",
+      "required_user_action"
+    ]
+  },
+  "counts": {
+    "dtd": 1880,
+    "aircraft": 3333,
+    "cub": 5794,
+    "pets": 3669,
+    "dogs": 8580
+  },
+  "tasks": [
+    {
+      "id": "task_prompt",
+      "datasets": [
+        "dtd",
+        "cub"
+      ],
+      "methods": [
+        "task_Raw",
+        "generic_Raw"
+      ],
+      "query_count": 7674,
+      "expected_predictions": 15348,
+      "expected_source_rows": 34856,
+      "state_at_recording": "running_existing_registered_job",
+      "science_root": "behavior_task_conditioning_raw_v1",
+      "plan": "analysis/task_conditioning_prompt_plan_v1/protocol_lock.json",
+      "post_stop_analysis": "scripts/analyze_behavior_task_prompt_complete_cpu.py"
+    },
+    {
+      "id": "qwenvision",
+      "datasets": [
+        "dtd",
+        "cub"
+      ],
+      "methods": [
+        "SupCon_QwenVision_fixed256"
+      ],
+      "query_count": 7674,
+      "expected_predictions": 7674,
+      "training_tuples": 2,
+      "state_at_recording": "independent_two_dataset_implementation_pending_native_compatibility",
+      "science_root": "behavior_qwenvision_supcon_dtd_cub_v1",
+      "plan": "analysis/paper_qwenvision_dtd_cub_v1/plan_lock.json",
+      "existing_scientific_runner": "scripts/run_behavior_qwenvision_two_native_v1.py",
+      "frozen_science_must_remain_unchanged": true
+    },
+    {
+      "id": "full_labels",
+      "datasets": [
+        "dtd",
+        "cub"
+      ],
+      "methods": [
+        "constrained_zero",
+        "gold",
+        "own_prediction",
+        "hash_wrong"
+      ],
+      "query_count": 7674,
+      "expected_records": 30696,
+      "expected_generations": 30526,
+      "explicit_missing": 170,
+      "state_at_recording": "running_existing_registered_job",
+      "science_root": "behavior_corrective_labels_full_dtd_cub_v1",
+      "plan": "analysis/paired_label_full_test_dtd_cub_plan_v1/query_arm_lock.json",
+      "post_stop_analysis": "scripts/analyze_behavior_full_test_labels_complete_cpu.py"
+    },
+    {
+      "id": "internvl_five",
+      "datasets": [
+        "dtd",
+        "aircraft",
+        "cub",
+        "pets",
+        "dogs"
+      ],
+      "methods": [
+        "zero",
+        "rices",
+        "behavior_raw",
+        "behavior_proj"
+      ],
+      "query_count": 23256,
+      "expected_predictions": 93024,
+      "seed": 73,
+      "model": "OpenGVLab/InternVL2_5-8B",
+      "revision": "e9e4c0dc1db56bfab10458671519b7fa3dd29463",
+      "state_at_recording": "pending_independent_five_dataset_protocol_runner_and_entry",
+      "science_root": "behavior_internvl_five_dataset_v2",
+      "historical_two_dataset_plan": "analysis/second_vlm_dtd_cub_plan_v1/plan_lock.json",
+      "full_manifest_source": "analysis/paper_p2_qwenvision_fixed256_plan_v1/plan_lock.json",
+      "inheritance": "Reuse reviewed fixed author/model metadata and scientific recipe; independently train for each dataset. Do not execute the old two-dataset package and call it five-dataset completion.",
+      "protocol_boundary": "Keep the frozen two-dataset plan, code and package intact. Prepare new protocol/code/job locks, isolated runtime and native multi-image/hidden/legal smoke before launch."
+    },
+    {
+      "id": "qwen_three_seed",
+      "datasets": [
+        "dtd",
+        "aircraft",
+        "cub",
+        "pets",
+        "dogs"
+      ],
+      "methods": [
+        "RICES",
+        "GPT-MM",
+        "DeTriever",
+        "BehaviorICL-Raw",
+        "BehaviorICL-Proj",
+        "BehaviorICL-Learn"
+      ],
+      "seeds": [
+        73,
+        74,
+        75
+      ],
+      "reuse_completed_seed": 73,
+      "new_seeds": [
+        74,
+        75
+      ],
+      "query_count_per_seed": 23256,
+      "new_prediction_count": 279072,
+      "model": "Qwen/Qwen3-VL-4B-Instruct",
+      "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+      "state_at_recording": "pending_independent_multiseed_protocol_runner_and_entry",
+      "science_root": "behavior_qwen_three_seed_v1",
+      "completed_seed_73_audit": "analysis/paper_p1_recheck_v1/audit.json",
+      "human_methods_confirmation": "Raw/Proj/Learn＋RICES、GPT-MM、DeTriever（完整主表）",
+      "protocol_boundary": "Reproduce the historical fixed256 main-table protocols, not selected-width-v2. Fresh retriever initialization/training/checkpoint/selection/predictions for each dataset/model/seed; no cross-tuple checkpoint reuse. Keep bank-only train/dev selection, no test tuning. Follow the existing within-tuple frozen-source identity contract. Verify seed73 sources before reuse, rather than claiming they were newly rerun."
+    }
+  ],
+  "frozen_reference_sha256": {
+    "analysis/paper_p2_qwenvision_fixed256_plan_v1/plan_lock.json": "560ffbae313b18eeabdbc5479a87c496d08867e377a045175d688a5e83ff9a46",
+    "analysis/second_vlm_dtd_cub_plan_v1/plan_lock.json": "5dfe9a5945f5f04b6eabc302a743ae8ad93462fc12c46fcc00eee8ed62ed4e35",
+    "analysis/paper_p1_recheck_v1/audit.json": "e2dc5afb6cba36ecb09967bb08eb3bdf797aeb29753548f71f6d6a88090171e2"
+  },
+  "scientific_readiness": "This file records authorization and queue scope. It is not a frozen executable five-dataset/multiseed scientific implementation, a cloud compatibility receipt or a performance result.",
+  "accounting": "Aggregate independent actual GPU fee segments; exclude stopped gaps, do not double-count old cumulative totals. Preserve disks; storage remains separately unknown.",
+  "completion": "Only complete verified full official-test groups enter RESULTS_PAPER.md. Report mean/std and same-query comparisons for the confirmed three-seed main table. Preserve negative results, harm, illegal-output/missingness boundaries and historical-source limitations.",
+  "supersedes_queue_hash": "0e503c34fb99f240e2cb4f362acca82edf2ce0a6ea346149b2323ad9a575548d",
+  "human_scope_change": "Only QwenVision+SupCon reduced to DTD+CUB; InternVL and three-seed main table remain five datasets.",
+  "human_scope_confirmation": "仅 QwenVision 缩到 DTD＋CUB",
+  "queue_hash": "737d38576e7a3a2ba044173e01c82b06e10d154d1b1442e2f579660edfe9220f"
+}

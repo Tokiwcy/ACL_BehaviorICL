@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-05T16:18:51.945646+00:00",
+  "error_class": "ValueError",
+  "message": "New capacity running SSH deadline",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\ASUS\\Documents\\ChatGPT\\BehaviorICL\\scripts\\start_query_tam_cloud_v2.py\", line 220, in launch\n    if time.monotonic()>deadline:raise ValueError('New capacity running SSH deadline')\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: New capacity running SSH deadline\n"
+}

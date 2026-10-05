@@ -120,10 +120,12 @@ def configure_vision_pixels(processor, pixels: int | None) -> None:
 def load_model(spec: ModelSpec, cache_dir: Path, vision_pixels: int | None = None):
     if vision_pixels is not None and spec.slug != "qwen3vl4b":
         raise ValueError("Explicit vision_pixels is currently supported only for Qwen3-VL")
-    processor = AutoProcessor.from_pretrained(spec.model_id, cache_dir=cache_dir)
+    revision = "ebb281ec70b05090aa6165b016eac8ec08e71b17" if spec.slug == "qwen3vl4b" else None
+    processor = AutoProcessor.from_pretrained(spec.model_id, cache_dir=cache_dir, revision=revision)
     configure_vision_pixels(processor, vision_pixels)
     model = AutoModelForImageTextToText.from_pretrained(
-        spec.model_id, cache_dir=cache_dir, dtype=torch.bfloat16, low_cpu_mem_usage=True
+        spec.model_id, cache_dir=cache_dir, revision=revision,
+        dtype=torch.bfloat16, low_cpu_mem_usage=True
     ).eval().to("cuda")
     return model, processor
 

@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-05T06:32:16.403981+00:00",
+  "audit_SHA": "6e2696e1a0e865639b865a875e204e5aadb3982775cfb8976bdf28fc6c6f9287",
+  "complete_slot_proof": {
+    "previous_role": "qwenvision",
+    "pod_id": "t0ku94ln50lmsf",
+    "launch_id": "37cb4f32772b480397cf275faa9df182",
+    "confirmed_utc": "2026-10-05T06:22:56.743413+00:00",
+    "previous_scientific_root": "behavior_qwenvision_supcon_dtd_cub_v1",
+    "audit_path": "analysis/paper_qwenvision_two_complete_results_v1/audit.json",
+    "audit_SHA": "6e2696e1a0e865639b865a875e204e5aadb3982775cfb8976bdf28fc6c6f9287",
+    "takeback_archive_SHA": "c0b0aae23f3875f67d90f82679a05e043ecc42276788b5d1b351b823295d9aa9",
+    "CPU_audit_confirmed_after_stop": true
+  },
+  "scientific_documents_SHA": {
+    "RESULTS_PAPER.md": "a55f6c3852d5b5598449c41f1ee27e11045de57549c6156a99ff65cace20ca1d",
+    "PAPER_NARRATIVE.md": "89334728b2c423a255075b76b8cebb95534679b1a28415c990496ddfba6392a3",
+    "PROJECT_OVERVIEW.md": "48bb0e50b6cdc90c7e6f3e63df92edff891584d8ff7b0ffb41088cf1242b4ab2"
+  },
+  "new_GPU_started": false
+}

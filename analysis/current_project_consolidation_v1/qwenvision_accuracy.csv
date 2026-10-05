@@ -1,0 +1,3 @@
+dataset,seed,method,correct,total,accuracy_percent
+dtd,73,supcon_qwenvision,1604,1880,85.31914893617021
+cub,73,supcon_qwenvision,4886,5794,84.32861580945806

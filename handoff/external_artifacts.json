@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "source_path": ".tools/paper_active_jobs_v1.json",
+      "sha256": "d2a45a7e3b5807195de39e695cf582add34c218a135752e756c31f9fefa4d756",
+      "bytes": 31453,
+      "published": false,
+      "reason": "Private local operational registry; never reconstruct cloud authority from this public repository"
+    },
+    {
+      "source_path": "analysis/current_project_consolidation_v1/consolidation_review.json",
+      "sha256": "4fa71d339f6a02a44b2a371c90500c355820342639adbcf844074dd2947f3b7c",
+      "bytes": 1429,
+      "published": false,
+      "reason": "Local preservation baseline is not a clean-clone validation receipt"
+    },
+    {
+      "source_path": "analysis/current_project_consolidation_v1/preserved_source_baseline.json",
+      "sha256": "6cdb8c6cbf9f0baef0568475bf47aa0320102d1d50eeeff46b829a20b47e3e2a",
+      "bytes": 93937,
+      "published": false,
+      "reason": "Local preservation baseline is not a clean-clone validation receipt"
+    },
+    {
+      "source_path": ".tools/tam_official_v1/demo.py",
+      "sha256": "691b3c9f50870152e8978c32c65cff28056d227c45e4bf27ce265005fe9d69cc",
+      "bytes": 6109,
+      "published": false,
+      "reason": "Fetch unchanged pinned upstream into ignored local cache; not vendored"
+    },
+    {
+      "source_path": ".tools/tam_official_v1/qwen_utils.py",
+      "sha256": "6ca111565a3da9c666aded4e9107a98aa47513d5a012dc9442eb64518d6a31c4",
+      "bytes": 12605,
+      "published": false,
+      "reason": "Fetch unchanged pinned upstream into ignored local cache; not vendored"
+    },
+    {
+      "source_path": ".tools/tam_official_v1/README.md",
+      "sha256": "a3b9a667f6dc1cb66fa55b0ec787d393cb14127e4340fc85e3b215bcd596ccd5",
+      "bytes": 3739,
+      "published": false,
+      "reason": "Fetch unchanged pinned upstream into ignored local cache; not vendored"
+    },
+    {
+      "source_path": ".tools/tam_official_v1/requirements.txt",
+      "sha256": "d8208c9ea46dfd57713df1701f78c3e8fc62615dc2f2920e20fdd20b71a9738c",
+      "bytes": 165,
+      "published": false,
+      "reason": "Fetch unchanged pinned upstream into ignored local cache; not vendored"
+    },
+    {
+      "source_path": ".tools/tam_official_v1/tam.py",
+      "sha256": "18bc233edf416de0846b09f441a7bcf5496916f500da49014ceb3ec8c81f7067",
+      "bytes": 26531,
+      "published": false,
+      "reason": "Fetch unchanged pinned upstream into ignored local cache; not vendored"
+    },
+    {
+      "source_path": "results/cloud_trial/czscrdd6bcut9k-paper-task-prompt-autonomous/session_1",
+      "published": false,
+      "reason": "Local result archives or operational state; not included in the public checkout"
+    },
+    {
+      "source_path": "results/cloud_trial/yuj11of0d8gbgn-paper-full-labels-staged-pinned/session_1",
+      "published": false,
+      "reason": "Local result archives or operational state; not included in the public checkout"
+    },
+    {
+      "source_path": "results/cloud_trial/t0ku94ln50lmsf-paper-qv37/session_1",
+      "published": false,
+      "reason": "Local result archives or operational state; not included in the public checkout"
+    },
+    {
+      "source_path": ".tools/query_tam_cloud_v2",
+      "published": false,
+      "reason": "Local result archives or operational state; not included in the public checkout"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/ARCHIVE_NOTE.md",
+      "sha256": "6cdaffce6155c08761942db77f86f907b5633021b14518f91aa64ade60a5815a",
+      "bytes": 951,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/BEHAVIOR_ADAPTIVE_PLAN.md",
+      "sha256": "32845a3df51b0d8375a2c5ac0a7382ab66940b9bbed480a9c6796402205596d6",
+      "bytes": 6449,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/BEHAVIOR_ADAPTIVE_PLAN_ARCHIVE_20261003.md",
+      "sha256": "68eb36f0ba2d0e1f661390981be55643a077086bed0f428ab3eb36be2f179dc7",
+      "bytes": 6847,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/BEHAVIOR_BASELINES_2025_2026.md",
+      "sha256": "6051446e04dcf6d6498a0d10bd0076e79ed26730872126e96e1d895f226f3d08",
+      "bytes": 10580,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/DATASETS.md",
+      "sha256": "7516b24164bbac348d85b544883e9b7ed7730ea9161f0a545c1431b52086735b",
+      "bytes": 1782,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/EIGHT_HOUR_REPORT.md",
+      "sha256": "efc8e3cb552c6a56f7d272098ec0549692576a0179066367dd0be62f53f8e2fe",
+      "bytes": 3605,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/EXPERIMENT_PLAN.md",
+      "sha256": "43a0293ac204466648c73636131d1bcaa45c5d398b7f3b8a6aca297dff200c2c",
+      "bytes": 124861,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/manifest.json",
+      "sha256": "5da5124f89996441db71f52b0ac6579adc276ea589a1672d96a8c8d1aa8fe502",
+      "bytes": 3186,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/PAPER_NARRATIVE.md",
+      "sha256": "9276d24988dbd83140cb8552bebf580d08a67eac6dcaededf0dc8bebd191dd0f",
+      "bytes": 20871,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/PROJECT_OVERVIEW.md",
+      "sha256": "a34405a970b799e91859973651ecd8cbfa555ad23a56a42e795520ffc7e461fb",
+      "bytes": 18372,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/README.md",
+      "sha256": "b2ea68106de4d23abd4efb813f36f46bcd929d3c8068df68e9c306752ed200a5",
+      "bytes": 6196,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/RESULTS.md",
+      "sha256": "2cb262e6675786404b788027af6d35df172e5146cbd95216aceb2bd8c870018d",
+      "bytes": 26628,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/RESULTS_PAPER.md",
+      "sha256": "cb1cdf8eb2cd55d21759a9c7b295813e8b280135af8daab9ab357e790da75e06",
+      "bytes": 63378,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    },
+    {
+      "source_path": "archive/project_docs_before_20261006/RUN_STATUS.md",
+      "sha256": "48cf8d5ed0f69a9df582d5af3abc2803d56fc66bb7805333e749f0378a07e3d2",
+      "bytes": 410758,
+      "published": false,
+      "reason": "Historical local documentation; current portable docs supersede it"
+    }
+  ],
+  "never_fabricate_missing_artifacts": true
+}

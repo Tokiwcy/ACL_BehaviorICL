@@ -1,0 +1,6 @@
+﻿dataset,bank_total,query_total,zero_rows,invalid_bank_zero,invalid_query_zero,all_initial_errors,valid_wrong_queries,common_complete_case_wrong_queries,excluded_valid_wrong_queries
+dtd,3760,1880,5640,85,50,664,614,571,43
+aircraft,6667,3333,10000,237,125,2262,2137,1848,289
+cub,5994,5794,11788,51,60,3633,3573,3405,168
+pets,3680,3669,7349,29,24,645,621,582,39
+dogs,12000,8580,20580,521,347,3934,3587,2840,747

@@ -1,0 +1,31 @@
+name: Portable research handoff
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-handoff:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Verify published evidence without private inputs
+        run: python scripts/verify_handoff.py
+      - name: Exercise failure boundaries without models or network
+        run: python -m unittest discover -s tests -p test_handoff_tools.py -v
+      - name: Restore exact compressed contracts and verify again
+        run: |
+          python scripts/materialize_handoff_artifacts.py
+          python scripts/verify_handoff.py
+      - name: Inspect pinned source availability without fetching
+        run: python scripts/fetch_tam_upstream.py

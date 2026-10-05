@@ -1,0 +1,3 @@
+﻿dataset,queries,task_correct,generic_correct,task_only_correct,generic_only_correct,difference_pp,paired_bootstrap_low_pp,paired_bootstrap_high_pp,bootstrap_repetitions,seed,first,second,reference
+dtd,1880,1579,1483,171,75,5.1063829787234045,3.5106382978723403,6.75531914893617,10000,73,task,generic,paired complete official test accuracy
+cub,5794,4704,2717,2218,231,34.29409734207801,32.861580945806004,35.69209527096997,10000,73,task,generic,paired complete official test accuracy

@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-05T07:54:44.539894+00:00",
+  "status": "complete_CPU_startup_chain_and_new_role_contract_tests_passed",
+  "tests_run": 8,
+  "elapsed_seconds": 79.35899999993853,
+  "source_SHA": {
+    "scripts/behavior_isolated_numpy_handoff_v53.py": "ae60a3f6067d23983bc195bb0ced2be9730f3c498d0c8a29f5abfab46dcaf118",
+    "scripts/behavior_bootstrap_shim_v54.py": "d278fab3be0bfb8850efa28930d965753922e467396b34e34cb3f6cf241b87a0",
+    "scripts/prepare_behavior_numpy_checked_entries_v55.py": "4b54a57f0e4b95efad74fd5163a202d51e6ae82e5a3538bde87ac9abb6adb64c",
+    "scripts/start_behavior_internvl_numpy_checked_v55.py": "208457c25c55e44a68e5503cea48615d2f8d624b1a873bf4d4be11d25dc45cfe",
+    "scripts/start_behavior_three_seed_numpy_checked_v56.py": "7cd1d2e48c4cc36bcd935f7b11cc7ba3f1f2337399f2619abf064659d42db2b9",
+    "scripts/analyze_behavior_internvl_bootstrap_failure_v52.py": "d099f1ea2ad8b8a4f15fbbd128dd9c86f085fe1370dc11e2cd72ce11bdfe065d",
+    "tests/test_behavior_isolated_numpy_handoff_v53.py": "9712282c4ef8a1721971b185528d88eca64dd8874052c00f93f7ff39e418ac34",
+    "tests/test_behavior_bootstrap_shim_v54.py": "62afe8f769bd4193e7220032941108d81b325876cd938f8d122835cea243ebde",
+    "tests/test_behavior_numpy_checked_entries_v55.py": "28572b6ecd30913156d982344030f70e2908ea3eb5986590bd545aa7252996ea",
+    "tests/behavior_bootstrap_CPU_fixture_v54.py": "4283e290c9888459166b5a8764844611a5aee0ca81ddacd60c51e76217ea2ec8",
+    "scripts/bootstrap_behavior_internvl_native_v4.py": "add3ece153fff4cf64de1837ff7583aa92489390f058b36bc57d95c4b1b70962",
+    "scripts/bootstrap_behavior_qwen_three_seed_cloud_v1.py": "6ace37c895a7c700c80e05b615dfc0e5afbba343c4f912162c46dd2aa88b033e",
+    "scripts/review_behavior_numpy_bootstrap_CPU_v54.py": "3b772298263b128a9fc3eca56e7ad8e7735efc2506f844947080019765d078d0"
+  },
+  "original_bootstraps_changed": false,
+  "configuration_override_in_scientific_interpreter": false,
+  "real_clean_venvs_both_roles": true,
+  "actual_original_bootstrap_reexecuted_after_handoff": true,
+  "first_wrapper_absent_in_isolated_interpreter": true,
+  "native_model_GPU_compatibility_proven": false,
+  "native_services_in_CPU_test": "Explicit local fixture backends; not cloud/native evidence",
+  "process_identity_limits": "Real Windows exec replacement with explicit .exe filename adaptation; production Linux PID/start_ticks retention follows original os.execv and must still be confirmed on actual cloud. Wrong PID/argv/scientific child/GPU fixtures refused.",
+  "CPU_fixture_preparation_failures_preserved": [
+    "Windows platform emulation before NumPy import",
+    "pathlike CPU location missing fspath",
+    "ordinary sandbox index network denied",
+    "Windows CRT exec extension requirement"
+  ],
+  "CPU_fixtures": {
+    ".tools/CPU_bootstrap54_0ed5089effdb4d8680cf55f5ed8ee66c": {
+      "events_SHA": "76bfb1267b4ee18774bde8f82530d0a362549738cedb5b53579c5404fa20247a",
+      "receipt_SHA": "1186b8b4cc84bede3960f2d148c525545e8220155f0a3cdd0f85f560674496da"
+    },
+    ".tools/CPU_bootstrap54_50f430bfdd874232aba865a588a24fe5": {
+      "events_SHA": "133f95e5a2a98b68b7381a81e37db1d7cdd3ba38f1532692fa57a6a325fa2647",
+      "receipt_SHA": "92ec4fe94c83220308473489b9ed1ec9e20d1c076bcf2eb35cb72face9742275"
+    },
+    ".tools/CPU_bootstrap54_611e68f05307403daa14203c7d761d7c": {
+      "events_SHA": "e368b3486cc8f078ff45d8c6de523d3b24a34e67209929e8908794d009bd4197",
+      "receipt_SHA": "391ca51d3a0dc4b8f6b376b7087693a6036990a993d065e65f0daa9161625a02"
+    },
+    ".tools/CPU_bootstrap54_8a71d5ac73de4ee196ca037f7d2993db": {
+      "events_SHA": "1d5407f829dd9cf50e07b93da767f023ee387eda104f578d9051e1b770ce11a0",
+      "receipt_SHA": "9259b6c28928f7452ba2e4597026d008f18481b18fc9068fbdf9354f6958c202"
+    },
+    ".tools/CPU_bootstrap54_969c1d5c75494fa88e3056471ab1e552": {
+      "events_SHA": "72366ace87ad69c6ea3f6a1a259d713112a5ed2a0f0d3e045ac67a9e7ec48731",
+      "receipt_SHA": "48bbd3a7a4679c48f33bbfc57ddfa269a67b3e5fd7311c2562713f2bcbb61557"
+    },
+    ".tools/CPU_bootstrap54_b31cf3219dc942fc9f12f5a2d6d70147": {
+      "events_SHA": "6864d620f364056888400d4d1ce78679418a96cf856b2dbbcad517f5a6c13691",
+      "receipt_SHA": "b717674813c3dc965ce2ccca1da5b435b500cc8545c9fde0b5cbd815dc54adc6"
+    }
+  },
+  "offline_CPU_wheel_SHA": {
+    ".tools/paper_numpy_CPU_wheels_v54/numpy-2.5.1-cp312-cp312-win_amd64.whl": "f7d60026c0bdb1380e83bfa7a0419c4577ee4b9a08880afcb6dadeb74c649fa2"
+  },
+  "local_CUDA_executed": false,
+  "GPU_created": false,
+  "test_log_path": "analysis/paper_numpy_bootstrap_CPU_v54/tests_20261005T075325Z.log",
+  "test_log_SHA": "45dca215ef5f577ad38af12afe182a9fc42cc71f409c83b97aab4aa6354198ca",
+  "preserved_prior_CPU_log_SHA": {
+    "analysis/paper_numpy_bootstrap_CPU_v54/tests.log": "acda21d88a7f1368b37bbbddd22957252e8886f49383fd27d55b01321e95d3f7"
+  }
+}

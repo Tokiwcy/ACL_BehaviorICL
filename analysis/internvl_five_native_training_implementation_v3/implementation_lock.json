@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-04T16:33:29.746326+00:00",
+  "plan_hash": "e6a8b151f81fa5180ab39be5e361a3d306544d11a11e333dffb6fcdff4e1b5b7",
+  "protocol_unchanged": true,
+  "reason": "Unused Qwen AutoModelForImageTextToText import is unavailable in the locked InternVL Transformers4.37.2 environment",
+  "selected_numerical_definitions": [
+    "VelocityRetriever",
+    "StateRetriever",
+    "supervised_contrastive_loss",
+    "balanced_batch",
+    "encode_indices",
+    "retrieval_metrics"
+  ],
+  "original_numeric_source_SHA": "5e260ed6b06af398262899be0e5cc4121664e853c89479ac53190a0a339f3b5d",
+  "code_sha256": {
+    "scripts/behavior_internvl_native_training_v3.py": "661f3040e0195d0c4a7f6cfb5d2ce712f139be56a54f691850620214b8716d17",
+    "scripts/behavior_internvl_five_native_policy_v3.py": "19b30675f1b922ae4a733cc8074791b50501b0c90b85d398190fed5368235be7",
+    "scripts/run_behavior_internvl_five_native_v3.py": "877a05ef9a0cd5299922e78b5da4e8c504dc6c00d0117e0dd12c55a7e64a1f27",
+    "scripts/prepare_behavior_internvl_native_training_v3.py": "da0c9a1893bf4e8d076eafd9e8e8b2e199d0a6b5870bc03ce87584f602951892",
+    "tests/test_behavior_internvl_native_training_v3.py": "4a7879898cb29c5d9405fb75b696b30fa358ab8a37f3e14ee03caaf1ed94f049"
+  },
+  "module_route": {
+    "run_dtd_learned_velocity": "behavior_internvl_native_training_v3"
+  },
+  "actual_cloud_compatibility": false,
+  "new_cloud_entry_and_package_required": true,
+  "GPU_execution": false,
+  "implementation_hash": "7597095b93ff3ecaddbc6ba7f8cec928352ec9f65e45b195c430baad2410d04e"
+}

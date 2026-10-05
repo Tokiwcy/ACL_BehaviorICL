@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-05T15:11:56.825801+00:00",
+  "role": "qwen_three_seed",
+  "pod_id": "g6v816yvh7cd4n",
+  "launch_id": "1418faa9319a4c63aef45f7b0a2ea9ac",
+  "fresh_actual_API": {
+    "id": "g6v816yvh7cd4n",
+    "desiredStatus": "EXITED",
+    "runtimeStatus": "stopped",
+    "gpuCount": 1
+  },
+  "fresh_exact_stopped_verified": true,
+  "scientific_complete": false,
+  "disks_preserved": true,
+  "GPU_estimate_USD": 0.16703232369999998,
+  "auditor_source_SHA": "7023d823811dd69f6ded5fed4f86a96eb9fda1bea8c3d61029e4704e7a011a1d",
+  "local_CUDA": false,
+  "model_replayed": false,
+  "status": "local_control_timeout_and_exact_stop_verified_remote_FULL_unknown",
+  "closed_FULL_verified": false,
+  "independent_local_control_audit_passed": true,
+  "scientific_parent_request_reached": false,
+  "local_inputs_sent": false,
+  "final_remote_state_independently_audited": false,
+  "observed_failure": "Original frozen CPU validator SSH call exceeds 90s; timeout cause Unknown. fail_stop omitted launch_id.",
+  "limits": "No remote FULL: preserve failed disk; do not infer final validator/files/process state or fabricate absence",
+  "control_evidence_SHA": {
+    ".tools/paper_three_seed_two_leg_v76/operation_lock.json": "ff46784a416cef5180b3052ec24fd79eca95528206c6a1870621f0ff3da8fd85",
+    ".tools/paper_three_seed_two_leg_v76/deployment_receipt.json": "7a3a33a2d25b00f30475931badae2bb27942910613294b060af3d71f525b6b53",
+    "results/cloud_trial/g6v816yvh7cd4n-paper-qw76/session_1/stop_confirmation.json": "bc637a1cfda3f1b068be12fe90bdfd277f05fa301574745559149a994d0f05b2",
+    "results/cloud_trial/g6v816yvh7cd4n-paper-qw76/session_1/runtime_accounting.json": "d814e152587a8cba4660ff9cf4aad286e39abe4eddcce42b0dbfb6ce23c071a6",
+    "results/cloud_trial/g6v816yvh7cd4n-paper-qw76/session_1/frozen_CPU_validation_connect_1791212255181050200.json": "8dee0f9d05d74b361838f5260e87a3ac8db0c95c797a5fc39a05a465b5b0c4d3",
+    "results/cloud_trial/g6v816yvh7cd4n-paper-qw76/session_1/deployment_failure.json": "2ccf3b98d6b7b86849d80146ef10ef376050f581c2923e415cf2d8e067afc17f",
+    "results/cloud_trial/g6v816yvh7cd4n-paper-qw76/session_1/native_identity_receipt.json": "96d9f559a6ac3ab28ec6dd7b90dc86613a245af98e5c4018d4040bf17e181cda"
+  }
+}

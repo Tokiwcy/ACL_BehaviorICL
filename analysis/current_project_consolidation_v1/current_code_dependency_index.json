@@ -1,0 +1,713 @@
+{
+  "curated_roots": [
+    "scripts/analyze_behavior_full_test_labels_complete_cpu.py",
+    "scripts/analyze_behavior_queue_complete_cpu_v2.py",
+    "scripts/analyze_behavior_qwenvision_match_control_v1.py",
+    "scripts/analyze_behavior_qwenvision_two_complete_cpu_v3.py",
+    "scripts/analyze_behavior_task_prompt_complete_cpu.py",
+    "scripts/analyze_query_tam_pilot_v1.py",
+    "scripts/audit_behavior_p1_recheck.py",
+    "scripts/behavior_internvl_five_v2_adapter.py",
+    "scripts/behavior_internvl_native_training_v3.py",
+    "scripts/behavior_qwenvision_two_fresh_capture_v1.py",
+    "scripts/behavior_task_prompt_policy.py",
+    "scripts/check_query_tam_live_v1.py",
+    "scripts/legal_label_decoding.py",
+    "scripts/multidataset_protocol.py",
+    "scripts/multimodal_model_adapter.py",
+    "scripts/prepare_detriever_input_states.py",
+    "scripts/prepare_query_tam_pilot_v1.py",
+    "scripts/query_tam_adapter_v1.py",
+    "scripts/run_behavior_ablation.py",
+    "scripts/run_behavior_full_test_labels.py",
+    "scripts/run_behavior_internvl_five_v2.py",
+    "scripts/run_behavior_qwen_three_seed.py",
+    "scripts/run_behavior_qwen_three_seed_proj.py",
+    "scripts/run_behavior_qwenvision_two_control_v1.py",
+    "scripts/run_behavior_qwenvision_two_host_v1.py",
+    "scripts/run_behavior_qwenvision_two_native_v1.py",
+    "scripts/run_behavior_task_prompt.py",
+    "scripts/run_detriever_output_proxy.py",
+    "scripts/run_dtd_decision_states.py",
+    "scripts/run_dtd_learned_velocity.py",
+    "scripts/run_multidataset_main.py",
+    "scripts/run_query_tam_pilot_v1.py"
+  ],
+  "static_local_import_edges": {
+    "scripts/analyze_query_tam_pilot_v1.py": [
+      "scripts/query_tam_cloud_ops_v1.py"
+    ],
+    "scripts/query_tam_cloud_ops_v1.py": [],
+    "scripts/analyze_behavior_qwenvision_match_control_v1.py": [
+      "scripts/analyze_behavior_paper_p0.py",
+      "scripts/analyze_behavior_repair_all_queries.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/run_behavior_priority_analysis.py": [],
+    "scripts/analyze_behavior_repair_all_queries.py": [
+      "scripts/analyze_behavior_paper_p0.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/collect_behavior_priority_zero.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/multimodal_model_adapter.py": [
+      "scripts/legal_label_decoding.py",
+      "scripts/multidataset_protocol.py"
+    ],
+    "scripts/multidataset_protocol.py": [],
+    "scripts/legal_label_decoding.py": [],
+    "scripts/analyze_behavior_paper_p0.py": [
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/prepare_detriever_input_states.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_multidataset_main.py"
+    ],
+    "scripts/run_multidataset_main.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_dtd_learned_velocity.py",
+      "scripts/run_dtd_paper_baselines.py"
+    ],
+    "scripts/run_dtd_paper_baselines.py": [
+      "scripts/detriever_proxy.py",
+      "scripts/run_dtd_hidden_rices_pilot.py"
+    ],
+    "scripts/run_dtd_hidden_rices_pilot.py": [],
+    "scripts/detriever_proxy.py": [],
+    "scripts/run_dtd_learned_velocity.py": [
+      "scripts/run_dtd_hidden_rices_pilot.py"
+    ],
+    "scripts/run_behavior_qwen_three_seed.py": [
+      "scripts/behavior_qwen_three_seed_policy.py",
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py"
+    ],
+    "scripts/behavior_qwen_three_seed_policy.py": [
+      "scripts/behavior_p2_matched_policy.py",
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/behavior_task_prompt_policy.py": [
+      "scripts/behavior_p2_matched_policy.py",
+      "scripts/collect_behavior_priority_zero.py"
+    ],
+    "scripts/behavior_p2_matched_policy.py": [
+      "scripts/collect_behavior_priority_zero.py"
+    ],
+    "scripts/behavior_internvl_five_v2_adapter.py": [
+      "scripts/behavior_internvl_policy.py",
+      "scripts/legal_label_decoding.py"
+    ],
+    "scripts/behavior_internvl_policy.py": [
+      "scripts/behavior_p2_matched_policy.py",
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/run_query_tam_pilot_v1.py": [
+      "scripts/query_tam_adapter_v1.py",
+      "scripts/query_tam_cloud_ops_v1.py"
+    ],
+    "scripts/query_tam_adapter_v1.py": [],
+    "scripts/behavior_internvl_native_training_v3.py": [],
+    "scripts/run_behavior_full_test_labels.py": [
+      "scripts/behavior_task_prompt_policy.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/legal_label_decoding.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_behavior_label_intervention.py",
+      "scripts/run_behavior_task_prompt.py"
+    ],
+    "scripts/run_behavior_task_prompt.py": [
+      "scripts/behavior_task_prompt_policy.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/legal_label_decoding.py",
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/prepare_behavior_task_prompt_plan.py"
+    ],
+    "scripts/prepare_behavior_task_prompt_plan.py": [
+      "scripts/behavior_p2_matched_policy.py",
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/run_behavior_label_intervention.py": [
+      "scripts/attach_behavior_label_inputs.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/legal_label_decoding.py",
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py"
+    ],
+    "scripts/attach_behavior_label_inputs.py": [
+      "scripts/analyze_behavior_paper_p0.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/multidataset_protocol.py",
+      "scripts/prepare_behavior_label_intervention.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/prepare_behavior_label_intervention.py": [
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/prepare_query_tam_pilot_v1.py": [],
+    "scripts/analyze_behavior_full_test_labels_complete_cpu.py": [
+      "scripts/analyze_behavior_label_intervention.py",
+      "scripts/analyze_behavior_task_prompt_complete_cpu.py",
+      "scripts/behavior_critical_followup_cloud.py",
+      "scripts/run_behavior_full_test_labels.py"
+    ],
+    "scripts/behavior_critical_followup_cloud.py": [
+      "scripts/behavior_task_prompt_cloud.py"
+    ],
+    "scripts/behavior_task_prompt_cloud.py": [
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/analyze_behavior_task_prompt_complete_cpu.py": [
+      "scripts/analyze_behavior_repair_all_queries.py",
+      "scripts/behavior_task_prompt_cloud.py",
+      "scripts/behavior_task_prompt_policy.py",
+      "scripts/run_behavior_priority_analysis.py",
+      "scripts/run_behavior_task_prompt.py"
+    ],
+    "scripts/analyze_behavior_label_intervention.py": [
+      "scripts/analyze_behavior_repair_all_queries.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/legal_label_decoding.py",
+      "scripts/run_behavior_label_intervention.py",
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/run_detriever_output_proxy.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_dtd_paper_baselines.py",
+      "scripts/run_multidataset_main.py"
+    ],
+    "scripts/check_query_tam_live_v1.py": [
+      "scripts/start_query_tam_cloud_v2.py"
+    ],
+    "scripts/start_query_tam_cloud_v2.py": [
+      "scripts/query_tam_cloud_ops_v1.py"
+    ],
+    "scripts/analyze_behavior_qwenvision_two_complete_cpu_v3.py": [
+      "scripts/analyze_behavior_repair_all_queries.py",
+      "scripts/behavior_internvl_five_native_cloud_v4.py",
+      "scripts/behavior_internvl_five_v2_adapter.py",
+      "scripts/behavior_paper_post_stop_slots_v2.py",
+      "scripts/behavior_paper_queue_v3_canonical_v4_policy.py",
+      "scripts/behavior_qwen_three_seed_cloud_v1.py",
+      "scripts/behavior_qwenvision_two_cloud_v1.py",
+      "scripts/behavior_task_prompt_policy.py",
+      "scripts/prepare_behavior_queue_CPU_tokenizers_v1.py",
+      "scripts/prepare_behavior_qwen_three_seed.py",
+      "scripts/run_behavior_qwen_three_seed.py"
+    ],
+    "scripts/prepare_behavior_qwen_three_seed.py": [
+      "scripts/behavior_internvl_five_v2_policy.py",
+      "scripts/behavior_paper_queue_v2_policy.py",
+      "scripts/behavior_qwen_three_seed_policy.py",
+      "scripts/behavior_qwenvision_host_policy.py",
+      "scripts/prepare_behavior_internvl_five_v2.py"
+    ],
+    "scripts/prepare_behavior_internvl_five_v2.py": [
+      "scripts/behavior_internvl_five_v2_policy.py",
+      "scripts/behavior_internvl_policy.py",
+      "scripts/behavior_paper_queue_v2_policy.py",
+      "scripts/behavior_qwenvision_host_policy.py"
+    ],
+    "scripts/behavior_qwenvision_host_policy.py": [
+      "scripts/behavior_qwenvision_control_policy.py"
+    ],
+    "scripts/behavior_qwenvision_control_policy.py": [
+      "scripts/behavior_p2_matched_policy.py"
+    ],
+    "scripts/behavior_paper_queue_v2_policy.py": [
+      "scripts/behavior_paper_four_scope_policy.py",
+      "scripts/behavior_paper_next_free_slot_policy.py"
+    ],
+    "scripts/behavior_paper_next_free_slot_policy.py": [
+      "scripts/behavior_paper_four_scope_policy.py"
+    ],
+    "scripts/behavior_paper_four_scope_policy.py": [
+      "scripts/behavior_paper_parallel_policy.py"
+    ],
+    "scripts/behavior_paper_parallel_policy.py": [
+      "scripts/behavior_task_prompt_cloud.py"
+    ],
+    "scripts/behavior_internvl_five_v2_policy.py": [
+      "scripts/behavior_p2_matched_policy.py",
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/prepare_behavior_queue_CPU_tokenizers_v1.py": [
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/behavior_qwenvision_two_cloud_v1.py": [
+      "scripts/behavior_qwenvision_two_host_policy_v1.py",
+      "scripts/behavior_task_prompt_cloud.py",
+      "scripts/prepare_behavior_qwen_three_seed.py"
+    ],
+    "scripts/behavior_qwenvision_two_host_policy_v1.py": [
+      "scripts/behavior_qwenvision_two_policy_v1.py"
+    ],
+    "scripts/behavior_qwenvision_two_policy_v1.py": [
+      "scripts/behavior_p2_matched_policy.py"
+    ],
+    "scripts/behavior_qwen_three_seed_cloud_v1.py": [
+      "scripts/behavior_task_prompt_cloud.py"
+    ],
+    "scripts/behavior_paper_queue_v3_canonical_v4_policy.py": [
+      "scripts/behavior_paper_four_scope_policy.py",
+      "scripts/behavior_paper_next_free_slot_policy.py",
+      "scripts/collect_behavior_priority_zero.py"
+    ],
+    "scripts/behavior_paper_post_stop_slots_v2.py": [
+      "scripts/behavior_internvl_five_native_cloud_v4.py",
+      "scripts/behavior_paper_queue_v3_canonical_v4_policy.py",
+      "scripts/behavior_qwen_three_seed_cloud_v1.py",
+      "scripts/behavior_qwenvision_two_cloud_v1.py",
+      "scripts/behavior_task_prompt_cloud.py",
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/behavior_internvl_five_native_cloud_v4.py": [
+      "scripts/behavior_task_prompt_cloud.py"
+    ],
+    "scripts/run_behavior_qwen_three_seed_proj.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_dtd_decision_states.py",
+      "scripts/run_dtd_learned_velocity.py",
+      "scripts/run_multidataset_main.py"
+    ],
+    "scripts/run_dtd_decision_states.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_dtd_learned_velocity.py",
+      "scripts/run_multidataset_main.py"
+    ],
+    "scripts/audit_behavior_p1_recheck.py": [
+      "scripts/run_behavior_priority_analysis.py"
+    ],
+    "scripts/run_behavior_internvl_five_v2.py": [
+      "scripts/behavior_internvl_five_v2_adapter.py",
+      "scripts/behavior_internvl_five_v2_policy.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/run_behavior_p2_matched.py",
+      "scripts/run_dtd_learned_velocity.py"
+    ],
+    "scripts/run_behavior_p2_matched.py": [
+      "scripts/behavior_p2_matched_policy.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/legal_label_decoding.py",
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_behavior_priority_analysis.py",
+      "scripts/run_dtd_learned_velocity.py"
+    ],
+    "scripts/run_behavior_qwenvision_two_control_v1.py": [
+      "scripts/behavior_qwenvision_two_policy_v1.py",
+      "scripts/collect_behavior_priority_zero.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_behavior_p2_matched.py",
+      "scripts/run_dtd_learned_velocity.py"
+    ],
+    "scripts/analyze_behavior_queue_complete_cpu_v2.py": [
+      "scripts/analyze_behavior_repair_all_queries.py",
+      "scripts/behavior_critical_followup_cloud.py",
+      "scripts/behavior_internvl_five_native_cloud_v4.py",
+      "scripts/behavior_internvl_five_v2_adapter.py",
+      "scripts/behavior_paper_post_stop_slots_v1.py",
+      "scripts/behavior_paper_queue_v2_policy.py",
+      "scripts/behavior_qwen_three_seed_cloud_v1.py",
+      "scripts/behavior_task_prompt_policy.py",
+      "scripts/prepare_behavior_queue_CPU_tokenizers_v1.py",
+      "scripts/prepare_behavior_qwen_three_seed.py",
+      "scripts/run_behavior_qwen_three_seed.py"
+    ],
+    "scripts/behavior_paper_post_stop_slots_v1.py": [
+      "scripts/behavior_critical_followup_cloud.py",
+      "scripts/behavior_internvl_five_native_cloud_v4.py",
+      "scripts/behavior_paper_queue_v2_policy.py",
+      "scripts/behavior_qwen_three_seed_cloud_v1.py",
+      "scripts/behavior_task_prompt_cloud.py",
+      "scripts/behavior_task_prompt_policy.py"
+    ],
+    "scripts/run_behavior_qwenvision_two_host_v1.py": [
+      "scripts/behavior_qwenvision_two_host_policy_v1.py",
+      "scripts/run_behavior_qwenvision_two_control_v1.py"
+    ],
+    "scripts/behavior_qwenvision_two_fresh_capture_v1.py": [
+      "scripts/behavior_qwenvision_two_host_policy_v1.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_behavior_qwenvision_two_control_v1.py"
+    ],
+    "scripts/run_behavior_ablation.py": [
+      "scripts/multidataset_protocol.py",
+      "scripts/multimodal_model_adapter.py",
+      "scripts/run_dtd_decision_states.py",
+      "scripts/run_dtd_learned_velocity.py",
+      "scripts/run_multidataset_main.py"
+    ],
+    "scripts/run_behavior_qwenvision_two_native_v1.py": [
+      "scripts/behavior_qwenvision_two_fresh_capture_v1.py",
+      "scripts/behavior_qwenvision_two_host_policy_v1.py",
+      "scripts/run_behavior_qwenvision_two_host_v1.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "scripts/analyze_behavior_full_test_labels_complete_cpu.py",
+      "sha256": "f3e55824aa41913aff65fa4ddf92159784a07351a4ad09b6d2e0c77ec0aeecb6",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/analyze_behavior_label_intervention.py",
+      "sha256": "06d357e482dfbce9870ed779fa91a720f35f2b06024fda5cb3b0d3b6f3743ab3",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/analyze_behavior_paper_p0.py",
+      "sha256": "5c32b5e63071124d5f2718172b5ad6d5d9b07bc0137f9ed46b48f4493e6ebbcb",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/analyze_behavior_queue_complete_cpu_v2.py",
+      "sha256": "6ac96cd9e6865a80d1812fdcdb2c7ed1cff61199cd8fb997f08817b999981df7",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/analyze_behavior_qwenvision_match_control_v1.py",
+      "sha256": "22d357785d774113160cc85df8df18655717d56c8695f2774492347c9f1f8858",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/analyze_behavior_qwenvision_two_complete_cpu_v3.py",
+      "sha256": "ef1c60f9bfd37ba228246628c8777585575234f6469f105d0503e7f69c9aab50",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/analyze_behavior_repair_all_queries.py",
+      "sha256": "2e96a56502a8838c9f5ee80f72473c1ef25731bf51bfa8688285dc7400ef34ec",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/analyze_behavior_task_prompt_complete_cpu.py",
+      "sha256": "67625fa1b1e801dc932d2b471a9fbc85d8f9ef4297e578a998c93f8af8671085",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/analyze_query_tam_pilot_v1.py",
+      "sha256": "9de8ac0bb6da6831cdecc4b17f1751eedf14edaac7dc8900c18366f6431839e5",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/attach_behavior_label_inputs.py",
+      "sha256": "52d8e2bef245cbf1708b7b81d76d02fe33d6ba846538b3c5eb8d397facf96aa8",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/audit_behavior_p1_recheck.py",
+      "sha256": "7a2e419075900115795736ddaa8e232d721fa1127e508dad589aac18d5248cdc",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/behavior_critical_followup_cloud.py",
+      "sha256": "df319427755b3b6f019010cf825feff0fcbf68d86754d709508fe2b7ccdf6ef9",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_internvl_five_native_cloud_v4.py",
+      "sha256": "f0639e21dbbf2da404ffa03133ea4283e472b9b2377635848b9f617c09c22b7c",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_internvl_five_v2_adapter.py",
+      "sha256": "2fa14c6871ba130600f24fc3d750fe3a48980ee1a7233115e26782fd79bfc6f6",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/behavior_internvl_five_v2_policy.py",
+      "sha256": "be218134df97348af560d84fad1176049b5113d45ceae802ff41214d0d79a601",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_internvl_native_training_v3.py",
+      "sha256": "661f3040e0195d0c4a7f6cfb5d2ce712f139be56a54f691850620214b8716d17",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/behavior_internvl_policy.py",
+      "sha256": "da00a1bcc8e5e64bb01a35976f7120bde8d721fd10121ae3c302552aeb52fbb4",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_p2_matched_policy.py",
+      "sha256": "9542a15ea22300d835a67b9ae982b33a56e890d559c35261fac2e4c4467ca28f",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_four_scope_policy.py",
+      "sha256": "26329530303bf90a98c9852d2fd36a7e31bbeed3f4d14a90dc61ebf03ad0bca9",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_next_free_slot_policy.py",
+      "sha256": "27f6d433af80c43573d7963921e67cd29a346cf64f9d6bbea224080ecd0db44e",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_parallel_policy.py",
+      "sha256": "7665c3bd9054b7dc0d94a05b852d8a127f983013254eff20e2468f1023e07e6d",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_post_stop_slots_v1.py",
+      "sha256": "8c4ef4ba64e78b13cac6200d49bce76814ee93fcc4d13b9f130bb874fd56ea0e",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_post_stop_slots_v2.py",
+      "sha256": "5de050def4f74e1166f7815df264e35a1d2b6174837660b1d14e545b61584cfa",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_queue_v2_policy.py",
+      "sha256": "f2ec0d550b4740c023dbaaae218c7a98d7506884d34a4be9e467671a6d7496ee",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_paper_queue_v3_canonical_v4_policy.py",
+      "sha256": "6a51cda959cb0f83f0a5bdb663cce219aad10140cec917f63db56bcaa907f4e4",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwen_three_seed_cloud_v1.py",
+      "sha256": "d680ffcd15265bdf6372553a16e33cfddeb767b318e43b89c4c26700f505bbba",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwen_three_seed_policy.py",
+      "sha256": "cd2116cec64ebaffbd94b610d4fa134c920ac26cd9864cb87a851d1fce487b48",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwenvision_control_policy.py",
+      "sha256": "a89610a67ba038c044425448a96290b4548ae9597a726bb359139ce2406091e8",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwenvision_host_policy.py",
+      "sha256": "7b773f0fbaa125d4ceb16dd1b97e9c7714ebe0f29691736289e5fdc5f2e15512",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwenvision_two_cloud_v1.py",
+      "sha256": "96a2d502ec11d28d380b7df2fd1b360150c8e49e8efb8371ab928f6244ebfd7a",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwenvision_two_fresh_capture_v1.py",
+      "sha256": "62a25aa19bb50d5036e2ff55d3e44ecb510cacdf8bdbe686f030bd67b5d0514e",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/behavior_qwenvision_two_host_policy_v1.py",
+      "sha256": "ba25f620c44d3e341d1727dc93e53d5d1f0be4534422bae61492a62291e0b51c",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_qwenvision_two_policy_v1.py",
+      "sha256": "d4d97a340f56b7f89464a4939cfc5a61dc164b46590ca3abde481ef1ec204dc9",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_task_prompt_cloud.py",
+      "sha256": "0fa380f2359dbb662f9dd2674c07519c55be88e80f3d841c5161c77e2ffc0bb4",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/behavior_task_prompt_policy.py",
+      "sha256": "1284a9bb7f0ce3cfa842b709231c1ed818e2e37c8e35884c5fb5fc8f2b4d017b",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/check_query_tam_live_v1.py",
+      "sha256": "ed2fdc0fa4494babe814fd0f8ad2c7a84b5787b6125af25b4645a0ec6992e07d",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/collect_behavior_priority_zero.py",
+      "sha256": "6f69787a150c086c61f8c08234c56346a7043f9d2339f38097f1558a27a56a73",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/detriever_proxy.py",
+      "sha256": "f379ce0137faff3fa8a2f71fd17edde540074789682893f520b4879503631afe",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/legal_label_decoding.py",
+      "sha256": "1ae64556431accaadff8990605f5c2a699eb875cb26ee4d3ab9bfec790fde1e5",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/multidataset_protocol.py",
+      "sha256": "02acc4088193316b01d0d924a9be8a7c7058360acd2ba42abb04729f1c324e8e",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/multimodal_model_adapter.py",
+      "sha256": "43798054109fa9079c9cd6473640f9b5abc5335e641e12a0a075e1b9ac9990ef",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/prepare_behavior_internvl_five_v2.py",
+      "sha256": "ae3a481698d34845defbbaca73ae85c461284b07858ff083cf7e62803b030076",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/prepare_behavior_label_intervention.py",
+      "sha256": "f3a453e3d13312401c508ad37ce4e95976d1a7efb1e124b8e6263bb77a5cf379",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/prepare_behavior_queue_CPU_tokenizers_v1.py",
+      "sha256": "9e40e9a006bd99356d79b6c0488456f7695f5aea4f095810ff49dc40a63326a3",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/prepare_behavior_qwen_three_seed.py",
+      "sha256": "a2d8f2d145cec6d63932ead20e4795e84a2bea5512a935b39e1a1bd214fbb8f9",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/prepare_behavior_task_prompt_plan.py",
+      "sha256": "156dc41545e73e6967009535b4a387910be05d815e495d6e21469f9580f2b4f4",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/prepare_detriever_input_states.py",
+      "sha256": "c90df3cc254bff318d4ca4d9706f86446d6af2152046623d9b63728efb3516d6",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/prepare_query_tam_pilot_v1.py",
+      "sha256": "8f21b7d69bedca4e6e46bbc119515497b5a79247012d1731fe7a1923fb9f65a9",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/query_tam_adapter_v1.py",
+      "sha256": "1861493448230624a6d7dc3b29e62b0ba84034a45b417ffd903b9971830ac595",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/query_tam_cloud_ops_v1.py",
+      "sha256": "91f6d84b5731e7a2a8dea43aee667d53208292dd4f29a97eea948218af44fc88",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/run_behavior_ablation.py",
+      "sha256": "2f22c41820171147a5436ade5cfa3608b77bda619b09eef0e9b90908a5d25558",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_full_test_labels.py",
+      "sha256": "e221315e81ecd99c74886da309aeaba48ac2170d87bcf4a049526d7ebc1d1eb1",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_internvl_five_v2.py",
+      "sha256": "21ba6f47e53243cbb37e37ade432c0ac98f2c8e24b889a3b9e17e21163cb549c",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_label_intervention.py",
+      "sha256": "50d2d2378e43ffff7d3614d5565b917bdd50bd7af51645da9534b502ab7c6580",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/run_behavior_p2_matched.py",
+      "sha256": "ccbbf66b9f175352ae85aaa0d0de4d9c7008b734b21e0d5d27a4544362fab8e6",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/run_behavior_priority_analysis.py",
+      "sha256": "ff3c625f87d40e1e345742018d8db6ec01f36f0e10ab82a9946bba95aec85717",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/run_behavior_qwen_three_seed.py",
+      "sha256": "8aaf87459aa9279b5b84bde2e18eeb5b5d4d95a8ac35599094f493a02f53b258",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_qwen_three_seed_proj.py",
+      "sha256": "1a254ac66fa75493a43926220b4f8bece3132b14cd3d9ce9c860bfece3de8e7c",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_qwenvision_two_control_v1.py",
+      "sha256": "9d169557f67a5ddaccf4b12ee847f552c626eb74f341a8792d696cca78c94872",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_qwenvision_two_host_v1.py",
+      "sha256": "cc67b3af889f10bc543af3f0bd503f8c91567ee1cd973ff73dbcdec9b13a8eed",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_qwenvision_two_native_v1.py",
+      "sha256": "f6d702daf14c32537f77341325cccd0ab76f87e1ce9ad07c146472b6b1132c19",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_behavior_task_prompt.py",
+      "sha256": "82686613d06046df87cd5935e670204041f2b6c6964eee37c56195af82d69f85",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_detriever_output_proxy.py",
+      "sha256": "8c6fd99c047e594609aaea20e08d4115f2d60823d59ef19a3949c4dd8370884a",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_dtd_decision_states.py",
+      "sha256": "6e6110514cb1b58a7dc4c278f081ec508f2130e222454d7416351e8a7eee587d",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_dtd_hidden_rices_pilot.py",
+      "sha256": "a82ee1e0db211adbae6d997b47ef05438d0d478e290dc1abd9d44c9052aaaedc",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/run_dtd_learned_velocity.py",
+      "sha256": "5e260ed6b06af398262899be0e5cc4121664e853c89479ac53190a0a339f3b5d",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_dtd_paper_baselines.py",
+      "sha256": "8964dbebc241bd04edfd061348855ef515670eef94e4ac7eda2ede9dbc936447",
+      "role": "required_implementation_dependency"
+    },
+    {
+      "path": "scripts/run_multidataset_main.py",
+      "sha256": "84813f0d73a95b5205bf4e31d7722d37ae9556f09e0641ab12e6892847ec4b19",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/run_query_tam_pilot_v1.py",
+      "sha256": "7bdf18a23777e04eb25a896d4d8a46c02b3e59b781bc4ef6d72b2108d043f243",
+      "role": "curated_scientific_or_audit_root"
+    },
+    {
+      "path": "scripts/start_query_tam_cloud_v2.py",
+      "sha256": "86f40cdb2757f42e25acfe25d6c1bbadbef00c0f198b3999f20d0751443f7e22",
+      "role": "required_implementation_dependency"
+    }
+  ],
+  "limits": "Static imports only; dynamic imports and frozen package/lock consumers also remain authoritative. This is not deletion authorization."
+}

@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-05T16:35:43.911113+00:00",
+  "human_request": "Pause experiments and consolidate current ideas, code, verified results, and next steps.",
+  "automation_id": "behavioricl",
+  "automation_status": "PAUSED",
+  "fresh_actual_account_API": [],
+  "expected_fields_injected": false,
+  "live_GPU_count": 0,
+  "exact_operational_CIM_processes": [],
+  "new_cloud_action": false,
+  "science_auto_resume_authorized_now": false,
+  "old_disks_and_frozen_sources_preserved": true,
+  "TAM_status": "stopped_before_native_or_worker_execution_no_scientific_results",
+  "TAM_stop_receipt": "results/cloud_trial/5cngvs2t9ahe5p-tam/session_1/stop_confirmation.json",
+  "TAM_stop_receipt_SHA256": "374494835c64e8430ebb0132247873473678331b4b74d5f66d366a386f659207",
+  "historical_independent_GPU_estimate_USD": 22.965898649844448,
+  "TAM_independent_GPU_estimate_USD": 0.09217733472585678,
+  "total_GPU_estimate_USD": 23.058075984570305,
+  "estimate_not_invoice": true,
+  "storage_included": false
+}

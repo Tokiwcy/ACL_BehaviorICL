@@ -1,0 +1,566 @@
+{
+  "version": 1,
+  "purpose": "exploratory fixed-image changed-query TAM; not new full-test accuracy or causal proof",
+  "user_request": "改变query，复用Token Activation Map代码，比较query+image空间响应；优先于InternVL",
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+  "model_inventory": {
+    "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "files_SHA256": {
+      "model-00001-of-00002.safetensors": "30a01a0556622645a3cce87b655bbbbbc1f170c196099f1b666c93202c3339a9",
+      "model-00002-of-00002.safetensors": "046296a2a387efb43b0c997d5833c789604d168834f6e0d3064bf7bb13d002a6",
+      "tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+      "model.safetensors.index.json": "58a7841d7bff2548dd91577d216274a83cf1b500bc6a534b809d6c1b1707cf2b",
+      "generation_config.json": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44",
+      "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "config.json": "edac7703329133edfc53e46ac0081835144c99d7eebf28b71c732694d435224d"
+    },
+    "actual_model_weights_present": true
+  },
+  "environment": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "transformers": "5.13.0",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "Pillow": "12.2.0"
+  },
+  "TAM": {
+    "repository": "https://github.com/xmed-lab/TAM",
+    "commit": "7c7df1d3df418bb9467ca68ff2f00ff1f26a6f4c",
+    "SHA": {
+      "tam.py": "18bc233edf416de0846b09f441a7bcf5496916f500da49014ceb3ec8c81f7067",
+      "demo.py": "691b3c9f50870152e8978c32c65cff28056d227c45e4bf27ce265005fe9d69cc",
+      "qwen_utils.py": "6ca111565a3da9c666aded4e9107a98aa47513d5a012dc9442eb64518d6a31c4",
+      "requirements.txt": "d8208c9ea46dfd57713df1701f78c3e8fc62615dc2f2920e20fdd20b71a9738c",
+      "README.md": "a3b9a667f6dc1cb66fa55b0ec787d393cb14127e4340fc85e3b215bcd596ccd5"
+    },
+    "author_source_unchanged": true
+  },
+  "examples": [
+    {
+      "dataset": "cub",
+      "sample_id": "cub_04595",
+      "image_path": "datasets/CUB_200_2011/images/079.Belted_Kingfisher/Belted_Kingfisher_0096_70347.jpg",
+      "image_SHA": "32fc4f91c8d12958f45014717694be9a2708d028db1a22818769e3eb9e5f25e5",
+      "bundle_path": "inputs/cub-cub_04595.jpg",
+      "historical_group": "task_only",
+      "target": "belted kingfisher",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the bird's head and beak.",
+        "focus_b": "Describe the bird's wings and tail."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "belted kingfisher",
+          "correct": true,
+          "demo_ids": [
+            "cub_04569",
+            "cub_04575",
+            "cub_04764",
+            "cub_04582"
+          ],
+          "demo_labels": [
+            "belted kingfisher",
+            "belted kingfisher",
+            "ringed kingfisher",
+            "belted kingfisher"
+          ],
+          "scores": [
+            0.9970812201499939,
+            0.9973332285881042,
+            0.9975899457931519,
+            0.9979212284088135
+          ]
+        },
+        "generic": {
+          "prediction": "green kingfisher",
+          "correct": false,
+          "demo_ids": [
+            "cub_05424",
+            "cub_09364",
+            "cub_04452",
+            "cub_04647"
+          ],
+          "demo_labels": [
+            "clark nutcracker",
+            "black throated blue warbler",
+            "tropical kingbird",
+            "green kingfisher"
+          ],
+          "scores": [
+            0.9989289045333862,
+            0.9989833831787109,
+            0.9990144371986389,
+            0.9992814660072327
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_05165",
+      "image_path": "datasets/CUB_200_2011/images/089.Hooded_Merganser/Hooded_Merganser_0076_796756.jpg",
+      "image_SHA": "08267f53ba2c4f57161c9eeb690887d83dace182d3f44b5b5f49980ab2e66771",
+      "bundle_path": "inputs/cub-cub_05165.jpg",
+      "historical_group": "generic_only",
+      "target": "hooded merganser",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the bird's head and beak.",
+        "focus_b": "Describe the bird's wings and tail."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "red breasted merganser",
+          "correct": false,
+          "demo_ids": [
+            "cub_05172",
+            "cub_05206",
+            "cub_05211",
+            "cub_05235"
+          ],
+          "demo_labels": [
+            "hooded merganser",
+            "red breasted merganser",
+            "red breasted merganser",
+            "red breasted merganser"
+          ],
+          "scores": [
+            0.9950913190841675,
+            0.9951859712600708,
+            0.9952196478843689,
+            0.9967131018638611
+          ]
+        },
+        "generic": {
+          "prediction": "hooded merganser",
+          "correct": true,
+          "demo_ids": [
+            "cub_03031",
+            "cub_02870",
+            "cub_02970",
+            "cub_05181"
+          ],
+          "demo_labels": [
+            "western grebe",
+            "eared grebe",
+            "pied billed grebe",
+            "hooded merganser"
+          ],
+          "scores": [
+            0.9976242184638977,
+            0.9977440237998962,
+            0.9978769421577454,
+            0.9980276823043823
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_04611",
+      "image_path": "datasets/CUB_200_2011/images/079.Belted_Kingfisher/Belted_Kingfisher_0014_70910.jpg",
+      "image_SHA": "913bf45b046c428283a265a16b77a7d0ab9b793c518384c3f0785a1eba259cb2",
+      "bundle_path": "inputs/cub-cub_04611.jpg",
+      "historical_group": "both_correct",
+      "target": "belted kingfisher",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the bird's head and beak.",
+        "focus_b": "Describe the bird's wings and tail."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "belted kingfisher",
+          "correct": true,
+          "demo_ids": [
+            "cub_04570",
+            "cub_04572",
+            "cub_04553",
+            "cub_04590"
+          ],
+          "demo_labels": [
+            "belted kingfisher",
+            "belted kingfisher",
+            "belted kingfisher",
+            "belted kingfisher"
+          ],
+          "scores": [
+            0.9977430701255798,
+            0.9981824159622192,
+            0.9983009696006775,
+            0.998311460018158
+          ]
+        },
+        "generic": {
+          "prediction": "belted kingfisher",
+          "correct": true,
+          "demo_ids": [
+            "cub_09295",
+            "cub_04590",
+            "cub_04822",
+            "cub_04553"
+          ],
+          "demo_labels": [
+            "black and white warbler",
+            "belted kingfisher",
+            "white breasted kingfisher",
+            "belted kingfisher"
+          ],
+          "scores": [
+            0.9980140328407288,
+            0.9980260133743286,
+            0.998062252998352,
+            0.9981247782707214
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_06594",
+      "image_path": "datasets/CUB_200_2011/images/113.Baird_Sparrow/Baird_Sparrow_0001_794578.jpg",
+      "image_SHA": "f52cde81787b229a5ad6190d9b300ddc8af55df4e232bd6635f1c5df9b112214",
+      "bundle_path": "inputs/cub-cub_06594.jpg",
+      "historical_group": "both_wrong",
+      "target": "baird sparrow",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the bird's head and beak.",
+        "focus_b": "Describe the bird's wings and tail."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "black throated sparrow",
+          "correct": false,
+          "demo_ids": [
+            "cub_06644",
+            "cub_07191",
+            "cub_06607",
+            "cub_07218"
+          ],
+          "demo_labels": [
+            "black throated sparrow",
+            "henslow sparrow",
+            "baird sparrow",
+            "le conte sparrow"
+          ],
+          "scores": [
+            0.9956129193305969,
+            0.9956277012825012,
+            0.99610835313797,
+            0.9975364804267883
+          ]
+        },
+        "generic": {
+          "prediction": "grasshopper sparrow",
+          "correct": false,
+          "demo_ids": [
+            "cub_09074",
+            "cub_06929",
+            "cub_00685",
+            "cub_06520"
+          ],
+          "demo_labels": [
+            "warbling vireo",
+            "field sparrow",
+            "bobolink",
+            "great grey shrike"
+          ],
+          "scores": [
+            0.9973458051681519,
+            0.9974963068962097,
+            0.9975689053535461,
+            0.9975989460945129
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "grooved_0156",
+      "image_path": "datasets/dtd/images/grooved/grooved_0156.jpg",
+      "image_SHA": "00b10681e3c75b6281c16ab88a62925ec539c227e00e830adc828c2eadb98767",
+      "bundle_path": "inputs/dtd-grooved_0156.jpg",
+      "historical_group": "task_only",
+      "target": "grooved",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the local surface pattern and texture.",
+        "focus_b": "Describe the overall shape and background."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "grooved",
+          "correct": true,
+          "demo_ids": [
+            "grooved_0068",
+            "grooved_0100",
+            "grooved_0144",
+            "grooved_0047"
+          ],
+          "demo_labels": [
+            "grooved",
+            "grooved",
+            "grooved",
+            "grooved"
+          ],
+          "scores": [
+            0.9941142201423645,
+            0.9944535493850708,
+            0.9951900839805603,
+            0.9955659508705139
+          ]
+        },
+        "generic": {
+          "prediction": "lined",
+          "correct": false,
+          "demo_ids": [
+            "fibrous_0187",
+            "flecked_0147",
+            "meshed_0104",
+            "grid_0106"
+          ],
+          "demo_labels": [
+            "fibrous",
+            "flecked",
+            "meshed",
+            "grid"
+          ],
+          "scores": [
+            0.9963558316230774,
+            0.9964227676391602,
+            0.9964683651924133,
+            0.9966268539428711
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "honeycombed_0111",
+      "image_path": "datasets/dtd/images/honeycombed/honeycombed_0111.jpg",
+      "image_SHA": "b5f9306dade5bee9d00f98b06f216f2358ddc12954fd0ecc7ff58163e2a510d0",
+      "bundle_path": "inputs/dtd-honeycombed_0111.jpg",
+      "historical_group": "generic_only",
+      "target": "honeycombed",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the local surface pattern and texture.",
+        "focus_b": "Describe the overall shape and background."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "interlaced",
+          "correct": false,
+          "demo_ids": [
+            "interlaced_0166",
+            "interlaced_0172",
+            "interlaced_0130",
+            "interlaced_0102"
+          ],
+          "demo_labels": [
+            "interlaced",
+            "interlaced",
+            "interlaced",
+            "interlaced"
+          ],
+          "scores": [
+            0.9895549416542053,
+            0.990966796875,
+            0.9911866784095764,
+            0.9912432432174683
+          ]
+        },
+        "generic": {
+          "prediction": "honeycombed",
+          "correct": true,
+          "demo_ids": [
+            "paisley_0119",
+            "honeycombed_0100",
+            "zigzagged_0117",
+            "paisley_0012"
+          ],
+          "demo_labels": [
+            "paisley",
+            "honeycombed",
+            "zigzagged",
+            "paisley"
+          ],
+          "scores": [
+            0.9960656762123108,
+            0.9963019490242004,
+            0.9963968992233276,
+            0.9964068531990051
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "waffled_0125",
+      "image_path": "datasets/dtd/images/waffled/waffled_0125.jpg",
+      "image_SHA": "aaa3119f465addf23e6ad251f7acff7e4d8f5976b5dbd08dcbca20102b5c4e39",
+      "bundle_path": "inputs/dtd-waffled_0125.jpg",
+      "historical_group": "both_correct",
+      "target": "waffled",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the local surface pattern and texture.",
+        "focus_b": "Describe the overall shape and background."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "waffled",
+          "correct": true,
+          "demo_ids": [
+            "waffled_0133",
+            "waffled_0112",
+            "waffled_0182",
+            "waffled_0138"
+          ],
+          "demo_labels": [
+            "waffled",
+            "waffled",
+            "waffled",
+            "waffled"
+          ],
+          "scores": [
+            0.9981498718261719,
+            0.9982388615608215,
+            0.998308002948761,
+            0.9983412623405457
+          ]
+        },
+        "generic": {
+          "prediction": "waffled",
+          "correct": true,
+          "demo_ids": [
+            "waffled_0138",
+            "waffled_0112",
+            "waffled_0116",
+            "waffled_0182"
+          ],
+          "demo_labels": [
+            "waffled",
+            "waffled",
+            "waffled",
+            "waffled"
+          ],
+          "scores": [
+            0.997539222240448,
+            0.9976103901863098,
+            0.9977976679801941,
+            0.9979341626167297
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "blotchy_0090",
+      "image_path": "datasets/dtd/images/blotchy/blotchy_0090.jpg",
+      "image_SHA": "c9d316cdbf0f2eed50769cd3ca1ec62200c4c7a677e06a4393130eded0d01746",
+      "bundle_path": "inputs/dtd-blotchy_0090.jpg",
+      "historical_group": "both_wrong",
+      "target": "blotchy",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:",
+        "focus_a": "Describe the local surface pattern and texture.",
+        "focus_b": "Describe the overall shape and background."
+      },
+      "historical_ICL": {
+        "task": {
+          "prediction": "stained",
+          "correct": false,
+          "demo_ids": [
+            "stained_0062",
+            "stained_0114",
+            "blotchy_0042",
+            "smeared_0117"
+          ],
+          "demo_labels": [
+            "stained",
+            "stained",
+            "blotchy",
+            "smeared"
+          ],
+          "scores": [
+            0.9919765591621399,
+            0.9922626614570618,
+            0.9929203391075134,
+            0.993890643119812
+          ]
+        },
+        "generic": {
+          "prediction": "marbled",
+          "correct": false,
+          "demo_ids": [
+            "flecked_0057",
+            "crosshatched_0053",
+            "blotchy_0017",
+            "swirly_0089"
+          ],
+          "demo_labels": [
+            "flecked",
+            "crosshatched",
+            "blotchy",
+            "swirly"
+          ],
+          "scores": [
+            0.9949369430541992,
+            0.9950865507125854,
+            0.9951478242874146,
+            0.9951543807983398
+          ]
+        }
+      }
+    }
+  ],
+  "selection": "one SHA-deterministic query from each of four historical outcome strata per dataset; no visual/heatmap selection",
+  "input_processing": "same original apply_chat_template and 224 message hints; no new pixel budget; assert same pixels/grid across queries",
+  "natural_generation": {
+    "do_sample": false,
+    "max_new_tokens": 24,
+    "maps_first_non_special_tokens": 6
+  },
+  "fixed_target_probe": "same full gold-label token sequence teacher-forced for each query; explicitly not a model prediction",
+  "measures": [
+    "TAM post-ECI maps",
+    "raw class-to-vision CAM",
+    "per-layer last-input decoder state",
+    "same-target map distances"
+  ],
+  "hypothesis_limits": [
+    "Original image precedes query in causal decoder; vision-token raw maps for a fixed target may stay unchanged.",
+    "Post-ECI differences can reflect changed textual context subtraction, not attention weights.",
+    "Natural answer changes confound target token changes; fixed-target control is required.",
+    "Existing improvement changes retrieval representations/demo selection; source-query TAM is a mechanistic probe, not a replay of downstream four-demo ICL."
+  ],
+  "original_protocol_SHA": "1aa96a01ff2e7bac7c48c119002361641ec131accbbdfef1346a9b2f1458677b",
+  "original_complete_audit_SHA": "430a2e887a4f2f93f564c7d0139c7bd50b1c05c94041b412f02e8fac06965911",
+  "historical_predictions_SHA": {
+    "cub/task": "8865395c19dbdb2a606707aa9412d83e3f7b55d86600ae48ace8e3c3f86d09e9",
+    "cub/generic": "e77c7af5c1014663f93a25d55872310082102b060308f3854c74fee01cd6057f",
+    "dtd/task": "73e54345091257381d18a7c26030988409e75e79ff51ce6df152942ba8ab5e80",
+    "dtd/generic": "08770ff251025461344bd16a8406bdc2350e8231f1ed09c5e81c0a1280a60b72"
+  },
+  "local_CUDA": false,
+  "pretrained_weights_loaded_locally": false,
+  "protocol_hash": "568f17e6b054bda816d41a18a7e7c8a434b6d9255cdb9a486298cece90a2830f"
+}

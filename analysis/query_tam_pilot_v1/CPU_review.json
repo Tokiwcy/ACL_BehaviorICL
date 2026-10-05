@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-05T16:07:05.781791+00:00",
+  "six_actual_CPU_tests_passed": true,
+  "test_runtime_seconds": 0.587,
+  "test_sources_SHA": {
+    "tests/test_query_tam_pilot_v1.py": "03e82f8520bf9ea6879642ab9ffa7260cffd12a40acf93daa6979f794e90768b",
+    "tests/test_query_tam_cloud_v1.py": "e6e72165800f477ed5ee7de97cf2c7012c3b4f2a79e294678a0eca35923475ad"
+  },
+  "operation_hash": "419cbdc4442d81f7cb715b447d0f2d765125f1d08cafb5a46ff4226644e7dffa",
+  "source_members_SHA": {
+    "scripts/run_query_tam_pilot_v1.py": "7bdf18a23777e04eb25a896d4d8a46c02b3e59b781bc4ef6d72b2108d043f243",
+    "scripts/query_tam_adapter_v1.py": "1861493448230624a6d7dc3b29e62b0ba84034a45b417ffd903b9971830ac595",
+    "scripts/query_tam_cloud_ops_v1.py": "91f6d84b5731e7a2a8dea43aee667d53208292dd4f29a97eea948218af44fc88",
+    "scripts/start_query_tam_cloud_v1.py": "6d682b04dbca7da19b88b07c5c073cc2687202c81e56f0cc948ad806d9efdb3e",
+    "protocol.json": "00fe86823030aa000d7c8f58dd0d4a327c15a66319366c6dbad1df1f678ca851",
+    "tam/tam.py": "18bc233edf416de0846b09f441a7bcf5496916f500da49014ceb3ec8c81f7067",
+    "tam/demo.py": "691b3c9f50870152e8978c32c65cff28056d227c45e4bf27ce265005fe9d69cc",
+    "tam/qwen_utils.py": "6ca111565a3da9c666aded4e9107a98aa47513d5a012dc9442eb64518d6a31c4",
+    "tam/requirements.txt": "d8208c9ea46dfd57713df1701f78c3e8fc62615dc2f2920e20fdd20b71a9738c",
+    "tam/README.md": "a3b9a667f6dc1cb66fa55b0ec787d393cb14127e4340fc85e3b215bcd596ccd5",
+    "tam/source_receipt.json": "5a653f380c75a552a905ae4d5708937570af7eeae6b4dc4b62e8c8c8b2db6802",
+    "inputs/cub-cub_04595.jpg": "32fc4f91c8d12958f45014717694be9a2708d028db1a22818769e3eb9e5f25e5",
+    "inputs/cub-cub_05165.jpg": "08267f53ba2c4f57161c9eeb690887d83dace182d3f44b5b5f49980ab2e66771",
+    "inputs/cub-cub_04611.jpg": "913bf45b046c428283a265a16b77a7d0ab9b793c518384c3f0785a1eba259cb2",
+    "inputs/cub-cub_06594.jpg": "f52cde81787b229a5ad6190d9b300ddc8af55df4e232bd6635f1c5df9b112214",
+    "inputs/dtd-grooved_0156.jpg": "00b10681e3c75b6281c16ab88a62925ec539c227e00e830adc828c2eadb98767",
+    "inputs/dtd-honeycombed_0111.jpg": "b5f9306dade5bee9d00f98b06f216f2358ddc12954fd0ecc7ff58163e2a510d0",
+    "inputs/dtd-waffled_0125.jpg": "aaa3119f465addf23e6ad251f7acff7e4d8f5976b5dbd08dcbca20102b5c4e39",
+    "inputs/dtd-blotchy_0090.jpg": "c9d316cdbf0f2eed50769cd3ca1ec62200c4c7a677e06a4393130eded0d01746"
+  },
+  "package_SHA": "6ac9e37d585a07fea97c28a3497bfd91465ba895c7db90821517f9d0827e0b4f",
+  "original_TAM_source_unchanged": true,
+  "official_first_answer_index_repair_documented": true,
+  "no_local_pretrained_weights_or_CUDA": true,
+  "native_API_GPU_calls_mocked_in_CPU_tests": true,
+  "GPU_generation_compatibility_not_yet_proven": true,
+  "initial_fixture_errors": [
+    "Windows gbk default read fixed to explicit UTF-8",
+    "Windows temporary-file exclusive-open fixture fixed; production source unaffected"
+  ]
+}

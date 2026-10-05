@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-05T17:27:14.209122+00:00",
+  "scope": "portable repository evidence and handoff; not a new scientific completion",
+  "publication_base_commit": "5e31ae9044e7d53f42fd8eb9d2dc957aa3e91b89",
+  "published_original_artifact_SHAs_verified": 147,
+  "Git_index_original_byte_SHAs_verified": 147,
+  "packed_exact_original_artifacts": 7,
+  "materialization_conflict_and_SHA_path_tests": {
+    "passed": 3,
+    "pretrained_weights": false,
+    "cloud": false
+  },
+  "official_TAM_pinned_source_files_fetched_and_SHA_verified": 5,
+  "TAM_synthetic_CPU_tests": {
+    "passed": 3,
+    "actual_model_runs": 0,
+    "CUDA_VISIBLE_DEVICES": "-1"
+  },
+  "published_query_table_counts_recomputed": {
+    "P0": 139536,
+    "QV_match": 53718,
+    "full_label_query_arms": 30696,
+    "sampled_label_query_arms": 5120
+  },
+  "full_label_explicit_missing": 170,
+  "relative_Markdown_links_verified": 157,
+  "original_local_preservation_check": {
+    "scientific_source_lock_files": 755,
+    "archived_documents": 12,
+    "document_links": 130
+  },
+  "credential_pattern_scan_of_staged_files": "passed",
+  "raw_images_weights_private_operational_state_published": false,
+  "upstream_TAM_author_code_vendored": false,
+  "clean_clone_and_remote_CI": "verify after publication; local checks above are already passed",
+  "cloud_experiments_remain_paused": true,
+  "GPU_operations_performed": false,
+  "full_private_model_kernel_replay": false
+}

@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/xmed-lab/TAM",
+  "commit": "7c7df1d3df418bb9467ca68ff2f00ff1f26a6f4c",
+  "SHA": {
+    "tam.py": "18bc233edf416de0846b09f441a7bcf5496916f500da49014ceb3ec8c81f7067",
+    "demo.py": "691b3c9f50870152e8978c32c65cff28056d227c45e4bf27ce265005fe9d69cc",
+    "qwen_utils.py": "6ca111565a3da9c666aded4e9107a98aa47513d5a012dc9442eb64518d6a31c4",
+    "requirements.txt": "d8208c9ea46dfd57713df1701f78c3e8fc62615dc2f2920e20fdd20b71a9738c",
+    "README.md": "a3b9a667f6dc1cb66fa55b0ec787d393cb14127e4340fc85e3b215bcd596ccd5"
+  },
+  "author_source_unchanged": true
+}

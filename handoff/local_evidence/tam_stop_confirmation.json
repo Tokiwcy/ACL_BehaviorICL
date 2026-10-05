@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-05T16:19:12.419316+00:00",
+  "pod_id": "5cngvs2t9ahe5p",
+  "launch_id": "2c970df6411e458a92932827e564738e",
+  "reason": "controller_failure",
+  "disks_preserved": true,
+  "fresh_API": {
+    "id": "5cngvs2t9ahe5p",
+    "desiredStatus": "EXITED",
+    "runtimeStatus": "stopped",
+    "runtimeStatusReason": "stopped_by_user",
+    "gpuCount": 1,
+    "costPerHr": 0.99
+  },
+  "GPU_seconds_estimate": 335.19030809402466,
+  "GPU_cost_estimate_USD": 0.09217733472585678,
+  "estimate_not_invoice": true,
+  "storage_included": false
+}

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-05T01:54:05.871702+00:00",
+  "original_plan_hash": "42169b45de798701db67ff98b2d281d78e781de57ae19e0e585e50784e3c0304",
+  "original_host_implementation_hash": "5d284eab09f46e7b5a9051ebbedd1b54b964d7f3b68a2f69c7fc813bab9cea54",
+  "original_manifest_hash": "2f6a071810c9c85f04c92b82092d2bac5a6f4f6c88e20cd11898078334746855",
+  "code_sha256": {
+    "scripts/behavior_p2_matched_policy.py": "9542a15ea22300d835a67b9ae982b33a56e890d559c35261fac2e4c4467ca28f",
+    "scripts/behavior_qwenvision_two_fresh_capture_v1.py": "62a25aa19bb50d5036e2ff55d3e44ecb510cacdf8bdbe686f030bd67b5d0514e",
+    "scripts/behavior_qwenvision_two_host_policy_v1.py": "ba25f620c44d3e341d1727dc93e53d5d1f0be4534422bae61492a62291e0b51c",
+    "scripts/behavior_qwenvision_two_policy_v1.py": "d4d97a340f56b7f89464a4939cfc5a61dc164b46590ca3abde481ef1ec204dc9",
+    "scripts/collect_behavior_priority_zero.py": "6f69787a150c086c61f8c08234c56346a7043f9d2339f38097f1558a27a56a73",
+    "scripts/legal_label_decoding.py": "1ae64556431accaadff8990605f5c2a699eb875cb26ee4d3ab9bfec790fde1e5",
+    "scripts/multidataset_protocol.py": "02acc4088193316b01d0d924a9be8a7c7058360acd2ba42abb04729f1c324e8e",
+    "scripts/multimodal_model_adapter.py": "43798054109fa9079c9cd6473640f9b5abc5335e641e12a0a075e1b9ac9990ef",
+    "scripts/run_behavior_p2_matched.py": "ccbbf66b9f175352ae85aaa0d0de4d9c7008b734b21e0d5d27a4544362fab8e6",
+    "scripts/run_behavior_priority_analysis.py": "ff3c625f87d40e1e345742018d8db6ec01f36f0e10ab82a9946bba95aec85717",
+    "scripts/run_behavior_qwenvision_two_control_v1.py": "9d169557f67a5ddaccf4b12ee847f552c626eb74f341a8792d696cca78c94872",
+    "scripts/run_behavior_qwenvision_two_host_v1.py": "cc67b3af889f10bc543af3f0bd503f8c91567ee1cd973ff73dbcdec9b13a8eed",
+    "scripts/run_behavior_qwenvision_two_native_v1.py": "f6d702daf14c32537f77341325cccd0ab76f87e1ce9ad07c146472b6b1132c19",
+    "scripts/run_dtd_hidden_rices_pilot.py": "a82ee1e0db211adbae6d997b47ef05438d0d478e290dc1abd9d44c9052aaaedc",
+    "scripts/run_dtd_learned_velocity.py": "5e260ed6b06af398262899be0e5cc4121664e853c89479ac53190a0a339f3b5d"
+  },
+  "images": 17428,
+  "predictions": 7674,
+  "fixed_width": 256,
+  "train_steps": 1500,
+  "seed": 73,
+  "numerical_tolerance_added": false,
+  "source_policy": "all DTD+CUB rows fresh, no old source arrays",
+  "CPU_tests_not_native_compatibility": true,
+  "source_contract_hash": "dc01768ab88e2258fa577c6911e28de134cb3e11e582a348d69a9b818c62b005"
+}
