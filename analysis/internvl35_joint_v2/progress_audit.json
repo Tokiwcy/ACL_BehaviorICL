@@ -3377,13 +3377,13 @@
         },
         "detriever": {
           "state": "partial",
-          "completed": 2262,
+          "completed": 2531,
           "total": 5794,
           "selection_metrics": {
             "top4_same_label_fraction": 0.4524076630997584,
             "top4_any_same_label_fraction": 0.6958923023817742
           },
-          "correct": 1345,
+          "correct": 1536,
           "illegal_or_unknown": 0
         },
         "rices": {
@@ -3532,7 +3532,7 @@
   ],
   "state": "incomplete",
   "incomplete": [
-    "cub/detriever: partial 2262/5794",
+    "cub/detriever: partial 2531/5794",
     "cub/rices: selected 0/5794",
     "dogs/raw: missing_selection 0/8580",
     "dogs/proj: missing_selection 0/8580",

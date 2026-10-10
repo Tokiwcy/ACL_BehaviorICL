@@ -25,6 +25,8 @@ jobs:
         run: python scripts/verify_local_publication_v1.py
       - name: Check composite result status accounting
         run: python -m unittest discover -s tests -p test_results_publication_v1.py -v
+      - name: Check immutable publication snapshot selection
+        run: python -m unittest discover -s tests -p test_publication_snapshot_selection.py -v
       - name: Exercise failure boundaries without models or network
         run: python -m unittest discover -s tests -p test_handoff_tools.py -v
       - name: Restore exact compressed contracts and verify again

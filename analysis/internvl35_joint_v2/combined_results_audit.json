@@ -6006,13 +6006,13 @@
         },
         "detriever": {
           "state": "partial",
-          "completed": 2262,
+          "completed": 2531,
           "total": 5794,
           "selection_metrics": {
             "top4_same_label_fraction": 0.4524076630997584,
             "top4_any_same_label_fraction": 0.6958923023817742
           },
-          "correct": 1345,
+          "correct": 1536,
           "illegal_or_unknown": 0
         },
         "rices": {
@@ -6257,7 +6257,7 @@
   ],
   "state": "incomplete",
   "incomplete": [
-    "cub/detriever: partial 2262/5794",
+    "cub/detriever: partial 2531/5794",
     "cub/rices: selected 0/5794",
     "dogs/raw: missing_selection 0/8580",
     "dogs/proj: missing_selection 0/8580",
@@ -6274,7 +6274,7 @@
   ],
   "basis": {
     "aircraft_audit_sha256": "76f66f4891617cf6de1b8a147cbb3654588e39a6581fa72c6024e7cff7a743e2",
-    "joint_audit_sha256": "4db18e5a74873332756c9876003b682591fd2a2787b889e8399ed368c8c7ae04"
+    "joint_audit_sha256": "170da8ee7258725dc5ff67f164baf1104295d7e925a3f6eaa9568c3edff05935"
   },
   "note": "Composite of independently audited Aircraft v4 and joint CUB/Dogs/Pets; DTD is separate old single-patch audit"
 }

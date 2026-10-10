@@ -1,4 +1,5 @@
 """Offline verification of the October 10 published local supplement."""
+import argparse
 import ast
 import hashlib
 import json
@@ -7,10 +8,18 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / 'handoff/local_publish_manifest_20261010.json'
+COLLABORATOR_MANIFEST = ROOT / 'handoff/local_publish_manifest_20261010_collaborator_v1.json'
 
 
 def main():
-    manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--manifest', type=Path, help='Verify a specific immutable publication snapshot')
+    args = parser.parse_args()
+    selected = args.manifest or (COLLABORATOR_MANIFEST if COLLABORATOR_MANIFEST.exists() else MANIFEST)
+    manifest = json.loads(selected.read_text(encoding='utf-8'))
+    if 'previous_manifest_sha256' in manifest:
+        if hashlib.sha256(MANIFEST.read_bytes()).hexdigest() != manifest['previous_manifest_sha256']:
+            raise ValueError('Previous publication manifest changed')
     seen = set()
     secret_patterns = [rb'\bgh[oprsu]_[A-Za-z0-9]{20,}\b',
                        rb'\bgithub_pat_[A-Za-z0-9_]{30,}\b',
@@ -45,6 +54,7 @@ def main():
     if hashlib.sha256((ROOT / 'handoff/publish_manifest.json').read_bytes()).hexdigest() != manifest['original_manifest_sha256']:
         raise ValueError('Original handoff manifest changed')
     print(json.dumps({'state': 'local_publication_verified', 'files': len(seen),
+                      'publication_version': manifest['version'],
                       'dynamic_full_test_audited_cells': completed, 'dynamic_total_cells': 24,
                       'dtd_old_single_patch_audited_cells': 6,
                       'scientific_model_replay': False, 'live_gpu_state_checked': False}, indent=2))
