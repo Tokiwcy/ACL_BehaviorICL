@@ -1,0 +1,6 @@
+image_config={'max_tiles': 10, 'max_image_tokens': 256, 'do_image_splitting': True, 'tile_size': 512}
+
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]
+Loading weights:  60%|������������    | 424/707 [00:00<00:00, 4230.60it/s]
+Loading weights: 100%|��������������������| 707/707 [00:00<00:00, 5637.01it/s]
+one_image_source: {'input_tokens': 2302, 'visual_tokens': 1783, 'pixel_values_shape': [7, 1024, 768], 'peak_reserved_after_prepare_gb': 5.908203125, 'states_shape': [1, 30, 2048], 'states_finite': True, 'peak_reserved_gb': 7.826171875}

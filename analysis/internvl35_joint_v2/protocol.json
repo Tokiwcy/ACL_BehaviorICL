@@ -1,0 +1,43 @@
+{
+  "version": "joint_v2",
+  "base_protocol_sha256": "3c58286cb3efd5284d58a8837487136d7c24ef533755eb3c5979e507d5c4a054",
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "revision": "6bd4487402110ef9889ba50eb7aefeb302526fed",
+  "datasets": [
+    "cub",
+    "dogs",
+    "pets"
+  ],
+  "methods": [
+    "raw",
+    "proj",
+    "learn",
+    "gpt_mm",
+    "detriever",
+    "rices"
+  ],
+  "seed": 73,
+  "shots": 4,
+  "policy": "one HF greedy generate prefill; 36 input anchors from step0; historical GPT-MM answer-state indexing; bank-only original full teacher-forced forward for gold proxy",
+  "gold_backend": "original full cuDNN prefill; cached gold branch rejected by joint_v1 parity pilot, cosine0.9996466 below0.9999",
+  "joint_commit": "one durable row cursor after all arrays and answer rows flush; dependent progress published after authoritative cursor",
+  "gate": {
+    "samples_per_dataset": "8 bank + 4 query, SHA256(dataset/sample_id) order",
+    "cosine_min": 0.9999,
+    "generated_token_ids_exact": true,
+    "ordered_top4_exact": "Raw and GPT-MM over the fixed 8-bank pilot; bank proxy cosine top4 excluding self",
+    "not_full_retrieval_equivalence_proof": true
+  },
+  "unchanged": "native images, prompts, batch1 BF16, training, candidates, seed, 4shot and final legal decode from frozen v4",
+  "code_sha256": {
+    "internvl35_joint_config_v2.py": "6cbe63516bb5e0d916d7debfcc103b68c511ffaeb987b2f713f26d7367a1ae1b",
+    "internvl35_joint_source_v2.py": "c587652839a84b0612857f5ad1e3f809203833d074df9ec28350d5d5a52272b5",
+    "internvl35_joint_source_v1.py": "5374655cb912ff929cf9662dc2ec392b70ee5a9994fe60328e4605ac16206b8f",
+    "run_internvl35_joint_sources_v2.py": "15d6ecd1f58bdd52309a9bae457d1b7e2f4d0f62ebed415e45da38ffec90d80f",
+    "run_internvl35_joint_methods_v2.py": "4a6869ac598ab9b94b1a7b338b4321f740effed3de73b5df28326de6b6e3a498",
+    "run_internvl35_joint_icl_v2.py": "1c2e848b33eaedf58283d31860b9ecc84db86ff4a6d59e06519c77224ab68ab8",
+    "audit_internvl35_joint_v2.py": "dd0571c2d69cf288b90c7bf16ebc7962e416ed98eaf622da6bb062036f63ca6b",
+    "run_internvl35_joint_pipeline_v2.py": "b57884466f6de13073a9fec23acc873402cbe6e64e597473ec2d08339969b56e",
+    "check_internvl35_joint_v2.py": "2c67ef71ca1167c6c2f3c5ec8fe6eed20cc4d7f1ddce35d8c5393a2dca5969f2"
+  }
+}

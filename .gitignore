@@ -26,3 +26,6 @@ analysis/paper_repair_five_dataset_v1/query_level_results.csv
 analysis/paper_qwenvision_match_control_v1/query_level_results.csv
 handoff_validation_report.json
 *.handoff-part
+# Interrupted atomic audit writes and redundant local preparation consoles.
+analysis/**/*.tmp
+/internvl35_qwen_prepare*.log

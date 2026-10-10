@@ -1,0 +1,17 @@
+{
+  "state": "failed",
+  "started_utc": "2026-10-08T09:34:26.385635+00:00",
+  "pid": 4608,
+  "authorization": "Human explicitly resumed this task on2026-10-08 after user pause",
+  "previous_boot_identity": "2026-10-07T08:28:55.5000000Z",
+  "boot_identity": "2026-10-08T09:21:41.5000000Z",
+  "code_sha256": "10489a40770b8702032bbe89348e1dce17b6acbfb3f2b5b1bd9bfb9d14555895",
+  "base_protocol_sha256": "3c58286cb3efd5284d58a8837487136d7c24ef533755eb3c5979e507d5c4a054",
+  "protocol_sha256": "8e48449bb4fb5b24534eb34c782dd4347fad01a4b37d0273504760885fbaef97",
+  "saved_predictions": 3329,
+  "remaining_predictions": 4,
+  "os_event_basis": "Actual boot2026-10-08T09:21:41.5Z, Event6005 at17:21:57+08; no41/1001/6008 in queried2h; cause not asserted",
+  "checked_utc": "2026-10-08T09:35:00.304002+00:00",
+  "error": "CalledProcessError(1, ['C:\\\\Users\\\\toki_\\\\Documents\\\\ChatGPT\\\\BehaviorICL\\\\.venv\\\\Scripts\\\\python.exe', '-u', 'C:\\\\Users\\\\toki_\\\\Documents\\\\ChatGPT\\\\BehaviorICL\\\\scripts\\\\check_internvl35_joint_v1.py'])",
+  "finished_utc": "2026-10-08T09:35:16.885432+00:00"
+}

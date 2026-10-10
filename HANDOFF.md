@@ -1,5 +1,31 @@
 # 新 coding agent 接手指南
 
+> **2026-10-10 01:47 SGT 用户再次明确“继续”**：撤销下方22:44暂停。CUB Learn 2,699条完整预测及SHA、原科学协议/模型文件、完整已完成阶段的cache_guard命令计划通过CPU核验；暂停后无启动/异常关机事件，boot字段仅与之前已观察值相差1.800661秒，并非真实重启。当前入口 `scripts/resume_internvl35_user_pause_v2.py --authorization analysis/internvl35_joint_v2/user_continue_20261010_v2.json`，操作receipt `user_resume_1075062680e57a58.json`，日志 `user_resume_20261010.stdout.log` / `user_resume_20261010.stderr.log`。固定身份DWM PID2724、创建UTC 2026-10-09T01:08:36.6710440Z允许保留，其他GPU上下文拒绝；未知worker拒绝测试通过。原36条GPU门槛不重跑，原科学文件及逐条缓存清理保护不变，从Learn断点继续，恢复半小时汇报。旧已消费入口不得重启；新的真实系统崩溃不自动循环恢复，Hypervisor具体根因仍未定位。LFM、旧单patch和云端继续暂停。
+
+> **2026-10-09 22:44 SGT explicit human pause overrides all earlier resume authorizations**: joint_v2 supervisor and CUB Learn worker were stopped by verified PID/command/creation identity; internvl heartbeat is PAUSED. Committed CUB predictions: raw 5794/5794, proj 5794/5794, learn 2699/5794. Pause receipt: `analysis/internvl35_joint_v2/user_pause_20261009T144456Z.json`; original status and transition bytes preserved. Do not restart a GPU worker or consumed launcher until the human explicitly resumes. The 36-case gate and frozen scientific bindings remain unchanged; cloud and LFM remain paused.
+
+> **2026-10-09最新09:08蓝屏与用户明确恢复授权**：此次不是03:31计划更新，而是WER1001/Kernel41的HYPERVISOR_ERROR 0x20001，四参数与10月7日LFM故障一致。CUB Raw保留2877完整行。VBS/Hypervisor开启；事件尚不能锁定具体驱动/固件，Windows ACL拒绝读取新minidump，本机未找到调试器；不能声称已解决根因。用户明确要求“查原因然后重启实验”，已在独立GPU子进程复验最后已保存和下一未提交上下文：原输出逐字一致，下一输入合法。当前通用恢复入口 `scripts/resume_internvl35_checked_v1.py --incident analysis/internvl35_joint_v2/hypervisor_incident_20261009.json --expected-rows 2877`，只消费本次授权一次；新运行保护 `scripts/internvl35_icl_cache_guard_v1.py` 调用原解码后逐条同步/释放空闲缓存，提示/图像预算/BF16/模型/选择/4-shot/解码均不改。运行保护有独立SHA receipt，不改冻结科学文件；复验第一条保留显存14.13GB、清理后约9GB。当前科学worker已从2877条继续，半小时报告继续；若再次系统蓝屏不自动循环启动，保留进度并报告。
+
+> 本次证据 `analysis/internvl35_joint_v2/hypervisor_incident_20261009.json`；复验 `checked_replay_4fec08f0e9e0bd9c.json`；操作receipt `checked_resume_4fec08f0e9e0bd9c.json`；日志 `checked_resume.stdout.log` / `checked_resume.stderr.log`。后续预测阶段用cache_guard入口；再次用户明确恢复应使用通用checked入口，旧恢复启动器的plan包含原ICL脚本路径，不能直接恢复已完成guard阶段。模型相关缓存/参数继续独立joint_v2，云端/LFM暂停。没有修改VBS、安全设置、BIOS或驱动。
+
+> **2026-10-09最新故障诊断与恢复**：03:31:16 User32/1074记录TrustedInstaller发起“操作系统升级（计划内）”，原因0x80020003；随后KB5129195/KB5126052安装成功。此次12小时事件窗口无41/1001/6008，无新minidump，不能称为GPU/Hypervisor崩溃。CUB Raw保留2688/5794完整行，协议/选择/顺序核验通过。当前恢复入口 `scripts/resume_internvl35_planned_update_v1.py`，先在独立GPU子进程复验最后已保存四示例上下文，输出逐字相同后才续跑原joint_v2；复验已通过，峰值保留13.96GB。证据 `analysis/internvl35_joint_v2/windows_update_restart_20261009.json`，操作receipt `planned_update_resume_20261009_v1.json`，日志 `planned_update_resume.stderr.log` / `stdout.log`。原boot状态字节另存，模型/科学协议/缓存不改。当前不要重启旧操作入口；确认新PID与真实状态。半小时汇报继续。系统更新设置尚未由本任务修改。
+
+> **最新用户授权：18:58暂停后再次明确“继续”**。joint_v2协议、36条GPU门槛、2603条缓存/答案提交及同次boot身份核验通过，CUB从2603/11788断点恢复，半小时汇报恢复。当前监督入口 `scripts/resume_internvl35_joint_operations_v1.py`，日志 `analysis/internvl35_joint_v2/operation_resume.stdout.log` / `operation_resume.stderr.log`，操作receipt `explicit_resume_*.json`。操作守卫辨认本次boot固定身份的DWM与Windows官方ShellExperienceHost为桌面上下文，其余GPU计算进程拒绝；科学worker仅一个，科学代码和协议不变。旧handover入口不重启。下方18:58暂停保留为历史，已被本次授权撤销；LFM/旧单patch/云端仍暂停。
+
+> **2026-10-08 18:58用户再次明确暂停，覆盖下方所有恢复授权**：joint_v2监督器与CUB科学worker已精确停止，GPU无计算进程；半小时`internvl`自动化设为PAUSED。CUB三份缓存和答案已提交2603/11788（bank proxy2603/5994），答案文件2603条完整行，无额外残缺尾行；原状态字节与暂停receipt在 `analysis/internvl35_joint_v2/user_pause_20261008T105830Z.json`及同目录snapshot。Aircraft六格已完整审计，合计6/24；DTD另6/6。joint_v2固定36条GPU门槛已通过，无须重复验证。未获用户再次明确恢复前，不启动GPU或自动汇报。
+
+> **最新执行变更**：Aircraft已补完并审计6/6。joint_v1缓存gold suffix在实际GPU检查首条CUB样本cosine0.9996466，低于冻结0.9999门槛，失败记录保留。继续用户授权时使用joint_v2：共享原HF生成prefill与所有anchor，gold proxy回到原完整forward（bank两次vision、query一次）；阈值不降、训练/图像/解码不改。独立v2目录与入口 `scripts/run_internvl35_joint_pipeline_v2.py --stage handover`，先固定36条GPU验证再CUB→Dogs→Pets；结果写CURRENT_RESULTS第8节。先查v2真实状态，禁止重启v1失败gate或重复启动v2。
+
+> **2026-10-08用户已明确“继续”**：撤销下方17:18暂停。系统实际于17:21重启；已核对GPU空闲、无实验进程、冻结协议/模型文件状态、3329条已有RICES顺序/示例身份及剩余4条图片SHA。新的显式恢复操作是 `scripts/resume_internvl35_after_user_pause_v1.py`，先补完Aircraft→独立CPU审计六格→联合GPU兼容门槛→CUB/Dogs/Pets。科学协议及原暂停/启动记录保留，新的boot身份和启动code SHA在 `analysis/internvl35_joint_v1/user_resume_20261008_v1.json`；实时日志 `user_resume.stdout.log` / `user_resume.stderr.log`。恢复半小时汇报；LFM、旧单patch与云端继续暂停。不要重复执行已消费恢复入口，先看真实进程与状态。
+
+> **2026-10-08 17:18用户再次明确暂停**：Aircraft GPU worker、v4监督器和joint切换等待器均已精确停止，`internvl`半小时自动化已设为PAUSED。Aircraft RICES保留3329/3333条完整JSONL，末尾无残缺行，尚无完整summary；其余五方法已审计，合计5/24，DTD另6/6。CUB联合提取GPU兼容检查未开始。暂停记录为 `analysis/internvl35_joint_v1/user_pause_20261008.json`；状态原件备份保留。未获用户再次恢复授权前，不启动GPU、切换等待器或自动汇报。以下17:18以前的启动授权与计划均不能覆盖本次暂停。
+
+> 2026-10-08最新授权：从CUB接入[联合hidden-state提取v1](INTERNVL35_JOINT_SOURCE_V1.md)。Aircraft v4先完成；旧监督器已请求阶段边界停止。新隐藏等待器完成Aircraft CPU审计与GPU独占检查后，运行固定pilot兼容门槛，通过才接CUB→Dogs→Pets。新目录 `results/internvl35_joint_v1`；状态/兼容证据未complete前不能称GPU门槛已通过。不得重复启动v4或联合流水线；继续半小时报告、更新CURRENT_RESULTS，DTD保留。LFM和云端仍暂停。
+
+> 2026-10-07 最新用户授权：LFM已取消，旧单patch InternVL保持冻结；从Aircraft开始重跑动态分块 InternVL3.5-4B，接CUB/Dogs/Pets，4-shot六方法共24格。正式入口、CPU/GPU核验和进度见 [InternVL Qwen配置v4](INTERNVL35_QWEN_CONFIG_V4.md)。本地v4流水线已启动，半小时汇报跟踪v4；不得恢复LFM或旧InternVL目录，云端仍暂停。以下原接手快照保留其历史时间与研究结论。
+
+> 新的本机 GPU Qwen TAM 与四提示检索消融见 [LOCAL_GPU_STUDY.md](LOCAL_GPU_STUDY.md)；dense InternVL3.5-4B 五数据集小样本验证见 [INTERNVL35_LOCAL_STUDY.md](INTERNVL35_LOCAL_STUDY.md)。以下是原接手快照，原云端自动任务仍暂停。
+
 这是2026-10-06的当前研究快照。**先读本页，运行离线自检，再开始用户授权的工作。** 仓库更新不等于恢复实验；云端/自动监督仍暂停。
 
 ## 你需要理解的一句话

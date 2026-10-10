@@ -1,0 +1,16 @@
+{
+  "state": "running",
+  "started_utc": "2026-10-09T01:30:02.116544+00:00",
+  "authorization": "Human explicitly requested diagnose and restart experiment on2026-10-09",
+  "incident_sha256": "4fec08f0e9e0bd9cf51a3c3022219179f29ead780f7e8d9e72c66e2b36e32e4b",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "code_sha256": "5784fa3faf2614bcab1c758576ce90ac8133e2ca11496e8300dfd069db5e0b11",
+  "guard_code_sha256": "8620f3837fcb5848bc93c7f553e4f37d170c94550c9c2d366307fc2df75be26a",
+  "replay_code_sha256": "d42229939a4b0cca6944ab56387d4617c0f6fa023cfb1313ad6420b32dfee36b",
+  "saved_predictions": 2877,
+  "old_boot": "2026-10-08T19:31:44.5000000Z",
+  "boot_identity": "2026-10-09T01:08:18.5000000Z",
+  "root_cause_limit": "Hypervisor fatal error confirmed; concrete driver/firmware cause unresolved; cache cleanup is operational mitigation, not proof of a fix",
+  "replay_sha256": "3db344f7de1f451159d29166d94e97a72f613e251766b0c0c48f4e884d03357d",
+  "checked_utc": "2026-10-09T01:30:26.633329+00:00"
+}

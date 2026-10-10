@@ -1,0 +1,15 @@
+{
+  "state": "paused_by_user",
+  "boot_identity": "2026-10-07T08:28:55.5000000Z",
+  "started_utc": "2026-10-08T07:32:37.157747+00:00",
+  "pid": 22088,
+  "protocol_sha256": "8e48449bb4fb5b24534eb34c782dd4347fad01a4b37d0273504760885fbaef97",
+  "checked_utc": "2026-10-08T09:18:03.182938+00:00",
+  "parent_state": "running",
+  "parent_current": {
+    "dataset": "aircraft",
+    "stage": "icl_rices"
+  },
+  "paused_utc": "2026-10-08T09:18:58.925608+00:00",
+  "pause_reason": "Explicit user pause 2026-10-08; GPU worker and both supervisors stopped; automation paused"
+}

@@ -1,0 +1,18 @@
+{
+  "state": "complete",
+  "query_id": "cub_05509",
+  "demo_ids": [
+    "cub_05513",
+    "cub_05559",
+    "cub_05557",
+    "cub_05528"
+  ],
+  "expected_prediction": "baltimore oriole",
+  "prediction": "baltimore oriole",
+  "expected_raw": "baltimore oriole",
+  "raw": "baltimore oriole",
+  "legal": true,
+  "exact_saved_output": true,
+  "peak_reserved_gb": 13.96484375,
+  "accuracy_used_for_tuning": false
+}

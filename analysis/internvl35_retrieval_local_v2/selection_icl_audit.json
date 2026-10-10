@@ -1,0 +1,63 @@
+{
+  "protocol_SHA256": "3c456c6296fe21f373ec61d4fa1980453c587c563da45023e62df86044b494c1",
+  "datasets": {
+    "dtd": {
+      "n": 32,
+      "mean_shared_demo_count": 1.28125,
+      "generic_any_correct_demo": 23,
+      "task_full_any_correct_demo": 27,
+      "more_correct_demos": 11,
+      "fewer_correct_demos": 5,
+      "ICL_gain": 2,
+      "ICL_harm": 1
+    },
+    "aircraft": {
+      "n": 32,
+      "mean_shared_demo_count": 1.15625,
+      "generic_any_correct_demo": 8,
+      "task_full_any_correct_demo": 10,
+      "more_correct_demos": 5,
+      "fewer_correct_demos": 2,
+      "ICL_gain": 3,
+      "ICL_harm": 1
+    },
+    "cub": {
+      "n": 32,
+      "mean_shared_demo_count": 0.71875,
+      "generic_any_correct_demo": 7,
+      "task_full_any_correct_demo": 14,
+      "more_correct_demos": 13,
+      "fewer_correct_demos": 2,
+      "ICL_gain": 4,
+      "ICL_harm": 1
+    },
+    "dogs": {
+      "n": 32,
+      "mean_shared_demo_count": 0.40625,
+      "generic_any_correct_demo": 3,
+      "task_full_any_correct_demo": 21,
+      "more_correct_demos": 21,
+      "fewer_correct_demos": 1,
+      "ICL_gain": 6,
+      "ICL_harm": 0
+    },
+    "pets": {
+      "n": 32,
+      "mean_shared_demo_count": 0.4375,
+      "generic_any_correct_demo": 8,
+      "task_full_any_correct_demo": 29,
+      "more_correct_demos": 27,
+      "fewer_correct_demos": 1,
+      "ICL_gain": 12,
+      "ICL_harm": 2
+    }
+  },
+  "pooled": {
+    "n": 160,
+    "mean_shared_demo_count": 0.8,
+    "more_correct_demos": 77,
+    "fewer_correct_demos": 11,
+    "ICL_gain": 27,
+    "ICL_harm": 5
+  }
+}

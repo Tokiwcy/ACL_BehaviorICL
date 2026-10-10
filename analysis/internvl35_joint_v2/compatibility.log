@@ -1,0 +1,40 @@
+
+2026-10-08T09:41:21.259437+00:00 ['C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe', '-u', 'C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\check_internvl35_joint_v2.py']
+Loading weights:   0%|          | 0/841 [00:00<?, ?it/s]Loading weights: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 841/841 [00:00<00:00, 18285.07it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+parity cub 1/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity cub 2/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 0.9999999403953552}
+parity cub 3/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896, 'gold': 0.9999999403953552}
+parity cub 4/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity cub 5/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0000001192092896}
+parity cub 6/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896, 'gold': 0.9999999403953552}
+parity cub 7/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0000001192092896}
+parity cub 8/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 0.9999999403953552}
+parity cub 9/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896}
+parity cub 10/12: {'anchor': 0.9999998807907104, 'gpt': 1.0}
+parity cub 11/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104}
+parity cub 12/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104}
+parity dogs 1/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896, 'gold': 0.9999999403953552}
+parity dogs 2/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104, 'gold': 1.0000001192092896}
+parity dogs 3/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity dogs 4/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896, 'gold': 0.9999999403953552}
+parity dogs 5/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104, 'gold': 1.0}
+parity dogs 6/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0000001192092896}
+parity dogs 7/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity dogs 8/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896, 'gold': 0.9999999403953552}
+parity dogs 9/12: {'anchor': 0.9999998807907104, 'gpt': 1.0}
+parity dogs 10/12: {'anchor': 0.9999998807907104, 'gpt': 1.0}
+parity dogs 11/12: {'anchor': 0.9999998807907104, 'gpt': 1.0}
+parity dogs 12/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104}
+parity pets 1/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity pets 2/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity pets 3/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896, 'gold': 0.9999999403953552}
+parity pets 4/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0000001192092896}
+parity pets 5/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 0.9999999403953552}
+parity pets 6/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 0.9999999403953552}
+parity pets 7/12: {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 1.0}
+parity pets 8/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104, 'gold': 1.0}
+parity pets 9/12: {'anchor': 0.9999998807907104, 'gpt': 1.0000001192092896}
+parity pets 10/12: {'anchor': 0.9999998807907104, 'gpt': 1.0}
+parity pets 11/12: {'anchor': 0.9999998807907104, 'gpt': 1.0}
+parity pets 12/12: {'anchor': 0.9999998807907104, 'gpt': 0.9999998807907104}

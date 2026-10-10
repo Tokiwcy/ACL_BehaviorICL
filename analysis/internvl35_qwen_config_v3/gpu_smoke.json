@@ -1,0 +1,11 @@
+{
+  "state": "failed",
+  "pid": 26272,
+  "started_utc": "2026-10-07T08:48:01.469507+00:00",
+  "protocol_sha256": "d36f38d3be709c300c4739ca64980740f9bc4f6fe0eb3b3cec7014075f999fe0",
+  "cases": {},
+  "dataset": "aircraft",
+  "stage": "single_image_states_and_proxy",
+  "error": "RuntimeError('No available kernel. Aborting execution.')",
+  "finished_utc": "2026-10-07T08:48:11.956016+00:00"
+}

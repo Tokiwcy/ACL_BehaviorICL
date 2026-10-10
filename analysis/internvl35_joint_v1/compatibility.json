@@ -1,0 +1,40 @@
+{
+  "state": "failed",
+  "started_utc": "2026-10-08T09:35:03.330624+00:00",
+  "protocol_sha256": "8e48449bb4fb5b24534eb34c782dd4347fad01a4b37d0273504760885fbaef97",
+  "cases": {
+    "cub": {
+      "rows": [
+        {
+          "sample_id": "cub_07482",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "prefix_tokens": 4384,
+          "gold_suffix_ids": [
+            325,
+            28512,
+            978,
+            6044,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 0.9996466040611267
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.375
+          }
+        }
+      ]
+    }
+  },
+  "threshold_cosine": 0.9999,
+  "test_accuracy_used": false,
+  "error": "ValueError(\"Extraction parity failed: cub/cub_07482: {'sample_id': 'cub_07482', 'is_bank': True, 'tail_ids_exact': True, 'vision_forwards': 1, 'prefix_tokens': 4384, 'gold_suffix_ids': [325, 28512, 978, 6044, 151645, 198], 'cosine_min': {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 0.9996466040611267}, 'max_abs': {'anchor': 0.0, 'gpt': 0.0, 'gold': 0.375}}\")",
+  "finished_utc": "2026-10-08T09:35:16.199898+00:00"
+}

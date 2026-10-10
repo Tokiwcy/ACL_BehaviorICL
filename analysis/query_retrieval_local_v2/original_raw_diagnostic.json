@@ -1,0 +1,597 @@
+{
+  "analysis_type": "posthoc diagnostic using the repository's exact Raw equal-layer cosine score",
+  "v1_protocol_SHA256": "9cc744ce02a0e38e08868b5b0ccd66828d2e0bc36cc67d505388fa589a0640d9",
+  "v2_protocol_SHA256": "626979ce25ebd07ae576f2717ec49d09df8bedc21009bed8ca97f885ce6902f4",
+  "datasets": {
+    "dtd": {
+      "bank_n": 94,
+      "query_n": 32,
+      "top1": {
+        "rates": {
+          "generic": 0.3125,
+          "task_short": 0.625,
+          "task_full": 0.78125,
+          "label_list_only": 0.8125
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.3125,
+          "95_percent_bootstrap_mean": [
+            0.15625,
+            0.46875
+          ],
+          "positive": 10,
+          "negative": 0,
+          "zero": 22
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.46875,
+          "95_percent_bootstrap_mean": [
+            0.28125,
+            0.65625
+          ],
+          "positive": 16,
+          "negative": 1,
+          "zero": 15
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": -0.03125,
+          "95_percent_bootstrap_mean": [
+            -0.125,
+            0.0625
+          ],
+          "positive": 1,
+          "negative": 2,
+          "zero": 29
+        }
+      },
+      "top4": {
+        "rates": {
+          "generic": 0.59375,
+          "task_short": 0.875,
+          "task_full": 0.90625,
+          "label_list_only": 0.90625
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.28125,
+          "95_percent_bootstrap_mean": [
+            0.125,
+            0.4375
+          ],
+          "positive": 9,
+          "negative": 0,
+          "zero": 23
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.3125,
+          "95_percent_bootstrap_mean": [
+            0.125,
+            0.5
+          ],
+          "positive": 11,
+          "negative": 1,
+          "zero": 20
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            -0.09375,
+            0.09375
+          ],
+          "positive": 1,
+          "negative": 1,
+          "zero": 30
+        }
+      },
+      "AP": {
+        "rates": {
+          "generic": 0.3134599363908467,
+          "task_short": 0.6292661180908463,
+          "task_full": 0.7933403863337449,
+          "label_list_only": 0.7969348060837702
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.3158061816999997,
+          "95_percent_bootstrap_mean": [
+            0.22238172957826005,
+            0.4129033172839923
+          ],
+          "positive": 28,
+          "negative": 1,
+          "zero": 3
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.47988044994289836,
+          "95_percent_bootstrap_mean": [
+            0.35622120655244055,
+            0.6028586090083956
+          ],
+          "positive": 29,
+          "negative": 2,
+          "zero": 1
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": -0.0035944197500252925,
+          "95_percent_bootstrap_mean": [
+            -0.050741510564699825,
+            0.04573663531127592
+          ],
+          "positive": 7,
+          "negative": 7,
+          "zero": 18
+        }
+      }
+    },
+    "aircraft": {
+      "bank_n": 200,
+      "query_n": 32,
+      "top1": {
+        "rates": {
+          "generic": 0.09375,
+          "task_short": 0.46875,
+          "task_full": 0.59375,
+          "label_list_only": 0.53125
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.375,
+          "95_percent_bootstrap_mean": [
+            0.21875,
+            0.5625
+          ],
+          "positive": 12,
+          "negative": 0,
+          "zero": 20
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.5,
+          "95_percent_bootstrap_mean": [
+            0.3125,
+            0.6875
+          ],
+          "positive": 17,
+          "negative": 1,
+          "zero": 14
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0625,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.15625
+          ],
+          "positive": 2,
+          "negative": 0,
+          "zero": 30
+        }
+      },
+      "top4": {
+        "rates": {
+          "generic": 0.1875,
+          "task_short": 0.78125,
+          "task_full": 0.78125,
+          "label_list_only": 0.78125
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.59375,
+          "95_percent_bootstrap_mean": [
+            0.4375,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 0,
+          "zero": 13
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.59375,
+          "95_percent_bootstrap_mean": [
+            0.40625,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 0,
+          "zero": 13
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 32
+        }
+      },
+      "AP": {
+        "rates": {
+          "generic": 0.11698771191479654,
+          "task_short": 0.5481576260416239,
+          "task_full": 0.6437382415238019,
+          "label_list_only": 0.592521433108516
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.4311699141268273,
+          "95_percent_bootstrap_mean": [
+            0.32798600503974956,
+            0.538346591694781
+          ],
+          "positive": 31,
+          "negative": 1,
+          "zero": 0
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.5267505296090053,
+          "95_percent_bootstrap_mean": [
+            0.40513881008559727,
+            0.6515966289848727
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.05121680841528584,
+          "95_percent_bootstrap_mean": [
+            -0.001873267995274199,
+            0.11269397798874708
+          ],
+          "positive": 11,
+          "negative": 8,
+          "zero": 13
+        }
+      }
+    },
+    "cub": {
+      "bank_n": 400,
+      "query_n": 32,
+      "top1": {
+        "rates": {
+          "generic": 0.125,
+          "task_short": 0.53125,
+          "task_full": 0.6875,
+          "label_list_only": 0.625
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.40625,
+          "95_percent_bootstrap_mean": [
+            0.21875,
+            0.59375
+          ],
+          "positive": 14,
+          "negative": 1,
+          "zero": 17
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.5625,
+          "95_percent_bootstrap_mean": [
+            0.40625,
+            0.71875
+          ],
+          "positive": 18,
+          "negative": 0,
+          "zero": 14
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0625,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.15625
+          ],
+          "positive": 2,
+          "negative": 0,
+          "zero": 30
+        }
+      },
+      "top4": {
+        "rates": {
+          "generic": 0.25,
+          "task_short": 0.75,
+          "task_full": 0.8125,
+          "label_list_only": 0.84375
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.5,
+          "95_percent_bootstrap_mean": [
+            0.3125,
+            0.65625
+          ],
+          "positive": 16,
+          "negative": 0,
+          "zero": 16
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.5625,
+          "95_percent_bootstrap_mean": [
+            0.40625,
+            0.71875
+          ],
+          "positive": 18,
+          "negative": 0,
+          "zero": 14
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": -0.03125,
+          "95_percent_bootstrap_mean": [
+            -0.125,
+            0.0625
+          ],
+          "positive": 1,
+          "negative": 2,
+          "zero": 29
+        }
+      },
+      "AP": {
+        "rates": {
+          "generic": 0.11594141967624197,
+          "task_short": 0.6170111971684147,
+          "task_full": 0.6928634752995291,
+          "label_list_only": 0.6530403247946905
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.5010697774921726,
+          "95_percent_bootstrap_mean": [
+            0.3814103527548216,
+            0.6199245962196844
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.576922055623287,
+          "95_percent_bootstrap_mean": [
+            0.46052619296650593,
+            0.6949686079132419
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.039823150504838464,
+          "95_percent_bootstrap_mean": [
+            -0.012774844597314884,
+            0.10565989693653242
+          ],
+          "positive": 13,
+          "negative": 5,
+          "zero": 14
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 240,
+      "query_n": 32,
+      "top1": {
+        "rates": {
+          "generic": 0.0625,
+          "task_short": 0.65625,
+          "task_full": 0.65625,
+          "label_list_only": 0.71875
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.59375,
+          "95_percent_bootstrap_mean": [
+            0.4375,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 0,
+          "zero": 13
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.59375,
+          "95_percent_bootstrap_mean": [
+            0.4375,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 0,
+          "zero": 13
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": -0.0625,
+          "95_percent_bootstrap_mean": [
+            -0.15625,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 2,
+          "zero": 30
+        }
+      },
+      "top4": {
+        "rates": {
+          "generic": 0.09375,
+          "task_short": 0.875,
+          "task_full": 0.9375,
+          "label_list_only": 0.9375
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.78125,
+          "95_percent_bootstrap_mean": [
+            0.625,
+            0.90625
+          ],
+          "positive": 25,
+          "negative": 0,
+          "zero": 7
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.84375,
+          "95_percent_bootstrap_mean": [
+            0.71875,
+            0.96875
+          ],
+          "positive": 27,
+          "negative": 0,
+          "zero": 5
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 32
+        }
+      },
+      "AP": {
+        "rates": {
+          "generic": 0.06497303223896297,
+          "task_short": 0.6848709521096412,
+          "task_full": 0.6750351871576384,
+          "label_list_only": 0.700181826337079
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.6198979198706782,
+          "95_percent_bootstrap_mean": [
+            0.5112017171717592,
+            0.722291650619498
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.6100621549186755,
+          "95_percent_bootstrap_mean": [
+            0.5147504495203148,
+            0.7050042960400762
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": -0.025146639179440534,
+          "95_percent_bootstrap_mean": [
+            -0.05560523307490439,
+            0.0017042116707293605
+          ],
+          "positive": 6,
+          "negative": 8,
+          "zero": 18
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 74,
+      "query_n": 32,
+      "top1": {
+        "rates": {
+          "generic": 0.125,
+          "task_short": 0.8125,
+          "task_full": 0.90625,
+          "label_list_only": 0.90625
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.6875,
+          "95_percent_bootstrap_mean": [
+            0.53125,
+            0.84375
+          ],
+          "positive": 22,
+          "negative": 0,
+          "zero": 10
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.78125,
+          "95_percent_bootstrap_mean": [
+            0.625,
+            0.90625
+          ],
+          "positive": 25,
+          "negative": 0,
+          "zero": 7
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            -0.09375,
+            0.09375
+          ],
+          "positive": 1,
+          "negative": 1,
+          "zero": 30
+        }
+      },
+      "top4": {
+        "rates": {
+          "generic": 0.21875,
+          "task_short": 0.875,
+          "task_full": 0.9375,
+          "label_list_only": 0.9375
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.65625,
+          "95_percent_bootstrap_mean": [
+            0.5,
+            0.8125
+          ],
+          "positive": 21,
+          "negative": 0,
+          "zero": 11
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.71875,
+          "95_percent_bootstrap_mean": [
+            0.5625,
+            0.875
+          ],
+          "positive": 23,
+          "negative": 0,
+          "zero": 9
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            -0.09375,
+            0.09375
+          ],
+          "positive": 1,
+          "negative": 1,
+          "zero": 30
+        }
+      },
+      "AP": {
+        "rates": {
+          "generic": 0.1469209047370143,
+          "task_short": 0.7390035046789887,
+          "task_full": 0.8643634721759721,
+          "label_list_only": 0.8555522729925302
+        },
+        "paired_delta_task_short_minus_generic": {
+          "mean": 0.5920825999419743,
+          "95_percent_bootstrap_mean": [
+            0.48370014842510217,
+            0.6943497196246263
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_generic": {
+          "mean": 0.7174425674389578,
+          "95_percent_bootstrap_mean": [
+            0.6252834486216318,
+            0.8040912572387225
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_delta_full_minus_labels_only": {
+          "mean": 0.008811199183441826,
+          "95_percent_bootstrap_mean": [
+            -0.030374851353711645,
+            0.06638144841269841
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 24
+        }
+      }
+    }
+  }
+}

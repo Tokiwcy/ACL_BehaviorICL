@@ -1,5 +1,7 @@
 # 当前论文叙事
 
+2026-10-10补充证据：新增本地研究与claim边界见 [LOCAL_GPU_STUDY.md](LOCAL_GPU_STUDY.md)，第二VLM面板见 [INTERNVL35_LOCAL_STUDY.md](INTERNVL35_LOCAL_STUDY.md)，全量InternVL仅使用 [CURRENT_RESULTS.md](CURRENT_RESULTS.md)第8节已审计格。不得把不完整四组、不同视觉处理的DTD、失败smoke或小bank面板写成统一完成主表。下文是历史写作框架。
+
 > GitHub接手版：仓库内链接可移植；原科学source/audit字节保留。完整本地归档、图片、权重及云运行状态不在此仓库，参见 [artifact availability](handoff/ARTIFACTS.md)。
 
 

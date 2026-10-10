@@ -1,0 +1,29 @@
+{
+  "state": "complete",
+  "rows": [
+    {
+      "query_id": "cub_05897",
+      "kind": "saved_replay",
+      "prediction": "white pelican",
+      "raw": "white pelican",
+      "legal": true,
+      "peak_reserved_gb": 14.130859375,
+      "reserved_before": 15172894720,
+      "reserved_after": 9661579264,
+      "allocated_after": 9531293696,
+      "exact_saved_output": true
+    },
+    {
+      "query_id": "cub_05898",
+      "kind": "next_uncommitted",
+      "prediction": "white pelican",
+      "raw": "white pelican",
+      "legal": true,
+      "peak_reserved_gb": 11.814453125,
+      "reserved_before": 12685672448,
+      "reserved_after": 9661579264,
+      "allocated_after": 9531293696
+    }
+  ],
+  "accuracy_used_for_tuning": false
+}

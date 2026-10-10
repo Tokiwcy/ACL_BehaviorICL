@@ -1,5 +1,9 @@
 # BehaviorICL：当前研究整合
 
+最新完整/部分结果与执行状态见 [CURRENT_RESULTS.md](CURRENT_RESULTS.md)及 [HANDOFF.md](HANDOFF.md)：本地TAM、小bank检索和InternVL面板已完成；InternVL动态全量六方法仍在运行。下文2026-10-06的暂停/未运行陈述属于历史整合。
+
+> 本文保留本地 GPU 实验前的项目整合快照。新完成的五数据集 TAM 与检索消融及更新后的论文 claim 见 [LOCAL_GPU_STUDY.md](LOCAL_GPU_STUDY.md)。
+
 > GitHub接手版：仓库内链接可移植；原科学source/audit字节保留。完整本地归档、图片、权重及云运行状态不在此仓库，参见 [artifact availability](handoff/ARTIFACTS.md)。
 
 

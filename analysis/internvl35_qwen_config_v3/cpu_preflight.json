@@ -1,0 +1,33 @@
+{
+  "protocol_sha256": "d36f38d3be709c300c4739ca64980740f9bc4f6fe0eb3b3cec7014075f999fe0",
+  "datasets": {
+    "aircraft": {
+      "bank": 6667,
+      "query": 3333,
+      "manifest_sha256": "4861fde85f400224cabf1e1e2184d1979a8064f8272da3f65348b633b1ea87ee",
+      "source_visual_tokens_min": 768,
+      "source_visual_tokens_max": 3328
+    },
+    "cub": {
+      "bank": 5994,
+      "query": 5794,
+      "manifest_sha256": "8e65e2b6a61afe8e62b16db3413352157a9aff8bbfcfadb75668244838eb8bd1",
+      "source_visual_tokens_min": 256,
+      "source_visual_tokens_max": 3328
+    },
+    "dogs": {
+      "bank": 12000,
+      "query": 8580,
+      "manifest_sha256": "3e5ef1aeb42f6d97534c56723d61d71d5e62f6b2bd0aad01a200b651f2d1db4a",
+      "source_visual_tokens_min": 256,
+      "source_visual_tokens_max": 3328
+    },
+    "pets": {
+      "bank": 3680,
+      "query": 3669,
+      "manifest_sha256": "af64076ef3f93087413ef93232d41a00afb9d53daee2d1450ce25414c15d154a",
+      "source_visual_tokens_min": 256,
+      "source_visual_tokens_max": 3328
+    }
+  }
+}

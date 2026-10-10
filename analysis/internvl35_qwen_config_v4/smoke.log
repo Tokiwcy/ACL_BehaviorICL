@@ -1,0 +1,9 @@
+
+Loading weights:   0%|          | 0/841 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 841/841 [00:00<00:00, 18572.45it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+GPT-MM 00001/00001
+smoke aircraft: {'query_id': '0037512', 'demo_ids': ['0034309', '0034958', '0037511', '0038598'], 'expected_visual_tokens': 16640, 'state_shape': [1, 36, 2560], 'states_finite': True, 'cudnn_math_state_cosine_min': 0.9997748732566833, 'cudnn_math_state_cosine_mean': 0.9998921155929565, 'cudnn_math_state_max_abs': 2.0, 'proxy_finite': True, 'prediction': 'DC-9-30', 'raw': 'DC-9-30', 'legal': True, 'peak_reserved_gb': 14.095703125, 'peak_allocated_gb': 12.789992809295654}
+smoke cub: {'query_id': 'cub_00010', 'demo_ids': ['cub_00004', 'cub_00005', 'cub_00008', 'cub_00009'], 'expected_visual_tokens': 16640, 'prediction': 'black footed albatross', 'raw': 'black footed albatross', 'legal': True, 'peak_reserved_gb': 14.150390625, 'peak_allocated_gb': 12.858949184417725}
+smoke dogs: {'query_id': 'dogs_n02085620_10131', 'demo_ids': ['dogs_n02085620_11140', 'dogs_n02085620_11258', 'dogs_n02085620_1152', 'dogs_n02085620_12334'], 'expected_visual_tokens': 16640, 'prediction': 'chihuahua', 'raw': 'chihuahua', 'legal': True, 'peak_reserved_gb': 14.392578125, 'peak_allocated_gb': 12.755393981933594}
+smoke pets: {'query_id': 'pets_Abyssinian_2', 'demo_ids': ['pets_Abyssinian_10', 'pets_Abyssinian_100', 'pets_Abyssinian_105', 'pets_Abyssinian_108'], 'expected_visual_tokens': 16640, 'prediction': 'abyssinian', 'raw': 'abyssinian', 'legal': True, 'peak_reserved_gb': 14.005859375, 'peak_allocated_gb': 12.675486087799072}

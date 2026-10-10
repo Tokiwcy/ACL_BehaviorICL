@@ -1,0 +1,42 @@
+{
+  "version": "joint_v1",
+  "base_protocol_sha256": "3c58286cb3efd5284d58a8837487136d7c24ef533755eb3c5979e507d5c4a054",
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "revision": "6bd4487402110ef9889ba50eb7aefeb302526fed",
+  "datasets": [
+    "cub",
+    "dogs",
+    "pets"
+  ],
+  "methods": [
+    "raw",
+    "proj",
+    "learn",
+    "gpt_mm",
+    "detriever",
+    "rices"
+  ],
+  "seed": 73,
+  "shots": 4,
+  "policy": "one HF greedy generate prefill; 36 input anchors from step0; historical GPT-MM answer-state indexing; crop KV to prefix; bank-only exact gold chat suffix forward",
+  "cached_gold_backend": "math SDPA for short offset causal suffix; GPU parity gate against v4 full cuDNN prefill required",
+  "joint_commit": "one durable row cursor after all arrays and answer rows flush; dependent progress published after authoritative cursor",
+  "gate": {
+    "samples_per_dataset": "8 bank + 4 query, SHA256(dataset/sample_id) order",
+    "cosine_min": 0.9999,
+    "generated_token_ids_exact": true,
+    "ordered_top4_exact": "Raw and GPT-MM over the fixed 8-bank pilot; bank proxy cosine top4 excluding self",
+    "not_full_retrieval_equivalence_proof": true
+  },
+  "unchanged": "native images, prompts, batch1 BF16, training, candidates, seed, 4shot and final legal decode from frozen v4",
+  "code_sha256": {
+    "internvl35_joint_config_v1.py": "7d988b2b6c9c5d02926284b8885898576784c82f4547d07f631829466df9b2e5",
+    "internvl35_joint_source_v1.py": "5374655cb912ff929cf9662dc2ec392b70ee5a9994fe60328e4605ac16206b8f",
+    "run_internvl35_joint_sources_v1.py": "7b5cb0fa9d06e3a8c9cd3ae14b089c660aad3b3533a6f31623d7f6174d325c1d",
+    "run_internvl35_joint_methods_v1.py": "f3dfe5dfb0eb7033dcd5065b24cfc99be9186201625cd2b18c4d85b2281462c0",
+    "run_internvl35_joint_icl_v1.py": "c82adb2cba4d1362911e7fb4080e2821c428f00701bd501ad46a156aa80d539f",
+    "audit_internvl35_joint_v1.py": "af26799a6c7db65f2df36f59440453254dcb665a2e3e5d36581362cb233c34e2",
+    "run_internvl35_joint_pipeline_v1.py": "94847252c90680049b6319fd1cfd60b7c51f0ed3481fa4aaeca950e3e499051a",
+    "check_internvl35_joint_v1.py": "e50a0b55c14b72a4c674ee001bf98255c888fac43125ef87ff8ce5449807376d"
+  }
+}

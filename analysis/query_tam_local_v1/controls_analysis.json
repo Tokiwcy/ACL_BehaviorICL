@@ -1,0 +1,2200 @@
+{
+  "protocol_SHA256": "ecc0b646d600c041fdc3968120b1c813db1a5c277a41b3b2445d9b04afbe1054",
+  "n": 40,
+  "datasets": {
+    "dtd": {
+      "n": 8,
+      "natural_first_token_same": 0,
+      "short_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9949091313643983,
+          "median": 0.9962390404069296,
+          "bootstrap_mean_95": [
+            0.9910237916022974,
+            0.9977997735145414
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.0,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 8
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.7105174500999212,
+          "median": 0.7058927629644678,
+          "bootstrap_mean_95": [
+            0.7028469605089658,
+            0.7209604185156537
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 0
+        }
+      },
+      "full_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9819128011326824,
+          "median": 0.9874783595334522,
+          "bootstrap_mean_95": [
+            0.9706339551758724,
+            0.9901225807971232
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 1.2119140625,
+          "median": 0.7578125,
+          "bootstrap_mean_95": [
+            0.716796875,
+            1.7822265625
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.3727052702749247,
+          "median": 0.3661405070307652,
+          "bootstrap_mean_95": [
+            0.351940666193091,
+            0.3938478549116186
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 0
+        }
+      },
+      "full_vs_short": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9868816614771075,
+          "median": 0.9881812580877685,
+          "bootstrap_mean_95": [
+            0.9814517270007279,
+            0.9914465801651108
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 1.2119140625,
+          "median": 0.7578125,
+          "bootstrap_mean_95": [
+            0.716796875,
+            1.7822265625
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.5508708548649718,
+          "median": 0.5565750020440043,
+          "bootstrap_mean_95": [
+            0.5259449265391405,
+            0.5748066697130776
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 0
+        }
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.5812580192324592,
+          "median": 0.5910774594585578,
+          "bootstrap_mean_95": [
+            0.5096929112479727,
+            0.6498670852274451
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 10.972412109375,
+          "median": 10.78125,
+          "bootstrap_mean_95": [
+            10.478497314453126,
+            11.4921875
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.7105174500999212,
+          "median": 0.7058927629644678,
+          "bootstrap_mean_95": [
+            0.7028469605089658,
+            0.7209604185156537
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 0
+        }
+      }
+    },
+    "aircraft": {
+      "n": 8,
+      "natural_first_token_same": 0,
+      "short_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9851923399395508,
+          "median": 0.985161054108119,
+          "bootstrap_mean_95": [
+            0.9788905465200347,
+            0.9909069326657336
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.0,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 8
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6071863671196827,
+          "median": 0.6057307845658704,
+          "bootstrap_mean_95": [
+            0.5950660049159824,
+            0.6198572472870032
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.014367644451164521,
+          "median": -0.01701321707620873,
+          "bootstrap_mean_95": [
+            -0.024220603121231796,
+            -0.0041038251291371265
+          ],
+          "positive": 2,
+          "negative": 6,
+          "zero": 0
+        }
+      },
+      "full_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9175683728671622,
+          "median": 0.9165865807114522,
+          "bootstrap_mean_95": [
+            0.8873264189081078,
+            0.9496671365103657
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.0,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 8
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.5571885593466401,
+          "median": 0.543224854957847,
+          "bootstrap_mean_95": [
+            0.5353844162514172,
+            0.5888959182178867
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.020212883183464335,
+          "median": -0.01160992591926785,
+          "bootstrap_mean_95": [
+            -0.050742251955855154,
+            0.007114127598466835
+          ],
+          "positive": 3,
+          "negative": 5,
+          "zero": 0
+        }
+      },
+      "full_vs_short": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9257788837125382,
+          "median": 0.9179428937449683,
+          "bootstrap_mean_95": [
+            0.896217211414417,
+            0.9572946932055348
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.0,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 8
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.8442177259342898,
+          "median": 0.8575735962808263,
+          "bootstrap_mean_95": [
+            0.8179417510929896,
+            0.8669200729060587
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.005845238732299814,
+          "median": -0.003119435536615464,
+          "bootstrap_mean_95": [
+            -0.028957488352282363,
+            0.017676811910631852
+          ],
+          "positive": 3,
+          "negative": 5,
+          "zero": 0
+        }
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.6974492162407655,
+          "median": 0.6640881997725929,
+          "bootstrap_mean_95": [
+            0.6187687666871026,
+            0.781956349098194
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 16.373046875,
+          "median": 17.703125,
+          "bootstrap_mean_95": [
+            12.2109375,
+            20.080078125
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6071863671196827,
+          "median": 0.6057307845658704,
+          "bootstrap_mean_95": [
+            0.5950660049159824,
+            0.6198572472870032
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": 0.014220830628461446,
+          "median": 0.014920039510307237,
+          "bootstrap_mean_95": [
+            -0.023369477479190923,
+            0.0522951584990018
+          ],
+          "positive": 6,
+          "negative": 2,
+          "zero": 0
+        }
+      }
+    },
+    "cub": {
+      "n": 8,
+      "natural_first_token_same": 0,
+      "short_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9935398996402934,
+          "median": 0.994108819419525,
+          "bootstrap_mean_95": [
+            0.9912995211945647,
+            0.9953566685576538
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.15087890625,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            0.35009765625
+          ],
+          "positive": 2,
+          "negative": 0,
+          "zero": 6
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6394305683657457,
+          "median": 0.6344789595534228,
+          "bootstrap_mean_95": [
+            0.6288672117993769,
+            0.6517033446987816
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": 0.0021704374935523274,
+          "median": 0.0009086601517893367,
+          "bootstrap_mean_95": [
+            -0.005991777745596567,
+            0.010633479882312176
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 0
+        }
+      },
+      "full_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9782476074435625,
+          "median": 0.9844806231318078,
+          "bootstrap_mean_95": [
+            0.9691851026200068,
+            0.9859842833615136
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.7958984375,
+          "median": 0.453125,
+          "bootstrap_mean_95": [
+            0.375,
+            1.5625244140624996
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.3689716378535952,
+          "median": 0.3737948869818931,
+          "bootstrap_mean_95": [
+            0.3567905499726887,
+            0.3817110509121943
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.0019356320887772812,
+          "median": -0.0015130518161676626,
+          "bootstrap_mean_95": [
+            -0.015998127884595918,
+            0.012044635743652504
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 0
+        }
+      },
+      "full_vs_short": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9873269255592952,
+          "median": 0.9913271358486896,
+          "bootstrap_mean_95": [
+            0.9785207907349367,
+            0.9939730072666704
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.848388671875,
+          "median": 0.484375,
+          "bootstrap_mean_95": [
+            0.39719848632812504,
+            1.61181640625
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.5931615850266709,
+          "median": 0.5957582366882612,
+          "bootstrap_mean_95": [
+            0.5778618885185941,
+            0.6076374608375805
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.0041060695823296085,
+          "median": 0.002337170118978632,
+          "bootstrap_mean_95": [
+            -0.018067460111413417,
+            0.009633024796284398
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 0
+        }
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.7891651876646741,
+          "median": 0.8060979794339352,
+          "bootstrap_mean_95": [
+            0.7448277486541661,
+            0.8274106950470485
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 9.234375,
+          "median": 8.7421875,
+          "bootstrap_mean_95": [
+            8.505859375,
+            10.111425781249999
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6394305683657457,
+          "median": 0.6344789595534228,
+          "bootstrap_mean_95": [
+            0.6288672117993769,
+            0.6517033446987816
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.05898756715378005,
+          "median": -0.041155031366357966,
+          "bootstrap_mean_95": [
+            -0.10558174633094979,
+            -0.01936844384167625
+          ],
+          "positive": 1,
+          "negative": 7,
+          "zero": 0
+        }
+      }
+    },
+    "dogs": {
+      "n": 8,
+      "natural_first_token_same": 0,
+      "short_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9935384338541109,
+          "median": 0.9959495913785964,
+          "bootstrap_mean_95": [
+            0.988221929580591,
+            0.997232939024497
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.0,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            0.0
+          ],
+          "positive": 0,
+          "negative": 0,
+          "zero": 8
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.5811780299982385,
+          "median": 0.5788102375915951,
+          "bootstrap_mean_95": [
+            0.561495323191524,
+            0.6013935297983131
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.009464717219610208,
+          "median": -0.012448171985113159,
+          "bootstrap_mean_95": [
+            -0.015565028548235469,
+            -0.0031474287632508066
+          ],
+          "positive": 2,
+          "negative": 6,
+          "zero": 0
+        }
+      },
+      "full_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9824946613290844,
+          "median": 0.988413550534528,
+          "bootstrap_mean_95": [
+            0.9728868378439963,
+            0.9913412564438171
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.75592041015625,
+          "median": 0.5,
+          "bootstrap_mean_95": [
+            0.396484375,
+            1.33502197265625
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.29357077166582995,
+          "median": 0.29116021851366497,
+          "bootstrap_mean_95": [
+            0.267996981693889,
+            0.3214199378236122
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.01558626461615958,
+          "median": -0.011804036128812256,
+          "bootstrap_mean_95": [
+            -0.025723850276239794,
+            -0.006383187360487132
+          ],
+          "positive": 1,
+          "negative": 7,
+          "zero": 0
+        }
+      },
+      "full_vs_short": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9882233501623499,
+          "median": 0.9890395250221764,
+          "bootstrap_mean_95": [
+            0.981840427258132,
+            0.9937828798383587
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.75592041015625,
+          "median": 0.5,
+          "bootstrap_mean_95": [
+            0.396484375,
+            1.33502197265625
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.5740587598718866,
+          "median": 0.5719237521395332,
+          "bootstrap_mean_95": [
+            0.5521277314075121,
+            0.5970160411740285
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.006121547396549373,
+          "median": -0.0017075216422510475,
+          "bootstrap_mean_95": [
+            -0.01599303657467253,
+            0.002953609986903893
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 0
+        }
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.5780346393939042,
+          "median": 0.6443297798403046,
+          "bootstrap_mean_95": [
+            0.4212563118781877,
+            0.7245067210768339
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 13.266845703125,
+          "median": 14.875,
+          "bootstrap_mean_95": [
+            10.839642333984376,
+            15.661395263671874
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.5811780299982385,
+          "median": 0.5788102375915951,
+          "bootstrap_mean_95": [
+            0.561495323191524,
+            0.6013935297983131
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": 0.05499728020395027,
+          "median": 0.009813702763729087,
+          "bootstrap_mean_95": [
+            -0.0495158140716632,
+            0.18238660745696056
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 0
+        }
+      }
+    },
+    "pets": {
+      "n": 8,
+      "natural_first_token_same": 0,
+      "short_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9936093242291167,
+          "median": 0.9968859953295943,
+          "bootstrap_mean_95": [
+            0.9877174027434076,
+            0.9983215615051847
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.8486328125,
+          "median": 0.0,
+          "bootstrap_mean_95": [
+            0.0,
+            2.5458984375
+          ],
+          "positive": 1,
+          "negative": 0,
+          "zero": 7
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6016317528591464,
+          "median": 0.6003562222829537,
+          "bootstrap_mean_95": [
+            0.5867551296298118,
+            0.6172005061517282
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.0016259692125825606,
+          "median": -0.0020656706737434555,
+          "bootstrap_mean_95": [
+            -0.007740842757814753,
+            0.0048959778852367165
+          ],
+          "positive": 2,
+          "negative": 5,
+          "zero": 1
+        }
+      },
+      "full_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.957640151215545,
+          "median": 0.9909026266533585,
+          "bootstrap_mean_95": [
+            0.8918035560271566,
+            0.9931924247150229
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 1.445404052734375,
+          "median": 0.625,
+          "bootstrap_mean_95": [
+            0.439453125,
+            3.00390625
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.31486671187697796,
+          "median": 0.3132992629918372,
+          "bootstrap_mean_95": [
+            0.3004206333720742,
+            0.3293296026788937
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.008615190846122337,
+          "median": -0.011628570364260474,
+          "bootstrap_mean_95": [
+            -0.03436615435720766,
+            0.012024879604114282
+          ],
+          "positive": 3,
+          "negative": 5,
+          "zero": 0
+        }
+      },
+      "full_vs_short": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.9583855132379024,
+          "median": 0.9906984267680535,
+          "bootstrap_mean_95": [
+            0.8925360058499918,
+            0.9932448021026702
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 0.751068115234375,
+          "median": 0.6171875,
+          "bootstrap_mean_95": [
+            0.4042549133300782,
+            1.1923828125
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6261144141272681,
+          "median": 0.6375050371111612,
+          "bootstrap_mean_95": [
+            0.5854680414015713,
+            0.6571688254221072
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": -0.0069892216335397765,
+          "median": -0.004107155996429954,
+          "bootstrap_mean_95": [
+            -0.03329364480891071,
+            0.014661999782777019
+          ],
+          "positive": 3,
+          "negative": 5,
+          "zero": 0
+        }
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": {
+          "n": 8,
+          "mean": 0.7719043081385166,
+          "median": 0.7839249807843028,
+          "bootstrap_mean_95": [
+            0.7116199424922225,
+            0.8150999832678211
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "raw_CAM_max_difference": {
+          "n": 8,
+          "mean": 12.96533203125,
+          "median": 12.390625,
+          "bootstrap_mean_95": [
+            11.076171875,
+            14.868688964843749
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "last_layer_anchor_cosine": {
+          "n": 8,
+          "mean": 0.6016317528591464,
+          "median": 0.6003562222829537,
+          "bootstrap_mean_95": [
+            0.5867551296298118,
+            0.6172005061517282
+          ],
+          "positive": 8,
+          "negative": 0,
+          "zero": 0
+        },
+        "delta_excess": {
+          "n": 8,
+          "mean": 0.029251253822429546,
+          "median": 0.014311186297950945,
+          "bootstrap_mean_95": [
+            -0.010244194576829218,
+            0.07144792771715071
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 0
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "dataset": "dtd",
+      "sample_id": "grooved_0156",
+      "natural_first_token_same": false,
+      "natural_generic_token": "The",
+      "natural_task_token": "Metal",
+      "short_vs_generic": {
+        "tam_cosine": 0.9959771552786572,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6992623646365076
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9940087948437174,
+        "raw_CAM_max_difference": 0.4140625,
+        "last_layer_anchor_cosine": 0.34342837881493815
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9937337214601402,
+        "raw_CAM_max_difference": 0.4140625,
+        "last_layer_anchor_cosine": 0.5433141822295064
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.5897946007506859,
+        "raw_CAM_max_difference": 12.16015625,
+        "last_layer_anchor_cosine": 0.6992623646365076
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "honeycombed_0111",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "T",
+      "short_vs_generic": {
+        "tam_cosine": 0.9980522041571185,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7155925737532157
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9809919274606298,
+        "raw_CAM_max_difference": 0.5625,
+        "last_layer_anchor_cosine": 0.42113431207404206
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9837661484747957,
+        "raw_CAM_max_difference": 0.5625,
+        "last_layer_anchor_cosine": 0.5741471718394061
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6264781123478812,
+        "raw_CAM_max_difference": 11.6875,
+        "last_layer_anchor_cosine": 0.7155925737532157
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "waffled_0125",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "C",
+      "short_vs_generic": {
+        "tam_cosine": 0.9832395954813333,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7045401672246786
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9470158652774369,
+        "raw_CAM_max_difference": 1.84375,
+        "last_layer_anchor_cosine": 0.39741119115131884
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9718304503452023,
+        "raw_CAM_max_difference": 1.84375,
+        "last_layer_anchor_cosine": 0.5716098197593915
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7343329446808314,
+        "raw_CAM_max_difference": 10.546875,
+        "last_layer_anchor_cosine": 0.7045401672246786
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "blotchy_0090",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "Abstract",
+      "short_vs_generic": {
+        "tam_cosine": 0.9924910434029914,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7128442478670028
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9757680937071255,
+        "raw_CAM_max_difference": 0.71875,
+        "last_layer_anchor_cosine": 0.34137380270258333
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9817146234685304,
+        "raw_CAM_max_difference": 0.71875,
+        "last_layer_anchor_cosine": 0.6090194560041857
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.44803939833055895,
+        "raw_CAM_max_difference": 9.9375,
+        "last_layer_anchor_cosine": 0.7128442478670028
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "chequered_0192",
+      "natural_first_token_same": false,
+      "natural_generic_token": "The",
+      "natural_task_token": "Checker",
+      "short_vs_generic": {
+        "tam_cosine": 0.9991660029144628,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7072453587042569
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9944534014563708,
+        "raw_CAM_max_difference": 2.15625,
+        "last_layer_anchor_cosine": 0.3460380785133368
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9954892972823124,
+        "raw_CAM_max_difference": 2.15625,
+        "last_layer_anchor_cosine": 0.49351372579311487
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.5923603181664298,
+        "raw_CAM_max_difference": 11.666015625,
+        "last_layer_anchor_cosine": 0.7072453587042569
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "dotted_0136",
+      "natural_first_token_same": false,
+      "natural_generic_token": "The",
+      "natural_task_token": "Pol",
+      "short_vs_generic": {
+        "tam_cosine": 0.9942129053966783,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7436731395935234
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.987826600244362,
+        "raw_CAM_max_difference": 0.796875,
+        "last_layer_anchor_cosine": 0.3851212815887857
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9885979150399313,
+        "raw_CAM_max_difference": 0.796875,
+        "last_layer_anchor_cosine": 0.5452661430473779
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6697647385988216,
+        "raw_CAM_max_difference": 10.5625,
+        "last_layer_anchor_cosine": 0.7436731395935234
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "woven_0129",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "R",
+      "short_vs_generic": {
+        "tam_cosine": 0.996500925535202,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6989510200848342
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9871301188225425,
+        "raw_CAM_max_difference": 0.640625,
+        "last_layer_anchor_cosine": 0.39997538488164835
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9921565346103426,
+        "raw_CAM_max_difference": 0.640625,
+        "last_layer_anchor_cosine": 0.5678838610406307
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.5821082839952578,
+        "raw_CAM_max_difference": 10.21875,
+        "last_layer_anchor_cosine": 0.6989510200848342
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "grid_0051",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "Ge",
+      "short_vs_generic": {
+        "tam_cosine": 0.9996332187487428,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7020307289353502
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9881076072492749,
+        "raw_CAM_max_difference": 2.5625,
+        "last_layer_anchor_cosine": 0.34715973247274473
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9877646011356056,
+        "raw_CAM_max_difference": 2.5625,
+        "last_layer_anchor_cosine": 0.5022124792061614
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.4071857569892069,
+        "raw_CAM_max_difference": 11.0,
+        "last_layer_anchor_cosine": 0.7020307289353502
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0677582",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.978846573347845,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6244689582616392,
+        "delta_excess": -0.020215617696718424
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.897904803447973,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5529429517820358,
+        "delta_excess": -0.0747862437330774
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9054106702043903,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.8650567495022714,
+        "delta_excess": -0.05457062603635898
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8870821611012056,
+        "raw_CAM_max_difference": 6.6875,
+        "last_layer_anchor_cosine": 0.6244689582616392,
+        "delta_excess": 0.013049680669832864
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "2239753",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9962084561269522,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6010343521621869,
+        "delta_excess": 0.010405249744619371
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9821182415846454,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5263328029697539,
+        "delta_excess": 0.008416348677224267
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9907354813004482,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.8500904430593812,
+        "delta_excess": -0.0019889010673951046
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6869114783804248,
+        "raw_CAM_max_difference": 20.65625,
+        "last_layer_anchor_cosine": 0.6010343521621869,
+        "delta_excess": -0.016430230654173705
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0464476",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "C",
+      "short_vs_generic": {
+        "tam_cosine": 0.9838053192643897,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5978768461688194,
+        "delta_excess": -0.014678243853751327
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.8677201042738425,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6565507729815148,
+        "delta_excess": -0.011516137357084011
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.8621728994456346,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7864015128273788,
+        "delta_excess": 0.0031621064966673162
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6067904105403238,
+        "raw_CAM_max_difference": 22.140625,
+        "last_layer_anchor_cosine": 0.5978768461688194,
+        "delta_excess": 0.019007765545732247
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "1859060",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "F",
+      "short_vs_generic": {
+        "tam_cosine": 0.9865167889518484,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5816419238520976,
+        "delta_excess": -0.03762364575418592
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9254389251123706,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5331098720233037,
+        "delta_excess": -0.090381921666784
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9460960105751142,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.7899200392664674,
+        "delta_excess": -0.052758275912598074
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.5242531376829103,
+        "raw_CAM_max_difference": 22.875,
+        "last_layer_anchor_cosine": 0.5816419238520976,
+        "delta_excess": -0.08610539803994427
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0134602",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9678668822984938,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6104272169695537,
+        "delta_excess": -0.028064989658016737
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.8505971075857162,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5370823763620114,
+        "delta_excess": -0.038289644729874506
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.8788054398434165,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.8731752987777804,
+        "delta_excess": -0.010224655071857769
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8709873861269194,
+        "raw_CAM_max_difference": 8.40625,
+        "last_layer_anchor_cosine": 0.6104272169695537,
+        "delta_excess": 0.0009648715073190539
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "1398419",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "C",
+      "short_vs_generic": {
+        "tam_cosine": 0.9962688873693306,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5880628692306961,
+        "delta_excess": -0.007453744475615864
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9835946395098454,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.571722015188171,
+        "delta_excess": -0.011703714481451688
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9871247808413651,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.8382074460499391,
+        "delta_excess": -0.004249970005835824
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.641264921164761,
+        "raw_CAM_max_difference": 16.734375,
+        "last_layer_anchor_cosine": 0.5880628692306961,
+        "delta_excess": 0.044128233216471635
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "1985180",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9883375313954496,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6149375438550787,
+        "delta_excess": 0.002038026383018865
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9121825833554641,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5493673335536826,
+        "delta_excess": 0.01806760262389298
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9085152669698211,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.8654525799312389,
+        "delta_excess": 0.016029576240874116
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7342757444925172,
+        "raw_CAM_max_difference": 14.8125,
+        "last_layer_anchor_cosine": 0.6149375438550787,
+        "delta_excess": 0.01679039835078161
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0836147",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "Bo",
+      "short_vs_generic": {
+        "tam_cosine": 0.9836882807620976,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6390412264573899,
+        "delta_excess": -0.019348190298666135
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9209905780674403,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5304003499126482,
+        "delta_excess": 0.03849064519943968
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9273705205201155,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.8854377380598607,
+        "delta_excess": 0.05783883549810581
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6280284904370618,
+        "raw_CAM_max_difference": 18.671875,
+        "last_layer_anchor_cosine": 0.6390412264573899,
+        "delta_excess": 0.12236132443167214
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_04595",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9959085699044357,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.632068031611134,
+        "delta_excess": 0.009042817290682903
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9892860978931767,
+        "raw_CAM_max_difference": 0.3671875,
+        "last_layer_anchor_cosine": 0.38228255183702703,
+        "delta_excess": 0.025033952026112638
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9973570387068914,
+        "raw_CAM_max_difference": 0.3671875,
+        "last_layer_anchor_cosine": 0.5514253776152308,
+        "delta_excess": 0.015991134735429735
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8444802892821436,
+        "raw_CAM_max_difference": 8.5,
+        "last_layer_anchor_cosine": 0.632068031611134,
+        "delta_excess": -0.1471731096364246
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_05165",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9868279734948489,
+        "raw_CAM_max_difference": 0.67578125,
+        "last_layer_anchor_cosine": 0.6158673888321141,
+        "delta_excess": 0.02374280298052278
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9860210382397172,
+        "raw_CAM_max_difference": 0.5,
+        "last_layer_anchor_cosine": 0.3551311695647231,
+        "delta_excess": -0.0039302130049293504
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9907460815187907,
+        "raw_CAM_max_difference": 0.794921875,
+        "last_layer_anchor_cosine": 0.5962649463673041,
+        "delta_excess": -0.027673015985452132
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8259330245879283,
+        "raw_CAM_max_difference": 8.625,
+        "last_layer_anchor_cosine": 0.6158673888321141,
+        "delta_excess": 0.017698725047667563
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_04611",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9939908321120858,
+        "raw_CAM_max_difference": 0.53125,
+        "last_layer_anchor_cosine": 0.629427634844944,
+        "delta_excess": 0.003369416638253353
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.987229832360977,
+        "raw_CAM_max_difference": 0.484375,
+        "last_layer_anchor_cosine": 0.3777328071493728,
+        "delta_excess": 0.013371731502478057
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9948543819366242,
+        "raw_CAM_max_difference": 0.609375,
+        "last_layer_anchor_cosine": 0.576856421865411,
+        "delta_excess": 0.010002314864224704
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7272967500987438,
+        "raw_CAM_max_difference": 9.25,
+        "last_layer_anchor_cosine": 0.629427634844944,
+        "delta_excess": -0.1731163336266965
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_06594",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9942268067269642,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6519985891545393,
+        "delta_excess": -0.004730169281863546
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9862350305729114,
+        "raw_CAM_max_difference": 0.421875,
+        "last_layer_anchor_cosine": 0.3746086905567484,
+        "delta_excess": -0.010058143908130986
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9955364065393398,
+        "raw_CAM_max_difference": 0.421875,
+        "last_layer_anchor_cosine": 0.596953320712766,
+        "delta_excess": -0.00532797462626744
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7782257992202287,
+        "raw_CAM_max_difference": 10.5,
+        "last_layer_anchor_cosine": 0.6519985891545393,
+        "delta_excess": -0.03827851788200845
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_07877",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9973084666012474,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6744524563131623,
+        "delta_excess": 0.010856421470939404
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9789224778046977,
+        "raw_CAM_max_difference": 0.3359375,
+        "last_layer_anchor_cosine": 0.4000498006361364,
+        "delta_excess": 0.022999531037949772
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.988726443038272,
+        "raw_CAM_max_difference": 0.3359375,
+        "last_layer_anchor_cosine": 0.5952515270092185,
+        "delta_excess": 0.012143109567010368
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7862629342799422,
+        "raw_CAM_max_difference": 7.875,
+        "last_layer_anchor_cosine": 0.6744524563131623,
+        "delta_excess": -0.038121655855856196
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_10239",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9922402481759193,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6368898874957115,
+        "delta_excess": -0.019399041690922936
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9530516759540928,
+        "raw_CAM_max_difference": 3.4296875,
+        "last_layer_anchor_cosine": 0.3429725288216315,
+        "delta_excess": 0.0009041093725940252
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9594080751453056,
+        "raw_CAM_max_difference": 3.4296875,
+        "last_layer_anchor_cosine": 0.6271330594869174,
+        "delta_excess": 0.02030315106351696
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8506129827515053,
+        "raw_CAM_max_difference": 8.578125,
+        "last_layer_anchor_cosine": 0.6368898874957115,
+        "delta_excess": -0.0046259306916195675
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_02410",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9927566129052646,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6302808806893203,
+        "delta_excess": -0.0015520963346746797
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9622944986990292,
+        "raw_CAM_max_difference": 0.28125,
+        "last_layer_anchor_cosine": 0.3460144708560847,
+        "delta_excess": -0.035085508511650154
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.98007878741055,
+        "raw_CAM_max_difference": 0.28125,
+        "last_layer_anchor_cosine": 0.5852559409877316,
+        "delta_excess": -0.033533412176975474
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6654743972547807,
+        "raw_CAM_max_difference": 8.859375,
+        "last_layer_anchor_cosine": 0.6302808806893203,
+        "delta_excess": -0.04403154485070748
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_09577",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9950596872015819,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6444596779850398,
+        "delta_excess": -0.003966651124518661
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9829402080238985,
+        "raw_CAM_max_difference": 0.546875,
+        "last_layer_anchor_cosine": 0.37298108340703784,
+        "delta_excess": -0.02872051522464225
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9919081901785884,
+        "raw_CAM_max_difference": 0.546875,
+        "last_layer_anchor_cosine": 0.6161520861687876,
+        "delta_excess": -0.02475386410012359
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8350353238421205,
+        "raw_CAM_max_difference": 11.6875,
+        "last_layer_anchor_cosine": 0.6444596779850398,
+        "delta_excess": -0.044252169734595115
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02108551_2850",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "T",
+      "short_vs_generic": {
+        "tam_cosine": 0.990185861902341,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6210807694490128,
+        "delta_excess": -0.018851339196725103
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9711281826689745,
+        "raw_CAM_max_difference": 0.3984375,
+        "last_layer_anchor_cosine": 0.3076796437196463,
+        "delta_excess": -0.011159129339809337
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9887999547214745,
+        "raw_CAM_max_difference": 0.3984375,
+        "last_layer_anchor_cosine": 0.5980840135801884,
+        "delta_excess": 0.007692209856915766
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6303837197979787,
+        "raw_CAM_max_difference": 10.53125,
+        "last_layer_anchor_cosine": 0.6210807694490128,
+        "delta_excess": -0.09549897786593087
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02115913_3196",
+      "natural_first_token_same": false,
+      "natural_generic_token": "This",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9765069952742624,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6254744135071644,
+        "delta_excess": -0.010151926774116457
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9575132944077311,
+        "raw_CAM_max_difference": 2.640625,
+        "last_layer_anchor_cosine": 0.3686378851603529,
+        "delta_excess": -0.005011884219536467
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9772927283058311,
+        "raw_CAM_max_difference": 2.640625,
+        "last_layer_anchor_cosine": 0.6099797280090814,
+        "delta_excess": 0.0051400425545799905
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8384326504055921,
+        "raw_CAM_max_difference": 7.71875,
+        "last_layer_anchor_cosine": 0.6254744135071644,
+        "delta_excess": -0.03737608117847001
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02104365_10393",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.996415889376424,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5590035262689498,
+        "delta_excess": -0.01474441719610986
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9958389320833186,
+        "raw_CAM_max_difference": 0.5,
+        "last_layer_anchor_cosine": 0.2504751690716611,
+        "delta_excess": -0.007032334933898987
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9973423879120086,
+        "raw_CAM_max_difference": 0.5,
+        "last_layer_anchor_cosine": 0.5435277056951274,
+        "delta_excess": 0.007712082262210873
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8412024344507926,
+        "raw_CAM_max_difference": 18.671875,
+        "last_layer_anchor_cosine": 0.5590035262689498,
+        "delta_excess": -0.13620090847605798
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02091831_6114",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "Sal",
+      "short_vs_generic": {
+        "tam_cosine": 0.9957074870767681,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5561645675553266,
+        "delta_excess": -0.015108341618239929
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9895453723098889,
+        "raw_CAM_max_difference": 0.50830078125,
+        "last_layer_anchor_cosine": 0.2845691078906004,
+        "delta_excess": -0.021441316439673397
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9892790953228783,
+        "raw_CAM_max_difference": 0.50830078125,
+        "last_layer_anchor_cosine": 0.5363280045028019,
+        "delta_excess": -0.006332974821433468
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.3670964888907921,
+        "raw_CAM_max_difference": 15.3125,
+        "last_layer_anchor_cosine": 0.5561645675553266,
+        "delta_excess": 0.4308346624136097
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02092002_2257",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "Ir",
+      "short_vs_generic": {
+        "tam_cosine": 0.9960466087350767,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5817866701261061,
+        "delta_excess": -0.0012945091990850255
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9916187761359027,
+        "raw_CAM_max_difference": 0.375,
+        "last_layer_anchor_cosine": 0.2977513291367295,
+        "delta_excess": -0.012448942917815176
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9961330612542014,
+        "raw_CAM_max_difference": 0.375,
+        "last_layer_anchor_cosine": 0.5353114573704011,
+        "delta_excess": -0.01115443371873015
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.21672835249207123,
+        "raw_CAM_max_difference": 14.75,
+        "last_layer_anchor_cosine": 0.5817866701261061,
+        "delta_excess": 0.10580195851637753
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02111889_597",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "Sam",
+      "short_vs_generic": {
+        "tam_cosine": 0.999271595131975,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5920967092764969,
+        "delta_excess": 0.0011990051239540445
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9972817461378193,
+        "raw_CAM_max_difference": 0.875,
+        "last_layer_anchor_cosine": 0.32694654660619504,
+        "delta_excess": 0.004116936660885417
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9968249354503593,
+        "raw_CAM_max_difference": 0.875,
+        "last_layer_anchor_cosine": 0.5815351065616559,
+        "delta_excess": 0.002917931536931373
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.35829390786124526,
+        "raw_CAM_max_difference": 15.25,
+        "last_layer_anchor_cosine": 0.5920967092764969,
+        "delta_excess": 0.15279018269461564
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02107574_1953",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9983204593139241,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.537983778745767,
+        "delta_excess": 0.004422462692921514
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.987281728759167,
+        "raw_CAM_max_difference": 0.5,
+        "last_layer_anchor_cosine": 0.27159260307967786,
+        "delta_excess": -0.028178598964897994
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9880563884868657,
+        "raw_CAM_max_difference": 0.5,
+        "last_layer_anchor_cosine": 0.6253916655384264,
+        "delta_excess": -0.03260106165781951
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.6582758398826305,
+        "raw_CAM_max_difference": 15.0,
+        "last_layer_anchor_cosine": 0.537983778745767,
+        "delta_excess": 0.051844603891846947
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02094258_3165",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9958525740221161,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.575833805057084,
+        "delta_excess": -0.021188671589480845
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9697492581298722,
+        "raw_CAM_max_difference": 0.25,
+        "last_layer_anchor_cosine": 0.24091388866177668,
+        "delta_excess": -0.043534846774530706
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9720582498451797,
+        "raw_CAM_max_difference": 0.25,
+        "last_layer_anchor_cosine": 0.5623123977174105,
+        "delta_excess": -0.02234617518504986
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7138637213701319,
+        "raw_CAM_max_difference": 8.900390625,
+        "last_layer_anchor_cosine": 0.575833805057084,
+        "delta_excess": -0.03221719836438877
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_english_cocker_spaniel_57",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9969625785186517,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.606548805991766,
+        "delta_excess": 0.015264132771696248
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9929780465028745,
+        "raw_CAM_max_difference": 0.875,
+        "last_layer_anchor_cosine": 0.34928386287060953,
+        "delta_excess": -0.01374297115571499
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9903695774209004,
+        "raw_CAM_max_difference": 0.875,
+        "last_layer_anchor_cosine": 0.6129863218538733,
+        "delta_excess": -0.029007103927411237
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7598813959339276,
+        "raw_CAM_max_difference": 8.453125,
+        "last_layer_anchor_cosine": 0.606548805991766,
+        "delta_excess": 0.10522515830818113
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_Bombay_78",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 1.0,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5703895807579648,
+        "delta_excess": 0.0
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.7315071699758159,
+        "raw_CAM_max_difference": 0.234375,
+        "last_layer_anchor_cosine": 0.33740897954450744,
+        "delta_excess": -0.08404977375565603
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.7315071699758159,
+        "raw_CAM_max_difference": 0.234375,
+        "last_layer_anchor_cosine": 0.6112646289477537,
+        "delta_excess": -0.08404977375565603
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8426032913488692,
+        "raw_CAM_max_difference": 17.1953125,
+        "last_layer_anchor_cosine": 0.5703895807579648,
+        "delta_excess": -0.022752417429529784
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_newfoundland_83",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9834326397942295,
+        "raw_CAM_max_difference": 6.7890625,
+        "last_layer_anchor_cosine": 0.5941636385741416,
+        "delta_excess": -0.0037109054298134214
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9900776183840555,
+        "raw_CAM_max_difference": 6.4140625,
+        "last_layer_anchor_cosine": 0.2861254227019283,
+        "delta_excess": -0.009514169572805958
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9910272761152067,
+        "raw_CAM_max_difference": 0.859375,
+        "last_layer_anchor_cosine": 0.6758949121985139,
+        "delta_excess": -0.005803264142992537
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7671539440070225,
+        "raw_CAM_max_difference": 10.8125,
+        "last_layer_anchor_cosine": 0.5941636385741416,
+        "delta_excess": -0.006888031740619693
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_Bengal_68",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "The",
+      "short_vs_generic": {
+        "tam_cosine": 0.9775130241653258,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.6441740059942035,
+        "delta_excess": -0.016521012121373385
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9731936825455161,
+        "raw_CAM_max_difference": 2.0703125,
+        "last_layer_anchor_cosine": 0.3190896163034745,
+        "delta_excess": -0.018932059971240756
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9812283735291797,
+        "raw_CAM_max_difference": 2.0703125,
+        "last_layer_anchor_cosine": 0.6564414387059521,
+        "delta_excess": -0.0024110478498673704
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.8427050893269753,
+        "raw_CAM_max_difference": 12.5,
+        "last_layer_anchor_cosine": 0.6441740059942035,
+        "delta_excess": -0.04276207588449579
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_Egyptian_Mau_21",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9990974684704299,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.610992558383916,
+        "delta_excess": -0.00884980571870464
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9913823152764651,
+        "raw_CAM_max_difference": 0.34375,
+        "last_layer_anchor_cosine": 0.30750890968019984,
+        "delta_excess": 0.03315225826478352
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.991171233748457,
+        "raw_CAM_max_difference": 0.34375,
+        "last_layer_anchor_cosine": 0.5035976551087893,
+        "delta_excess": 0.04200206398348816
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7804426755229539,
+        "raw_CAM_max_difference": 11.46875,
+        "last_layer_anchor_cosine": 0.610992558383916,
+        "delta_excess": 0.035510404336521584
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_British_Shorthair_72",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "British",
+      "short_vs_generic": {
+        "tam_cosine": 0.9968094121405369,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5759021888358276,
+        "delta_excess": 0.008244429729365177
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9904229380302518,
+        "raw_CAM_max_difference": 0.375,
+        "last_layer_anchor_cosine": 0.32801804879775653,
+        "delta_excess": 0.0224897680403518
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9878360305954209,
+        "raw_CAM_max_difference": 0.375,
+        "last_layer_anchor_cosine": 0.6185686355163705,
+        "delta_excess": 0.014245338310986622
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.5827327996687532,
+        "raw_CAM_max_difference": 14.60546875,
+        "last_layer_anchor_cosine": 0.5759021888358276,
+        "delta_excess": 0.12601379042162322
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_staffordshire_bull_terrier_64",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9986434231924393,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.617469478463078,
+        "delta_excess": -0.007014157014156974
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9957897612997298,
+        "raw_CAM_max_difference": 0.250732421875,
+        "last_layer_anchor_cosine": 0.29308065353146057,
+        "delta_excess": -0.015562242915184155
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9964719157301517,
+        "raw_CAM_max_difference": 0.250732421875,
+        "last_layer_anchor_cosine": 0.6581930727307589,
+        "delta_excess": -0.00854808590102718
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.81230798325398,
+        "raw_CAM_max_difference": 16.40625,
+        "last_layer_anchor_cosine": 0.617469478463078,
+        "delta_excess": -0.02609817689085986
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_shiba_inu_24",
+      "natural_first_token_same": false,
+      "natural_generic_token": "A",
+      "natural_task_token": "This",
+      "short_vs_generic": {
+        "tam_cosine": 0.9964160475513207,
+        "raw_CAM_max_difference": 0.0,
+        "last_layer_anchor_cosine": 0.5934137658722737,
+        "delta_excess": -0.00042043591767348953
+      },
+      "full_vs_generic": {
+        "tam_cosine": 0.9957696777096511,
+        "raw_CAM_max_difference": 1.0,
+        "last_layer_anchor_cosine": 0.2984182015858868,
+        "delta_excess": 0.017237664296487876
+      },
+      "full_vs_short": {
+        "tam_cosine": 0.9974725287880869,
+        "raw_CAM_max_difference": 1.0,
+        "last_layer_anchor_cosine": 0.6719686479561332,
+        "delta_excess": 0.017658100214161365
+      },
+      "natural_task_vs_generic": {
+        "tam_cosine": 0.7874072860456518,
+        "raw_CAM_max_difference": 12.28125,
+        "last_layer_anchor_cosine": 0.5934137658722737,
+        "delta_excess": 0.06576137945861554
+      }
+    }
+  ]
+}

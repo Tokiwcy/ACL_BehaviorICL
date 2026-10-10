@@ -1,0 +1,3681 @@
+{
+  "protocol_SHA256": "626979ce25ebd07ae576f2717ec49d09df8bedc21009bed8ca97f885ce6902f4",
+  "base_protocol_SHA256": "9cc744ce02a0e38e08868b5b0ccd66828d2e0bc36cc67d505388fa589a0640d9",
+  "datasets": {
+    "dtd": {
+      "bank_n": 94,
+      "query_n": 32,
+      "methods": {
+        "layer18": {
+          "top1": {
+            "rates": {
+              "generic": 0.21875,
+              "task_short": 0.21875,
+              "task_full": 0.40625,
+              "label_list_only": 0.4375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.21875,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.375
+                ],
+                "positive": 7,
+                "negative": 0,
+                "zero": 25
+              },
+              "task_full_minus_generic": {
+                "mean": 0.1875,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.34375
+                ],
+                "positive": 7,
+                "negative": 1,
+                "zero": 24
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.1875,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.34375
+                ],
+                "positive": 7,
+                "negative": 1,
+                "zero": 24
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.15625,
+                  0.09375
+                ],
+                "positive": 2,
+                "negative": 3,
+                "zero": 27
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.4375,
+              "task_short": 0.40625,
+              "task_full": 0.5625,
+              "label_list_only": 0.53125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.0625
+                ],
+                "positive": 1,
+                "negative": 2,
+                "zero": 29
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 1,
+                "zero": 27
+              },
+              "task_full_minus_generic": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.25
+                ],
+                "positive": 4,
+                "negative": 0,
+                "zero": 28
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.15625,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.28125
+                ],
+                "positive": 5,
+                "negative": 0,
+                "zero": 27
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.21599732615651793,
+              "task_short": 0.19361490644480414,
+              "task_full": 0.30685920861731,
+              "label_list_only": 0.3052643948387101
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": -0.02238241971171379,
+                "95_percent_bootstrap_mean": [
+                  -0.06656883228089792,
+                  0.02463640196216292
+                ],
+                "positive": 9,
+                "negative": 23,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.08926706868219215,
+                "95_percent_bootstrap_mean": [
+                  0.02863290608861493,
+                  0.16094504040160096
+                ],
+                "positive": 20,
+                "negative": 11,
+                "zero": 1
+              },
+              "task_full_minus_generic": {
+                "mean": 0.09086188246079202,
+                "95_percent_bootstrap_mean": [
+                  0.03418285481308287,
+                  0.15529590559254405
+                ],
+                "positive": 21,
+                "negative": 9,
+                "zero": 2
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.1132443021725058,
+                "95_percent_bootstrap_mean": [
+                  0.0593777975405652,
+                  0.1692096598368908
+                ],
+                "positive": 28,
+                "negative": 4,
+                "zero": 0
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.001594813778599869,
+                "95_percent_bootstrap_mean": [
+                  -0.06756979094963149,
+                  0.06637009594114167
+                ],
+                "positive": 21,
+                "negative": 10,
+                "zero": 1
+              }
+            }
+          }
+        },
+        "layer36": {
+          "top1": {
+            "rates": {
+              "generic": 0.46875,
+              "task_short": 0.6875,
+              "task_full": 0.75,
+              "label_list_only": 0.78125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.21875,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.375
+                ],
+                "positive": 7,
+                "negative": 0,
+                "zero": 25
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.3125,
+                "95_percent_bootstrap_mean": [
+                  0.125,
+                  0.5
+                ],
+                "positive": 11,
+                "negative": 1,
+                "zero": 20
+              },
+              "task_full_minus_generic": {
+                "mean": 0.28125,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.46875
+                ],
+                "positive": 10,
+                "negative": 1,
+                "zero": 21
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 1,
+                "zero": 31
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.6875,
+              "task_short": 0.875,
+              "task_full": 0.9375,
+              "label_list_only": 0.90625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.1875,
+                "95_percent_bootstrap_mean": [
+                  0.0625,
+                  0.3125
+                ],
+                "positive": 6,
+                "negative": 0,
+                "zero": 26
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.21875,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.375
+                ],
+                "positive": 7,
+                "negative": 0,
+                "zero": 25
+              },
+              "task_full_minus_generic": {
+                "mean": 0.25,
+                "95_percent_bootstrap_mean": [
+                  0.125,
+                  0.40625
+                ],
+                "positive": 8,
+                "negative": 0,
+                "zero": 24
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.44274048188547627,
+              "task_short": 0.6706378097873669,
+              "task_full": 0.7678060694436681,
+              "label_list_only": 0.7820019958133018
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.22789732790189055,
+                "95_percent_bootstrap_mean": [
+                  0.14328484197128805,
+                  0.3182416725342216
+                ],
+                "positive": 23,
+                "negative": 2,
+                "zero": 7
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.3392615139278255,
+                "95_percent_bootstrap_mean": [
+                  0.22574254270533478,
+                  0.4566979149697035
+                ],
+                "positive": 25,
+                "negative": 2,
+                "zero": 5
+              },
+              "task_full_minus_generic": {
+                "mean": 0.3250655875581918,
+                "95_percent_bootstrap_mean": [
+                  0.20593910789409742,
+                  0.44457721949879225
+                ],
+                "positive": 24,
+                "negative": 3,
+                "zero": 5
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09716825965630121,
+                "95_percent_bootstrap_mean": [
+                  0.015686185055231713,
+                  0.17914349077803052
+                ],
+                "positive": 17,
+                "negative": 4,
+                "zero": 11
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.01419592636963371,
+                "95_percent_bootstrap_mean": [
+                  -0.047299758169697434,
+                  0.014311610555140446
+                ],
+                "positive": 6,
+                "negative": 6,
+                "zero": 20
+              }
+            }
+          }
+        },
+        "mean_normalized_36_layers": {
+          "top1": {
+            "rates": {
+              "generic": 0.3125,
+              "task_short": 0.65625,
+              "task_full": 0.75,
+              "label_list_only": 0.8125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.34375,
+                "95_percent_bootstrap_mean": [
+                  0.1875,
+                  0.5
+                ],
+                "positive": 11,
+                "negative": 0,
+                "zero": 21
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.6875
+                ],
+                "positive": 17,
+                "negative": 1,
+                "zero": 14
+              },
+              "task_full_minus_generic": {
+                "mean": 0.4375,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.625
+                ],
+                "positive": 15,
+                "negative": 1,
+                "zero": 16
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.25
+                ],
+                "positive": 5,
+                "negative": 2,
+                "zero": 25
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.15625,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 2,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.5625,
+              "task_short": 0.875,
+              "task_full": 0.90625,
+              "label_list_only": 0.90625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.3125,
+                "95_percent_bootstrap_mean": [
+                  0.15625,
+                  0.46875
+                ],
+                "positive": 10,
+                "negative": 0,
+                "zero": 22
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.34375,
+                "95_percent_bootstrap_mean": [
+                  0.15625,
+                  0.53125
+                ],
+                "positive": 12,
+                "negative": 1,
+                "zero": 19
+              },
+              "task_full_minus_generic": {
+                "mean": 0.34375,
+                "95_percent_bootstrap_mean": [
+                  0.15625,
+                  0.53125
+                ],
+                "positive": 12,
+                "negative": 1,
+                "zero": 19
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.29835793971113106,
+              "task_short": 0.6239256775195487,
+              "task_full": 0.7890863875238875,
+              "label_list_only": 0.7989453255078255
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.3255677378084177,
+                "95_percent_bootstrap_mean": [
+                  0.22587689561948196,
+                  0.4274069740071963
+                ],
+                "positive": 28,
+                "negative": 2,
+                "zero": 2
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.5005873857966944,
+                "95_percent_bootstrap_mean": [
+                  0.37380534649317376,
+                  0.6230389581209957
+                ],
+                "positive": 29,
+                "negative": 2,
+                "zero": 1
+              },
+              "task_full_minus_generic": {
+                "mean": 0.4907284478127564,
+                "95_percent_bootstrap_mean": [
+                  0.3625973402598308,
+                  0.6148039340035757
+                ],
+                "positive": 29,
+                "negative": 2,
+                "zero": 1
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.16516071000433868,
+                "95_percent_bootstrap_mean": [
+                  0.06340946511285396,
+                  0.27342388540709583
+                ],
+                "positive": 19,
+                "negative": 4,
+                "zero": 9
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.009858937983937988,
+                "95_percent_bootstrap_mean": [
+                  -0.05101656625094125,
+                  0.028039902805527796
+                ],
+                "positive": 5,
+                "negative": 8,
+                "zero": 19
+              }
+            }
+          }
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": {
+            "rates": {
+              "generic": 0.34375,
+              "task_short": 0.65625,
+              "task_full": 0.75,
+              "label_list_only": 0.78125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.3125,
+                "95_percent_bootstrap_mean": [
+                  0.15625,
+                  0.46875
+                ],
+                "positive": 10,
+                "negative": 0,
+                "zero": 22
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4375,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.625
+                ],
+                "positive": 15,
+                "negative": 1,
+                "zero": 16
+              },
+              "task_full_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.21875,
+                  0.59375
+                ],
+                "positive": 14,
+                "negative": 1,
+                "zero": 17
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 1,
+                "zero": 27
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 1,
+                "zero": 31
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.53125,
+              "task_short": 0.875,
+              "task_full": 0.90625,
+              "label_list_only": 0.90625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.34375,
+                "95_percent_bootstrap_mean": [
+                  0.1875,
+                  0.5
+                ],
+                "positive": 11,
+                "negative": 0,
+                "zero": 21
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.375,
+                "95_percent_bootstrap_mean": [
+                  0.21875,
+                  0.53125
+                ],
+                "positive": 12,
+                "negative": 0,
+                "zero": 20
+              },
+              "task_full_minus_generic": {
+                "mean": 0.375,
+                "95_percent_bootstrap_mean": [
+                  0.21875,
+                  0.53125
+                ],
+                "positive": 12,
+                "negative": 0,
+                "zero": 20
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.33756529660930534,
+              "task_short": 0.6453377368141399,
+              "task_full": 0.7949541716560551,
+              "label_list_only": 0.7929424315539937
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.3077724402048345,
+                "95_percent_bootstrap_mean": [
+                  0.20291098132145866,
+                  0.41205789146783267
+                ],
+                "positive": 27,
+                "negative": 3,
+                "zero": 2
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.45537713494468834,
+                "95_percent_bootstrap_mean": [
+                  0.3258878185223173,
+                  0.5786054482564816
+                ],
+                "positive": 28,
+                "negative": 2,
+                "zero": 2
+              },
+              "task_full_minus_generic": {
+                "mean": 0.45738887504674974,
+                "95_percent_bootstrap_mean": [
+                  0.32424867483520536,
+                  0.5878468994551017
+                ],
+                "positive": 28,
+                "negative": 2,
+                "zero": 2
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.14961643484191522,
+                "95_percent_bootstrap_mean": [
+                  0.057603320118490495,
+                  0.2465387801463517
+                ],
+                "positive": 19,
+                "negative": 3,
+                "zero": 10
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0020117401020614267,
+                "95_percent_bootstrap_mean": [
+                  -0.035818341447990974,
+                  0.037913625224149435
+                ],
+                "positive": 6,
+                "negative": 5,
+                "zero": 21
+              }
+            }
+          }
+        }
+      }
+    },
+    "aircraft": {
+      "bank_n": 200,
+      "query_n": 32,
+      "methods": {
+        "layer18": {
+          "top1": {
+            "rates": {
+              "generic": 0.15625,
+              "task_short": 0.15625,
+              "task_full": 0.09375,
+              "label_list_only": 0.0625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              },
+              "label_list_only_minus_generic": {
+                "mean": -0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.21875,
+                  0.03125
+                ],
+                "positive": 1,
+                "negative": 4,
+                "zero": 27
+              },
+              "task_full_minus_generic": {
+                "mean": -0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.1875,
+                  0.0625
+                ],
+                "positive": 1,
+                "negative": 3,
+                "zero": 28
+              },
+              "task_full_minus_task_short": {
+                "mean": -0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.15625,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 2,
+                "zero": 30
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.21875,
+              "task_short": 0.21875,
+              "task_full": 0.3125,
+              "label_list_only": 0.34375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 2,
+                "zero": 28
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.28125
+                ],
+                "positive": 5,
+                "negative": 1,
+                "zero": 26
+              },
+              "task_full_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.25
+                ],
+                "positive": 5,
+                "negative": 2,
+                "zero": 25
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 0,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.1875,
+                  0.125
+                ],
+                "positive": 3,
+                "negative": 4,
+                "zero": 25
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.13296804296081008,
+              "task_short": 0.1575604942520913,
+              "task_full": 0.1729894726686655,
+              "label_list_only": 0.17629682322575263
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.024592451291281237,
+                "95_percent_bootstrap_mean": [
+                  -0.024983219313861507,
+                  0.08728568406553393
+                ],
+                "positive": 25,
+                "negative": 6,
+                "zero": 1
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.043328780264942565,
+                "95_percent_bootstrap_mean": [
+                  -0.025118808403500337,
+                  0.12172669485846303
+                ],
+                "positive": 25,
+                "negative": 7,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.04002142970785539,
+                "95_percent_bootstrap_mean": [
+                  -0.029839845987859083,
+                  0.11168908754546147
+                ],
+                "positive": 26,
+                "negative": 6,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.015428978416574157,
+                "95_percent_bootstrap_mean": [
+                  -0.024386912661039168,
+                  0.054375951487376346
+                ],
+                "positive": 24,
+                "negative": 8,
+                "zero": 0
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.003307350557087172,
+                "95_percent_bootstrap_mean": [
+                  -0.03945190746879125,
+                  0.03791648961039783
+                ],
+                "positive": 11,
+                "negative": 20,
+                "zero": 1
+              }
+            }
+          }
+        },
+        "layer36": {
+          "top1": {
+            "rates": {
+              "generic": 0.09375,
+              "task_short": 0.5,
+              "task_full": 0.59375,
+              "label_list_only": 0.5625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.59375
+                ],
+                "positive": 13,
+                "negative": 0,
+                "zero": 19
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.46875,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.65625
+                ],
+                "positive": 15,
+                "negative": 0,
+                "zero": 17
+              },
+              "task_full_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.6875
+                ],
+                "positive": 16,
+                "negative": 0,
+                "zero": 16
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.25
+                ],
+                "positive": 5,
+                "negative": 2,
+                "zero": 25
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.15625
+                ],
+                "positive": 3,
+                "negative": 2,
+                "zero": 27
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.34375,
+              "task_short": 0.78125,
+              "task_full": 0.78125,
+              "label_list_only": 0.75
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.4375,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.59375
+                ],
+                "positive": 14,
+                "negative": 0,
+                "zero": 18
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.5632812499999886
+                ],
+                "positive": 13,
+                "negative": 0,
+                "zero": 19
+              },
+              "task_full_minus_generic": {
+                "mean": 0.4375,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.625
+                ],
+                "positive": 14,
+                "negative": 0,
+                "zero": 18
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.15625,
+                  0.15625
+                ],
+                "positive": 3,
+                "negative": 3,
+                "zero": 26
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.15152069947318608,
+              "task_short": 0.5611954386312582,
+              "task_full": 0.6138177873552247,
+              "label_list_only": 0.5855711378771034
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.40967473915807207,
+                "95_percent_bootstrap_mean": [
+                  0.3179850159733407,
+                  0.5043140968673255
+                ],
+                "positive": 31,
+                "negative": 0,
+                "zero": 1
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4340504384039172,
+                "95_percent_bootstrap_mean": [
+                  0.3127300589041645,
+                  0.56098484908132
+                ],
+                "positive": 29,
+                "negative": 1,
+                "zero": 2
+              },
+              "task_full_minus_generic": {
+                "mean": 0.46229708788203866,
+                "95_percent_bootstrap_mean": [
+                  0.34270584059354914,
+                  0.5824280463540641
+                ],
+                "positive": 31,
+                "negative": 0,
+                "zero": 1
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.05262234872396664,
+                "95_percent_bootstrap_mean": [
+                  -0.04202856953932513,
+                  0.1578186330112469
+                ],
+                "positive": 12,
+                "negative": 13,
+                "zero": 7
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.028246649478121437,
+                "95_percent_bootstrap_mean": [
+                  -0.033007134698179896,
+                  0.09085834781692731
+                ],
+                "positive": 11,
+                "negative": 9,
+                "zero": 12
+              }
+            }
+          }
+        },
+        "mean_normalized_36_layers": {
+          "top1": {
+            "rates": {
+              "generic": 0.09375,
+              "task_short": 0.46875,
+              "task_full": 0.59375,
+              "label_list_only": 0.53125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.375,
+                "95_percent_bootstrap_mean": [
+                  0.21875,
+                  0.5625
+                ],
+                "positive": 12,
+                "negative": 0,
+                "zero": 20
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4375,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.625
+                ],
+                "positive": 15,
+                "negative": 1,
+                "zero": 16
+              },
+              "task_full_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.6875
+                ],
+                "positive": 17,
+                "negative": 1,
+                "zero": 14
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.34375
+                ],
+                "positive": 8,
+                "negative": 4,
+                "zero": 20
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.15625,
+              "task_short": 0.78125,
+              "task_full": 0.78125,
+              "label_list_only": 0.78125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.46875,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.4375,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "task_full_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.4375,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 2,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 0,
+                "zero": 32
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.10863005902504666,
+              "task_short": 0.5399107338317508,
+              "task_full": 0.644013938057837,
+              "label_list_only": 0.5933867694805195
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.4312806748067042,
+                "95_percent_bootstrap_mean": [
+                  0.3270043130749353,
+                  0.5425119723772353
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.48475671045547275,
+                "95_percent_bootstrap_mean": [
+                  0.3710301584520663,
+                  0.6036508414256485
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.5353838790327904,
+                "95_percent_bootstrap_mean": [
+                  0.4126531104766416,
+                  0.6605027926357462
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.10410320422608622,
+                "95_percent_bootstrap_mean": [
+                  -0.006442731461928588,
+                  0.22345483097734928
+                ],
+                "positive": 16,
+                "negative": 10,
+                "zero": 6
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.05062716857731758,
+                "95_percent_bootstrap_mean": [
+                  0.005415704049425279,
+                  0.10480885037221337
+                ],
+                "positive": 10,
+                "negative": 8,
+                "zero": 14
+              }
+            }
+          }
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": {
+            "rates": {
+              "generic": 0.0625,
+              "task_short": 0.53125,
+              "task_full": 0.59375,
+              "label_list_only": 0.5
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.46875,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.65625
+                ],
+                "positive": 15,
+                "negative": 0,
+                "zero": 17
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4375,
+                "95_percent_bootstrap_mean": [
+                  0.28125,
+                  0.625
+                ],
+                "positive": 14,
+                "negative": 0,
+                "zero": 18
+              },
+              "task_full_minus_generic": {
+                "mean": 0.53125,
+                "95_percent_bootstrap_mean": [
+                  0.375,
+                  0.6875
+                ],
+                "positive": 17,
+                "negative": 0,
+                "zero": 15
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.25
+                ],
+                "positive": 6,
+                "negative": 4,
+                "zero": 22
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 1,
+                "zero": 27
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.1875,
+              "task_short": 0.78125,
+              "task_full": 0.78125,
+              "label_list_only": 0.78125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.4375,
+                  0.75
+                ],
+                "positive": 19,
+                "negative": 0,
+                "zero": 13
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.75
+                ],
+                "positive": 19,
+                "negative": 0,
+                "zero": 13
+              },
+              "task_full_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.75
+                ],
+                "positive": 19,
+                "negative": 0,
+                "zero": 13
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 2,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 0,
+                "zero": 32
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.10868934875173719,
+              "task_short": 0.565369900567269,
+              "task_full": 0.6370247873729531,
+              "label_list_only": 0.581618606599966
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.4566805518155318,
+                "95_percent_bootstrap_mean": [
+                  0.3510018120461792,
+                  0.5666075194741517
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4729292578482287,
+                "95_percent_bootstrap_mean": [
+                  0.3592268348680626,
+                  0.5952315561116468
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.528335438621216,
+                "95_percent_bootstrap_mean": [
+                  0.4090852617915212,
+                  0.6498237430423912
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.07165488680568413,
+                "95_percent_bootstrap_mean": [
+                  -0.0384236237880358,
+                  0.1912433741388819
+                ],
+                "positive": 13,
+                "negative": 12,
+                "zero": 7
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.055406180772987174,
+                "95_percent_bootstrap_mean": [
+                  -0.0002216344935828122,
+                  0.11614875217626576
+                ],
+                "positive": 10,
+                "negative": 9,
+                "zero": 13
+              }
+            }
+          }
+        }
+      }
+    },
+    "cub": {
+      "bank_n": 400,
+      "query_n": 32,
+      "methods": {
+        "layer18": {
+          "top1": {
+            "rates": {
+              "generic": 0.09375,
+              "task_short": 0.0625,
+              "task_full": 0.1875,
+              "label_list_only": 0.1875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 1,
+                "zero": 31
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 1,
+                "zero": 27
+              },
+              "task_full_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 0,
+                "zero": 29
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.25
+                ],
+                "positive": 4,
+                "negative": 0,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 2,
+                "zero": 28
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.125,
+              "task_short": 0.21875,
+              "task_full": 0.34375,
+              "label_list_only": 0.28125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 0,
+                "zero": 29
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.15625,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.28125
+                ],
+                "positive": 5,
+                "negative": 0,
+                "zero": 27
+              },
+              "task_full_minus_generic": {
+                "mean": 0.21875,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.375
+                ],
+                "positive": 7,
+                "negative": 0,
+                "zero": 25
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.28125
+                ],
+                "positive": 5,
+                "negative": 1,
+                "zero": 26
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.07731844479935732,
+              "task_short": 0.08606686343520428,
+              "task_full": 0.17908270290270778,
+              "label_list_only": 0.1694917511918766
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.008748418635846956,
+                "95_percent_bootstrap_mean": [
+                  -0.013193722344270754,
+                  0.026995652180782963
+                ],
+                "positive": 22,
+                "negative": 10,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.09217330639251928,
+                "95_percent_bootstrap_mean": [
+                  0.028471644762650915,
+                  0.1736308616476706
+                ],
+                "positive": 29,
+                "negative": 3,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.10176425810335044,
+                "95_percent_bootstrap_mean": [
+                  0.04136573040902266,
+                  0.18223512235647776
+                ],
+                "positive": 29,
+                "negative": 2,
+                "zero": 1
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0930158394675035,
+                "95_percent_bootstrap_mean": [
+                  0.03846263212686213,
+                  0.16497136881625038
+                ],
+                "positive": 29,
+                "negative": 3,
+                "zero": 0
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.00959095171083116,
+                "95_percent_bootstrap_mean": [
+                  -0.03272911620786839,
+                  0.04906824533828932
+                ],
+                "positive": 18,
+                "negative": 13,
+                "zero": 1
+              }
+            }
+          }
+        },
+        "layer36": {
+          "top1": {
+            "rates": {
+              "generic": 0.15625,
+              "task_short": 0.65625,
+              "task_full": 0.6875,
+              "label_list_only": 0.625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.34375,
+                  0.6875
+                ],
+                "positive": 16,
+                "negative": 0,
+                "zero": 16
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.46875,
+                "95_percent_bootstrap_mean": [
+                  0.28125,
+                  0.65625
+                ],
+                "positive": 16,
+                "negative": 1,
+                "zero": 15
+              },
+              "task_full_minus_generic": {
+                "mean": 0.53125,
+                "95_percent_bootstrap_mean": [
+                  0.34375,
+                  0.71875
+                ],
+                "positive": 17,
+                "negative": 0,
+                "zero": 15
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.4375,
+              "task_short": 0.84375,
+              "task_full": 0.84375,
+              "label_list_only": 0.8125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.59375
+                ],
+                "positive": 13,
+                "negative": 0,
+                "zero": 19
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.375,
+                "95_percent_bootstrap_mean": [
+                  0.15625,
+                  0.5625
+                ],
+                "positive": 14,
+                "negative": 2,
+                "zero": 16
+              },
+              "task_full_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.25,
+                  0.59375
+                ],
+                "positive": 13,
+                "negative": 0,
+                "zero": 19
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 2,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.15625
+                ],
+                "positive": 3,
+                "negative": 2,
+                "zero": 27
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.20179703123792275,
+              "task_short": 0.7152248503811003,
+              "task_full": 0.7139736224623078,
+              "label_list_only": 0.6515888599758084
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5134278191431776,
+                "95_percent_bootstrap_mean": [
+                  0.4011279075850735,
+                  0.6282733108316447
+                ],
+                "positive": 31,
+                "negative": 0,
+                "zero": 1
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4497918287378857,
+                "95_percent_bootstrap_mean": [
+                  0.3285083194800251,
+                  0.5692274133426668
+                ],
+                "positive": 29,
+                "negative": 2,
+                "zero": 1
+              },
+              "task_full_minus_generic": {
+                "mean": 0.512176591224385,
+                "95_percent_bootstrap_mean": [
+                  0.38952060387272136,
+                  0.6357912658737315
+                ],
+                "positive": 30,
+                "negative": 1,
+                "zero": 1
+              },
+              "task_full_minus_task_short": {
+                "mean": -0.001251227918792567,
+                "95_percent_bootstrap_mean": [
+                  -0.07059337397167408,
+                  0.06180019216993895
+                ],
+                "positive": 9,
+                "negative": 8,
+                "zero": 15
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.062384762486499296,
+                "95_percent_bootstrap_mean": [
+                  0.005579463733475359,
+                  0.1320973982983998
+                ],
+                "positive": 13,
+                "negative": 7,
+                "zero": 12
+              }
+            }
+          }
+        },
+        "mean_normalized_36_layers": {
+          "top1": {
+            "rates": {
+              "generic": 0.125,
+              "task_short": 0.5,
+              "task_full": 0.65625,
+              "label_list_only": 0.625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.375,
+                "95_percent_bootstrap_mean": [
+                  0.1875,
+                  0.5625
+                ],
+                "positive": 13,
+                "negative": 1,
+                "zero": 18
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.6875
+                ],
+                "positive": 17,
+                "negative": 1,
+                "zero": 14
+              },
+              "task_full_minus_generic": {
+                "mean": 0.53125,
+                "95_percent_bootstrap_mean": [
+                  0.375,
+                  0.6875
+                ],
+                "positive": 17,
+                "negative": 0,
+                "zero": 15
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.15625,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.34375
+                ],
+                "positive": 8,
+                "negative": 3,
+                "zero": 21
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.21875,
+              "task_short": 0.71875,
+              "task_full": 0.8125,
+              "label_list_only": 0.84375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.65625
+                ],
+                "positive": 16,
+                "negative": 0,
+                "zero": 16
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.46875,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "task_full_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.4375,
+                  0.75
+                ],
+                "positive": 19,
+                "negative": 0,
+                "zero": 13
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.25
+                ],
+                "positive": 5,
+                "negative": 2,
+                "zero": 25
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.0625
+                ],
+                "positive": 1,
+                "negative": 2,
+                "zero": 29
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.11479174835258282,
+              "task_short": 0.5466746103544904,
+              "task_full": 0.6752915334257246,
+              "label_list_only": 0.6470425841519591
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.4318828620019077,
+                "95_percent_bootstrap_mean": [
+                  0.3093538176257681,
+                  0.5537614313044085
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.5322508357993763,
+                "95_percent_bootstrap_mean": [
+                  0.41240358558427503,
+                  0.6476551864073835
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.5604997850731418,
+                "95_percent_bootstrap_mean": [
+                  0.4488711396485733,
+                  0.6719452356056187
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.1286169230712341,
+                "95_percent_bootstrap_mean": [
+                  0.015188348073536875,
+                  0.2434016828118564
+                ],
+                "positive": 18,
+                "negative": 6,
+                "zero": 8
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.02824894927376545,
+                "95_percent_bootstrap_mean": [
+                  -0.012873891133886536,
+                  0.07007270832466145
+                ],
+                "positive": 16,
+                "negative": 5,
+                "zero": 11
+              }
+            }
+          }
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": {
+            "rates": {
+              "generic": 0.21875,
+              "task_short": 0.625,
+              "task_full": 0.6875,
+              "label_list_only": 0.625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.21875,
+                  0.59375
+                ],
+                "positive": 14,
+                "negative": 1,
+                "zero": 17
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.40625,
+                "95_percent_bootstrap_mean": [
+                  0.21875,
+                  0.59375
+                ],
+                "positive": 14,
+                "negative": 1,
+                "zero": 17
+              },
+              "task_full_minus_generic": {
+                "mean": 0.46875,
+                "95_percent_bootstrap_mean": [
+                  0.3125,
+                  0.65625
+                ],
+                "positive": 15,
+                "negative": 0,
+                "zero": 17
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 2,
+                "zero": 26
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.28125,
+              "task_short": 0.78125,
+              "task_full": 0.8125,
+              "label_list_only": 0.8125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5,
+                "95_percent_bootstrap_mean": [
+                  0.34375,
+                  0.6875
+                ],
+                "positive": 16,
+                "negative": 0,
+                "zero": 16
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.53125,
+                "95_percent_bootstrap_mean": [
+                  0.375,
+                  0.71875
+                ],
+                "positive": 17,
+                "negative": 0,
+                "zero": 15
+              },
+              "task_full_minus_generic": {
+                "mean": 0.53125,
+                "95_percent_bootstrap_mean": [
+                  0.375,
+                  0.6875
+                ],
+                "positive": 17,
+                "negative": 0,
+                "zero": 15
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.15625
+                ],
+                "positive": 3,
+                "negative": 2,
+                "zero": 27
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.15989621222110842,
+              "task_short": 0.6354131016480155,
+              "task_full": 0.7019235412118588,
+              "label_list_only": 0.6544739901731189
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.47551688942690706,
+                "95_percent_bootstrap_mean": [
+                  0.3526619953610557,
+                  0.6012604704591386
+                ],
+                "positive": 31,
+                "negative": 0,
+                "zero": 1
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.4945777779520106,
+                "95_percent_bootstrap_mean": [
+                  0.3726054648345221,
+                  0.6147723390016173
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.5420273289907505,
+                "95_percent_bootstrap_mean": [
+                  0.4249112835093854,
+                  0.659637151804693
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.06651043956384346,
+                "95_percent_bootstrap_mean": [
+                  -0.023526150397545048,
+                  0.15314929540164798
+                ],
+                "positive": 17,
+                "negative": 6,
+                "zero": 9
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0474495510387399,
+                "95_percent_bootstrap_mean": [
+                  0.0032515334643744777,
+                  0.10313089516068771
+                ],
+                "positive": 10,
+                "negative": 4,
+                "zero": 18
+              }
+            }
+          }
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 240,
+      "query_n": 32,
+      "methods": {
+        "layer18": {
+          "top1": {
+            "rates": {
+              "generic": 0.03125,
+              "task_short": 0.09375,
+              "task_full": 0.125,
+              "label_list_only": 0.0625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              },
+              "task_full_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 0,
+                "zero": 29
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.0625,
+              "task_short": 0.125,
+              "task_full": 0.1875,
+              "label_list_only": 0.125
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              },
+              "task_full_minus_generic": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.28125
+                ],
+                "positive": 5,
+                "negative": 1,
+                "zero": 26
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 2,
+                "zero": 26
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.05573504028077104,
+              "task_short": 0.094384171215148,
+              "task_full": 0.10064668682683246,
+              "label_list_only": 0.0802586887116801
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.038649130934376955,
+                "95_percent_bootstrap_mean": [
+                  -0.0063824678102143585,
+                  0.10156975051537229
+                ],
+                "positive": 21,
+                "negative": 11,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.024523648430909054,
+                "95_percent_bootstrap_mean": [
+                  -0.006025391194352145,
+                  0.06293067005525863
+                ],
+                "positive": 23,
+                "negative": 9,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.04491164654606142,
+                "95_percent_bootstrap_mean": [
+                  -0.0011736759729661485,
+                  0.10115111544188171
+                ],
+                "positive": 18,
+                "negative": 14,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.006262515611684466,
+                "95_percent_bootstrap_mean": [
+                  -0.021156798442794954,
+                  0.04166739307953701
+                ],
+                "positive": 15,
+                "negative": 16,
+                "zero": 1
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.020387998115152364,
+                "95_percent_bootstrap_mean": [
+                  -0.019674044279967134,
+                  0.07329204401728086
+                ],
+                "positive": 16,
+                "negative": 16,
+                "zero": 0
+              }
+            }
+          }
+        },
+        "layer36": {
+          "top1": {
+            "rates": {
+              "generic": 0.125,
+              "task_short": 0.75,
+              "task_full": 0.71875,
+              "label_list_only": 0.71875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.4679687500000007,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 1,
+                "zero": 11
+              },
+              "task_full_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 1,
+                "zero": 11
+              },
+              "task_full_minus_task_short": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.21875,
+                  0.1875
+                ],
+                "positive": 5,
+                "negative": 6,
+                "zero": 21
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 0,
+                "zero": 32
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.125,
+              "task_short": 0.96875,
+              "task_full": 0.9375,
+              "label_list_only": 0.9375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.84375,
+                "95_percent_bootstrap_mean": [
+                  0.71875,
+                  0.96875
+                ],
+                "positive": 27,
+                "negative": 0,
+                "zero": 5
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.8125,
+                "95_percent_bootstrap_mean": [
+                  0.6875,
+                  0.9375
+                ],
+                "positive": 26,
+                "negative": 0,
+                "zero": 6
+              },
+              "task_full_minus_generic": {
+                "mean": 0.8125,
+                "95_percent_bootstrap_mean": [
+                  0.6875,
+                  0.9375
+                ],
+                "positive": 26,
+                "negative": 0,
+                "zero": 6
+              },
+              "task_full_minus_task_short": {
+                "mean": -0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.125,
+                  0.0625
+                ],
+                "positive": 1,
+                "negative": 2,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 0,
+                "zero": 32
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.096994577868341,
+              "task_short": 0.7612661541889483,
+              "task_full": 0.7124848803157626,
+              "label_list_only": 0.7117421038479792
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.6642715763206073,
+                "95_percent_bootstrap_mean": [
+                  0.5679016121708519,
+                  0.7574505181333687
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.6147475259796382,
+                "95_percent_bootstrap_mean": [
+                  0.5095209179499199,
+                  0.7169492059483056
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.6154903024474216,
+                "95_percent_bootstrap_mean": [
+                  0.5073293144755514,
+                  0.7204474164184722
+                ],
+                "positive": 30,
+                "negative": 2,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": -0.04878127387318564,
+                "95_percent_bootstrap_mean": [
+                  -0.13983228423945335,
+                  0.04764759597020624
+                ],
+                "positive": 9,
+                "negative": 13,
+                "zero": 10
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0007427764677833352,
+                "95_percent_bootstrap_mean": [
+                  -0.024559837747702536,
+                  0.030305386375183284
+                ],
+                "positive": 5,
+                "negative": 10,
+                "zero": 17
+              }
+            }
+          }
+        },
+        "mean_normalized_36_layers": {
+          "top1": {
+            "rates": {
+              "generic": 0.0625,
+              "task_short": 0.625,
+              "task_full": 0.625,
+              "label_list_only": 0.6875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5625,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.71875
+                ],
+                "positive": 18,
+                "negative": 0,
+                "zero": 14
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.46875,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "task_full_minus_generic": {
+                "mean": 0.5625,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.71875
+                ],
+                "positive": 18,
+                "negative": 0,
+                "zero": 14
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.15625,
+                  0.15625
+                ],
+                "positive": 3,
+                "negative": 3,
+                "zero": 26
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.15625,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 2,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.09375,
+              "task_short": 0.875,
+              "task_full": 0.9375,
+              "label_list_only": 0.90625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.78125,
+                "95_percent_bootstrap_mean": [
+                  0.625,
+                  0.90625
+                ],
+                "positive": 25,
+                "negative": 0,
+                "zero": 7
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.8125,
+                "95_percent_bootstrap_mean": [
+                  0.6875,
+                  0.9375
+                ],
+                "positive": 26,
+                "negative": 0,
+                "zero": 6
+              },
+              "task_full_minus_generic": {
+                "mean": 0.84375,
+                "95_percent_bootstrap_mean": [
+                  0.71875,
+                  0.96875
+                ],
+                "positive": 27,
+                "negative": 0,
+                "zero": 5
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.06367559351205224,
+              "task_short": 0.6416452167847491,
+              "task_full": 0.6727595015278839,
+              "label_list_only": 0.6893935461340984
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5779696232726967,
+                "95_percent_bootstrap_mean": [
+                  0.4599015972639063,
+                  0.6890713784546146
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.6257179526220462,
+                "95_percent_bootstrap_mean": [
+                  0.5258118867938815,
+                  0.7244676916728161
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.6090839080158316,
+                "95_percent_bootstrap_mean": [
+                  0.5094854780868282,
+                  0.7077361624940545
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03111428474313485,
+                "95_percent_bootstrap_mean": [
+                  -0.04813838445691064,
+                  0.11577582868144644
+                ],
+                "positive": 13,
+                "negative": 8,
+                "zero": 11
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.01663404460621458,
+                "95_percent_bootstrap_mean": [
+                  -0.04446655615371148,
+                  0.005701515102164884
+                ],
+                "positive": 7,
+                "negative": 8,
+                "zero": 17
+              }
+            }
+          }
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": {
+            "rates": {
+              "generic": 0.03125,
+              "task_short": 0.625,
+              "task_full": 0.6875,
+              "label_list_only": 0.6875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.59375,
+                "95_percent_bootstrap_mean": [
+                  0.40625,
+                  0.75
+                ],
+                "positive": 19,
+                "negative": 0,
+                "zero": 13
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.65625,
+                "95_percent_bootstrap_mean": [
+                  0.5,
+                  0.8125
+                ],
+                "positive": 21,
+                "negative": 0,
+                "zero": 11
+              },
+              "task_full_minus_generic": {
+                "mean": 0.65625,
+                "95_percent_bootstrap_mean": [
+                  0.5,
+                  0.8125
+                ],
+                "positive": 21,
+                "negative": 0,
+                "zero": 11
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.25
+                ],
+                "positive": 5,
+                "negative": 3,
+                "zero": 24
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 0,
+                "zero": 32
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.125,
+              "task_short": 0.875,
+              "task_full": 0.9375,
+              "label_list_only": 0.9375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.75,
+                "95_percent_bootstrap_mean": [
+                  0.59375,
+                  0.90625
+                ],
+                "positive": 24,
+                "negative": 0,
+                "zero": 8
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.8125,
+                "95_percent_bootstrap_mean": [
+                  0.6875,
+                  0.9375
+                ],
+                "positive": 26,
+                "negative": 0,
+                "zero": 6
+              },
+              "task_full_minus_generic": {
+                "mean": 0.8125,
+                "95_percent_bootstrap_mean": [
+                  0.6875,
+                  0.9375
+                ],
+                "positive": 26,
+                "negative": 0,
+                "zero": 6
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.1875
+                ],
+                "positive": 3,
+                "negative": 1,
+                "zero": 28
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.0
+                ],
+                "positive": 0,
+                "negative": 0,
+                "zero": 32
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.060092147171251775,
+              "task_short": 0.6648315656042239,
+              "task_full": 0.6901099537037036,
+              "label_list_only": 0.6905390237235245
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.6047394184329721,
+                "95_percent_bootstrap_mean": [
+                  0.4908684067175278,
+                  0.7115587432729508
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.6304468765522726,
+                "95_percent_bootstrap_mean": [
+                  0.5313196721117109,
+                  0.726160325830076
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.6300178065324519,
+                "95_percent_bootstrap_mean": [
+                  0.5310775503828439,
+                  0.7255547600402519
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.025278388099479847,
+                "95_percent_bootstrap_mean": [
+                  -0.06306845309455303,
+                  0.1196326886669058
+                ],
+                "positive": 13,
+                "negative": 11,
+                "zero": 8
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.00042907001982080487,
+                "95_percent_bootstrap_mean": [
+                  -0.020428975126234716,
+                  0.01831972522196012
+                ],
+                "positive": 8,
+                "negative": 6,
+                "zero": 18
+              }
+            }
+          }
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 74,
+      "query_n": 32,
+      "methods": {
+        "layer18": {
+          "top1": {
+            "rates": {
+              "generic": 0.09375,
+              "task_short": 0.125,
+              "task_full": 0.21875,
+              "label_list_only": 0.1875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 1,
+                "zero": 27
+              },
+              "task_full_minus_generic": {
+                "mean": 0.125,
+                "95_percent_bootstrap_mean": [
+                  0.03125,
+                  0.25
+                ],
+                "positive": 4,
+                "negative": 0,
+                "zero": 28
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  -0.03125,
+                  0.21875
+                ],
+                "positive": 4,
+                "negative": 1,
+                "zero": 27
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.25,
+              "task_short": 0.3125,
+              "task_full": 0.53125,
+              "label_list_only": 0.5
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.25,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.40625
+                ],
+                "positive": 8,
+                "negative": 0,
+                "zero": 24
+              },
+              "task_full_minus_generic": {
+                "mean": 0.28125,
+                "95_percent_bootstrap_mean": [
+                  0.125,
+                  0.4375
+                ],
+                "positive": 9,
+                "negative": 0,
+                "zero": 23
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.21875,
+                "95_percent_bootstrap_mean": [
+                  0.09375,
+                  0.375
+                ],
+                "positive": 7,
+                "negative": 0,
+                "zero": 25
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.13564624126891564,
+              "task_short": 0.18584874250564323,
+              "task_full": 0.2899971946615893,
+              "label_list_only": 0.27224544248605753
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.05020250123672758,
+                "95_percent_bootstrap_mean": [
+                  0.00017149661081749035,
+                  0.11506244519117173
+                ],
+                "positive": 24,
+                "negative": 8,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.13659920121714192,
+                "95_percent_bootstrap_mean": [
+                  0.0707771721772201,
+                  0.21020804076884556
+                ],
+                "positive": 27,
+                "negative": 5,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.15435095339267363,
+                "95_percent_bootstrap_mean": [
+                  0.09002750424693055,
+                  0.22513442099802497
+                ],
+                "positive": 27,
+                "negative": 3,
+                "zero": 2
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.10414845215594606,
+                "95_percent_bootstrap_mean": [
+                  0.036728845604715475,
+                  0.1744183553894618
+                ],
+                "positive": 27,
+                "negative": 4,
+                "zero": 1
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.017751752175531724,
+                "95_percent_bootstrap_mean": [
+                  -0.00696111122707426,
+                  0.045456713584128686
+                ],
+                "positive": 19,
+                "negative": 10,
+                "zero": 3
+              }
+            }
+          }
+        },
+        "layer36": {
+          "top1": {
+            "rates": {
+              "generic": 0.21875,
+              "task_short": 0.90625,
+              "task_full": 0.90625,
+              "label_list_only": 0.90625
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.6875,
+                "95_percent_bootstrap_mean": [
+                  0.53125,
+                  0.84375
+                ],
+                "positive": 22,
+                "negative": 0,
+                "zero": 10
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.6875,
+                "95_percent_bootstrap_mean": [
+                  0.53125,
+                  0.84375
+                ],
+                "positive": 22,
+                "negative": 0,
+                "zero": 10
+              },
+              "task_full_minus_generic": {
+                "mean": 0.6875,
+                "95_percent_bootstrap_mean": [
+                  0.53125,
+                  0.84375
+                ],
+                "positive": 22,
+                "negative": 0,
+                "zero": 10
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.3125,
+              "task_short": 0.9375,
+              "task_full": 0.9375,
+              "label_list_only": 0.9375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.4375,
+                  0.8125
+                ],
+                "positive": 21,
+                "negative": 1,
+                "zero": 10
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.46875,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "task_full_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.4375,
+                  0.8125
+                ],
+                "positive": 21,
+                "negative": 1,
+                "zero": 10
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.2200535355067086,
+              "task_short": 0.8782805735930735,
+              "task_full": 0.8689566798941799,
+              "label_list_only": 0.8746167027417027
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.658227038086365,
+                "95_percent_bootstrap_mean": [
+                  0.5469143541009173,
+                  0.7609272793657491
+                ],
+                "positive": 30,
+                "negative": 1,
+                "zero": 1
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.6545631672349941,
+                "95_percent_bootstrap_mean": [
+                  0.5438259768464264,
+                  0.7610032417883874
+                ],
+                "positive": 30,
+                "negative": 1,
+                "zero": 1
+              },
+              "task_full_minus_generic": {
+                "mean": 0.6489031443874713,
+                "95_percent_bootstrap_mean": [
+                  0.5438695718996616,
+                  0.7483737853089469
+                ],
+                "positive": 30,
+                "negative": 1,
+                "zero": 1
+              },
+              "task_full_minus_task_short": {
+                "mean": -0.009323893698893703,
+                "95_percent_bootstrap_mean": [
+                  -0.07181537285052911,
+                  0.053038344757094735
+                ],
+                "positive": 7,
+                "negative": 8,
+                "zero": 17
+              },
+              "task_full_minus_label_list_only": {
+                "mean": -0.005660022847522851,
+                "95_percent_bootstrap_mean": [
+                  -0.04905433614417989,
+                  0.045249124428811904
+                ],
+                "positive": 3,
+                "negative": 5,
+                "zero": 24
+              }
+            }
+          }
+        },
+        "mean_normalized_36_layers": {
+          "top1": {
+            "rates": {
+              "generic": 0.125,
+              "task_short": 0.8125,
+              "task_full": 0.90625,
+              "label_list_only": 0.875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.6875,
+                "95_percent_bootstrap_mean": [
+                  0.53125,
+                  0.84375
+                ],
+                "positive": 22,
+                "negative": 0,
+                "zero": 10
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.75,
+                "95_percent_bootstrap_mean": [
+                  0.59375,
+                  0.875
+                ],
+                "positive": 24,
+                "negative": 0,
+                "zero": 8
+              },
+              "task_full_minus_generic": {
+                "mean": 0.78125,
+                "95_percent_bootstrap_mean": [
+                  0.625,
+                  0.90625
+                ],
+                "positive": 25,
+                "negative": 0,
+                "zero": 7
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.21875
+                ],
+                "positive": 3,
+                "negative": 0,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.25,
+              "task_short": 0.875,
+              "task_full": 0.9375,
+              "label_list_only": 0.9375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.625,
+                "95_percent_bootstrap_mean": [
+                  0.46875,
+                  0.78125
+                ],
+                "positive": 20,
+                "negative": 0,
+                "zero": 12
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.6875,
+                "95_percent_bootstrap_mean": [
+                  0.53125,
+                  0.84375
+                ],
+                "positive": 22,
+                "negative": 0,
+                "zero": 10
+              },
+              "task_full_minus_generic": {
+                "mean": 0.6875,
+                "95_percent_bootstrap_mean": [
+                  0.53125,
+                  0.84375
+                ],
+                "positive": 22,
+                "negative": 0,
+                "zero": 10
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.0625,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.15625
+                ],
+                "positive": 2,
+                "negative": 0,
+                "zero": 30
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.1410429914014641,
+              "task_short": 0.7088507514748323,
+              "task_full": 0.8650747963659148,
+              "label_list_only": 0.8479290674603175
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.5678077600733683,
+                "95_percent_bootstrap_mean": [
+                  0.4625090260666104,
+                  0.6689395959510565
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.7068860760588533,
+                "95_percent_bootstrap_mean": [
+                  0.6087094974085743,
+                  0.798740062182828
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.7240318049644507,
+                "95_percent_bootstrap_mean": [
+                  0.6322076136939097,
+                  0.8097908546187663
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.15622404489108244,
+                "95_percent_bootstrap_mean": [
+                  0.0780004627262089,
+                  0.24689292015899258
+                ],
+                "positive": 18,
+                "negative": 2,
+                "zero": 12
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.017145728905597322,
+                "95_percent_bootstrap_mean": [
+                  -0.016839266134085217,
+                  0.07079156223893066
+                ],
+                "positive": 5,
+                "negative": 3,
+                "zero": 24
+              }
+            }
+          }
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": {
+            "rates": {
+              "generic": 0.15625,
+              "task_short": 0.8125,
+              "task_full": 0.90625,
+              "label_list_only": 0.875
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.65625,
+                "95_percent_bootstrap_mean": [
+                  0.5,
+                  0.8125
+                ],
+                "positive": 21,
+                "negative": 0,
+                "zero": 11
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.71875,
+                "95_percent_bootstrap_mean": [
+                  0.5625,
+                  0.875
+                ],
+                "positive": 23,
+                "negative": 0,
+                "zero": 9
+              },
+              "task_full_minus_generic": {
+                "mean": 0.75,
+                "95_percent_bootstrap_mean": [
+                  0.59375,
+                  0.90625
+                ],
+                "positive": 24,
+                "negative": 0,
+                "zero": 8
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.09375,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.21875
+                ],
+                "positive": 3,
+                "negative": 0,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  0.0,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 0,
+                "zero": 31
+              }
+            }
+          },
+          "top4": {
+            "rates": {
+              "generic": 0.1875,
+              "task_short": 0.90625,
+              "task_full": 0.9375,
+              "label_list_only": 0.9375
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.71875,
+                "95_percent_bootstrap_mean": [
+                  0.5625,
+                  0.875
+                ],
+                "positive": 23,
+                "negative": 0,
+                "zero": 9
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.75,
+                "95_percent_bootstrap_mean": [
+                  0.59375,
+                  0.90625
+                ],
+                "positive": 24,
+                "negative": 0,
+                "zero": 8
+              },
+              "task_full_minus_generic": {
+                "mean": 0.75,
+                "95_percent_bootstrap_mean": [
+                  0.59375,
+                  0.875
+                ],
+                "positive": 24,
+                "negative": 0,
+                "zero": 8
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.03125,
+                "95_percent_bootstrap_mean": [
+                  -0.0625,
+                  0.125
+                ],
+                "positive": 2,
+                "negative": 1,
+                "zero": 29
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.0,
+                "95_percent_bootstrap_mean": [
+                  -0.09375,
+                  0.09375
+                ],
+                "positive": 1,
+                "negative": 1,
+                "zero": 30
+              }
+            }
+          },
+          "AP": {
+            "rates": {
+              "generic": 0.15451210119793926,
+              "task_short": 0.8033854166666667,
+              "task_full": 0.8727988591269841,
+              "label_list_only": 0.8560335497835497
+            },
+            "paired_deltas": {
+              "task_short_minus_generic": {
+                "mean": 0.6488733154687274,
+                "95_percent_bootstrap_mean": [
+                  0.5430967389144745,
+                  0.7501180119235619
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "label_list_only_minus_generic": {
+                "mean": 0.7015214485856105,
+                "95_percent_bootstrap_mean": [
+                  0.6012919351195186,
+                  0.7968771771442044
+                ],
+                "positive": 32,
+                "negative": 0,
+                "zero": 0
+              },
+              "task_full_minus_generic": {
+                "mean": 0.7182867579290448,
+                "95_percent_bootstrap_mean": [
+                  0.6206579697450649,
+                  0.8097193832966184
+                ],
+                "positive": 31,
+                "negative": 1,
+                "zero": 0
+              },
+              "task_full_minus_task_short": {
+                "mean": 0.06941344246031747,
+                "95_percent_bootstrap_mean": [
+                  -0.006250620039682545,
+                  0.15991536458333333
+                ],
+                "positive": 10,
+                "negative": 6,
+                "zero": 16
+              },
+              "task_full_minus_label_list_only": {
+                "mean": 0.016765309343434343,
+                "95_percent_bootstrap_mean": [
+                  -0.015962851167929292,
+                  0.06144622846771284
+                ],
+                "positive": 5,
+                "negative": 5,
+                "zero": 22
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "limits": [
+    "This is two-per-class retrieval, not full-bank downstream ICL accuracy.",
+    "The label-list-only arm still implicitly defines a classification task.",
+    "The method and prompt contrasts are exploratory; 32 queries per dataset."
+  ]
+}

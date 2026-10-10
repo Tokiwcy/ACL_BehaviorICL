@@ -1,0 +1,42 @@
+{
+  "state": "cancelled_by_user",
+  "utc": "2026-10-07T08:39:34.341447+00:00",
+  "reason": "User switched to InternVL after repeated Windows HYPERVISOR_ERROR 0x20001 restarts",
+  "last_smoke": {
+    "model": "LiquidAI/LFM2.5-VL-3B",
+    "revision": "35a118d938ce6d123ac2d371649f24a8efb69058",
+    "pid": 8904,
+    "state": "running",
+    "cases": {
+      "one_image_source": {
+        "input_tokens": 2302,
+        "visual_tokens": 1783,
+        "pixel_values_shape": [
+          7,
+          1024,
+          768
+        ],
+        "peak_reserved_after_prepare_gb": 5.908203125,
+        "states_shape": [
+          1,
+          30,
+          2048
+        ],
+        "states_finite": true,
+        "peak_reserved_gb": 7.826171875
+      }
+    },
+    "checked_utc": "2026-10-07T08:28:23.461969+00:00",
+    "dtype": "bfloat16",
+    "image_config": {
+      "max_tiles": 10,
+      "max_image_tokens": 256,
+      "do_image_splitting": true,
+      "tile_size": 512
+    },
+    "layers": 30,
+    "width": 2048,
+    "stage": "five_image_icl"
+  },
+  "resume_authorized": false
+}

@@ -1,0 +1,352 @@
+{
+  "version": "joint_v2",
+  "state": "running",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "boot_identity": "2026-10-09T01:08:18.5000000Z",
+  "started_utc": "2026-10-08T09:43:52.575094+00:00",
+  "stages": [
+    {
+      "dataset": "cub",
+      "stage": "joint_source",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_sources_v2.py",
+        "--dataset",
+        "cub"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T12:59:18.233243+00:00",
+      "worker_pid": 13316,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:17:29.299136+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_joint_source.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "train_proj",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "train_proj"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:17:29.300140+00:00",
+      "worker_pid": 7720,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:18:33.095202+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_train_proj.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "train_learn",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "train_learn"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:18:33.096202+00:00",
+      "worker_pid": 5744,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:19:31.360338+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_train_learn.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "train_detriever",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "train_detriever"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:19:31.361783+00:00",
+      "worker_pid": 19324,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:21:22.409026+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_train_detriever.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "clip_source",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_sources_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "clip"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:21:22.409944+00:00",
+      "worker_pid": 19724,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:13.230367+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_clip_source.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "retrieve_raw",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "retrieve",
+        "--method",
+        "raw"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:22:13.231371+00:00",
+      "worker_pid": 21908,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:25.379476+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_retrieve_raw.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "retrieve_proj",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "retrieve",
+        "--method",
+        "proj"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:22:25.380470+00:00",
+      "worker_pid": 26284,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:32.495902+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_retrieve_proj.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "retrieve_learn",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "retrieve",
+        "--method",
+        "learn"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:22:32.496904+00:00",
+      "worker_pid": 12720,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:39.627234+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_retrieve_learn.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "retrieve_gpt_mm",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "retrieve",
+        "--method",
+        "gpt_mm"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:22:39.628234+00:00",
+      "worker_pid": 4976,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:44.410926+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_retrieve_gpt_mm.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "retrieve_detriever",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "retrieve",
+        "--method",
+        "detriever"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:22:44.411936+00:00",
+      "worker_pid": 26932,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:50.619827+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_retrieve_detriever.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "retrieve_rices",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_methods_v2.py",
+        "--dataset",
+        "cub",
+        "--stage",
+        "retrieve",
+        "--method",
+        "rices"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T16:22:50.620827+00:00",
+      "worker_pid": 22324,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T16:22:55.089579+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_retrieve_rices.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "icl_raw",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\internvl35_icl_cache_guard_v1.py",
+        "--dataset",
+        "cub",
+        "--method",
+        "raw",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-09T01:30:27.322261+00:00",
+      "worker_pid": 12164,
+      "return_code": 0,
+      "finished_utc": "2026-10-09T04:49:15.752074+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_icl_raw.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "icl_proj",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\internvl35_icl_cache_guard_v1.py",
+        "--dataset",
+        "cub",
+        "--method",
+        "proj",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-09T04:49:15.753074+00:00",
+      "worker_pid": 3832,
+      "return_code": 0,
+      "finished_utc": "2026-10-09T11:30:48.835359+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_joint_v2\\pipeline_logs\\cub_icl_proj.log"
+    },
+    {
+      "dataset": "cub",
+      "stage": "icl_learn",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\internvl35_icl_cache_guard_v1.py",
+        "--dataset",
+        "cub",
+        "--method",
+        "learn",
+        "--batch-size",
+        "1"
+      ],
+      "state": "running",
+      "started_utc": "2026-10-09T11:30:48.835359+00:00",
+      "worker_pid": 30780
+    }
+  ],
+  "supervisor_pid": 24524,
+  "planned_stages": 55,
+  "current": {
+    "dataset": "cub",
+    "stage": "icl_learn"
+  },
+  "paused_utc": "2026-10-08T10:58:30.268098+00:00",
+  "pause_reason": "Explicit user pause; experiment processes stopped; heartbeat PAUSED",
+  "history": [
+    {
+      "dataset": "cub",
+      "stage": "joint_source",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_sources_v2.py",
+        "--dataset",
+        "cub"
+      ],
+      "state": "paused",
+      "started_utc": "2026-10-08T09:43:52.584113+00:00",
+      "worker_pid": 12436,
+      "paused_utc": "2026-10-08T10:58:30.268098+00:00"
+    },
+    {
+      "dataset": "cub",
+      "stage": "icl_raw",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_icl_v2.py",
+        "--dataset",
+        "cub",
+        "--method",
+        "raw",
+        "--batch-size",
+        "1"
+      ],
+      "state": "running",
+      "started_utc": "2026-10-08T16:22:55.089579+00:00",
+      "worker_pid": 3280
+    },
+    {
+      "dataset": "cub",
+      "stage": "icl_raw",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_icl_v2.py",
+        "--dataset",
+        "cub",
+        "--method",
+        "raw",
+        "--batch-size",
+        "1"
+      ],
+      "state": "running",
+      "started_utc": "2026-10-09T00:48:11.562131+00:00",
+      "worker_pid": 8224
+    }
+  ],
+  "checked_utc": "2026-10-09T11:30:48.835359+00:00",
+  "resume_reason": "Confirmed planned Windows upgrade; saved-context replay exact",
+  "operation_receipt": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\analysis\\internvl35_joint_v2\\checked_resume_4fec08f0e9e0bd9c.json"
+}

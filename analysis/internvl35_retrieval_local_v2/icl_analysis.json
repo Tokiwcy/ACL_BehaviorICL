@@ -1,0 +1,108 @@
+{
+  "retrieval_protocol_SHA256": "3c456c6296fe21f373ec61d4fa1980453c587c563da45023e62df86044b494c1",
+  "question": "Does task-conditioned versus generic retrieval change four-shot closed-set ICL with the ICL prompt fixed?",
+  "scope": "32 official test queries and two bank images per class; no full-bank or full-test claim",
+  "datasets": {
+    "dtd": {
+      "n": 32,
+      "generic_correct": 22,
+      "task_full_correct": 23,
+      "generic_accuracy": 0.6875,
+      "task_full_accuracy": 0.71875,
+      "paired_delta": {
+        "mean": 0.03125,
+        "95_percent_bootstrap_mean": [
+          -0.0625,
+          0.15625
+        ],
+        "positive": 2,
+        "negative": 1,
+        "zero": 29
+      }
+    },
+    "aircraft": {
+      "n": 32,
+      "generic_correct": 4,
+      "task_full_correct": 6,
+      "generic_accuracy": 0.125,
+      "task_full_accuracy": 0.1875,
+      "paired_delta": {
+        "mean": 0.0625,
+        "95_percent_bootstrap_mean": [
+          -0.0625,
+          0.1875
+        ],
+        "positive": 3,
+        "negative": 1,
+        "zero": 28
+      }
+    },
+    "cub": {
+      "n": 32,
+      "generic_correct": 6,
+      "task_full_correct": 9,
+      "generic_accuracy": 0.1875,
+      "task_full_accuracy": 0.28125,
+      "paired_delta": {
+        "mean": 0.09375,
+        "95_percent_bootstrap_mean": [
+          -0.03125,
+          0.21875
+        ],
+        "positive": 4,
+        "negative": 1,
+        "zero": 27
+      }
+    },
+    "dogs": {
+      "n": 32,
+      "generic_correct": 5,
+      "task_full_correct": 11,
+      "generic_accuracy": 0.15625,
+      "task_full_accuracy": 0.34375,
+      "paired_delta": {
+        "mean": 0.1875,
+        "95_percent_bootstrap_mean": [
+          0.0625,
+          0.34375
+        ],
+        "positive": 6,
+        "negative": 0,
+        "zero": 26
+      }
+    },
+    "pets": {
+      "n": 32,
+      "generic_correct": 13,
+      "task_full_correct": 23,
+      "generic_accuracy": 0.40625,
+      "task_full_accuracy": 0.71875,
+      "paired_delta": {
+        "mean": 0.3125,
+        "95_percent_bootstrap_mean": [
+          0.125,
+          0.5
+        ],
+        "positive": 12,
+        "negative": 2,
+        "zero": 18
+      }
+    }
+  },
+  "pooled_160_queries": {
+    "generic_correct": 50,
+    "task_full_correct": 72,
+    "generic_accuracy": 0.3125,
+    "task_full_accuracy": 0.45,
+    "paired_delta": {
+      "mean": 0.1375,
+      "95_percent_bootstrap_mean": [
+        0.075,
+        0.20625
+      ],
+      "positive": 27,
+      "negative": 5,
+      "zero": 128
+    }
+  }
+}

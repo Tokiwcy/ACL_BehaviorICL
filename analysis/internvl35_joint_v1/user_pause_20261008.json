@@ -1,0 +1,43 @@
+{
+  "stopped_processes": [
+    {
+      "ProcessId": 6884,
+      "ParentProcessId": 488,
+      "CreationDate": "2026-10-08T17:07:45.956184+08:00",
+      "CommandLine": "\"C:\\Users\\toki_\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -u scripts/run_internvl35_joint_handover_clock_guard_v1.py --stage handover"
+    },
+    {
+      "ProcessId": 488,
+      "ParentProcessId": 1732,
+      "CreationDate": "2026-10-08T17:07:45.932134+08:00",
+      "CommandLine": "\"C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe\" -u scripts/run_internvl35_joint_handover_clock_guard_v1.py --stage handover"
+    },
+    {
+      "ProcessId": 3872,
+      "ParentProcessId": 13608,
+      "CreationDate": "2026-10-07T16:52:59.404208+08:00",
+      "CommandLine": "\"C:\\Users\\toki_\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -u scripts/run_internvl35_qwen_pipeline_v4.py --stage pipeline"
+    },
+    {
+      "ProcessId": 13608,
+      "ParentProcessId": 3956,
+      "CreationDate": "2026-10-07T16:52:59.359618+08:00",
+      "CommandLine": "\"C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe\" -u scripts/run_internvl35_qwen_pipeline_v4.py --stage pipeline"
+    },
+    {
+      "ProcessId": 18960,
+      "ParentProcessId": 22300,
+      "CreationDate": "2026-10-08T14:05:26.39772+08:00",
+      "CommandLine": "\"C:\\Users\\toki_\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -u C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py --dataset aircraft --method rices --batch-size 1"
+    },
+    {
+      "ProcessId": 22300,
+      "ParentProcessId": 3872,
+      "CreationDate": "2026-10-08T14:05:26.389685+08:00",
+      "CommandLine": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe -u C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py --dataset aircraft --method rices --batch-size 1"
+    }
+  ],
+  "instruction": "Pause local experiments, transition and recurring reports; no automatic restore",
+  "requested_utc": "2026-10-08T09:18:09.8570335Z",
+  "state": "paused_by_user"
+}

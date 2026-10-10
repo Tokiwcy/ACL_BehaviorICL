@@ -1,5 +1,22 @@
 # 当前代码地图
 
+## 2026-10-10 新增本地科学入口
+
+原下文是2026-10-06代码地图，原科学文件与锁保持原字节。当前本地入口如下；公开clone中的启动器是实现与历史证据，不是新的GPU执行授权。
+
+| 工作 | 代码入口 | 协议/报告 |
+|---|---|---|
+| Qwen五组本地TAM与检索消融 | `run_query_tam_local_v1.py`、`run_query_retrieval_local_v1.py`及对应CPU分析器 | [LOCAL_GPU_STUDY.md](LOCAL_GPU_STUDY.md)；`analysis/query_tam_local_v3/`与`analysis/query_retrieval_local_v2/` |
+| InternVL五组32-query面板 | `run_internvl35_retrieval_local_v2.py`、`run_internvl35_icl_local_v2.py`、答案状态代理runner | [INTERNVL35_LOCAL_STUDY.md](INTERNVL35_LOCAL_STUDY.md) |
+| DTD旧单patch全量 | `run_internvl35_full_*_v1.py`、`audit_internvl35_full_v1.py` | [旧协议](INTERNVL35_FULL_PROTOCOL.md)；DTD六格完成，其余旧流水线冻结 |
+| Aircraft原生动态全量 | `run_internvl35_qwen_*_v4.py`、`audit_internvl35_qwen_config_v4.py` | [v4协议](INTERNVL35_QWEN_CONFIG_V4.md)；六格完成 |
+| CUB/Dogs/Pets联合提取全量 | `run_internvl35_joint_*_v2.py`、`internvl35_joint_source_v2.py`、`audit_internvl35_joint_v2.py` | [联合协议说明](INTERNVL35_JOINT_SOURCE_V1.md)；v2固定36条GPU兼容门槛通过，仍在运行 |
+| 当前运行保护与显式恢复 | `internvl35_icl_cache_guard_v1.py`、`resume_internvl35_user_pause_v2.py` | 原冻结解码后释放空闲缓存；受锁、授权SHA、进度SHA、模型身份及桌面进程身份守卫 |
+| 独立CPU结果记录 | `update_internvl35_qwen_results_v4.py --audit` | [CURRENT_RESULTS.md](CURRENT_RESULTS.md)第8节；仅发布完整审计方法格 |
+| 本次发布复核 | `verify_local_publication_v1.py` | [发布说明](handoff/LOCAL_PUBLICATION_20261010.md)与新增SHA清单 |
+
+v1联合cached-gold分支失败、v2/v3动态smoke失败和LFM取消均保留证据，不能当作科学完成。bank在joint_v2中进行两次vision forward，query一次；有限pilot不是全bank排名逐条等价证明。
+
 > GitHub接手版：仓库内链接可移植；原科学source/audit字节保留。完整本地归档、图片、权重及云运行状态不在此仓库，参见 [artifact availability](handoff/ARTIFACTS.md)。
 
 

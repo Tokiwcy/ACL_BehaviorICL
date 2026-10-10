@@ -1,0 +1,14 @@
+{
+  "version": "operational_clock_guard_v1",
+  "science_protocol_sha256": "8e48449bb4fb5b24534eb34c782dd4347fad01a4b37d0273504760885fbaef97",
+  "code_sha256": "1d76ffd8abdb7f3cb7ceef140f17648932211a451304f612fe40f98e71875694",
+  "expected_boot_timestamp": "2026-10-07T08:28:55.5000000Z",
+  "observed_boot_timestamp": "2026-10-07T08:28:58.3574150Z",
+  "initial_delta_seconds": 2.857415,
+  "tolerance_seconds": 10,
+  "basis": "original Aircraft supervisor PID3872 created2026-10-07T16:52:59+08 and GPU PID18960 created2026-10-08T14:05:26+08 remain alive; no System41/6005/6008 events in last3h; old waiting process survived timestamp change",
+  "started_utc": "2026-10-08T09:07:46.264871+00:00",
+  "last_checked_utc": "2026-10-08T09:07:48.086105+00:00",
+  "last_observed_boot_timestamp": "2026-10-07T08:28:58.3574150Z",
+  "last_delta_seconds": 2.857415
+}

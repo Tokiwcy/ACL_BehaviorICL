@@ -1,0 +1,3550 @@
+{
+  "version": "joint_v2",
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "shots": 4,
+  "seed": 73,
+  "official_full_test": true,
+  "paired_ci": "10000 paired-query multinomial bootstrap, seed73; descriptive, no multiplicity correction",
+  "datasets": {
+    "cub": {
+      "bank_n": 5994,
+      "query_n": 5794,
+      "manifest_sha256": "8e65e2b6a61afe8e62b16db3413352157a9aff8bbfcfadb75668244838eb8bd1",
+      "joint_source": {
+        "state": "complete",
+        "completed": 11788,
+        "total": 11788,
+        "binding": {
+          "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+          "manifest_sha256": "8e65e2b6a61afe8e62b16db3413352157a9aff8bbfcfadb75668244838eb8bd1",
+          "compatibility_sha256": "43fa052845b79b7d1b95e49cb2abdb7a7a5a90e3c7ad55db5f1e98e6e6b1c9e8"
+        },
+        "array_sha256": {
+          "anchor_states.npy": "c7caea1aadf5448648c8e08d9f3f20f454bd461294a3befb5c7e13ff13ad33e9",
+          "gpt_mm_embeddings.npy": "9df17491aebd51ca27dc4f01804bb490dcdcb66ed35154c6423e450a5b09ecf4",
+          "gold_input_answer_eos.npy": "f6e245efc7d2e921c309addb50b4768fb2f31d13be4175f04c54afc56578d1a0"
+        },
+        "answers_sha256": "f2ef6252371c5ef2b699a7dc9d5596094e1aae2f93a577c87ad009bc433c70ac"
+      },
+      "methods": {
+        "raw": {
+          "state": "complete",
+          "completed": 5794,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.4633672764929237,
+            "top4_any_same_label_fraction": 0.772178115291681
+          },
+          "correct": 3336,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.5757680358992061,
+          "accuracy_wilson_95": [
+            0.5629961747950888,
+            0.5884394941924157
+          ],
+          "macro_class_accuracy": 0.5790143425083061,
+          "per_class": {
+            "black footed albatross": {
+              "correct": 26,
+              "total": 30
+            },
+            "laysan albatross": {
+              "correct": 24,
+              "total": 30
+            },
+            "sooty albatross": {
+              "correct": 19,
+              "total": 28
+            },
+            "groove billed ani": {
+              "correct": 15,
+              "total": 30
+            },
+            "crested auklet": {
+              "correct": 9,
+              "total": 14
+            },
+            "least auklet": {
+              "correct": 8,
+              "total": 11
+            },
+            "parakeet auklet": {
+              "correct": 18,
+              "total": 23
+            },
+            "rhinoceros auklet": {
+              "correct": 11,
+              "total": 18
+            },
+            "brewer blackbird": {
+              "correct": 10,
+              "total": 29
+            },
+            "red winged blackbird": {
+              "correct": 28,
+              "total": 30
+            },
+            "rusty blackbird": {
+              "correct": 14,
+              "total": 30
+            },
+            "yellow headed blackbird": {
+              "correct": 20,
+              "total": 26
+            },
+            "bobolink": {
+              "correct": 23,
+              "total": 30
+            },
+            "indigo bunting": {
+              "correct": 18,
+              "total": 30
+            },
+            "lazuli bunting": {
+              "correct": 24,
+              "total": 28
+            },
+            "painted bunting": {
+              "correct": 26,
+              "total": 28
+            },
+            "cardinal": {
+              "correct": 26,
+              "total": 27
+            },
+            "spotted catbird": {
+              "correct": 14,
+              "total": 15
+            },
+            "gray catbird": {
+              "correct": 18,
+              "total": 29
+            },
+            "yellow breasted chat": {
+              "correct": 14,
+              "total": 29
+            },
+            "eastern towhee": {
+              "correct": 20,
+              "total": 30
+            },
+            "chuck will widow": {
+              "correct": 6,
+              "total": 26
+            },
+            "brandt cormorant": {
+              "correct": 19,
+              "total": 29
+            },
+            "red faced cormorant": {
+              "correct": 20,
+              "total": 22
+            },
+            "pelagic cormorant": {
+              "correct": 12,
+              "total": 30
+            },
+            "bronzed cowbird": {
+              "correct": 23,
+              "total": 30
+            },
+            "shiny cowbird": {
+              "correct": 9,
+              "total": 30
+            },
+            "brown creeper": {
+              "correct": 20,
+              "total": 29
+            },
+            "american crow": {
+              "correct": 17,
+              "total": 30
+            },
+            "fish crow": {
+              "correct": 2,
+              "total": 30
+            },
+            "black billed cuckoo": {
+              "correct": 22,
+              "total": 30
+            },
+            "mangrove cuckoo": {
+              "correct": 8,
+              "total": 23
+            },
+            "yellow billed cuckoo": {
+              "correct": 19,
+              "total": 29
+            },
+            "gray crowned rosy finch": {
+              "correct": 10,
+              "total": 29
+            },
+            "purple finch": {
+              "correct": 28,
+              "total": 30
+            },
+            "northern flicker": {
+              "correct": 24,
+              "total": 30
+            },
+            "acadian flycatcher": {
+              "correct": 13,
+              "total": 29
+            },
+            "great crested flycatcher": {
+              "correct": 5,
+              "total": 30
+            },
+            "least flycatcher": {
+              "correct": 7,
+              "total": 29
+            },
+            "olive sided flycatcher": {
+              "correct": 10,
+              "total": 30
+            },
+            "scissor tailed flycatcher": {
+              "correct": 18,
+              "total": 30
+            },
+            "vermilion flycatcher": {
+              "correct": 26,
+              "total": 30
+            },
+            "yellow bellied flycatcher": {
+              "correct": 6,
+              "total": 29
+            },
+            "frigatebird": {
+              "correct": 23,
+              "total": 30
+            },
+            "northern fulmar": {
+              "correct": 15,
+              "total": 30
+            },
+            "gadwall": {
+              "correct": 29,
+              "total": 30
+            },
+            "american goldfinch": {
+              "correct": 27,
+              "total": 30
+            },
+            "european goldfinch": {
+              "correct": 28,
+              "total": 30
+            },
+            "boat tailed grackle": {
+              "correct": 12,
+              "total": 30
+            },
+            "eared grebe": {
+              "correct": 22,
+              "total": 30
+            },
+            "horned grebe": {
+              "correct": 15,
+              "total": 30
+            },
+            "pied billed grebe": {
+              "correct": 22,
+              "total": 30
+            },
+            "western grebe": {
+              "correct": 22,
+              "total": 30
+            },
+            "blue grosbeak": {
+              "correct": 23,
+              "total": 30
+            },
+            "evening grosbeak": {
+              "correct": 26,
+              "total": 30
+            },
+            "pine grosbeak": {
+              "correct": 19,
+              "total": 30
+            },
+            "rose breasted grosbeak": {
+              "correct": 27,
+              "total": 30
+            },
+            "pigeon guillemot": {
+              "correct": 17,
+              "total": 28
+            },
+            "california gull": {
+              "correct": 4,
+              "total": 30
+            },
+            "glaucous winged gull": {
+              "correct": 8,
+              "total": 29
+            },
+            "heermann gull": {
+              "correct": 19,
+              "total": 30
+            },
+            "herring gull": {
+              "correct": 6,
+              "total": 30
+            },
+            "ivory gull": {
+              "correct": 26,
+              "total": 30
+            },
+            "ring billed gull": {
+              "correct": 15,
+              "total": 30
+            },
+            "slaty backed gull": {
+              "correct": 6,
+              "total": 20
+            },
+            "western gull": {
+              "correct": 24,
+              "total": 30
+            },
+            "anna hummingbird": {
+              "correct": 12,
+              "total": 30
+            },
+            "ruby throated hummingbird": {
+              "correct": 16,
+              "total": 30
+            },
+            "rufous hummingbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "green violetear": {
+              "correct": 30,
+              "total": 30
+            },
+            "long tailed jaeger": {
+              "correct": 5,
+              "total": 30
+            },
+            "pomarine jaeger": {
+              "correct": 14,
+              "total": 30
+            },
+            "blue jay": {
+              "correct": 28,
+              "total": 30
+            },
+            "florida jay": {
+              "correct": 24,
+              "total": 30
+            },
+            "green jay": {
+              "correct": 26,
+              "total": 27
+            },
+            "dark eyed junco": {
+              "correct": 20,
+              "total": 30
+            },
+            "tropical kingbird": {
+              "correct": 21,
+              "total": 30
+            },
+            "gray kingbird": {
+              "correct": 22,
+              "total": 29
+            },
+            "belted kingfisher": {
+              "correct": 25,
+              "total": 30
+            },
+            "green kingfisher": {
+              "correct": 22,
+              "total": 30
+            },
+            "pied kingfisher": {
+              "correct": 26,
+              "total": 30
+            },
+            "ringed kingfisher": {
+              "correct": 17,
+              "total": 30
+            },
+            "white breasted kingfisher": {
+              "correct": 26,
+              "total": 30
+            },
+            "red legged kittiwake": {
+              "correct": 18,
+              "total": 23
+            },
+            "horned lark": {
+              "correct": 19,
+              "total": 30
+            },
+            "pacific loon": {
+              "correct": 10,
+              "total": 30
+            },
+            "mallard": {
+              "correct": 24,
+              "total": 30
+            },
+            "western meadowlark": {
+              "correct": 25,
+              "total": 30
+            },
+            "hooded merganser": {
+              "correct": 24,
+              "total": 30
+            },
+            "red breasted merganser": {
+              "correct": 21,
+              "total": 30
+            },
+            "mockingbird": {
+              "correct": 9,
+              "total": 30
+            },
+            "nighthawk": {
+              "correct": 19,
+              "total": 30
+            },
+            "clark nutcracker": {
+              "correct": 17,
+              "total": 30
+            },
+            "white breasted nuthatch": {
+              "correct": 29,
+              "total": 30
+            },
+            "baltimore oriole": {
+              "correct": 16,
+              "total": 30
+            },
+            "hooded oriole": {
+              "correct": 15,
+              "total": 30
+            },
+            "orchard oriole": {
+              "correct": 10,
+              "total": 29
+            },
+            "scott oriole": {
+              "correct": 19,
+              "total": 30
+            },
+            "ovenbird": {
+              "correct": 18,
+              "total": 30
+            },
+            "brown pelican": {
+              "correct": 28,
+              "total": 30
+            },
+            "white pelican": {
+              "correct": 20,
+              "total": 20
+            },
+            "western wood pewee": {
+              "correct": 10,
+              "total": 30
+            },
+            "sayornis": {
+              "correct": 13,
+              "total": 30
+            },
+            "american pipit": {
+              "correct": 22,
+              "total": 30
+            },
+            "whip poor will": {
+              "correct": 17,
+              "total": 19
+            },
+            "horned puffin": {
+              "correct": 24,
+              "total": 30
+            },
+            "common raven": {
+              "correct": 15,
+              "total": 30
+            },
+            "white necked raven": {
+              "correct": 16,
+              "total": 30
+            },
+            "american redstart": {
+              "correct": 27,
+              "total": 30
+            },
+            "geococcyx": {
+              "correct": 27,
+              "total": 30
+            },
+            "loggerhead shrike": {
+              "correct": 22,
+              "total": 30
+            },
+            "great grey shrike": {
+              "correct": 8,
+              "total": 30
+            },
+            "baird sparrow": {
+              "correct": 9,
+              "total": 20
+            },
+            "black throated sparrow": {
+              "correct": 24,
+              "total": 30
+            },
+            "brewer sparrow": {
+              "correct": 6,
+              "total": 29
+            },
+            "chipping sparrow": {
+              "correct": 14,
+              "total": 30
+            },
+            "clay colored sparrow": {
+              "correct": 18,
+              "total": 29
+            },
+            "house sparrow": {
+              "correct": 15,
+              "total": 30
+            },
+            "field sparrow": {
+              "correct": 6,
+              "total": 29
+            },
+            "fox sparrow": {
+              "correct": 23,
+              "total": 30
+            },
+            "grasshopper sparrow": {
+              "correct": 4,
+              "total": 30
+            },
+            "harris sparrow": {
+              "correct": 14,
+              "total": 30
+            },
+            "henslow sparrow": {
+              "correct": 14,
+              "total": 30
+            },
+            "le conte sparrow": {
+              "correct": 10,
+              "total": 29
+            },
+            "lincoln sparrow": {
+              "correct": 14,
+              "total": 29
+            },
+            "nelson sharp tailed sparrow": {
+              "correct": 7,
+              "total": 30
+            },
+            "savannah sparrow": {
+              "correct": 10,
+              "total": 30
+            },
+            "seaside sparrow": {
+              "correct": 14,
+              "total": 30
+            },
+            "song sparrow": {
+              "correct": 5,
+              "total": 30
+            },
+            "tree sparrow": {
+              "correct": 3,
+              "total": 30
+            },
+            "vesper sparrow": {
+              "correct": 6,
+              "total": 30
+            },
+            "white crowned sparrow": {
+              "correct": 19,
+              "total": 30
+            },
+            "white throated sparrow": {
+              "correct": 18,
+              "total": 30
+            },
+            "cape glossy starling": {
+              "correct": 24,
+              "total": 30
+            },
+            "bank swallow": {
+              "correct": 19,
+              "total": 30
+            },
+            "barn swallow": {
+              "correct": 16,
+              "total": 30
+            },
+            "cliff swallow": {
+              "correct": 12,
+              "total": 30
+            },
+            "tree swallow": {
+              "correct": 25,
+              "total": 30
+            },
+            "scarlet tanager": {
+              "correct": 23,
+              "total": 30
+            },
+            "summer tanager": {
+              "correct": 12,
+              "total": 30
+            },
+            "artic tern": {
+              "correct": 9,
+              "total": 29
+            },
+            "black tern": {
+              "correct": 11,
+              "total": 30
+            },
+            "caspian tern": {
+              "correct": 2,
+              "total": 30
+            },
+            "common tern": {
+              "correct": 8,
+              "total": 30
+            },
+            "elegant tern": {
+              "correct": 10,
+              "total": 30
+            },
+            "forsters tern": {
+              "correct": 14,
+              "total": 30
+            },
+            "least tern": {
+              "correct": 14,
+              "total": 30
+            },
+            "green tailed towhee": {
+              "correct": 20,
+              "total": 30
+            },
+            "brown thrasher": {
+              "correct": 18,
+              "total": 29
+            },
+            "sage thrasher": {
+              "correct": 21,
+              "total": 30
+            },
+            "black capped vireo": {
+              "correct": 17,
+              "total": 21
+            },
+            "blue headed vireo": {
+              "correct": 10,
+              "total": 30
+            },
+            "philadelphia vireo": {
+              "correct": 3,
+              "total": 29
+            },
+            "red eyed vireo": {
+              "correct": 12,
+              "total": 30
+            },
+            "warbling vireo": {
+              "correct": 16,
+              "total": 30
+            },
+            "white eyed vireo": {
+              "correct": 18,
+              "total": 30
+            },
+            "yellow throated vireo": {
+              "correct": 20,
+              "total": 29
+            },
+            "bay breasted warbler": {
+              "correct": 22,
+              "total": 30
+            },
+            "black and white warbler": {
+              "correct": 29,
+              "total": 30
+            },
+            "black throated blue warbler": {
+              "correct": 26,
+              "total": 29
+            },
+            "blue winged warbler": {
+              "correct": 8,
+              "total": 30
+            },
+            "canada warbler": {
+              "correct": 4,
+              "total": 30
+            },
+            "cape may warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "cerulean warbler": {
+              "correct": 22,
+              "total": 30
+            },
+            "chestnut sided warbler": {
+              "correct": 21,
+              "total": 30
+            },
+            "golden winged warbler": {
+              "correct": 19,
+              "total": 29
+            },
+            "hooded warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "kentucky warbler": {
+              "correct": 11,
+              "total": 29
+            },
+            "magnolia warbler": {
+              "correct": 19,
+              "total": 29
+            },
+            "mourning warbler": {
+              "correct": 14,
+              "total": 30
+            },
+            "myrtle warbler": {
+              "correct": 14,
+              "total": 30
+            },
+            "nashville warbler": {
+              "correct": 5,
+              "total": 30
+            },
+            "orange crowned warbler": {
+              "correct": 10,
+              "total": 30
+            },
+            "palm warbler": {
+              "correct": 11,
+              "total": 30
+            },
+            "pine warbler": {
+              "correct": 4,
+              "total": 30
+            },
+            "prairie warbler": {
+              "correct": 8,
+              "total": 30
+            },
+            "prothonotary warbler": {
+              "correct": 24,
+              "total": 30
+            },
+            "swainson warbler": {
+              "correct": 9,
+              "total": 26
+            },
+            "tennessee warbler": {
+              "correct": 0,
+              "total": 29
+            },
+            "wilson warbler": {
+              "correct": 20,
+              "total": 30
+            },
+            "worm eating warbler": {
+              "correct": 15,
+              "total": 29
+            },
+            "yellow warbler": {
+              "correct": 19,
+              "total": 30
+            },
+            "northern waterthrush": {
+              "correct": 9,
+              "total": 30
+            },
+            "louisiana waterthrush": {
+              "correct": 13,
+              "total": 30
+            },
+            "bohemian waxwing": {
+              "correct": 24,
+              "total": 30
+            },
+            "cedar waxwing": {
+              "correct": 29,
+              "total": 30
+            },
+            "american three toed woodpecker": {
+              "correct": 13,
+              "total": 20
+            },
+            "pileated woodpecker": {
+              "correct": 26,
+              "total": 30
+            },
+            "red bellied woodpecker": {
+              "correct": 25,
+              "total": 30
+            },
+            "red cockaded woodpecker": {
+              "correct": 23,
+              "total": 29
+            },
+            "red headed woodpecker": {
+              "correct": 26,
+              "total": 30
+            },
+            "downy woodpecker": {
+              "correct": 23,
+              "total": 30
+            },
+            "bewick wren": {
+              "correct": 12,
+              "total": 30
+            },
+            "cactus wren": {
+              "correct": 10,
+              "total": 30
+            },
+            "carolina wren": {
+              "correct": 13,
+              "total": 30
+            },
+            "house wren": {
+              "correct": 18,
+              "total": 30
+            },
+            "marsh wren": {
+              "correct": 5,
+              "total": 30
+            },
+            "rock wren": {
+              "correct": 15,
+              "total": 30
+            },
+            "winter wren": {
+              "correct": 21,
+              "total": 30
+            },
+            "common yellowthroat": {
+              "correct": 17,
+              "total": 30
+            }
+          },
+          "predictions_sha256": "ad5969c62da2fd72835fe50c9e1be0e4a5959531bc3b41bfcc53aadd018d87c0",
+          "vision": {
+            "visual_tokens": {
+              "min": 1280,
+              "median": 12032,
+              "p95": 16640,
+              "max": 16640,
+              "mean": 11929.22885743873
+            },
+            "total_input_tokens": {
+              "min": 2393,
+              "median": 13157,
+              "p95": 17763,
+              "max": 17772,
+              "mean": 13050.517086641354
+            },
+            "telemetry_sha256": "4a39a4544ebb92c399ad92f0b73fb003f8a5b7348379a417f4f4992e01a1bcba"
+          }
+        },
+        "proj": {
+          "state": "complete",
+          "completed": 5794,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.589963755609251,
+            "top4_any_same_label_fraction": 0.845012081463583
+          },
+          "correct": 3908,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.6744908526061443,
+          "accuracy_wilson_95": [
+            0.6623136522785468,
+            0.6864368291482571
+          ],
+          "macro_class_accuracy": 0.6768566196020823,
+          "per_class": {
+            "black footed albatross": {
+              "correct": 25,
+              "total": 30
+            },
+            "laysan albatross": {
+              "correct": 22,
+              "total": 30
+            },
+            "sooty albatross": {
+              "correct": 20,
+              "total": 28
+            },
+            "groove billed ani": {
+              "correct": 15,
+              "total": 30
+            },
+            "crested auklet": {
+              "correct": 11,
+              "total": 14
+            },
+            "least auklet": {
+              "correct": 10,
+              "total": 11
+            },
+            "parakeet auklet": {
+              "correct": 20,
+              "total": 23
+            },
+            "rhinoceros auklet": {
+              "correct": 14,
+              "total": 18
+            },
+            "brewer blackbird": {
+              "correct": 17,
+              "total": 29
+            },
+            "red winged blackbird": {
+              "correct": 28,
+              "total": 30
+            },
+            "rusty blackbird": {
+              "correct": 18,
+              "total": 30
+            },
+            "yellow headed blackbird": {
+              "correct": 24,
+              "total": 26
+            },
+            "bobolink": {
+              "correct": 25,
+              "total": 30
+            },
+            "indigo bunting": {
+              "correct": 22,
+              "total": 30
+            },
+            "lazuli bunting": {
+              "correct": 24,
+              "total": 28
+            },
+            "painted bunting": {
+              "correct": 28,
+              "total": 28
+            },
+            "cardinal": {
+              "correct": 26,
+              "total": 27
+            },
+            "spotted catbird": {
+              "correct": 14,
+              "total": 15
+            },
+            "gray catbird": {
+              "correct": 24,
+              "total": 29
+            },
+            "yellow breasted chat": {
+              "correct": 23,
+              "total": 29
+            },
+            "eastern towhee": {
+              "correct": 25,
+              "total": 30
+            },
+            "chuck will widow": {
+              "correct": 5,
+              "total": 26
+            },
+            "brandt cormorant": {
+              "correct": 19,
+              "total": 29
+            },
+            "red faced cormorant": {
+              "correct": 20,
+              "total": 22
+            },
+            "pelagic cormorant": {
+              "correct": 13,
+              "total": 30
+            },
+            "bronzed cowbird": {
+              "correct": 23,
+              "total": 30
+            },
+            "shiny cowbird": {
+              "correct": 14,
+              "total": 30
+            },
+            "brown creeper": {
+              "correct": 23,
+              "total": 29
+            },
+            "american crow": {
+              "correct": 23,
+              "total": 30
+            },
+            "fish crow": {
+              "correct": 0,
+              "total": 30
+            },
+            "black billed cuckoo": {
+              "correct": 23,
+              "total": 30
+            },
+            "mangrove cuckoo": {
+              "correct": 7,
+              "total": 23
+            },
+            "yellow billed cuckoo": {
+              "correct": 20,
+              "total": 29
+            },
+            "gray crowned rosy finch": {
+              "correct": 20,
+              "total": 29
+            },
+            "purple finch": {
+              "correct": 28,
+              "total": 30
+            },
+            "northern flicker": {
+              "correct": 28,
+              "total": 30
+            },
+            "acadian flycatcher": {
+              "correct": 10,
+              "total": 29
+            },
+            "great crested flycatcher": {
+              "correct": 13,
+              "total": 30
+            },
+            "least flycatcher": {
+              "correct": 8,
+              "total": 29
+            },
+            "olive sided flycatcher": {
+              "correct": 8,
+              "total": 30
+            },
+            "scissor tailed flycatcher": {
+              "correct": 22,
+              "total": 30
+            },
+            "vermilion flycatcher": {
+              "correct": 26,
+              "total": 30
+            },
+            "yellow bellied flycatcher": {
+              "correct": 12,
+              "total": 29
+            },
+            "frigatebird": {
+              "correct": 25,
+              "total": 30
+            },
+            "northern fulmar": {
+              "correct": 17,
+              "total": 30
+            },
+            "gadwall": {
+              "correct": 29,
+              "total": 30
+            },
+            "american goldfinch": {
+              "correct": 29,
+              "total": 30
+            },
+            "european goldfinch": {
+              "correct": 29,
+              "total": 30
+            },
+            "boat tailed grackle": {
+              "correct": 20,
+              "total": 30
+            },
+            "eared grebe": {
+              "correct": 22,
+              "total": 30
+            },
+            "horned grebe": {
+              "correct": 23,
+              "total": 30
+            },
+            "pied billed grebe": {
+              "correct": 25,
+              "total": 30
+            },
+            "western grebe": {
+              "correct": 24,
+              "total": 30
+            },
+            "blue grosbeak": {
+              "correct": 23,
+              "total": 30
+            },
+            "evening grosbeak": {
+              "correct": 27,
+              "total": 30
+            },
+            "pine grosbeak": {
+              "correct": 20,
+              "total": 30
+            },
+            "rose breasted grosbeak": {
+              "correct": 30,
+              "total": 30
+            },
+            "pigeon guillemot": {
+              "correct": 24,
+              "total": 28
+            },
+            "california gull": {
+              "correct": 5,
+              "total": 30
+            },
+            "glaucous winged gull": {
+              "correct": 12,
+              "total": 29
+            },
+            "heermann gull": {
+              "correct": 23,
+              "total": 30
+            },
+            "herring gull": {
+              "correct": 10,
+              "total": 30
+            },
+            "ivory gull": {
+              "correct": 30,
+              "total": 30
+            },
+            "ring billed gull": {
+              "correct": 13,
+              "total": 30
+            },
+            "slaty backed gull": {
+              "correct": 6,
+              "total": 20
+            },
+            "western gull": {
+              "correct": 23,
+              "total": 30
+            },
+            "anna hummingbird": {
+              "correct": 15,
+              "total": 30
+            },
+            "ruby throated hummingbird": {
+              "correct": 19,
+              "total": 30
+            },
+            "rufous hummingbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "green violetear": {
+              "correct": 30,
+              "total": 30
+            },
+            "long tailed jaeger": {
+              "correct": 10,
+              "total": 30
+            },
+            "pomarine jaeger": {
+              "correct": 15,
+              "total": 30
+            },
+            "blue jay": {
+              "correct": 28,
+              "total": 30
+            },
+            "florida jay": {
+              "correct": 26,
+              "total": 30
+            },
+            "green jay": {
+              "correct": 27,
+              "total": 27
+            },
+            "dark eyed junco": {
+              "correct": 24,
+              "total": 30
+            },
+            "tropical kingbird": {
+              "correct": 26,
+              "total": 30
+            },
+            "gray kingbird": {
+              "correct": 25,
+              "total": 29
+            },
+            "belted kingfisher": {
+              "correct": 27,
+              "total": 30
+            },
+            "green kingfisher": {
+              "correct": 24,
+              "total": 30
+            },
+            "pied kingfisher": {
+              "correct": 27,
+              "total": 30
+            },
+            "ringed kingfisher": {
+              "correct": 18,
+              "total": 30
+            },
+            "white breasted kingfisher": {
+              "correct": 27,
+              "total": 30
+            },
+            "red legged kittiwake": {
+              "correct": 19,
+              "total": 23
+            },
+            "horned lark": {
+              "correct": 25,
+              "total": 30
+            },
+            "pacific loon": {
+              "correct": 20,
+              "total": 30
+            },
+            "mallard": {
+              "correct": 24,
+              "total": 30
+            },
+            "western meadowlark": {
+              "correct": 29,
+              "total": 30
+            },
+            "hooded merganser": {
+              "correct": 25,
+              "total": 30
+            },
+            "red breasted merganser": {
+              "correct": 21,
+              "total": 30
+            },
+            "mockingbird": {
+              "correct": 16,
+              "total": 30
+            },
+            "nighthawk": {
+              "correct": 19,
+              "total": 30
+            },
+            "clark nutcracker": {
+              "correct": 23,
+              "total": 30
+            },
+            "white breasted nuthatch": {
+              "correct": 29,
+              "total": 30
+            },
+            "baltimore oriole": {
+              "correct": 19,
+              "total": 30
+            },
+            "hooded oriole": {
+              "correct": 19,
+              "total": 30
+            },
+            "orchard oriole": {
+              "correct": 16,
+              "total": 29
+            },
+            "scott oriole": {
+              "correct": 24,
+              "total": 30
+            },
+            "ovenbird": {
+              "correct": 23,
+              "total": 30
+            },
+            "brown pelican": {
+              "correct": 30,
+              "total": 30
+            },
+            "white pelican": {
+              "correct": 20,
+              "total": 20
+            },
+            "western wood pewee": {
+              "correct": 12,
+              "total": 30
+            },
+            "sayornis": {
+              "correct": 15,
+              "total": 30
+            },
+            "american pipit": {
+              "correct": 23,
+              "total": 30
+            },
+            "whip poor will": {
+              "correct": 17,
+              "total": 19
+            },
+            "horned puffin": {
+              "correct": 27,
+              "total": 30
+            },
+            "common raven": {
+              "correct": 14,
+              "total": 30
+            },
+            "white necked raven": {
+              "correct": 20,
+              "total": 30
+            },
+            "american redstart": {
+              "correct": 27,
+              "total": 30
+            },
+            "geococcyx": {
+              "correct": 29,
+              "total": 30
+            },
+            "loggerhead shrike": {
+              "correct": 19,
+              "total": 30
+            },
+            "great grey shrike": {
+              "correct": 10,
+              "total": 30
+            },
+            "baird sparrow": {
+              "correct": 9,
+              "total": 20
+            },
+            "black throated sparrow": {
+              "correct": 26,
+              "total": 30
+            },
+            "brewer sparrow": {
+              "correct": 8,
+              "total": 29
+            },
+            "chipping sparrow": {
+              "correct": 18,
+              "total": 30
+            },
+            "clay colored sparrow": {
+              "correct": 19,
+              "total": 29
+            },
+            "house sparrow": {
+              "correct": 19,
+              "total": 30
+            },
+            "field sparrow": {
+              "correct": 13,
+              "total": 29
+            },
+            "fox sparrow": {
+              "correct": 23,
+              "total": 30
+            },
+            "grasshopper sparrow": {
+              "correct": 13,
+              "total": 30
+            },
+            "harris sparrow": {
+              "correct": 23,
+              "total": 30
+            },
+            "henslow sparrow": {
+              "correct": 17,
+              "total": 30
+            },
+            "le conte sparrow": {
+              "correct": 13,
+              "total": 29
+            },
+            "lincoln sparrow": {
+              "correct": 18,
+              "total": 29
+            },
+            "nelson sharp tailed sparrow": {
+              "correct": 15,
+              "total": 30
+            },
+            "savannah sparrow": {
+              "correct": 13,
+              "total": 30
+            },
+            "seaside sparrow": {
+              "correct": 21,
+              "total": 30
+            },
+            "song sparrow": {
+              "correct": 9,
+              "total": 30
+            },
+            "tree sparrow": {
+              "correct": 5,
+              "total": 30
+            },
+            "vesper sparrow": {
+              "correct": 10,
+              "total": 30
+            },
+            "white crowned sparrow": {
+              "correct": 25,
+              "total": 30
+            },
+            "white throated sparrow": {
+              "correct": 24,
+              "total": 30
+            },
+            "cape glossy starling": {
+              "correct": 25,
+              "total": 30
+            },
+            "bank swallow": {
+              "correct": 25,
+              "total": 30
+            },
+            "barn swallow": {
+              "correct": 17,
+              "total": 30
+            },
+            "cliff swallow": {
+              "correct": 12,
+              "total": 30
+            },
+            "tree swallow": {
+              "correct": 24,
+              "total": 30
+            },
+            "scarlet tanager": {
+              "correct": 25,
+              "total": 30
+            },
+            "summer tanager": {
+              "correct": 25,
+              "total": 30
+            },
+            "artic tern": {
+              "correct": 11,
+              "total": 29
+            },
+            "black tern": {
+              "correct": 11,
+              "total": 30
+            },
+            "caspian tern": {
+              "correct": 5,
+              "total": 30
+            },
+            "common tern": {
+              "correct": 10,
+              "total": 30
+            },
+            "elegant tern": {
+              "correct": 17,
+              "total": 30
+            },
+            "forsters tern": {
+              "correct": 16,
+              "total": 30
+            },
+            "least tern": {
+              "correct": 16,
+              "total": 30
+            },
+            "green tailed towhee": {
+              "correct": 27,
+              "total": 30
+            },
+            "brown thrasher": {
+              "correct": 22,
+              "total": 29
+            },
+            "sage thrasher": {
+              "correct": 26,
+              "total": 30
+            },
+            "black capped vireo": {
+              "correct": 17,
+              "total": 21
+            },
+            "blue headed vireo": {
+              "correct": 12,
+              "total": 30
+            },
+            "philadelphia vireo": {
+              "correct": 7,
+              "total": 29
+            },
+            "red eyed vireo": {
+              "correct": 13,
+              "total": 30
+            },
+            "warbling vireo": {
+              "correct": 17,
+              "total": 30
+            },
+            "white eyed vireo": {
+              "correct": 14,
+              "total": 30
+            },
+            "yellow throated vireo": {
+              "correct": 16,
+              "total": 29
+            },
+            "bay breasted warbler": {
+              "correct": 28,
+              "total": 30
+            },
+            "black and white warbler": {
+              "correct": 30,
+              "total": 30
+            },
+            "black throated blue warbler": {
+              "correct": 28,
+              "total": 29
+            },
+            "blue winged warbler": {
+              "correct": 9,
+              "total": 30
+            },
+            "canada warbler": {
+              "correct": 7,
+              "total": 30
+            },
+            "cape may warbler": {
+              "correct": 26,
+              "total": 30
+            },
+            "cerulean warbler": {
+              "correct": 24,
+              "total": 30
+            },
+            "chestnut sided warbler": {
+              "correct": 24,
+              "total": 30
+            },
+            "golden winged warbler": {
+              "correct": 24,
+              "total": 29
+            },
+            "hooded warbler": {
+              "correct": 20,
+              "total": 30
+            },
+            "kentucky warbler": {
+              "correct": 13,
+              "total": 29
+            },
+            "magnolia warbler": {
+              "correct": 21,
+              "total": 29
+            },
+            "mourning warbler": {
+              "correct": 19,
+              "total": 30
+            },
+            "myrtle warbler": {
+              "correct": 25,
+              "total": 30
+            },
+            "nashville warbler": {
+              "correct": 12,
+              "total": 30
+            },
+            "orange crowned warbler": {
+              "correct": 11,
+              "total": 30
+            },
+            "palm warbler": {
+              "correct": 19,
+              "total": 30
+            },
+            "pine warbler": {
+              "correct": 8,
+              "total": 30
+            },
+            "prairie warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "prothonotary warbler": {
+              "correct": 28,
+              "total": 30
+            },
+            "swainson warbler": {
+              "correct": 19,
+              "total": 26
+            },
+            "tennessee warbler": {
+              "correct": 2,
+              "total": 29
+            },
+            "wilson warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "worm eating warbler": {
+              "correct": 21,
+              "total": 29
+            },
+            "yellow warbler": {
+              "correct": 26,
+              "total": 30
+            },
+            "northern waterthrush": {
+              "correct": 16,
+              "total": 30
+            },
+            "louisiana waterthrush": {
+              "correct": 19,
+              "total": 30
+            },
+            "bohemian waxwing": {
+              "correct": 27,
+              "total": 30
+            },
+            "cedar waxwing": {
+              "correct": 27,
+              "total": 30
+            },
+            "american three toed woodpecker": {
+              "correct": 14,
+              "total": 20
+            },
+            "pileated woodpecker": {
+              "correct": 30,
+              "total": 30
+            },
+            "red bellied woodpecker": {
+              "correct": 25,
+              "total": 30
+            },
+            "red cockaded woodpecker": {
+              "correct": 26,
+              "total": 29
+            },
+            "red headed woodpecker": {
+              "correct": 26,
+              "total": 30
+            },
+            "downy woodpecker": {
+              "correct": 22,
+              "total": 30
+            },
+            "bewick wren": {
+              "correct": 20,
+              "total": 30
+            },
+            "cactus wren": {
+              "correct": 12,
+              "total": 30
+            },
+            "carolina wren": {
+              "correct": 22,
+              "total": 30
+            },
+            "house wren": {
+              "correct": 19,
+              "total": 30
+            },
+            "marsh wren": {
+              "correct": 12,
+              "total": 30
+            },
+            "rock wren": {
+              "correct": 22,
+              "total": 30
+            },
+            "winter wren": {
+              "correct": 26,
+              "total": 30
+            },
+            "common yellowthroat": {
+              "correct": 24,
+              "total": 30
+            }
+          },
+          "predictions_sha256": "107210f09cb07e729316f4df4d709e3d13bc464eaf1ff278341f4ba1f0dc67be",
+          "vision": {
+            "visual_tokens": {
+              "min": 1280,
+              "median": 12032,
+              "p95": 16640,
+              "max": 16640,
+              "mean": 12042.427338626165
+            },
+            "total_input_tokens": {
+              "min": 2396,
+              "median": 13155,
+              "p95": 17759,
+              "max": 17773,
+              "mean": 13163.720400414222
+            },
+            "telemetry_sha256": "36f745ce34c94d966e49042c16b0255e08f880d3b56b7cf1784f271bbbdf0ece"
+          }
+        },
+        "learn": {
+          "state": "complete",
+          "completed": 5794,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.6083879875733518,
+            "top4_any_same_label_fraction": 0.8510528132550915
+          },
+          "correct": 4011,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.6922678633068692,
+          "accuracy_wilson_95": [
+            0.6802591883326113,
+            0.7040217575718984
+          ],
+          "macro_class_accuracy": 0.6947347957591389,
+          "per_class": {
+            "black footed albatross": {
+              "correct": 25,
+              "total": 30
+            },
+            "laysan albatross": {
+              "correct": 22,
+              "total": 30
+            },
+            "sooty albatross": {
+              "correct": 22,
+              "total": 28
+            },
+            "groove billed ani": {
+              "correct": 19,
+              "total": 30
+            },
+            "crested auklet": {
+              "correct": 12,
+              "total": 14
+            },
+            "least auklet": {
+              "correct": 10,
+              "total": 11
+            },
+            "parakeet auklet": {
+              "correct": 19,
+              "total": 23
+            },
+            "rhinoceros auklet": {
+              "correct": 13,
+              "total": 18
+            },
+            "brewer blackbird": {
+              "correct": 15,
+              "total": 29
+            },
+            "red winged blackbird": {
+              "correct": 29,
+              "total": 30
+            },
+            "rusty blackbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "yellow headed blackbird": {
+              "correct": 23,
+              "total": 26
+            },
+            "bobolink": {
+              "correct": 26,
+              "total": 30
+            },
+            "indigo bunting": {
+              "correct": 23,
+              "total": 30
+            },
+            "lazuli bunting": {
+              "correct": 25,
+              "total": 28
+            },
+            "painted bunting": {
+              "correct": 28,
+              "total": 28
+            },
+            "cardinal": {
+              "correct": 27,
+              "total": 27
+            },
+            "spotted catbird": {
+              "correct": 14,
+              "total": 15
+            },
+            "gray catbird": {
+              "correct": 24,
+              "total": 29
+            },
+            "yellow breasted chat": {
+              "correct": 24,
+              "total": 29
+            },
+            "eastern towhee": {
+              "correct": 27,
+              "total": 30
+            },
+            "chuck will widow": {
+              "correct": 6,
+              "total": 26
+            },
+            "brandt cormorant": {
+              "correct": 22,
+              "total": 29
+            },
+            "red faced cormorant": {
+              "correct": 21,
+              "total": 22
+            },
+            "pelagic cormorant": {
+              "correct": 15,
+              "total": 30
+            },
+            "bronzed cowbird": {
+              "correct": 26,
+              "total": 30
+            },
+            "shiny cowbird": {
+              "correct": 14,
+              "total": 30
+            },
+            "brown creeper": {
+              "correct": 22,
+              "total": 29
+            },
+            "american crow": {
+              "correct": 23,
+              "total": 30
+            },
+            "fish crow": {
+              "correct": 0,
+              "total": 30
+            },
+            "black billed cuckoo": {
+              "correct": 22,
+              "total": 30
+            },
+            "mangrove cuckoo": {
+              "correct": 8,
+              "total": 23
+            },
+            "yellow billed cuckoo": {
+              "correct": 22,
+              "total": 29
+            },
+            "gray crowned rosy finch": {
+              "correct": 22,
+              "total": 29
+            },
+            "purple finch": {
+              "correct": 29,
+              "total": 30
+            },
+            "northern flicker": {
+              "correct": 29,
+              "total": 30
+            },
+            "acadian flycatcher": {
+              "correct": 12,
+              "total": 29
+            },
+            "great crested flycatcher": {
+              "correct": 17,
+              "total": 30
+            },
+            "least flycatcher": {
+              "correct": 7,
+              "total": 29
+            },
+            "olive sided flycatcher": {
+              "correct": 10,
+              "total": 30
+            },
+            "scissor tailed flycatcher": {
+              "correct": 24,
+              "total": 30
+            },
+            "vermilion flycatcher": {
+              "correct": 27,
+              "total": 30
+            },
+            "yellow bellied flycatcher": {
+              "correct": 14,
+              "total": 29
+            },
+            "frigatebird": {
+              "correct": 25,
+              "total": 30
+            },
+            "northern fulmar": {
+              "correct": 18,
+              "total": 30
+            },
+            "gadwall": {
+              "correct": 29,
+              "total": 30
+            },
+            "american goldfinch": {
+              "correct": 29,
+              "total": 30
+            },
+            "european goldfinch": {
+              "correct": 29,
+              "total": 30
+            },
+            "boat tailed grackle": {
+              "correct": 15,
+              "total": 30
+            },
+            "eared grebe": {
+              "correct": 23,
+              "total": 30
+            },
+            "horned grebe": {
+              "correct": 20,
+              "total": 30
+            },
+            "pied billed grebe": {
+              "correct": 27,
+              "total": 30
+            },
+            "western grebe": {
+              "correct": 25,
+              "total": 30
+            },
+            "blue grosbeak": {
+              "correct": 23,
+              "total": 30
+            },
+            "evening grosbeak": {
+              "correct": 27,
+              "total": 30
+            },
+            "pine grosbeak": {
+              "correct": 21,
+              "total": 30
+            },
+            "rose breasted grosbeak": {
+              "correct": 30,
+              "total": 30
+            },
+            "pigeon guillemot": {
+              "correct": 24,
+              "total": 28
+            },
+            "california gull": {
+              "correct": 5,
+              "total": 30
+            },
+            "glaucous winged gull": {
+              "correct": 10,
+              "total": 29
+            },
+            "heermann gull": {
+              "correct": 23,
+              "total": 30
+            },
+            "herring gull": {
+              "correct": 11,
+              "total": 30
+            },
+            "ivory gull": {
+              "correct": 30,
+              "total": 30
+            },
+            "ring billed gull": {
+              "correct": 15,
+              "total": 30
+            },
+            "slaty backed gull": {
+              "correct": 5,
+              "total": 20
+            },
+            "western gull": {
+              "correct": 21,
+              "total": 30
+            },
+            "anna hummingbird": {
+              "correct": 15,
+              "total": 30
+            },
+            "ruby throated hummingbird": {
+              "correct": 21,
+              "total": 30
+            },
+            "rufous hummingbird": {
+              "correct": 19,
+              "total": 30
+            },
+            "green violetear": {
+              "correct": 30,
+              "total": 30
+            },
+            "long tailed jaeger": {
+              "correct": 11,
+              "total": 30
+            },
+            "pomarine jaeger": {
+              "correct": 17,
+              "total": 30
+            },
+            "blue jay": {
+              "correct": 28,
+              "total": 30
+            },
+            "florida jay": {
+              "correct": 27,
+              "total": 30
+            },
+            "green jay": {
+              "correct": 27,
+              "total": 27
+            },
+            "dark eyed junco": {
+              "correct": 24,
+              "total": 30
+            },
+            "tropical kingbird": {
+              "correct": 26,
+              "total": 30
+            },
+            "gray kingbird": {
+              "correct": 23,
+              "total": 29
+            },
+            "belted kingfisher": {
+              "correct": 26,
+              "total": 30
+            },
+            "green kingfisher": {
+              "correct": 23,
+              "total": 30
+            },
+            "pied kingfisher": {
+              "correct": 27,
+              "total": 30
+            },
+            "ringed kingfisher": {
+              "correct": 18,
+              "total": 30
+            },
+            "white breasted kingfisher": {
+              "correct": 27,
+              "total": 30
+            },
+            "red legged kittiwake": {
+              "correct": 20,
+              "total": 23
+            },
+            "horned lark": {
+              "correct": 26,
+              "total": 30
+            },
+            "pacific loon": {
+              "correct": 19,
+              "total": 30
+            },
+            "mallard": {
+              "correct": 25,
+              "total": 30
+            },
+            "western meadowlark": {
+              "correct": 29,
+              "total": 30
+            },
+            "hooded merganser": {
+              "correct": 25,
+              "total": 30
+            },
+            "red breasted merganser": {
+              "correct": 22,
+              "total": 30
+            },
+            "mockingbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "nighthawk": {
+              "correct": 20,
+              "total": 30
+            },
+            "clark nutcracker": {
+              "correct": 24,
+              "total": 30
+            },
+            "white breasted nuthatch": {
+              "correct": 30,
+              "total": 30
+            },
+            "baltimore oriole": {
+              "correct": 20,
+              "total": 30
+            },
+            "hooded oriole": {
+              "correct": 21,
+              "total": 30
+            },
+            "orchard oriole": {
+              "correct": 19,
+              "total": 29
+            },
+            "scott oriole": {
+              "correct": 25,
+              "total": 30
+            },
+            "ovenbird": {
+              "correct": 21,
+              "total": 30
+            },
+            "brown pelican": {
+              "correct": 30,
+              "total": 30
+            },
+            "white pelican": {
+              "correct": 20,
+              "total": 20
+            },
+            "western wood pewee": {
+              "correct": 14,
+              "total": 30
+            },
+            "sayornis": {
+              "correct": 14,
+              "total": 30
+            },
+            "american pipit": {
+              "correct": 23,
+              "total": 30
+            },
+            "whip poor will": {
+              "correct": 18,
+              "total": 19
+            },
+            "horned puffin": {
+              "correct": 27,
+              "total": 30
+            },
+            "common raven": {
+              "correct": 16,
+              "total": 30
+            },
+            "white necked raven": {
+              "correct": 23,
+              "total": 30
+            },
+            "american redstart": {
+              "correct": 27,
+              "total": 30
+            },
+            "geococcyx": {
+              "correct": 30,
+              "total": 30
+            },
+            "loggerhead shrike": {
+              "correct": 21,
+              "total": 30
+            },
+            "great grey shrike": {
+              "correct": 6,
+              "total": 30
+            },
+            "baird sparrow": {
+              "correct": 11,
+              "total": 20
+            },
+            "black throated sparrow": {
+              "correct": 27,
+              "total": 30
+            },
+            "brewer sparrow": {
+              "correct": 11,
+              "total": 29
+            },
+            "chipping sparrow": {
+              "correct": 18,
+              "total": 30
+            },
+            "clay colored sparrow": {
+              "correct": 19,
+              "total": 29
+            },
+            "house sparrow": {
+              "correct": 22,
+              "total": 30
+            },
+            "field sparrow": {
+              "correct": 15,
+              "total": 29
+            },
+            "fox sparrow": {
+              "correct": 24,
+              "total": 30
+            },
+            "grasshopper sparrow": {
+              "correct": 9,
+              "total": 30
+            },
+            "harris sparrow": {
+              "correct": 25,
+              "total": 30
+            },
+            "henslow sparrow": {
+              "correct": 17,
+              "total": 30
+            },
+            "le conte sparrow": {
+              "correct": 11,
+              "total": 29
+            },
+            "lincoln sparrow": {
+              "correct": 19,
+              "total": 29
+            },
+            "nelson sharp tailed sparrow": {
+              "correct": 16,
+              "total": 30
+            },
+            "savannah sparrow": {
+              "correct": 13,
+              "total": 30
+            },
+            "seaside sparrow": {
+              "correct": 22,
+              "total": 30
+            },
+            "song sparrow": {
+              "correct": 14,
+              "total": 30
+            },
+            "tree sparrow": {
+              "correct": 7,
+              "total": 30
+            },
+            "vesper sparrow": {
+              "correct": 7,
+              "total": 30
+            },
+            "white crowned sparrow": {
+              "correct": 26,
+              "total": 30
+            },
+            "white throated sparrow": {
+              "correct": 25,
+              "total": 30
+            },
+            "cape glossy starling": {
+              "correct": 26,
+              "total": 30
+            },
+            "bank swallow": {
+              "correct": 23,
+              "total": 30
+            },
+            "barn swallow": {
+              "correct": 19,
+              "total": 30
+            },
+            "cliff swallow": {
+              "correct": 14,
+              "total": 30
+            },
+            "tree swallow": {
+              "correct": 25,
+              "total": 30
+            },
+            "scarlet tanager": {
+              "correct": 25,
+              "total": 30
+            },
+            "summer tanager": {
+              "correct": 24,
+              "total": 30
+            },
+            "artic tern": {
+              "correct": 10,
+              "total": 29
+            },
+            "black tern": {
+              "correct": 12,
+              "total": 30
+            },
+            "caspian tern": {
+              "correct": 4,
+              "total": 30
+            },
+            "common tern": {
+              "correct": 13,
+              "total": 30
+            },
+            "elegant tern": {
+              "correct": 16,
+              "total": 30
+            },
+            "forsters tern": {
+              "correct": 16,
+              "total": 30
+            },
+            "least tern": {
+              "correct": 17,
+              "total": 30
+            },
+            "green tailed towhee": {
+              "correct": 28,
+              "total": 30
+            },
+            "brown thrasher": {
+              "correct": 22,
+              "total": 29
+            },
+            "sage thrasher": {
+              "correct": 26,
+              "total": 30
+            },
+            "black capped vireo": {
+              "correct": 19,
+              "total": 21
+            },
+            "blue headed vireo": {
+              "correct": 14,
+              "total": 30
+            },
+            "philadelphia vireo": {
+              "correct": 7,
+              "total": 29
+            },
+            "red eyed vireo": {
+              "correct": 15,
+              "total": 30
+            },
+            "warbling vireo": {
+              "correct": 18,
+              "total": 30
+            },
+            "white eyed vireo": {
+              "correct": 16,
+              "total": 30
+            },
+            "yellow throated vireo": {
+              "correct": 19,
+              "total": 29
+            },
+            "bay breasted warbler": {
+              "correct": 25,
+              "total": 30
+            },
+            "black and white warbler": {
+              "correct": 30,
+              "total": 30
+            },
+            "black throated blue warbler": {
+              "correct": 27,
+              "total": 29
+            },
+            "blue winged warbler": {
+              "correct": 8,
+              "total": 30
+            },
+            "canada warbler": {
+              "correct": 8,
+              "total": 30
+            },
+            "cape may warbler": {
+              "correct": 26,
+              "total": 30
+            },
+            "cerulean warbler": {
+              "correct": 25,
+              "total": 30
+            },
+            "chestnut sided warbler": {
+              "correct": 25,
+              "total": 30
+            },
+            "golden winged warbler": {
+              "correct": 24,
+              "total": 29
+            },
+            "hooded warbler": {
+              "correct": 20,
+              "total": 30
+            },
+            "kentucky warbler": {
+              "correct": 15,
+              "total": 29
+            },
+            "magnolia warbler": {
+              "correct": 22,
+              "total": 29
+            },
+            "mourning warbler": {
+              "correct": 23,
+              "total": 30
+            },
+            "myrtle warbler": {
+              "correct": 25,
+              "total": 30
+            },
+            "nashville warbler": {
+              "correct": 15,
+              "total": 30
+            },
+            "orange crowned warbler": {
+              "correct": 12,
+              "total": 30
+            },
+            "palm warbler": {
+              "correct": 20,
+              "total": 30
+            },
+            "pine warbler": {
+              "correct": 10,
+              "total": 30
+            },
+            "prairie warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "prothonotary warbler": {
+              "correct": 30,
+              "total": 30
+            },
+            "swainson warbler": {
+              "correct": 18,
+              "total": 26
+            },
+            "tennessee warbler": {
+              "correct": 2,
+              "total": 29
+            },
+            "wilson warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "worm eating warbler": {
+              "correct": 21,
+              "total": 29
+            },
+            "yellow warbler": {
+              "correct": 26,
+              "total": 30
+            },
+            "northern waterthrush": {
+              "correct": 17,
+              "total": 30
+            },
+            "louisiana waterthrush": {
+              "correct": 18,
+              "total": 30
+            },
+            "bohemian waxwing": {
+              "correct": 28,
+              "total": 30
+            },
+            "cedar waxwing": {
+              "correct": 28,
+              "total": 30
+            },
+            "american three toed woodpecker": {
+              "correct": 15,
+              "total": 20
+            },
+            "pileated woodpecker": {
+              "correct": 30,
+              "total": 30
+            },
+            "red bellied woodpecker": {
+              "correct": 27,
+              "total": 30
+            },
+            "red cockaded woodpecker": {
+              "correct": 26,
+              "total": 29
+            },
+            "red headed woodpecker": {
+              "correct": 26,
+              "total": 30
+            },
+            "downy woodpecker": {
+              "correct": 23,
+              "total": 30
+            },
+            "bewick wren": {
+              "correct": 19,
+              "total": 30
+            },
+            "cactus wren": {
+              "correct": 11,
+              "total": 30
+            },
+            "carolina wren": {
+              "correct": 22,
+              "total": 30
+            },
+            "house wren": {
+              "correct": 16,
+              "total": 30
+            },
+            "marsh wren": {
+              "correct": 12,
+              "total": 30
+            },
+            "rock wren": {
+              "correct": 21,
+              "total": 30
+            },
+            "winter wren": {
+              "correct": 27,
+              "total": 30
+            },
+            "common yellowthroat": {
+              "correct": 24,
+              "total": 30
+            }
+          },
+          "predictions_sha256": "81c551d9641f57c52ebff2b5fedc3e6bfa12b77d02154d6afcf81c00c4c3d686",
+          "vision": {
+            "visual_tokens": {
+              "min": 1280,
+              "median": 12032,
+              "p95": 16640,
+              "max": 16640,
+              "mean": 12007.080428028996
+            },
+            "total_input_tokens": {
+              "min": 2396,
+              "median": 13154,
+              "p95": 17758,
+              "max": 17773,
+              "mean": 13128.344839489127
+            },
+            "telemetry_sha256": "55ca9b2097989499b6b95d6fa594775a8c9398b3773db91abe87918f0a978177"
+          }
+        },
+        "gpt_mm": {
+          "state": "complete",
+          "completed": 5794,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.3417759751467035,
+            "top4_any_same_label_fraction": 0.6577493959268208
+          },
+          "correct": 2680,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.4625474628926476,
+          "accuracy_wilson_95": [
+            0.44973822125532636,
+            0.4754063341654289
+          ],
+          "macro_class_accuracy": 0.46591606293732857,
+          "per_class": {
+            "black footed albatross": {
+              "correct": 17,
+              "total": 30
+            },
+            "laysan albatross": {
+              "correct": 16,
+              "total": 30
+            },
+            "sooty albatross": {
+              "correct": 12,
+              "total": 28
+            },
+            "groove billed ani": {
+              "correct": 10,
+              "total": 30
+            },
+            "crested auklet": {
+              "correct": 8,
+              "total": 14
+            },
+            "least auklet": {
+              "correct": 6,
+              "total": 11
+            },
+            "parakeet auklet": {
+              "correct": 15,
+              "total": 23
+            },
+            "rhinoceros auklet": {
+              "correct": 7,
+              "total": 18
+            },
+            "brewer blackbird": {
+              "correct": 10,
+              "total": 29
+            },
+            "red winged blackbird": {
+              "correct": 29,
+              "total": 30
+            },
+            "rusty blackbird": {
+              "correct": 9,
+              "total": 30
+            },
+            "yellow headed blackbird": {
+              "correct": 21,
+              "total": 26
+            },
+            "bobolink": {
+              "correct": 11,
+              "total": 30
+            },
+            "indigo bunting": {
+              "correct": 13,
+              "total": 30
+            },
+            "lazuli bunting": {
+              "correct": 19,
+              "total": 28
+            },
+            "painted bunting": {
+              "correct": 24,
+              "total": 28
+            },
+            "cardinal": {
+              "correct": 26,
+              "total": 27
+            },
+            "spotted catbird": {
+              "correct": 13,
+              "total": 15
+            },
+            "gray catbird": {
+              "correct": 17,
+              "total": 29
+            },
+            "yellow breasted chat": {
+              "correct": 8,
+              "total": 29
+            },
+            "eastern towhee": {
+              "correct": 18,
+              "total": 30
+            },
+            "chuck will widow": {
+              "correct": 5,
+              "total": 26
+            },
+            "brandt cormorant": {
+              "correct": 13,
+              "total": 29
+            },
+            "red faced cormorant": {
+              "correct": 20,
+              "total": 22
+            },
+            "pelagic cormorant": {
+              "correct": 7,
+              "total": 30
+            },
+            "bronzed cowbird": {
+              "correct": 20,
+              "total": 30
+            },
+            "shiny cowbird": {
+              "correct": 8,
+              "total": 30
+            },
+            "brown creeper": {
+              "correct": 18,
+              "total": 29
+            },
+            "american crow": {
+              "correct": 18,
+              "total": 30
+            },
+            "fish crow": {
+              "correct": 1,
+              "total": 30
+            },
+            "black billed cuckoo": {
+              "correct": 10,
+              "total": 30
+            },
+            "mangrove cuckoo": {
+              "correct": 4,
+              "total": 23
+            },
+            "yellow billed cuckoo": {
+              "correct": 14,
+              "total": 29
+            },
+            "gray crowned rosy finch": {
+              "correct": 9,
+              "total": 29
+            },
+            "purple finch": {
+              "correct": 24,
+              "total": 30
+            },
+            "northern flicker": {
+              "correct": 23,
+              "total": 30
+            },
+            "acadian flycatcher": {
+              "correct": 7,
+              "total": 29
+            },
+            "great crested flycatcher": {
+              "correct": 5,
+              "total": 30
+            },
+            "least flycatcher": {
+              "correct": 6,
+              "total": 29
+            },
+            "olive sided flycatcher": {
+              "correct": 2,
+              "total": 30
+            },
+            "scissor tailed flycatcher": {
+              "correct": 13,
+              "total": 30
+            },
+            "vermilion flycatcher": {
+              "correct": 24,
+              "total": 30
+            },
+            "yellow bellied flycatcher": {
+              "correct": 3,
+              "total": 29
+            },
+            "frigatebird": {
+              "correct": 20,
+              "total": 30
+            },
+            "northern fulmar": {
+              "correct": 12,
+              "total": 30
+            },
+            "gadwall": {
+              "correct": 28,
+              "total": 30
+            },
+            "american goldfinch": {
+              "correct": 29,
+              "total": 30
+            },
+            "european goldfinch": {
+              "correct": 27,
+              "total": 30
+            },
+            "boat tailed grackle": {
+              "correct": 11,
+              "total": 30
+            },
+            "eared grebe": {
+              "correct": 15,
+              "total": 30
+            },
+            "horned grebe": {
+              "correct": 14,
+              "total": 30
+            },
+            "pied billed grebe": {
+              "correct": 14,
+              "total": 30
+            },
+            "western grebe": {
+              "correct": 25,
+              "total": 30
+            },
+            "blue grosbeak": {
+              "correct": 22,
+              "total": 30
+            },
+            "evening grosbeak": {
+              "correct": 24,
+              "total": 30
+            },
+            "pine grosbeak": {
+              "correct": 16,
+              "total": 30
+            },
+            "rose breasted grosbeak": {
+              "correct": 24,
+              "total": 30
+            },
+            "pigeon guillemot": {
+              "correct": 21,
+              "total": 28
+            },
+            "california gull": {
+              "correct": 1,
+              "total": 30
+            },
+            "glaucous winged gull": {
+              "correct": 4,
+              "total": 29
+            },
+            "heermann gull": {
+              "correct": 17,
+              "total": 30
+            },
+            "herring gull": {
+              "correct": 6,
+              "total": 30
+            },
+            "ivory gull": {
+              "correct": 29,
+              "total": 30
+            },
+            "ring billed gull": {
+              "correct": 12,
+              "total": 30
+            },
+            "slaty backed gull": {
+              "correct": 3,
+              "total": 20
+            },
+            "western gull": {
+              "correct": 18,
+              "total": 30
+            },
+            "anna hummingbird": {
+              "correct": 6,
+              "total": 30
+            },
+            "ruby throated hummingbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "rufous hummingbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "green violetear": {
+              "correct": 26,
+              "total": 30
+            },
+            "long tailed jaeger": {
+              "correct": 8,
+              "total": 30
+            },
+            "pomarine jaeger": {
+              "correct": 10,
+              "total": 30
+            },
+            "blue jay": {
+              "correct": 27,
+              "total": 30
+            },
+            "florida jay": {
+              "correct": 19,
+              "total": 30
+            },
+            "green jay": {
+              "correct": 23,
+              "total": 27
+            },
+            "dark eyed junco": {
+              "correct": 13,
+              "total": 30
+            },
+            "tropical kingbird": {
+              "correct": 17,
+              "total": 30
+            },
+            "gray kingbird": {
+              "correct": 14,
+              "total": 29
+            },
+            "belted kingfisher": {
+              "correct": 12,
+              "total": 30
+            },
+            "green kingfisher": {
+              "correct": 17,
+              "total": 30
+            },
+            "pied kingfisher": {
+              "correct": 24,
+              "total": 30
+            },
+            "ringed kingfisher": {
+              "correct": 12,
+              "total": 30
+            },
+            "white breasted kingfisher": {
+              "correct": 18,
+              "total": 30
+            },
+            "red legged kittiwake": {
+              "correct": 13,
+              "total": 23
+            },
+            "horned lark": {
+              "correct": 8,
+              "total": 30
+            },
+            "pacific loon": {
+              "correct": 12,
+              "total": 30
+            },
+            "mallard": {
+              "correct": 23,
+              "total": 30
+            },
+            "western meadowlark": {
+              "correct": 20,
+              "total": 30
+            },
+            "hooded merganser": {
+              "correct": 22,
+              "total": 30
+            },
+            "red breasted merganser": {
+              "correct": 17,
+              "total": 30
+            },
+            "mockingbird": {
+              "correct": 3,
+              "total": 30
+            },
+            "nighthawk": {
+              "correct": 12,
+              "total": 30
+            },
+            "clark nutcracker": {
+              "correct": 13,
+              "total": 30
+            },
+            "white breasted nuthatch": {
+              "correct": 23,
+              "total": 30
+            },
+            "baltimore oriole": {
+              "correct": 18,
+              "total": 30
+            },
+            "hooded oriole": {
+              "correct": 16,
+              "total": 30
+            },
+            "orchard oriole": {
+              "correct": 9,
+              "total": 29
+            },
+            "scott oriole": {
+              "correct": 12,
+              "total": 30
+            },
+            "ovenbird": {
+              "correct": 16,
+              "total": 30
+            },
+            "brown pelican": {
+              "correct": 26,
+              "total": 30
+            },
+            "white pelican": {
+              "correct": 18,
+              "total": 20
+            },
+            "western wood pewee": {
+              "correct": 4,
+              "total": 30
+            },
+            "sayornis": {
+              "correct": 12,
+              "total": 30
+            },
+            "american pipit": {
+              "correct": 19,
+              "total": 30
+            },
+            "whip poor will": {
+              "correct": 14,
+              "total": 19
+            },
+            "horned puffin": {
+              "correct": 21,
+              "total": 30
+            },
+            "common raven": {
+              "correct": 17,
+              "total": 30
+            },
+            "white necked raven": {
+              "correct": 14,
+              "total": 30
+            },
+            "american redstart": {
+              "correct": 25,
+              "total": 30
+            },
+            "geococcyx": {
+              "correct": 23,
+              "total": 30
+            },
+            "loggerhead shrike": {
+              "correct": 20,
+              "total": 30
+            },
+            "great grey shrike": {
+              "correct": 8,
+              "total": 30
+            },
+            "baird sparrow": {
+              "correct": 11,
+              "total": 20
+            },
+            "black throated sparrow": {
+              "correct": 19,
+              "total": 30
+            },
+            "brewer sparrow": {
+              "correct": 4,
+              "total": 29
+            },
+            "chipping sparrow": {
+              "correct": 12,
+              "total": 30
+            },
+            "clay colored sparrow": {
+              "correct": 12,
+              "total": 29
+            },
+            "house sparrow": {
+              "correct": 11,
+              "total": 30
+            },
+            "field sparrow": {
+              "correct": 3,
+              "total": 29
+            },
+            "fox sparrow": {
+              "correct": 15,
+              "total": 30
+            },
+            "grasshopper sparrow": {
+              "correct": 8,
+              "total": 30
+            },
+            "harris sparrow": {
+              "correct": 13,
+              "total": 30
+            },
+            "henslow sparrow": {
+              "correct": 6,
+              "total": 30
+            },
+            "le conte sparrow": {
+              "correct": 8,
+              "total": 29
+            },
+            "lincoln sparrow": {
+              "correct": 12,
+              "total": 29
+            },
+            "nelson sharp tailed sparrow": {
+              "correct": 5,
+              "total": 30
+            },
+            "savannah sparrow": {
+              "correct": 12,
+              "total": 30
+            },
+            "seaside sparrow": {
+              "correct": 2,
+              "total": 30
+            },
+            "song sparrow": {
+              "correct": 2,
+              "total": 30
+            },
+            "tree sparrow": {
+              "correct": 2,
+              "total": 30
+            },
+            "vesper sparrow": {
+              "correct": 6,
+              "total": 30
+            },
+            "white crowned sparrow": {
+              "correct": 16,
+              "total": 30
+            },
+            "white throated sparrow": {
+              "correct": 13,
+              "total": 30
+            },
+            "cape glossy starling": {
+              "correct": 22,
+              "total": 30
+            },
+            "bank swallow": {
+              "correct": 17,
+              "total": 30
+            },
+            "barn swallow": {
+              "correct": 12,
+              "total": 30
+            },
+            "cliff swallow": {
+              "correct": 9,
+              "total": 30
+            },
+            "tree swallow": {
+              "correct": 25,
+              "total": 30
+            },
+            "scarlet tanager": {
+              "correct": 27,
+              "total": 30
+            },
+            "summer tanager": {
+              "correct": 9,
+              "total": 30
+            },
+            "artic tern": {
+              "correct": 12,
+              "total": 29
+            },
+            "black tern": {
+              "correct": 6,
+              "total": 30
+            },
+            "caspian tern": {
+              "correct": 5,
+              "total": 30
+            },
+            "common tern": {
+              "correct": 8,
+              "total": 30
+            },
+            "elegant tern": {
+              "correct": 7,
+              "total": 30
+            },
+            "forsters tern": {
+              "correct": 12,
+              "total": 30
+            },
+            "least tern": {
+              "correct": 13,
+              "total": 30
+            },
+            "green tailed towhee": {
+              "correct": 20,
+              "total": 30
+            },
+            "brown thrasher": {
+              "correct": 7,
+              "total": 29
+            },
+            "sage thrasher": {
+              "correct": 21,
+              "total": 30
+            },
+            "black capped vireo": {
+              "correct": 15,
+              "total": 21
+            },
+            "blue headed vireo": {
+              "correct": 6,
+              "total": 30
+            },
+            "philadelphia vireo": {
+              "correct": 4,
+              "total": 29
+            },
+            "red eyed vireo": {
+              "correct": 4,
+              "total": 30
+            },
+            "warbling vireo": {
+              "correct": 9,
+              "total": 30
+            },
+            "white eyed vireo": {
+              "correct": 8,
+              "total": 30
+            },
+            "yellow throated vireo": {
+              "correct": 14,
+              "total": 29
+            },
+            "bay breasted warbler": {
+              "correct": 23,
+              "total": 30
+            },
+            "black and white warbler": {
+              "correct": 29,
+              "total": 30
+            },
+            "black throated blue warbler": {
+              "correct": 23,
+              "total": 29
+            },
+            "blue winged warbler": {
+              "correct": 7,
+              "total": 30
+            },
+            "canada warbler": {
+              "correct": 2,
+              "total": 30
+            },
+            "cape may warbler": {
+              "correct": 12,
+              "total": 30
+            },
+            "cerulean warbler": {
+              "correct": 18,
+              "total": 30
+            },
+            "chestnut sided warbler": {
+              "correct": 13,
+              "total": 30
+            },
+            "golden winged warbler": {
+              "correct": 14,
+              "total": 29
+            },
+            "hooded warbler": {
+              "correct": 15,
+              "total": 30
+            },
+            "kentucky warbler": {
+              "correct": 8,
+              "total": 29
+            },
+            "magnolia warbler": {
+              "correct": 9,
+              "total": 29
+            },
+            "mourning warbler": {
+              "correct": 7,
+              "total": 30
+            },
+            "myrtle warbler": {
+              "correct": 9,
+              "total": 30
+            },
+            "nashville warbler": {
+              "correct": 6,
+              "total": 30
+            },
+            "orange crowned warbler": {
+              "correct": 4,
+              "total": 30
+            },
+            "palm warbler": {
+              "correct": 10,
+              "total": 30
+            },
+            "pine warbler": {
+              "correct": 4,
+              "total": 30
+            },
+            "prairie warbler": {
+              "correct": 2,
+              "total": 30
+            },
+            "prothonotary warbler": {
+              "correct": 16,
+              "total": 30
+            },
+            "swainson warbler": {
+              "correct": 7,
+              "total": 26
+            },
+            "tennessee warbler": {
+              "correct": 0,
+              "total": 29
+            },
+            "wilson warbler": {
+              "correct": 10,
+              "total": 30
+            },
+            "worm eating warbler": {
+              "correct": 6,
+              "total": 29
+            },
+            "yellow warbler": {
+              "correct": 15,
+              "total": 30
+            },
+            "northern waterthrush": {
+              "correct": 4,
+              "total": 30
+            },
+            "louisiana waterthrush": {
+              "correct": 10,
+              "total": 30
+            },
+            "bohemian waxwing": {
+              "correct": 16,
+              "total": 30
+            },
+            "cedar waxwing": {
+              "correct": 18,
+              "total": 30
+            },
+            "american three toed woodpecker": {
+              "correct": 10,
+              "total": 20
+            },
+            "pileated woodpecker": {
+              "correct": 17,
+              "total": 30
+            },
+            "red bellied woodpecker": {
+              "correct": 16,
+              "total": 30
+            },
+            "red cockaded woodpecker": {
+              "correct": 17,
+              "total": 29
+            },
+            "red headed woodpecker": {
+              "correct": 25,
+              "total": 30
+            },
+            "downy woodpecker": {
+              "correct": 20,
+              "total": 30
+            },
+            "bewick wren": {
+              "correct": 10,
+              "total": 30
+            },
+            "cactus wren": {
+              "correct": 10,
+              "total": 30
+            },
+            "carolina wren": {
+              "correct": 9,
+              "total": 30
+            },
+            "house wren": {
+              "correct": 8,
+              "total": 30
+            },
+            "marsh wren": {
+              "correct": 1,
+              "total": 30
+            },
+            "rock wren": {
+              "correct": 9,
+              "total": 30
+            },
+            "winter wren": {
+              "correct": 18,
+              "total": 30
+            },
+            "common yellowthroat": {
+              "correct": 16,
+              "total": 30
+            }
+          },
+          "predictions_sha256": "44f112895de9038f617b0857d8f546a5df21fb74626f794d94527a3655951576",
+          "vision": {
+            "visual_tokens": {
+              "min": 1280,
+              "median": 12032,
+              "p95": 16640,
+              "max": 16640,
+              "mean": 11746.927166033827
+            },
+            "total_input_tokens": {
+              "min": 2389,
+              "median": 13155,
+              "p95": 17763,
+              "max": 17773,
+              "mean": 12868.127890921643
+            },
+            "telemetry_sha256": "ed9bd500e3036667ea86ff5e766182ab770785c46ec9246ba59aff54828521bf"
+          }
+        },
+        "detriever": {
+          "state": "partial",
+          "completed": 2262,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.4524076630997584,
+            "top4_any_same_label_fraction": 0.6958923023817742
+          },
+          "correct": 1345,
+          "illegal_or_unknown": 0
+        },
+        "rices": {
+          "state": "selected",
+          "completed": 0,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.4662581981360028,
+            "top4_any_same_label_fraction": 0.787193648602002
+          }
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 12000,
+      "query_n": 8580,
+      "manifest_sha256": "3e5ef1aeb42f6d97534c56723d61d71d5e62f6b2bd0aad01a200b651f2d1db4a",
+      "joint_source": {
+        "state": "not_started",
+        "completed": 0
+      },
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 3680,
+      "query_n": 3669,
+      "manifest_sha256": "af64076ef3f93087413ef93232d41a00afb9d53daee2d1450ce25414c15d154a",
+      "joint_source": {
+        "state": "not_started",
+        "completed": 0
+      },
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "dataset": "cub",
+      "first": "raw",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 1.3776320331377288,
+      "queries": 5794,
+      "first_rescued": 3336,
+      "second_rescued": 2680,
+      "first_only_rescued": 1081,
+      "second_only_rescued": 425,
+      "difference_pp": 11.322057300655851,
+      "paired_bootstrap_low_pp": 10.062133241284087,
+      "paired_bootstrap_high_pp": 12.56472212633759,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "cub",
+      "first": "proj",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 0.9806696582671729,
+      "queries": 5794,
+      "first_rescued": 3908,
+      "second_rescued": 2680,
+      "first_only_rescued": 1521,
+      "second_only_rescued": 293,
+      "difference_pp": 21.194338971349673,
+      "paired_bootstrap_low_pp": 19.848118743527788,
+      "paired_bootstrap_high_pp": 22.488781498101485,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "cub",
+      "first": "learn",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 0.9532274767000345,
+      "queries": 5794,
+      "first_rescued": 4011,
+      "second_rescued": 2680,
+      "first_only_rescued": 1600,
+      "second_only_rescued": 269,
+      "difference_pp": 22.97204004142216,
+      "paired_bootstrap_low_pp": 21.60856057991025,
+      "paired_bootstrap_high_pp": 24.283741801863997,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    }
+  ],
+  "state": "incomplete",
+  "incomplete": [
+    "cub/detriever: partial 2262/5794",
+    "cub/rices: selected 0/5794",
+    "dogs/raw: missing_selection 0/8580",
+    "dogs/proj: missing_selection 0/8580",
+    "dogs/learn: missing_selection 0/8580",
+    "dogs/gpt_mm: missing_selection 0/8580",
+    "dogs/detriever: missing_selection 0/8580",
+    "dogs/rices: missing_selection 0/8580",
+    "pets/raw: missing_selection 0/3669",
+    "pets/proj: missing_selection 0/3669",
+    "pets/learn: missing_selection 0/3669",
+    "pets/gpt_mm: missing_selection 0/3669",
+    "pets/detriever: missing_selection 0/3669",
+    "pets/rices: missing_selection 0/3669"
+  ]
+}

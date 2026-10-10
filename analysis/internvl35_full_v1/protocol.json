@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "revision": "6bd4487402110ef9889ba50eb7aefeb302526fed",
+  "seed": 73,
+  "shots": 4,
+  "image_max_patches": 1,
+  "image_patch_size": 448,
+  "datasets": [
+    "dtd",
+    "aircraft",
+    "cub",
+    "dogs",
+    "pets"
+  ],
+  "official_full_bank_and_test": true,
+  "methods": [
+    "raw",
+    "proj",
+    "learn",
+    "gpt_mm",
+    "detriever",
+    "rices"
+  ],
+  "source": "36 last-input pre-answer decoder states under full task instruction",
+  "raw": "per-layer L2 cosine, uniform 36-layer mean",
+  "proj": "shared bias-free 256 projection, uniform layers, bank-only SupCon; 10 dev/class, 1500 steps, earliest best dev",
+  "learn": "same 256 projection and learned softmax layer weights, bank-only SupCon; 10 dev/class, 1500 steps",
+  "gpt_mm": "local GPT-MM-style generated-answer final state, greedy up to 12 tokens; not author code",
+  "detriever": "task-adapted DeTriever with bank-gold-answer EOS proxy; 10000 steps; not author code",
+  "rices": "CLIP ViT-B/32 visual feature cosine",
+  "icl": "same 4-shot multimodal_model_adapter.icl_messages and legal-label trie for all methods",
+  "test_labels": "evaluation only; never online retrieval or bank-only training"
+}

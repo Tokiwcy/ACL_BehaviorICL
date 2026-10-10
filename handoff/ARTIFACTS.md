@@ -1,5 +1,11 @@
 # Artifact availability
 
+## 2026-10-10 local supplement
+
+The repository now includes versioned local TAM/retrieval studies, InternVL small-panel reports, full-run protocols and partial completion audits, CPU tests, the report contact sheet, and operational failure/pause/resume records. See [local publication scope](LOCAL_PUBLICATION_20261010.md). New bytes are bound by `local_publish_manifest_20261010.json`; the original October 6 manifest remains unchanged. Completed full-test cells and ongoing progress are separate in `CURRENT_RESULTS.md` section 8. Local InternVL has explicit continuation authorization; cloud work remains paused. Published process and authorization records are historical evidence, not transferable permission to restart a worker.
+
+The local `.npy`/checkpoint/prediction/telemetry archives, images/annotations and model weights remain external. A clone can verify the publication and read the audited records, but cannot perform a new complete scientific audit without those inputs. The original artifact and pause descriptions below refer to the October 6 publication.
+
 This repository is a portable code/evidence handoff, not the full private experiment workspace. Historical audits are preserved as records of completed independent checks; a clean clone cannot re-run those full audits without their external inputs.
 
 ## Included directly

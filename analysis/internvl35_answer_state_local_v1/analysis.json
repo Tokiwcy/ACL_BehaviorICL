@@ -1,0 +1,237 @@
+{
+  "protocol_SHA256": "dc2bd11d81e7960ee9f267ad369308cfbb7b7edc6f28341c6c414a93fa2eeb89",
+  "base_protocol_SHA256": "3c456c6296fe21f373ec61d4fa1980453c587c563da45023e62df86044b494c1",
+  "comparison": "same model, image budget, task-full prompt and fixed rows; pre-answer 36-layer Raw versus local GPT-MM-style generated-answer final state",
+  "datasets": {
+    "dtd": {
+      "bank_n": 94,
+      "query_n": 32,
+      "top1": {
+        "pre_answer_Raw": 0.5625,
+        "answer_state_style": 0.5625,
+        "paired_pre_minus_answer": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            -0.1875,
+            0.1875
+          ],
+          "positive": 4,
+          "negative": 4,
+          "zero": 24
+        }
+      },
+      "top4": {
+        "pre_answer_Raw": 0.84375,
+        "answer_state_style": 0.65625,
+        "paired_pre_minus_answer": {
+          "mean": 0.1875,
+          "95_percent_bootstrap_mean": [
+            0.0625,
+            0.34375
+          ],
+          "positive": 6,
+          "negative": 0,
+          "zero": 26
+        }
+      },
+      "AP": {
+        "pre_answer_Raw": 0.5971443688185517,
+        "answer_state_style": 0.510104280244698,
+        "paired_pre_minus_answer": {
+          "mean": 0.08704008857385374,
+          "95_percent_bootstrap_mean": [
+            0.0012028412131948215,
+            0.17635868475796188
+          ],
+          "positive": 19,
+          "negative": 5,
+          "zero": 8
+        }
+      }
+    },
+    "aircraft": {
+      "bank_n": 200,
+      "query_n": 32,
+      "top1": {
+        "pre_answer_Raw": 0.1875,
+        "answer_state_style": 0.1875,
+        "paired_pre_minus_answer": {
+          "mean": 0.0,
+          "95_percent_bootstrap_mean": [
+            -0.15625,
+            0.15625
+          ],
+          "positive": 3,
+          "negative": 3,
+          "zero": 26
+        }
+      },
+      "top4": {
+        "pre_answer_Raw": 0.3125,
+        "answer_state_style": 0.28125,
+        "paired_pre_minus_answer": {
+          "mean": 0.03125,
+          "95_percent_bootstrap_mean": [
+            -0.0625,
+            0.125
+          ],
+          "positive": 2,
+          "negative": 1,
+          "zero": 29
+        }
+      },
+      "AP": {
+        "pre_answer_Raw": 0.22593659610931927,
+        "answer_state_style": 0.20738186430765884,
+        "paired_pre_minus_answer": {
+          "mean": 0.018554731801660434,
+          "95_percent_bootstrap_mean": [
+            -0.05425296240241699,
+            0.09619799814167304
+          ],
+          "positive": 17,
+          "negative": 12,
+          "zero": 3
+        }
+      }
+    },
+    "cub": {
+      "bank_n": 400,
+      "query_n": 32,
+      "top1": {
+        "pre_answer_Raw": 0.3125,
+        "answer_state_style": 0.125,
+        "paired_pre_minus_answer": {
+          "mean": 0.1875,
+          "95_percent_bootstrap_mean": [
+            0.03125,
+            0.34375
+          ],
+          "positive": 7,
+          "negative": 1,
+          "zero": 24
+        }
+      },
+      "top4": {
+        "pre_answer_Raw": 0.4375,
+        "answer_state_style": 0.40625,
+        "paired_pre_minus_answer": {
+          "mean": 0.03125,
+          "95_percent_bootstrap_mean": [
+            -0.21875,
+            0.25
+          ],
+          "positive": 8,
+          "negative": 7,
+          "zero": 17
+        }
+      },
+      "AP": {
+        "pre_answer_Raw": 0.3475829024262189,
+        "answer_state_style": 0.19871560776951272,
+        "paired_pre_minus_answer": {
+          "mean": 0.1488672946567062,
+          "95_percent_bootstrap_mean": [
+            0.04269869894776057,
+            0.26329093767947365
+          ],
+          "positive": 21,
+          "negative": 10,
+          "zero": 1
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 240,
+      "query_n": 32,
+      "top1": {
+        "pre_answer_Raw": 0.375,
+        "answer_state_style": 0.21875,
+        "paired_pre_minus_answer": {
+          "mean": 0.15625,
+          "95_percent_bootstrap_mean": [
+            -0.03125,
+            0.34375
+          ],
+          "positive": 7,
+          "negative": 2,
+          "zero": 23
+        }
+      },
+      "top4": {
+        "pre_answer_Raw": 0.65625,
+        "answer_state_style": 0.5,
+        "paired_pre_minus_answer": {
+          "mean": 0.15625,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.3125
+          ],
+          "positive": 6,
+          "negative": 1,
+          "zero": 25
+        }
+      },
+      "AP": {
+        "pre_answer_Raw": 0.4617017276098692,
+        "answer_state_style": 0.23490963491889144,
+        "paired_pre_minus_answer": {
+          "mean": 0.22679209269097778,
+          "95_percent_bootstrap_mean": [
+            0.12681002852222087,
+            0.3260652781120518
+          ],
+          "positive": 27,
+          "negative": 2,
+          "zero": 3
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 74,
+      "query_n": 32,
+      "top1": {
+        "pre_answer_Raw": 0.625,
+        "answer_state_style": 0.65625,
+        "paired_pre_minus_answer": {
+          "mean": -0.03125,
+          "95_percent_bootstrap_mean": [
+            -0.125,
+            0.0625
+          ],
+          "positive": 1,
+          "negative": 2,
+          "zero": 29
+        }
+      },
+      "top4": {
+        "pre_answer_Raw": 0.90625,
+        "answer_state_style": 0.84375,
+        "paired_pre_minus_answer": {
+          "mean": 0.0625,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.15625
+          ],
+          "positive": 2,
+          "negative": 0,
+          "zero": 30
+        }
+      },
+      "AP": {
+        "pre_answer_Raw": 0.6527645878427129,
+        "answer_state_style": 0.5878709624968781,
+        "paired_pre_minus_answer": {
+          "mean": 0.06489362534583465,
+          "95_percent_bootstrap_mean": [
+            -0.00014984275256182736,
+            0.13331483456856522
+          ],
+          "positive": 16,
+          "negative": 11,
+          "zero": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+
+2026-10-09T01:30:02.119544+00:00 ['C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe', '-u', 'C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\check_internvl35_checked_restart_v1.py', '--dataset', 'cub', '--method', 'raw', '--rows', '2877', '--report', 'C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\analysis\\internvl35_joint_v2\\checked_replay_4fec08f0e9e0bd9c.json']
+Loading weights:   0%|          | 0/841 [00:00<?, ?it/s]Loading weights:  41%|¨€¨€¨€¨€¨‡     | 347/841 [00:00<00:00, 3454.66it/s]Loading weights: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 841/841 [00:00<00:00, 5526.50it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.

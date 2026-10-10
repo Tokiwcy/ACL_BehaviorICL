@@ -1,0 +1,11 @@
+{
+  "state": "failed",
+  "pid": 23880,
+  "started_utc": "2026-10-07T08:41:03.669620+00:00",
+  "protocol_sha256": "8226a0397b5a9bac30b22d237712936419ea3d39d2761c2dcd33a7814b3b85b6",
+  "cases": {},
+  "dataset": "aircraft",
+  "stage": "five_image_legal_decode",
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 36.24 GiB. GPU 0 has a total capacity of 15.92 GiB of which 2.00 GiB is free. Of the allocated memory 12.07 GiB is allocated by PyTorch, and 504.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')",
+  "finished_utc": "2026-10-07T08:41:28.043670+00:00"
+}

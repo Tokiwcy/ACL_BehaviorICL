@@ -3,7 +3,7 @@
 > GitHub接手版：仓库内链接可移植；原科学source/audit字节保留。完整本地归档、图片、权重及云运行状态不在此仓库，参见 [artifact availability](handoff/ARTIFACTS.md)。
 
 
-2026-10-06整合后，当前完整结果以 [CURRENT_RESULTS.md](CURRENT_RESULTS.md) 为准。那里统一列出主表、task/generic、完整和样本标签干预、QV控制、纠错/match反例，以及未完成项目；配对分母、CI和来源链接均保留。
+2026-10-06整合后，当前完整结果以 [CURRENT_RESULTS.md](CURRENT_RESULTS.md) 为准。那里统一列出主表、task/generic、完整和样本标签干预、QV控制、纠错/match反例，以及未完成项目；配对分母、CI和来源链接均保留。2026-10-07起，除DTD外的InternVL动态图片重跑进度和经独立审计的结果也更新在该文档第8节，Qwen3主表仍在第1节。
 
 ## 仍可直接使用的证据
 

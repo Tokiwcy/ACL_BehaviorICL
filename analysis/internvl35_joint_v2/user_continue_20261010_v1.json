@@ -1,0 +1,22 @@
+{
+  "authorization": "Human explicitly requested continue after 2026-10-09 22:44 pause",
+  "requested_utc": "2026-10-09T17:48:43.219471+00:00",
+  "pause_receipt": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\analysis\\internvl35_joint_v2\\user_pause_20261009T144456Z.json",
+  "pause_receipt_sha256": "db77582b272e13d33bc443f279f3c7f49279fc8bbdf58d984ecb1135a80d1d1b",
+  "status_sha256": "3782cd4b514be10cbfad1c505e58047ce095a3a27ff8165184d14160fd107666",
+  "expected_rows": 2699,
+  "current_boot": "2026-10-09T01:08:20.3006610Z",
+  "restart_events_since_pause": [],
+  "allowed_desktop": [
+    {
+      "ProcessId": 2724,
+      "Name": "dwm.exe",
+      "CreatedUtc": "2026-10-09T01:08:36.6710440Z"
+    }
+  ],
+  "operational_code_sha256": {
+    "resume_internvl35_user_pause_v2.py": "a0afe51d7d928763fb689a9ba6d5f2e0b60501f877b87529bed96c62b1b3e498",
+    "resume_internvl35_checked_v1.py": "5784fa3faf2614bcab1c758576ce90ac8133e2ca11496e8300dfd069db5e0b11",
+    "internvl35_icl_cache_guard_v1.py": "8620f3837fcb5848bc93c7f553e4f37d170c94550c9c2d366307fc2df75be26a"
+  }
+}

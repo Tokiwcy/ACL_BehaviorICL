@@ -1,0 +1,186 @@
+{
+  "version": 2,
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "shots": 4,
+  "seed": 73,
+  "official_full_test": true,
+  "paired_ci": "10000 paired-query multinomial bootstrap, seed73; descriptive, no multiplicity correction",
+  "datasets": {
+    "aircraft": {
+      "bank_n": 6667,
+      "query_n": 3333,
+      "manifest_sha256": "4861fde85f400224cabf1e1e2184d1979a8064f8272da3f65348b633b1ea87ee",
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3333
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3333
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3333
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3333
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3333
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3333
+        }
+      }
+    },
+    "cub": {
+      "bank_n": 5994,
+      "query_n": 5794,
+      "manifest_sha256": "8e65e2b6a61afe8e62b16db3413352157a9aff8bbfcfadb75668244838eb8bd1",
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 5794
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 5794
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 5794
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 5794
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 5794
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 5794
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 12000,
+      "query_n": 8580,
+      "manifest_sha256": "3e5ef1aeb42f6d97534c56723d61d71d5e62f6b2bd0aad01a200b651f2d1db4a",
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 3680,
+      "query_n": 3669,
+      "manifest_sha256": "af64076ef3f93087413ef93232d41a00afb9d53daee2d1450ce25414c15d154a",
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        }
+      }
+    }
+  },
+  "pairs": [],
+  "state": "incomplete",
+  "incomplete": [
+    "aircraft/raw: missing_selection 0/3333",
+    "aircraft/proj: missing_selection 0/3333",
+    "aircraft/learn: missing_selection 0/3333",
+    "aircraft/gpt_mm: missing_selection 0/3333",
+    "aircraft/detriever: missing_selection 0/3333",
+    "aircraft/rices: missing_selection 0/3333",
+    "cub/raw: missing_selection 0/5794",
+    "cub/proj: missing_selection 0/5794",
+    "cub/learn: missing_selection 0/5794",
+    "cub/gpt_mm: missing_selection 0/5794",
+    "cub/detriever: missing_selection 0/5794",
+    "cub/rices: missing_selection 0/5794",
+    "dogs/raw: missing_selection 0/8580",
+    "dogs/proj: missing_selection 0/8580",
+    "dogs/learn: missing_selection 0/8580",
+    "dogs/gpt_mm: missing_selection 0/8580",
+    "dogs/detriever: missing_selection 0/8580",
+    "dogs/rices: missing_selection 0/8580",
+    "pets/raw: missing_selection 0/3669",
+    "pets/proj: missing_selection 0/3669",
+    "pets/learn: missing_selection 0/3669",
+    "pets/gpt_mm: missing_selection 0/3669",
+    "pets/detriever: missing_selection 0/3669",
+    "pets/rices: missing_selection 0/3669"
+  ]
+}

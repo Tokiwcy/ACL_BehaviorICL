@@ -1,5 +1,11 @@
 # 下一步：先解释任务条件化，再补稳定性
 
+## 最新执行优先级（2026-10-10）
+
+用户已明确恢复本地InternVL全量实验，当前继续CUB DeTriever→RICES，然后Dogs→Pets，四组动态共24格。Aircraft已完成6格，CUB已完成Raw/Proj/Learn/GPT-MM四格；DTD旧单patch另6格直接保留在五数据集表。全部完成后独立CPU核验、更新配对差值并暂停该自动化。Qwen历史主表不重跑。
+
+本地新版TAM与四提示检索实验已经有报告，先读 [LOCAL_GPU_STUDY.md](LOCAL_GPU_STUDY.md)与 [INTERNVL35_LOCAL_STUDY.md](INTERNVL35_LOCAL_STUDY.md)，保留空间归因不支持一致前景迁移、词表混杂与小样本局限。旧云端64-run TAM、三seed74/75、LFM均不因仓库发布而恢复。下文是2026-10-06保留计划，涉及“尚无本地maps/全部暂停”的语句仅描述当时状态。实际下一操作须读取本机状态，不能用GitHub快照判断活跃worker。
+
 > GitHub接手版：仓库内链接可移植；原科学source/audit字节保留。完整本地归档、图片、权重及云运行状态不在此仓库，参见 [artifact availability](handoff/ARTIFACTS.md)。
 
 

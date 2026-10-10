@@ -1,0 +1,15 @@
+{
+  "state": "running",
+  "started_utc": "2026-10-09T00:47:48.851042+00:00",
+  "pid": 22104,
+  "authorization": "Existing human continuation remains active; confirmed planned update interruption, no crash",
+  "previous_boot_identity": "2026-10-08T09:21:41.5000000Z",
+  "boot_identity": "2026-10-08T19:31:44.5000000Z",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "evidence_sha256": "a4399a7203ef3ec5b87cd2c96b1a136f45cdc7bb7c704a99ca04561049043e90",
+  "code_sha256": "11bf763380a01cddfcdc0611a37231668a6526e37718936a6862b7f0d11bee81",
+  "replay_code_sha256": "088ac14ff3ddabd267c438aee4b6243f2aee55ad9f8767678c1846edc89063e6",
+  "saved_raw_predictions": 2688,
+  "replay_sha256": "2fef8856e6feccaa20838fa90c59847dafecbdec1eaac6d1c7a8ca6c7ad4cc36",
+  "checked_utc": "2026-10-09T00:48:10.883443+00:00"
+}

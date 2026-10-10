@@ -1,4 +1,6 @@
 # Frozen scientific files/audits must survive Windows/Linux checkout byte-for-byte.
+.gitattributes text eol=lf
+.gitignore text eol=lf
 scripts/** -text
 tests/** -text
 analysis/** -text

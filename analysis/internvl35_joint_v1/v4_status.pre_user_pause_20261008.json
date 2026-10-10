@@ -1,0 +1,403 @@
+{
+  "version": 4,
+  "started_utc": "2026-10-07T08:53:03.640113+00:00",
+  "protocol_sha256": "3c58286cb3efd5284d58a8837487136d7c24ef533755eb3c5979e507d5c4a054",
+  "stages": [
+    {
+      "dataset": "aircraft",
+      "stage": "anchor",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_sources_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "anchor",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T08:53:03.641108+00:00",
+      "worker_pid": 7304,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T10:38:46.335696+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_anchor.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "train_proj",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "train_proj"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T10:38:46.336696+00:00",
+      "worker_pid": 5864,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T10:39:53.205094+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_train_proj.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "train_learn",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "train_learn"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T10:39:53.206101+00:00",
+      "worker_pid": 18396,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T10:40:47.367635+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_train_learn.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "gpt_mm_source",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_sources_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "gpt_mm",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T10:40:47.368628+00:00",
+      "worker_pid": 14652,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T13:20:03.597271+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_gpt_mm_source.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "detriever_proxy",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "proxy"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T13:20:03.597271+00:00",
+      "worker_pid": 7568,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:29:37.664617+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_detriever_proxy.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "train_detriever",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "train_detriever"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:29:37.665618+00:00",
+      "worker_pid": 13968,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:31:32.373204+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_train_detriever.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "clip_source",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_sources_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "clip",
+        "--batch-size",
+        "32"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:31:32.374209+00:00",
+      "worker_pid": 11288,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:33:31.698820+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_clip_source.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "retrieve_raw",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "retrieve",
+        "--method",
+        "raw"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:33:31.699812+00:00",
+      "worker_pid": 23484,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:33:42.197585+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_retrieve_raw.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "retrieve_proj",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "retrieve",
+        "--method",
+        "proj"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:33:42.198589+00:00",
+      "worker_pid": 18108,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:33:49.630680+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_retrieve_proj.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "retrieve_learn",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "retrieve",
+        "--method",
+        "learn"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:33:49.631680+00:00",
+      "worker_pid": 1084,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:33:57.015277+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_retrieve_learn.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "retrieve_gpt_mm",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "retrieve",
+        "--method",
+        "gpt_mm"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:33:57.016278+00:00",
+      "worker_pid": 8396,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:34:01.485948+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_retrieve_gpt_mm.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "retrieve_detriever",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "retrieve",
+        "--method",
+        "detriever"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:34:01.486950+00:00",
+      "worker_pid": 6964,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:34:07.909683+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_retrieve_detriever.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "retrieve_rices",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_methods_v4.py",
+        "--dataset",
+        "aircraft",
+        "--stage",
+        "retrieve",
+        "--method",
+        "rices"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:34:07.910676+00:00",
+      "worker_pid": 13352,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T14:34:12.152488+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_retrieve_rices.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "icl_raw",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py",
+        "--dataset",
+        "aircraft",
+        "--method",
+        "raw",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T14:34:12.153527+00:00",
+      "worker_pid": 10104,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T17:39:42.048780+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_icl_raw.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "icl_proj",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py",
+        "--dataset",
+        "aircraft",
+        "--method",
+        "proj",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T17:39:42.049773+00:00",
+      "worker_pid": 12144,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T20:43:20.998013+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_icl_proj.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "icl_learn",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py",
+        "--dataset",
+        "aircraft",
+        "--method",
+        "learn",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T20:43:21.000009+00:00",
+      "worker_pid": 9252,
+      "return_code": 0,
+      "finished_utc": "2026-10-07T23:46:07.559965+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_icl_learn.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "icl_gpt_mm",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py",
+        "--dataset",
+        "aircraft",
+        "--method",
+        "gpt_mm",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-07T23:46:07.561414+00:00",
+      "worker_pid": 16636,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T02:52:10.657016+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_icl_gpt_mm.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "icl_detriever",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py",
+        "--dataset",
+        "aircraft",
+        "--method",
+        "detriever",
+        "--batch-size",
+        "1"
+      ],
+      "state": "complete",
+      "started_utc": "2026-10-08T02:52:10.658016+00:00",
+      "worker_pid": 4560,
+      "return_code": 0,
+      "finished_utc": "2026-10-08T06:05:26.386708+00:00",
+      "log": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\results\\internvl35_qwen_config_v4\\pipeline_logs\\aircraft_icl_detriever.log"
+    },
+    {
+      "dataset": "aircraft",
+      "stage": "icl_rices",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_qwen_icl_v4.py",
+        "--dataset",
+        "aircraft",
+        "--method",
+        "rices",
+        "--batch-size",
+        "1"
+      ],
+      "state": "running",
+      "started_utc": "2026-10-08T06:05:26.387717+00:00",
+      "worker_pid": 22300
+    }
+  ],
+  "state": "running",
+  "supervisor_pid": 3872,
+  "checked_utc": "2026-10-08T06:05:26.386708+00:00",
+  "planned_stages": 81,
+  "current": {
+    "dataset": "aircraft",
+    "stage": "icl_rices"
+  }
+}

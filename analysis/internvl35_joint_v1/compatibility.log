@@ -1,0 +1,10 @@
+
+2026-10-08T09:35:00.983514+00:00 ['C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe', '-u', 'C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\check_internvl35_joint_v1.py']
+Loading weights:   0%|          | 0/841 [00:00<?, ?it/s]Loading weights: 100%|¨€¨€¨€¨€¨€¨€¨€¨€¨€¨€| 841/841 [00:00<00:00, 18285.17it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Traceback (most recent call last):
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\check_internvl35_joint_v1.py", line 123, in <module>
+    main()
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\check_internvl35_joint_v1.py", line 94, in main
+    raise ValueError(f"Extraction parity failed: {dataset}/{sample.sample_id}: {entry}")
+ValueError: Extraction parity failed: cub/cub_07482: {'sample_id': 'cub_07482', 'is_bank': True, 'tail_ids_exact': True, 'vision_forwards': 1, 'prefix_tokens': 4384, 'gold_suffix_ids': [325, 28512, 978, 6044, 151645, 198], 'cosine_min': {'anchor': 0.9999998807907104, 'gpt': 1.0, 'gold': 0.9996466040611267}, 'max_abs': {'anchor': 0.0, 'gpt': 0.0, 'gold': 0.375}}

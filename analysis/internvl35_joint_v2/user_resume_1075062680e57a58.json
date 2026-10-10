@@ -1,0 +1,21 @@
+{
+  "state": "running",
+  "started_utc": "2026-10-09T17:49:57.119221+00:00",
+  "authorization": "Human explicitly requested continue after 2026-10-09 22:44 pause",
+  "authorization_sha256": "1075062680e57a58b7d16597ec67780a59b1a3a7465c5025fbcdc7571e7fa8fd",
+  "code_sha256": "3c681b3b162645c4a6f6a582c14e8fb2f558c4247bfe284356fdcaff7c6f6d94",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "boot_identity": "2026-10-09T01:08:20.3006610Z",
+  "old_boot_identity": "2026-10-09T01:08:18.5000000Z",
+  "saved_predictions": 2699,
+  "desktop_contexts": [
+    {
+      "ProcessId": 2724,
+      "Name": "dwm.exe",
+      "ExecutablePath": null,
+      "CreatedUtc": "2026-10-09T01:08:36.6710440Z"
+    }
+  ],
+  "same_boot_time_field_drift_seconds": 1.800661,
+  "note": "No new reboot; preserve frozen science and passed gate; no claim Hypervisor root cause fixed"
+}

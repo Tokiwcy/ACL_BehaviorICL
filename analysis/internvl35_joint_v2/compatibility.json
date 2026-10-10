@@ -1,0 +1,865 @@
+{
+  "state": "complete",
+  "started_utc": "2026-10-08T09:41:23.671335+00:00",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "cases": {
+    "cub": {
+      "rows": [
+        {
+          "sample_id": "cub_07482",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 4384,
+          "gold_suffix_ids": [
+            325,
+            28512,
+            978,
+            6044,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_07423",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 2848,
+          "gold_suffix_ids": [
+            94251,
+            43004,
+            978,
+            6044,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_08187",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 4384,
+          "gold_suffix_ids": [
+            62566,
+            259,
+            8184,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_03392",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 4384,
+          "gold_suffix_ids": [
+            5416,
+            6574,
+            342,
+            617,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_05164",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 1312,
+          "gold_suffix_ids": [
+            5694,
+            291,
+            18463,
+            596,
+            261,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_06993",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 2848,
+          "gold_suffix_ids": [
+            15011,
+            978,
+            6044,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_03533",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 4384,
+          "gold_suffix_ids": [
+            383,
+            91450,
+            342,
+            617,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_01331",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 2848,
+          "gold_suffix_ids": [
+            1151,
+            16601,
+            272,
+            493,
+            269,
+            517,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_10021",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 2848,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_07330",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 1312,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_03751",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 1824,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "cub_09623",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 4384,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        }
+      ],
+      "ordered_top4_exact": {
+        "anchor": true,
+        "gpt": true,
+        "proxy_bank": true
+      }
+    },
+    "dogs": {
+      "rows": [
+        {
+          "sample_id": "dogs_n02106166_3865",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 2377,
+          "gold_suffix_ids": [
+            9461,
+            4530,
+            645,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02099712_3500",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": [
+            14380,
+            65251,
+            10759,
+            423,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104,
+            "gold": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02111889_1716",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": [
+            45996,
+            2253,
+            291,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02095889_3493",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": [
+            325,
+            5774,
+            5604,
+            1982,
+            7253,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02099267_808",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": [
+            26229,
+            48382,
+            10759,
+            423,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02105505_4302",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 2377,
+          "gold_suffix_ids": [
+            22097,
+            2111,
+            269,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02102177_1509",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": [
+            89463,
+            927,
+            10464,
+            261,
+            9390,
+            13029,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02107574_2191",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": [
+            65235,
+            2021,
+            1038,
+            16301,
+            5562,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02095570_3213",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02107574_678",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02089078_2110",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 3913,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "dogs_n02094114_297",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 2377,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        }
+      ],
+      "ordered_top4_exact": {
+        "anchor": true,
+        "gpt": true,
+        "proxy_bank": true
+      }
+    },
+    "pets": {
+      "rows": [
+        {
+          "sample_id": "pets_english_setter_172",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3523,
+          "gold_suffix_ids": [
+            29120,
+            40388,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_wheaten_terrier_126",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": [
+            86,
+            383,
+            13518,
+            1982,
+            7253,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_american_bulldog_10",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": [
+            77718,
+            78842,
+            538,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_american_bulldog_138",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": [
+            77718,
+            78842,
+            538,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_Egyptian_Mau_102",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": [
+            791,
+            88,
+            417,
+            1103,
+            58914,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_Birman_117",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3523,
+          "gold_suffix_ids": [
+            43855,
+            1515,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 0.9999999403953552
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_english_cocker_spaniel_152",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 3523,
+          "gold_suffix_ids": [
+            29120,
+            11272,
+            261,
+            9390,
+            13029,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_keeshond_124",
+          "is_bank": true,
+          "tail_ids_exact": true,
+          "vision_forwards": 2,
+          "expected_vision_forwards": 2,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": [
+            440,
+            4288,
+            2111,
+            151645,
+            198
+          ],
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104,
+            "gold": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0,
+            "gold": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_english_cocker_spaniel_61",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0000001192092896
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_Bengal_50",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 3523,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_Persian_28",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 1987,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 1.0
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        },
+        {
+          "sample_id": "pets_boxer_3",
+          "is_bank": false,
+          "tail_ids_exact": true,
+          "vision_forwards": 1,
+          "expected_vision_forwards": 1,
+          "prefix_tokens": 3523,
+          "gold_suffix_ids": null,
+          "cosine_min": {
+            "anchor": 0.9999998807907104,
+            "gpt": 0.9999998807907104
+          },
+          "max_abs": {
+            "anchor": 0.0,
+            "gpt": 0.0
+          }
+        }
+      ],
+      "ordered_top4_exact": {
+        "anchor": true,
+        "gpt": true,
+        "proxy_bank": true
+      }
+    }
+  },
+  "threshold_cosine": 0.9999,
+  "test_accuracy_used": false,
+  "finished_utc": "2026-10-08T09:43:51.626154+00:00",
+  "peak_reserved_gb": 12.8203125,
+  "limits": "36 fixed pilot rows; finite BF16 tolerance and pilot ranks do not prove all-bank rank equality"
+}

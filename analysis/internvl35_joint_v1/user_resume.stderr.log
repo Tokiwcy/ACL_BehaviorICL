@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\resume_internvl35_after_user_pause_v1.py", line 147, in <module>
+    main()
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\resume_internvl35_after_user_pause_v1.py", line 128, in main
+    child(pipeline.cmd("check_internvl35_joint_v1.py"), joint.ANALYSIS / "compatibility.log")
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\resume_internvl35_after_user_pause_v1.py", line 31, in child
+    raise subprocess.CalledProcessError(result, argv)
+subprocess.CalledProcessError: Command '['C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe', '-u', 'C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\check_internvl35_joint_v1.py']' returned non-zero exit status 1.

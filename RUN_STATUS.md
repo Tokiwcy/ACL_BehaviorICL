@@ -1,4 +1,12 @@
-# 当前运行状态：已暂停
+# 运行状态：本地InternVL继续，云端暂停
+
+## 最新本地状态（2026-10-10发布快照）
+
+本地InternVL joint_v2已获用户明确继续授权，当前CUB DeTriever全量预测中；动态结果10/24格独立审计完成，DTD旧单patch另6/6。完整准确率及带时间进度以 [CURRENT_RESULTS.md](CURRENT_RESULTS.md)第8节为准。半小时监督自动化ACTIVE，唯一科学GPU worker与固定Windows桌面上下文已核对。云端GPU仍暂停，LFM已取消，旧单patch流水线冻结。
+
+最近真实蓝屏为2026-10-09 09:08 HYPERVISOR_ERROR 0x20001；与03:31计划Windows升级重启分开记录。具体驱动/固件根因尚未定位，缓存清理只是运行保护，不能称为修复。用户暂停与恢复均保留原状态字节和独立操作receipt；当前入口见 [HANDOFF.md](HANDOFF.md)。新真实系统崩溃不自动循环恢复。
+
+下文为2026-10-06历史云端停机快照，仍作为当时证据保留，不是当前本地GPU实时状态。
 
 > GitHub接手版：仓库内链接可移植；原科学source/audit字节保留。完整本地归档、图片、权重及云运行状态不在此仓库，参见 [artifact availability](handoff/ARTIFACTS.md)。
 

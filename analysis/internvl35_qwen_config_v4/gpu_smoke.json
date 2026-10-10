@@ -1,0 +1,81 @@
+{
+  "state": "complete",
+  "pid": 11844,
+  "started_utc": "2026-10-07T08:51:36.667753+00:00",
+  "protocol_sha256": "3c58286cb3efd5284d58a8837487136d7c24ef533755eb3c5979e507d5c4a054",
+  "cases": {
+    "aircraft": {
+      "query_id": "0037512",
+      "demo_ids": [
+        "0034309",
+        "0034958",
+        "0037511",
+        "0038598"
+      ],
+      "expected_visual_tokens": 16640,
+      "state_shape": [
+        1,
+        36,
+        2560
+      ],
+      "states_finite": true,
+      "cudnn_math_state_cosine_min": 0.9997748732566833,
+      "cudnn_math_state_cosine_mean": 0.9998921155929565,
+      "cudnn_math_state_max_abs": 2.0,
+      "proxy_finite": true,
+      "prediction": "DC-9-30",
+      "raw": "DC-9-30",
+      "legal": true,
+      "peak_reserved_gb": 14.095703125,
+      "peak_allocated_gb": 12.789992809295654
+    },
+    "cub": {
+      "query_id": "cub_00010",
+      "demo_ids": [
+        "cub_00004",
+        "cub_00005",
+        "cub_00008",
+        "cub_00009"
+      ],
+      "expected_visual_tokens": 16640,
+      "prediction": "black footed albatross",
+      "raw": "black footed albatross",
+      "legal": true,
+      "peak_reserved_gb": 14.150390625,
+      "peak_allocated_gb": 12.858949184417725
+    },
+    "dogs": {
+      "query_id": "dogs_n02085620_10131",
+      "demo_ids": [
+        "dogs_n02085620_11140",
+        "dogs_n02085620_11258",
+        "dogs_n02085620_1152",
+        "dogs_n02085620_12334"
+      ],
+      "expected_visual_tokens": 16640,
+      "prediction": "chihuahua",
+      "raw": "chihuahua",
+      "legal": true,
+      "peak_reserved_gb": 14.392578125,
+      "peak_allocated_gb": 12.755393981933594
+    },
+    "pets": {
+      "query_id": "pets_Abyssinian_2",
+      "demo_ids": [
+        "pets_Abyssinian_10",
+        "pets_Abyssinian_100",
+        "pets_Abyssinian_105",
+        "pets_Abyssinian_108"
+      ],
+      "expected_visual_tokens": 16640,
+      "prediction": "abyssinian",
+      "raw": "abyssinian",
+      "legal": true,
+      "peak_reserved_gb": 14.005859375,
+      "peak_allocated_gb": 12.675486087799072
+    }
+  },
+  "dataset": "pets",
+  "stage": "five_image_legal_decode",
+  "finished_utc": "2026-10-07T08:52:15.141182+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "state": "paused_by_user",
+  "paused_utc": "2026-10-08T10:58:30.268098+00:00",
+  "automatic_restore": false,
+  "snapshots": [
+    "analysis\\internvl35_joint_v2\\status.json.pre_user_pause_20261008T105830Z",
+    "analysis\\internvl35_joint_v2\\transition.json.pre_user_pause_20261008T105830Z"
+  ],
+  "committed_rows": 2603,
+  "total_rows": 11788,
+  "binding": {
+    "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+    "manifest_sha256": "8e65e2b6a61afe8e62b16db3413352157a9aff8bbfcfadb75668244838eb8bd1",
+    "compatibility_sha256": "43fa052845b79b7d1b95e49cb2abdb7a7a5a90e3c7ad55db5f1e98e6e6b1c9e8"
+  },
+  "complete_answer_rows": 2603
+}

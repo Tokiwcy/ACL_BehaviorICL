@@ -1,0 +1,540 @@
+{
+  "version": 1,
+  "model": "Qwen/Qwen3-VL-4B-Instruct",
+  "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+  "TAM_commit": "7c7df1d3df418bb9467ca68ff2f00ff1f26a6f4c",
+  "TAM_SHA256": "18bc233edf416de0846b09f441a7bcf5496916f500da49014ceb3ec8c81f7067",
+  "seed": 73,
+  "sample_count_per_dataset": 8,
+  "primary": "generic versus task_short, first gold-label token fixed across queries; 8 test images per dataset",
+  "secondary": "task_full on first 2 per dataset; natural greedy answer on first 2 per dataset; pre-answer layer cosine",
+  "spatial_endpoint": "foreground-mass enrichment relative to region area for CUB/Aircraft/Dogs bounding boxes and Pets trimap; DTD map contrast only",
+  "limits": [
+    "Fixed gold token is teacher-forced, not a prediction.",
+    "TAM is token attribution, not literal attention weights or causal proof.",
+    "Original image-before-text ordering makes raw vision-token CAM potentially query-invariant.",
+    "Eight images per dataset are exploratory, not a full-test benchmark."
+  ],
+  "examples": [
+    {
+      "dataset": "dtd",
+      "sample_id": "grooved_0156",
+      "image_path": "datasets/dtd/images/grooved/grooved_0156.jpg",
+      "image_SHA256": "00b10681e3c75b6281c16ab88a62925ec539c227e00e830adc828c2eadb98767",
+      "gold_label": "grooved",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "honeycombed_0111",
+      "image_path": "datasets/dtd/images/honeycombed/honeycombed_0111.jpg",
+      "image_SHA256": "b5f9306dade5bee9d00f98b06f216f2358ddc12954fd0ecc7ff58163e2a510d0",
+      "gold_label": "honeycombed",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "waffled_0125",
+      "image_path": "datasets/dtd/images/waffled/waffled_0125.jpg",
+      "image_SHA256": "aaa3119f465addf23e6ad251f7acff7e4d8f5976b5dbd08dcbca20102b5c4e39",
+      "gold_label": "waffled",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "blotchy_0090",
+      "image_path": "datasets/dtd/images/blotchy/blotchy_0090.jpg",
+      "image_SHA256": "c9d316cdbf0f2eed50769cd3ca1ec62200c4c7a677e06a4393130eded0d01746",
+      "gold_label": "blotchy",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "chequered_0192",
+      "image_path": "datasets/dtd/images/chequered/chequered_0192.jpg",
+      "image_SHA256": "791538b7d8fcbde588edc36049c93b4a92202a75bee595135b1f7615e665b7eb",
+      "gold_label": "chequered",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "dotted_0136",
+      "image_path": "datasets/dtd/images/dotted/dotted_0136.jpg",
+      "image_SHA256": "4ed35a0b0b9aa6ca567733811a3b74b94b7b9f2da0f5ea3fedf711319abfb3a7",
+      "gold_label": "dotted",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "woven_0129",
+      "image_path": "datasets/dtd/images/woven/woven_0129.jpg",
+      "image_SHA256": "ba4a03c3340445d407bfbd36364e2089eaa9b8f93126548d7baa1e0ec19e93f8",
+      "gold_label": "woven",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dtd",
+      "sample_id": "grid_0051",
+      "image_path": "datasets/dtd/images/grid/grid_0051.jpg",
+      "image_SHA256": "bc116edbeb034a2db9a19b7d3035b029b9b40c644c033a209014aa3d5f2cbbb7",
+      "gold_label": "grid",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its texture category. Give the most specific label.",
+        "task_full": "Classify the image into exactly one texture category. The only valid labels are: banded, blotchy, braided, bubbly, bumpy, chequered, cobwebbed, cracked, crosshatched, crystalline, dotted, fibrous, flecked, freckled, frilly, gauzy, grid, grooved, honeycombed, interlaced, knitted, lacelike, lined, marbled, matted, meshed, paisley, perforated, pitted, pleated, polka-dotted, porous, potholed, scaly, smeared, spiralled, sprinkled, stained, stratified, striped, studded, swirly, veined, waffled, woven, wrinkled, zigzagged. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0677582",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/0677582.jpg",
+      "image_SHA256": "76f8c3711c71b36aefffc6cde69df2a530fda18e2e8d2550725a4935709c065b",
+      "gold_label": "L-1011",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "2239753",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/2239753.jpg",
+      "image_SHA256": "76e4d70ab8caa8dc87d499d898c780941de3a9a2845dd66b08ac98644ae12a89",
+      "gold_label": "CRJ-700",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0464476",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/0464476.jpg",
+      "image_SHA256": "c307ba9e72e10936e7918762274a8ca4f161ee11d5b31010c719014997ce298e",
+      "gold_label": "C-130",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "1859060",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/1859060.jpg",
+      "image_SHA256": "99af7006d703012e701df0628e6a6b923a3cec33a789ef374ba70fe5d36d33e2",
+      "gold_label": "F-16A/B",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0134602",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/0134602.jpg",
+      "image_SHA256": "9d42688d8b509beca3940b40fbd862cc1f7194e74eb892591847083441a5c6ca",
+      "gold_label": "Fokker 100",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "1398419",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/1398419.jpg",
+      "image_SHA256": "8360a1ab6926d3d6aa3680ad05df50fdde5e5418b7ccc0009dc6a0fe43dbb808",
+      "gold_label": "PA-28",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "1985180",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/1985180.jpg",
+      "image_SHA256": "2b1083fc08be4d4545a457ab0fcff347bcf71090013eaca05d607ef901c984a8",
+      "gold_label": "Gulfstream IV",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "aircraft",
+      "sample_id": "0836147",
+      "image_path": "datasets/fgvc-aircraft-2013b/data/images/0836147.jpg",
+      "image_SHA256": "9578356ded564da16f43184884b70b56c090d3f30e8e1a544713f4cd05730bae",
+      "gold_label": "747-200",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its aircraft variant. Give the most specific label.",
+        "task_full": "Classify the image into exactly one aircraft variant. The only valid labels are: 707-320, 727-200, 737-200, 737-300, 737-400, 737-500, 737-600, 737-700, 737-800, 737-900, 747-100, 747-200, 747-300, 747-400, 757-200, 757-300, 767-200, 767-300, 767-400, 777-200, 777-300, A300B4, A310, A318, A319, A320, A321, A330-200, A330-300, A340-200, A340-300, A340-500, A340-600, A380, ATR-42, ATR-72, An-12, BAE 146-200, BAE 146-300, BAE-125, Beechcraft 1900, Boeing 717, C-130, C-47, CRJ-200, CRJ-700, CRJ-900, Cessna 172, Cessna 208, Cessna 525, Cessna 560, Challenger 600, DC-10, DC-3, DC-6, DC-8, DC-9-30, DH-82, DHC-1, DHC-6, DHC-8-100, DHC-8-300, DR-400, Dornier 328, E-170, E-190, E-195, EMB-120, ERJ 135, ERJ 145, Embraer Legacy 600, Eurofighter Typhoon, F-16A/B, F/A-18, Falcon 2000, Falcon 900, Fokker 100, Fokker 50, Fokker 70, Global Express, Gulfstream IV, Gulfstream V, Hawk T1, Il-76, L-1011, MD-11, MD-80, MD-87, MD-90, Metroliner, Model B200, PA-28, SR-20, Saab 2000, Saab 340, Spitfire, Tornado, Tu-134, Tu-154, Yak-42. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_04595",
+      "image_path": "datasets/CUB_200_2011/images/079.Belted_Kingfisher/Belted_Kingfisher_0096_70347.jpg",
+      "image_SHA256": "32fc4f91c8d12958f45014717694be9a2708d028db1a22818769e3eb9e5f25e5",
+      "gold_label": "belted kingfisher",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_05165",
+      "image_path": "datasets/CUB_200_2011/images/089.Hooded_Merganser/Hooded_Merganser_0076_796756.jpg",
+      "image_SHA256": "08267f53ba2c4f57161c9eeb690887d83dace182d3f44b5b5f49980ab2e66771",
+      "gold_label": "hooded merganser",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_04611",
+      "image_path": "datasets/CUB_200_2011/images/079.Belted_Kingfisher/Belted_Kingfisher_0014_70910.jpg",
+      "image_SHA256": "913bf45b046c428283a265a16b77a7d0ab9b793c518384c3f0785a1eba259cb2",
+      "gold_label": "belted kingfisher",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_06594",
+      "image_path": "datasets/CUB_200_2011/images/113.Baird_Sparrow/Baird_Sparrow_0001_794578.jpg",
+      "image_SHA256": "f52cde81787b229a5ad6190d9b300ddc8af55df4e232bd6635f1c5df9b112214",
+      "gold_label": "baird sparrow",
+      "selection": "frozen_historical_outcome_stratum",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_07877",
+      "image_path": "datasets/CUB_200_2011/images/135.Bank_Swallow/Bank_Swallow_0038_129830.jpg",
+      "image_SHA256": "903a11602aff305156e57bbbfcfc342ca2b284eefcbd04f12581c571e2bfe7a8",
+      "gold_label": "bank swallow",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_10239",
+      "image_path": "datasets/CUB_200_2011/images/174.Palm_Warbler/Palm_Warbler_0005_169918.jpg",
+      "image_SHA256": "75ce9eafc8dec1f610ed358070efc8ee5aaf4741bbb958679ed416726f589075",
+      "gold_label": "palm warbler",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_02410",
+      "image_path": "datasets/CUB_200_2011/images/042.Vermilion_Flycatcher/Vermilion_Flycatcher_0009_42234.jpg",
+      "image_SHA256": "77f8b5a7c830bc4fe44595ed26592e2e019ce77c8a8c590914b7729ecdf3de44",
+      "gold_label": "vermilion flycatcher",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "cub",
+      "sample_id": "cub_09577",
+      "image_path": "datasets/CUB_200_2011/images/163.Cape_May_Warbler/Cape_May_Warbler_0119_162976.jpg",
+      "image_SHA256": "a95232bd3c72ac31921f1cd0c6800d5102aab827e613005c10ca100957aa5805",
+      "gold_label": "cape may warbler",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its bird species. Give the most specific label.",
+        "task_full": "Classify the image into exactly one bird species. The only valid labels are: acadian flycatcher, american crow, american goldfinch, american pipit, american redstart, american three toed woodpecker, anna hummingbird, artic tern, baird sparrow, baltimore oriole, bank swallow, barn swallow, bay breasted warbler, belted kingfisher, bewick wren, black and white warbler, black billed cuckoo, black capped vireo, black footed albatross, black tern, black throated blue warbler, black throated sparrow, blue grosbeak, blue headed vireo, blue jay, blue winged warbler, boat tailed grackle, bobolink, bohemian waxwing, brandt cormorant, brewer blackbird, brewer sparrow, bronzed cowbird, brown creeper, brown pelican, brown thrasher, cactus wren, california gull, canada warbler, cape glossy starling, cape may warbler, cardinal, carolina wren, caspian tern, cedar waxwing, cerulean warbler, chestnut sided warbler, chipping sparrow, chuck will widow, clark nutcracker, clay colored sparrow, cliff swallow, common raven, common tern, common yellowthroat, crested auklet, dark eyed junco, downy woodpecker, eared grebe, eastern towhee, elegant tern, european goldfinch, evening grosbeak, field sparrow, fish crow, florida jay, forsters tern, fox sparrow, frigatebird, gadwall, geococcyx, glaucous winged gull, golden winged warbler, grasshopper sparrow, gray catbird, gray crowned rosy finch, gray kingbird, great crested flycatcher, great grey shrike, green jay, green kingfisher, green tailed towhee, green violetear, groove billed ani, harris sparrow, heermann gull, henslow sparrow, herring gull, hooded merganser, hooded oriole, hooded warbler, horned grebe, horned lark, horned puffin, house sparrow, house wren, indigo bunting, ivory gull, kentucky warbler, laysan albatross, lazuli bunting, le conte sparrow, least auklet, least flycatcher, least tern, lincoln sparrow, loggerhead shrike, long tailed jaeger, louisiana waterthrush, magnolia warbler, mallard, mangrove cuckoo, marsh wren, mockingbird, mourning warbler, myrtle warbler, nashville warbler, nelson sharp tailed sparrow, nighthawk, northern flicker, northern fulmar, northern waterthrush, olive sided flycatcher, orange crowned warbler, orchard oriole, ovenbird, pacific loon, painted bunting, palm warbler, parakeet auklet, pelagic cormorant, philadelphia vireo, pied billed grebe, pied kingfisher, pigeon guillemot, pileated woodpecker, pine grosbeak, pine warbler, pomarine jaeger, prairie warbler, prothonotary warbler, purple finch, red bellied woodpecker, red breasted merganser, red cockaded woodpecker, red eyed vireo, red faced cormorant, red headed woodpecker, red legged kittiwake, red winged blackbird, rhinoceros auklet, ring billed gull, ringed kingfisher, rock wren, rose breasted grosbeak, ruby throated hummingbird, rufous hummingbird, rusty blackbird, sage thrasher, savannah sparrow, sayornis, scarlet tanager, scissor tailed flycatcher, scott oriole, seaside sparrow, shiny cowbird, slaty backed gull, song sparrow, sooty albatross, spotted catbird, summer tanager, swainson warbler, tennessee warbler, tree sparrow, tree swallow, tropical kingbird, vermilion flycatcher, vesper sparrow, warbling vireo, western grebe, western gull, western meadowlark, western wood pewee, whip poor will, white breasted kingfisher, white breasted nuthatch, white crowned sparrow, white eyed vireo, white necked raven, white pelican, white throated sparrow, wilson warbler, winter wren, worm eating warbler, yellow bellied flycatcher, yellow billed cuckoo, yellow breasted chat, yellow headed blackbird, yellow throated vireo, yellow warbler. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02108551_2850",
+      "image_path": "datasets/stanford_dogs/Images/n02108551-Tibetan_mastiff/n02108551_2850.jpg",
+      "image_SHA256": "39707235f8a1494af0fd0b47dc47d945c5afcb582b4ad197fb13834aea4a70af",
+      "gold_label": "tibetan mastiff",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02115913_3196",
+      "image_path": "datasets/stanford_dogs/Images/n02115913-dhole/n02115913_3196.jpg",
+      "image_SHA256": "0cafc5b64c9fd158c55d9d590023249667d6a3d2dff9ce7211f55d6e0a39cfc7",
+      "gold_label": "dhole",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02104365_10393",
+      "image_path": "datasets/stanford_dogs/Images/n02104365-schipperke/n02104365_10393.jpg",
+      "image_SHA256": "c64f760f255740aa206f02d7a34231354c3db8644a34b3e06e871c4cd57d45e4",
+      "gold_label": "schipperke",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02091831_6114",
+      "image_path": "datasets/stanford_dogs/Images/n02091831-Saluki/n02091831_6114.jpg",
+      "image_SHA256": "6804d49417c823d135c3273a4708abb129c951aceacae613b3f851392ffa2008",
+      "gold_label": "saluki",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02092002_2257",
+      "image_path": "datasets/stanford_dogs/Images/n02092002-Scottish_deerhound/n02092002_2257.jpg",
+      "image_SHA256": "dcebbbc1a85b5a4595c6430181a2ea1adacff4dd49d4caef1f81320134740dc0",
+      "gold_label": "scottish deerhound",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02111889_597",
+      "image_path": "datasets/stanford_dogs/Images/n02111889-Samoyed/n02111889_597.jpg",
+      "image_SHA256": "9a8022e7f89e15d730753921cd775224389aa18c9e7b934b78e239b2a4871f9e",
+      "gold_label": "samoyed",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02107574_1953",
+      "image_path": "datasets/stanford_dogs/Images/n02107574-Greater_Swiss_Mountain_dog/n02107574_1953.jpg",
+      "image_SHA256": "e6f13cb07b7cf3a6539a4e2a83b97a26c13bf92584c6633b573f087bcf02927e",
+      "gold_label": "greater swiss mountain dog",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "dogs",
+      "sample_id": "dogs_n02094258_3165",
+      "image_path": "datasets/stanford_dogs/Images/n02094258-Norwich_terrier/n02094258_3165.jpg",
+      "image_SHA256": "e23af7db19eea2bf957c2eb7a4e6ca1da7fa3a8add2e8647dcda0f43912b7915",
+      "gold_label": "norwich terrier",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one dog breed. The only valid labels are: affenpinscher, afghan hound, african hunting dog, airedale, american staffordshire terrier, appenzeller, australian terrier, basenji, basset, beagle, bedlington terrier, bernese mountain dog, black and tan coonhound, blenheim spaniel, bloodhound, bluetick, border collie, border terrier, borzoi, boston bull, bouvier des flandres, boxer, brabancon griffon, briard, brittany spaniel, bull mastiff, cairn, cardigan, chesapeake bay retriever, chihuahua, chow, clumber, cocker spaniel, collie, curly coated retriever, dandie dinmont, dhole, dingo, doberman, english foxhound, english setter, english springer, entlebucher, eskimo dog, flat coated retriever, french bulldog, german shepherd, german short haired pointer, giant schnauzer, golden retriever, gordon setter, great dane, great pyrenees, greater swiss mountain dog, groenendael, ibizan hound, irish setter, irish terrier, irish water spaniel, irish wolfhound, italian greyhound, japanese spaniel, keeshond, kelpie, kerry blue terrier, komondor, kuvasz, labrador retriever, lakeland terrier, leonberg, lhasa, malamute, malinois, maltese dog, mexican hairless, miniature pinscher, miniature poodle, miniature schnauzer, newfoundland, norfolk terrier, norwegian elkhound, norwich terrier, old english sheepdog, otterhound, papillon, pekinese, pembroke, pomeranian, pug, redbone, rhodesian ridgeback, rottweiler, saint bernard, saluki, samoyed, schipperke, scotch terrier, scottish deerhound, sealyham terrier, shetland sheepdog, shih tzu, siberian husky, silky terrier, soft coated wheaten terrier, staffordshire bullterrier, standard poodle, standard schnauzer, sussex spaniel, tibetan mastiff, tibetan terrier, toy poodle, toy terrier, vizsla, walker hound, weimaraner, welsh springer spaniel, west highland white terrier, whippet, wire haired fox terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_english_cocker_spaniel_57",
+      "image_path": "datasets/oxford_iiit_pet/images/english_cocker_spaniel_57.jpg",
+      "image_SHA256": "dbac620e65494e903c555ab766fdba0a7cd08630126f19b36dbd1504723b1c6a",
+      "gold_label": "english cocker spaniel",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_Bombay_78",
+      "image_path": "datasets/oxford_iiit_pet/images/Bombay_78.jpg",
+      "image_SHA256": "00ac7c1b2c0cc5f460cfaff365d66d6dc8854a3c3340d8dd38fceb067dbfea5b",
+      "gold_label": "bombay",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_newfoundland_83",
+      "image_path": "datasets/oxford_iiit_pet/images/newfoundland_83.jpg",
+      "image_SHA256": "74597d48cc744bb04ccc769510b31e98166536c66982e3cfdeec4d163924df20",
+      "gold_label": "newfoundland",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_Bengal_68",
+      "image_path": "datasets/oxford_iiit_pet/images/Bengal_68.jpg",
+      "image_SHA256": "f576cb637c6058dc5556e1c5cbda2257c5a237d946c0fa31807abbf9834aecea",
+      "gold_label": "bengal",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_Egyptian_Mau_21",
+      "image_path": "datasets/oxford_iiit_pet/images/Egyptian_Mau_21.jpg",
+      "image_SHA256": "70f3c244ddfbc9d5adf3dd45a2ae39912e3d3a808c3fa0a07b74de1bcf51df6c",
+      "gold_label": "egyptian mau",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_British_Shorthair_72",
+      "image_path": "datasets/oxford_iiit_pet/images/British_Shorthair_72.jpg",
+      "image_SHA256": "8a623a43e69a2724fb0db07e2a5d7a2453741dc25caa45f8bd837b8f2af4bac9",
+      "gold_label": "british shorthair",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_staffordshire_bull_terrier_64",
+      "image_path": "datasets/oxford_iiit_pet/images/staffordshire_bull_terrier_64.jpg",
+      "image_SHA256": "dc1d7bcf37f3d34197ab9d868f474a1f73942afb49974c6c0f62467d84681550",
+      "gold_label": "staffordshire bull terrier",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    },
+    {
+      "dataset": "pets",
+      "sample_id": "pets_shiba_inu_24",
+      "image_path": "datasets/oxford_iiit_pet/images/shiba_inu_24.jpg",
+      "image_SHA256": "421f6c6db9d4b420bde3a38c0dc8d98b0b6d7095b5737bb7864e3dbfa831bf3e",
+      "gold_label": "shiba inu",
+      "selection": "SHA256_rank_distinct_label",
+      "queries": {
+        "generic": "Describe the image briefly.",
+        "task_short": "Classify this image by its cat or dog breed. Give the most specific label.",
+        "task_full": "Classify the image into exactly one cat or dog breed. The only valid labels are: abyssinian, american bulldog, american pit bull terrier, basset hound, beagle, bengal, birman, bombay, boxer, british shorthair, chihuahua, egyptian mau, english cocker spaniel, english setter, german shorthaired, great pyrenees, havanese, japanese chin, keeshond, leonberger, maine coon, miniature pinscher, newfoundland, persian, pomeranian, pug, ragdoll, russian blue, saint bernard, samoyed, scottish terrier, shiba inu, siamese, sphynx, staffordshire bull terrier, wheaten terrier, yorkshire terrier. Return exactly one valid label and no explanation. Label:"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "state": "paused",
+  "paused_utc": "2026-10-09T14:45:46.808755+00:00",
+  "authorization": "Human explicitly requested pause",
+  "current": {
+    "dataset": "cub",
+    "stage": "icl_learn"
+  },
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "boot_identity": "2026-10-09T01:08:18.5000000Z",
+  "prediction_files": {
+    "raw": {
+      "complete_rows": 5794,
+      "bytes": 1854515,
+      "ends_newline": true,
+      "sha256": "ad5969c62da2fd72835fe50c9e1be0e4a5959531bc3b41bfcc53aadd018d87c0",
+      "partial_tail_bytes": 0
+    },
+    "proj": {
+      "complete_rows": 5794,
+      "bytes": 1859849,
+      "ends_newline": true,
+      "sha256": "107210f09cb07e729316f4df4d709e3d13bc464eaf1ff278341f4ba1f0dc67be",
+      "partial_tail_bytes": 0
+    },
+    "learn": {
+      "complete_rows": 2699,
+      "bytes": 867195,
+      "ends_newline": true,
+      "sha256": "c354454f63c13020c712b0bf9b7e9827c8daee588dba32a63e0f6ef9f0148daa",
+      "partial_tail_bytes": 0
+    }
+  },
+  "stopped_verified_pids": [
+    24524,
+    20212,
+    32620,
+    30780
+  ],
+  "status_snapshot": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\analysis\\internvl35_joint_v2\\status.pre_user_pause_20261009T144456Z.json",
+  "automation_status": "PAUSED",
+  "science_unchanged": true
+}

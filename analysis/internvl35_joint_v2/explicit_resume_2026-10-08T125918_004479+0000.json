@@ -1,0 +1,25 @@
+{
+  "state": "running",
+  "started_utc": "2026-10-08T12:59:18.005482+00:00",
+  "authorization": "Human explicitly requested continue after18:58 pause",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "code_sha256": "866ed5863f8533c3864e75caf24bb632f8722ae268d07b22eacc1c5cec569231",
+  "boot_identity": "2026-10-08T09:21:41.5000000Z",
+  "desktop_contexts": [
+    {
+      "ProcessId": 8904,
+      "Name": "dwm.exe",
+      "ExecutablePath": null,
+      "CreatedUtc": "2026-10-08T09:25:59.9376480Z"
+    },
+    {
+      "ProcessId": 25540,
+      "Name": "ShellExperienceHost.exe",
+      "ExecutablePath": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe",
+      "CreatedUtc": "2026-10-08T09:29:21.0104120Z"
+    }
+  ],
+  "science_gpu_workers": 0,
+  "saved_cub_rows": 2603,
+  "status_snapshot": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\analysis\\internvl35_joint_v2\\status.pre_resume_2026-10-08T125918_004479+0000.json"
+}

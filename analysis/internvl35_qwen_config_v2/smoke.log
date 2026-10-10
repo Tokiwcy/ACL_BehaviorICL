@@ -1,0 +1,101 @@
+
+Loading weights:   0%|          | 0/841 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 841/841 [00:00<00:00, 17893.64it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+GPT-MM 00001/00001
+Traceback (most recent call last):
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_internvl35_qwen_pipeline_v2.py", line 249, in <module>
+    main()
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_internvl35_qwen_pipeline_v2.py", line 243, in main
+    smoke()
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_internvl35_qwen_pipeline_v2.py", line 137, in smoke
+    prediction, raw = generate_legal_labels(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\multimodal_model_adapter.py", line 174, in generate_legal_labels
+    generated = model.generate(
+                ^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\generation\utils.py", line 2645, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\generation\utils.py", line 2845, in _sample
+    outputs = self._prefill(
+              ^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\generation\utils.py", line 3896, in _prefill
+    return self(**model_inputs, return_dict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\internvl\modeling_internvl.py", line 812, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\internvl\modeling_internvl.py", line 646, in forward
+    outputs = self.language_model(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\generic.py", line 1040, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 424, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1879, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1827, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 318, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1879, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1827, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 277, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py", line 93, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 36.24 GiB. GPU 0 has a total capacity of 15.92 GiB of which 2.00 GiB is free. Of the allocated memory 12.07 GiB is allocated by PyTorch, and 504.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

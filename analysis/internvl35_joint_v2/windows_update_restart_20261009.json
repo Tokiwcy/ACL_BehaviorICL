@@ -1,0 +1,107 @@
+{
+  "state": "interrupted_planned_windows_update",
+  "checked_utc": "2026-10-09T00:46:12.9409014Z",
+  "system_events": [
+    {
+      "provider": "EventLog",
+      "message": "事件日志服务已启动。",
+      "xml": "<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='EventLog'/><EventID Qualifiers='32768'>6005</EventID><Version>0</Version><Level>4</Level><Task>0</Task><Opcode>0</Opcode><Keywords>0x80000000000000</Keywords><TimeCreated SystemTime='2026-10-08T19:32:01.6862706Z'/><EventRecordID>21186</EventRecordID><Correlation/><Execution ProcessID='3340' ThreadID='4104'/><Channel>System</Channel><Computer>Toki_wcy</Computer><Security/></System><EventData><Binary>EA070A0004000800130020000100AA020000000000000000</Binary></EventData></Event>",
+      "time_utc": "2026-10-08T19:32:01.6862706Z",
+      "id": 6005
+    },
+    {
+      "provider": "User32",
+      "message": "进程 C:\\Windows\\servicing\\TrustedInstaller.exe (TOKI_WCY) 由于以下原因已代表用户 NT AUTHORITY\\SYSTEM 启动计算机 TOKI_WCY 的 重启: 操作系统: 升级(计划内)\r\n 原因代码: 0x80020003\r\n 关机类型: 重启\r\n 注释: ",
+      "xml": "<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='User32' Guid='{b0aa8734-56f7-41cc-b2f4-de228e98b946}' EventSourceName='User32'/><EventID Qualifiers='32768'>1074</EventID><Version>0</Version><Level>4</Level><Task>0</Task><Opcode>0</Opcode><Keywords>0x8080000000000000</Keywords><TimeCreated SystemTime='2026-10-08T19:31:16.6739323Z'/><EventRecordID>21176</EventRecordID><Correlation/><Execution ProcessID='1652' ThreadID='1668'/><Channel>System</Channel><Computer>Toki_wcy</Computer><Security UserID='S-1-5-18'/></System><EventData><Data Name='param1'>C:\\Windows\\servicing\\TrustedInstaller.exe (TOKI_WCY)</Data><Data Name='param2'>TOKI_WCY</Data><Data Name='param3'>操作系统: 升级(计划内)</Data><Data Name='param4'>0x80020003</Data><Data Name='param5'>重启</Data><Data Name='param6'></Data><Data Name='param7'>NT AUTHORITY\\SYSTEM</Data></EventData></Event>",
+      "time_utc": "2026-10-08T19:31:16.6739323Z",
+      "id": 1074
+    },
+    {
+      "provider": "EventLog",
+      "message": "事件日志服务已启动。",
+      "xml": "<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='EventLog'/><EventID Qualifiers='32768'>6005</EventID><Version>0</Version><Level>4</Level><Task>0</Task><Opcode>0</Opcode><Keywords>0x80000000000000</Keywords><TimeCreated SystemTime='2026-10-08T19:30:53.5024657Z'/><EventRecordID>20994</EventRecordID><Correlation/><Execution ProcessID='4340' ThreadID='4376'/><Channel>System</Channel><Computer>Toki_wcy</Computer><Security/></System><EventData><Binary>EA070A000400080013001E003500EF010000000000000000</Binary></EventData></Event>",
+      "time_utc": "2026-10-08T19:30:53.5024657Z",
+      "id": 6005
+    }
+  ],
+  "minidump_files": [
+    {
+      "Name": "090826-16875-01.dmp",
+      "Length": 12038010,
+      "LastWriteTime": "2026-09-08T13:45:59.9318494+08:00"
+    },
+    {
+      "Name": "090826-19937-01.dmp",
+      "Length": 12082538,
+      "LastWriteTime": "2026-09-08T10:00:35.9747613+08:00"
+    },
+    {
+      "Name": "100726-16875-01.dmp",
+      "Length": 10008769,
+      "LastWriteTime": "2026-10-07T16:29:06.9886175+08:00"
+    },
+    {
+      "Name": "100726-18078-01.dmp",
+      "Length": 10145697,
+      "LastWriteTime": "2026-10-07T16:11:02.1168565+08:00"
+    },
+    {
+      "Name": "100726-18343-01.dmp",
+      "Length": 10797033,
+      "LastWriteTime": "2026-10-07T16:24:07.3671538+08:00"
+    }
+  ],
+  "update_events": [
+    {
+      "TimeCreated": "2026-10-09T03:34:11.8340075+08:00",
+      "Id": 19,
+      "Message": "安装成功: Windows 成功安装了下列更新: 2026-09 .NET Framework 安全更新 (KB5126052)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:34:11.8340041+08:00",
+      "Id": 19,
+      "Message": "安装成功: Windows 成功安装了下列更新: 2026-09 安全更新(KB5129195) (26200.9457)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:04:51.558887+08:00",
+      "Id": 43,
+      "Message": "安装已启动: Windows 已开始安装以下更新: 2026-09 安全更新(KB5129195) (26200.9457)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:03:53.5100398+08:00",
+      "Id": 19,
+      "Message": "安装成功: Windows 成功安装了下列更新: ASUSTeK Computer Inc. Mouse Driver Update (1.0.72.0)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:03:51.8497967+08:00",
+      "Id": 43,
+      "Message": "安装已启动: Windows 已开始安装以下更新: ASUSTeK Computer Inc. Mouse Driver Update (1.0.72.0)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:03:16.6822241+08:00",
+      "Id": 43,
+      "Message": "安装已启动: Windows 已开始安装以下更新: 2026-09 .NET Framework 安全更新 (KB5126052)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:03:16.0673567+08:00",
+      "Id": 19,
+      "Message": "安装成功: Windows 成功安装了下列更新: Windows 恶意软件删除工具 x64 - v5.145 (KB890830)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:02:08.3628755+08:00",
+      "Id": 43,
+      "Message": "安装已启动: Windows 已开始安装以下更新: Windows 恶意软件删除工具 x64 - v5.145 (KB890830)"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:02:08.0870568+08:00",
+      "Id": 44,
+      "Message": "Windows 更新已开始下载更新。"
+    },
+    {
+      "TimeCreated": "2026-10-09T03:02:08.0870557+08:00",
+      "Id": 44,
+      "Message": "Windows 更新已开始下载更新。"
+    }
+  ],
+  "current_boot": "2026-10-08T19:31:44.5000000Z"
+}

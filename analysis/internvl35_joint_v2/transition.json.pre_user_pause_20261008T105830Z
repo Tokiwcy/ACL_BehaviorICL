@@ -1,0 +1,13 @@
+{
+  "state": "running_joint_pipeline",
+  "boot_identity": "2026-10-08T09:21:41.5000000Z",
+  "started_utc": "2026-10-08T09:41:14.029299+00:00",
+  "pid": 8920,
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "checked_utc": "2026-10-08T09:43:52.329204+00:00",
+  "parent_state": "paused",
+  "parent_current": {
+    "dataset": "aircraft",
+    "stage": "icl_rices"
+  }
+}

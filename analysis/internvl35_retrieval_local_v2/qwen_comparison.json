@@ -1,0 +1,568 @@
+{
+  "internvl_protocol_SHA256": "3c456c6296fe21f373ec61d4fa1980453c587c563da45023e62df86044b494c1",
+  "qwen_base_protocol_SHA256": "9cc744ce02a0e38e08868b5b0ccd66828d2e0bc36cc67d505388fa589a0640d9",
+  "qwen_follow_protocol_SHA256": "626979ce25ebd07ae576f2717ec49d09df8bedc21009bed8ca97f885ce6902f4",
+  "measure": "Raw equal-layer cosine retrieval; same images and prompt strings, model-specific image processing",
+  "datasets": {
+    "dtd": {
+      "bank_n": 94,
+      "query_n": 32,
+      "top1": {
+        "internvl_generic": 0.5,
+        "internvl_full": 0.5625,
+        "qwen_generic": 0.3125,
+        "qwen_full": 0.78125,
+        "internvl_effect": {
+          "mean": 0.0625,
+          "95_percent_bootstrap_mean": [
+            -0.15625,
+            0.28125
+          ],
+          "positive": 7,
+          "negative": 5,
+          "zero": 20
+        },
+        "qwen_effect": {
+          "mean": 0.46875,
+          "95_percent_bootstrap_mean": [
+            0.28125,
+            0.65625
+          ],
+          "positive": 16,
+          "negative": 1,
+          "zero": 15
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.40625,
+          "95_percent_bootstrap_mean": [
+            -0.65625,
+            -0.1875
+          ],
+          "positive": 2,
+          "negative": 13,
+          "zero": 17
+        }
+      },
+      "top4": {
+        "internvl_generic": 0.71875,
+        "internvl_full": 0.84375,
+        "qwen_generic": 0.59375,
+        "qwen_full": 0.90625,
+        "internvl_effect": {
+          "mean": 0.125,
+          "95_percent_bootstrap_mean": [
+            -0.03125,
+            0.28125
+          ],
+          "positive": 6,
+          "negative": 2,
+          "zero": 24
+        },
+        "qwen_effect": {
+          "mean": 0.3125,
+          "95_percent_bootstrap_mean": [
+            0.125,
+            0.5
+          ],
+          "positive": 11,
+          "negative": 1,
+          "zero": 20
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.1875,
+          "95_percent_bootstrap_mean": [
+            -0.40625,
+            0.0
+          ],
+          "positive": 2,
+          "negative": 7,
+          "zero": 23
+        }
+      },
+      "AP": {
+        "internvl_generic": 0.46136761522333064,
+        "internvl_full": 0.5971443688185517,
+        "qwen_generic": 0.3134599363908467,
+        "qwen_full": 0.7933403863337449,
+        "internvl_effect": {
+          "mean": 0.13577675359522112,
+          "95_percent_bootstrap_mean": [
+            0.02214879255373775,
+            0.25456121695562045
+          ],
+          "positive": 20,
+          "negative": 7,
+          "zero": 5
+        },
+        "qwen_effect": {
+          "mean": 0.47988044994289836,
+          "95_percent_bootstrap_mean": [
+            0.35622120655244055,
+            0.6028586090083956
+          ],
+          "positive": 29,
+          "negative": 2,
+          "zero": 1
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.3441036963476772,
+          "95_percent_bootstrap_mean": [
+            -0.4628859317736279,
+            -0.22742688759176619
+          ],
+          "positive": 4,
+          "negative": 27,
+          "zero": 1
+        }
+      }
+    },
+    "aircraft": {
+      "bank_n": 200,
+      "query_n": 32,
+      "top1": {
+        "internvl_generic": 0.0625,
+        "internvl_full": 0.1875,
+        "qwen_generic": 0.09375,
+        "qwen_full": 0.59375,
+        "internvl_effect": {
+          "mean": 0.125,
+          "95_percent_bootstrap_mean": [
+            0.03125,
+            0.25
+          ],
+          "positive": 4,
+          "negative": 0,
+          "zero": 28
+        },
+        "qwen_effect": {
+          "mean": 0.5,
+          "95_percent_bootstrap_mean": [
+            0.3125,
+            0.6875
+          ],
+          "positive": 17,
+          "negative": 1,
+          "zero": 14
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.375,
+          "95_percent_bootstrap_mean": [
+            -0.59375,
+            -0.15625
+          ],
+          "positive": 2,
+          "negative": 14,
+          "zero": 16
+        }
+      },
+      "top4": {
+        "internvl_generic": 0.25,
+        "internvl_full": 0.3125,
+        "qwen_generic": 0.1875,
+        "qwen_full": 0.78125,
+        "internvl_effect": {
+          "mean": 0.0625,
+          "95_percent_bootstrap_mean": [
+            -0.09375,
+            0.21875
+          ],
+          "positive": 4,
+          "negative": 2,
+          "zero": 26
+        },
+        "qwen_effect": {
+          "mean": 0.59375,
+          "95_percent_bootstrap_mean": [
+            0.40625,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 0,
+          "zero": 13
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.53125,
+          "95_percent_bootstrap_mean": [
+            -0.6875,
+            -0.375
+          ],
+          "positive": 0,
+          "negative": 17,
+          "zero": 15
+        }
+      },
+      "AP": {
+        "internvl_generic": 0.12374035748595488,
+        "internvl_full": 0.22593659610931927,
+        "qwen_generic": 0.11698771191479654,
+        "qwen_full": 0.6437382415238019,
+        "internvl_effect": {
+          "mean": 0.10219623862336438,
+          "95_percent_bootstrap_mean": [
+            0.02838278323111968,
+            0.19188094447880813
+          ],
+          "positive": 24,
+          "negative": 7,
+          "zero": 1
+        },
+        "qwen_effect": {
+          "mean": 0.5267505296090053,
+          "95_percent_bootstrap_mean": [
+            0.40513881008559727,
+            0.6515966289848727
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.4245542909856409,
+          "95_percent_bootstrap_mean": [
+            -0.5508697663572254,
+            -0.3017869232866515
+          ],
+          "positive": 2,
+          "negative": 30,
+          "zero": 0
+        }
+      }
+    },
+    "cub": {
+      "bank_n": 400,
+      "query_n": 32,
+      "top1": {
+        "internvl_generic": 0.15625,
+        "internvl_full": 0.3125,
+        "qwen_generic": 0.125,
+        "qwen_full": 0.6875,
+        "internvl_effect": {
+          "mean": 0.15625,
+          "95_percent_bootstrap_mean": [
+            0.0,
+            0.3125
+          ],
+          "positive": 6,
+          "negative": 1,
+          "zero": 25
+        },
+        "qwen_effect": {
+          "mean": 0.5625,
+          "95_percent_bootstrap_mean": [
+            0.40625,
+            0.71875
+          ],
+          "positive": 18,
+          "negative": 0,
+          "zero": 14
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.40625,
+          "95_percent_bootstrap_mean": [
+            -0.625,
+            -0.1875
+          ],
+          "positive": 2,
+          "negative": 14,
+          "zero": 16
+        }
+      },
+      "top4": {
+        "internvl_generic": 0.21875,
+        "internvl_full": 0.4375,
+        "qwen_generic": 0.25,
+        "qwen_full": 0.8125,
+        "internvl_effect": {
+          "mean": 0.21875,
+          "95_percent_bootstrap_mean": [
+            0.03125,
+            0.40625
+          ],
+          "positive": 9,
+          "negative": 2,
+          "zero": 21
+        },
+        "qwen_effect": {
+          "mean": 0.5625,
+          "95_percent_bootstrap_mean": [
+            0.40625,
+            0.71875
+          ],
+          "positive": 18,
+          "negative": 0,
+          "zero": 14
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.34375,
+          "95_percent_bootstrap_mean": [
+            -0.59375,
+            -0.125
+          ],
+          "positive": 3,
+          "negative": 13,
+          "zero": 16
+        }
+      },
+      "AP": {
+        "internvl_generic": 0.10713815862316041,
+        "internvl_full": 0.3475829024262189,
+        "qwen_generic": 0.11594141967624197,
+        "qwen_full": 0.6928634752995291,
+        "internvl_effect": {
+          "mean": 0.2404447438030585,
+          "95_percent_bootstrap_mean": [
+            0.15295990012982733,
+            0.3348354138776027
+          ],
+          "positive": 30,
+          "negative": 2,
+          "zero": 0
+        },
+        "qwen_effect": {
+          "mean": 0.576922055623287,
+          "95_percent_bootstrap_mean": [
+            0.46052619296650593,
+            0.6949686079132419
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.3364773118202286,
+          "95_percent_bootstrap_mean": [
+            -0.47043026353140316,
+            -0.2079311704664354
+          ],
+          "positive": 7,
+          "negative": 25,
+          "zero": 0
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 240,
+      "query_n": 32,
+      "top1": {
+        "internvl_generic": 0.0625,
+        "internvl_full": 0.375,
+        "qwen_generic": 0.0625,
+        "qwen_full": 0.65625,
+        "internvl_effect": {
+          "mean": 0.3125,
+          "95_percent_bootstrap_mean": [
+            0.15625,
+            0.46875
+          ],
+          "positive": 10,
+          "negative": 0,
+          "zero": 22
+        },
+        "qwen_effect": {
+          "mean": 0.59375,
+          "95_percent_bootstrap_mean": [
+            0.4375,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 0,
+          "zero": 13
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.28125,
+          "95_percent_bootstrap_mean": [
+            -0.46875,
+            -0.09375
+          ],
+          "positive": 2,
+          "negative": 11,
+          "zero": 19
+        }
+      },
+      "top4": {
+        "internvl_generic": 0.09375,
+        "internvl_full": 0.65625,
+        "qwen_generic": 0.09375,
+        "qwen_full": 0.9375,
+        "internvl_effect": {
+          "mean": 0.5625,
+          "95_percent_bootstrap_mean": [
+            0.375,
+            0.75
+          ],
+          "positive": 19,
+          "negative": 1,
+          "zero": 12
+        },
+        "qwen_effect": {
+          "mean": 0.84375,
+          "95_percent_bootstrap_mean": [
+            0.71875,
+            0.96875
+          ],
+          "positive": 27,
+          "negative": 0,
+          "zero": 5
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.28125,
+          "95_percent_bootstrap_mean": [
+            -0.46875,
+            -0.09375
+          ],
+          "positive": 2,
+          "negative": 11,
+          "zero": 19
+        }
+      },
+      "AP": {
+        "internvl_generic": 0.0652089336043771,
+        "internvl_full": 0.4617017276098692,
+        "qwen_generic": 0.06497303223896297,
+        "qwen_full": 0.6750351871576384,
+        "internvl_effect": {
+          "mean": 0.39649279400549214,
+          "95_percent_bootstrap_mean": [
+            0.28785800187723737,
+            0.5089282100864375
+          ],
+          "positive": 30,
+          "negative": 2,
+          "zero": 0
+        },
+        "qwen_effect": {
+          "mean": 0.6100621549186755,
+          "95_percent_bootstrap_mean": [
+            0.5147504495203148,
+            0.7050042960400762
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.21356936091318335,
+          "95_percent_bootstrap_mean": [
+            -0.3236526153180511,
+            -0.09951822188349607
+          ],
+          "positive": 7,
+          "negative": 25,
+          "zero": 0
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 74,
+      "query_n": 32,
+      "top1": {
+        "internvl_generic": 0.125,
+        "internvl_full": 0.625,
+        "qwen_generic": 0.125,
+        "qwen_full": 0.90625,
+        "internvl_effect": {
+          "mean": 0.5,
+          "95_percent_bootstrap_mean": [
+            0.3125,
+            0.6875
+          ],
+          "positive": 16,
+          "negative": 0,
+          "zero": 16
+        },
+        "qwen_effect": {
+          "mean": 0.78125,
+          "95_percent_bootstrap_mean": [
+            0.625,
+            0.90625
+          ],
+          "positive": 25,
+          "negative": 0,
+          "zero": 7
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.28125,
+          "95_percent_bootstrap_mean": [
+            -0.46875,
+            -0.0625
+          ],
+          "positive": 2,
+          "negative": 11,
+          "zero": 19
+        }
+      },
+      "top4": {
+        "internvl_generic": 0.25,
+        "internvl_full": 0.90625,
+        "qwen_generic": 0.21875,
+        "qwen_full": 0.9375,
+        "internvl_effect": {
+          "mean": 0.65625,
+          "95_percent_bootstrap_mean": [
+            0.46875,
+            0.84375
+          ],
+          "positive": 22,
+          "negative": 1,
+          "zero": 9
+        },
+        "qwen_effect": {
+          "mean": 0.71875,
+          "95_percent_bootstrap_mean": [
+            0.5625,
+            0.875
+          ],
+          "positive": 23,
+          "negative": 0,
+          "zero": 9
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.0625,
+          "95_percent_bootstrap_mean": [
+            -0.25,
+            0.09375
+          ],
+          "positive": 3,
+          "negative": 5,
+          "zero": 24
+        }
+      },
+      "AP": {
+        "internvl_generic": 0.13260192642581387,
+        "internvl_full": 0.6527645878427129,
+        "qwen_generic": 0.1469209047370143,
+        "qwen_full": 0.8643634721759721,
+        "internvl_effect": {
+          "mean": 0.520162661416899,
+          "95_percent_bootstrap_mean": [
+            0.4186755791478729,
+            0.6192404409793637
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "qwen_effect": {
+          "mean": 0.7174425674389578,
+          "95_percent_bootstrap_mean": [
+            0.6252834486216318,
+            0.8040912572387225
+          ],
+          "positive": 32,
+          "negative": 0,
+          "zero": 0
+        },
+        "paired_internvl_minus_qwen_effect": {
+          "mean": -0.1972799060220589,
+          "95_percent_bootstrap_mean": [
+            -0.29083398888052486,
+            -0.10501930121175002
+          ],
+          "positive": 11,
+          "negative": 21,
+          "zero": 0
+        }
+      }
+    }
+  }
+}

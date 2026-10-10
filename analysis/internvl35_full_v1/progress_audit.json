@@ -1,0 +1,4144 @@
+{
+  "version": 1,
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "shots": 4,
+  "seed": 73,
+  "official_full_test": true,
+  "paired_ci": "10000 paired-query multinomial bootstrap, seed73; descriptive, no multiplicity correction",
+  "datasets": {
+    "dtd": {
+      "bank_n": 3760,
+      "query_n": 1880,
+      "manifest_sha256": "6e3204b5cc09384aabe2132f284a45e656551e35def173a207d7f9c956f55fbf",
+      "methods": {
+        "raw": {
+          "state": "complete",
+          "completed": 1880,
+          "total": 1880,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.6956117021276595,
+            "top4_any_same_label_fraction": 0.8851063829787233
+          },
+          "correct": 1424,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.7574468085106383,
+          "accuracy_wilson_95": [
+            0.7375591660680906,
+            0.7762844992082744
+          ],
+          "macro_class_accuracy": 0.7574468085106383,
+          "per_class": {
+            "banded": {
+              "correct": 30,
+              "total": 40
+            },
+            "blotchy": {
+              "correct": 10,
+              "total": 40
+            },
+            "braided": {
+              "correct": 31,
+              "total": 40
+            },
+            "bubbly": {
+              "correct": 39,
+              "total": 40
+            },
+            "bumpy": {
+              "correct": 26,
+              "total": 40
+            },
+            "chequered": {
+              "correct": 37,
+              "total": 40
+            },
+            "cobwebbed": {
+              "correct": 39,
+              "total": 40
+            },
+            "cracked": {
+              "correct": 35,
+              "total": 40
+            },
+            "crosshatched": {
+              "correct": 18,
+              "total": 40
+            },
+            "crystalline": {
+              "correct": 38,
+              "total": 40
+            },
+            "dotted": {
+              "correct": 22,
+              "total": 40
+            },
+            "fibrous": {
+              "correct": 33,
+              "total": 40
+            },
+            "flecked": {
+              "correct": 26,
+              "total": 40
+            },
+            "freckled": {
+              "correct": 32,
+              "total": 40
+            },
+            "frilly": {
+              "correct": 37,
+              "total": 40
+            },
+            "gauzy": {
+              "correct": 33,
+              "total": 40
+            },
+            "grid": {
+              "correct": 27,
+              "total": 40
+            },
+            "grooved": {
+              "correct": 30,
+              "total": 40
+            },
+            "honeycombed": {
+              "correct": 39,
+              "total": 40
+            },
+            "interlaced": {
+              "correct": 33,
+              "total": 40
+            },
+            "knitted": {
+              "correct": 32,
+              "total": 40
+            },
+            "lacelike": {
+              "correct": 35,
+              "total": 40
+            },
+            "lined": {
+              "correct": 18,
+              "total": 40
+            },
+            "marbled": {
+              "correct": 25,
+              "total": 40
+            },
+            "matted": {
+              "correct": 24,
+              "total": 40
+            },
+            "meshed": {
+              "correct": 21,
+              "total": 40
+            },
+            "paisley": {
+              "correct": 39,
+              "total": 40
+            },
+            "perforated": {
+              "correct": 34,
+              "total": 40
+            },
+            "pitted": {
+              "correct": 28,
+              "total": 40
+            },
+            "pleated": {
+              "correct": 28,
+              "total": 40
+            },
+            "polka-dotted": {
+              "correct": 33,
+              "total": 40
+            },
+            "porous": {
+              "correct": 18,
+              "total": 40
+            },
+            "potholed": {
+              "correct": 32,
+              "total": 40
+            },
+            "scaly": {
+              "correct": 33,
+              "total": 40
+            },
+            "smeared": {
+              "correct": 25,
+              "total": 40
+            },
+            "spiralled": {
+              "correct": 27,
+              "total": 40
+            },
+            "sprinkled": {
+              "correct": 30,
+              "total": 40
+            },
+            "stained": {
+              "correct": 19,
+              "total": 40
+            },
+            "stratified": {
+              "correct": 34,
+              "total": 40
+            },
+            "striped": {
+              "correct": 36,
+              "total": 40
+            },
+            "studded": {
+              "correct": 40,
+              "total": 40
+            },
+            "swirly": {
+              "correct": 31,
+              "total": 40
+            },
+            "veined": {
+              "correct": 33,
+              "total": 40
+            },
+            "waffled": {
+              "correct": 33,
+              "total": 40
+            },
+            "woven": {
+              "correct": 27,
+              "total": 40
+            },
+            "wrinkled": {
+              "correct": 34,
+              "total": 40
+            },
+            "zigzagged": {
+              "correct": 40,
+              "total": 40
+            }
+          },
+          "predictions_sha256": "9bc7e5d53c8e5b3195470a33680b60d8f1ca4c8a3a7dfad0b4744bce149d40b0"
+        },
+        "proj": {
+          "state": "complete",
+          "completed": 1880,
+          "total": 1880,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.742686170212766,
+            "top4_any_same_label_fraction": 0.8867021276595745
+          },
+          "correct": 1467,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.7803191489361702,
+          "accuracy_wilson_95": [
+            0.761042389690636,
+            0.7984526755999515
+          ],
+          "macro_class_accuracy": 0.7803191489361702,
+          "per_class": {
+            "banded": {
+              "correct": 32,
+              "total": 40
+            },
+            "blotchy": {
+              "correct": 10,
+              "total": 40
+            },
+            "braided": {
+              "correct": 28,
+              "total": 40
+            },
+            "bubbly": {
+              "correct": 38,
+              "total": 40
+            },
+            "bumpy": {
+              "correct": 27,
+              "total": 40
+            },
+            "chequered": {
+              "correct": 38,
+              "total": 40
+            },
+            "cobwebbed": {
+              "correct": 39,
+              "total": 40
+            },
+            "cracked": {
+              "correct": 33,
+              "total": 40
+            },
+            "crosshatched": {
+              "correct": 20,
+              "total": 40
+            },
+            "crystalline": {
+              "correct": 39,
+              "total": 40
+            },
+            "dotted": {
+              "correct": 25,
+              "total": 40
+            },
+            "fibrous": {
+              "correct": 30,
+              "total": 40
+            },
+            "flecked": {
+              "correct": 28,
+              "total": 40
+            },
+            "freckled": {
+              "correct": 35,
+              "total": 40
+            },
+            "frilly": {
+              "correct": 38,
+              "total": 40
+            },
+            "gauzy": {
+              "correct": 32,
+              "total": 40
+            },
+            "grid": {
+              "correct": 26,
+              "total": 40
+            },
+            "grooved": {
+              "correct": 33,
+              "total": 40
+            },
+            "honeycombed": {
+              "correct": 39,
+              "total": 40
+            },
+            "interlaced": {
+              "correct": 33,
+              "total": 40
+            },
+            "knitted": {
+              "correct": 33,
+              "total": 40
+            },
+            "lacelike": {
+              "correct": 34,
+              "total": 40
+            },
+            "lined": {
+              "correct": 22,
+              "total": 40
+            },
+            "marbled": {
+              "correct": 23,
+              "total": 40
+            },
+            "matted": {
+              "correct": 30,
+              "total": 40
+            },
+            "meshed": {
+              "correct": 26,
+              "total": 40
+            },
+            "paisley": {
+              "correct": 37,
+              "total": 40
+            },
+            "perforated": {
+              "correct": 34,
+              "total": 40
+            },
+            "pitted": {
+              "correct": 30,
+              "total": 40
+            },
+            "pleated": {
+              "correct": 28,
+              "total": 40
+            },
+            "polka-dotted": {
+              "correct": 34,
+              "total": 40
+            },
+            "porous": {
+              "correct": 21,
+              "total": 40
+            },
+            "potholed": {
+              "correct": 36,
+              "total": 40
+            },
+            "scaly": {
+              "correct": 34,
+              "total": 40
+            },
+            "smeared": {
+              "correct": 31,
+              "total": 40
+            },
+            "spiralled": {
+              "correct": 29,
+              "total": 40
+            },
+            "sprinkled": {
+              "correct": 27,
+              "total": 40
+            },
+            "stained": {
+              "correct": 20,
+              "total": 40
+            },
+            "stratified": {
+              "correct": 37,
+              "total": 40
+            },
+            "striped": {
+              "correct": 35,
+              "total": 40
+            },
+            "studded": {
+              "correct": 40,
+              "total": 40
+            },
+            "swirly": {
+              "correct": 32,
+              "total": 40
+            },
+            "veined": {
+              "correct": 36,
+              "total": 40
+            },
+            "waffled": {
+              "correct": 33,
+              "total": 40
+            },
+            "woven": {
+              "correct": 27,
+              "total": 40
+            },
+            "wrinkled": {
+              "correct": 35,
+              "total": 40
+            },
+            "zigzagged": {
+              "correct": 40,
+              "total": 40
+            }
+          },
+          "predictions_sha256": "6910e4f5aa1207573e064db796243e5eb5279a2bdc281cc9c43e972dbf7f81ce"
+        },
+        "learn": {
+          "state": "complete",
+          "completed": 1880,
+          "total": 1880,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.7529255319148936,
+            "top4_any_same_label_fraction": 0.8914893617021277
+          },
+          "correct": 1474,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.7840425531914894,
+          "accuracy_wilson_95": [
+            0.7648728595237327,
+            0.8020538290249842
+          ],
+          "macro_class_accuracy": 0.7840425531914894,
+          "per_class": {
+            "banded": {
+              "correct": 33,
+              "total": 40
+            },
+            "blotchy": {
+              "correct": 12,
+              "total": 40
+            },
+            "braided": {
+              "correct": 30,
+              "total": 40
+            },
+            "bubbly": {
+              "correct": 39,
+              "total": 40
+            },
+            "bumpy": {
+              "correct": 26,
+              "total": 40
+            },
+            "chequered": {
+              "correct": 39,
+              "total": 40
+            },
+            "cobwebbed": {
+              "correct": 40,
+              "total": 40
+            },
+            "cracked": {
+              "correct": 33,
+              "total": 40
+            },
+            "crosshatched": {
+              "correct": 22,
+              "total": 40
+            },
+            "crystalline": {
+              "correct": 39,
+              "total": 40
+            },
+            "dotted": {
+              "correct": 22,
+              "total": 40
+            },
+            "fibrous": {
+              "correct": 31,
+              "total": 40
+            },
+            "flecked": {
+              "correct": 29,
+              "total": 40
+            },
+            "freckled": {
+              "correct": 33,
+              "total": 40
+            },
+            "frilly": {
+              "correct": 39,
+              "total": 40
+            },
+            "gauzy": {
+              "correct": 32,
+              "total": 40
+            },
+            "grid": {
+              "correct": 25,
+              "total": 40
+            },
+            "grooved": {
+              "correct": 31,
+              "total": 40
+            },
+            "honeycombed": {
+              "correct": 39,
+              "total": 40
+            },
+            "interlaced": {
+              "correct": 34,
+              "total": 40
+            },
+            "knitted": {
+              "correct": 33,
+              "total": 40
+            },
+            "lacelike": {
+              "correct": 35,
+              "total": 40
+            },
+            "lined": {
+              "correct": 22,
+              "total": 40
+            },
+            "marbled": {
+              "correct": 24,
+              "total": 40
+            },
+            "matted": {
+              "correct": 30,
+              "total": 40
+            },
+            "meshed": {
+              "correct": 24,
+              "total": 40
+            },
+            "paisley": {
+              "correct": 37,
+              "total": 40
+            },
+            "perforated": {
+              "correct": 34,
+              "total": 40
+            },
+            "pitted": {
+              "correct": 29,
+              "total": 40
+            },
+            "pleated": {
+              "correct": 27,
+              "total": 40
+            },
+            "polka-dotted": {
+              "correct": 35,
+              "total": 40
+            },
+            "porous": {
+              "correct": 21,
+              "total": 40
+            },
+            "potholed": {
+              "correct": 35,
+              "total": 40
+            },
+            "scaly": {
+              "correct": 34,
+              "total": 40
+            },
+            "smeared": {
+              "correct": 34,
+              "total": 40
+            },
+            "spiralled": {
+              "correct": 28,
+              "total": 40
+            },
+            "sprinkled": {
+              "correct": 31,
+              "total": 40
+            },
+            "stained": {
+              "correct": 20,
+              "total": 40
+            },
+            "stratified": {
+              "correct": 36,
+              "total": 40
+            },
+            "striped": {
+              "correct": 36,
+              "total": 40
+            },
+            "studded": {
+              "correct": 40,
+              "total": 40
+            },
+            "swirly": {
+              "correct": 31,
+              "total": 40
+            },
+            "veined": {
+              "correct": 36,
+              "total": 40
+            },
+            "waffled": {
+              "correct": 32,
+              "total": 40
+            },
+            "woven": {
+              "correct": 28,
+              "total": 40
+            },
+            "wrinkled": {
+              "correct": 34,
+              "total": 40
+            },
+            "zigzagged": {
+              "correct": 40,
+              "total": 40
+            }
+          },
+          "predictions_sha256": "2dd96ac54d180c84704b4a3d808f1915238ba2237c6cd21c9d1af6089a5e27f1"
+        },
+        "gpt_mm": {
+          "state": "complete",
+          "completed": 1880,
+          "total": 1880,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.6214095744680851,
+            "top4_any_same_label_fraction": 0.8324468085106383
+          },
+          "correct": 1322,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.7031914893617022,
+          "accuracy_wilson_95": [
+            0.6821429093329439,
+            0.7234113884678237
+          ],
+          "macro_class_accuracy": 0.7031914893617021,
+          "per_class": {
+            "banded": {
+              "correct": 30,
+              "total": 40
+            },
+            "blotchy": {
+              "correct": 11,
+              "total": 40
+            },
+            "braided": {
+              "correct": 30,
+              "total": 40
+            },
+            "bubbly": {
+              "correct": 38,
+              "total": 40
+            },
+            "bumpy": {
+              "correct": 27,
+              "total": 40
+            },
+            "chequered": {
+              "correct": 39,
+              "total": 40
+            },
+            "cobwebbed": {
+              "correct": 38,
+              "total": 40
+            },
+            "cracked": {
+              "correct": 34,
+              "total": 40
+            },
+            "crosshatched": {
+              "correct": 18,
+              "total": 40
+            },
+            "crystalline": {
+              "correct": 37,
+              "total": 40
+            },
+            "dotted": {
+              "correct": 22,
+              "total": 40
+            },
+            "fibrous": {
+              "correct": 31,
+              "total": 40
+            },
+            "flecked": {
+              "correct": 23,
+              "total": 40
+            },
+            "freckled": {
+              "correct": 30,
+              "total": 40
+            },
+            "frilly": {
+              "correct": 37,
+              "total": 40
+            },
+            "gauzy": {
+              "correct": 30,
+              "total": 40
+            },
+            "grid": {
+              "correct": 25,
+              "total": 40
+            },
+            "grooved": {
+              "correct": 28,
+              "total": 40
+            },
+            "honeycombed": {
+              "correct": 38,
+              "total": 40
+            },
+            "interlaced": {
+              "correct": 27,
+              "total": 40
+            },
+            "knitted": {
+              "correct": 34,
+              "total": 40
+            },
+            "lacelike": {
+              "correct": 32,
+              "total": 40
+            },
+            "lined": {
+              "correct": 17,
+              "total": 40
+            },
+            "marbled": {
+              "correct": 21,
+              "total": 40
+            },
+            "matted": {
+              "correct": 18,
+              "total": 40
+            },
+            "meshed": {
+              "correct": 20,
+              "total": 40
+            },
+            "paisley": {
+              "correct": 34,
+              "total": 40
+            },
+            "perforated": {
+              "correct": 29,
+              "total": 40
+            },
+            "pitted": {
+              "correct": 26,
+              "total": 40
+            },
+            "pleated": {
+              "correct": 17,
+              "total": 40
+            },
+            "polka-dotted": {
+              "correct": 32,
+              "total": 40
+            },
+            "porous": {
+              "correct": 13,
+              "total": 40
+            },
+            "potholed": {
+              "correct": 29,
+              "total": 40
+            },
+            "scaly": {
+              "correct": 30,
+              "total": 40
+            },
+            "smeared": {
+              "correct": 25,
+              "total": 40
+            },
+            "spiralled": {
+              "correct": 31,
+              "total": 40
+            },
+            "sprinkled": {
+              "correct": 25,
+              "total": 40
+            },
+            "stained": {
+              "correct": 15,
+              "total": 40
+            },
+            "stratified": {
+              "correct": 29,
+              "total": 40
+            },
+            "striped": {
+              "correct": 36,
+              "total": 40
+            },
+            "studded": {
+              "correct": 38,
+              "total": 40
+            },
+            "swirly": {
+              "correct": 28,
+              "total": 40
+            },
+            "veined": {
+              "correct": 29,
+              "total": 40
+            },
+            "waffled": {
+              "correct": 32,
+              "total": 40
+            },
+            "woven": {
+              "correct": 23,
+              "total": 40
+            },
+            "wrinkled": {
+              "correct": 28,
+              "total": 40
+            },
+            "zigzagged": {
+              "correct": 38,
+              "total": 40
+            }
+          },
+          "predictions_sha256": "8de3d362bd9ed39571174f1477e7beca01fc11670d73c85902996e6762b2e4b8"
+        },
+        "detriever": {
+          "state": "complete",
+          "completed": 1880,
+          "total": 1880,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.660904255319149,
+            "top4_any_same_label_fraction": 0.7867021276595745
+          },
+          "correct": 1371,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.7292553191489362,
+          "accuracy_wilson_95": [
+            0.7087170838955675,
+            0.7488585767121047
+          ],
+          "macro_class_accuracy": 0.7292553191489362,
+          "per_class": {
+            "banded": {
+              "correct": 28,
+              "total": 40
+            },
+            "blotchy": {
+              "correct": 11,
+              "total": 40
+            },
+            "braided": {
+              "correct": 27,
+              "total": 40
+            },
+            "bubbly": {
+              "correct": 37,
+              "total": 40
+            },
+            "bumpy": {
+              "correct": 26,
+              "total": 40
+            },
+            "chequered": {
+              "correct": 35,
+              "total": 40
+            },
+            "cobwebbed": {
+              "correct": 38,
+              "total": 40
+            },
+            "cracked": {
+              "correct": 32,
+              "total": 40
+            },
+            "crosshatched": {
+              "correct": 21,
+              "total": 40
+            },
+            "crystalline": {
+              "correct": 38,
+              "total": 40
+            },
+            "dotted": {
+              "correct": 30,
+              "total": 40
+            },
+            "fibrous": {
+              "correct": 27,
+              "total": 40
+            },
+            "flecked": {
+              "correct": 25,
+              "total": 40
+            },
+            "freckled": {
+              "correct": 31,
+              "total": 40
+            },
+            "frilly": {
+              "correct": 36,
+              "total": 40
+            },
+            "gauzy": {
+              "correct": 28,
+              "total": 40
+            },
+            "grid": {
+              "correct": 26,
+              "total": 40
+            },
+            "grooved": {
+              "correct": 30,
+              "total": 40
+            },
+            "honeycombed": {
+              "correct": 34,
+              "total": 40
+            },
+            "interlaced": {
+              "correct": 33,
+              "total": 40
+            },
+            "knitted": {
+              "correct": 34,
+              "total": 40
+            },
+            "lacelike": {
+              "correct": 32,
+              "total": 40
+            },
+            "lined": {
+              "correct": 23,
+              "total": 40
+            },
+            "marbled": {
+              "correct": 25,
+              "total": 40
+            },
+            "matted": {
+              "correct": 22,
+              "total": 40
+            },
+            "meshed": {
+              "correct": 24,
+              "total": 40
+            },
+            "paisley": {
+              "correct": 36,
+              "total": 40
+            },
+            "perforated": {
+              "correct": 28,
+              "total": 40
+            },
+            "pitted": {
+              "correct": 28,
+              "total": 40
+            },
+            "pleated": {
+              "correct": 22,
+              "total": 40
+            },
+            "polka-dotted": {
+              "correct": 33,
+              "total": 40
+            },
+            "porous": {
+              "correct": 17,
+              "total": 40
+            },
+            "potholed": {
+              "correct": 31,
+              "total": 40
+            },
+            "scaly": {
+              "correct": 28,
+              "total": 40
+            },
+            "smeared": {
+              "correct": 26,
+              "total": 40
+            },
+            "spiralled": {
+              "correct": 26,
+              "total": 40
+            },
+            "sprinkled": {
+              "correct": 27,
+              "total": 40
+            },
+            "stained": {
+              "correct": 20,
+              "total": 40
+            },
+            "stratified": {
+              "correct": 34,
+              "total": 40
+            },
+            "striped": {
+              "correct": 35,
+              "total": 40
+            },
+            "studded": {
+              "correct": 39,
+              "total": 40
+            },
+            "swirly": {
+              "correct": 30,
+              "total": 40
+            },
+            "veined": {
+              "correct": 31,
+              "total": 40
+            },
+            "waffled": {
+              "correct": 32,
+              "total": 40
+            },
+            "woven": {
+              "correct": 22,
+              "total": 40
+            },
+            "wrinkled": {
+              "correct": 33,
+              "total": 40
+            },
+            "zigzagged": {
+              "correct": 40,
+              "total": 40
+            }
+          },
+          "predictions_sha256": "9eae9ad17c2c9ce782c9758b88fb004b2323eb023b59bf041def3186b81dc6c3"
+        },
+        "rices": {
+          "state": "complete",
+          "completed": 1880,
+          "total": 1880,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.6055851063829787,
+            "top4_any_same_label_fraction": 0.8452127659574468
+          },
+          "correct": 1376,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.7319148936170212,
+          "accuracy_wilson_95": [
+            0.7114335108864531,
+            0.7514504520484542
+          ],
+          "macro_class_accuracy": 0.7319148936170212,
+          "per_class": {
+            "banded": {
+              "correct": 22,
+              "total": 40
+            },
+            "blotchy": {
+              "correct": 13,
+              "total": 40
+            },
+            "braided": {
+              "correct": 31,
+              "total": 40
+            },
+            "bubbly": {
+              "correct": 38,
+              "total": 40
+            },
+            "bumpy": {
+              "correct": 24,
+              "total": 40
+            },
+            "chequered": {
+              "correct": 38,
+              "total": 40
+            },
+            "cobwebbed": {
+              "correct": 38,
+              "total": 40
+            },
+            "cracked": {
+              "correct": 35,
+              "total": 40
+            },
+            "crosshatched": {
+              "correct": 18,
+              "total": 40
+            },
+            "crystalline": {
+              "correct": 39,
+              "total": 40
+            },
+            "dotted": {
+              "correct": 25,
+              "total": 40
+            },
+            "fibrous": {
+              "correct": 30,
+              "total": 40
+            },
+            "flecked": {
+              "correct": 28,
+              "total": 40
+            },
+            "freckled": {
+              "correct": 30,
+              "total": 40
+            },
+            "frilly": {
+              "correct": 37,
+              "total": 40
+            },
+            "gauzy": {
+              "correct": 29,
+              "total": 40
+            },
+            "grid": {
+              "correct": 24,
+              "total": 40
+            },
+            "grooved": {
+              "correct": 20,
+              "total": 40
+            },
+            "honeycombed": {
+              "correct": 37,
+              "total": 40
+            },
+            "interlaced": {
+              "correct": 32,
+              "total": 40
+            },
+            "knitted": {
+              "correct": 38,
+              "total": 40
+            },
+            "lacelike": {
+              "correct": 30,
+              "total": 40
+            },
+            "lined": {
+              "correct": 18,
+              "total": 40
+            },
+            "marbled": {
+              "correct": 29,
+              "total": 40
+            },
+            "matted": {
+              "correct": 22,
+              "total": 40
+            },
+            "meshed": {
+              "correct": 27,
+              "total": 40
+            },
+            "paisley": {
+              "correct": 38,
+              "total": 40
+            },
+            "perforated": {
+              "correct": 28,
+              "total": 40
+            },
+            "pitted": {
+              "correct": 22,
+              "total": 40
+            },
+            "pleated": {
+              "correct": 23,
+              "total": 40
+            },
+            "polka-dotted": {
+              "correct": 35,
+              "total": 40
+            },
+            "porous": {
+              "correct": 23,
+              "total": 40
+            },
+            "potholed": {
+              "correct": 32,
+              "total": 40
+            },
+            "scaly": {
+              "correct": 32,
+              "total": 40
+            },
+            "smeared": {
+              "correct": 25,
+              "total": 40
+            },
+            "spiralled": {
+              "correct": 27,
+              "total": 40
+            },
+            "sprinkled": {
+              "correct": 23,
+              "total": 40
+            },
+            "stained": {
+              "correct": 18,
+              "total": 40
+            },
+            "stratified": {
+              "correct": 33,
+              "total": 40
+            },
+            "striped": {
+              "correct": 38,
+              "total": 40
+            },
+            "studded": {
+              "correct": 37,
+              "total": 40
+            },
+            "swirly": {
+              "correct": 26,
+              "total": 40
+            },
+            "veined": {
+              "correct": 35,
+              "total": 40
+            },
+            "waffled": {
+              "correct": 34,
+              "total": 40
+            },
+            "woven": {
+              "correct": 23,
+              "total": 40
+            },
+            "wrinkled": {
+              "correct": 33,
+              "total": 40
+            },
+            "zigzagged": {
+              "correct": 39,
+              "total": 40
+            }
+          },
+          "predictions_sha256": "8c2ef68d365feb37ac38a8fb122156579436b7d75c5f75da377879a825a620c3"
+        }
+      }
+    },
+    "aircraft": {
+      "bank_n": 6667,
+      "query_n": 3333,
+      "manifest_sha256": "4861fde85f400224cabf1e1e2184d1979a8064f8272da3f65348b633b1ea87ee",
+      "methods": {
+        "raw": {
+          "state": "complete",
+          "completed": 3333,
+          "total": 3333,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.2674017401740174,
+            "top4_any_same_label_fraction": 0.5436543654365437
+          },
+          "correct": 1115,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.3345334533453345,
+          "accuracy_wilson_95": [
+            0.3187138466715281,
+            0.3507340388178167
+          ],
+          "macro_class_accuracy": 0.33432263814616753,
+          "per_class": {
+            "707-320": {
+              "correct": 5,
+              "total": 33
+            },
+            "727-200": {
+              "correct": 2,
+              "total": 33
+            },
+            "737-200": {
+              "correct": 5,
+              "total": 34
+            },
+            "737-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "737-400": {
+              "correct": 3,
+              "total": 33
+            },
+            "737-500": {
+              "correct": 2,
+              "total": 34
+            },
+            "737-600": {
+              "correct": 18,
+              "total": 33
+            },
+            "737-700": {
+              "correct": 1,
+              "total": 33
+            },
+            "737-800": {
+              "correct": 6,
+              "total": 34
+            },
+            "737-900": {
+              "correct": 21,
+              "total": 33
+            },
+            "747-100": {
+              "correct": 14,
+              "total": 33
+            },
+            "747-200": {
+              "correct": 1,
+              "total": 34
+            },
+            "747-300": {
+              "correct": 6,
+              "total": 33
+            },
+            "747-400": {
+              "correct": 13,
+              "total": 33
+            },
+            "757-200": {
+              "correct": 1,
+              "total": 34
+            },
+            "757-300": {
+              "correct": 16,
+              "total": 33
+            },
+            "767-200": {
+              "correct": 2,
+              "total": 33
+            },
+            "767-300": {
+              "correct": 2,
+              "total": 34
+            },
+            "767-400": {
+              "correct": 27,
+              "total": 33
+            },
+            "777-200": {
+              "correct": 1,
+              "total": 33
+            },
+            "777-300": {
+              "correct": 8,
+              "total": 34
+            },
+            "A300B4": {
+              "correct": 0,
+              "total": 33
+            },
+            "A310": {
+              "correct": 1,
+              "total": 33
+            },
+            "A318": {
+              "correct": 23,
+              "total": 34
+            },
+            "A319": {
+              "correct": 4,
+              "total": 33
+            },
+            "A320": {
+              "correct": 2,
+              "total": 33
+            },
+            "A321": {
+              "correct": 10,
+              "total": 34
+            },
+            "A330-200": {
+              "correct": 1,
+              "total": 33
+            },
+            "A330-300": {
+              "correct": 3,
+              "total": 33
+            },
+            "A340-200": {
+              "correct": 20,
+              "total": 34
+            },
+            "A340-300": {
+              "correct": 5,
+              "total": 33
+            },
+            "A340-500": {
+              "correct": 20,
+              "total": 33
+            },
+            "A340-600": {
+              "correct": 16,
+              "total": 34
+            },
+            "A380": {
+              "correct": 24,
+              "total": 33
+            },
+            "ATR-42": {
+              "correct": 3,
+              "total": 33
+            },
+            "ATR-72": {
+              "correct": 18,
+              "total": 34
+            },
+            "An-12": {
+              "correct": 22,
+              "total": 33
+            },
+            "BAE 146-200": {
+              "correct": 7,
+              "total": 33
+            },
+            "BAE 146-300": {
+              "correct": 7,
+              "total": 34
+            },
+            "BAE-125": {
+              "correct": 8,
+              "total": 33
+            },
+            "Beechcraft 1900": {
+              "correct": 9,
+              "total": 33
+            },
+            "Boeing 717": {
+              "correct": 11,
+              "total": 34
+            },
+            "C-130": {
+              "correct": 31,
+              "total": 33
+            },
+            "C-47": {
+              "correct": 13,
+              "total": 33
+            },
+            "CRJ-200": {
+              "correct": 2,
+              "total": 34
+            },
+            "CRJ-700": {
+              "correct": 12,
+              "total": 33
+            },
+            "CRJ-900": {
+              "correct": 8,
+              "total": 33
+            },
+            "Cessna 172": {
+              "correct": 19,
+              "total": 34
+            },
+            "Cessna 208": {
+              "correct": 12,
+              "total": 33
+            },
+            "Cessna 525": {
+              "correct": 11,
+              "total": 33
+            },
+            "Cessna 560": {
+              "correct": 11,
+              "total": 34
+            },
+            "Challenger 600": {
+              "correct": 4,
+              "total": 33
+            },
+            "DC-10": {
+              "correct": 2,
+              "total": 33
+            },
+            "DC-3": {
+              "correct": 14,
+              "total": 34
+            },
+            "DC-6": {
+              "correct": 20,
+              "total": 33
+            },
+            "DC-8": {
+              "correct": 2,
+              "total": 33
+            },
+            "DC-9-30": {
+              "correct": 3,
+              "total": 34
+            },
+            "DH-82": {
+              "correct": 29,
+              "total": 33
+            },
+            "DHC-1": {
+              "correct": 26,
+              "total": 33
+            },
+            "DHC-6": {
+              "correct": 24,
+              "total": 34
+            },
+            "DHC-8-100": {
+              "correct": 10,
+              "total": 33
+            },
+            "DHC-8-300": {
+              "correct": 11,
+              "total": 33
+            },
+            "DR-400": {
+              "correct": 18,
+              "total": 34
+            },
+            "Dornier 328": {
+              "correct": 20,
+              "total": 33
+            },
+            "E-170": {
+              "correct": 14,
+              "total": 33
+            },
+            "E-190": {
+              "correct": 13,
+              "total": 34
+            },
+            "E-195": {
+              "correct": 19,
+              "total": 33
+            },
+            "EMB-120": {
+              "correct": 11,
+              "total": 33
+            },
+            "ERJ 135": {
+              "correct": 16,
+              "total": 34
+            },
+            "ERJ 145": {
+              "correct": 9,
+              "total": 33
+            },
+            "Embraer Legacy 600": {
+              "correct": 12,
+              "total": 33
+            },
+            "Eurofighter Typhoon": {
+              "correct": 29,
+              "total": 34
+            },
+            "F-16A/B": {
+              "correct": 15,
+              "total": 33
+            },
+            "F/A-18": {
+              "correct": 22,
+              "total": 33
+            },
+            "Falcon 2000": {
+              "correct": 13,
+              "total": 34
+            },
+            "Falcon 900": {
+              "correct": 8,
+              "total": 33
+            },
+            "Fokker 100": {
+              "correct": 1,
+              "total": 33
+            },
+            "Fokker 50": {
+              "correct": 10,
+              "total": 34
+            },
+            "Fokker 70": {
+              "correct": 11,
+              "total": 33
+            },
+            "Global Express": {
+              "correct": 10,
+              "total": 33
+            },
+            "Gulfstream IV": {
+              "correct": 2,
+              "total": 34
+            },
+            "Gulfstream V": {
+              "correct": 11,
+              "total": 33
+            },
+            "Hawk T1": {
+              "correct": 32,
+              "total": 33
+            },
+            "Il-76": {
+              "correct": 20,
+              "total": 34
+            },
+            "L-1011": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-11": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-80": {
+              "correct": 1,
+              "total": 34
+            },
+            "MD-87": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-90": {
+              "correct": 3,
+              "total": 33
+            },
+            "Metroliner": {
+              "correct": 6,
+              "total": 34
+            },
+            "Model B200": {
+              "correct": 17,
+              "total": 33
+            },
+            "PA-28": {
+              "correct": 3,
+              "total": 33
+            },
+            "SR-20": {
+              "correct": 31,
+              "total": 34
+            },
+            "Saab 2000": {
+              "correct": 9,
+              "total": 33
+            },
+            "Saab 340": {
+              "correct": 11,
+              "total": 33
+            },
+            "Spitfire": {
+              "correct": 30,
+              "total": 34
+            },
+            "Tornado": {
+              "correct": 6,
+              "total": 33
+            },
+            "Tu-134": {
+              "correct": 10,
+              "total": 33
+            },
+            "Tu-154": {
+              "correct": 7,
+              "total": 34
+            },
+            "Yak-42": {
+              "correct": 11,
+              "total": 33
+            }
+          },
+          "predictions_sha256": "5f95132d590b20b079982d8f42b327672e864cec972ba63253577978ebffe667"
+        },
+        "proj": {
+          "state": "complete",
+          "completed": 3333,
+          "total": 3333,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.33055805580558056,
+            "top4_any_same_label_fraction": 0.6120612061206121
+          },
+          "correct": 1323,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.39693969396939693,
+          "accuracy_wilson_95": [
+            0.38045734793606173,
+            0.4136593314213089
+          ],
+          "macro_class_accuracy": 0.3968092691622103,
+          "per_class": {
+            "707-320": {
+              "correct": 7,
+              "total": 33
+            },
+            "727-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "737-200": {
+              "correct": 1,
+              "total": 34
+            },
+            "737-300": {
+              "correct": 8,
+              "total": 33
+            },
+            "737-400": {
+              "correct": 3,
+              "total": 33
+            },
+            "737-500": {
+              "correct": 6,
+              "total": 34
+            },
+            "737-600": {
+              "correct": 20,
+              "total": 33
+            },
+            "737-700": {
+              "correct": 3,
+              "total": 33
+            },
+            "737-800": {
+              "correct": 5,
+              "total": 34
+            },
+            "737-900": {
+              "correct": 24,
+              "total": 33
+            },
+            "747-100": {
+              "correct": 18,
+              "total": 33
+            },
+            "747-200": {
+              "correct": 6,
+              "total": 34
+            },
+            "747-300": {
+              "correct": 13,
+              "total": 33
+            },
+            "747-400": {
+              "correct": 14,
+              "total": 33
+            },
+            "757-200": {
+              "correct": 0,
+              "total": 34
+            },
+            "757-300": {
+              "correct": 21,
+              "total": 33
+            },
+            "767-200": {
+              "correct": 3,
+              "total": 33
+            },
+            "767-300": {
+              "correct": 2,
+              "total": 34
+            },
+            "767-400": {
+              "correct": 27,
+              "total": 33
+            },
+            "777-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "777-300": {
+              "correct": 11,
+              "total": 34
+            },
+            "A300B4": {
+              "correct": 0,
+              "total": 33
+            },
+            "A310": {
+              "correct": 0,
+              "total": 33
+            },
+            "A318": {
+              "correct": 23,
+              "total": 34
+            },
+            "A319": {
+              "correct": 4,
+              "total": 33
+            },
+            "A320": {
+              "correct": 1,
+              "total": 33
+            },
+            "A321": {
+              "correct": 16,
+              "total": 34
+            },
+            "A330-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "A330-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "A340-200": {
+              "correct": 18,
+              "total": 34
+            },
+            "A340-300": {
+              "correct": 5,
+              "total": 33
+            },
+            "A340-500": {
+              "correct": 19,
+              "total": 33
+            },
+            "A340-600": {
+              "correct": 22,
+              "total": 34
+            },
+            "A380": {
+              "correct": 27,
+              "total": 33
+            },
+            "ATR-42": {
+              "correct": 7,
+              "total": 33
+            },
+            "ATR-72": {
+              "correct": 15,
+              "total": 34
+            },
+            "An-12": {
+              "correct": 27,
+              "total": 33
+            },
+            "BAE 146-200": {
+              "correct": 8,
+              "total": 33
+            },
+            "BAE 146-300": {
+              "correct": 12,
+              "total": 34
+            },
+            "BAE-125": {
+              "correct": 6,
+              "total": 33
+            },
+            "Beechcraft 1900": {
+              "correct": 7,
+              "total": 33
+            },
+            "Boeing 717": {
+              "correct": 13,
+              "total": 34
+            },
+            "C-130": {
+              "correct": 29,
+              "total": 33
+            },
+            "C-47": {
+              "correct": 16,
+              "total": 33
+            },
+            "CRJ-200": {
+              "correct": 3,
+              "total": 34
+            },
+            "CRJ-700": {
+              "correct": 17,
+              "total": 33
+            },
+            "CRJ-900": {
+              "correct": 15,
+              "total": 33
+            },
+            "Cessna 172": {
+              "correct": 25,
+              "total": 34
+            },
+            "Cessna 208": {
+              "correct": 20,
+              "total": 33
+            },
+            "Cessna 525": {
+              "correct": 10,
+              "total": 33
+            },
+            "Cessna 560": {
+              "correct": 15,
+              "total": 34
+            },
+            "Challenger 600": {
+              "correct": 3,
+              "total": 33
+            },
+            "DC-10": {
+              "correct": 2,
+              "total": 33
+            },
+            "DC-3": {
+              "correct": 14,
+              "total": 34
+            },
+            "DC-6": {
+              "correct": 25,
+              "total": 33
+            },
+            "DC-8": {
+              "correct": 4,
+              "total": 33
+            },
+            "DC-9-30": {
+              "correct": 5,
+              "total": 34
+            },
+            "DH-82": {
+              "correct": 31,
+              "total": 33
+            },
+            "DHC-1": {
+              "correct": 29,
+              "total": 33
+            },
+            "DHC-6": {
+              "correct": 28,
+              "total": 34
+            },
+            "DHC-8-100": {
+              "correct": 15,
+              "total": 33
+            },
+            "DHC-8-300": {
+              "correct": 17,
+              "total": 33
+            },
+            "DR-400": {
+              "correct": 17,
+              "total": 34
+            },
+            "Dornier 328": {
+              "correct": 15,
+              "total": 33
+            },
+            "E-170": {
+              "correct": 18,
+              "total": 33
+            },
+            "E-190": {
+              "correct": 15,
+              "total": 34
+            },
+            "E-195": {
+              "correct": 22,
+              "total": 33
+            },
+            "EMB-120": {
+              "correct": 14,
+              "total": 33
+            },
+            "ERJ 135": {
+              "correct": 14,
+              "total": 34
+            },
+            "ERJ 145": {
+              "correct": 18,
+              "total": 33
+            },
+            "Embraer Legacy 600": {
+              "correct": 13,
+              "total": 33
+            },
+            "Eurofighter Typhoon": {
+              "correct": 26,
+              "total": 34
+            },
+            "F-16A/B": {
+              "correct": 20,
+              "total": 33
+            },
+            "F/A-18": {
+              "correct": 22,
+              "total": 33
+            },
+            "Falcon 2000": {
+              "correct": 15,
+              "total": 34
+            },
+            "Falcon 900": {
+              "correct": 10,
+              "total": 33
+            },
+            "Fokker 100": {
+              "correct": 3,
+              "total": 33
+            },
+            "Fokker 50": {
+              "correct": 17,
+              "total": 34
+            },
+            "Fokker 70": {
+              "correct": 14,
+              "total": 33
+            },
+            "Global Express": {
+              "correct": 11,
+              "total": 33
+            },
+            "Gulfstream IV": {
+              "correct": 5,
+              "total": 34
+            },
+            "Gulfstream V": {
+              "correct": 11,
+              "total": 33
+            },
+            "Hawk T1": {
+              "correct": 32,
+              "total": 33
+            },
+            "Il-76": {
+              "correct": 27,
+              "total": 34
+            },
+            "L-1011": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-11": {
+              "correct": 4,
+              "total": 33
+            },
+            "MD-80": {
+              "correct": 3,
+              "total": 34
+            },
+            "MD-87": {
+              "correct": 9,
+              "total": 33
+            },
+            "MD-90": {
+              "correct": 10,
+              "total": 33
+            },
+            "Metroliner": {
+              "correct": 8,
+              "total": 34
+            },
+            "Model B200": {
+              "correct": 17,
+              "total": 33
+            },
+            "PA-28": {
+              "correct": 3,
+              "total": 33
+            },
+            "SR-20": {
+              "correct": 31,
+              "total": 34
+            },
+            "Saab 2000": {
+              "correct": 15,
+              "total": 33
+            },
+            "Saab 340": {
+              "correct": 15,
+              "total": 33
+            },
+            "Spitfire": {
+              "correct": 31,
+              "total": 34
+            },
+            "Tornado": {
+              "correct": 13,
+              "total": 33
+            },
+            "Tu-134": {
+              "correct": 12,
+              "total": 33
+            },
+            "Tu-154": {
+              "correct": 11,
+              "total": 34
+            },
+            "Yak-42": {
+              "correct": 13,
+              "total": 33
+            }
+          },
+          "predictions_sha256": "a0e84f4b7db2d9c83adcc630a125d76159308ea564d3aa38afad49caa22b4644"
+        },
+        "learn": {
+          "state": "complete",
+          "completed": 3333,
+          "total": 3333,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.34255925592559255,
+            "top4_any_same_label_fraction": 0.6300630063006301
+          },
+          "correct": 1368,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.41044104410441046,
+          "accuracy_wilson_95": [
+            0.3938533294181987,
+            0.4272349639971583
+          ],
+          "macro_class_accuracy": 0.4103386809269162,
+          "per_class": {
+            "707-320": {
+              "correct": 8,
+              "total": 33
+            },
+            "727-200": {
+              "correct": 2,
+              "total": 33
+            },
+            "737-200": {
+              "correct": 2,
+              "total": 34
+            },
+            "737-300": {
+              "correct": 8,
+              "total": 33
+            },
+            "737-400": {
+              "correct": 3,
+              "total": 33
+            },
+            "737-500": {
+              "correct": 7,
+              "total": 34
+            },
+            "737-600": {
+              "correct": 19,
+              "total": 33
+            },
+            "737-700": {
+              "correct": 3,
+              "total": 33
+            },
+            "737-800": {
+              "correct": 6,
+              "total": 34
+            },
+            "737-900": {
+              "correct": 24,
+              "total": 33
+            },
+            "747-100": {
+              "correct": 18,
+              "total": 33
+            },
+            "747-200": {
+              "correct": 9,
+              "total": 34
+            },
+            "747-300": {
+              "correct": 10,
+              "total": 33
+            },
+            "747-400": {
+              "correct": 12,
+              "total": 33
+            },
+            "757-200": {
+              "correct": 0,
+              "total": 34
+            },
+            "757-300": {
+              "correct": 21,
+              "total": 33
+            },
+            "767-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "767-300": {
+              "correct": 3,
+              "total": 34
+            },
+            "767-400": {
+              "correct": 27,
+              "total": 33
+            },
+            "777-200": {
+              "correct": 1,
+              "total": 33
+            },
+            "777-300": {
+              "correct": 10,
+              "total": 34
+            },
+            "A300B4": {
+              "correct": 3,
+              "total": 33
+            },
+            "A310": {
+              "correct": 0,
+              "total": 33
+            },
+            "A318": {
+              "correct": 25,
+              "total": 34
+            },
+            "A319": {
+              "correct": 2,
+              "total": 33
+            },
+            "A320": {
+              "correct": 3,
+              "total": 33
+            },
+            "A321": {
+              "correct": 8,
+              "total": 34
+            },
+            "A330-200": {
+              "correct": 5,
+              "total": 33
+            },
+            "A330-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "A340-200": {
+              "correct": 21,
+              "total": 34
+            },
+            "A340-300": {
+              "correct": 6,
+              "total": 33
+            },
+            "A340-500": {
+              "correct": 18,
+              "total": 33
+            },
+            "A340-600": {
+              "correct": 19,
+              "total": 34
+            },
+            "A380": {
+              "correct": 28,
+              "total": 33
+            },
+            "ATR-42": {
+              "correct": 7,
+              "total": 33
+            },
+            "ATR-72": {
+              "correct": 18,
+              "total": 34
+            },
+            "An-12": {
+              "correct": 25,
+              "total": 33
+            },
+            "BAE 146-200": {
+              "correct": 8,
+              "total": 33
+            },
+            "BAE 146-300": {
+              "correct": 16,
+              "total": 34
+            },
+            "BAE-125": {
+              "correct": 9,
+              "total": 33
+            },
+            "Beechcraft 1900": {
+              "correct": 10,
+              "total": 33
+            },
+            "Boeing 717": {
+              "correct": 15,
+              "total": 34
+            },
+            "C-130": {
+              "correct": 31,
+              "total": 33
+            },
+            "C-47": {
+              "correct": 14,
+              "total": 33
+            },
+            "CRJ-200": {
+              "correct": 2,
+              "total": 34
+            },
+            "CRJ-700": {
+              "correct": 19,
+              "total": 33
+            },
+            "CRJ-900": {
+              "correct": 16,
+              "total": 33
+            },
+            "Cessna 172": {
+              "correct": 26,
+              "total": 34
+            },
+            "Cessna 208": {
+              "correct": 17,
+              "total": 33
+            },
+            "Cessna 525": {
+              "correct": 16,
+              "total": 33
+            },
+            "Cessna 560": {
+              "correct": 18,
+              "total": 34
+            },
+            "Challenger 600": {
+              "correct": 7,
+              "total": 33
+            },
+            "DC-10": {
+              "correct": 2,
+              "total": 33
+            },
+            "DC-3": {
+              "correct": 15,
+              "total": 34
+            },
+            "DC-6": {
+              "correct": 23,
+              "total": 33
+            },
+            "DC-8": {
+              "correct": 4,
+              "total": 33
+            },
+            "DC-9-30": {
+              "correct": 5,
+              "total": 34
+            },
+            "DH-82": {
+              "correct": 31,
+              "total": 33
+            },
+            "DHC-1": {
+              "correct": 30,
+              "total": 33
+            },
+            "DHC-6": {
+              "correct": 28,
+              "total": 34
+            },
+            "DHC-8-100": {
+              "correct": 13,
+              "total": 33
+            },
+            "DHC-8-300": {
+              "correct": 17,
+              "total": 33
+            },
+            "DR-400": {
+              "correct": 22,
+              "total": 34
+            },
+            "Dornier 328": {
+              "correct": 19,
+              "total": 33
+            },
+            "E-170": {
+              "correct": 18,
+              "total": 33
+            },
+            "E-190": {
+              "correct": 13,
+              "total": 34
+            },
+            "E-195": {
+              "correct": 24,
+              "total": 33
+            },
+            "EMB-120": {
+              "correct": 16,
+              "total": 33
+            },
+            "ERJ 135": {
+              "correct": 13,
+              "total": 34
+            },
+            "ERJ 145": {
+              "correct": 14,
+              "total": 33
+            },
+            "Embraer Legacy 600": {
+              "correct": 20,
+              "total": 33
+            },
+            "Eurofighter Typhoon": {
+              "correct": 29,
+              "total": 34
+            },
+            "F-16A/B": {
+              "correct": 18,
+              "total": 33
+            },
+            "F/A-18": {
+              "correct": 26,
+              "total": 33
+            },
+            "Falcon 2000": {
+              "correct": 16,
+              "total": 34
+            },
+            "Falcon 900": {
+              "correct": 11,
+              "total": 33
+            },
+            "Fokker 100": {
+              "correct": 1,
+              "total": 33
+            },
+            "Fokker 50": {
+              "correct": 16,
+              "total": 34
+            },
+            "Fokker 70": {
+              "correct": 18,
+              "total": 33
+            },
+            "Global Express": {
+              "correct": 13,
+              "total": 33
+            },
+            "Gulfstream IV": {
+              "correct": 5,
+              "total": 34
+            },
+            "Gulfstream V": {
+              "correct": 10,
+              "total": 33
+            },
+            "Hawk T1": {
+              "correct": 31,
+              "total": 33
+            },
+            "Il-76": {
+              "correct": 27,
+              "total": 34
+            },
+            "L-1011": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-11": {
+              "correct": 3,
+              "total": 33
+            },
+            "MD-80": {
+              "correct": 1,
+              "total": 34
+            },
+            "MD-87": {
+              "correct": 9,
+              "total": 33
+            },
+            "MD-90": {
+              "correct": 10,
+              "total": 33
+            },
+            "Metroliner": {
+              "correct": 8,
+              "total": 34
+            },
+            "Model B200": {
+              "correct": 20,
+              "total": 33
+            },
+            "PA-28": {
+              "correct": 6,
+              "total": 33
+            },
+            "SR-20": {
+              "correct": 32,
+              "total": 34
+            },
+            "Saab 2000": {
+              "correct": 17,
+              "total": 33
+            },
+            "Saab 340": {
+              "correct": 16,
+              "total": 33
+            },
+            "Spitfire": {
+              "correct": 29,
+              "total": 34
+            },
+            "Tornado": {
+              "correct": 16,
+              "total": 33
+            },
+            "Tu-134": {
+              "correct": 9,
+              "total": 33
+            },
+            "Tu-154": {
+              "correct": 8,
+              "total": 34
+            },
+            "Yak-42": {
+              "correct": 15,
+              "total": 33
+            }
+          },
+          "predictions_sha256": "80c3d406f52133fbafca4745778f5fbcc5d5e9a2fe900ba40eea18e14b238f9d"
+        },
+        "gpt_mm": {
+          "state": "complete",
+          "completed": 3333,
+          "total": 3333,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.23889888988898889,
+            "top4_any_same_label_fraction": 0.49954995499549953
+          },
+          "correct": 998,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.2994299429942994,
+          "accuracy_wilson_95": [
+            0.2841190329071722,
+            0.31520265603140796
+          ],
+          "macro_class_accuracy": 0.2992067736185383,
+          "per_class": {
+            "707-320": {
+              "correct": 2,
+              "total": 33
+            },
+            "727-200": {
+              "correct": 2,
+              "total": 33
+            },
+            "737-200": {
+              "correct": 3,
+              "total": 34
+            },
+            "737-300": {
+              "correct": 4,
+              "total": 33
+            },
+            "737-400": {
+              "correct": 1,
+              "total": 33
+            },
+            "737-500": {
+              "correct": 3,
+              "total": 34
+            },
+            "737-600": {
+              "correct": 18,
+              "total": 33
+            },
+            "737-700": {
+              "correct": 1,
+              "total": 33
+            },
+            "737-800": {
+              "correct": 2,
+              "total": 34
+            },
+            "737-900": {
+              "correct": 17,
+              "total": 33
+            },
+            "747-100": {
+              "correct": 9,
+              "total": 33
+            },
+            "747-200": {
+              "correct": 4,
+              "total": 34
+            },
+            "747-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "747-400": {
+              "correct": 14,
+              "total": 33
+            },
+            "757-200": {
+              "correct": 1,
+              "total": 34
+            },
+            "757-300": {
+              "correct": 11,
+              "total": 33
+            },
+            "767-200": {
+              "correct": 1,
+              "total": 33
+            },
+            "767-300": {
+              "correct": 2,
+              "total": 34
+            },
+            "767-400": {
+              "correct": 22,
+              "total": 33
+            },
+            "777-200": {
+              "correct": 5,
+              "total": 33
+            },
+            "777-300": {
+              "correct": 7,
+              "total": 34
+            },
+            "A300B4": {
+              "correct": 1,
+              "total": 33
+            },
+            "A310": {
+              "correct": 0,
+              "total": 33
+            },
+            "A318": {
+              "correct": 21,
+              "total": 34
+            },
+            "A319": {
+              "correct": 1,
+              "total": 33
+            },
+            "A320": {
+              "correct": 1,
+              "total": 33
+            },
+            "A321": {
+              "correct": 12,
+              "total": 34
+            },
+            "A330-200": {
+              "correct": 3,
+              "total": 33
+            },
+            "A330-300": {
+              "correct": 5,
+              "total": 33
+            },
+            "A340-200": {
+              "correct": 11,
+              "total": 34
+            },
+            "A340-300": {
+              "correct": 3,
+              "total": 33
+            },
+            "A340-500": {
+              "correct": 19,
+              "total": 33
+            },
+            "A340-600": {
+              "correct": 13,
+              "total": 34
+            },
+            "A380": {
+              "correct": 23,
+              "total": 33
+            },
+            "ATR-42": {
+              "correct": 3,
+              "total": 33
+            },
+            "ATR-72": {
+              "correct": 14,
+              "total": 34
+            },
+            "An-12": {
+              "correct": 23,
+              "total": 33
+            },
+            "BAE 146-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "BAE 146-300": {
+              "correct": 7,
+              "total": 34
+            },
+            "BAE-125": {
+              "correct": 8,
+              "total": 33
+            },
+            "Beechcraft 1900": {
+              "correct": 8,
+              "total": 33
+            },
+            "Boeing 717": {
+              "correct": 10,
+              "total": 34
+            },
+            "C-130": {
+              "correct": 26,
+              "total": 33
+            },
+            "C-47": {
+              "correct": 11,
+              "total": 33
+            },
+            "CRJ-200": {
+              "correct": 0,
+              "total": 34
+            },
+            "CRJ-700": {
+              "correct": 9,
+              "total": 33
+            },
+            "CRJ-900": {
+              "correct": 7,
+              "total": 33
+            },
+            "Cessna 172": {
+              "correct": 22,
+              "total": 34
+            },
+            "Cessna 208": {
+              "correct": 16,
+              "total": 33
+            },
+            "Cessna 525": {
+              "correct": 13,
+              "total": 33
+            },
+            "Cessna 560": {
+              "correct": 18,
+              "total": 34
+            },
+            "Challenger 600": {
+              "correct": 3,
+              "total": 33
+            },
+            "DC-10": {
+              "correct": 1,
+              "total": 33
+            },
+            "DC-3": {
+              "correct": 11,
+              "total": 34
+            },
+            "DC-6": {
+              "correct": 15,
+              "total": 33
+            },
+            "DC-8": {
+              "correct": 0,
+              "total": 33
+            },
+            "DC-9-30": {
+              "correct": 3,
+              "total": 34
+            },
+            "DH-82": {
+              "correct": 31,
+              "total": 33
+            },
+            "DHC-1": {
+              "correct": 26,
+              "total": 33
+            },
+            "DHC-6": {
+              "correct": 27,
+              "total": 34
+            },
+            "DHC-8-100": {
+              "correct": 9,
+              "total": 33
+            },
+            "DHC-8-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "DR-400": {
+              "correct": 14,
+              "total": 34
+            },
+            "Dornier 328": {
+              "correct": 14,
+              "total": 33
+            },
+            "E-170": {
+              "correct": 14,
+              "total": 33
+            },
+            "E-190": {
+              "correct": 10,
+              "total": 34
+            },
+            "E-195": {
+              "correct": 17,
+              "total": 33
+            },
+            "EMB-120": {
+              "correct": 9,
+              "total": 33
+            },
+            "ERJ 135": {
+              "correct": 10,
+              "total": 34
+            },
+            "ERJ 145": {
+              "correct": 5,
+              "total": 33
+            },
+            "Embraer Legacy 600": {
+              "correct": 11,
+              "total": 33
+            },
+            "Eurofighter Typhoon": {
+              "correct": 28,
+              "total": 34
+            },
+            "F-16A/B": {
+              "correct": 18,
+              "total": 33
+            },
+            "F/A-18": {
+              "correct": 21,
+              "total": 33
+            },
+            "Falcon 2000": {
+              "correct": 7,
+              "total": 34
+            },
+            "Falcon 900": {
+              "correct": 5,
+              "total": 33
+            },
+            "Fokker 100": {
+              "correct": 1,
+              "total": 33
+            },
+            "Fokker 50": {
+              "correct": 8,
+              "total": 34
+            },
+            "Fokker 70": {
+              "correct": 12,
+              "total": 33
+            },
+            "Global Express": {
+              "correct": 11,
+              "total": 33
+            },
+            "Gulfstream IV": {
+              "correct": 3,
+              "total": 34
+            },
+            "Gulfstream V": {
+              "correct": 5,
+              "total": 33
+            },
+            "Hawk T1": {
+              "correct": 32,
+              "total": 33
+            },
+            "Il-76": {
+              "correct": 21,
+              "total": 34
+            },
+            "L-1011": {
+              "correct": 6,
+              "total": 33
+            },
+            "MD-11": {
+              "correct": 3,
+              "total": 33
+            },
+            "MD-80": {
+              "correct": 0,
+              "total": 34
+            },
+            "MD-87": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-90": {
+              "correct": 6,
+              "total": 33
+            },
+            "Metroliner": {
+              "correct": 8,
+              "total": 34
+            },
+            "Model B200": {
+              "correct": 13,
+              "total": 33
+            },
+            "PA-28": {
+              "correct": 5,
+              "total": 33
+            },
+            "SR-20": {
+              "correct": 26,
+              "total": 34
+            },
+            "Saab 2000": {
+              "correct": 8,
+              "total": 33
+            },
+            "Saab 340": {
+              "correct": 5,
+              "total": 33
+            },
+            "Spitfire": {
+              "correct": 29,
+              "total": 34
+            },
+            "Tornado": {
+              "correct": 11,
+              "total": 33
+            },
+            "Tu-134": {
+              "correct": 4,
+              "total": 33
+            },
+            "Tu-154": {
+              "correct": 6,
+              "total": 34
+            },
+            "Yak-42": {
+              "correct": 6,
+              "total": 33
+            }
+          },
+          "predictions_sha256": "fe2f76607fc1b58356019899e3eb1f9fdcb42c81662e2cbb5ff47f048f3b2ee6"
+        },
+        "detriever": {
+          "state": "complete",
+          "completed": 3333,
+          "total": 3333,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.3004800480048005,
+            "top4_any_same_label_fraction": 0.5304530453045304
+          },
+          "correct": 1144,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.3432343234323432,
+          "accuracy_wilson_95": [
+            0.32730432895194184,
+            0.35952526337477186
+          ],
+          "macro_class_accuracy": 0.3432620320855615,
+          "per_class": {
+            "707-320": {
+              "correct": 6,
+              "total": 33
+            },
+            "727-200": {
+              "correct": 2,
+              "total": 33
+            },
+            "737-200": {
+              "correct": 5,
+              "total": 34
+            },
+            "737-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "737-400": {
+              "correct": 2,
+              "total": 33
+            },
+            "737-500": {
+              "correct": 2,
+              "total": 34
+            },
+            "737-600": {
+              "correct": 15,
+              "total": 33
+            },
+            "737-700": {
+              "correct": 4,
+              "total": 33
+            },
+            "737-800": {
+              "correct": 5,
+              "total": 34
+            },
+            "737-900": {
+              "correct": 16,
+              "total": 33
+            },
+            "747-100": {
+              "correct": 13,
+              "total": 33
+            },
+            "747-200": {
+              "correct": 2,
+              "total": 34
+            },
+            "747-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "747-400": {
+              "correct": 15,
+              "total": 33
+            },
+            "757-200": {
+              "correct": 0,
+              "total": 34
+            },
+            "757-300": {
+              "correct": 14,
+              "total": 33
+            },
+            "767-200": {
+              "correct": 1,
+              "total": 33
+            },
+            "767-300": {
+              "correct": 0,
+              "total": 34
+            },
+            "767-400": {
+              "correct": 24,
+              "total": 33
+            },
+            "777-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "777-300": {
+              "correct": 6,
+              "total": 34
+            },
+            "A300B4": {
+              "correct": 1,
+              "total": 33
+            },
+            "A310": {
+              "correct": 3,
+              "total": 33
+            },
+            "A318": {
+              "correct": 23,
+              "total": 34
+            },
+            "A319": {
+              "correct": 2,
+              "total": 33
+            },
+            "A320": {
+              "correct": 2,
+              "total": 33
+            },
+            "A321": {
+              "correct": 9,
+              "total": 34
+            },
+            "A330-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "A330-300": {
+              "correct": 5,
+              "total": 33
+            },
+            "A340-200": {
+              "correct": 9,
+              "total": 34
+            },
+            "A340-300": {
+              "correct": 7,
+              "total": 33
+            },
+            "A340-500": {
+              "correct": 22,
+              "total": 33
+            },
+            "A340-600": {
+              "correct": 18,
+              "total": 34
+            },
+            "A380": {
+              "correct": 21,
+              "total": 33
+            },
+            "ATR-42": {
+              "correct": 7,
+              "total": 33
+            },
+            "ATR-72": {
+              "correct": 22,
+              "total": 34
+            },
+            "An-12": {
+              "correct": 24,
+              "total": 33
+            },
+            "BAE 146-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "BAE 146-300": {
+              "correct": 9,
+              "total": 34
+            },
+            "BAE-125": {
+              "correct": 9,
+              "total": 33
+            },
+            "Beechcraft 1900": {
+              "correct": 8,
+              "total": 33
+            },
+            "Boeing 717": {
+              "correct": 9,
+              "total": 34
+            },
+            "C-130": {
+              "correct": 30,
+              "total": 33
+            },
+            "C-47": {
+              "correct": 15,
+              "total": 33
+            },
+            "CRJ-200": {
+              "correct": 2,
+              "total": 34
+            },
+            "CRJ-700": {
+              "correct": 10,
+              "total": 33
+            },
+            "CRJ-900": {
+              "correct": 3,
+              "total": 33
+            },
+            "Cessna 172": {
+              "correct": 22,
+              "total": 34
+            },
+            "Cessna 208": {
+              "correct": 20,
+              "total": 33
+            },
+            "Cessna 525": {
+              "correct": 10,
+              "total": 33
+            },
+            "Cessna 560": {
+              "correct": 12,
+              "total": 34
+            },
+            "Challenger 600": {
+              "correct": 3,
+              "total": 33
+            },
+            "DC-10": {
+              "correct": 3,
+              "total": 33
+            },
+            "DC-3": {
+              "correct": 12,
+              "total": 34
+            },
+            "DC-6": {
+              "correct": 23,
+              "total": 33
+            },
+            "DC-8": {
+              "correct": 5,
+              "total": 33
+            },
+            "DC-9-30": {
+              "correct": 6,
+              "total": 34
+            },
+            "DH-82": {
+              "correct": 32,
+              "total": 33
+            },
+            "DHC-1": {
+              "correct": 28,
+              "total": 33
+            },
+            "DHC-6": {
+              "correct": 25,
+              "total": 34
+            },
+            "DHC-8-100": {
+              "correct": 12,
+              "total": 33
+            },
+            "DHC-8-300": {
+              "correct": 9,
+              "total": 33
+            },
+            "DR-400": {
+              "correct": 17,
+              "total": 34
+            },
+            "Dornier 328": {
+              "correct": 15,
+              "total": 33
+            },
+            "E-170": {
+              "correct": 16,
+              "total": 33
+            },
+            "E-190": {
+              "correct": 11,
+              "total": 34
+            },
+            "E-195": {
+              "correct": 16,
+              "total": 33
+            },
+            "EMB-120": {
+              "correct": 11,
+              "total": 33
+            },
+            "ERJ 135": {
+              "correct": 11,
+              "total": 34
+            },
+            "ERJ 145": {
+              "correct": 12,
+              "total": 33
+            },
+            "Embraer Legacy 600": {
+              "correct": 14,
+              "total": 33
+            },
+            "Eurofighter Typhoon": {
+              "correct": 18,
+              "total": 34
+            },
+            "F-16A/B": {
+              "correct": 19,
+              "total": 33
+            },
+            "F/A-18": {
+              "correct": 21,
+              "total": 33
+            },
+            "Falcon 2000": {
+              "correct": 8,
+              "total": 34
+            },
+            "Falcon 900": {
+              "correct": 9,
+              "total": 33
+            },
+            "Fokker 100": {
+              "correct": 2,
+              "total": 33
+            },
+            "Fokker 50": {
+              "correct": 10,
+              "total": 34
+            },
+            "Fokker 70": {
+              "correct": 15,
+              "total": 33
+            },
+            "Global Express": {
+              "correct": 13,
+              "total": 33
+            },
+            "Gulfstream IV": {
+              "correct": 3,
+              "total": 34
+            },
+            "Gulfstream V": {
+              "correct": 13,
+              "total": 33
+            },
+            "Hawk T1": {
+              "correct": 32,
+              "total": 33
+            },
+            "Il-76": {
+              "correct": 27,
+              "total": 34
+            },
+            "L-1011": {
+              "correct": 3,
+              "total": 33
+            },
+            "MD-11": {
+              "correct": 3,
+              "total": 33
+            },
+            "MD-80": {
+              "correct": 0,
+              "total": 34
+            },
+            "MD-87": {
+              "correct": 8,
+              "total": 33
+            },
+            "MD-90": {
+              "correct": 6,
+              "total": 33
+            },
+            "Metroliner": {
+              "correct": 7,
+              "total": 34
+            },
+            "Model B200": {
+              "correct": 19,
+              "total": 33
+            },
+            "PA-28": {
+              "correct": 9,
+              "total": 33
+            },
+            "SR-20": {
+              "correct": 31,
+              "total": 34
+            },
+            "Saab 2000": {
+              "correct": 7,
+              "total": 33
+            },
+            "Saab 340": {
+              "correct": 10,
+              "total": 33
+            },
+            "Spitfire": {
+              "correct": 31,
+              "total": 34
+            },
+            "Tornado": {
+              "correct": 21,
+              "total": 33
+            },
+            "Tu-134": {
+              "correct": 8,
+              "total": 33
+            },
+            "Tu-154": {
+              "correct": 10,
+              "total": 34
+            },
+            "Yak-42": {
+              "correct": 8,
+              "total": 33
+            }
+          },
+          "predictions_sha256": "9076d9b2533ce889d1a48182e687bbfd8cbd499c4a43313332d44294f6e86d09"
+        },
+        "rices": {
+          "state": "complete",
+          "completed": 3333,
+          "total": 3333,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.3154815481548155,
+            "top4_any_same_label_fraction": 0.5955595559555955
+          },
+          "correct": 1355,
+          "illegal_or_unknown": 0,
+          "accuracy": 0.4065406540654065,
+          "accuracy_wilson_95": [
+            0.38998203756791827,
+            0.4233144562306871
+          ],
+          "macro_class_accuracy": 0.406301247771836,
+          "per_class": {
+            "707-320": {
+              "correct": 3,
+              "total": 33
+            },
+            "727-200": {
+              "correct": 0,
+              "total": 33
+            },
+            "737-200": {
+              "correct": 4,
+              "total": 34
+            },
+            "737-300": {
+              "correct": 10,
+              "total": 33
+            },
+            "737-400": {
+              "correct": 4,
+              "total": 33
+            },
+            "737-500": {
+              "correct": 4,
+              "total": 34
+            },
+            "737-600": {
+              "correct": 24,
+              "total": 33
+            },
+            "737-700": {
+              "correct": 4,
+              "total": 33
+            },
+            "737-800": {
+              "correct": 4,
+              "total": 34
+            },
+            "737-900": {
+              "correct": 23,
+              "total": 33
+            },
+            "747-100": {
+              "correct": 10,
+              "total": 33
+            },
+            "747-200": {
+              "correct": 4,
+              "total": 34
+            },
+            "747-300": {
+              "correct": 9,
+              "total": 33
+            },
+            "747-400": {
+              "correct": 10,
+              "total": 33
+            },
+            "757-200": {
+              "correct": 1,
+              "total": 34
+            },
+            "757-300": {
+              "correct": 20,
+              "total": 33
+            },
+            "767-200": {
+              "correct": 3,
+              "total": 33
+            },
+            "767-300": {
+              "correct": 3,
+              "total": 34
+            },
+            "767-400": {
+              "correct": 24,
+              "total": 33
+            },
+            "777-200": {
+              "correct": 4,
+              "total": 33
+            },
+            "777-300": {
+              "correct": 7,
+              "total": 34
+            },
+            "A300B4": {
+              "correct": 1,
+              "total": 33
+            },
+            "A310": {
+              "correct": 1,
+              "total": 33
+            },
+            "A318": {
+              "correct": 29,
+              "total": 34
+            },
+            "A319": {
+              "correct": 1,
+              "total": 33
+            },
+            "A320": {
+              "correct": 2,
+              "total": 33
+            },
+            "A321": {
+              "correct": 6,
+              "total": 34
+            },
+            "A330-200": {
+              "correct": 2,
+              "total": 33
+            },
+            "A330-300": {
+              "correct": 9,
+              "total": 33
+            },
+            "A340-200": {
+              "correct": 21,
+              "total": 34
+            },
+            "A340-300": {
+              "correct": 8,
+              "total": 33
+            },
+            "A340-500": {
+              "correct": 19,
+              "total": 33
+            },
+            "A340-600": {
+              "correct": 23,
+              "total": 34
+            },
+            "A380": {
+              "correct": 28,
+              "total": 33
+            },
+            "ATR-42": {
+              "correct": 3,
+              "total": 33
+            },
+            "ATR-72": {
+              "correct": 18,
+              "total": 34
+            },
+            "An-12": {
+              "correct": 26,
+              "total": 33
+            },
+            "BAE 146-200": {
+              "correct": 8,
+              "total": 33
+            },
+            "BAE 146-300": {
+              "correct": 11,
+              "total": 34
+            },
+            "BAE-125": {
+              "correct": 16,
+              "total": 33
+            },
+            "Beechcraft 1900": {
+              "correct": 10,
+              "total": 33
+            },
+            "Boeing 717": {
+              "correct": 20,
+              "total": 34
+            },
+            "C-130": {
+              "correct": 28,
+              "total": 33
+            },
+            "C-47": {
+              "correct": 8,
+              "total": 33
+            },
+            "CRJ-200": {
+              "correct": 1,
+              "total": 34
+            },
+            "CRJ-700": {
+              "correct": 11,
+              "total": 33
+            },
+            "CRJ-900": {
+              "correct": 23,
+              "total": 33
+            },
+            "Cessna 172": {
+              "correct": 27,
+              "total": 34
+            },
+            "Cessna 208": {
+              "correct": 19,
+              "total": 33
+            },
+            "Cessna 525": {
+              "correct": 17,
+              "total": 33
+            },
+            "Cessna 560": {
+              "correct": 20,
+              "total": 34
+            },
+            "Challenger 600": {
+              "correct": 2,
+              "total": 33
+            },
+            "DC-10": {
+              "correct": 1,
+              "total": 33
+            },
+            "DC-3": {
+              "correct": 20,
+              "total": 34
+            },
+            "DC-6": {
+              "correct": 14,
+              "total": 33
+            },
+            "DC-8": {
+              "correct": 2,
+              "total": 33
+            },
+            "DC-9-30": {
+              "correct": 1,
+              "total": 34
+            },
+            "DH-82": {
+              "correct": 26,
+              "total": 33
+            },
+            "DHC-1": {
+              "correct": 26,
+              "total": 33
+            },
+            "DHC-6": {
+              "correct": 24,
+              "total": 34
+            },
+            "DHC-8-100": {
+              "correct": 13,
+              "total": 33
+            },
+            "DHC-8-300": {
+              "correct": 10,
+              "total": 33
+            },
+            "DR-400": {
+              "correct": 25,
+              "total": 34
+            },
+            "Dornier 328": {
+              "correct": 21,
+              "total": 33
+            },
+            "E-170": {
+              "correct": 19,
+              "total": 33
+            },
+            "E-190": {
+              "correct": 14,
+              "total": 34
+            },
+            "E-195": {
+              "correct": 21,
+              "total": 33
+            },
+            "EMB-120": {
+              "correct": 20,
+              "total": 33
+            },
+            "ERJ 135": {
+              "correct": 19,
+              "total": 34
+            },
+            "ERJ 145": {
+              "correct": 8,
+              "total": 33
+            },
+            "Embraer Legacy 600": {
+              "correct": 13,
+              "total": 33
+            },
+            "Eurofighter Typhoon": {
+              "correct": 33,
+              "total": 34
+            },
+            "F-16A/B": {
+              "correct": 26,
+              "total": 33
+            },
+            "F/A-18": {
+              "correct": 31,
+              "total": 33
+            },
+            "Falcon 2000": {
+              "correct": 22,
+              "total": 34
+            },
+            "Falcon 900": {
+              "correct": 10,
+              "total": 33
+            },
+            "Fokker 100": {
+              "correct": 5,
+              "total": 33
+            },
+            "Fokker 50": {
+              "correct": 15,
+              "total": 34
+            },
+            "Fokker 70": {
+              "correct": 20,
+              "total": 33
+            },
+            "Global Express": {
+              "correct": 13,
+              "total": 33
+            },
+            "Gulfstream IV": {
+              "correct": 3,
+              "total": 34
+            },
+            "Gulfstream V": {
+              "correct": 21,
+              "total": 33
+            },
+            "Hawk T1": {
+              "correct": 32,
+              "total": 33
+            },
+            "Il-76": {
+              "correct": 28,
+              "total": 34
+            },
+            "L-1011": {
+              "correct": 5,
+              "total": 33
+            },
+            "MD-11": {
+              "correct": 4,
+              "total": 33
+            },
+            "MD-80": {
+              "correct": 0,
+              "total": 34
+            },
+            "MD-87": {
+              "correct": 13,
+              "total": 33
+            },
+            "MD-90": {
+              "correct": 10,
+              "total": 33
+            },
+            "Metroliner": {
+              "correct": 8,
+              "total": 34
+            },
+            "Model B200": {
+              "correct": 16,
+              "total": 33
+            },
+            "PA-28": {
+              "correct": 9,
+              "total": 33
+            },
+            "SR-20": {
+              "correct": 31,
+              "total": 34
+            },
+            "Saab 2000": {
+              "correct": 16,
+              "total": 33
+            },
+            "Saab 340": {
+              "correct": 15,
+              "total": 33
+            },
+            "Spitfire": {
+              "correct": 32,
+              "total": 34
+            },
+            "Tornado": {
+              "correct": 23,
+              "total": 33
+            },
+            "Tu-134": {
+              "correct": 10,
+              "total": 33
+            },
+            "Tu-154": {
+              "correct": 5,
+              "total": 34
+            },
+            "Yak-42": {
+              "correct": 9,
+              "total": 33
+            }
+          },
+          "predictions_sha256": "5ca25a1ab8f1469c82501a86102a41f74eed547e1bc9580ca6ece87b4bff77cc"
+        }
+      }
+    },
+    "cub": {
+      "bank_n": 5994,
+      "query_n": 5794,
+      "manifest_sha256": "8e65e2b6a61afe8e62b16db3413352157a9aff8bbfcfadb75668244838eb8bd1",
+      "methods": {
+        "raw": {
+          "state": "partial",
+          "completed": 1529,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.4649206075250259,
+            "top4_any_same_label_fraction": 0.772868484639282
+          },
+          "correct": 953,
+          "illegal_or_unknown": 0
+        },
+        "proj": {
+          "state": "selected",
+          "completed": 0,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.5746461857093546,
+            "top4_any_same_label_fraction": 0.8398343113565757
+          }
+        },
+        "learn": {
+          "state": "selected",
+          "completed": 0,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.5976872626855367,
+            "top4_any_same_label_fraction": 0.8496720745598896
+          }
+        },
+        "gpt_mm": {
+          "state": "selected",
+          "completed": 0,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.3767259233690024,
+            "top4_any_same_label_fraction": 0.69278564031757
+          }
+        },
+        "detriever": {
+          "state": "selected",
+          "completed": 0,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.4933551950293407,
+            "top4_any_same_label_fraction": 0.7046945115636866
+          }
+        },
+        "rices": {
+          "state": "selected",
+          "completed": 0,
+          "total": 5794,
+          "selection_metrics": {
+            "top4_same_label_fraction": 0.4662581981360028,
+            "top4_any_same_label_fraction": 0.787193648602002
+          }
+        }
+      }
+    },
+    "dogs": {
+      "bank_n": 12000,
+      "query_n": 8580,
+      "manifest_sha256": "3e5ef1aeb42f6d97534c56723d61d71d5e62f6b2bd0aad01a200b651f2d1db4a",
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 8580
+        }
+      }
+    },
+    "pets": {
+      "bank_n": 3680,
+      "query_n": 3669,
+      "manifest_sha256": "af64076ef3f93087413ef93232d41a00afb9d53daee2d1450ce25414c15d154a",
+      "methods": {
+        "raw": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "proj": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "learn": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "gpt_mm": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "detriever": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        },
+        "rices": {
+          "state": "missing_selection",
+          "completed": 0,
+          "total": 3669
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "dataset": "dtd",
+      "first": "raw",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 1.4792553191489362,
+      "queries": 1880,
+      "first_rescued": 1424,
+      "second_rescued": 1322,
+      "first_only_rescued": 193,
+      "second_only_rescued": 91,
+      "difference_pp": 5.425531914893617,
+      "paired_bootstrap_low_pp": 3.6702127659574466,
+      "paired_bootstrap_high_pp": 7.180851063829787,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "dtd",
+      "first": "proj",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 1.2627659574468084,
+      "queries": 1880,
+      "first_rescued": 1467,
+      "second_rescued": 1322,
+      "first_only_rescued": 224,
+      "second_only_rescued": 79,
+      "difference_pp": 7.712765957446808,
+      "paired_bootstrap_low_pp": 5.904255319148936,
+      "paired_bootstrap_high_pp": 9.46808510638298,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "dtd",
+      "first": "learn",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 1.2643617021276596,
+      "queries": 1880,
+      "first_rescued": 1474,
+      "second_rescued": 1322,
+      "first_only_rescued": 224,
+      "second_only_rescued": 72,
+      "difference_pp": 8.085106382978724,
+      "paired_bootstrap_low_pp": 6.329787234042553,
+      "paired_bootstrap_high_pp": 9.840425531914894,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "dtd",
+      "first": "raw",
+      "second": "detriever",
+      "mean_shared_demonstrations_of_four": 1.2313829787234043,
+      "queries": 1880,
+      "first_rescued": 1424,
+      "second_rescued": 1371,
+      "first_only_rescued": 151,
+      "second_only_rescued": 98,
+      "difference_pp": 2.8191489361702127,
+      "paired_bootstrap_low_pp": 1.2234042553191489,
+      "paired_bootstrap_high_pp": 4.468085106382978,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "dtd",
+      "first": "proj",
+      "second": "detriever",
+      "mean_shared_demonstrations_of_four": 0.9888297872340426,
+      "queries": 1880,
+      "first_rescued": 1467,
+      "second_rescued": 1371,
+      "first_only_rescued": 181,
+      "second_only_rescued": 85,
+      "difference_pp": 5.1063829787234045,
+      "paired_bootstrap_low_pp": 3.4574468085106385,
+      "paired_bootstrap_high_pp": 6.75531914893617,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "dtd",
+      "first": "learn",
+      "second": "detriever",
+      "mean_shared_demonstrations_of_four": 1.0127659574468084,
+      "queries": 1880,
+      "first_rescued": 1474,
+      "second_rescued": 1371,
+      "first_only_rescued": 180,
+      "second_only_rescued": 77,
+      "difference_pp": 5.4787234042553195,
+      "paired_bootstrap_low_pp": 3.882978723404255,
+      "paired_bootstrap_high_pp": 7.180851063829787,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "aircraft",
+      "first": "raw",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 0.981998199819982,
+      "queries": 3333,
+      "first_rescued": 1115,
+      "second_rescued": 998,
+      "first_only_rescued": 385,
+      "second_only_rescued": 268,
+      "difference_pp": 3.5103510351035103,
+      "paired_bootstrap_low_pp": 2.04020402040204,
+      "paired_bootstrap_high_pp": 4.9804980498049805,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "aircraft",
+      "first": "proj",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 0.7257725772577258,
+      "queries": 3333,
+      "first_rescued": 1323,
+      "second_rescued": 998,
+      "first_only_rescued": 536,
+      "second_only_rescued": 211,
+      "difference_pp": 9.750975097509752,
+      "paired_bootstrap_low_pp": 8.16081608160816,
+      "paired_bootstrap_high_pp": 11.281128112811281,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "aircraft",
+      "first": "learn",
+      "second": "gpt_mm",
+      "mean_shared_demonstrations_of_four": 0.7206720672067207,
+      "queries": 3333,
+      "first_rescued": 1368,
+      "second_rescued": 998,
+      "first_only_rescued": 570,
+      "second_only_rescued": 200,
+      "difference_pp": 11.101110111011101,
+      "paired_bootstrap_low_pp": 9.48094809480948,
+      "paired_bootstrap_high_pp": 12.661266126612661,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "aircraft",
+      "first": "raw",
+      "second": "detriever",
+      "mean_shared_demonstrations_of_four": 0.7929792979297929,
+      "queries": 3333,
+      "first_rescued": 1115,
+      "second_rescued": 1144,
+      "first_only_rescued": 337,
+      "second_only_rescued": 366,
+      "difference_pp": -0.8700870087008701,
+      "paired_bootstrap_low_pp": -2.37023702370237,
+      "paired_bootstrap_high_pp": 0.6600660066006601,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "aircraft",
+      "first": "proj",
+      "second": "detriever",
+      "mean_shared_demonstrations_of_four": 0.7551755175517552,
+      "queries": 3333,
+      "first_rescued": 1323,
+      "second_rescued": 1144,
+      "first_only_rescued": 449,
+      "second_only_rescued": 270,
+      "difference_pp": 5.3705370537053705,
+      "paired_bootstrap_low_pp": 3.8403840384038403,
+      "paired_bootstrap_high_pp": 6.930693069306931,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    },
+    {
+      "dataset": "aircraft",
+      "first": "learn",
+      "second": "detriever",
+      "mean_shared_demonstrations_of_four": 0.7698769876987699,
+      "queries": 3333,
+      "first_rescued": 1368,
+      "second_rescued": 1144,
+      "first_only_rescued": 477,
+      "second_only_rescued": 253,
+      "difference_pp": 6.720672067206721,
+      "paired_bootstrap_low_pp": 5.1605160516051605,
+      "paired_bootstrap_high_pp": 8.28082808280828,
+      "bootstrap_repetitions": 10000,
+      "seed": 73
+    }
+  ],
+  "state": "incomplete",
+  "incomplete": [
+    "cub/raw: partial 1529/5794",
+    "cub/proj: selected 0/5794",
+    "cub/learn: selected 0/5794",
+    "cub/gpt_mm: selected 0/5794",
+    "cub/detriever: selected 0/5794",
+    "cub/rices: selected 0/5794",
+    "dogs/raw: missing_selection 0/8580",
+    "dogs/proj: missing_selection 0/8580",
+    "dogs/learn: missing_selection 0/8580",
+    "dogs/gpt_mm: missing_selection 0/8580",
+    "dogs/detriever: missing_selection 0/8580",
+    "dogs/rices: missing_selection 0/8580",
+    "pets/raw: missing_selection 0/3669",
+    "pets/proj: missing_selection 0/3669",
+    "pets/learn: missing_selection 0/3669",
+    "pets/gpt_mm: missing_selection 0/3669",
+    "pets/detriever: missing_selection 0/3669",
+    "pets/rices: missing_selection 0/3669"
+  ]
+}

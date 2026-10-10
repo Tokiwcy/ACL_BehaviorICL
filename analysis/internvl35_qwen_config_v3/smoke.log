@@ -1,0 +1,105 @@
+
+Loading weights:   0%|          | 0/841 [00:00<?, ?it/s]
+Loading weights: 100%|��������������������| 841/841 [00:00<00:00, 16349.83it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie model.language_model.embed_tokens.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:93: UserWarning: Memory efficient kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:858.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:93: UserWarning: Memory Efficient attention has been runtime disabled. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen/native/transformers/sdp_utils_cpp.h:552.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:93: UserWarning: Flash attention kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:860.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:93: UserWarning: Torch was not compiled with flash attention. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:674.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:93: UserWarning: CuDNN attention kernel not used because: (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:862.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py:93: UserWarning: cudnn SDPA does not support sequence length 1. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:458.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+Traceback (most recent call last):
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_internvl35_qwen_pipeline_v3.py", line 259, in <module>
+    main()
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_internvl35_qwen_pipeline_v3.py", line 253, in main
+    smoke()
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_internvl35_qwen_pipeline_v3.py", line 141, in smoke
+    extract_gpt_mm_cache(model, processor, bank[:1], dataset, labels, None, 1, 12,
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\scripts\run_multidataset_main.py", line 223, in extract_gpt_mm_cache
+    generation = model.generate(
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\generation\utils.py", line 2645, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\generation\utils.py", line 2859, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\internvl\modeling_internvl.py", line 812, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\internvl\modeling_internvl.py", line 646, in forward
+    outputs = self.language_model(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\generic.py", line 1040, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\utils\output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 424, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1879, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1827, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 318, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1879, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\torch\nn\modules\module.py", line 1827, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\models\qwen3\modeling_qwen3.py", line 277, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\toki_\Documents\ChatGPT\BehaviorICL\.venv\Lib\site-packages\transformers\integrations\sdpa_attention.py", line 93, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: No available kernel. Aborting execution.

@@ -1,0 +1,345 @@
+{
+  "status": "posthoc exploratory; not part of frozen v1/v2 methods",
+  "datasets": {
+    "dtd": {
+      "task_short": {
+        "layer36": {
+          "top1": 0.6875,
+          "top4": 0.875,
+          "AP": 0.658286864730388
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.59375,
+          "top4": 0.8125,
+          "AP": 0.5497601273202529
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.625,
+          "top4": 0.875,
+          "AP": 0.6264438635617486
+        },
+        "equal_layer_cosine": {
+          "top1": 0.59375,
+          "top4": 0.8125,
+          "AP": 0.5406771685078893
+        }
+      },
+      "task_full": {
+        "layer36": {
+          "top1": 0.8125,
+          "top4": 0.875,
+          "AP": 0.7908463198712321
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.8125,
+          "top4": 0.875,
+          "AP": 0.7339612022434803
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.84375,
+          "top4": 0.90625,
+          "AP": 0.802297651253062
+        },
+        "equal_layer_cosine": {
+          "top1": 0.8125,
+          "top4": 0.875,
+          "AP": 0.7170357906015342
+        }
+      },
+      "label_list_only": {
+        "layer36": {
+          "top1": 0.78125,
+          "top4": 0.90625,
+          "AP": 0.7842426830131128
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.75,
+          "top4": 0.90625,
+          "AP": 0.7139178999408968
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.8125,
+          "top4": 0.90625,
+          "AP": 0.7981213429654506
+        },
+        "equal_layer_cosine": {
+          "top1": 0.78125,
+          "top4": 0.875,
+          "AP": 0.6978722727043791
+        }
+      }
+    },
+    "aircraft": {
+      "task_short": {
+        "layer36": {
+          "top1": 0.5,
+          "top4": 0.78125,
+          "AP": 0.5796545182952728
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.34375,
+          "top4": 0.75,
+          "AP": 0.4143907541444174
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.40625,
+          "top4": 0.78125,
+          "AP": 0.5017036909440498
+        },
+        "equal_layer_cosine": {
+          "top1": 0.40625,
+          "top4": 0.75,
+          "AP": 0.43219863215265997
+        }
+      },
+      "task_full": {
+        "layer36": {
+          "top1": 0.6875,
+          "top4": 0.8125,
+          "AP": 0.6373813716659111
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.53125,
+          "top4": 0.84375,
+          "AP": 0.5941292259415998
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.625,
+          "top4": 0.78125,
+          "AP": 0.6445966100222604
+        },
+        "equal_layer_cosine": {
+          "top1": 0.5625,
+          "top4": 0.8125,
+          "AP": 0.58550634523276
+        }
+      },
+      "label_list_only": {
+        "layer36": {
+          "top1": 0.5625,
+          "top4": 0.8125,
+          "AP": 0.5914117804562833
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.46875,
+          "top4": 0.84375,
+          "AP": 0.5594715733955653
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.59375,
+          "top4": 0.84375,
+          "AP": 0.6005359849800522
+        },
+        "equal_layer_cosine": {
+          "top1": 0.5,
+          "top4": 0.84375,
+          "AP": 0.5503057607075464
+        }
+      }
+    },
+    "cub": {
+      "task_short": {
+        "layer36": {
+          "top1": 0.625,
+          "top4": 0.84375,
+          "AP": 0.6818963729884245
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.40625,
+          "top4": 0.6875,
+          "AP": 0.4190720141764108
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.5625,
+          "top4": 0.71875,
+          "AP": 0.5529947318341873
+        },
+        "equal_layer_cosine": {
+          "top1": 0.375,
+          "top4": 0.71875,
+          "AP": 0.4493019864086505
+        }
+      },
+      "task_full": {
+        "layer36": {
+          "top1": 0.625,
+          "top4": 0.84375,
+          "AP": 0.6593246140166764
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.53125,
+          "top4": 0.8125,
+          "AP": 0.6140672687731743
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.625,
+          "top4": 0.8125,
+          "AP": 0.6596498256860099
+        },
+        "equal_layer_cosine": {
+          "top1": 0.5625,
+          "top4": 0.75,
+          "AP": 0.6148873729291106
+        }
+      },
+      "label_list_only": {
+        "layer36": {
+          "top1": 0.5625,
+          "top4": 0.8125,
+          "AP": 0.6152185254971574
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.53125,
+          "top4": 0.8125,
+          "AP": 0.5946070335025336
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.59375,
+          "top4": 0.875,
+          "AP": 0.6287190514164198
+        },
+        "equal_layer_cosine": {
+          "top1": 0.5625,
+          "top4": 0.78125,
+          "AP": 0.5925172273962596
+        }
+      }
+    },
+    "dogs": {
+      "task_short": {
+        "layer36": {
+          "top1": 0.65625,
+          "top4": 0.96875,
+          "AP": 0.701178462115962
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.46875,
+          "top4": 0.75,
+          "AP": 0.4770984932097394
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.59375,
+          "top4": 0.90625,
+          "AP": 0.5896456428855326
+        },
+        "equal_layer_cosine": {
+          "top1": 0.59375,
+          "top4": 0.84375,
+          "AP": 0.562053076983388
+        }
+      },
+      "task_full": {
+        "layer36": {
+          "top1": 0.5625,
+          "top4": 0.90625,
+          "AP": 0.6547295913104737
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.5625,
+          "top4": 0.90625,
+          "AP": 0.6347117986180486
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.59375,
+          "top4": 0.90625,
+          "AP": 0.6552724612723073
+        },
+        "equal_layer_cosine": {
+          "top1": 0.5625,
+          "top4": 0.90625,
+          "AP": 0.629656979454932
+        }
+      },
+      "label_list_only": {
+        "layer36": {
+          "top1": 0.53125,
+          "top4": 0.84375,
+          "AP": 0.6424364433544207
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.5625,
+          "top4": 0.875,
+          "AP": 0.6219234461627554
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.5625,
+          "top4": 0.9375,
+          "AP": 0.6546029621420246
+        },
+        "equal_layer_cosine": {
+          "top1": 0.5625,
+          "top4": 0.90625,
+          "AP": 0.625289997342406
+        }
+      }
+    },
+    "pets": {
+      "task_short": {
+        "layer36": {
+          "top1": 0.84375,
+          "top4": 0.96875,
+          "AP": 0.8422661973443224
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.65625,
+          "top4": 0.78125,
+          "AP": 0.5625947024252116
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.8125,
+          "top4": 0.90625,
+          "AP": 0.7224646013708513
+        },
+        "equal_layer_cosine": {
+          "top1": 0.71875,
+          "top4": 0.84375,
+          "AP": 0.6131885469712787
+        }
+      },
+      "task_full": {
+        "layer36": {
+          "top1": 0.875,
+          "top4": 0.9375,
+          "AP": 0.8606823979591837
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.78125,
+          "top4": 0.90625,
+          "AP": 0.7768254164313947
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.875,
+          "top4": 0.9375,
+          "AP": 0.855530753968254
+        },
+        "equal_layer_cosine": {
+          "top1": 0.78125,
+          "top4": 0.90625,
+          "AP": 0.7533483385360906
+        }
+      },
+      "label_list_only": {
+        "layer36": {
+          "top1": 0.84375,
+          "top4": 0.9375,
+          "AP": 0.8358624538177339
+        },
+        "mean_normalized_36_layers": {
+          "top1": 0.75,
+          "top4": 0.9375,
+          "AP": 0.7528579927017427
+        },
+        "mean_normalized_layer_velocity": {
+          "top1": 0.8125,
+          "top4": 0.9375,
+          "AP": 0.8263460497835498
+        },
+        "equal_layer_cosine": {
+          "top1": 0.75,
+          "top4": 0.90625,
+          "AP": 0.7401975876501746
+        }
+      }
+    }
+  }
+}

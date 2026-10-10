@@ -1,0 +1,17 @@
+{
+  "state": "running_joint_pipeline",
+  "boot_identity": "2026-10-09T01:08:20.3006610Z",
+  "started_utc": "2026-10-08T09:41:14.029299+00:00",
+  "pid": 8920,
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "checked_utc": "2026-10-09T01:30:26.632315+00:00",
+  "parent_state": "paused",
+  "parent_current": {
+    "dataset": "aircraft",
+    "stage": "icl_rices"
+  },
+  "paused_utc": "2026-10-09T14:45:46.808755+00:00",
+  "pause_reason": "Explicit human pause on 2026-10-09; verified experiment processes stopped and heartbeat PAUSED",
+  "resumed_utc": "2026-10-09T17:49:57.122561+00:00",
+  "operation_receipt": "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\analysis\\internvl35_joint_v2\\user_resume_1075062680e57a58.json"
+}

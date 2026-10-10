@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "model": "OpenGVLab/InternVL3_5-4B-HF",
+  "revision": "6bd4487402110ef9889ba50eb7aefeb302526fed",
+  "datasets": [
+    "aircraft",
+    "cub",
+    "dogs",
+    "pets"
+  ],
+  "methods": [
+    "raw",
+    "proj",
+    "learn",
+    "gpt_mm",
+    "detriever",
+    "rices"
+  ],
+  "seed": 73,
+  "shots": 4,
+  "official_full_bank_and_test": true,
+  "layers": 36,
+  "width": 2560,
+  "vision": {
+    "crop_to_patches": true,
+    "max_patches": 12,
+    "patch_size": 448,
+    "thumbnail": true,
+    "tokens_per_patch": 256
+  },
+  "image_policy": "native dynamic processor, no global token cap; same policy as Qwen main vision_pixels=None",
+  "source": "36 decoder states excluding embedding at final input position before answer under full task+image",
+  "raw": "per-layer L2 cosine, uniform mean of all 36 layers",
+  "proj": "shared bias-free 256 projection with uniform layers",
+  "learn": "same shared 256 projection plus learned softmax layer weights",
+  "behavior_training": {
+    "bank_only": true,
+    "dev_per_class": 10,
+    "steps": 1500,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "temperature": 0.07,
+    "classes_per_batch": 16,
+    "samples_per_class": 4,
+    "eval_every": 100,
+    "checkpoint": "earliest best bank-dev top4_same_label_fraction"
+  },
+  "gpt_mm": "local GPT-MM-style greedy generated-answer state, max_new_tokens=12; not author code",
+  "detriever": {
+    "bank_gold_answer_eos_proxy": true,
+    "steps": 10000,
+    "batch": 64,
+    "positive_count": 40,
+    "negative_count": 100,
+    "memory_refresh": 100,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.98
+    ],
+    "temperature": 0.07,
+    "layer_grid": "zero-based [0,5,10,...,last]",
+    "implementation": "task adaptation, not author code"
+  },
+  "rices": "same CLIP ViT-B/32 cosine, rerun InternVL final ICL",
+  "icl": "shared multimodal_model_adapter.icl_messages, lower similarity first, greedy legal-label trie",
+  "test_labels": "evaluation only, never retrieval or training",
+  "inference_batch": 1,
+  "precision": "BF16, no quantization",
+  "torch_threads": 4,
+  "training_recovery": "incomplete retriever training restarts at seed73; completed metadata+checkpoint are reused only within this protocol",
+  "environment": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.13.0",
+    "numpy": "2.5.1"
+  },
+  "model_files_sha256": "daf72349c52f58074cddbf304a189fe2d53c4c35b76b272179dbda348841dcc4",
+  "code_sha256": {
+    "internvl35_qwen_config_v2.py": "8a1bc3bd2905045a5a420eefb9aff035fb920a4f9eb7a2b01ceeb85bf1bd08d0",
+    "run_internvl35_qwen_sources_v2.py": "301b67db1f425a32db66fc565767534724c0b3bcede86036485997bc728c6f6d",
+    "run_internvl35_qwen_methods_v2.py": "b5578dafad903f047e2c00eec29ab656e3fde4795c640112004cd39c544083b6",
+    "run_internvl35_qwen_icl_v2.py": "d36110e5a3b8c09d97ee34bbd7fdfe30a1a0b508266157779ba4f5002214263d",
+    "run_internvl35_qwen_pipeline_v2.py": "6392e419b92f360884859225d36259a267631ce178e1d856ad751c29ea0dcf31",
+    "audit_internvl35_qwen_config_v2.py": "726bc6f1b0f319108fd151d57d891dbb144b4ae5c18cfffe91aa3dddff48eea6",
+    "multimodal_model_adapter.py": "43798054109fa9079c9cd6473640f9b5abc5335e641e12a0a075e1b9ac9990ef",
+    "legal_label_decoding.py": "1ae64556431accaadff8990605f5c2a699eb875cb26ee4d3ab9bfec790fde1e5",
+    "multidataset_protocol.py": "02acc4088193316b01d0d924a9be8a7c7058360acd2ba42abb04729f1c324e8e",
+    "run_multidataset_main.py": "84813f0d73a95b5205bf4e31d7722d37ae9556f09e0641ab12e6892847ec4b19",
+    "run_dtd_decision_states.py": "6e6110514cb1b58a7dc4c278f081ec508f2130e222454d7416351e8a7eee587d",
+    "run_behavior_ablation.py": "2f22c41820171147a5436ade5cfa3608b77bda619b09eef0e9b90908a5d25558",
+    "run_dtd_learned_velocity.py": "5e260ed6b06af398262899be0e5cc4121664e853c89479ac53190a0a339f3b5d",
+    "run_dtd_paper_baselines.py": "8964dbebc241bd04edfd061348855ef515670eef94e4ac7eda2ede9dbc936447",
+    "run_detriever_output_proxy.py": "8c6fd99c047e594609aaea20e08d4115f2d60823d59ef19a3949c4dd8370884a"
+  },
+  "comparison_limit": "DTD excluded from rerun; cannot mix old single-patch DTD into a uniform dynamic five-dataset table"
+}

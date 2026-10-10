@@ -1,0 +1,29 @@
+{
+  "version": "joint_v2",
+  "state": "running",
+  "protocol_sha256": "6d589e4403f6ffba0ad6ba5db9a7c06de34d60780b865021266254249944f06f",
+  "boot_identity": "2026-10-08T09:21:41.5000000Z",
+  "started_utc": "2026-10-08T09:43:52.575094+00:00",
+  "stages": [
+    {
+      "dataset": "cub",
+      "stage": "joint_source",
+      "command": [
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\.venv\\Scripts\\python.exe",
+        "-u",
+        "C:\\Users\\toki_\\Documents\\ChatGPT\\BehaviorICL\\scripts\\run_internvl35_joint_sources_v2.py",
+        "--dataset",
+        "cub"
+      ],
+      "state": "running",
+      "started_utc": "2026-10-08T09:43:52.584113+00:00",
+      "worker_pid": 12436
+    }
+  ],
+  "supervisor_pid": 8920,
+  "planned_stages": 55,
+  "current": {
+    "dataset": "cub",
+    "stage": "joint_source"
+  }
+}
