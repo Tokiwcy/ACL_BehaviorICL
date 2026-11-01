@@ -1,0 +1,2747 @@
+{
+  "bank_hash": "7ddd8e01b423f404c518e31fdd74157549dee292fba089b68f334b075ff24d5a",
+  "class_names": [
+    "banded",
+    "blotchy",
+    "braided",
+    "bubbly",
+    "bumpy",
+    "chequered",
+    "cobwebbed",
+    "cracked",
+    "crosshatched",
+    "crystalline",
+    "dotted",
+    "fibrous",
+    "flecked",
+    "freckled",
+    "frilly",
+    "gauzy",
+    "grid",
+    "grooved",
+    "honeycombed",
+    "interlaced",
+    "knitted",
+    "lacelike",
+    "lined",
+    "marbled",
+    "matted",
+    "meshed",
+    "paisley",
+    "perforated",
+    "pitted",
+    "pleated",
+    "polka-dotted",
+    "porous",
+    "potholed",
+    "scaly",
+    "smeared",
+    "spiralled",
+    "sprinkled",
+    "stained",
+    "stratified",
+    "striped",
+    "studded",
+    "swirly",
+    "veined",
+    "waffled",
+    "woven",
+    "wrinkled",
+    "zigzagged"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "all images",
+      "attribute": "pattern orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-orientation--batch-0000--3515da91--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary orientation of the repeating pattern elements?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3515da91ba912709",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "the pattern elements are oriented vertically"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "the pattern elements are oriented horizontally"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "the pattern elements are oriented diagonally"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "none",
+          "state_id": "none-3",
+          "visual_description": "there is no clear directional orientation to the pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-regularity--batch-0000--3515da91--01",
+      "perspective": "shape and relative proportions",
+      "question": "How regular and repeating is the pattern across the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3515da91ba912709",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "the pattern is irregular, organic, or random"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "semi-regular",
+          "state_id": "semi-regular-1",
+          "visual_description": "the pattern has some repeating elements but is not strictly geometric"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "regular",
+          "state_id": "regular-2",
+          "visual_description": "the pattern is highly regular and geometric"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern scale",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-scale--batch-0000--3515da91--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative size of the pattern elements?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3515da91ba912709",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fine",
+          "state_id": "fine-0",
+          "visual_description": "the pattern elements are very small and fine"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the pattern elements are of medium size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "coarse",
+          "state_id": "coarse-2",
+          "visual_description": "the pattern elements are large and coarse"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture depth",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--texture-depth--batch-0000--3515da91--03",
+      "perspective": "shape and relative proportions",
+      "question": "Does the texture appear to have significant physical depth or relief?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3515da91ba912709",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "the surface appears flat with no significant depth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "the surface has visible texture or slight relief"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "deep",
+          "state_id": "deep-2",
+          "visual_description": "the surface has significant physical depth or deep relief"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--color-contrast--batch-0000--3515da91--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the level of color contrast between the pattern elements and the background?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3515da91ba912709",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "the colors of the pattern and background are very similar"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "there is a clear but moderate difference in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "there is a sharp, high contrast between colors"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-orientation--batch-0000--6401df7f--00",
+      "perspective": "color and texture",
+      "question": "What is the primary orientation of the repeating pattern in the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6401df7f617bb76d",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "The pattern consists of vertical lines or structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "The pattern consists of horizontal lines or structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "The pattern consists of diagonal lines or structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "non-directional",
+          "state_id": "non-directional-3",
+          "visual_description": "The pattern is irregular, organic, or lacks a dominant linear orientation."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-regularity--batch-0000--6401df7f--01",
+      "perspective": "color and texture",
+      "question": "How regular and geometric is the pattern in the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6401df7f617bb76d",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "The pattern is organic, mottled, or randomly distributed."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "semi-regular",
+          "state_id": "semi-regular-1",
+          "visual_description": "The pattern has some repeating elements but is not strictly geometric."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "regular",
+          "state_id": "regular-2",
+          "visual_description": "The pattern is highly geometric, repeating, and structured."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--surface-structure--batch-0000--6401df7f--02",
+      "perspective": "color and texture",
+      "question": "What is the primary physical structure of the surface?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6401df7f617bb76d",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "The surface appears flat and smooth."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "granular",
+          "state_id": "granular-1",
+          "visual_description": "The surface has a grainy, sandy, or speckled texture."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "cellular",
+          "state_id": "cellular-2",
+          "visual_description": "The surface consists of rounded, bubble-like, or cell-like structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "fibrous",
+          "state_id": "fibrous-3",
+          "visual_description": "The surface consists of woven, braided, or thread-like structures."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color saturation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--color-saturation--batch-0000--6401df7f--03",
+      "perspective": "color and texture",
+      "question": "What is the color saturation of the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6401df7f617bb76d",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "desaturated",
+          "state_id": "desaturated-0",
+          "visual_description": "The image has muted, earthy, or brownish tones."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "saturated",
+          "state_id": "saturated-1",
+          "visual_description": "The image has vibrant, bright, or high-contrast colors."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "contrast",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--contrast--batch-0000--6401df7f--04",
+      "perspective": "color and texture",
+      "question": "What is the level of contrast between different elements in the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6401df7f617bb76d",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "The colors and textures blend together with little distinct separation."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high",
+          "state_id": "high-1",
+          "visual_description": "There are sharp distinctions between different colors or shapes."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--pattern-orientation--batch-0000--a431c020--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary orientation of the repeating pattern elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a431c0205bd0d468",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "The primary pattern elements (lines, stripes, or textures) are oriented vertically."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "The primary pattern elements (lines, stripes, or textures) are oriented horizontally."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "The primary pattern elements (lines, stripes, or textures) are oriented diagonally."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "non-directional",
+          "state_id": "non-directional-3",
+          "visual_description": "The pattern lacks a clear primary orientation, appearing more organic or irregular."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--pattern-regularity--batch-0000--a431c020--01",
+      "perspective": "pose and silhouette",
+      "question": "How regular and geometric is the repeating pattern?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a431c0205bd0d468",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly regular",
+          "state_id": "highly-regular-0",
+          "visual_description": "The pattern consists of very distinct, geometric, and repeating shapes or lines."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately regular",
+          "state_id": "moderately-regular-1",
+          "visual_description": "The pattern has a discernible structure but shows some variation in shape and spacing."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "The pattern is organic, mottled, or lacks a repeating geometric structure."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture depth",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--texture-depth--batch-0000--a431c020--02",
+      "perspective": "pose and silhouette",
+      "question": "Does the texture appear to have significant physical depth or relief?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a431c0205bd0d468",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "The surface appears flat with no significant physical depth or relief."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "The surface has visible depth, such as raised fibers, pits, or protrusions."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--color-contrast--batch-0000--a431c020--03",
+      "perspective": "pose and silhouette",
+      "question": "What is the level of color contrast between the pattern elements and the background?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a431c0205bd0d468",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-0",
+          "visual_description": "The colors of the pattern and background are very similar or monochromatic."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-1",
+          "visual_description": "There is a sharp, distinct difference between the colors of the pattern and the background."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-orientation--batch-0000--f687f466--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary orientation of the repeating pattern in the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f687f466d56156cd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "The pattern consists of vertical lines or structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "The pattern consists of horizontal lines or structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "The pattern consists of diagonal lines or structures."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "none",
+          "state_id": "none-3",
+          "visual_description": "There is no clear linear orientation to the pattern."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-regularity--batch-0000--f687f466--01",
+      "perspective": "local visible differences",
+      "question": "How regular and repeating is the pattern in the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f687f466d56156cd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "The pattern is organic, random, or lacks a repeating geometric structure."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "semi-regular",
+          "state_id": "semi-regular-1",
+          "visual_description": "The pattern has some repeating elements but is not perfectly geometric."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "regular",
+          "state_id": "regular-2",
+          "visual_description": "The pattern is highly geometric, repeating, and structured."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structural unit",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--structural-unit--batch-0000--f687f466--02",
+      "perspective": "local visible differences",
+      "question": "What is the primary geometric shape of the repeating units?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f687f466d56156cd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "The pattern is composed of lines, stripes, or strands."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "cellular",
+          "state_id": "cellular-1",
+          "visual_description": "The pattern is composed of rounded, bubble-like, or organic cell shapes."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "mottled",
+          "state_id": "mottled-2",
+          "visual_description": "The pattern is composed of irregular blotches or stains."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "depth and relief",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--depth-and-relief--batch-0000--f687f466--03",
+      "perspective": "local visible differences",
+      "question": "Does the texture appear to have significant physical depth or relief?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f687f466d56156cd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "The surface appears flat with no significant depth or 3D structure."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "The surface has visible depth, relief, or physical texture."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--color-contrast--batch-0000--f687f466--04",
+      "perspective": "local visible differences",
+      "question": "What is the level of color contrast between the pattern and the background?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f687f466d56156cd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "The pattern and background have very similar colors and tones."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high",
+          "state_id": "high-1",
+          "visual_description": "The pattern and background have distinct, contrasting colors."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--pattern-type--batch-0000--59005f49--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary geometric pattern of the surface?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "59005f495a635ce6",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "The image features repeating linear patterns such as stripes, lines, or parallel bands."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "cellular",
+          "state_id": "cellular-1",
+          "visual_description": "The image features a cellular structure like bubbles, foam, or honeycomb-like cells."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "The image features an irregular, organic, or mottled texture without a repeating geometric pattern."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "interwoven",
+          "state_id": "interwoven-3",
+          "visual_description": "The image features a complex, repeating woven or braided structural pattern."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_uniformity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--color-uniformity--batch-0000--59005f49--01",
+      "perspective": "visibility and missing visual information",
+      "question": "How consistent is the color across the image?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "59005f495a635ce6",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "The image is dominated by a single color with very little variation."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "multi-colored",
+          "state_id": "multi-colored-1",
+          "visual_description": "The image features distinct, contrasting colors or high-contrast color patterns."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "whole-image--surface-texture--batch-0000--59005f49--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the perceived surface texture of the material?",
+      "region": "whole image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "59005f495a635ce6",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "The surface appears smooth, flat, or uniform."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "The surface appears rough, grainy, or heavily textured."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--pattern-type--batch-0000--df5451e8--00",
+      "perspective": "background and environment",
+      "question": "What is the primary geometric pattern of the surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "df5451e894ae0a7c",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "The image features repeating linear patterns such as stripes, lines, or parallel bands."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "cellular",
+          "state_id": "cellular-1",
+          "visual_description": "The image features a cellular or bubbly structure with rounded, interconnected shapes."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "The image features an irregular, organic, or mottled texture without a repeating geometric pattern."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "repetition_frequency",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--repetition-frequency--batch-0000--df5451e8--01",
+      "perspective": "background and environment",
+      "question": "How frequently does the pattern repeat across the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "df5451e894ae0a7c",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "The pattern is large-scale or irregular with very few repeating elements."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "The pattern repeats at a moderate frequency, visible across the frame."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "The pattern repeats very frequently and densely across the entire image."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_uniformity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--color-uniformity--batch-0000--df5451e8--02",
+      "perspective": "background and environment",
+      "question": "How uniform is the color distribution across the texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "df5451e894ae0a7c",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "The image is dominated by a single color with very little variation."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "multi-tonal",
+          "state_id": "multi-tonal-1",
+          "visual_description": "The image features distinct, alternating colors or high-contrast color blocks."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "mottled",
+          "state_id": "mottled-2",
+          "visual_description": "The image features a mix of colors that blend or bleed into one another irregularly."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structural_depth",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--structural-depth--batch-0000--df5451e8--03",
+      "perspective": "background and environment",
+      "question": "Does the texture appear to have physical depth or relief?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "df5451e894ae0a7c",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "The surface appears flat with no significant depth or 3D structure."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "The surface has visible depth, relief, or physical structure (like weaving or bubbling)."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_repetition",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--pattern-repetition--batch-0001--9ba680e9--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the nature of the repeating pattern in the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9ba680e923c39f61",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "geometric_grid",
+          "state_id": "geometric-grid-0",
+          "visual_description": "a repeating geometric pattern of squares or rectangles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "organic_irregular",
+          "state_id": "organic-irregular-1",
+          "visual_description": "an irregular, organic, or non-repeating pattern of shapes"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structural_connectivity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--structural-connectivity--batch-0001--9ba680e9--01",
+      "perspective": "shape and relative proportions",
+      "question": "How are the elements in the image connected?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9ba680e923c39f61",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "continuous_surface",
+          "state_id": "continuous-surface-0",
+          "visual_description": "a continuous, solid surface with no gaps or threads"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "interconnected_lines",
+          "state_id": "interconnected-lines-1",
+          "visual_description": "a network of thin, interconnected lines or threads"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_topography",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--surface-topography--batch-0001--9ba680e9--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary surface topography of the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9ba680e923c39f61",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "flat_uniform",
+          "state_id": "flat-uniform-0",
+          "visual_description": "a relatively flat and uniform surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "protruding_mounds",
+          "state_id": "protruding-mounds-1",
+          "visual_description": "a surface with rounded, protruding mounds or bumps"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "cracked_fissures",
+          "state_id": "cracked-fissures-2",
+          "visual_description": "a surface with deep cracks and fissures"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "line_orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--line-orientation--batch-0001--9ba680e9--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary orientation of the lines in the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9ba680e923c39f61",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "no_dominant_lines",
+          "state_id": "no-dominant-lines-0",
+          "visual_description": "no clear linear orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical_horizontal",
+          "state_id": "vertical-horizontal-1",
+          "visual_description": "a grid of vertical and horizontal lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "random_web",
+          "state_id": "random-web-2",
+          "visual_description": "a random, non-linear web of lines"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--pattern-regularity--batch-0001--70319b1a--00",
+      "perspective": "color and texture",
+      "question": "How regular and repeating is the pattern across the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70319b1a5b9d4510",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "The image shows organic, irregular, or random shapes and textures without a repeating geometric pattern."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "regular",
+          "state_id": "regular-1",
+          "visual_description": "The image shows a highly structured, repeating geometric pattern (like a grid, checkerboard, or stripes)."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface continuity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--surface-continuity--batch-0001--70319b1a--01",
+      "perspective": "color and texture",
+      "question": "Is the surface continuous or broken into distinct segments?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70319b1a5b9d4510",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "The surface is continuous with smooth transitions or continuous organic shapes."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "broken",
+          "state_id": "broken-1",
+          "visual_description": "The surface is broken into distinct, separated segments, cracks, or individual units."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structural complexity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--structural-complexity--batch-0001--70319b1a--02",
+      "perspective": "color and texture",
+      "question": "What is the complexity of the structural elements in the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70319b1a5b9d4510",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "simple",
+          "state_id": "simple-0",
+          "visual_description": "The image features simple, large-scale shapes or flat colors."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "complex",
+          "state_id": "complex-1",
+          "visual_description": "The image features intricate, fine-grained, or highly detailed structures (like webs, cracks, or small bumps)."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--color-contrast--batch-0001--70319b1a--03",
+      "perspective": "color and texture",
+      "question": "What is the level of color contrast between the primary elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70319b1a5b9d4510",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "The image features colors that are very similar or have low contrast."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high",
+          "state_id": "high-1",
+          "visual_description": "The image features high-contrast colors (e.g., bright red against tan/white)."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--pattern-type--batch-0001--23355361--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary geometric pattern of the surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "23355361a4ec088d",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "organic_irregular",
+          "state_id": "organic-irregular-0",
+          "visual_description": "The surface features irregular, organic, or non-geometric shapes like bubbles, cobwebs, or cracked earth."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "geometric_regular",
+          "state_id": "geometric-regular-1",
+          "visual_description": "The surface features a repeating, geometric pattern like a checkerboard or grid."
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "repetition_frequency",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--repetition-frequency--batch-0001--23355361--01",
+      "perspective": "pose and silhouette",
+      "question": "How frequently does the pattern repeat across the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "23355361a4ec088d",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low_frequency",
+          "state_id": "low-frequency-0",
+          "visual_description": "The pattern elements are large and occupy a significant portion of the frame."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high_frequency",
+          "state_id": "high-frequency-1",
+          "visual_description": "The pattern elements are small and repeat many times across the frame."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--color-contrast--batch-0001--23355361--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the color contrast between the pattern elements and the background?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "23355361a4ec088d",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low_contrast",
+          "state_id": "low-contrast-0",
+          "visual_description": "The colors of the pattern and background are very similar or monochromatic."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high_contrast",
+          "state_id": "high-contrast-1",
+          "visual_description": "The colors of the pattern and background are distinct and highly contrasting."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "depth_perception",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--depth-perception--batch-0001--23355361--03",
+      "perspective": "pose and silhouette",
+      "question": "Does the texture appear to have significant 3D depth?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "23355361a4ec088d",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "The surface appears relatively flat with minimal depth or relief."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "deep",
+          "state_id": "deep-1",
+          "visual_description": "The surface has significant depth, shadows, and 3D relief."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--pattern-type--batch-0001--5238d03e--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary geometric pattern of the surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5238d03eff791770",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "organic_irregular",
+          "state_id": "organic-irregular-0",
+          "visual_description": "The surface features irregular, organic shapes like bubbles, cobwebs, or cracked earth."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "geometric_regular",
+          "state_id": "geometric-regular-1",
+          "visual_description": "The surface features a repeating, geometric pattern like a checkerboard or grid."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_depth",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--surface-depth--batch-0001--5238d03e--02",
+      "perspective": "local visible differences",
+      "question": "What is the perceived depth of the surface features?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5238d03eff791770",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "The surface appears relatively flat with minimal depth or relief."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "deep",
+          "state_id": "deep-1",
+          "visual_description": "The surface has significant depth, cracks, or protruding three-dimensional shapes."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--color-contrast--batch-0001--5238d03e--03",
+      "perspective": "local visible differences",
+      "question": "What is the color contrast between the pattern elements and the background?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5238d03eff791770",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low_contrast",
+          "state_id": "low-contrast-0",
+          "visual_description": "The colors of the pattern and background are similar in hue and value."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high_contrast",
+          "state_id": "high-contrast-1",
+          "visual_description": "The colors of the pattern and background are distinct and contrasting."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--pattern-type--batch-0001--90ab32ef--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary geometric or organic pattern visible in the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "90ab32efb1758773",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "geometric_grid",
+          "state_id": "geometric-grid-0",
+          "visual_description": "a repeating geometric pattern of squares or rectangles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_blob",
+          "state_id": "organic-blob-1",
+          "visual_description": "rounded, organic shapes or mounds with soft edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fibrous_web",
+          "state_id": "fibrous-web-2",
+          "visual_description": "thin, irregular strands forming a web-like or net-like structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "fractured_cracks",
+          "state_id": "fractured-cracks-3",
+          "visual_description": "irregular, jagged cracks in a solid surface"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_uniformity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--color-uniformity--batch-0001--90ab32ef--01",
+      "perspective": "visibility and missing visual information",
+      "question": "How consistent is the color across the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "90ab32efb1758773",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "high_contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "distinct, alternating blocks of two or more contrasting colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "monochromatic_gradient",
+          "state_id": "monochromatic-gradient-1",
+          "visual_description": "mostly one color with subtle variations in shade and lighting"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "entire-image--surface-texture--batch-0001--90ab32ef--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary surface texture of the material shown?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "90ab32efb1758773",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth_matte",
+          "state_id": "smooth-matte-0",
+          "visual_description": "a relatively smooth, non-reflective surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough_granular",
+          "state_id": "rough-granular-1",
+          "visual_description": "a rough, grainy, or dusty surface texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dry_cracked",
+          "state_id": "dry-cracked-2",
+          "visual_description": "a dry, parched surface with deep fissures"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a repeating pattern is visible",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--pattern-type--batch-0001--c16cb5e1--00",
+      "perspective": "background and environment",
+      "question": "What is the primary geometric pattern of the surface?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c16cb5e1277bcebe",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "geometric_grid",
+          "state_id": "geometric-grid-0",
+          "visual_description": "a repeating geometric pattern of squares or rectangles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_irregular",
+          "state_id": "organic-irregular-1",
+          "visual_description": "an irregular, organic, or non-geometric pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a surface texture is visible",
+      "attribute": "surface_structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--surface-structure--batch-0001--c16cb5e1--01",
+      "perspective": "background and environment",
+      "question": "What is the primary physical structure of the surface?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c16cb5e1277bcebe",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth_or_uniform",
+          "state_id": "smooth-or-uniform-0",
+          "visual_description": "a relatively smooth or uniform surface with no deep physical cracks or protrusions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "highly_textured",
+          "state_id": "highly-textured-1",
+          "visual_description": "a surface with significant physical texture, such as deep cracks, bumps, or fibers"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a pattern is visible",
+      "attribute": "color_repetition",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--color-repetition--batch-0001--c16cb5e1--02",
+      "perspective": "background and environment",
+      "question": "How does the color distribution appear across the surface?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c16cb5e1277bcebe",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "alternating_colors",
+          "state_id": "alternating-colors-0",
+          "visual_description": "distinctly alternating blocks of two or more colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "monochromatic_or_blended",
+          "state_id": "monochromatic-or-blended-1",
+          "visual_description": "a single dominant color or a blend of colors without distinct alternating blocks"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which lines or shapes are visible",
+      "attribute": "line_orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--line-orientation--batch-0001--c16cb5e1--03",
+      "perspective": "background and environment",
+      "question": "What is the orientation of the lines or shapes?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c16cb5e1277bcebe",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "orthogonal",
+          "state_id": "orthogonal-0",
+          "visual_description": "lines or shapes arranged in a grid-like, perpendicular fashion"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random_or_curved",
+          "state_id": "random-or-curved-1",
+          "visual_description": "lines or shapes that are curved, irregular, or lack a grid structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "pattern_geometry",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-geometry--batch-0002--3b62b3fb--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary geometric shape of the repeating pattern elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3b62b3fbfa004d59",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "the pattern consists of lines, stripes, or elongated streaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "geometric_angular",
+          "state_id": "geometric-angular-1",
+          "visual_description": "the pattern consists of distinct geometric shapes like triangles, diamonds, or zigzags"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "circular_punctate",
+          "state_id": "circular-punctate-2",
+          "visual_description": "the pattern consists of dots, circles, or small rounded points"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "pattern_density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-density--batch-0002--3b62b3fb--01",
+      "perspective": "shape and relative proportions",
+      "question": "How densely packed are the pattern elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3b62b3fbfa004d59",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the pattern elements are widely spaced with significant background visible between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the pattern elements are regularly spaced with some background visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "the pattern elements are closely packed, nearly touching or overlapping"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture_structure",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--texture-structure--batch-0002--3b62b3fb--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary structural characteristic of the surface texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3b62b3fbfa004d59",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fibrous",
+          "state_id": "fibrous-0",
+          "visual_description": "the texture is composed of organic, thread-like, or root-like structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "crystalline_geometric",
+          "state_id": "crystalline-geometric-1",
+          "visual_description": "the texture is composed of sharp, geometric, or crystalline shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "granular_dotted",
+          "state_id": "granular-dotted-2",
+          "visual_description": "the texture is composed of small, distinct dots or grains"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "pattern_orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-orientation--batch-0002--3b62b3fb--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the dominant orientation of the pattern elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3b62b3fbfa004d59",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "random",
+          "state_id": "random-0",
+          "visual_description": "the pattern elements are oriented randomly or lack a clear direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "diagonal",
+          "state_id": "diagonal-1",
+          "visual_description": "the pattern elements are oriented at an angle (e.g., 45 degrees)"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "horizontal_vertical",
+          "state_id": "horizontal-vertical-2",
+          "visual_description": "the pattern elements are oriented primarily horizontally or vertically"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_regularity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--surface-regularity--batch-0002--3b62b3fb--04",
+      "perspective": "shape and relative proportions",
+      "question": "How regular and repetitive is the pattern across the surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3b62b3fbfa004d59",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "the surface features are organic, chaotic, or lack a repeating pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "semi-regular",
+          "state_id": "semi-regular-1",
+          "visual_description": "the surface features show some repetition but are inconsistent in shape and spacing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "highly_regular",
+          "state_id": "highly-regular-2",
+          "visual_description": "the surface features form a very consistent, repeating geometric pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-type--batch-0002--9eef9e92--00",
+      "perspective": "color and texture",
+      "question": "What is the primary geometric pattern visible in the texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9eef9e92c08dfd3c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "geometric_repeating",
+          "state_id": "geometric-repeating-0",
+          "visual_description": "a repeating geometric pattern such as dots, lines, or crosshatched shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_irregular",
+          "state_id": "organic-irregular-1",
+          "visual_description": "an irregular, organic, or chaotic pattern like roots, fibers, or random blotches"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_depth",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--surface-depth--batch-0002--9eef9e92--01",
+      "perspective": "color and texture",
+      "question": "How pronounced is the physical depth of the surface features?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9eef9e92c08dfd3c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "a relatively flat surface with minimal depth or relief"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "a surface with significant depth, ridges, or protruding elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_uniformity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--color-uniformity--batch-0002--9eef9e92--02",
+      "perspective": "color and texture",
+      "question": "How uniform is the color across the surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9eef9e92c08dfd3c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "a surface with very little color variation, appearing mostly one tone"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "multi-toned",
+          "state_id": "multi-toned-1",
+          "visual_description": "a surface with significant variations in color, shading, and highlights"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "material_appearance",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--material-appearance--batch-0002--9eef9e92--03",
+      "perspective": "color and texture",
+      "question": "What is the visual quality of the material shown?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9eef9e92c08dfd3c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "mineral_crystalline",
+          "state_id": "mineral-crystalline-0",
+          "visual_description": "a hard, crystalline, or mineral-like surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_fibrous",
+          "state_id": "organic-fibrous-1",
+          "visual_description": "a soft, fibrous, or organic material like roots or fabric"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with repeating patterns",
+      "attribute": "pattern_scale",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-scale--batch-0002--9eef9e92--04",
+      "perspective": "color and texture",
+      "question": "What is the scale of the repeating pattern elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9eef9e92c08dfd3c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fine",
+          "state_id": "fine-0",
+          "visual_description": "small, densely packed repeating elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "coarse",
+          "state_id": "coarse-1",
+          "visual_description": "large, widely spaced repeating elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_depth",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--surface-depth--batch-0002--ee71ef17--01",
+      "perspective": "pose and silhouette",
+      "question": "How much physical depth or relief is visible in the surface texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ee71ef17989a72c0",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "a relatively flat surface with minimal depth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "deep_relief",
+          "state_id": "deep-relief-1",
+          "visual_description": "a surface with significant depth, protrusions, or deep indentations"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "material_appearance",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--material-appearance--batch-0002--ee71ef17--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary material appearance of the surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ee71ef17989a72c0",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "mineral_crystalline",
+          "state_id": "mineral-crystalline-0",
+          "visual_description": "a mineral-like, crystalline, or stony appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_fibrous",
+          "state_id": "organic-fibrous-1",
+          "visual_description": "an organic, fibrous, or root-like appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-orientation--batch-0002--ee71ef17--03",
+      "perspective": "pose and silhouette",
+      "question": "Is there a dominant directional orientation to the pattern?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ee71ef17989a72c0",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "non_directional",
+          "state_id": "non-directional-0",
+          "visual_description": "no clear directional orientation to the pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "directional",
+          "state_id": "directional-1",
+          "visual_description": "a clear directional orientation, such as vertical or horizontal lines"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-type--batch-0002--7a3a0af8--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary geometric pattern visible in the texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "7a3a0af8d560990c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "geometric_repeating",
+          "state_id": "geometric-repeating-0",
+          "visual_description": "a repeating geometric pattern such as dots, lines, or crosshatched shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_irregular",
+          "state_id": "organic-irregular-1",
+          "visual_description": "an irregular organic structure like roots, fibers, or irregular mineral growth"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with geometric patterns",
+      "attribute": "pattern_orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-orientation--batch-0002--7a3a0af8--01",
+      "perspective": "local visible differences",
+      "question": "What is the orientation of the primary repeating elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "7a3a0af8d560990c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "horizontal_or_random",
+          "state_id": "horizontal-or-random-0",
+          "visual_description": "the pattern elements are oriented horizontally or lack a dominant linear direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "vertical_or_diagonal",
+          "state_id": "vertical-or-diagonal-1",
+          "visual_description": "the pattern elements have a strong vertical or diagonal orientation"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with geometric patterns",
+      "attribute": "element_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--element-shape--batch-0002--7a3a0af8--02",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the repeating elements in the pattern?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "7a3a0af8d560990c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dot_like",
+          "state_id": "dot-like-0",
+          "visual_description": "the pattern consists of small, distinct dots or points"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "line_like",
+          "state_id": "line-like-1",
+          "visual_description": "the pattern consists of lines, ridges, or interconnected strokes"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_depth",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--surface-depth--batch-0002--7a3a0af8--03",
+      "perspective": "local visible differences",
+      "question": "How pronounced is the physical depth of the texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "7a3a0af8d560990c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "the surface appears relatively flat with minimal depth variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "deep",
+          "state_id": "deep-1",
+          "visual_description": "the surface has significant physical depth, ridges, or protrusions"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "material_appearance",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--material-appearance--batch-0002--7a3a0af8--04",
+      "perspective": "local visible differences",
+      "question": "What is the visual appearance of the material?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "7a3a0af8d560990c",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "mineral_metallic",
+          "state_id": "mineral-metallic-0",
+          "visual_description": "the material looks like stone, mineral, or metal"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_fibrous",
+          "state_id": "organic-fibrous-1",
+          "visual_description": "the material looks like plant roots, fibers, or organic matter"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with repeating geometric patterns",
+      "attribute": "pattern_orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--pattern-orientation--batch-0002--a19d03ed--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the orientation of the primary repeating elements?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a19d03edc542f0f5",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "the pattern elements are primarily oriented horizontally"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "the pattern elements are primarily oriented vertically"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "the pattern elements are oriented at an angle (e.g., diagonal or criss-cross)"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "material_appearance",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--material-appearance--batch-0002--a19d03ed--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the visual appearance of the material surface?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a19d03edc542f0f5",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_opaque",
+          "state_id": "solid-opaque-0",
+          "visual_description": "a solid, opaque surface with no transparency"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "translucent_crystalline",
+          "state_id": "translucent-crystalline-1",
+          "visual_description": "a translucent or transparent material with crystalline facets"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fibrous_porous",
+          "state_id": "fibrous-porous-2",
+          "visual_description": "a fibrous, porous, or organic-looking material"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color_uniformity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--color-uniformity--batch-0002--a19d03ed--03",
+      "perspective": "visibility and missing visual information",
+      "question": "How uniform is the color across the image?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a19d03edc542f0f5",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "the image is dominated by a single color or very similar tones"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "multi-toned",
+          "state_id": "multi-toned-1",
+          "visual_description": "the image contains distinct variations in color and tone"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "depth_of_field",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "entire-image--depth-of-field--batch-0002--a19d03ed--04",
+      "perspective": "visibility and missing visual information",
+      "question": "How sharp is the focus of the texture?",
+      "region": "entire image",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a19d03edc542f0f5",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sharp",
+          "state_id": "sharp-0",
+          "visual_description": "the texture details are in sharp focus"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blurry",
+          "state_id": "blurry-1",
+          "visual_description": "the texture is out of focus or blurry"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible repeating pattern",
+      "attribute": "pattern_type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--pattern-type--batch-0002--656bb610--00",
+      "perspective": "background and environment",
+      "question": "What is the primary geometric pattern visible in the background texture?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "656bb6109cc5bdf9",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "geometric_grid",
+          "state_id": "geometric-grid-0",
+          "visual_description": "a repeating geometric pattern consisting of dots, lines, or intersecting shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic_fibrous",
+          "state_id": "organic-fibrous-1",
+          "visual_description": "an irregular, organic pattern resembling roots, fibers, or tangled strands"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "pattern_regularity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--pattern-regularity--batch-0002--656bb610--01",
+      "perspective": "background and environment",
+      "question": "How regular is the repeating pattern in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "656bb6109cc5bdf9",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly_regular",
+          "state_id": "highly-regular-0",
+          "visual_description": "a very consistent and orderly repeating pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-1",
+          "visual_description": "an inconsistent or distorted repeating pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible pattern",
+      "attribute": "color_contrast",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--color-contrast--batch-0002--656bb610--02",
+      "perspective": "background and environment",
+      "question": "What is the color contrast between the pattern and the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "656bb6109cc5bdf9",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low_contrast",
+          "state_id": "low-contrast-0",
+          "visual_description": "the pattern and background are very similar in color and tone"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high_contrast",
+          "state_id": "high-contrast-1",
+          "visual_description": "the pattern stands out clearly against the background color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible pattern",
+      "attribute": "texture_depth",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--texture-depth--batch-0002--656bb610--03",
+      "perspective": "background and environment",
+      "question": "Does the pattern appear to be raised or recessed?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "656bb6109cc5bdf9",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "the pattern appears flat or printed on the surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "embossed",
+          "state_id": "embossed-1",
+          "visual_description": "the pattern appears raised or physically textured into the surface"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the texture category shown in the image.",
+  "task_name": "dtd"
+}

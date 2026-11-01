@@ -1,0 +1,4626 @@
+{
+  "bank_hash": "1c6499b901cbeea3ba5750c6d57991facc854c76faa1941cedec7a0ed40eaaca",
+  "class_names": [
+    "alpine sea holly",
+    "anthurium",
+    "artichoke",
+    "azalea",
+    "ball moss",
+    "balloon flower",
+    "barbeton daisy",
+    "bearded iris",
+    "bee balm",
+    "bird of paradise",
+    "bishop of llandaff",
+    "black-eyed susan",
+    "blackberry lily",
+    "blanket flower",
+    "bolero deep blue",
+    "bougainvillea",
+    "bromelia",
+    "buttercup",
+    "californian poppy",
+    "camellia",
+    "canna lily",
+    "canterbury bells",
+    "cape flower",
+    "carnation",
+    "cautleya spicata",
+    "clematis",
+    "colt's foot",
+    "columbine",
+    "common dandelion",
+    "corn poppy",
+    "cyclamen",
+    "daffodil",
+    "desert-rose",
+    "english marigold",
+    "fire lily",
+    "foxglove",
+    "frangipani",
+    "fritillary",
+    "garden phlox",
+    "gaura",
+    "gazania",
+    "geranium",
+    "giant white arum lily",
+    "globe thistle",
+    "globe-flower",
+    "grape hyacinth",
+    "great masterwort",
+    "hard-leaved pocket orchid",
+    "hibiscus",
+    "hippeastrum",
+    "japanese anemone",
+    "king protea",
+    "lenten rose",
+    "lotus",
+    "love in the mist",
+    "magnolia",
+    "mallow",
+    "marigold",
+    "mexican aster",
+    "mexican petunia",
+    "monkshood",
+    "moon orchid",
+    "morning glory",
+    "orange dahlia",
+    "osteospermum",
+    "oxeye daisy",
+    "passion flower",
+    "pelargonium",
+    "peruvian lily",
+    "petunia",
+    "pincushion flower",
+    "pink primrose",
+    "pink-yellow dahlia?",
+    "poinsettia",
+    "primula",
+    "prince of wales feathers",
+    "purple coneflower",
+    "red ginger",
+    "rose",
+    "ruby-lipped cattleya",
+    "siam tulip",
+    "silverbush",
+    "snapdragon",
+    "spear thistle",
+    "spring crocus",
+    "stemless gentian",
+    "sunflower",
+    "sweet pea",
+    "sweet william",
+    "sword lily",
+    "thorn apple",
+    "tiger lily",
+    "toad lily",
+    "tree mallow",
+    "tree poppy",
+    "trumpet creeper",
+    "wallflower",
+    "water lily",
+    "watercress",
+    "wild pansy",
+    "windflower",
+    "yellow iris"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--shape--batch-0000--b24f0bb7--00",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the overall shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "petals arranged in a spiral pattern around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radial",
+          "state_id": "radial-1",
+          "visual_description": "petals spread out radially from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals with distinct lobes or divisions"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "whorled",
+          "state_id": "whorled-3",
+          "visual_description": "petals arranged in a whorl around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "center-structure--structure--batch-0000--b24f0bb7--01",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the structure of the center of the flower?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "a dense cluster of structures in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "open",
+          "state_id": "open-1",
+          "visual_description": "structures in the center are open and spread apart"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no central structure visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color variation",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-gradient--gradation--batch-0000--b24f0bb7--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Is there a color gradient within the flower?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "yes",
+          "state_id": "yes-0",
+          "visual_description": "a clear color gradient observed within the flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "no",
+          "state_id": "no-1",
+          "visual_description": "uniform color throughout the flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "insufficient information to determine"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "background density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--background-density--batch-0000--b24f0bb7--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How dense is the background behind the flower?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the background is sparse and not obstructing the flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dense",
+          "state_id": "dense-1",
+          "visual_description": "the background is dense and partially obscures the flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no background present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-texture--texture--batch-0000--b24f0bb7--04",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the texture of the petals?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals appear smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "petals have a rough or bumpy texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "margin",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-margin--margin--batch-0000--b24f0bb7--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the margin of the petals?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petal edges are smooth and even"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petal edges have a fringed appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petal edges are lobed or divided"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "edge curvature",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-shape--edge-curvature--batch-0000--8ad3b680--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the edge curvature of the petals?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "petals with straight edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slightly curved",
+          "state_id": "slightly-curved-1",
+          "visual_description": "petals with slightly curved edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "deeply curled",
+          "state_id": "deeply-curled-2",
+          "visual_description": "petals with deeply curled edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--pattern--batch-0000--8ad3b680--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What pattern do the petals follow?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial symmetry",
+          "state_id": "radial-symmetry-0",
+          "visual_description": "petals arranged radially around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "whorled",
+          "state_id": "whorled-1",
+          "visual_description": "petals arranged in whorls around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiral",
+          "state_id": "spiral-2",
+          "visual_description": "petals arranged spirally around a central point"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a center structure",
+      "attribute": "type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "center-structure--type--batch-0000--8ad3b680--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What type of center structure is present?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a solid, dense center structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "puffy",
+          "state_id": "puffy-1",
+          "visual_description": "a puffy, fluffy center structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "hairy",
+          "state_id": "hairy-2",
+          "visual_description": "a hairy center structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color variation",
+      "attribute": "intensity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-gradient--intensity--batch-0000--8ad3b680--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "How intense is the color gradient?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "a low-intensity color gradient"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a moderate-intensity color gradient"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "a high-intensity color gradient"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "clarity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--clarity--batch-0000--8ad3b680--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "How clear is the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blurry",
+          "state_id": "blurry-0",
+          "visual_description": "a blurry background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "clear",
+          "state_id": "clear-1",
+          "visual_description": "a clear background"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the background is not clearly discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-texture--smoothness--batch-0000--8ad3b680--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "How smooth are the petals?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rough",
+          "state_id": "rough-0",
+          "visual_description": "petals with rough textures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "smooth",
+          "state_id": "smooth-1",
+          "visual_description": "petals with smooth textures"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petals' textures are not clearly discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--shape--batch-0000--5e4ffea9--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the general shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "ovate",
+          "state_id": "ovate-0",
+          "visual_description": "petals are broadest near the base and taper towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elliptical",
+          "state_id": "elliptical-1",
+          "visual_description": "petals are elongated and narrow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "orbicular",
+          "state_id": "orbicular-2",
+          "visual_description": "petals are round or nearly so"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals are not clearly defined or visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "center--structure--batch-0000--5e4ffea9--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the structure of the flower center?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pistil",
+          "state_id": "pistil-0",
+          "visual_description": "a central pistil with stigma and style"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "stamen",
+          "state_id": "stamen-1",
+          "visual_description": "a central stamen with anther and filament"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no central structure visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--color--batch-0000--5e4ffea9--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color is the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "green",
+          "state_id": "green-0",
+          "visual_description": "the background is predominantly green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "the background is predominantly brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the background is not clearly visible or discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible lighting",
+      "attribute": "intensity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "lighting--intensity--batch-0000--5e4ffea9--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How intense is the lighting on the flower?",
+      "region": "lighting",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "soft",
+          "state_id": "soft-0",
+          "visual_description": "the lighting is soft and diffused"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "bright",
+          "state_id": "bright-1",
+          "visual_description": "the lighting is bright and direct"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the lighting is not clearly visible or discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "presence",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background-elements--presence--batch-0000--5e4ffea9--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Are there any background elements visible?",
+      "region": "background elements",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yes",
+          "state_id": "yes-0",
+          "visual_description": "there are background elements visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "no",
+          "state_id": "no-1",
+          "visual_description": "there are no background elements visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the background is not clearly visible or discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-type--petal-texture--batch-0000--5e4ffea9--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the texture of the petals?",
+      "region": "flower type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a smooth surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "petals have a textured surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petal texture is not clearly visible or discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--shape--batch-0000--ed7a1308--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the overall shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "petals arranged in a spiral pattern around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radial",
+          "state_id": "radial-1",
+          "visual_description": "petals spread out evenly from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals with distinct lobes or divisions"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "unlobed",
+          "state_id": "unlobed-3",
+          "visual_description": "petals without distinct lobes"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with a central structure",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "center--structure--batch-0000--ed7a1308--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the structure of the flower center?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "closed",
+          "state_id": "closed-0",
+          "visual_description": "a closed, tightly packed center"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "open",
+          "state_id": "open-1",
+          "visual_description": "a loosely packed center with visible stamens"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "composite",
+          "state_id": "composite-2",
+          "visual_description": "a complex center with multiple parts"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no discernible center"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with visible color",
+      "attribute": "hue",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color--hue--batch-0000--ed7a1308--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the dominant color of the flower?",
+      "region": "color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "red",
+          "state_id": "red-0",
+          "visual_description": "a flower with a red hue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "pink",
+          "state_id": "pink-1",
+          "visual_description": "a flower with a pink hue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "yellow",
+          "state_id": "yellow-2",
+          "visual_description": "a flower with a yellow hue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "purple",
+          "state_id": "purple-3",
+          "visual_description": "a flower with a purple hue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "no discernible color"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with visible petals",
+      "attribute": "surface",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-texture--surface--batch-0000--ed7a1308--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the surface texture of the petals?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with a smooth, glossy surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "petals with a rough, textured surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "wrinkled",
+          "state_id": "wrinkled-2",
+          "visual_description": "petals with wrinkles or folds"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no discernible texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with visible petals",
+      "attribute": "edge",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-margin--edge--batch-0000--ed7a1308--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the edge of the petals like?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with a smooth edge"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petals with a fringed edge"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals with distinct lobes"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no discernible edge"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with visible petals",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--pattern--batch-0000--ed7a1308--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the pattern of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radiating",
+          "state_id": "radiating-0",
+          "visual_description": "petals radiating outward from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "whorled",
+          "state_id": "whorled-1",
+          "visual_description": "petals arranged in a whorl"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "overlapping",
+          "state_id": "overlapping-2",
+          "visual_description": "petals overlapping each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no discernible pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--shape--batch-0000--ea4718ef--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the general shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "ovate",
+          "state_id": "ovate-0",
+          "visual_description": "petals are broadest near the base and taper towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elliptical",
+          "state_id": "elliptical-1",
+          "visual_description": "petals are elongated and narrow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rounded",
+          "state_id": "rounded-2",
+          "visual_description": "petals have a rounded or circular shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals are not clearly defined or visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "center-structure--structure--batch-0000--ea4718ef--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the structure of the center of the flower?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "the center forms a spiral pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "disk",
+          "state_id": "disk-1",
+          "visual_description": "the center is a flat disk-like structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no clear central structure is visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with colored petals",
+      "attribute": "color intensity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-gradient--color-intensity--batch-0000--ea4718ef--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is there a noticeable color gradient within the petals?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "all petals appear to be the same color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "gradient",
+          "state_id": "gradient-1",
+          "visual_description": "petals show a transition from one color to another"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petals do not show a clear color gradient"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with textured petals",
+      "attribute": "surface",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-texture--surface--batch-0000--ea4718ef--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the surface texture of the petals?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a smooth, glossy appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "petals have a rough or granular texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petals do not have a clear texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with radial petal arrangement",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--orientation--batch-0000--ea4718ef--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Are the petals arranged radially around a central point?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yes",
+          "state_id": "yes-0",
+          "visual_description": "petals are arranged in a circular pattern around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "no",
+          "state_id": "no-1",
+          "visual_description": "petals are not arranged in a circular pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petal arrangement cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with colored petals",
+      "attribute": "hue",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-color--hue--batch-0000--ea4718ef--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the primary hue of the petals?",
+      "region": "petal color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "red",
+          "state_id": "red-0",
+          "visual_description": "petals are primarily red"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow",
+          "state_id": "yellow-1",
+          "visual_description": "petals are primarily yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "petals are primarily pink"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals do not have a primary hue"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-arrangement--shape--batch-0000--c7d50723--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the general shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "ovate",
+          "state_id": "ovate-0",
+          "visual_description": "petals that are broadest near the middle and taper towards the ends"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elliptical",
+          "state_id": "elliptical-1",
+          "visual_description": "petals that are wider than they are long"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "linear",
+          "state_id": "linear-2",
+          "visual_description": "petals that are long and narrow"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "center-structure--color--batch-0000--c7d50723--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What color is the center of the flower?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yellow",
+          "state_id": "yellow-0",
+          "visual_description": "a bright yellow center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "red",
+          "state_id": "red-1",
+          "visual_description": "a deep red center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a soft pink center"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no central structure visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "greenery",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--greenery--batch-0000--c7d50723--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is there significant greenery in the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "a very dense background of green foliage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a moderate amount of green foliage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "sparse",
+          "state_id": "sparse-2",
+          "visual_description": "a sparse background of green foliage"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no background visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "petal-texture--smoothness--batch-0000--c7d50723--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Are the petals smooth or have they got ridges?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals appear smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ridged",
+          "state_id": "ridged-1",
+          "visual_description": "petals have visible ridges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-type--petal-arrangement--batch-0000--c7d50723--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the arrangement of the petals?",
+      "region": "flower type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial",
+          "state_id": "radial-0",
+          "visual_description": "petals arranged radially around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiral",
+          "state_id": "spiral-1",
+          "visual_description": "petals arranged spirally around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "dominant color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background-color--dominant-color--batch-0000--c7d50723--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the dominant color in the background?",
+      "region": "background color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "green",
+          "state_id": "green-0",
+          "visual_description": "the background is predominantly green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "the background is predominantly brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no background visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "petal count",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-arrangement--petal-count--batch-0001--fbdfa04c--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How many petals does the flower have?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "a flower with fewer than 5 petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a flower with between 5 and 10 petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "many",
+          "state_id": "many-2",
+          "visual_description": "a flower with more than 10 petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "petal color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-color--petal-color--batch-0001--fbdfa04c--01",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the primary color of the flower petals?",
+      "region": "petal color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yellow",
+          "state_id": "yellow-0",
+          "visual_description": "a flower with petals primarily yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pink",
+          "state_id": "pink-1",
+          "visual_description": "a flower with petals primarily pink"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "purple",
+          "state_id": "purple-2",
+          "visual_description": "a flower with petals primarily purple"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "orange",
+          "state_id": "orange-3",
+          "visual_description": "a flower with petals primarily orange"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "blue",
+          "state_id": "blue-4",
+          "visual_description": "a flower with petals primarily blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 5.0,
+          "label": "green",
+          "state_id": "green-5",
+          "visual_description": "a flower with petals primarily green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 6.0,
+          "label": "brown",
+          "state_id": "brown-6",
+          "visual_description": "a flower with petals primarily brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 7.0,
+          "label": "red",
+          "state_id": "red-7",
+          "visual_description": "a flower with petals primarily red"
+        },
+        {
+          "abstain": false,
+          "coordinate": 8.0,
+          "label": "white",
+          "state_id": "white-8",
+          "visual_description": "a flower with petals primarily white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 9.0,
+          "label": "mixed",
+          "state_id": "mixed-9",
+          "visual_description": "a flower with petals having multiple colors"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-structure--structure--batch-0001--fbdfa04c--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the flower structure open or closed?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "open",
+          "state_id": "open-0",
+          "visual_description": "a flower with petals spread out and open"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "closed",
+          "state_id": "closed-1",
+          "visual_description": "a flower with petals tightly closed"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "background density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--background-density--batch-0001--fbdfa04c--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How dense is the background foliage?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "a background with sparse foliage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a background with moderate foliage density"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "a background with dense foliage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "petal shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-shape--petal-shape--batch-0001--fbdfa04c--04",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the shape of the flower petals?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "ovate",
+          "state_id": "ovate-0",
+          "visual_description": "a flower with ovate-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elliptical",
+          "state_id": "elliptical-1",
+          "visual_description": "a flower with elliptical-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "linear",
+          "state_id": "linear-2",
+          "visual_description": "a flower with linear-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "rounded",
+          "state_id": "rounded-3",
+          "visual_description": "a flower with rounded-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "pointed",
+          "state_id": "pointed-4",
+          "visual_description": "a flower with pointed-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 5.0,
+          "label": "lobed",
+          "state_id": "lobed-5",
+          "visual_description": "a flower with lobed-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 6.0,
+          "label": "wavy",
+          "state_id": "wavy-6",
+          "visual_description": "a flower with wavy-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 7.0,
+          "label": "fringed",
+          "state_id": "fringed-7",
+          "visual_description": "a flower with fringed-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 8.0,
+          "label": "spatulate",
+          "state_id": "spatulate-8",
+          "visual_description": "a flower with spatulate-shaped petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 9.0,
+          "label": "plicate",
+          "state_id": "plicate-9",
+          "visual_description": "a flower with plicate-shaped petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "center structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "center--center-structure--batch-0001--fbdfa04c--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the structure of the flower center?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "naked",
+          "state_id": "naked-0",
+          "visual_description": "a flower with a naked center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "stamen",
+          "state_id": "stamen-1",
+          "visual_description": "a flower with stamen structures in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pistil",
+          "state_id": "pistil-2",
+          "visual_description": "a flower with pistil structures in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "both",
+          "state_id": "both-3",
+          "visual_description": "a flower with both stamen and pistil structures in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "empty",
+          "state_id": "empty-4",
+          "visual_description": "a flower with an empty center"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "edge",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-shape--edge--batch-0001--d6e10921--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the edge shape of the petals?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with smooth edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petals with fringed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals with lobed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals where the edge shape is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with centers",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "center--structure--batch-0001--d6e10921--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the structure of the center of the flower?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "a dense cluster of structures in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "open",
+          "state_id": "open-1",
+          "visual_description": "structures spread out in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the center of the flower is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with background vegetation",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--density--batch-0001--d6e10921--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "How dense is the background vegetation?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "a sparse background of vegetation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a moderate density of vegetation in the background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "a dense background of vegetation"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the background is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-arrangement--orientation--batch-0001--d6e10921--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the orientation of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial",
+          "state_id": "radial-0",
+          "visual_description": "petals arranged radially around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiral",
+          "state_id": "spiral-1",
+          "visual_description": "petals arranged spirally around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the petal arrangement is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-margin--color--batch-0001--d6e10921--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What color is the margin of the petals?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "same as petal",
+          "state_id": "same-as-petal-0",
+          "visual_description": "the margin color matches the petal color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "different",
+          "state_id": "different-1",
+          "visual_description": "the margin color differs from the petal color"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the margin color is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with centers",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "center--structure--batch-0001--fb2cfda9--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the structure of the center of the flower?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "a center that spirals outward from the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "disk",
+          "state_id": "disk-1",
+          "visual_description": "a center that forms a flat disk-like structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "a center where the structure cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with backgrounds",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--density--batch-0001--fb2cfda9--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How dense is the background vegetation?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "a background with sparse vegetation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a background with moderate vegetation density"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "a background with dense vegetation"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "a background where the density cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "edge",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-margin--edge--batch-0001--fb2cfda9--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the edge of the petals?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with smooth edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petals with fringed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "toothed",
+          "state_id": "toothed-2",
+          "visual_description": "petals with toothed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals where the edge cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "alignment",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-orientation--alignment--batch-0001--fb2cfda9--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the alignment of the petals?",
+      "region": "petal orientation",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial",
+          "state_id": "radial-0",
+          "visual_description": "petals arranged radially around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "whorled",
+          "state_id": "whorled-1",
+          "visual_description": "petals arranged in whorls around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petals where the alignment cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-arrangement--shape--batch-0001--2c4f3a4f--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "ovate",
+          "state_id": "ovate-0",
+          "visual_description": "petals that are broadest near the middle and taper towards the ends"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elliptical",
+          "state_id": "elliptical-1",
+          "visual_description": "petals that are wider than they are long"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "linear",
+          "state_id": "linear-2",
+          "visual_description": "petals that are long and narrow"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals where the shape cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "prominence",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "center-structure--prominence--batch-0001--2c4f3a4f--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How prominent is the center structure compared to the petals?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "prominent",
+          "state_id": "prominent-0",
+          "visual_description": "the center structure is clearly visible and larger than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the center structure is visible but smaller than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the center structure is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with background foliage",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--density--batch-0001--2c4f3a4f--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How dense is the background foliage?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the background foliage is sparse and does not cover much of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the background foliage covers a moderate amount of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "the background foliage covers a large portion of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "there is no background foliage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-texture--smoothness--batch-0001--2c4f3a4f--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How smooth do the petals appear?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals that appear smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "petals that have visible texture or bumps"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petals where the texture cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "edge type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-margin--edge-type--batch-0001--2c4f3a4f--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the edge type of the petals?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with edges that are smooth and even"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "toothed",
+          "state_id": "toothed-1",
+          "visual_description": "petals with edges that have small teeth or points"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "petals where the edge type cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "dominant color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-color--dominant-color--batch-0001--0e43c568--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the dominant color of the petals?",
+      "region": "petal color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "orange",
+          "state_id": "orange-0",
+          "visual_description": "a flower with predominantly orange petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pink",
+          "state_id": "pink-1",
+          "visual_description": "a flower with predominantly pink petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "purple",
+          "state_id": "purple-2",
+          "visual_description": "a flower with predominantly purple petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "yellow",
+          "state_id": "yellow-3",
+          "visual_description": "a flower with predominantly yellow petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "a flower where the dominant color cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-arrangement--shape--batch-0001--0e43c568--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "ovate",
+          "state_id": "ovate-0",
+          "visual_description": "petals that are broadest near the base and tapering toward the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elliptical",
+          "state_id": "elliptical-1",
+          "visual_description": "petals that are wider than they are long"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "linear",
+          "state_id": "linear-2",
+          "visual_description": "petals that are narrow and elongated"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals where the shape cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with a central structure",
+      "attribute": "prominence",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "center-structure--prominence--batch-0001--0e43c568--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How prominent is the center structure compared to the petals?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "prominent",
+          "state_id": "prominent-0",
+          "visual_description": "the center structure is larger and more noticeable than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the center structure is about the same size as the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "subtle",
+          "state_id": "subtle-2",
+          "visual_description": "the center structure is smaller and less noticeable than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the center structure is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with a background",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--density--batch-0001--0e43c568--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How dense is the background foliage?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the background foliage is sparse and not very dense"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the background foliage is moderately dense"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "the background foliage is very dense and covers much of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the background is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-margin--texture--batch-0001--0e43c568--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the texture of the petal margins?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petal margins are smooth and even"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petal margins have fine, thread-like projections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "toothed",
+          "state_id": "toothed-2",
+          "visual_description": "petal margins have small, sharp teeth"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petal margins are not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "flowers with petals",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-color-gradient--gradation--batch-0001--0e43c568--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is there a gradation of color on the petals?",
+      "region": "petal color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no gradation",
+          "state_id": "no-gradation-0",
+          "visual_description": "petals have uniform color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slight gradation",
+          "state_id": "slight-gradation-1",
+          "visual_description": "petals show a subtle change in color from base to tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "strong gradation",
+          "state_id": "strong-gradation-2",
+          "visual_description": "petals show a significant change in color from base to tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petal color gradation is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "prominence",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "center-structure--prominence--batch-0001--f38c4cb2--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How prominent is the center structure compared to the petals?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "prominent",
+          "state_id": "prominent-0",
+          "visual_description": "the center structure is clearly visible and larger than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the center structure is visible but smaller than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "subtle",
+          "state_id": "subtle-2",
+          "visual_description": "the center structure is barely noticeable compared to the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the center structure is not visible or cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with background foliage",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--density--batch-0001--f38c4cb2--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How dense is the background foliage?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the background foliage is sparse and does not cover much of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the background foliage covers a moderate amount of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "the background foliage covers a large portion of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the background foliage is not visible or cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-type--structure--batch-0001--f38c4cb2--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall structure of the flower?",
+      "region": "flower type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiky",
+          "state_id": "spiky-0",
+          "visual_description": "a flower with a spiky or thorny appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "cup-shaped",
+          "state_id": "cup-shaped-1",
+          "visual_description": "a flower with a cup-like shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "flat",
+          "state_id": "flat-2",
+          "visual_description": "a flower with a flat or disc-like shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the flower structure is not visible or cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "intensity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "color-gradient--intensity--batch-0001--f38c4cb2--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How intense is the color gradient within the flower?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "strong",
+          "state_id": "strong-0",
+          "visual_description": "a strong color gradient is visible within the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a moderate color gradient is visible within the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "weak",
+          "state_id": "weak-2",
+          "visual_description": "a weak color gradient is visible within the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the color gradient is not visible or cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--shape--batch-0002--d849a525--00",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the overall shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "petals arranged in a spiral pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "star-like",
+          "state_id": "star-like-1",
+          "visual_description": "petals arranged like points of a star"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "broad and flat",
+          "state_id": "broad-and-flat-2",
+          "visual_description": "petals broad and flat, resembling a fan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "closed",
+          "state_id": "closed-3",
+          "visual_description": "petals tightly closed around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "center-structure--density--batch-0002--d849a525--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How dense is the central structure?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "central structure with sparse elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "central structure with moderate density"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "central structure with many closely packed elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no central structure present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--color--batch-0002--d849a525--02",
+      "perspective": "part shape and relative proportions",
+      "question": "What color is the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dark",
+          "state_id": "dark-0",
+          "visual_description": "background appears dark"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "light",
+          "state_id": "light-1",
+          "visual_description": "background appears light"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no background visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--smoothness--batch-0002--d849a525--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How smooth do the petals appear?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals appear smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "petals have a textured appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shade",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-color--shade--batch-0002--d849a525--04",
+      "perspective": "part shape and relative proportions",
+      "question": "What shade of color does the flower have?",
+      "region": "petal color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "light",
+          "state_id": "light-0",
+          "visual_description": "petals are light in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "petals are medium in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dark",
+          "state_id": "dark-2",
+          "visual_description": "petals are dark in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--pattern--batch-0002--d849a525--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What pattern do the petals follow?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "random",
+          "state_id": "random-0",
+          "visual_description": "petals arranged randomly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "symmetrical",
+          "state_id": "symmetrical-1",
+          "visual_description": "petals arranged symmetrically"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "alternating",
+          "state_id": "alternating-2",
+          "visual_description": "petals arranged in an alternating pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "center--density--batch-0002--f44314c2--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "How dense is the center of the flower?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the center is loosely packed with elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the center is moderately packed with elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "the center is tightly packed with elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no central structure present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--color--batch-0002--f44314c2--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the dominant color of the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dark",
+          "state_id": "dark-0",
+          "visual_description": "the background is predominantly dark"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "light",
+          "state_id": "light-1",
+          "visual_description": "the background is predominantly light"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no background present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-edges--texture--batch-0002--f44314c2--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the texture of the petal edges?",
+      "region": "petal edges",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petal edges are smooth and even"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petal edges have fine, fringed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wavy",
+          "state_id": "wavy-2",
+          "visual_description": "petal edges are wavy or irregular"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-color--gradation--batch-0002--f44314c2--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is there a gradation of color on the petals?",
+      "region": "petal color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "petals are uniformly colored"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "graduated",
+          "state_id": "graduated-1",
+          "visual_description": "petals show a gradient of color"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--pattern--batch-0002--f44314c2--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the pattern of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "random",
+          "state_id": "random-0",
+          "visual_description": "petals are arranged randomly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "radiating",
+          "state_id": "radiating-1",
+          "visual_description": "petals radiate outward from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "overlapping",
+          "state_id": "overlapping-2",
+          "visual_description": "petals overlap each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--shape--batch-0002--3a1b2384--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the overall shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "petals arranged in a spiral pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "star-like",
+          "state_id": "star-like-1",
+          "visual_description": "petals radiating outwards like spokes of a wheel"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "tube-like",
+          "state_id": "tube-like-2",
+          "visual_description": "petals forming a tube or cone shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "flat",
+          "state_id": "flat-3",
+          "visual_description": "petals spread out flatly"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central part",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "center--structure--batch-0002--3a1b2384--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the structure of the flower center?",
+      "region": "center",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "a dense cluster of small parts in the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "open",
+          "state_id": "open-1",
+          "visual_description": "the center is open and not densely packed"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no central part visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--color--batch-0002--3a1b2384--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color is the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dark",
+          "state_id": "dark-0",
+          "visual_description": "a dark background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "light",
+          "state_id": "light-1",
+          "visual_description": "a light background"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no background visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "sharpness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "edges--sharpness--batch-0002--3a1b2384--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How sharp are the edges of the petals?",
+      "region": "edges",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have smooth edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sharp",
+          "state_id": "sharp-1",
+          "visual_description": "petals have sharp edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--pattern--batch-0002--3a1b2384--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What pattern is visible on the petals?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "petals have a solid color without patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "striped",
+          "state_id": "striped-1",
+          "visual_description": "petals have stripes or lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spotted",
+          "state_id": "spotted-2",
+          "visual_description": "petals have spots or dots"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no petals present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a clear flower",
+      "attribute": "balance",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "overall-symmetry--balance--batch-0002--3a1b2384--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the flower balanced?",
+      "region": "overall symmetry",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-0",
+          "visual_description": "the flower appears uneven or unbalanced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "symmetrical",
+          "state_id": "symmetrical-1",
+          "visual_description": "the flower appears evenly balanced"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no clear flower present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "center-structure--density--batch-0002--bc8b3d0d--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How dense is the center of the flower?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the center is loosely packed with structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the center has a moderate density of structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "the center is tightly packed with structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no central structure present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with colored petals",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "color-gradient--gradation--batch-0002--bc8b3d0d--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is there a noticeable color gradient within the petals?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no gradation",
+          "state_id": "no-gradation-0",
+          "visual_description": "all petals are uniformly colored"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "light to dark",
+          "state_id": "light-to-dark-1",
+          "visual_description": "petals transition from light to dark colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dark to light",
+          "state_id": "dark-to-light-2",
+          "visual_description": "petals transition from dark to light colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no color variation observed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with curved edges",
+      "attribute": "curvature",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "edge-curvature--curvature--batch-0002--bc8b3d0d--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How curved are the edges of the petals?",
+      "region": "edge curvature",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "petals have straight edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slightly curved",
+          "state_id": "slightly-curved-1",
+          "visual_description": "petals have slightly curved edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "strongly curved",
+          "state_id": "strongly-curved-2",
+          "visual_description": "petals have strongly curved edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no curved edges observed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with textured petals",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--smoothness--batch-0002--bc8b3d0d--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How smooth do the petals appear?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals appear smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slightly rough",
+          "state_id": "slightly-rough-1",
+          "visual_description": "petals have a slight rough texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "very rough",
+          "state_id": "very-rough-2",
+          "visual_description": "petals have a very rough texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no texture details visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "background clarity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--background-clarity--batch-0002--bc8b3d0d--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How clear is the background behind the flower?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blurry",
+          "state_id": "blurry-0",
+          "visual_description": "the background is blurry and indistinct"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "clear",
+          "state_id": "clear-1",
+          "visual_description": "the background is clearly defined and distinct"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no background present"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--shape--batch-0002--bc8e06ea--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the overall shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "petals arranged in a spiral pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "radial",
+          "state_id": "radial-1",
+          "visual_description": "petals arranged radially around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals with distinct lobes or divisions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "unlobed",
+          "state_id": "unlobed-3",
+          "visual_description": "petals without distinct lobes or divisions"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "prominence",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "center-structure--prominence--batch-0002--bc8e06ea--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How prominent is the center structure compared to the petals?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the center structure is small and less noticeable than the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the center structure is of moderate size, comparable to the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the center structure is large and more noticeable than the petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with colored petals",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "color-gradient--gradation--batch-0002--bc8e06ea--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is there a color gradient present on the petals?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no gradient",
+          "state_id": "no-gradient-0",
+          "visual_description": "petals have uniform color without any gradation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "light to dark",
+          "state_id": "light-to-dark-1",
+          "visual_description": "petals show a light-to-dark color gradient"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dark to light",
+          "state_id": "dark-to-light-2",
+          "visual_description": "petals show a dark-to-light color gradient"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "mixed",
+          "state_id": "mixed-3",
+          "visual_description": "petals show a mix of light and dark areas"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petals",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--smoothness--batch-0002--bc8e06ea--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How smooth do the petals appear?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals appear smooth and glossy"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "petals have a textured or rough appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wrinkled",
+          "state_id": "wrinkled-2",
+          "visual_description": "petals have wrinkles or folds"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "petals are not clearly visible or the texture cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petals",
+      "attribute": "edge type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-margin--edge-type--batch-0002--bc8e06ea--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the edge type of the petals?",
+      "region": "petal margin",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petal edges are smooth and even"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petal edges have fine, thread-like structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petal edges have distinct lobes or divisions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "wavy",
+          "state_id": "wavy-3",
+          "visual_description": "petal edges are wavy or irregularly shaped"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "petal edges are not clearly visible or the type cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "clarity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--clarity--batch-0002--bc8e06ea--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How clear is the background?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blurry",
+          "state_id": "blurry-0",
+          "visual_description": "the background is out of focus and indistinct"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "clear",
+          "state_id": "clear-1",
+          "visual_description": "the background is sharp and distinct"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the background is not clearly visible or the clarity cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with petals",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--shape--batch-0002--d52781e9--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall shape of the petals?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiral",
+          "state_id": "spiral-0",
+          "visual_description": "petals arranged in a spiral pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "star-shaped",
+          "state_id": "star-shaped-1",
+          "visual_description": "petals radiating outwards like spokes of a wheel"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "broad and flat",
+          "state_id": "broad-and-flat-2",
+          "visual_description": "petals broad and flat, resembling a fan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "closed",
+          "state_id": "closed-3",
+          "visual_description": "petals tightly closed around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "no petals visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central structure",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "center-structure--density--batch-0002--d52781e9--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How dense is the central structure of the flower?",
+      "region": "center structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "central structure with widely spaced elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "central structure with moderately close elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "central structure with closely packed elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no central structure visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with colored petals",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "color-gradient--gradation--batch-0002--d52781e9--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is there a noticeable color gradation in the petals?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no gradation",
+          "state_id": "no-gradation-0",
+          "visual_description": "uniform color throughout the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "light to dark",
+          "state_id": "light-to-dark-1",
+          "visual_description": "petals transitioning from light to dark colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dark to light",
+          "state_id": "dark-to-light-2",
+          "visual_description": "petals transitioning from dark to light colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "no gradation visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with clearly defined petals",
+      "attribute": "sharpness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "edge-sharpness--sharpness--batch-0002--d52781e9--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How sharp are the edges of the petals?",
+      "region": "edge sharpness",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with smooth, rounded edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slightly sharp",
+          "state_id": "slightly-sharp-1",
+          "visual_description": "petals with slightly sharper edges than smooth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "sharp",
+          "state_id": "sharp-2",
+          "visual_description": "petals with very sharp, defined edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "edges not clearly defined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible background",
+      "attribute": "background",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background-texture--background--batch-0002--d52781e9--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the texture of the background behind the flower?",
+      "region": "background texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "background appears as a solid color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "background has a textured appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "background not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-type--structure--batch-0002--d52781e9--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the general structure of the flower?",
+      "region": "flower type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "simple",
+          "state_id": "simple-0",
+          "visual_description": "a single flower with few parts"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "complex",
+          "state_id": "complex-1",
+          "visual_description": "a flower with multiple layers or structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no flower structure visible"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the flower category shown in the image.",
+  "task_name": "flowers102"
+}

@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "scope": "Qwen3-VL-4B BF16, seed42, 2-shot RICES, all test queries in DTD/Aircraft/CUB",
+  "new_gpu_inference": false,
+  "full_calibration_and_raw_partner_audit_rerun": false,
+  "checks": "Direct complete/plan hashes, bound existing independent audit receipts, all prediction coverage and accuracy/macro/invalid, paired rescue/harm, 10000 bootstrap seed42, two-sided exact McNemar raw p",
+  "rows": [
+    {
+      "dataset": "dtd",
+      "queries": 1880,
+      "rices_accuracy_pct": 77.87234042553192,
+      "nofactor_class_gate_accuracy_pct": 76.91489361702128,
+      "decisionicl_accuracy_pct": 78.77659574468086,
+      "gate_minus_parent_pp": -0.9574468085106382,
+      "decision_minus_gate_pp": 1.8617021276595744,
+      "decision_minus_gate_ci_low_pp": 0.7978723384439945,
+      "decision_minus_gate_ci_high_pp": 2.9255319386720657,
+      "decision_vs_gate_rescue": 68,
+      "decision_vs_gate_harm": 33,
+      "exact_mcnemar_raw_p": 0.000641248502169594,
+      "class_gate_changed_queries": 209,
+      "identical_ordered_demo_queries": 1671,
+      "identical_demo_different_outputs": 5
+    },
+    {
+      "dataset": "aircraft",
+      "queries": 3333,
+      "rices_accuracy_pct": 59.1959195919592,
+      "nofactor_class_gate_accuracy_pct": 56.55565556555655,
+      "decisionicl_accuracy_pct": 65.70657065706571,
+      "gate_minus_parent_pp": -2.6402640264026402,
+      "decision_minus_gate_pp": 9.150915091509152,
+      "decision_minus_gate_ci_low_pp": 7.830782979726791,
+      "decision_minus_gate_ci_high_pp": 10.471047461032867,
+      "decision_vs_gate_rescue": 429,
+      "decision_vs_gate_harm": 124,
+      "exact_mcnemar_raw_p": 2.5469082143804505e-40,
+      "class_gate_changed_queries": 1004,
+      "identical_ordered_demo_queries": 2329,
+      "identical_demo_different_outputs": 13
+    },
+    {
+      "dataset": "cub",
+      "queries": 4794,
+      "rices_accuracy_pct": 79.09887359198999,
+      "nofactor_class_gate_accuracy_pct": 79.49520233625364,
+      "decisionicl_accuracy_pct": 80.76762619941593,
+      "gate_minus_parent_pp": 0.3963287442636629,
+      "decision_minus_gate_pp": 1.2724238631622862,
+      "decision_minus_gate_ci_low_pp": 0.6883604452013969,
+      "decision_minus_gate_ci_high_pp": 1.8564872443675995,
+      "decision_vs_gate_rescue": 133,
+      "decision_vs_gate_harm": 72,
+      "exact_mcnemar_raw_p": 2.4462147139291295e-05,
+      "class_gate_changed_queries": 299,
+      "identical_ordered_demo_queries": 4495,
+      "identical_demo_different_outputs": 14
+    }
+  ],
+  "details": [
+    {
+      "dataset": "dtd",
+      "metrics": {
+        "RICES": {
+          "accuracy": 0.7787234042553192,
+          "macro_accuracy": 0.7787234042553192,
+          "invalid": 8
+        },
+        "NoFactorClassGate": {
+          "accuracy": 0.7691489361702127,
+          "macro_accuracy": 0.7691489361702127,
+          "invalid": 12
+        },
+        "DecisionICL": {
+          "accuracy": 0.7877659574468086,
+          "macro_accuracy": 0.7877659574468083,
+          "invalid": 11
+        }
+      },
+      "gate_vs_parent": {
+        "rescue": 36,
+        "harm": 54,
+        "accuracy_delta": -0.009574468085106383,
+        "paired_bootstrap_95pct": [
+          -0.019680850207805634,
+          0.0005319148767739534
+        ],
+        "exact_mcnemar_p": 0.07254953219246177
+      },
+      "decision_vs_gate": {
+        "rescue": 68,
+        "harm": 33,
+        "accuracy_delta": 0.018617021276595744,
+        "paired_bootstrap_95pct": [
+          0.007978723384439945,
+          0.029255319386720657
+        ],
+        "exact_mcnemar_p": 0.000641248502169594
+      },
+      "original_audit_sha256": "18bc5992bf683b3dcd6a99adb384f25550032902f562715171f3d5b8115e1234",
+      "original_complete_sha256": "c3bcd2f93b72d5e338bd7ecf42fd8ab26182806aedf0608f24cf161318fdc6e8"
+    },
+    {
+      "dataset": "aircraft",
+      "metrics": {
+        "RICES": {
+          "accuracy": 0.591959195919592,
+          "macro_accuracy": 0.5920409982174689,
+          "invalid": 26
+        },
+        "NoFactorClassGate": {
+          "accuracy": 0.5655565556555655,
+          "macro_accuracy": 0.5657397504456328,
+          "invalid": 35
+        },
+        "DecisionICL": {
+          "accuracy": 0.6570657065706571,
+          "macro_accuracy": 0.6573885918003565,
+          "invalid": 25
+        }
+      },
+      "gate_vs_parent": {
+        "rescue": 81,
+        "harm": 169,
+        "accuracy_delta": -0.026402640264026403,
+        "paired_bootstrap_95pct": [
+          -0.035703569650650024,
+          -0.01710171066224575
+        ],
+        "exact_mcnemar_p": 2.720033917363476e-08
+      },
+      "decision_vs_gate": {
+        "rescue": 429,
+        "harm": 124,
+        "accuracy_delta": 0.09150915091509151,
+        "paired_bootstrap_95pct": [
+          0.07830782979726791,
+          0.10471047461032867
+        ],
+        "exact_mcnemar_p": 2.5469082143804505e-40
+      },
+      "original_audit_sha256": "e0bfe1400547c0e37717a603f202cb999151eb73dfcfabaca07f29c0db4654d9",
+      "original_complete_sha256": "dc7cd22e428c5059190a49fddcb17110dfde4405768f96c15d0a2f410767916e"
+    },
+    {
+      "dataset": "cub",
+      "metrics": {
+        "RICES": {
+          "accuracy": 0.7909887359198998,
+          "macro_accuracy": 0.793006083068679,
+          "invalid": 18
+        },
+        "NoFactorClassGate": {
+          "accuracy": 0.7949520233625365,
+          "macro_accuracy": 0.7964630168566871,
+          "invalid": 18
+        },
+        "DecisionICL": {
+          "accuracy": 0.8076762619941593,
+          "macro_accuracy": 0.8094725330544705,
+          "invalid": 18
+        }
+      },
+      "gate_vs_parent": {
+        "rescue": 131,
+        "harm": 112,
+        "accuracy_delta": 0.003963287442636629,
+        "paired_bootstrap_95pct": [
+          -0.00250312895514071,
+          0.010221109725534916
+        ],
+        "exact_mcnemar_p": 0.24815974822007933
+      },
+      "decision_vs_gate": {
+        "rescue": 133,
+        "harm": 72,
+        "accuracy_delta": 0.012724238631622862,
+        "paired_bootstrap_95pct": [
+          0.006883604452013969,
+          0.018564872443675995
+        ],
+        "exact_mcnemar_p": 2.4462147139291295e-05
+      },
+      "original_audit_sha256": "4a71db3ba6ac1119393d94cd3174c19b712798b76bc84206090ac7c6b5e0e8dc",
+      "original_complete_sha256": "c94f65b797b70f841b67cc07ddc1c1f361d9347ad02d40d40a5c93c6f1068fe2"
+    }
+  ],
+  "source_sha256": {
+    "cvpr_decisionicl_release\\artifact_bundle\\evaluation_index.json": "58d50d4337f3ba6ecd8d165408b84a0791e7c586b392740f1e3c515452e61998",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\dtd\\complete.json": "699f5b85d083379dc32d98d868abbe3b8651b646560f164fe29813d5958c865e",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\dtd\\predictions.json": "9445a6429c984e6fa6e26036041566c26759df98713194172b809439fee571cf",
+    "decision_guided_retrieval_cleanroom\\artifacts\\four_dataset_atom_label_20260905\\dtd\\dtd.test.jsonl": "f271a4ada2d807ebe18baec35991cefb9f58ab0c51aa45100bfc085036ed21fe",
+    "decision_guided_retrieval_cleanroom\\artifacts\\four_dataset_atom_label_20260905\\dtd\\dtd.train.jsonl": "544b42b7db1ed69def452f52f99aeeee06926a98ecc1ea4baf5db26cd5f0a261",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\dtd\\test_plan.jsonl": "2b7539b8f09e4ca11107562463c1709ec0cb5044c96eb21a09317ecebf6c8c3d",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\dtd\\independent_audit.json": "18bc5992bf683b3dcd6a99adb384f25550032902f562715171f3d5b8115e1234",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\dtd\\complete.json": "c3bcd2f93b72d5e338bd7ecf42fd8ab26182806aedf0608f24cf161318fdc6e8",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\dtd\\plan.freeze.json": "db8be201b961a638745f68f483315901ee2b22e02402ece8ecfc05a06e4de237",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\dtd\\results.json": "52a52b72a88263aa35784642f9b01e37966c370240aafdb10b87c1c1bec33f38",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\dtd\\predictions.json": "0c805310bed6b4769d02b48d572ecdef9b7ba6fc313c34763f1808d77859e41a",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\dtd\\test_plan.json": "f418fd39827d6032403fe655368a1fc1a5059076a588f12bca9fc7c3586444be",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\aircraft\\complete.json": "b61d5d15e02d663c3b0a185c82ed5939d7183dc94e5cc694bea454cc067f2a93",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\aircraft\\predictions.json": "90763aa1fa85167a25de6aca35aba7f56d90a6424fca272a00b1b12c4463ab17",
+    "decision_guided_retrieval_cleanroom\\artifacts\\four_dataset_atom_label_20260905\\aircraft\\aircraft.test.jsonl": "46fa89d2c425977bfc9b25ae02db376948384de201323937e6ebecccffdffd00",
+    "decision_guided_retrieval_cleanroom\\artifacts\\four_dataset_atom_label_20260905\\aircraft\\aircraft.train.jsonl": "1943a63dd2321d5198b3b01a7d4d5848a0f0a7371843fb2829244091e6295b9f",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\aircraft\\test_plan.jsonl": "f27a229ca66c373648a3450d2b3e689b3b0288cdcdaa1d6f1371dca46276cc49",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\aircraft\\independent_audit.json": "e0bfe1400547c0e37717a603f202cb999151eb73dfcfabaca07f29c0db4654d9",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\aircraft\\complete.json": "dc7cd22e428c5059190a49fddcb17110dfde4405768f96c15d0a2f410767916e",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\aircraft\\plan.freeze.json": "3968352078a7f102a46e88951b9bf8270216126922663215e5a0bf15e68e685f",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\aircraft\\results.json": "e1e03c89a705ddc23a97a46bf6b9d4ef818795ca2923f34f4bffe976ef117e7e",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\aircraft\\predictions.json": "ab18f5da7c193cb440928589b62bfef0f0afbb2a1948589896aec8a8d0bc1c4a",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\aircraft\\test_plan.json": "f9e273f8536fabef1ef7e786ed8137600579dbfe0dce6bded3edded5bd69f903",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\cub\\complete.json": "7fdc5e33cac1454d9f0aeed6acf9a94bf333373a2aaa3e0f0c14b25d80c0625a",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\cub\\predictions.json": "b40d619948cb7f823ed7be32fe7c663ec68cde262934aba6697a8405b2fedb1c",
+    "decision_guided_retrieval_cleanroom\\artifacts\\cub_full_current_atoms_20260904\\cub.test.jsonl": "635821d0af564d173befd9669d000441774b0b58ccea7799e073191ebf52a278",
+    "decision_guided_retrieval_cleanroom\\artifacts\\cub_full_current_atoms_20260904\\cub.train.jsonl": "3903484308d1d3830665810e219f55ae6204c71f1ae7f110a79f156fc006e856",
+    "decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2\\2shot\\cub\\test_plan.jsonl": "c6ddea9590b99f6120ed83dfebfe378f0701280e017c60efe39a4f730c7faaf4",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\cub\\independent_audit.json": "4a71db3ba6ac1119393d94cd3174c19b712798b76bc84206090ac7c6b5e0e8dc",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\cub\\complete.json": "c94f65b797b70f841b67cc07ddc1c1f361d9347ad02d40d40a5c93c6f1068fe2",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\cub\\plan.freeze.json": "9914cb2b27e5ea265bb2011ce3e42839f6c632f1ef8ce0e2325d5c6797c4e13f",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\cub\\results.json": "34e831ad04353c7101c43139c4666163d2dd4f4898287296dfa7e579c7bb683f",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\cub\\predictions.json": "563d576b8579e4e5f2f5d45e2b1874dfb87b4d7b5729d402142b2aa9a7a62175",
+    "decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\qwen3_parent_class_gate_2shot_20261004\\2shot\\cub\\test_plan.json": "51102f2597fa5f672da1625a3af71c79408ab4c0442c1217c73337d307a55b73"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "target_model": "REPLACE_WITH_CHECKPOINT_ID_AND_SHA256",
+  "dataset": "aircraft",
+  "bank_sha256": "REPLACE_WITH_EXACT_BANK_SHA256",
+  "evidence_encoder": "SigLIP2 Base patch16-224:REPLACE_WITH_CHECKPOINT_SHA256:native-logits",
+  "parent": "rices:CLIP-ViT-L-14:REPLACE_WITH_CHECKPOINT_SHA256",
+  "seed": 42
+}

@@ -1,0 +1,675 @@
+{
+  "bank_hash": "5e7c43f63645ac50d2c1da6caa9243ca25cb9ebc078abd6d881f6893c6969c81",
+  "class_names": [
+    "Black footed Albatross",
+    "Laysan Albatross",
+    "Sooty Albatross",
+    "Groove billed Ani",
+    "Crested Auklet",
+    "Least Auklet",
+    "Parakeet Auklet",
+    "Rhinoceros Auklet",
+    "Brewer Blackbird",
+    "Red winged Blackbird",
+    "Rusty Blackbird",
+    "Yellow headed Blackbird",
+    "Bobolink",
+    "Indigo Bunting",
+    "Lazuli Bunting",
+    "Painted Bunting",
+    "Cardinal",
+    "Spotted Catbird",
+    "Gray Catbird",
+    "Yellow breasted Chat",
+    "Eastern Towhee",
+    "Chuck will Widow",
+    "Brandt Cormorant",
+    "Red faced Cormorant",
+    "Pelagic Cormorant",
+    "Bronzed Cowbird",
+    "Shiny Cowbird",
+    "Brown Creeper",
+    "American Crow",
+    "Fish Crow",
+    "Black billed Cuckoo",
+    "Mangrove Cuckoo",
+    "Yellow billed Cuckoo",
+    "Gray crowned Rosy Finch",
+    "Purple Finch",
+    "Northern Flicker",
+    "Acadian Flycatcher",
+    "Great Crested Flycatcher",
+    "Least Flycatcher",
+    "Olive sided Flycatcher",
+    "Scissor tailed Flycatcher",
+    "Vermilion Flycatcher",
+    "Yellow bellied Flycatcher",
+    "Frigatebird",
+    "Northern Fulmar",
+    "Gadwall",
+    "American Goldfinch",
+    "European Goldfinch",
+    "Boat tailed Grackle",
+    "Eared Grebe",
+    "Horned Grebe",
+    "Pied billed Grebe",
+    "Western Grebe",
+    "Blue Grosbeak",
+    "Evening Grosbeak",
+    "Pine Grosbeak",
+    "Rose breasted Grosbeak",
+    "Pigeon Guillemot",
+    "California Gull",
+    "Glaucous winged Gull",
+    "Heermann Gull",
+    "Herring Gull",
+    "Ivory Gull",
+    "Ring billed Gull",
+    "Slaty backed Gull",
+    "Western Gull",
+    "Anna Hummingbird",
+    "Ruby throated Hummingbird",
+    "Rufous Hummingbird",
+    "Green Violetear",
+    "Long tailed Jaeger",
+    "Pomarine Jaeger",
+    "Blue Jay",
+    "Florida Jay",
+    "Green Jay",
+    "Dark eyed Junco",
+    "Tropical Kingbird",
+    "Gray Kingbird",
+    "Belted Kingfisher",
+    "Green Kingfisher",
+    "Pied Kingfisher",
+    "Ringed Kingfisher",
+    "White breasted Kingfisher",
+    "Red legged Kittiwake",
+    "Horned Lark",
+    "Pacific Loon",
+    "Mallard",
+    "Western Meadowlark",
+    "Hooded Merganser",
+    "Red breasted Merganser",
+    "Mockingbird",
+    "Nighthawk",
+    "Clark Nutcracker",
+    "White breasted Nuthatch",
+    "Baltimore Oriole",
+    "Hooded Oriole",
+    "Orchard Oriole",
+    "Scott Oriole",
+    "Ovenbird",
+    "Brown Pelican",
+    "White Pelican",
+    "Western Wood Pewee",
+    "Sayornis",
+    "American Pipit",
+    "Whip poor Will",
+    "Horned Puffin",
+    "Common Raven",
+    "White necked Raven",
+    "American Redstart",
+    "Geococcyx",
+    "Loggerhead Shrike",
+    "Great Grey Shrike",
+    "Baird Sparrow",
+    "Black throated Sparrow",
+    "Brewer Sparrow",
+    "Chipping Sparrow",
+    "Clay colored Sparrow",
+    "House Sparrow",
+    "Field Sparrow",
+    "Fox Sparrow",
+    "Grasshopper Sparrow",
+    "Harris Sparrow",
+    "Henslow Sparrow",
+    "Le Conte Sparrow",
+    "Lincoln Sparrow",
+    "Nelson Sharp tailed Sparrow",
+    "Savannah Sparrow",
+    "Seaside Sparrow",
+    "Song Sparrow",
+    "Tree Sparrow",
+    "Vesper Sparrow",
+    "White crowned Sparrow",
+    "White throated Sparrow",
+    "Cape Glossy Starling",
+    "Bank Swallow",
+    "Barn Swallow",
+    "Cliff Swallow",
+    "Tree Swallow",
+    "Scarlet Tanager",
+    "Summer Tanager",
+    "Artic Tern",
+    "Black Tern",
+    "Caspian Tern",
+    "Common Tern",
+    "Elegant Tern",
+    "Forsters Tern",
+    "Least Tern",
+    "Green tailed Towhee",
+    "Brown Thrasher",
+    "Sage Thrasher",
+    "Black capped Vireo",
+    "Blue headed Vireo",
+    "Philadelphia Vireo",
+    "Red eyed Vireo",
+    "Warbling Vireo",
+    "White eyed Vireo",
+    "Yellow throated Vireo",
+    "Bay breasted Warbler",
+    "Black and white Warbler",
+    "Black throated Blue Warbler",
+    "Blue winged Warbler",
+    "Canada Warbler",
+    "Cape May Warbler",
+    "Cerulean Warbler",
+    "Chestnut sided Warbler",
+    "Golden winged Warbler",
+    "Hooded Warbler",
+    "Kentucky Warbler",
+    "Magnolia Warbler",
+    "Mourning Warbler",
+    "Myrtle Warbler",
+    "Nashville Warbler",
+    "Orange crowned Warbler",
+    "Palm Warbler",
+    "Pine Warbler",
+    "Prairie Warbler",
+    "Prothonotary Warbler",
+    "Swainson Warbler",
+    "Tennessee Warbler",
+    "Wilson Warbler",
+    "Worm eating Warbler",
+    "Yellow Warbler",
+    "Northern Waterthrush",
+    "Louisiana Waterthrush",
+    "Bohemian Waxwing",
+    "Cedar Waxwing",
+    "American Three toed Woodpecker",
+    "Pileated Woodpecker",
+    "Red bellied Woodpecker",
+    "Red cockaded Woodpecker",
+    "Red headed Woodpecker",
+    "Downy Woodpecker",
+    "Bewick Wren",
+    "Cactus Wren",
+    "Carolina Wren",
+    "House Wren",
+    "Marsh Wren",
+    "Rock Wren",
+    "Winter Wren",
+    "Common Yellowthroat"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images in which the wings are visible",
+      "attribute": "color pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing--color-pattern--batch-0000--69b95aa9--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the pattern of coloration on the bird's wings?",
+      "region": "wing",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "69b95aa9ef33ab7a",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "solid black",
+          "state_id": "solid-black-0",
+          "visual_description": "a bird with wings that are uniformly black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yellow and black",
+          "state_id": "yellow-and-black-1",
+          "visual_description": "a bird with wings that are predominantly yellow with black markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown and white",
+          "state_id": "brown-and-white-2",
+          "visual_description": "a bird with wings that are brown with white streaks or bars"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the tail is visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--shape--batch-0000--69b95aa9--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape of the bird's tail?",
+      "region": "tail",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "69b95aa9ef33ab7a",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "fan-shaped",
+          "state_id": "fan-shaped-0",
+          "visual_description": "a bird with a tail that is spread out in a fan-like shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a bird with a tail that is straight and not spread out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "notched",
+          "state_id": "notched-2",
+          "visual_description": "a bird with a tail that has a distinct notch or curve at the end"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the body is visible",
+      "attribute": "coloration",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coloration--batch-0000--69b95aa9--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the overall coloration of the bird's body?",
+      "region": "body",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "69b95aa9ef33ab7a",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "uniform black",
+          "state_id": "uniform-black-0",
+          "visual_description": "a bird with a body that is entirely black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bright yellow",
+          "state_id": "bright-yellow-1",
+          "visual_description": "a bird with a body that is predominantly bright yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown and white",
+          "state_id": "brown-and-white-2",
+          "visual_description": "a bird with a body that is brown with white underparts"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--length--batch-0000--58068026--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How long is the visible bird beak relative to the head?",
+      "region": "beak",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5806802606954475",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with a short beak relative to its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with a medium-length beak relative to its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with a long beak relative to its head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the wings are visible",
+      "attribute": "color pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing--color-pattern--batch-0000--58068026--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the pattern of coloration on the bird's wings?",
+      "region": "wing",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5806802606954475",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "solid black",
+          "state_id": "solid-black-0",
+          "visual_description": "a bird with wings that are uniformly black with no visible markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black with white bars",
+          "state_id": "black-with-white-bars-1",
+          "visual_description": "a bird with wings that are black and feature distinct white bars or stripes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow with black bars",
+          "state_id": "yellow-with-black-bars-2",
+          "visual_description": "a bird with wings that are predominantly yellow with black bars or stripes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the body plumage is visible",
+      "attribute": "coloration",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coloration--batch-0000--58068026--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the primary color of the bird's body plumage?",
+      "region": "body",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5806802606954475",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a body plumage that is entirely black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yellow",
+          "state_id": "yellow-1",
+          "visual_description": "a bird with a body plumage that is predominantly yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-2",
+          "visual_description": "a bird with a body plumage that is predominantly brown"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the tail is visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--shape--batch-0000--58068026--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the shape of the bird's tail?",
+      "region": "tail",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5806802606954475",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "fan-shaped",
+          "state_id": "fan-shaped-0",
+          "visual_description": "a bird with a tail that is spread out in a wide, fan-like shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a bird with a tail that is straight and not spread out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "a bird with its tail not visible or obscured in the image"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head and body are visible",
+      "attribute": "color pattern contrast",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "plumage--color-pattern-contrast--batch-0000--a72c67dd--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How contrasting is the bird's plumage coloration between its head and body?",
+      "region": "plumage",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "a72c67dd15aa2ce5",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "a bird with a sharply contrasting coloration between its head and body, such as black head and bright yellow body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "a bird with a subtly contrasting or uniformly colored plumage, such as brownish-gray head and body"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "no contrast",
+          "state_id": "no-contrast-2",
+          "visual_description": "a bird with a monochromatic or very similar coloration across its head and body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the tail is visible",
+      "attribute": "tail shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--tail-shape--batch-0000--a72c67dd--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the shape of the bird's tail relative to its body?",
+      "region": "tail",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "a72c67dd15aa2ce5",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "fan-shaped",
+          "state_id": "fan-shaped-0",
+          "visual_description": "a bird with a tail that is spread out and fan-like, often with distinct color bands"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a bird with a tail that is straight and not spread out, appearing as a simple extension of the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "a bird with its tail obscured or not clearly visible in the frame"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the beak is visible",
+      "attribute": "beak color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--beak-color--batch-0000--a72c67dd--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the color of the bird's beak?",
+      "region": "beak",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "a72c67dd15aa2ce5",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a uniformly black beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dark gray",
+          "state_id": "dark-gray-1",
+          "visual_description": "a bird with a dark gray beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "orange",
+          "state_id": "orange-2",
+          "visual_description": "a bird with an orange beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the head is visible",
+      "attribute": "head color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--head-color--batch-0000--a72c67dd--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the color of the bird's head?",
+      "region": "head",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "a72c67dd15aa2ce5",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02079",
+        "cub-02664",
+        "cub-06066",
+        "cub-06358",
+        "cub-10978"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a uniformly black head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "gray",
+          "state_id": "gray-1",
+          "visual_description": "a bird with a gray head"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "yellow",
+          "state_id": "yellow-2",
+          "visual_description": "a bird with a yellow head"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Classify the bird species shown in the image.",
+  "task_name": "cub-200-2011-reliability-pilot"
+}

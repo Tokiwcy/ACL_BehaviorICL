@@ -1,0 +1,2863 @@
+{
+  "bank_hash": "a67f67f005a5dd22274670da216498e3f478066d5fd4b7b92c1b2fc87c9140b4",
+  "class_names": [
+    "alpine sea holly",
+    "anthurium",
+    "artichoke",
+    "azalea",
+    "ball moss",
+    "balloon flower",
+    "barbeton daisy",
+    "bearded iris",
+    "bee balm",
+    "bird of paradise",
+    "bishop of llandaff",
+    "black-eyed susan",
+    "blackberry lily",
+    "blanket flower",
+    "bolero deep blue",
+    "bougainvillea",
+    "bromelia",
+    "buttercup",
+    "californian poppy",
+    "camellia",
+    "canna lily",
+    "canterbury bells",
+    "cape flower",
+    "carnation",
+    "cautleya spicata",
+    "clematis",
+    "colt's foot",
+    "columbine",
+    "common dandelion",
+    "corn poppy",
+    "cyclamen",
+    "daffodil",
+    "desert-rose",
+    "english marigold",
+    "fire lily",
+    "foxglove",
+    "frangipani",
+    "fritillary",
+    "garden phlox",
+    "gaura",
+    "gazania",
+    "geranium",
+    "giant white arum lily",
+    "globe thistle",
+    "globe-flower",
+    "grape hyacinth",
+    "great masterwort",
+    "hard-leaved pocket orchid",
+    "hibiscus",
+    "hippeastrum",
+    "japanese anemone",
+    "king protea",
+    "lenten rose",
+    "lotus",
+    "love in the mist",
+    "magnolia",
+    "mallow",
+    "marigold",
+    "mexican aster",
+    "mexican petunia",
+    "monkshood",
+    "moon orchid",
+    "morning glory",
+    "orange dahlia",
+    "osteospermum",
+    "oxeye daisy",
+    "passion flower",
+    "pelargonium",
+    "peruvian lily",
+    "petunia",
+    "pincushion flower",
+    "pink primrose",
+    "pink-yellow dahlia?",
+    "poinsettia",
+    "primula",
+    "prince of wales feathers",
+    "purple coneflower",
+    "red ginger",
+    "rose",
+    "ruby-lipped cattleya",
+    "siam tulip",
+    "silverbush",
+    "snapdragon",
+    "spear thistle",
+    "spring crocus",
+    "stemless gentian",
+    "sunflower",
+    "sweet pea",
+    "sweet william",
+    "sword lily",
+    "thorn apple",
+    "tiger lily",
+    "toad lily",
+    "tree mallow",
+    "tree poppy",
+    "trumpet creeper",
+    "wallflower",
+    "water lily",
+    "watercress",
+    "wild pansy",
+    "windflower",
+    "yellow iris"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-arrangement--batch-0000--f423974b--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the arrangement of the petals or floral structures?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f423974bee0ff91a",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spatulate",
+          "state_id": "spatulate-0",
+          "visual_description": "a flower with a single, large, heart-shaped or rounded spathe and a prominent central spike"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "daisy-like",
+          "state_id": "daisy-like-1",
+          "visual_description": "a flower with many distinct, radiating petals around a central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "shaggy",
+          "state_id": "shaggy-2",
+          "visual_description": "a flower with many thin, irregular, thread-like petals radiating from a central head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-shape--batch-0000--f423974b--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the primary petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f423974bee0ff91a",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "petals that are rounded or heart-shaped"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "oblong",
+          "state_id": "oblong-1",
+          "visual_description": "petals that are elongated and rounded at the tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pointed",
+          "state_id": "pointed-2",
+          "visual_description": "petals that come to a sharp point"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color--batch-0000--f423974b--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary color of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f423974bee0ff91a",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pink",
+          "state_id": "pink-0",
+          "visual_description": "a pink flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-1",
+          "visual_description": "an orange flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "a red flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "purple",
+          "state_id": "purple-3",
+          "visual_description": "a purple flower"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-shape--batch-0000--32edd9ed--00",
+      "perspective": "color and texture",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32edd9ed1bd9e129",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spidery",
+          "state_id": "spidery-0",
+          "visual_description": "petals are thin, elongated, and irregular or thread-like"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "petals are broad, rounded, or oval-shaped"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heart-shaped",
+          "state_id": "heart-shaped-2",
+          "visual_description": "the flower has a broad, heart-shaped or rounded spathe with a central spike"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-arrangement--batch-0000--32edd9ed--01",
+      "perspective": "color and texture",
+      "question": "How are the petals arranged around the center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32edd9ed1bd9e129",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense_layered",
+          "state_id": "dense-layered-0",
+          "visual_description": "petals are densely packed in multiple overlapping layers"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "single_layer",
+          "state_id": "single-layer-1",
+          "visual_description": "petals are arranged in a single, distinct layer around the center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color--batch-0000--32edd9ed--02",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32edd9ed1bd9e129",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pink",
+          "state_id": "pink-0",
+          "visual_description": "the flower is primarily pink or magenta"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-1",
+          "visual_description": "the flower is primarily orange"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "the flower is primarily red"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "purple",
+          "state_id": "purple-3",
+          "visual_description": "the flower is primarily purple or violet"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "center_type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--center-type--batch-0000--32edd9ed--03",
+      "perspective": "color and texture",
+      "question": "What is the appearance of the flower center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32edd9ed1bd9e129",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiked",
+          "state_id": "spiked-0",
+          "visual_description": "the center is a prominent, elongated, textured spike"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "disc_like",
+          "state_id": "disc-like-1",
+          "visual_description": "the center is a flat or slightly mounded disc of small florets"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--texture--batch-0000--32edd9ed--04",
+      "perspective": "color and texture",
+      "question": "What is the surface texture of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32edd9ed1bd9e129",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the petals have a smooth, matte, or slightly waxy surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "velvety",
+          "state_id": "velvety-1",
+          "visual_description": "the petals have a soft, velvety, or fuzzy texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-arrangement--batch-0000--a1496fa6--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the arrangement of the petals or floral structures?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a1496fa6e6a2659c",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spatulate",
+          "state_id": "spatulate-0",
+          "visual_description": "a flower with a broad, heart-shaped or rounded spathe and a prominent central spike"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "daisy-like",
+          "state_id": "daisy-like-1",
+          "visual_description": "a flower with a central disk and radiating ray petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pincushion-like",
+          "state_id": "pincushion-like-2",
+          "visual_description": "a flower with long, thin, thread-like petals radiating from a central head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-shape--batch-0000--a1496fa6--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape of the petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a1496fa6e6a2659c",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "the petals are rounded and broad"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elongated",
+          "state_id": "elongated-1",
+          "visual_description": "the petals are long and oval-shaped"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "filamentous",
+          "state_id": "filamentous-2",
+          "visual_description": "the petals are thin and thread-like"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-shape--batch-0000--60a894c4--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "60a894c4f8fc217b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spatulate",
+          "state_id": "spatulate-0",
+          "visual_description": "The flower has a heart-shaped or rounded, flat, fleshy spathe with a prominent central spike."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "daisy-like",
+          "state_id": "daisy-like-1",
+          "visual_description": "The flower has many long, narrow, overlapping petals radiating from a central disk."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "shaggy",
+          "state_id": "shaggy-2",
+          "visual_description": "The flower has long, thin, irregular, and wispy petals."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color--batch-0000--60a894c4--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "60a894c4f8fc217b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pink",
+          "state_id": "pink-0",
+          "visual_description": "The flower is primarily pink or magenta."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-1",
+          "visual_description": "The flower is primarily orange."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "The flower is primarily red."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "purple",
+          "state_id": "purple-3",
+          "visual_description": "The flower is primarily purple or violet."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "central_structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--central-structure--batch-0000--60a894c4--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the appearance of the flower's center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "60a894c4f8fc217b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiked",
+          "state_id": "spiked-0",
+          "visual_description": "The center is a long, cylindrical, textured spike."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "disk-like",
+          "state_id": "disk-like-1",
+          "visual_description": "The center is a flat, dense, circular disk of tiny florets."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pincushion",
+          "state_id": "pincushion-2",
+          "visual_description": "The center is a rounded, bumpy cluster of florets."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-shape--batch-0000--70db7405--00",
+      "perspective": "background and environment",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70db74053dd0031c",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spatulate",
+          "state_id": "spatulate-0",
+          "visual_description": "the flower has a heart-shaped or rounded, flat, fleshy spathe with a prominent central spike"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "daisy-like",
+          "state_id": "daisy-like-1",
+          "visual_description": "the flower has many long, narrow, overlapping petals radiating from a central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "shaggy",
+          "state_id": "shaggy-2",
+          "visual_description": "the flower has long, thin, irregular, and wispy petals radiating from a central head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color--batch-0000--70db7405--01",
+      "perspective": "background and environment",
+      "question": "What is the primary color of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70db74053dd0031c",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pink",
+          "state_id": "pink-0",
+          "visual_description": "the flower petals are pink or magenta"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-1",
+          "visual_description": "the flower petals are orange"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "the flower petals are red"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "purple",
+          "state_id": "purple-3",
+          "visual_description": "the flower petals are purple"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "foliage_density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--foliage-density--batch-0000--70db7405--02",
+      "perspective": "background and environment",
+      "question": "How dense is the surrounding foliage in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70db74053dd0031c",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "the background has sparse foliage with visible gaps"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dense",
+          "state_id": "dense-1",
+          "visual_description": "the background is filled with dense, overlapping leaves and stems"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "central_structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--central-structure--batch-0000--70db7405--03",
+      "perspective": "background and environment",
+      "question": "What is the appearance of the flower's central structure?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "70db74053dd0031c",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiked",
+          "state_id": "spiked-0",
+          "visual_description": "the center is a long, cylindrical, textured spike"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "disk-like",
+          "state_id": "disk-like-1",
+          "visual_description": "the center is a flat, rounded disk with visible florets"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fuzzy-disk",
+          "state_id": "fuzzy-disk-2",
+          "visual_description": "the center is a rounded, fuzzy-looking disk with prominent stamens"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "overall shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--overall-shape--batch-0001--e26be66a--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall geometric shape of the flower head?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e26be66ac86ce6f5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bell-shaped",
+          "state_id": "bell-shaped-0",
+          "visual_description": "a flower head that is rounded and hangs downward like a bell"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "trumpet-shaped",
+          "state_id": "trumpet-shaped-1",
+          "visual_description": "a flower head that flares out from a tube"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "star-shaped",
+          "state_id": "star-shaped-2",
+          "visual_description": "a flower head with pointed petals radiating from a center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "disk-shaped",
+          "state_id": "disk-shaped-3",
+          "visual_description": "a flower head that is flat and circular with a prominent center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "globular",
+          "state_id": "globular-4",
+          "visual_description": "a flower head that is rounded and spherical"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petals--petal-arrangement--batch-0001--e26be66a--01",
+      "perspective": "shape and relative proportions",
+      "question": "How are the petals arranged relative to the center of the flower?",
+      "region": "petals",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e26be66ac86ce6f5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "overlapping",
+          "state_id": "overlapping-0",
+          "visual_description": "petals are layered and overlap each other significantly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "radiating",
+          "state_id": "radiating-1",
+          "visual_description": "petals radiate outward from a central point like spokes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "clustered",
+          "state_id": "clustered-2",
+          "visual_description": "petals are grouped in a dense, rounded cluster"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the center of a flower is visible",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--central-structure--batch-0001--e26be66a--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the appearance of the center of the flower?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e26be66ac86ce6f5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no distinct center",
+          "state_id": "no-distinct-center-0",
+          "visual_description": "the flower is relatively flat or uniform across its surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "raised center",
+          "state_id": "raised-center-1",
+          "visual_description": "the center of the flower is slightly raised or mounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "prominent dark center",
+          "state_id": "prominent-dark-center-2",
+          "visual_description": "the flower has a large, dark, textured central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "spiky center",
+          "state_id": "spiky-center-3",
+          "visual_description": "the center of the flower is composed of many small, needle-like structures"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "petal length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--petal-length--batch-0001--e26be66a--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the length of the petals relative to the width of the flower head?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e26be66ac86ce6f5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "petals are short and do not extend far beyond the main body of the flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "petals are of moderate length, roughly equal to the width of the flower head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "petals are long and significantly exceed the width of the flower head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "symmetry",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--symmetry--batch-0001--e26be66a--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the symmetry of the flower head?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e26be66ac86ce6f5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-0",
+          "visual_description": "the flower head is irregular and lacks clear symmetry"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "bilaterally symmetrical",
+          "state_id": "bilaterally-symmetrical-1",
+          "visual_description": "the flower head is symmetrical along one axis (left to right)"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "radially symmetrical",
+          "state_id": "radially-symmetrical-2",
+          "visual_description": "the flower head is symmetrical around a central point"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which flower petals are visible",
+      "attribute": "petal shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-petals--petal-shape--batch-0001--ca80a97f--01",
+      "perspective": "color and texture",
+      "question": "What is the overall shape of the flower petals?",
+      "region": "flower petals",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ca80a97f73425db0",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "the petals have rounded, soft edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pointed",
+          "state_id": "pointed-1",
+          "visual_description": "the petals have pointed, sharp tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "the petals are thin, needle-like, or spiky"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower center is visible",
+      "attribute": "center prominence",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-center--center-prominence--batch-0001--ca80a97f--02",
+      "perspective": "color and texture",
+      "question": "How prominent is the central disk of the flower?",
+      "region": "flower center",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ca80a97f73425db0",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "hidden",
+          "state_id": "hidden-0",
+          "visual_description": "the center is not distinct or is hidden by petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "the center is visible but not the dominant feature"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "prominent",
+          "state_id": "prominent-2",
+          "visual_description": "the center is a large, distinct, dark-colored disk"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "overall structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-structure--overall-structure--batch-0001--ca80a97f--03",
+      "perspective": "color and texture",
+      "question": "What is the overall structural appearance of the flower?",
+      "region": "flower structure",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ca80a97f73425db0",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "cup-shaped",
+          "state_id": "cup-shaped-0",
+          "visual_description": "the flower forms a cup or bell shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "flat-faced",
+          "state_id": "flat-faced-1",
+          "visual_description": "the flower is relatively flat with radiating petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "exotic/spiky",
+          "state_id": "exotic-spiky-2",
+          "visual_description": "the flower has an exotic, asymmetrical, or spiky appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the base of the flower is visible",
+      "attribute": "base texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-base--base-texture--batch-0001--ca80a97f--04",
+      "perspective": "color and texture",
+      "question": "What is the texture of the base of the flower or its bracts?",
+      "region": "flower base",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ca80a97f73425db0",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the base is smooth and green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "scaly",
+          "state_id": "scaly-1",
+          "visual_description": "the base is covered in large, overlapping, scale-like bracts"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "overall shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--overall-shape--batch-0001--5397b9ad--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the overall shape of the flower head?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5397b9ad4bb6926e",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "trumpet-shaped",
+          "state_id": "trumpet-shaped-0",
+          "visual_description": "a flower head that is elongated and flared like a trumpet or funnel"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "bell-shaped",
+          "state_id": "bell-shaped-1",
+          "visual_description": "a flower head that is rounded and hangs like a bell"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "disk-shaped",
+          "state_id": "disk-shaped-2",
+          "visual_description": "a flower head that is flat and circular like a daisy"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "globular",
+          "state_id": "globular-3",
+          "visual_description": "a flower head that is rounded and spherical like a pom-pom"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "spiky",
+          "state_id": "spiky-4",
+          "visual_description": "a flower head that is composed of many thin, needle-like projections"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--petal-arrangement--batch-0001--5397b9ad--01",
+      "perspective": "pose and silhouette",
+      "question": "How are the petals or floral parts arranged?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5397b9ad4bb6926e",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "overlapping",
+          "state_id": "overlapping-0",
+          "visual_description": "petals are large, broad, and overlap each other significantly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "radiating",
+          "state_id": "radiating-1",
+          "visual_description": "petals are arranged in a single layer radiating from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "clustered",
+          "state_id": "clustered-2",
+          "visual_description": "many small floral parts are clustered together into a dense head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--central-structure--batch-0001--5397b9ad--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the appearance of the center of the flower?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5397b9ad4bb6926e",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no distinct center",
+          "state_id": "no-distinct-center-0",
+          "visual_description": "the center is not prominent or is integrated with the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small center",
+          "state_id": "small-center-1",
+          "visual_description": "the center is small and slightly raised"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large dark center",
+          "state_id": "large-dark-center-2",
+          "visual_description": "the center is large, prominent, and dark in color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--petal-texture--batch-0001--5397b9ad--03",
+      "perspective": "pose and silhouette",
+      "question": "What is the texture of the petals?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5397b9ad4bb6926e",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a smooth, uniform surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "petals have visible veins or striations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "textured",
+          "state_id": "textured-2",
+          "visual_description": "petals have a ruffled, crinkled, or fuzzy texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower head is visible",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--orientation--batch-0001--5397b9ad--04",
+      "perspective": "pose and silhouette",
+      "question": "What is the orientation of the flower head?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "5397b9ad4bb6926e",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "upright",
+          "state_id": "upright-0",
+          "visual_description": "the flower head faces upwards or outwards from the stem"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "downward",
+          "state_id": "downward-1",
+          "visual_description": "the flower head hangs downwards"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--petal-shape--batch-0001--eb45225c--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eb45225c412ea1df",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiky/pointed",
+          "state_id": "spiky-pointed-0",
+          "visual_description": "the flower has long, pointed, or needle-like petals or bracts"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded/lobed",
+          "state_id": "rounded-lobed-1",
+          "visual_description": "the flower has broad, rounded, or slightly lobed petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "strap-like",
+          "state_id": "strap-like-2",
+          "visual_description": "the flower has long, flat, strap-like petals radiating from a center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--color--batch-0001--eb45225c--01",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the flower petals?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eb45225c412ea1df",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pink/magenta",
+          "state_id": "pink-magenta-0",
+          "visual_description": "the flower is primarily pink or magenta"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "purple",
+          "state_id": "purple-1",
+          "visual_description": "the flower is primarily purple"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "yellow/orange",
+          "state_id": "yellow-orange-2",
+          "visual_description": "the flower is primarily yellow or orange"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "center structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--center-structure--batch-0001--eb45225c--02",
+      "perspective": "local visible differences",
+      "question": "What is the appearance of the flower's center?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eb45225c412ea1df",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no distinct center",
+          "state_id": "no-distinct-center-0",
+          "visual_description": "the flower lacks a prominent, contrasting central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "prominent dark center",
+          "state_id": "prominent-dark-center-1",
+          "visual_description": "the flower has a large, dark, prominent central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fuzzy/bristly center",
+          "state_id": "fuzzy-bristly-center-2",
+          "visual_description": "the flower has a fuzzy or bristly central head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--petal-texture--batch-0001--eb45225c--03",
+      "perspective": "local visible differences",
+      "question": "What is the surface texture of the flower petals?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eb45225c412ea1df",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the petals have a smooth, matte, or slightly waxy surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "the petals have visible veins or striations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "textured/fuzzy",
+          "state_id": "textured-fuzzy-2",
+          "visual_description": "the petals have a fuzzy, hairy, or highly textured surface"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-head--petal-arrangement--batch-0001--eb45225c--04",
+      "perspective": "local visible differences",
+      "question": "How are the petals arranged relative to the stem?",
+      "region": "flower head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eb45225c412ea1df",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "clustered",
+          "state_id": "clustered-0",
+          "visual_description": "the flowers are clustered together in a dense group"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "single/solitary",
+          "state_id": "single-solitary-1",
+          "visual_description": "the flower appears as a single, large, distinct bloom"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "exotic/asymmetrical",
+          "state_id": "exotic-asymmetrical-2",
+          "visual_description": "the flower has an exotic, asymmetrical, or bird-like shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-shape--batch-0001--29926793--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2992679302d2358c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spiky",
+          "state_id": "spiky-0",
+          "visual_description": "petals are pointed, narrow, or needle-like"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "petals are broad, rounded, or fan-shaped"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "frilled",
+          "state_id": "frilled-2",
+          "visual_description": "petals have ruffled or wavy edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--color--batch-0001--29926793--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2992679302d2358c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pink",
+          "state_id": "pink-0",
+          "visual_description": "the flower is primarily pink or magenta"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow",
+          "state_id": "yellow-1",
+          "visual_description": "the flower is primarily yellow or gold"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "purple",
+          "state_id": "purple-2",
+          "visual_description": "the flower is primarily purple or violet"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "orange",
+          "state_id": "orange-3",
+          "visual_description": "the flower is primarily orange"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "center_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--center-type--batch-0001--29926793--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the appearance of the flower's center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2992679302d2358c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no_distinct_center",
+          "state_id": "no-distinct-center-0",
+          "visual_description": "the flower lacks a prominent, contrasting central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dark_disk",
+          "state_id": "dark-disk-1",
+          "visual_description": "the flower has a prominent dark or black central disk"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "textured_disk",
+          "state_id": "textured-disk-2",
+          "visual_description": "the flower has a large, textured, pincushion-like center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-arrangement--batch-0001--29926793--03",
+      "perspective": "visibility and missing visual information",
+      "question": "How are the petals arranged around the center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2992679302d2358c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "clustered",
+          "state_id": "clustered-0",
+          "visual_description": "petals are clustered in a dense, rounded head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "radiating",
+          "state_id": "radiating-1",
+          "visual_description": "petals radiate outward from a central point"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-texture--batch-0001--29926793--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the surface texture of the petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2992679302d2358c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a smooth, matte, or slightly velvety surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wet",
+          "state_id": "wet-1",
+          "visual_description": "petals are covered in visible water droplets"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "foliage_density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--foliage-density--batch-0001--6717c617--00",
+      "perspective": "background and environment",
+      "question": "What is the density of the foliage in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6717c617856b4932",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "The background shows mostly soil, rocks, or very little vegetation."
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "The background contains some visible leaves and stems but with visible gaps."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "The background is filled with thick, overlapping leaves and foliage."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "foliage_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--foliage-type--batch-0001--6717c617--01",
+      "perspective": "background and environment",
+      "question": "What is the primary type of foliage visible in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6717c617856b4932",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "broadleaf",
+          "state_id": "broadleaf-0",
+          "visual_description": "The background features large, flat, broad leaves."
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "needlelike",
+          "state_id": "needlelike-1",
+          "visual_description": "The background features thin, needle-like or feathery foliage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "palm-like",
+          "state_id": "palm-like-2",
+          "visual_description": "The background features long, pointed, palm-like fronds."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "lighting_environment",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--lighting-environment--batch-0001--6717c617--02",
+      "perspective": "background and environment",
+      "question": "What is the lighting environment of the scene?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6717c617856b4932",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "bright_outdoor",
+          "state_id": "bright-outdoor-0",
+          "visual_description": "The scene is brightly lit with clear, direct light."
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "diffuse_indoor",
+          "state_id": "diffuse-indoor-1",
+          "visual_description": "The scene has soft, even lighting typical of a greenhouse or indoor garden."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "shadowy",
+          "state_id": "shadowy-2",
+          "visual_description": "The scene is dimly lit with significant shadows."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "ground_visibility",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--ground-visibility--batch-0001--6717c617--03",
+      "perspective": "background and environment",
+      "question": "How much of the ground surface is visible?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6717c617856b4932",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "mostly_hidden",
+          "state_id": "mostly-hidden-0",
+          "visual_description": "The ground is almost entirely obscured by plants."
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "partially_visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "Some patches of soil or mulch are visible between plants."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mostly_visible",
+          "state_id": "mostly-visible-2",
+          "visual_description": "A large portion of the ground surface is visible."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-shape--batch-0002--4c3ac4bc--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4c3ac4bca550e718",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "petals with rounded, smooth edges and soft curves"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pointed",
+          "state_id": "pointed-1",
+          "visual_description": "petals with sharp, pointed tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals with irregular, wavy, or deeply lobed edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-arrangement--batch-0002--4c3ac4bc--01",
+      "perspective": "shape and relative proportions",
+      "question": "How are the petals arranged around the center of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4c3ac4bca550e718",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial",
+          "state_id": "radial-0",
+          "visual_description": "petals radiate outward from a central point in a flat or slightly cup-shaped arrangement"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "drooping",
+          "state_id": "drooping-1",
+          "visual_description": "petals hang downward or droop from the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "ruffled",
+          "state_id": "ruffled-2",
+          "visual_description": "petals are highly ruffled, crinkled, or folded"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-texture--batch-0002--4c3ac4bc--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the visible texture of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4c3ac4bca550e718",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a smooth, uniform surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "petals have visible veins or striations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fuzzy",
+          "state_id": "fuzzy-2",
+          "visual_description": "petals have a fuzzy, hairy, or feathery texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "flower_form",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--flower-form--batch-0002--4c3ac4bc--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall structure of the flower head?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4c3ac4bca550e718",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "open_cup",
+          "state_id": "open-cup-0",
+          "visual_description": "a standard open cup or star-shaped flower"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiky",
+          "state_id": "spiky-1",
+          "visual_description": "a flower head with long, thin, spiky projections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "conical",
+          "state_id": "conical-2",
+          "visual_description": "a dense, cylindrical or conical flower head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--color--batch-0002--4be6b3e5--00",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4be6b3e53f532b30",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-0",
+          "visual_description": "the flower petals are primarily blue or violet"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "purple",
+          "state_id": "purple-1",
+          "visual_description": "the flower petals are primarily purple"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "the flower petals are primarily pink or magenta"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "white",
+          "state_id": "white-3",
+          "visual_description": "the flower petals are primarily white"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-shape--batch-0002--4be6b3e5--01",
+      "perspective": "color and texture",
+      "question": "What is the overall shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4be6b3e53f532b30",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "star-shaped",
+          "state_id": "star-shaped-0",
+          "visual_description": "the flower has pointed petals arranged in a star-like pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "ruffled",
+          "state_id": "ruffled-1",
+          "visual_description": "the flower has large, ruffled, or crinkled petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "the flower has long, thin, needle-like projections"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--texture--batch-0002--4be6b3e5--02",
+      "perspective": "color and texture",
+      "question": "What is the surface texture of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4be6b3e53f532b30",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the petals have a smooth, uniform surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "the petals have visible, prominent veins or striations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "beaded",
+          "state_id": "beaded-2",
+          "visual_description": "the petals have a bumpy or beaded texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-arrangement--batch-0002--4be6b3e5--03",
+      "perspective": "color and texture",
+      "question": "How are the petals arranged around the center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4be6b3e53f532b30",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "the petals are arranged in a relatively flat, open plane"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "drooping",
+          "state_id": "drooping-1",
+          "visual_description": "the petals hang downwards or are reflexed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "upright",
+          "state_id": "upright-2",
+          "visual_description": "the petals stand upright or curve upwards"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "center_visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--center-visibility--batch-0002--4be6b3e5--04",
+      "perspective": "color and texture",
+      "question": "How visible is the center of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "4be6b3e53f532b30",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "hidden",
+          "state_id": "hidden-0",
+          "visual_description": "the center of the flower is obscured by petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "partially_visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "parts of the reproductive organs are visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "prominent",
+          "state_id": "prominent-2",
+          "visual_description": "the center and reproductive organs are clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-shape--batch-0002--9a5768fb--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the overall shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9a5768fb44e48cdc",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "star-shaped",
+          "state_id": "star-shaped-0",
+          "visual_description": "the flower has pointed petals radiating from a center, forming a star-like shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ruffled",
+          "state_id": "ruffled-1",
+          "visual_description": "the flower has large, overlapping, wavy or ruffled petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "the flower consists of many thin, needle-like projections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "cylindrical",
+          "state_id": "cylindrical-3",
+          "visual_description": "the flower is a dense, elongated cylindrical spike"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--color--batch-0002--9a5768fb--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary color of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9a5768fb44e48cdc",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blue",
+          "state_id": "blue-0",
+          "visual_description": "the flower is primarily blue or violet"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pink",
+          "state_id": "pink-1",
+          "visual_description": "the flower is primarily pink or magenta"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "white",
+          "state_id": "white-2",
+          "visual_description": "the flower is primarily white"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-texture--batch-0002--9a5768fb--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the visible texture of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9a5768fb44e48cdc",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the petals have a smooth, uniform surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "the petals have visible dark veins or striations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "beaded",
+          "state_id": "beaded-2",
+          "visual_description": "the petals have a bumpy or beaded texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-arrangement--batch-0002--9a5768fb--03",
+      "perspective": "pose and silhouette",
+      "question": "How are the petals arranged relative to the center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9a5768fb44e48cdc",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "the petals are arranged in a flat, open plane"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "drooping",
+          "state_id": "drooping-1",
+          "visual_description": "the petals hang downwards or are reflexed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "upright",
+          "state_id": "upright-2",
+          "visual_description": "the petals stand upright or curve upwards"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-shape--batch-0002--310a9e3c--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "310a9e3ca5f82a56",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "lobed",
+          "state_id": "lobed-0",
+          "visual_description": "petals with distinct lobes or ruffled edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "star-shaped",
+          "state_id": "star-shaped-1",
+          "visual_description": "petals arranged in a distinct star-like pattern with pointed tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "flower head composed of many needle-like or feathery projections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "cylindrical",
+          "state_id": "cylindrical-3",
+          "visual_description": "flower head is elongated and cylindrical with a textured surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "conical",
+          "state_id": "conical-4",
+          "visual_description": "flower head is elongated and tapered to a point"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--color--batch-0002--310a9e3c--01",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the flower?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "310a9e3ca5f82a56",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the flower is primarily white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "purple",
+          "state_id": "purple-1",
+          "visual_description": "the flower is primarily purple or violet"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "the flower is primarily pink"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "blue",
+          "state_id": "blue-3",
+          "visual_description": "the flower is primarily blue"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-texture--batch-0002--310a9e3c--02",
+      "perspective": "local visible differences",
+      "question": "What is the visible texture of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "310a9e3ca5f82a56",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals appear smooth and uniform"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "petals have visible veins or striations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "beaded",
+          "state_id": "beaded-2",
+          "visual_description": "petals have a beaded or droplet-covered surface"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_arrangement",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-arrangement--batch-0002--310a9e3c--03",
+      "perspective": "local visible differences",
+      "question": "How are the petals arranged relative to the center?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "310a9e3ca5f82a56",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "drooping",
+          "state_id": "drooping-0",
+          "visual_description": "petals hang downwards or outwards from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "upright",
+          "state_id": "upright-1",
+          "visual_description": "petals are oriented upwards or outwards in a flat plane"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "center_visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--center-visibility--batch-0002--310a9e3c--04",
+      "perspective": "local visible differences",
+      "question": "Is the center of the flower clearly visible?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "310a9e3ca5f82a56",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "hidden",
+          "state_id": "hidden-0",
+          "visual_description": "the center of the flower is obscured by petals or other structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "visible",
+          "state_id": "visible-1",
+          "visual_description": "the center of the flower, including stamens or pistils, is clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "petal_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-shape--batch-0002--baa04a68--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary shape of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "baa04a68f8c789e2",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "lobed",
+          "state_id": "lobed-0",
+          "visual_description": "petals with distinct lobes or ruffled edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "star-shaped",
+          "state_id": "star-shaped-1",
+          "visual_description": "petals arranged in a distinct star-like pattern with pointed tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "flower head composed of many needle-like or feathery projections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "cylindrical",
+          "state_id": "cylindrical-3",
+          "visual_description": "flower head is elongated and cylindrical with a textured surface"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which a flower is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--texture--batch-0002--baa04a68--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the surface texture of the flower petals?",
+      "region": "flower",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "baa04a68f8c789e2",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a smooth, uniform surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "veined",
+          "state_id": "veined-1",
+          "visual_description": "petals have visible veins or patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "beaded",
+          "state_id": "beaded-2",
+          "visual_description": "petals have small droplets or a beaded appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "background_texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--background-texture--batch-0002--760444c4--00",
+      "perspective": "background and environment",
+      "question": "What is the primary texture of the background behind the plant?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "760444c4d73ec667",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "organic",
+          "state_id": "organic-0",
+          "visual_description": "The background consists of organic matter like soil, mulch, or other foliage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "inorganic",
+          "state_id": "inorganic-1",
+          "visual_description": "The background consists of inorganic materials like stone, concrete, or pavement."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "background_lighting",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--background-lighting--batch-0002--760444c4--01",
+      "perspective": "background and environment",
+      "question": "What is the lighting condition of the background environment?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "760444c4d73ec667",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bright",
+          "state_id": "bright-0",
+          "visual_description": "The background is well-lit with clear visibility of details."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dim",
+          "state_id": "dim-1",
+          "visual_description": "The background is dimly lit or in shadow."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "background_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--background-color--batch-0002--760444c4--02",
+      "perspective": "background and environment",
+      "question": "What is the dominant color of the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "760444c4d73ec667",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "green",
+          "state_id": "green-0",
+          "visual_description": "The background is dominated by green tones from foliage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "gray",
+          "state_id": "gray-1",
+          "visual_description": "The background is dominated by gray or neutral tones from stone or pavement."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dark",
+          "state_id": "dark-2",
+          "visual_description": "The background is very dark or black."
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the flower category shown in the image.",
+  "task_name": "flowers102"
+}

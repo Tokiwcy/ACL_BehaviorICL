@@ -1,0 +1,1781 @@
+{
+  "bank_hash": "3b62f063ba7339c70a54d7e8fb1ee002834348e001e803e288065574e247f344",
+  "class_names": [
+    "banded",
+    "blotchy",
+    "braided",
+    "bubbly",
+    "bumpy",
+    "chequered",
+    "cobwebbed",
+    "cracked",
+    "crosshatched",
+    "crystalline",
+    "dotted",
+    "fibrous",
+    "flecked",
+    "freckled",
+    "frilly",
+    "gauzy",
+    "grid",
+    "grooved",
+    "honeycombed",
+    "interlaced",
+    "knitted",
+    "lacelike",
+    "lined",
+    "marbled",
+    "matted",
+    "meshed",
+    "paisley",
+    "perforated",
+    "pitted",
+    "pleated",
+    "polka-dotted",
+    "porous",
+    "potholed",
+    "scaly",
+    "smeared",
+    "spiralled",
+    "sprinkled",
+    "stained",
+    "stratified",
+    "striped",
+    "studded",
+    "swirly",
+    "veined",
+    "waffled",
+    "woven",
+    "wrinkled",
+    "zigzagged"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "all images",
+      "attribute": "dominant pattern repetition",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--dominant-pattern-repetition--batch-0000--b83ede1b--00",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the primary repeating structural motif across the image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "b83ede1bac2a134f",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "a pattern composed of parallel, elongated elements running in one direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "grid",
+          "state_id": "grid-1",
+          "visual_description": "a pattern composed of intersecting lines forming a regular square or rectangular lattice"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic",
+          "state_id": "organic-2",
+          "visual_description": "a pattern composed of irregular, non-repeating shapes or curves"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface continuity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-continuity--batch-0000--b83ede1b--01",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the surface continuous, fragmented, or interrupted?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "b83ede1bac2a134f",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "a surface that appears seamless and unbroken across the entire frame"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fragmented",
+          "state_id": "fragmented-1",
+          "visual_description": "a surface broken into distinct, separate pieces or sections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "interrupted",
+          "state_id": "interrupted-2",
+          "visual_description": "a surface with visible gaps, holes, or discontinuities"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-orientation--batch-0000--b83ede1b--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the repeating elements aligned, radial, or random?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "b83ede1bac2a134f",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "aligned",
+          "state_id": "aligned-0",
+          "visual_description": "repeating elements arranged in straight, parallel, or perpendicular lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial",
+          "state_id": "radial-1",
+          "visual_description": "repeating elements arranged in a circular or spiral pattern from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random",
+          "state_id": "random-2",
+          "visual_description": "repeating elements arranged without a consistent directional pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-density--batch-0000--b83ede1b--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How densely are the repeating elements packed across the surface?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "b83ede1bac2a134f",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "repeating elements are widely spaced with large areas of empty space"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "repeating elements are evenly distributed with moderate spacing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "repeating elements are tightly packed with minimal empty space"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element shape regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-shape-regularity--batch-0000--b83ede1b--04",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the repeating elements geometrically regular, irregular, or variable?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "b83ede1bac2a134f",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "regular",
+          "state_id": "regular-0",
+          "visual_description": "repeating elements are uniform in shape and size, with consistent geometry"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "irregular",
+          "state_id": "irregular-1",
+          "visual_description": "repeating elements vary in shape and size, with inconsistent geometry"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-2",
+          "visual_description": "repeating elements show a mix of regular and irregular forms, with no consistent pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element edge definition",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-edge-definition--batch-0000--b83ede1b--05",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the edges of the repeating elements sharp, soft, or blurred?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "b83ede1bac2a134f",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "sharp",
+          "state_id": "sharp-0",
+          "visual_description": "edges are well-defined, crisp, and distinct from the surrounding area"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "soft",
+          "state_id": "soft-1",
+          "visual_description": "edges are slightly blurred or indistinct, with gradual transitions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blurred",
+          "state_id": "blurred-2",
+          "visual_description": "edges are heavily blurred or indistinct, with no clear boundary"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "dominant pattern orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--dominant-pattern-orientation--batch-0000--88854806--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the primary direction of the repeating visual motif across the image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "888548065254f141",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "a pattern composed of parallel lines or shapes running from top to bottom"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "a pattern composed of parallel lines or shapes running from left to right"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "a pattern composed of parallel lines or shapes running from top-left to bottom-right"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "no dominant orientation",
+          "state_id": "no-dominant-orientation-3",
+          "visual_description": "a pattern with no clear, consistent direction for its repeating elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface continuity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-continuity--batch-0000--88854806--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the surface of the image continuous or broken into distinct segments?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "888548065254f141",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "a surface that appears seamless and unbroken across the entire frame"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "broken",
+          "state_id": "broken-1",
+          "visual_description": "a surface that is visibly divided into distinct, separate segments or patches"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with repeating patterns",
+      "attribute": "visual density of repeating elements",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--visual-density-of-repeating-elements--batch-0000--88854806--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "How densely are the repeating visual elements distributed across the image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "888548065254f141",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "repeating elements are widely spaced and appear to have large gaps between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "repeating elements are evenly distributed with moderate spacing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "repeating elements are tightly packed with minimal visible gaps"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface irregularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-irregularity--batch-0000--88854806--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the surface of the image smooth, rough, or irregularly textured?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "888548065254f141",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a surface with minimal visible texture or variation in surface detail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "a surface with visible, coarse texture or irregularities"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "a surface with complex, non-uniform texture or pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color variation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--color-variation--batch-0000--88854806--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the color palette uniform, varied, or multicolored?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "888548065254f141",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "a single, consistent color dominates the entire image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "varied",
+          "state_id": "varied-1",
+          "visual_description": "multiple distinct colors are present, but not in a highly complex or chaotic way"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "multicolored",
+          "state_id": "multicolored-2",
+          "visual_description": "a wide range of distinct colors are present, often in complex or contrasting combinations"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with repeating patterns",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--pattern-regularity--batch-0000--88854806--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the pattern in the image geometrically regular, irregular, or chaotic?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "888548065254f141",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "regular",
+          "state_id": "regular-0",
+          "visual_description": "a pattern with consistent, predictable, and repeating geometric shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-1",
+          "visual_description": "a pattern with inconsistent, non-repeating, or loosely defined shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "chaotic",
+          "state_id": "chaotic-2",
+          "visual_description": "a pattern with no discernible structure or repetition, appearing random"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a repeating pattern",
+      "attribute": "dominant pattern orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--dominant-pattern-orientation--batch-0000--d15aa8b8--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the primary direction of the repeating visual pattern across the image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "d15aa8b810ab81a1",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "a pattern composed of parallel lines or shapes running from top to bottom"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "a pattern composed of parallel lines or shapes running from left to right"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "a pattern composed of parallel lines or shapes running from top-left to bottom-right"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "no dominant orientation",
+          "state_id": "no-dominant-orientation-3",
+          "visual_description": "a pattern with no clear primary direction or with irregular, non-repeating elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with repeating elements",
+      "attribute": "repetition density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--repetition-density--batch-0000--d15aa8b8--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How frequently do the repeating elements appear across the image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "d15aa8b810ab81a1",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "repeating elements are widely spaced and appear infrequently"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "repeating elements are evenly distributed with moderate spacing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "repeating elements are tightly packed and appear frequently"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with textured surfaces",
+      "attribute": "surface continuity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-continuity--batch-0000--d15aa8b8--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the surface of the image continuous or broken into distinct segments?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "d15aa8b810ab81a1",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "the texture flows seamlessly across the entire image without interruptions or breaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "broken",
+          "state_id": "broken-1",
+          "visual_description": "the texture is interrupted by visible gaps, cracks, or discontinuities"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with repeating elements",
+      "attribute": "element shape regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-shape-regularity--batch-0000--d15aa8b8--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Are the repeating elements in the image uniform in shape or do they vary?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "d15aa8b810ab81a1",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "all repeating elements are identical in shape, size, and orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "varied",
+          "state_id": "varied-1",
+          "visual_description": "repeating elements differ in shape, size, or orientation, creating a more complex or irregular pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color",
+      "attribute": "color variation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--color-variation--batch-0000--d15aa8b8--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the color palette of the image monochromatic, multicolored, or gradient-based?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "d15aa8b810ab81a1",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "the image uses a single dominant color or a limited palette with minimal hue variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "multicolored",
+          "state_id": "multicolored-1",
+          "visual_description": "the image features multiple distinct colors with significant hue variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "gradient",
+          "state_id": "gradient-2",
+          "visual_description": "the image displays a smooth transition of color across the surface"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with textured surfaces",
+      "attribute": "surface smoothness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-smoothness--batch-0000--d15aa8b8--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the surface of the image smooth, rough, or textured with fine details?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "d15aa8b810ab81a1",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the surface appears flat and lacks visible texture or irregularities"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "the surface has visible irregularities, bumps, or coarse texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "textured",
+          "state_id": "textured-2",
+          "visual_description": "the surface has fine, detailed patterns or structures that are visually discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "dominant pattern repetition",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--dominant-pattern-repetition--batch-0000--8139aa80--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the primary spatial arrangement of the texture's repeating elements?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "8139aa8083875850",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "texture composed of parallel, elongated elements running in one direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "grid",
+          "state_id": "grid-1",
+          "visual_description": "texture composed of regularly spaced, orthogonal repeating units forming a square or rectangular lattice"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "radial",
+          "state_id": "radial-2",
+          "visual_description": "texture composed of elements arranged in concentric or outwardly spreading patterns from a central point"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-shape--batch-0000--8139aa80--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the primary geometric form of the repeating texture units?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "8139aa8083875850",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "polygonal",
+          "state_id": "polygonal-0",
+          "visual_description": "texture units are irregular or regular polygons, often with multiple sides"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "circular",
+          "state_id": "circular-1",
+          "visual_description": "texture units are round or oval shapes, often clustered or arranged in rows"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "texture units are non-uniform, amorphous, or organic in shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface continuity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-continuity--batch-0000--8139aa80--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the texture surface continuous, fragmented, or interrupted?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "8139aa8083875850",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "texture appears as a seamless, unbroken surface without visible gaps or interruptions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fragmented",
+          "state_id": "fragmented-1",
+          "visual_description": "texture is broken into discrete, separate pieces or sections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "interrupted",
+          "state_id": "interrupted-2",
+          "visual_description": "texture is broken by visible gaps, cracks, or discontinuities"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element interconnection",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-interconnection--batch-0000--8139aa80--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How are the texture elements connected or arranged relative to each other?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "8139aa8083875850",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "interlaced",
+          "state_id": "interlaced-0",
+          "visual_description": "elements are woven or crossed over each other in a repeating, interlocking pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "adjacent",
+          "state_id": "adjacent-1",
+          "visual_description": "elements are placed next to each other with no crossing or interweaving"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "separated",
+          "state_id": "separated-2",
+          "visual_description": "elements are distinct, non-touching, and not arranged in a connected pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color variation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--color-variation--batch-0000--8139aa80--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the nature of the color distribution across the texture?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "8139aa8083875850",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "texture uses a single or very limited range of colors with minimal variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "multicolored",
+          "state_id": "multicolored-1",
+          "visual_description": "texture features multiple distinct colors arranged in a pattern or gradient"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "speckled",
+          "state_id": "speckled-2",
+          "visual_description": "texture has a base color with small, scattered, contrasting dots or flecks"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface irregularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-irregularity--batch-0000--8139aa80--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the degree of surface roughness or unevenness?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "8139aa8083875850",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "surface appears flat and even with no visible texture or bumps"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "surface has visible texture, bumps, or irregularities that create a tactile impression"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "porous",
+          "state_id": "porous-2",
+          "visual_description": "surface has many small, open voids or cavities that create a sponge-like appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "dominant pattern repetition",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--dominant-pattern-repetition--batch-0000--260c5baa--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the primary spatial arrangement of the texture's repeating elements?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "260c5baa6c4265ab",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "repeating elements arranged in parallel, straight lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "grid",
+          "state_id": "grid-1",
+          "visual_description": "repeating elements arranged in a regular, square or rectangular array"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "organic",
+          "state_id": "organic-2",
+          "visual_description": "repeating elements arranged in irregular, non-repeating, natural shapes"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-shape--batch-0000--260c5baa--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the primary geometric shape of the repeating texture elements?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "260c5baa6c4265ab",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "circular",
+          "state_id": "circular-0",
+          "visual_description": "elements are round or oval, forming clusters or individual units"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "polygonal",
+          "state_id": "polygonal-1",
+          "visual_description": "elements are angular, with straight edges forming irregular or regular polygons"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "elements have no consistent shape, appearing random or amorphous"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element connectivity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-connectivity--batch-0000--260c5baa--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How are the texture elements connected to each other?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "260c5baa6c4265ab",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "interconnected",
+          "state_id": "interconnected-0",
+          "visual_description": "elements are linked by visible lines or structures, forming a continuous network"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "separated",
+          "state_id": "separated-1",
+          "visual_description": "elements are distinct and not touching or connected to each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "embedded",
+          "state_id": "embedded-2",
+          "visual_description": "elements are contained within or integrated into a larger, continuous structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface uniformity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-uniformity--batch-0000--260c5baa--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is the texture surface consistent or variable in its appearance?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "260c5baa6c4265ab",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "the texture appears consistent across the entire visible area with no variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-1",
+          "visual_description": "the texture shows noticeable variation in color, density, or pattern across the surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "the texture has a chaotic, non-repeating, or unpredictable variation"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-orientation--batch-0000--260c5baa--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Are the texture elements aligned in a consistent direction or randomly oriented?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "260c5baa6c4265ab",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "aligned",
+          "state_id": "aligned-0",
+          "visual_description": "elements are consistently oriented in one or a few primary directions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random",
+          "state_id": "random-1",
+          "visual_description": "elements are oriented in multiple, unpredictable directions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "radial",
+          "state_id": "radial-2",
+          "visual_description": "elements radiate outward from a central point or axis"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "element scale",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--element-scale--batch-0000--260c5baa--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the relative size of the texture elements compared to the overall image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "260c5baa6c4265ab",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fine",
+          "state_id": "fine-0",
+          "visual_description": "elements are small and densely packed, filling the image with minimal empty space"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "elements are of moderate size, with noticeable gaps or spaces between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "elements are large and spaced apart, creating a sparse or open texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "dominant pattern repetition",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--dominant-pattern-repetition--batch-0000--fa2a5e81--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the primary repeating structural motif across the image?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "fa2a5e810e595efc",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "linear",
+          "state_id": "linear-0",
+          "visual_description": "a pattern composed of parallel, elongated elements running in one direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "grid",
+          "state_id": "grid-1",
+          "visual_description": "a pattern composed of intersecting lines forming a regular square or rectangular lattice"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic",
+          "state_id": "organic-2",
+          "visual_description": "a pattern composed of irregular, non-repeating shapes or textures that appear natural or biological"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface continuity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--surface-continuity--batch-0000--fa2a5e81--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the surface texture continuous, fragmented, or interrupted?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "fa2a5e810e595efc",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "a surface with no visible breaks or interruptions in the texture pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fragmented",
+          "state_id": "fragmented-1",
+          "visual_description": "a surface with visible breaks, gaps, or discontinuities in the texture pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "interrupted",
+          "state_id": "interrupted-2",
+          "visual_description": "a surface where the texture pattern is broken by distinct, non-textural elements or boundaries"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture uniformity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--texture-uniformity--batch-0000--fa2a5e81--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the texture consistent across the entire visible area, or does it vary significantly?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "fa2a5e810e595efc",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "a texture that appears consistent and identical across the entire visible area"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "varied",
+          "state_id": "varied-1",
+          "visual_description": "a texture that shows noticeable differences in appearance, density, or detail across different regions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "highly varied",
+          "state_id": "highly-varied-2",
+          "visual_description": "a texture with extreme and irregular variation in appearance, detail, or composition across the visible area"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--texture-orientation--batch-0000--fa2a5e81--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the texture oriented in a specific direction, or is it isotropic?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "fa2a5e810e595efc",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "directional",
+          "state_id": "directional-0",
+          "visual_description": "a texture that exhibits clear, consistent orientation along one or more axes, such as stripes or braids"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "isotropic",
+          "state_id": "isotropic-1",
+          "visual_description": "a texture that appears uniform in all directions, with no dominant orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random",
+          "state_id": "random-2",
+          "visual_description": "a texture with no discernible or consistent orientation, appearing chaotic or irregular"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture granularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--texture-granularity--batch-0000--fa2a5e81--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the texture composed of fine, coarse, or intermediate-scale elements?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "fa2a5e810e595efc",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "fine",
+          "state_id": "fine-0",
+          "visual_description": "a texture composed of very small, densely packed, and detailed elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "coarse",
+          "state_id": "coarse-1",
+          "visual_description": "a texture composed of large, sparse, and distinct elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "intermediate",
+          "state_id": "intermediate-2",
+          "visual_description": "a texture composed of elements of medium size and detail, neither fine nor coarse"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture contrast",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "entire-image--texture-contrast--batch-0000--fa2a5e81--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the texture characterized by high, low, or moderate contrast between its elements and background?",
+      "region": "entire image",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "fa2a5e810e595efc",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111",
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083",
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "a texture with strong, sharp differences in brightness or color between its elements and the surrounding area"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "a texture with subtle, muted differences in brightness or color between its elements and the surrounding area"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate contrast",
+          "state_id": "moderate-contrast-2",
+          "visual_description": "a texture with noticeable but not extreme differences in brightness or color between its elements and the surrounding area"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the texture category shown in the image.",
+  "task_name": "DTD texture classification"
+}

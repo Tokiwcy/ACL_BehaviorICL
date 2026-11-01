@@ -1,0 +1,77 @@
+[
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\siglip_raw_selected_20260906\\aircraft\\atom_bank.original.json",
+    "path": "resources/factor_banks/60676698fdf6.json",
+    "sha256": "60676698fdf6cdd991e8e744c6aca368f3ef4864be1e10bd35e749e80d7d19fc"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\siglip_raw_selected_20260906\\dtd\\atom_bank.original.json",
+    "path": "resources/factor_banks/bfe2f927d670.json",
+    "sha256": "bfe2f927d670b9a6678dc44d3d1bc24267592d334f8e2f226d058302334d6e23"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\siglip_raw_selected_20260906\\cub\\atom_bank.original.json",
+    "path": "resources/factor_banks/e68bf9cb3128.json",
+    "sha256": "e68bf9cb312883fa326e4f198357edb2b96b8ff91d5db3ea4487e39228f5cdf4"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\siglip_raw_selected_20260906\\dogs\\atom_bank.original.json",
+    "path": "resources/factor_banks/2b9b47e00027.json",
+    "sha256": "2b9b47e000272d5c485f0ea5211fd187dc1b5f39ca3f0991d1359820366c05f0"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\qwen3_five_dataset_recalibrated_20260910\\gpu_batch2_flowers102_20260911\\preparation\\flowers102\\atom_bank.final.json",
+    "path": "resources/factor_banks/cf9e4fb67fb3.json",
+    "sha256": "cf9e4fb67fb3c7266a70a18dd6c2982a0fc6400575a8449d31c50d3d4b4984c0"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\qwen25_nf4_five_dataset_20260913\\runs\\dtd\\preparation\\dtd\\atom_bank.final.json",
+    "path": "resources/factor_banks/cc78d95d3a6f.json",
+    "sha256": "cc78d95d3a6faf0d50ab168a8f4de94bca44f5375d68cf1061f66ba5a5bfc73e"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\qwen25_nf4_aircraft_reversed_20260913\\runs\\aircraft\\preparation\\aircraft\\atom_bank.final.json",
+    "path": "resources/factor_banks/fa2ee99ca06a.json",
+    "sha256": "fa2ee99ca06aca25db6f50ed91134d5ad021de5be283b05754d622f035fbf403"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\qwen25_nf4_five_dataset_20260913\\runs\\cub\\preparation\\cub\\atom_bank.final.json",
+    "path": "resources/factor_banks/1072aa8056fb.json",
+    "sha256": "1072aa8056fb5f871bf3a48cb383135ef0258b304466b8053ae9604493166af7"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\qwen25_nf4_five_dataset_20260913\\runs\\dogs\\preparation\\dogs\\atom_bank.final.json",
+    "path": "resources/factor_banks/f9db34f8d495.json",
+    "sha256": "f9db34f8d4953ae6074f5d874fb9a1df8b03b7c16154a5ea7ef81241e0f0a524"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\qwen25_nf4_five_dataset_20260913\\runs\\flowers102\\preparation\\flowers102\\atom_bank.final.json",
+    "path": "resources/factor_banks/d031fd7ec163.json",
+    "sha256": "d031fd7ec163ab1e11b6b5430d34de3ce652b94ff0cb4feb0bc6a64860d67516"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\gemma12_main_1_2shot_v3_20260926\\preparation\\dtd\\matched_decision\\atom_bank.final.json",
+    "path": "resources/factor_banks/5e8e8ca45a04.json",
+    "sha256": "5e8e8ca45a0486dea90674acb6041d5595416e64af57ca247bad0dd1087addef"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\gemma12_main_1_2shot_v3_20260926\\preparation\\aircraft\\matched_decision\\atom_bank.final.json",
+    "path": "resources/factor_banks/0efba6b6778e.json",
+    "sha256": "0efba6b6778e391e8e6ce15ef9147ec878f9ef5a5a8e7f5c7b7635b3315f6eee"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\gemma12_main_1_2shot_v3_20260926\\preparation\\cub\\matched_decision\\atom_bank.final.json",
+    "path": "resources/factor_banks/8cb6788f8caa.json",
+    "sha256": "8cb6788f8caa9eaa181f260ce77b57fe350e8ac07c3204e9b428ca84b83efb4f"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\gemma12_main_1_2shot_v3_20260926\\preparation\\dogs\\matched_decision\\atom_bank.final.json",
+    "path": "resources/factor_banks/04737df06845.json",
+    "sha256": "04737df068455404d401451beb4bf27f8e8875204526659ee001f5483d41dd57"
+  },
+  {
+    "original_source": "D:\\BehaviorICL\\decision_guided_retrieval_cleanroom\\artifacts\\priority_1shot_ablation_20260920\\gemma12_main_1_2shot_v3_20260926\\preparation\\flowers102\\matched_decision\\atom_bank.final.json",
+    "path": "resources/factor_banks/d42d4c6cbb51.json",
+    "sha256": "d42d4c6cbb5112d4e7e020930ec8572eec71fe6d61b4ed6b84c7b8d0f848d7de"
+  }
+]

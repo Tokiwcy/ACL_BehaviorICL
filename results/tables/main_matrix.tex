@@ -1,0 +1,50 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+$k$ & Retrieval setting & DTD & Aircraft & CUB & Dogs & Flowers 102 & Mean \\
+\midrule
+\multicolumn{8}{l}{\textbf{Qwen3-VL-4B-Instruct (BF16)}} \\
+\addlinespace[2pt]
+1 & RICES base & 76.06 & 56.62 & 74.30 & 72.74 & 92.75 & 74.49 \\
+ & +MUIER & 76.28 & 61.45 & 71.01 & 76.48 & 90.96 & 75.23 \\
+ & +DecisionICL & \textbf{77.55} & \textbf{65.38} & \textbf{75.39} & \textbf{74.37} & \textbf{93.15} & \textbf{77.17} \\
+ & +MUIER+DecisionICL & \textbf{77.55} & \textbf{64.75} & \textbf{71.90} & \textbf{76.77} & \textbf{92.75} & \textbf{76.74} \\
+\addlinespace[3pt]
+2 & RICES base & 77.87 & 59.20 & 79.10 & 77.41 & 97.25 & 78.17 \\
+ & +MUIER & 78.40 & 62.77 & 75.51 & 81.42 & 94.16 & 78.45 \\
+ & +DecisionICL & \textbf{78.78} & \textbf{65.71} & \textbf{80.77} & \textbf{78.24} & \textbf{97.28} & \textbf{80.15} \\
+ & +MUIER+DecisionICL & \textbf{79.04} & \textbf{65.26} & \textbf{76.43} & \textbf{81.56} & \textbf{96.67} & \textbf{79.79} \\
+\addlinespace[3pt]
+2 & CIRCLES base & 77.18 & 57.10 & 75.62 & 74.15 & 94.55 & 75.72 \\
+ & +DecisionICL & \textbf{78.99} & \textbf{65.56} & \textbf{77.05} & \textbf{74.94} & \textbf{96.05} & \textbf{78.52} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Qwen2.5-VL-7B-Instruct (NF4)}} \\
+\addlinespace[2pt]
+1 & RICES base & 65.05 & 51.37 & 70.34 & 68.66 & 94.41 & 69.96 \\
+ & +MUIER & 66.54 & 53.62 & 67.06 & 74.50 & 91.87 & 70.72 \\
+ & +DecisionICL & \textbf{66.65} & \textbf{53.59} & \textbf{72.55} & \textbf{72.53} & \textbf{94.91} & \textbf{72.04} \\
+ & +MUIER+DecisionICL & \textbf{67.82} & \textbf{54.61} & \textbf{69.36} & \textbf{75.08} & \textbf{93.74} & \textbf{72.12} \\
+\addlinespace[3pt]
+2 & RICES base & 66.86 & 57.16 & 75.64 & 72.49 & 97.11 & 73.85 \\
+ & +MUIER & 69.41 & 58.90 & 72.32 & 77.94 & 94.24 & 74.56 \\
+ & +DecisionICL & \textbf{70.43} & \textbf{62.44} & \textbf{78.99} & \textbf{75.41} & \textbf{97.76} & \textbf{77.00} \\
+ & +MUIER+DecisionICL & \textbf{71.17} & \textbf{61.96} & \textbf{75.53} & \textbf{78.93} & \textbf{97.35} & \textbf{76.99} \\
+\addlinespace[3pt]
+2 & CIRCLES base & 70.43 & 50.11 & 66.60 & 64.94 & 87.80 & 67.98 \\
+ & +DecisionICL & \textbf{72.98} & \textbf{61.00} & \textbf{73.74} & \textbf{70.96} & \textbf{93.58} & \textbf{74.45} \\
+\midrule
+\multicolumn{8}{l}{\textbf{Gemma 4 12B (NF4)}} \\
+\addlinespace[2pt]
+1 & RICES base & 72.18 & 51.49 & 73.61 & 62.31 & 90.89 & 70.10 \\
+ & +MUIER & 73.83 & 57.82 & 69.40 & 69.98 & 89.35 & 72.07 \\
+ & +DecisionICL & \textbf{74.04} & \textbf{56.71} & \textbf{75.84} & \textbf{66.97} & \textbf{91.53} & \textbf{73.02} \\
+ & +MUIER+DecisionICL & \textbf{75.59} & \textbf{59.71} & \textbf{71.84} & \textbf{70.61} & \textbf{91.58} & \textbf{73.86} \\
+\addlinespace[3pt]
+2 & RICES base & 73.09 & 52.03 & 74.43 & 66.83 & 94.88 & 72.25 \\
+ & +MUIER & 75.11 & 59.83 & 70.61 & 74.86 & 92.34 & 74.55 \\
+ & +DecisionICL & \textbf{74.57} & \textbf{59.08} & \textbf{77.47} & \textbf{71.64} & \textbf{95.56} & \textbf{75.67} \\
+ & +MUIER+DecisionICL & \textbf{76.33} & \textbf{61.78} & \textbf{73.90} & \textbf{75.80} & \textbf{95.09} & \textbf{76.58} \\
+\addlinespace[3pt]
+2 & CIRCLES base & 71.97 & 35.01 & 64.98 & 53.08 & 86.18 & 62.24 \\
+ & +DecisionICL & \textbf{75.27} & \textbf{46.14} & \textbf{72.92} & \textbf{62.05} & \textbf{92.05} & \textbf{69.69} \\
+\bottomrule
+\end{tabular}

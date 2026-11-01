@@ -1,0 +1,3146 @@
+{
+  "bank_hash": "727b7547a6f912d9af015db9cebf1761e4557c1725c9c816f865fffa52ef0bfb",
+  "class_names": [
+    "acadian flycatcher",
+    "american crow",
+    "american goldfinch",
+    "american pipit",
+    "american redstart",
+    "american three toed woodpecker",
+    "anna hummingbird",
+    "artic tern",
+    "baird sparrow",
+    "baltimore oriole",
+    "bank swallow",
+    "barn swallow",
+    "bay breasted warbler",
+    "belted kingfisher",
+    "bewick wren",
+    "black and white warbler",
+    "black billed cuckoo",
+    "black capped vireo",
+    "black footed albatross",
+    "black tern",
+    "black throated blue warbler",
+    "black throated sparrow",
+    "blue grosbeak",
+    "blue headed vireo",
+    "blue jay",
+    "blue winged warbler",
+    "boat tailed grackle",
+    "bobolink",
+    "bohemian waxwing",
+    "brandt cormorant",
+    "brewer blackbird",
+    "brewer sparrow",
+    "bronzed cowbird",
+    "brown creeper",
+    "brown pelican",
+    "brown thrasher",
+    "cactus wren",
+    "california gull",
+    "canada warbler",
+    "cape glossy starling",
+    "cape may warbler",
+    "cardinal",
+    "carolina wren",
+    "caspian tern",
+    "cedar waxwing",
+    "cerulean warbler",
+    "chestnut sided warbler",
+    "chipping sparrow",
+    "chuck will widow",
+    "clark nutcracker",
+    "clay colored sparrow",
+    "cliff swallow",
+    "common raven",
+    "common tern",
+    "common yellowthroat",
+    "crested auklet",
+    "dark eyed junco",
+    "downy woodpecker",
+    "eared grebe",
+    "eastern towhee",
+    "elegant tern",
+    "european goldfinch",
+    "evening grosbeak",
+    "field sparrow",
+    "fish crow",
+    "florida jay",
+    "forsters tern",
+    "fox sparrow",
+    "frigatebird",
+    "gadwall",
+    "geococcyx",
+    "glaucous winged gull",
+    "golden winged warbler",
+    "grasshopper sparrow",
+    "gray catbird",
+    "gray crowned rosy finch",
+    "gray kingbird",
+    "great crested flycatcher",
+    "great grey shrike",
+    "green jay",
+    "green kingfisher",
+    "green tailed towhee",
+    "green violetear",
+    "groove billed ani",
+    "harris sparrow",
+    "heermann gull",
+    "henslow sparrow",
+    "herring gull",
+    "hooded merganser",
+    "hooded oriole",
+    "hooded warbler",
+    "horned grebe",
+    "horned lark",
+    "horned puffin",
+    "house sparrow",
+    "house wren",
+    "indigo bunting",
+    "ivory gull",
+    "kentucky warbler",
+    "laysan albatross",
+    "lazuli bunting",
+    "le conte sparrow",
+    "least auklet",
+    "least flycatcher",
+    "least tern",
+    "lincoln sparrow",
+    "loggerhead shrike",
+    "long tailed jaeger",
+    "louisiana waterthrush",
+    "magnolia warbler",
+    "mallard",
+    "mangrove cuckoo",
+    "marsh wren",
+    "mockingbird",
+    "mourning warbler",
+    "myrtle warbler",
+    "nashville warbler",
+    "nelson sharp tailed sparrow",
+    "nighthawk",
+    "northern flicker",
+    "northern fulmar",
+    "northern waterthrush",
+    "olive sided flycatcher",
+    "orange crowned warbler",
+    "orchard oriole",
+    "ovenbird",
+    "pacific loon",
+    "painted bunting",
+    "palm warbler",
+    "parakeet auklet",
+    "pelagic cormorant",
+    "philadelphia vireo",
+    "pied billed grebe",
+    "pied kingfisher",
+    "pigeon guillemot",
+    "pileated woodpecker",
+    "pine grosbeak",
+    "pine warbler",
+    "pomarine jaeger",
+    "prairie warbler",
+    "prothonotary warbler",
+    "purple finch",
+    "red bellied woodpecker",
+    "red breasted merganser",
+    "red cockaded woodpecker",
+    "red eyed vireo",
+    "red faced cormorant",
+    "red headed woodpecker",
+    "red legged kittiwake",
+    "red winged blackbird",
+    "rhinoceros auklet",
+    "ring billed gull",
+    "ringed kingfisher",
+    "rock wren",
+    "rose breasted grosbeak",
+    "ruby throated hummingbird",
+    "rufous hummingbird",
+    "rusty blackbird",
+    "sage thrasher",
+    "savannah sparrow",
+    "sayornis",
+    "scarlet tanager",
+    "scissor tailed flycatcher",
+    "scott oriole",
+    "seaside sparrow",
+    "shiny cowbird",
+    "slaty backed gull",
+    "song sparrow",
+    "sooty albatross",
+    "spotted catbird",
+    "summer tanager",
+    "swainson warbler",
+    "tennessee warbler",
+    "tree sparrow",
+    "tree swallow",
+    "tropical kingbird",
+    "vermilion flycatcher",
+    "vesper sparrow",
+    "warbling vireo",
+    "western grebe",
+    "western gull",
+    "western meadowlark",
+    "western wood pewee",
+    "whip poor will",
+    "white breasted kingfisher",
+    "white breasted nuthatch",
+    "white crowned sparrow",
+    "white eyed vireo",
+    "white necked raven",
+    "white pelican",
+    "white throated sparrow",
+    "wilson warbler",
+    "winter wren",
+    "worm eating warbler",
+    "yellow bellied flycatcher",
+    "yellow billed cuckoo",
+    "yellow breasted chat",
+    "yellow headed blackbird",
+    "yellow throated vireo",
+    "yellow warbler"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--length--batch-0000--93fe3658--00",
+      "perspective": "shape and relative proportions",
+      "question": "How long is the visible bird beak relative to the head?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93fe3658b705081b",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with a short beak relative to its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with a medium-length beak relative to its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with a long beak relative to its head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "overall proportions",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--overall-proportions--batch-0000--93fe3658--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative proportion of the bird's body and head?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93fe3658b705081b",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "large body",
+          "state_id": "large-body-0",
+          "visual_description": "a bird with a large, robust body relative to its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small body",
+          "state_id": "small-body-1",
+          "visual_description": "a bird with a small, compact body relative to its head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "beak shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--beak-shape--batch-0000--93fe3658--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93fe3658b705081b",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "conical",
+          "state_id": "conical-0",
+          "visual_description": "a bird with a short, thick, conical beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a bird with a straight, medium-length beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pointed",
+          "state_id": "pointed-2",
+          "visual_description": "a bird with a long, thin, pointed beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's tail is visible",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--tail-length--batch-0000--93fe3658--03",
+      "perspective": "shape and relative proportions",
+      "question": "How long is the bird's tail relative to its body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93fe3658b705081b",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with a short tail relative to its body length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with a medium-length tail relative to its body length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with a long tail relative to its body length"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's plumage is visible",
+      "attribute": "plumage color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--plumage-color--batch-0000--93fe3658--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary color of the bird's plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93fe3658b705081b",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with primarily black plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown/grey",
+          "state_id": "brown-grey-1",
+          "visual_description": "a bird with primarily brown or grey plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow/bright",
+          "state_id": "yellow-bright-2",
+          "visual_description": "a bird with primarily yellow or bright-colored plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "primary color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--primary-color--batch-0000--daa8ef3a--00",
+      "perspective": "color and texture",
+      "question": "What is the dominant color of the bird's body plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "daa8ef3aa17740f1",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "the bird's plumage is predominantly black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "yellow",
+          "state_id": "yellow-1",
+          "visual_description": "the bird's plumage is predominantly yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "brown/mottled",
+          "state_id": "brown-mottled-2",
+          "visual_description": "the bird's plumage is primarily brown with mottled patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "iridescent green",
+          "state_id": "iridescent-green-3",
+          "visual_description": "the bird's plumage has a metallic, iridescent green sheen"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "beak shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--beak-shape--batch-0000--daa8ef3a--01",
+      "perspective": "color and texture",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "daa8ef3aa17740f1",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short and stout",
+          "state_id": "short-and-stout-0",
+          "visual_description": "a short, thick, and slightly curved beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium and pointed",
+          "state_id": "medium-and-pointed-1",
+          "visual_description": "a medium-length, straight, pointed beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "long and needle-like",
+          "state_id": "long-and-needle-like-2",
+          "visual_description": "a long, very thin, needle-like beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird head is visible",
+      "attribute": "head markings",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--head-markings--batch-0000--daa8ef3a--02",
+      "perspective": "color and texture",
+      "question": "What are the distinctive markings on the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "daa8ef3aa17740f1",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "plain",
+          "state_id": "plain-0",
+          "visual_description": "the head has no distinct markings or color patches"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "black cap",
+          "state_id": "black-cap-1",
+          "visual_description": "the bird has a distinct black cap or mask"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "mottled/streaked",
+          "state_id": "mottled-streaked-2",
+          "visual_description": "the head has mottled or streaked patterns"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird wings are visible",
+      "attribute": "wing pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--wing-pattern--batch-0000--daa8ef3a--03",
+      "perspective": "color and texture",
+      "question": "What is the pattern on the bird's wings?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "daa8ef3aa17740f1",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "the wings are a solid color without distinct patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "striped",
+          "state_id": "striped-1",
+          "visual_description": "the wings have distinct white or light-colored stripes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "mottled",
+          "state_id": "mottled-2",
+          "visual_description": "the wings have a mottled, speckled pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--environment--batch-0000--daa8ef3a--04",
+      "perspective": "color and texture",
+      "question": "What is the primary environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "daa8ef3aa17740f1",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "snowy/ground",
+          "state_id": "snowy-ground-0",
+          "visual_description": "the background shows snowy ground and dry grass"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue fabric",
+          "state_id": "blue-fabric-1",
+          "visual_description": "the background is a solid blue fabric or cloth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "branch/foliage",
+          "state_id": "branch-foliage-2",
+          "visual_description": "the background consists of branches and foliage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "overall body shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--overall-body-shape--batch-0000--8f1fbf3d--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the overall body shape and proportions of the bird?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8f1fbf3df28a4d31",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "large and robust",
+          "state_id": "large-and-robust-0",
+          "visual_description": "a bird with a large, robust body and relatively long tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small and rounded",
+          "state_id": "small-and-rounded-1",
+          "visual_description": "a small, plump bird with a rounded body and short tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small and slender",
+          "state_id": "small-and-slender-2",
+          "visual_description": "a small, slender bird with a streamlined body"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "plumage color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--plumage-color--batch-0000--8f1fbf3d--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary color of the bird's plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8f1fbf3df28a4d31",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "solid black",
+          "state_id": "solid-black-0",
+          "visual_description": "a bird with entirely black plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yellow and black",
+          "state_id": "yellow-and-black-1",
+          "visual_description": "a bird with bright yellow plumage and black accents"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mottled green and brown",
+          "state_id": "mottled-green-and-brown-2",
+          "visual_description": "a bird with iridescent green and brown mottled plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "beak shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--beak-shape--batch-0000--8f1fbf3d--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8f1fbf3df28a4d31",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "thick and pointed",
+          "state_id": "thick-and-pointed-0",
+          "visual_description": "a bird with a thick, sturdy, and pointed beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short and conical",
+          "state_id": "short-and-conical-1",
+          "visual_description": "a bird with a short, stout, conical beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long and needle-like",
+          "state_id": "long-and-needle-like-2",
+          "visual_description": "a bird with a long, very thin, needle-like beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "head markings",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--head-markings--batch-0000--8f1fbf3d--03",
+      "perspective": "pose and silhouette",
+      "question": "What are the distinctive markings on the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8f1fbf3df28a4d31",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "plain",
+          "state_id": "plain-0",
+          "visual_description": "a bird with a plain head, no distinct markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "distinctive cap",
+          "state_id": "distinctive-cap-1",
+          "visual_description": "a bird with a distinct black cap or mask"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mottled/speckled",
+          "state_id": "mottled-speckled-2",
+          "visual_description": "a bird with a mottled or speckled head pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "posture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--posture--batch-0000--8f1fbf3d--04",
+      "perspective": "pose and silhouette",
+      "question": "What is the bird's posture in the image?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8f1fbf3df28a4d31",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "standing/perched",
+          "state_id": "standing-perched-0",
+          "visual_description": "a bird standing on the ground or perched on a branch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "held in hand",
+          "state_id": "held-in-hand-1",
+          "visual_description": "a bird being held or grasped by a human hand"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "hovering/feeding",
+          "state_id": "hovering-feeding-2",
+          "visual_description": "a bird in flight or hovering near flowers"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "beak_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "beak--beak-shape--batch-0000--0bf9f864--00",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0bf9f86454f11aae",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short_and_conical",
+          "state_id": "short-and-conical-0",
+          "visual_description": "a bird with a short, thick, conical beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long_and_pointed",
+          "state_id": "long-and-pointed-1",
+          "visual_description": "a bird with a long, thin, pointed beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "plumage_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--plumage-color--batch-0000--0bf9f864--01",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0bf9f86454f11aae",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with primarily black plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow",
+          "state_id": "yellow-1",
+          "visual_description": "a bird with primarily yellow plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "mottled_brown_and_green",
+          "state_id": "mottled-brown-and-green-2",
+          "visual_description": "a bird with mottled brown, green, and tan plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "head_markings",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--head-markings--batch-0000--0bf9f864--02",
+      "perspective": "local visible differences",
+      "question": "What are the distinctive markings on the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0bf9f86454f11aae",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "plain",
+          "state_id": "plain-0",
+          "visual_description": "a bird with a plain head without distinct markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black_cap",
+          "state_id": "black-cap-1",
+          "visual_description": "a bird with a distinct black cap on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "eye_stripe",
+          "state_id": "eye-stripe-2",
+          "visual_description": "a bird with a distinct eye stripe or line"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird is visible",
+      "attribute": "body_size",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--body-size--batch-0000--0bf9f864--03",
+      "perspective": "local visible differences",
+      "question": "What is the relative size of the bird?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0bf9f86454f11aae",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a small bird, often held in a human hand"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-sized bird"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a large bird"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's wings are visible",
+      "attribute": "wing_pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--wing-pattern--batch-0000--0bf9f864--04",
+      "perspective": "local visible differences",
+      "question": "What is the pattern on the bird's wings?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0bf9f86454f11aae",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a bird with solid-colored wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "striped",
+          "state_id": "striped-1",
+          "visual_description": "a bird with distinct white or light-colored wing bars or stripes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird is visible",
+      "attribute": "plumage_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--plumage-color--batch-0000--2c247302--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the bird's plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2c247302c1194a9a",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with primarily black plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow",
+          "state_id": "yellow-1",
+          "visual_description": "a bird with primarily yellow plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "mottled_brown_and_green",
+          "state_id": "mottled-brown-and-green-2",
+          "visual_description": "a bird with mottled brown, green, and tan plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "iridescent_green",
+          "state_id": "iridescent-green-3",
+          "visual_description": "a bird with iridescent green plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "head_markings",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--head-markings--batch-0000--2c247302--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What are the distinctive markings on the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2c247302c1194a9a",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "plain",
+          "state_id": "plain-0",
+          "visual_description": "a bird with a plain head without distinct markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black_cap",
+          "state_id": "black-cap-1",
+          "visual_description": "a bird with a distinct black cap or crown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "eye_stripe",
+          "state_id": "eye-stripe-2",
+          "visual_description": "a bird with a distinct eye stripe or mask"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--environment--batch-0000--2c247302--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary environment shown in the image?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2c247302c1194a9a",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "snowy_ground",
+          "state_id": "snowy-ground-0",
+          "visual_description": "a landscape with snow and dry grass"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "foliage_and_branches",
+          "state_id": "foliage-and-branches-1",
+          "visual_description": "a scene with branches and leaves"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "artificial_backdrop",
+          "state_id": "artificial-backdrop-2",
+          "visual_description": "a scene with a solid colored fabric or studio backdrop"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment_type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--environment-type--batch-0000--f6149684--00",
+      "perspective": "background and environment",
+      "question": "What is the primary environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f614968453427271",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "snowy_ground",
+          "state_id": "snowy-ground-0",
+          "visual_description": "a background consisting of snow-covered ground with some visible grass or dirt"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "foliage_and_branches",
+          "state_id": "foliage-and-branches-1",
+          "visual_description": "a background consisting of branches, twigs, and leaves"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "solid_color_backdrop",
+          "state_id": "solid-color-backdrop-2",
+          "visual_description": "a background consisting of a solid colored fabric or surface, such as blue"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "lighting_and_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--lighting-and-color--batch-0000--f6149684--01",
+      "perspective": "background and environment",
+      "question": "What is the overall color and lighting of the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f614968453427271",
+      "source_sample_ids": [
+        "cub-01622",
+        "cub-02056",
+        "cub-02666",
+        "cub-03862"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "natural_outdoor",
+          "state_id": "natural-outdoor-0",
+          "visual_description": "natural outdoor lighting with realistic colors of snow, dirt, or plants"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "studio_indoor",
+          "state_id": "studio-indoor-1",
+          "visual_description": "artificial studio lighting with a solid blue backdrop"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's beak is visible",
+      "attribute": "beak_length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "beak--beak-length--batch-0001--1f6fe702--00",
+      "perspective": "shape and relative proportions",
+      "question": "How long is the bird's beak relative to its head size?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "1f6fe7026b09624a",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with a short, stubby beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with a medium-length beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with a long, pointed beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "body_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-shape--batch-0001--1f6fe702--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall body shape of the bird?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "1f6fe7026b09624a",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "plump",
+          "state_id": "plump-0",
+          "visual_description": "a bird with a round, plump body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "slender",
+          "state_id": "slender-1",
+          "visual_description": "a bird with a slender, streamlined body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elongated",
+          "state_id": "elongated-2",
+          "visual_description": "a bird with a long, elongated body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "head_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--head-shape--batch-0001--1f6fe702--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "1f6fe7026b09624a",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "a bird with a rounded head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "conical",
+          "state_id": "conical-1",
+          "visual_description": "a bird with a conical head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pointed",
+          "state_id": "pointed-2",
+          "visual_description": "a bird with a pointed head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's tail is visible",
+      "attribute": "tail_length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--tail-length--batch-0001--1f6fe702--03",
+      "perspective": "shape and relative proportions",
+      "question": "How long is the bird's tail relative to its body?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "1f6fe7026b09624a",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with a short tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with a medium-length tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with a long tail"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's wings are visible",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wings--wing-shape--batch-0001--1f6fe702--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the bird's wings?",
+      "region": "wings",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "1f6fe7026b09624a",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "a bird with rounded wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pointed",
+          "state_id": "pointed-1",
+          "visual_description": "a bird with pointed wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "scythe-shaped",
+          "state_id": "scythe-shaped-2",
+          "visual_description": "a bird with scythe-shaped wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's legs are visible",
+      "attribute": "leg_length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "legs--leg-length--batch-0001--1f6fe702--05",
+      "perspective": "shape and relative proportions",
+      "question": "How long are the bird's legs relative to its body size?",
+      "region": "legs",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "1f6fe7026b09624a",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with short legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with medium-length legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with long legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "primary color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--primary-color--batch-0001--eed3c75f--00",
+      "perspective": "color and texture",
+      "question": "What is the dominant color of the bird's body plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eed3c75fbb17d0ff",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "yellow",
+          "state_id": "yellow-0",
+          "visual_description": "the bird's body plumage is predominantly yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-1",
+          "visual_description": "the bird's body plumage is predominantly black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown/tan",
+          "state_id": "brown-tan-2",
+          "visual_description": "the bird's body plumage is predominantly brown or tan with streaking"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "head color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--head-color--batch-0001--eed3c75f--01",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eed3c75fbb17d0ff",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "the bird's head is primarily black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tan/brown",
+          "state_id": "tan-brown-1",
+          "visual_description": "the bird's head is primarily tan or brown with markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "gray",
+          "state_id": "gray-2",
+          "visual_description": "the bird's head is primarily gray"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "patterning",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--patterning--batch-0001--eed3c75f--02",
+      "perspective": "color and texture",
+      "question": "What is the pattern of the bird's plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eed3c75fbb17d0ff",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "the bird's plumage is a solid color without distinct streaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "streaked",
+          "state_id": "streaked-1",
+          "visual_description": "the bird's plumage has distinct dark streaks or spots"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's beak is visible",
+      "attribute": "beak shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "beak--beak-shape--batch-0001--eed3c75f--03",
+      "perspective": "color and texture",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eed3c75fbb17d0ff",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "conical",
+          "state_id": "conical-0",
+          "visual_description": "the bird has a short, stout, conical beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pointed",
+          "state_id": "pointed-1",
+          "visual_description": "the bird has a thin, pointed beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's wings are visible",
+      "attribute": "wing visibility",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wings--wing-visibility--batch-0001--eed3c75f--04",
+      "perspective": "color and texture",
+      "question": "What is the state of the bird's wings?",
+      "region": "wings",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eed3c75fbb17d0ff",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "folded",
+          "state_id": "folded-0",
+          "visual_description": "the bird's wings are folded against its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spread",
+          "state_id": "spread-1",
+          "visual_description": "the bird's wings are spread open in flight or display"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "posture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--posture--batch-0001--43c3beda--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the bird's body orientation and posture relative to the ground?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "43c3bedad920979b",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "perched",
+          "state_id": "perched-0",
+          "visual_description": "the bird is standing or perched on a surface, with its body oriented horizontally or slightly tilted"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "in flight",
+          "state_id": "in-flight-1",
+          "visual_description": "the bird is in flight, with wings extended and body angled"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "upright/alert",
+          "state_id": "upright-alert-2",
+          "visual_description": "the bird is standing in a very upright, alert posture, often with a visible head tilt"
+        }
+      ]
+    },
+    {
+      "applies_to": "images where wings are visible",
+      "attribute": "wing position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--wing-position--batch-0001--43c3beda--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the position of the wings relative to the body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "43c3bedad920979b",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "folded",
+          "state_id": "folded-0",
+          "visual_description": "the wings are tucked against the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "partially extended",
+          "state_id": "partially-extended-1",
+          "visual_description": "the wings are partially extended away from the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fully extended",
+          "state_id": "fully-extended-2",
+          "visual_description": "the wings are fully extended in a flapping or gliding motion"
+        }
+      ]
+    },
+    {
+      "applies_to": "images where the tail is visible",
+      "attribute": "tail orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--tail-orientation--batch-0001--43c3beda--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the orientation of the tail relative to the body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "43c3bedad920979b",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "the tail is held roughly horizontal to the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "angled up",
+          "state_id": "angled-up-1",
+          "visual_description": "the tail is angled upwards"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "angled down",
+          "state_id": "angled-down-2",
+          "visual_description": "the tail is angled downwards"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "head color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--head-color--batch-0001--cafaec7c--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cafaec7ce2a5af6e",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "the bird has a solid black head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mottled/streaked",
+          "state_id": "mottled-streaked-1",
+          "visual_description": "the bird's head has a mix of brown, tan, and black streaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "grayish-brown",
+          "state_id": "grayish-brown-2",
+          "visual_description": "the bird's head is a uniform grayish-brown or tan"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "body color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-color--batch-0001--cafaec7c--01",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cafaec7ce2a5af6e",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bright orange/yellow",
+          "state_id": "bright-orange-yellow-0",
+          "visual_description": "the bird has a vibrant orange or yellow body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mottled brown/tan",
+          "state_id": "mottled-brown-tan-1",
+          "visual_description": "the bird has a streaked brown and tan body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "grayish-white",
+          "state_id": "grayish-white-2",
+          "visual_description": "the bird has a mostly gray or white body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's beak is visible",
+      "attribute": "beak shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "beak--beak-shape--batch-0001--cafaec7c--02",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cafaec7ce2a5af6e",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short and pointed",
+          "state_id": "short-and-pointed-0",
+          "visual_description": "a short, sharp, pointed beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium and slightly curved",
+          "state_id": "medium-and-slightly-curved-1",
+          "visual_description": "a medium-length beak with a slight downward curve"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long and heavy",
+          "state_id": "long-and-heavy-2",
+          "visual_description": "a long, thick, and heavy beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's breast is visible",
+      "attribute": "breast pattern",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--breast-pattern--batch-0001--cafaec7c--03",
+      "perspective": "local visible differences",
+      "question": "What is the pattern on the bird's breast?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cafaec7ce2a5af6e",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid orange",
+          "state_id": "solid-orange-0",
+          "visual_description": "the breast is a solid orange or yellow color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "streaked",
+          "state_id": "streaked-1",
+          "visual_description": "the breast has distinct dark brown or black streaks on a lighter background"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the wings are visible",
+      "attribute": "wing color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wings--wing-color--batch-0001--cafaec7c--04",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the wings?",
+      "region": "wings",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cafaec7ce2a5af6e",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black and white",
+          "state_id": "black-and-white-0",
+          "visual_description": "the wings are primarily black and white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown and tan",
+          "state_id": "brown-and-tan-1",
+          "visual_description": "the wings are primarily brown and tan with some lighter markings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "coloration",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--coloration--batch-0001--93890af4--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color and pattern of the bird's body plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93890af4525bd573",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yellow and black",
+          "state_id": "yellow-and-black-0",
+          "visual_description": "a bird with prominent yellow and black plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "brown and streaked",
+          "state_id": "brown-and-streaked-1",
+          "visual_description": "a bird with brown and streaked plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "gray and white",
+          "state_id": "gray-and-white-2",
+          "visual_description": "a bird with gray and white plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "head color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--head-color--batch-0001--93890af4--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93890af4525bd573",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a black head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "brown/tan",
+          "state_id": "brown-tan-1",
+          "visual_description": "a bird with a brown or tan head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "gray",
+          "state_id": "gray-2",
+          "visual_description": "a bird with a gray head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's beak is visible",
+      "attribute": "beak shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "beak--beak-shape--batch-0001--93890af4--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93890af4525bd573",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short and conical",
+          "state_id": "short-and-conical-0",
+          "visual_description": "a bird with a short, conical beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium and pointed",
+          "state_id": "medium-and-pointed-1",
+          "visual_description": "a bird with a medium-length, pointed beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "long and slender",
+          "state_id": "long-and-slender-2",
+          "visual_description": "a bird with a long, slender beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird is visible",
+      "attribute": "body size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-size--batch-0001--93890af4--03",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the relative size of the bird?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93890af4525bd573",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a small bird"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-sized bird"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a large bird"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's wings are visible",
+      "attribute": "wing position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wings--wing-position--batch-0001--93890af4--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the position of the bird's wings?",
+      "region": "wings",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "93890af4525bd573",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "folded",
+          "state_id": "folded-0",
+          "visual_description": "a bird with wings folded against the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spread",
+          "state_id": "spread-1",
+          "visual_description": "a bird with wings spread or in motion"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--environment-type--batch-0001--790f75e5--00",
+      "perspective": "background and environment",
+      "question": "What is the primary environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "790f75e5fd4621d2",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rocky_shore",
+          "state_id": "rocky-shore-0",
+          "visual_description": "a background consisting of rocks, pebbles, and coastal debris"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "foliage",
+          "state_id": "foliage-1",
+          "visual_description": "a background consisting of trees, branches, and green leaves"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "vegetation_presence",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--vegetation-presence--batch-0001--790f75e5--01",
+      "perspective": "background and environment",
+      "question": "Is there visible vegetation in the scene?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "790f75e5fd4621d2",
+      "source_sample_ids": [
+        "cub-05511",
+        "cub-06079",
+        "cub-06360",
+        "cub-06568"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "no_vegetation",
+          "state_id": "no-vegetation-0",
+          "visual_description": "the scene contains no visible plants or leaves"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vegetation_present",
+          "state_id": "vegetation-present-1",
+          "visual_description": "the scene contains visible plants, grass, or tree branches"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "beak--shape--batch-0002--c2c56033--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c2c56033d81cb70c",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "pointed",
+          "state_id": "pointed-0",
+          "visual_description": "a bird with a sharp, pointed beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "thick",
+          "state_id": "thick-1",
+          "visual_description": "a bird with a thick, robust beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "hooked",
+          "state_id": "hooked-2",
+          "visual_description": "a bird with a hooked beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's body is visible",
+      "attribute": "body_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-shape--batch-0002--c2c56033--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall body shape of the bird?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c2c56033d81cb70c",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "slender",
+          "state_id": "slender-0",
+          "visual_description": "a bird with a slender, streamlined body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "robust",
+          "state_id": "robust-1",
+          "visual_description": "a bird with a robust, stocky body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "plump",
+          "state_id": "plump-2",
+          "visual_description": "a bird with a plump, rounded body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's head is visible",
+      "attribute": "crown_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--crown-color--batch-0002--c2c56033--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the color of the bird's crown?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c2c56033d81cb70c",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a black crown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-1",
+          "visual_description": "a bird with a white crown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mottled",
+          "state_id": "mottled-2",
+          "visual_description": "a bird with a mottled or striped crown"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird's wings are visible",
+      "attribute": "wing_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--wing-color--batch-0002--c2c56033--05",
+      "perspective": "shape and relative proportions",
+      "question": "What is the primary color of the bird's wings?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c2c56033d81cb70c",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "a bird with primarily brown wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "gray",
+          "state_id": "gray-1",
+          "visual_description": "a bird with primarily gray wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-2",
+          "visual_description": "a bird with primarily blue wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird head is visible",
+      "attribute": "head_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--head-color--batch-0002--c0764390--01",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the bird's head/crown?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c0764390d6f9f666",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a black crown or head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "white",
+          "state_id": "white-1",
+          "visual_description": "a bird with a white head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "mottled",
+          "state_id": "mottled-2",
+          "visual_description": "a bird with a black and white mottled head pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "body_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-color--batch-0002--c0764390--02",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the bird's breast and belly?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c0764390d6f9f666",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-0",
+          "visual_description": "a bird with an orange or rufous breast"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "white",
+          "state_id": "white-1",
+          "visual_description": "a bird with a white breast"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "gray",
+          "state_id": "gray-2",
+          "visual_description": "a bird with a gray breast"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird wings are visible",
+      "attribute": "wing_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--wing-color--batch-0002--c0764390--03",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the bird's wings?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c0764390d6f9f666",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-0",
+          "visual_description": "a bird with blue wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "gray",
+          "state_id": "gray-1",
+          "visual_description": "a bird with gray wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "black",
+          "state_id": "black-2",
+          "visual_description": "a bird with black wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "body_pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-pattern--batch-0002--c0764390--04",
+      "perspective": "color and texture",
+      "question": "What is the pattern of the bird's plumage?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c0764390d6f9f666",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a bird with solid colored plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "mottled",
+          "state_id": "mottled-1",
+          "visual_description": "a bird with mottled black and white plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "beak_shape_and_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "beak--beak-shape-and-color--batch-0002--d5939754--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape and color of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d59397545e739a79",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short_and_dark",
+          "state_id": "short-and-dark-0",
+          "visual_description": "a bird with a short, dark-colored beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long_and_red",
+          "state_id": "long-and-red-1",
+          "visual_description": "a bird with a long, pointed, bright red beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "plumage_pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--plumage-pattern--batch-0002--d5939754--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary plumage pattern of the bird's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d59397545e739a79",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_orange_and_black",
+          "state_id": "solid-orange-and-black-0",
+          "visual_description": "a bird with a solid orange breast and black head/wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid_white_and_black",
+          "state_id": "solid-white-and-black-1",
+          "visual_description": "a bird with a solid white body and black cap"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "mottled_black_and_white",
+          "state_id": "mottled-black-and-white-2",
+          "visual_description": "a bird with a heavily mottled or speckled black and white pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "body_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-shape--batch-0002--d5939754--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the overall body shape and posture of the bird?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d59397545e739a79",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "upright_perched",
+          "state_id": "upright-perched-0",
+          "visual_description": "a bird perched upright on a surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal_perched",
+          "state_id": "horizontal-perched-1",
+          "visual_description": "a bird perched horizontally along a ledge"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical_clinging",
+          "state_id": "vertical-clinging-2",
+          "visual_description": "a bird clinging vertically to a tree trunk"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird head is visible",
+      "attribute": "head_coloration",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--head-coloration--batch-0002--d5939754--03",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary color of the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d59397545e739a79",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black_cap",
+          "state_id": "black-cap-0",
+          "visual_description": "a bird with a distinct black cap on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "mottled_head",
+          "state_id": "mottled-head-1",
+          "visual_description": "a bird with a head featuring white and black streaks"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "beak_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "beak--beak-color--batch-0002--6810068b--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6810068b7bd27ff2",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a black beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "red",
+          "state_id": "red-1",
+          "visual_description": "a bird with a red beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird head is visible",
+      "attribute": "head_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--head-color--batch-0002--6810068b--01",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's head/crown?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6810068b7bd27ff2",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a bird with a black crown or head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-1",
+          "visual_description": "a bird with a white crown or head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "body_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-color--batch-0002--6810068b--02",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's breast and belly?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6810068b7bd27ff2",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "orange",
+          "state_id": "orange-0",
+          "visual_description": "a bird with an orange or rufous breast"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-1",
+          "visual_description": "a bird with a white breast"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird wings are visible",
+      "attribute": "wing_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--wing-color--batch-0002--6810068b--03",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the bird's wings?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6810068b7bd27ff2",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blue",
+          "state_id": "blue-0",
+          "visual_description": "a bird with blue wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "grey",
+          "state_id": "grey-1",
+          "visual_description": "a bird with grey wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--pattern--batch-0002--6810068b--04",
+      "perspective": "local visible differences",
+      "question": "What is the pattern on the bird's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6810068b7bd27ff2",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a bird with solid colored plumage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "streaked",
+          "state_id": "streaked-1",
+          "visual_description": "a bird with black and white streaked plumage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird legs are visible",
+      "attribute": "leg_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--leg-color--batch-0002--6810068b--05",
+      "perspective": "local visible differences",
+      "question": "What is the color of the bird's legs?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6810068b7bd27ff2",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "orange",
+          "state_id": "orange-0",
+          "visual_description": "a bird with orange or reddish legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "grey",
+          "state_id": "grey-1",
+          "visual_description": "a bird with grey legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird beak is visible",
+      "attribute": "beak_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "beak--beak-color--batch-0002--9083134c--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the bird's beak?",
+      "region": "beak",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9083134cc74be850",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "red",
+          "state_id": "red-0",
+          "visual_description": "a bird with a distinct red beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-1",
+          "visual_description": "a bird with a black beak"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-2",
+          "visual_description": "a bird with an orange beak"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird head is visible",
+      "attribute": "head_color_pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--head-color-pattern--batch-0002--9083134c--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color pattern on the bird's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9083134cc74be850",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "black_cap",
+          "state_id": "black-cap-0",
+          "visual_description": "a bird with a solid black cap on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black_and_white_striped",
+          "state_id": "black-and-white-striped-1",
+          "visual_description": "a bird with black and white stripes on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid_white",
+          "state_id": "solid-white-2",
+          "visual_description": "a bird with a mostly white head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird body is visible",
+      "attribute": "body_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-color--batch-0002--9083134c--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the bird's body feathers?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9083134cc74be850",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "orange_and_black",
+          "state_id": "orange-and-black-0",
+          "visual_description": "a bird with orange and black body feathers"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "gray_and_white",
+          "state_id": "gray-and-white-1",
+          "visual_description": "a bird with gray and white body feathers"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black_and_white_mottled",
+          "state_id": "black-and-white-mottled-2",
+          "visual_description": "a bird with black and white mottled body feathers"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird tail is visible",
+      "attribute": "tail_length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--tail-length--batch-0002--9083134c--03",
+      "perspective": "visibility and missing visual information",
+      "question": "How long is the bird's tail relative to its body length?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9083134cc74be850",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a bird with a short tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a bird with a medium-length tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a bird with a long, pointed tail"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the bird feet are visible",
+      "attribute": "foot_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "feet--foot-color--batch-0002--9083134c--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the color of the bird's feet?",
+      "region": "feet",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "9083134cc74be850",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "red",
+          "state_id": "red-0",
+          "visual_description": "a bird with bright red feet"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "gray",
+          "state_id": "gray-1",
+          "visual_description": "a bird with gray or dark feet"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--texture--batch-0002--fb3fca58--00",
+      "perspective": "background and environment",
+      "question": "What is the primary texture of the background surface?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fb3fca58ef7a2a6a",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a smooth, uniform surface like a wall or clear sky"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "a textured surface like stone, concrete, or weathered wood"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "organic",
+          "state_id": "organic-2",
+          "visual_description": "an organic surface like moss, grass, or foliage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--color--batch-0002--fb3fca58--01",
+      "perspective": "background and environment",
+      "question": "What is the dominant color of the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fb3fca58ef7a2a6a",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "green",
+          "state_id": "green-0",
+          "visual_description": "a predominantly green background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "a predominantly blue background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "gray",
+          "state_id": "gray-2",
+          "visual_description": "a predominantly gray or neutral background"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "object_type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "foreground--object-type--batch-0002--fb3fca58--02",
+      "perspective": "background and environment",
+      "question": "What is the bird perched on or near?",
+      "region": "foreground",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fb3fca58ef7a2a6a",
+      "source_sample_ids": [
+        "cub-07921",
+        "cub-07979",
+        "cub-08258",
+        "cub-11001"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "natural",
+          "state_id": "natural-0",
+          "visual_description": "the bird is on a natural surface like a rock or branch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "artificial",
+          "state_id": "artificial-1",
+          "visual_description": "the bird is on a man-made structure like a railing, wall, or feeder"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the bird species shown in the image.",
+  "task_name": "cub"
+}

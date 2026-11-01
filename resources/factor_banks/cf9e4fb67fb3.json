@@ -1,0 +1,4295 @@
+{
+  "bank_hash": "d59f1f4da5d823a9b02bec915281827e70fca493f939d6401984d53537cfa5b9",
+  "class_names": [
+    "alpine sea holly",
+    "anthurium",
+    "artichoke",
+    "azalea",
+    "ball moss",
+    "balloon flower",
+    "barbeton daisy",
+    "bearded iris",
+    "bee balm",
+    "bird of paradise",
+    "bishop of llandaff",
+    "black-eyed susan",
+    "blackberry lily",
+    "blanket flower",
+    "bolero deep blue",
+    "bougainvillea",
+    "bromelia",
+    "buttercup",
+    "californian poppy",
+    "camellia",
+    "canna lily",
+    "canterbury bells",
+    "cape flower",
+    "carnation",
+    "cautleya spicata",
+    "clematis",
+    "colt's foot",
+    "columbine",
+    "common dandelion",
+    "corn poppy",
+    "cyclamen",
+    "daffodil",
+    "desert-rose",
+    "english marigold",
+    "fire lily",
+    "foxglove",
+    "frangipani",
+    "fritillary",
+    "garden phlox",
+    "gaura",
+    "gazania",
+    "geranium",
+    "giant white arum lily",
+    "globe thistle",
+    "globe-flower",
+    "grape hyacinth",
+    "great masterwort",
+    "hard-leaved pocket orchid",
+    "hibiscus",
+    "hippeastrum",
+    "japanese anemone",
+    "king protea",
+    "lenten rose",
+    "lotus",
+    "love in the mist",
+    "magnolia",
+    "mallow",
+    "marigold",
+    "mexican aster",
+    "mexican petunia",
+    "monkshood",
+    "moon orchid",
+    "morning glory",
+    "orange dahlia",
+    "osteospermum",
+    "oxeye daisy",
+    "passion flower",
+    "pelargonium",
+    "peruvian lily",
+    "petunia",
+    "pincushion flower",
+    "pink primrose",
+    "pink-yellow dahlia?",
+    "poinsettia",
+    "primula",
+    "prince of wales feathers",
+    "purple coneflower",
+    "red ginger",
+    "rose",
+    "ruby-lipped cattleya",
+    "siam tulip",
+    "silverbush",
+    "snapdragon",
+    "spear thistle",
+    "spring crocus",
+    "stemless gentian",
+    "sunflower",
+    "sweet pea",
+    "sweet william",
+    "sword lily",
+    "thorn apple",
+    "tiger lily",
+    "toad lily",
+    "tree mallow",
+    "tree poppy",
+    "trumpet creeper",
+    "wallflower",
+    "water lily",
+    "watercress",
+    "wild pansy",
+    "windflower",
+    "yellow iris"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images in which the flower has visible petals",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-arrangement--batch-0000--b24f0bb7--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How are the petals arranged around the center of the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular pattern around a central point, with uniform spacing and length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiral",
+          "state_id": "spiral-1",
+          "visual_description": "petals arranged in a spiral pattern, curving outward from the center with varying lengths and angles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fan-shaped",
+          "state_id": "fan-shaped-2",
+          "visual_description": "petals arranged in a fan-like spread, radiating outward from a central point with consistent length and angle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the central structure is visible",
+      "attribute": "central structure prominence",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--central-structure-prominence--batch-0000--b24f0bb7--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How prominent is the central reproductive structure relative to the petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dominant",
+          "state_id": "dominant-0",
+          "visual_description": "the central structure is large, textured, and occupies a significant portion of the flower's center, overshadowing the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "subordinate",
+          "state_id": "subordinate-1",
+          "visual_description": "the central structure is small, less textured, and occupies a minor portion of the flower's center, with petals dominating the view"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "integrated",
+          "state_id": "integrated-2",
+          "visual_description": "the central structure is seamlessly blended with the petals, with no clear separation between the two"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petals are visible",
+      "attribute": "petal shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-shape--batch-0000--b24f0bb7--02",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the overall shape of the petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "heart-shaped",
+          "state_id": "heart-shaped-0",
+          "visual_description": "petals are broad at the base and taper to a pointed tip, forming a heart-like silhouette"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spatulate",
+          "state_id": "spatulate-1",
+          "visual_description": "petals are broad and flat at the base, tapering to a narrow, pointed tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lanceolate",
+          "state_id": "lanceolate-2",
+          "visual_description": "petals are elongated with a pointed tip and a narrow base, resembling a lance or spear"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower has a dominant, uniform color",
+      "attribute": "color saturation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color-saturation--batch-0000--b24f0bb7--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How saturated is the primary color of the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly saturated",
+          "state_id": "highly-saturated-0",
+          "visual_description": "the primary color is vivid and intense, with minimal gray or muted tones"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately saturated",
+          "state_id": "moderately-saturated-1",
+          "visual_description": "the primary color is bright but has some gray or muted tones, appearing less intense"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "low saturation",
+          "state_id": "low-saturation-2",
+          "visual_description": "the primary color is dull, washed out, or has significant gray or muted tones"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petals are clearly distinguishable",
+      "attribute": "petal count",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-count--batch-0000--b24f0bb7--04",
+      "perspective": "part shape and relative proportions",
+      "question": "How many distinct petals are visible around the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "only 2-5 distinct petals are visible, with the rest obscured or not fully formed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "between 6-15 distinct petals are visible, forming a balanced, symmetrical pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "many",
+          "state_id": "many-2",
+          "visual_description": "16 or more distinct petals are visible, creating a dense, full appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petal surface is visible",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-texture--batch-0000--b24f0bb7--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the texture of the petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "b24f0bb7fd469011",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals have a uniform, glossy surface with no visible ridges, bumps, or fine hairs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "petals have visible ridges, bumps, or fine hairs, creating a rough or granular surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fringed",
+          "state_id": "fringed-2",
+          "visual_description": "petals have fine, delicate fringes or serrations along the edges, giving a lace-like appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower has visible petals",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-arrangement--batch-0000--8ad3b680--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "How are the petals arranged around the center of the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular, uniform pattern around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiral",
+          "state_id": "spiral-1",
+          "visual_description": "petals arranged in a spiraling, overlapping pattern from center outward"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fan-shaped",
+          "state_id": "fan-shaped-2",
+          "visual_description": "petals arranged in a broad, flat, fan-like spread from the center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petal surface is visible",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-texture--batch-0000--8ad3b680--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the surface texture of the petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with a uniform, non-ridged, non-ridged surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ridged",
+          "state_id": "ridged-1",
+          "visual_description": "petals with distinct, parallel ridges running along their length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fringed",
+          "state_id": "fringed-2",
+          "visual_description": "petals with fine, hair-like projections along the edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's dominant color is clearly visible",
+      "attribute": "color saturation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color-saturation--batch-0000--8ad3b680--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "How saturated is the dominant color of the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "dominant color appears muted, desaturated, or washed out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "dominant color is vivid but not intensely saturated"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "dominant color is intensely saturated and vibrant"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the central part of the flower is visible",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--central-structure--batch-0000--8ad3b680--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape and complexity of the flower's central reproductive structure?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "simple disc",
+          "state_id": "simple-disc-0",
+          "visual_description": "central structure is a flat, smooth, circular disc"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiky",
+          "state_id": "spiky-1",
+          "visual_description": "central structure is composed of numerous small, pointed, spiky elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "complex cluster",
+          "state_id": "complex-cluster-2",
+          "visual_description": "central structure is a dense, multi-layered cluster of small florets or stamens"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the surrounding foliage is visible",
+      "attribute": "leaf structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--leaf-structure--batch-0000--8ad3b680--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape and arrangement of the leaves surrounding the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "simple and broad",
+          "state_id": "simple-and-broad-0",
+          "visual_description": "leaves are broad, flat, and arranged in a simple, non-overlapping pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "compound and serrated",
+          "state_id": "compound-and-serrated-1",
+          "visual_description": "leaves are divided into multiple segments with serrated edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky and clustered",
+          "state_id": "spiky-and-clustered-2",
+          "visual_description": "leaves are narrow, pointed, and clustered around the stem"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower head is visible",
+      "attribute": "overall form",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--overall-form--batch-0000--8ad3b680--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the overall shape of the flower head?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "8ad3b680cdfb5f85",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat and circular",
+          "state_id": "flat-and-circular-0",
+          "visual_description": "flower head is flat, round, and appears to be a single plane"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "conical",
+          "state_id": "conical-1",
+          "visual_description": "flower head is shaped like a cone or inverted pyramid"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spike-like",
+          "state_id": "spike-like-2",
+          "visual_description": "flower head is elongated and pointed, resembling a spike"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-arrangement--batch-0000--5e4ffea9--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How are the petals arranged around the flower center?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial",
+          "state_id": "radial-0",
+          "visual_description": "petals arranged in a circular pattern around a central disc, with no overlapping or layered structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "concentric",
+          "state_id": "concentric-1",
+          "visual_description": "petals arranged in overlapping layers, creating a dense, layered appearance around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiral",
+          "state_id": "spiral-2",
+          "visual_description": "petals arranged in a spiral pattern, radiating outward from the center with a distinct, non-circular symmetry"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--central-structure--batch-0000--5e4ffea9--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape and texture of the flower's central reproductive structure?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat disc",
+          "state_id": "flat-disc-0",
+          "visual_description": "a smooth, flat, circular central structure with no protrusions or texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiky",
+          "state_id": "spiky-1",
+          "visual_description": "a central structure with numerous small, pointed, or spiky protrusions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense cluster",
+          "state_id": "dense-cluster-2",
+          "visual_description": "a central structure composed of tightly packed, rounded or tubular elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "color saturation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color-saturation--batch-0000--5e4ffea9--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How saturated is the dominant flower color?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "the flower color appears muted, desaturated, or washed out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the flower color is moderately saturated with some visible texture or variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "the flower color is intensely saturated, vibrant, and visually striking"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible leaves",
+      "attribute": "leaf structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--leaf-structure--batch-0000--5e4ffea9--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape and orientation of the surrounding leaves?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat and broad",
+          "state_id": "flat-and-broad-0",
+          "visual_description": "leaves are broad, flat, and spread out horizontally or vertically"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tapered and elongated",
+          "state_id": "tapered-and-elongated-1",
+          "visual_description": "leaves are long, narrow, and taper to a point, often arranged in a vertical or diagonal orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky and pointed",
+          "state_id": "spiky-and-pointed-2",
+          "visual_description": "leaves are sharp, pointed, and have a spiky or serrated edge"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "spike structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--spike-structure--batch-0000--5e4ffea9--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is there a distinct spike or stalk extending from the flower center?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "absent",
+          "state_id": "absent-0",
+          "visual_description": "no spike or stalk is visible extending from the flower center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "present",
+          "state_id": "present-1",
+          "visual_description": "a distinct spike or stalk is visible, extending vertically from the flower center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "surface texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--surface-texture--batch-0000--5e4ffea9--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the texture of the flower's surface?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "5e4ffea90d73ba00",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the flower surface appears smooth, with no visible bumps, ridges, or patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ridged",
+          "state_id": "ridged-1",
+          "visual_description": "the flower surface has visible ridges or grooves running along its length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "textured",
+          "state_id": "textured-2",
+          "visual_description": "the flower surface has a complex, non-uniform texture with visible bumps, patterns, or fine hairs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a central floral structure",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-structure--petal-arrangement--batch-0000--ed7a1308--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How are the petals arranged around the center of the flower?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular, uniform pattern around a central disc"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiral radiating",
+          "state_id": "spiral-radiating-1",
+          "visual_description": "petals extending outward in a spiral or radial pattern from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "conical",
+          "state_id": "conical-2",
+          "visual_description": "petals forming a cone-like or tubular structure with a central spike"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a clearly defined dominant flower color",
+      "attribute": "hue saturation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-color--hue-saturation--batch-0000--ed7a1308--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the intensity and purity of the flower's dominant color?",
+      "region": "flower color",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high saturation",
+          "state_id": "high-saturation-0",
+          "visual_description": "a flower with a vivid, intense, and pure hue with minimal color variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium saturation",
+          "state_id": "medium-saturation-1",
+          "visual_description": "a flower with a moderately intense hue, showing some color variation or undertones"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "low saturation",
+          "state_id": "low-saturation-2",
+          "visual_description": "a flower with a muted, dull, or desaturated hue, appearing washed out"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a flower that may be mistaken for a leaf",
+      "attribute": "leaf-like structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-form--leaf-like-structure--batch-0000--ed7a1308--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Does the flower have a leaf-like structure or is it composed of distinct petals?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "leaf-like",
+          "state_id": "leaf-like-0",
+          "visual_description": "a structure that resembles a leaf, with a broad, flat, and often glossy surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "petal-like",
+          "state_id": "petal-like-1",
+          "visual_description": "a structure composed of distinct, separate, and typically pointed or rounded petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible central floral structure",
+      "attribute": "central structure complexity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-center--central-structure-complexity--batch-0000--ed7a1308--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How complex is the central structure of the flower?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "simple",
+          "state_id": "simple-0",
+          "visual_description": "a central structure that is flat, disc-like, or composed of a few simple elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "complex",
+          "state_id": "complex-1",
+          "visual_description": "a central structure with multiple layers, spiky, or densely packed elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a flower that has a central spike or stalk",
+      "attribute": "spike or stalk presence",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-morphology--spike-or-stalk-presence--batch-0000--ed7a1308--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is there a distinct spike or stalk extending from the flower center?",
+      "region": "flower morphology",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "present",
+          "state_id": "present-0",
+          "visual_description": "a distinct, elongated, and often textured spike or stalk extending upward from the flower center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "absent",
+          "state_id": "absent-1",
+          "visual_description": "no distinct spike or stalk is visible from the flower center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a flower that has visible surface texture",
+      "attribute": "surface texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-texture--surface-texture--batch-0000--ed7a1308--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the surface texture of the flower's petals or leaves?",
+      "region": "flower texture",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ed7a1308a98c121b",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a surface that appears glossy, uniform, and without visible texture or bumps"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured",
+          "state_id": "textured-1",
+          "visual_description": "a surface with visible bumps, ridges, or fine hairs, giving it a rough or granular appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-structure--petal-arrangement--batch-0000--ea4718ef--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How are the petals arranged around the center of the flower?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular pattern around a central disc, with no distinct radial or spiral pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiral pattern",
+          "state_id": "spiral-pattern-1",
+          "visual_description": "petals arranged in a spiral or whorled pattern, often with a central cone or disc"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "conical center",
+          "state_id": "conical-center-2",
+          "visual_description": "a central cone or disc with radiating filaments or petals, often surrounded by a ring of petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-center--central-structure--batch-0000--ea4718ef--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape and texture of the central part of the flower?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat disc",
+          "state_id": "flat-disc-0",
+          "visual_description": "a flat, smooth, circular disc with no raised structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiky cone",
+          "state_id": "spiky-cone-1",
+          "visual_description": "a raised, conical, or spiky central structure with visible stamens or florets"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense cluster",
+          "state_id": "dense-cluster-2",
+          "visual_description": "a dense, compact cluster of small florets or stamens forming a central mass"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "dominant hue",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-color--dominant-hue--batch-0000--ea4718ef--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the dominant color of the flower petals?",
+      "region": "flower color",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "red",
+          "state_id": "red-0",
+          "visual_description": "petals exhibiting a strong, saturated red hue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "orange",
+          "state_id": "orange-1",
+          "visual_description": "petals exhibiting a strong, saturated orange hue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "petals exhibiting a strong, saturated pink hue"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible leaves",
+      "attribute": "leaf structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-form--leaf-structure--batch-0000--ea4718ef--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape and arrangement of the leaves surrounding the flower?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "large and broad",
+          "state_id": "large-and-broad-0",
+          "visual_description": "leaves are large, broad, and often heart-shaped or ovate, with visible veins"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small and narrow",
+          "state_id": "small-and-narrow-1",
+          "visual_description": "leaves are small, narrow, and often elongated or lanceolate, with visible veins"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky and elongated",
+          "state_id": "spiky-and-elongated-2",
+          "visual_description": "leaves are spiky, elongated, and often with a pointed tip, with visible veins"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "spike or stalk",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-morphology--spike-or-stalk--batch-0000--ea4718ef--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is there a distinct spike or stalk extending from the flower center?",
+      "region": "flower morphology",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no spike",
+          "state_id": "no-spike-0",
+          "visual_description": "the flower has no distinct spike or stalk extending from the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spike present",
+          "state_id": "spike-present-1",
+          "visual_description": "a distinct spike or stalk extends from the center of the flower, often with a textured surface"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petals",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower-morphology--petal-texture--batch-0000--ea4718ef--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the texture of the petals?",
+      "region": "flower morphology",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "ea4718ef19f028e9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth and glossy",
+          "state_id": "smooth-and-glossy-0",
+          "visual_description": "petals have a smooth, glossy surface with visible light reflections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "textured and rough",
+          "state_id": "textured-and-rough-1",
+          "visual_description": "petals have a rough, textured surface with visible ridges or bumps"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "waxy and shiny",
+          "state_id": "waxy-and-shiny-2",
+          "visual_description": "petals have a waxy, shiny surface with visible light reflections"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "petal structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-structure--batch-0000--c7d50723--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the arrangement and shape of the petals around the flower center?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radiating petals",
+          "state_id": "radiating-petals-0",
+          "visual_description": "petals arranged in a radial pattern, extending outward from a central disc"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spike-like petals",
+          "state_id": "spike-like-petals-1",
+          "visual_description": "petals elongated and pointed, forming a spiky or bristly appearance around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "flat, broad petals",
+          "state_id": "flat-broad-petals-2",
+          "visual_description": "petals wide and flat, forming a broad, open, or cup-like shape around the center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--central-structure--batch-0000--c7d50723--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the morphology of the flower's central reproductive region?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense disc",
+          "state_id": "dense-disc-0",
+          "visual_description": "a tightly packed, rounded central disc composed of numerous small florets"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiky center",
+          "state_id": "spiky-center-1",
+          "visual_description": "a central region with elongated, pointed structures radiating outward, often with fine hairs or bristles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "open center",
+          "state_id": "open-center-2",
+          "visual_description": "a central region that is open, with visible stamens or pistils extending outward from a less dense core"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "color saturation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--color-saturation--batch-0000--c7d50723--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the intensity and uniformity of the flower's dominant color?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "high saturation",
+          "state_id": "high-saturation-0",
+          "visual_description": "a flower with a very intense, vivid, and uniform color that stands out against the background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium saturation",
+          "state_id": "medium-saturation-1",
+          "visual_description": "a flower with a moderately intense color, with some variation in hue or brightness across petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "low saturation",
+          "state_id": "low-saturation-2",
+          "visual_description": "a flower with a muted, dull, or desaturated color, appearing washed out or grayish"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "petal count",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-count--batch-0000--c7d50723--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How many distinct, visible petals encircle the flower center?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "few petals",
+          "state_id": "few-petals-0",
+          "visual_description": "a flower with 3 to 6 distinct, visible petals surrounding the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "many petals",
+          "state_id": "many-petals-1",
+          "visual_description": "a flower with 10 or more distinct, visible petals surrounding the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense petals",
+          "state_id": "dense-petals-2",
+          "visual_description": "a flower with petals that are densely packed, making it difficult to count individual petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "petal texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--petal-texture--batch-0000--c7d50723--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the surface texture of the flower petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth surface",
+          "state_id": "smooth-surface-0",
+          "visual_description": "petals with a glossy, uniform, and untextured surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ridged surface",
+          "state_id": "ridged-surface-1",
+          "visual_description": "petals with visible ridges or grooves running along their length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "textured surface",
+          "state_id": "textured-surface-2",
+          "visual_description": "petals with a rough, hairy, or fuzzy texture, often with fine hairs or bumps"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower head",
+      "attribute": "flower form",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "flower--flower-form--batch-0000--c7d50723--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall shape and form of the flower head?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "c7d50723048c94d9",
+      "source_sample_ids": [
+        "flowers-01966",
+        "flowers-02307",
+        "flowers-02776",
+        "flowers-03080"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat disc",
+          "state_id": "flat-disc-0",
+          "visual_description": "a flower head that is flat and circular, with petals radiating outward from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spike-like",
+          "state_id": "spike-like-1",
+          "visual_description": "a flower head that is elongated and pointed, resembling a spike or a cone"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heart-shaped",
+          "state_id": "heart-shaped-2",
+          "visual_description": "a flower head that is broad and rounded, with petals forming a heart-like or cup-like shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower center is visible and contains stamens or similar filaments",
+      "attribute": "density of filaments",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-center--density-of-filaments--batch-0001--fbdfa04c--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How densely packed are the stamens or filaments in the center of the flower?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "a flower center with widely spaced, thin filaments that are not densely packed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a flower center with moderately packed filaments, showing some clustering but not overwhelming density"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "a flower center with tightly packed, numerous filaments creating a full, textured appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower has clearly defined petals",
+      "attribute": "symmetry of petal spread",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-arrangement--symmetry-of-petal-spread--batch-0001--fbdfa04c--01",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the petal arrangement radially symmetric, asymmetric, or irregular?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular pattern around a central point, with uniform spacing and orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "asymmetric",
+          "state_id": "asymmetric-1",
+          "visual_description": "petals arranged in a non-uniform pattern, with noticeable variation in length, angle, or orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-2",
+          "visual_description": "petals arranged in a chaotic or random pattern with no discernible symmetry or order"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower has a distinct outer layer of modified leaves or bracts",
+      "attribute": "presence of bracts",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-structure--presence-of-bracts--batch-0001--fbdfa04c--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Are there leaf-like structures surrounding the flower head or bloom?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "absent",
+          "state_id": "absent-0",
+          "visual_description": "the flower head or bloom is directly exposed without any surrounding leaf-like structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "present",
+          "state_id": "present-1",
+          "visual_description": "the flower head or bloom is encircled by leaf-like structures that are either spiny, pointed, or broad"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petals are clearly visible and their color stands out from the background",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-coloration--color-contrast--batch-0001--fbdfa04c--03",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the color of the petals highly contrasting with the surrounding foliage or flower center?",
+      "region": "petal coloration",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "petals are a bright, saturated color that sharply contrasts with the background foliage or flower center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "petals are a muted or similar color to the surrounding foliage or flower center, creating a subtle visual blend"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower is either a single bloom or a cluster of blooms on a stem",
+      "attribute": "spike vs. bloom",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-form--spike-vs-bloom--batch-0001--fbdfa04c--04",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the flower a single, open bloom or a clustered spike-like structure?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "single bloom",
+          "state_id": "single-bloom-0",
+          "visual_description": "a single, distinct flower head or bloom with no other flowers clustered around it"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "clustered bloom",
+          "state_id": "clustered-bloom-1",
+          "visual_description": "multiple flowers arranged in a dense, spike-like or cluster formation along a stem"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petals are clearly visible and their shape can be assessed",
+      "attribute": "petal curvature",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-shape--petal-curvature--batch-0001--fbdfa04c--05",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the petals straight, curved, or reflexed (bent backward)?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fbdfa04ca54b1ad5",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "petals are straight and extend outward from the center without bending or curving"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "petals are gently curved outward or inward, showing a slight bend or arc"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "reflexed",
+          "state_id": "reflexed-2",
+          "visual_description": "petals are bent backward or downward, creating a reflexed or drooping appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower center is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-center--texture--batch-0001--d6e10921--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the texture of the flower's central reproductive structure?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth and compact",
+          "state_id": "smooth-and-compact-0",
+          "visual_description": "a flower center with a uniform, tightly packed, and non-fibrous surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fibrous and spiky",
+          "state_id": "fibrous-and-spiky-1",
+          "visual_description": "a flower center with a dense, bristly, or spiky texture composed of fine filaments"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "soft and feathery",
+          "state_id": "soft-and-feathery-2",
+          "visual_description": "a flower center with a delicate, fluffy, or downy texture resembling fine hairs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-shape--form--batch-0001--d6e10921--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the overall shape of the flower's petals?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "spike-like and elongated",
+          "state_id": "spike-like-and-elongated-0",
+          "visual_description": "petals that are pointed, slender, and extend outward in a sharp, angular fashion"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rounded and broad",
+          "state_id": "rounded-and-broad-1",
+          "visual_description": "petals that are wide, rounded, and form a full, open, or cup-like shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tapered and pointed",
+          "state_id": "tapered-and-pointed-2",
+          "visual_description": "petals that are narrow at the base and gradually widen to a sharp, pointed tip"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower is set against foliage",
+      "attribute": "hue contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "color-contrast--hue-contrast--batch-0001--d6e10921--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "How does the color of the flower's main petals contrast with the surrounding foliage?",
+      "region": "color contrast",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "the flower's color is significantly different from the background foliage, creating a strong visual separation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "the flower's color blends subtly with the background foliage, creating a muted or harmonious appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high saturation",
+          "state_id": "high-saturation-2",
+          "visual_description": "the flower's color is vivid and intense, standing out sharply against the background"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's overall structure is visible",
+      "attribute": "symmetry",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-structure--symmetry--batch-0001--d6e10921--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the flower's structure radially symmetric or asymmetric?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "the flower exhibits clear radial symmetry, with elements arranged in a circular pattern around a central axis"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "asymmetric",
+          "state_id": "asymmetric-1",
+          "visual_description": "the flower lacks radial symmetry, with elements arranged in a non-uniform or irregular pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "bilaterally symmetric",
+          "state_id": "bilaterally-symmetric-2",
+          "visual_description": "the flower exhibits bilateral symmetry, with mirror-image halves along a central axis"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-arrangement--density--batch-0001--d6e10921--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "How densely are the petals arranged around the flower's center?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "sparse and widely spaced",
+          "state_id": "sparse-and-widely-spaced-0",
+          "visual_description": "petals are arranged with large gaps between them, giving a sparse or open appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "moderate and clustered",
+          "state_id": "moderate-and-clustered-1",
+          "visual_description": "petals are arranged in a moderate density, with some overlap and clustering around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dense and overlapping",
+          "state_id": "dense-and-overlapping-2",
+          "visual_description": "petals are tightly packed and overlap each other, creating a full, compact appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which leaves are visible",
+      "attribute": "leaf shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "leaf-structure--leaf-shape--batch-0001--d6e10921--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the surrounding leaves?",
+      "region": "leaf structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d6e10921c354cda9",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "long and narrow",
+          "state_id": "long-and-narrow-0",
+          "visual_description": "leaves are elongated with a narrow width, often resembling blades or spines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "oval and broad",
+          "state_id": "oval-and-broad-1",
+          "visual_description": "leaves are rounded or oval with a broad, flat surface, often with a smooth margin"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiny and serrated",
+          "state_id": "spiny-and-serrated-2",
+          "visual_description": "leaves have sharp, pointed edges or serrations, often with a rigid or thorny texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-arrangement--batch-0001--fb2cfda9--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How are the petals arranged around the flower center?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular pattern around a central point, with equal spacing and length"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiral",
+          "state_id": "spiral-1",
+          "visual_description": "petals arranged in a spiral pattern, curving outward from a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-2",
+          "visual_description": "petals arranged in an irregular, non-uniform pattern around the center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--color-contrast--batch-0001--fb2cfda9--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the contrast between the flower's primary color and its surrounding foliage?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "high",
+          "state_id": "high-0",
+          "visual_description": "the flower's color is significantly different from the surrounding foliage, creating strong visual contrast"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the flower's color is somewhat different from the surrounding foliage, with moderate visual contrast"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "low",
+          "state_id": "low-2",
+          "visual_description": "the flower's color is similar to or blends with the surrounding foliage, creating low visual contrast"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower",
+      "attribute": "petal shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-shape--batch-0001--fb2cfda9--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape of the flower's petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "pointed",
+          "state_id": "pointed-0",
+          "visual_description": "petals are narrow and taper to a sharp point at the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "petals are broad and curve gently to a rounded tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiked",
+          "state_id": "spiked-2",
+          "visual_description": "petals are elongated and have a sharp, pointed tip"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower",
+      "attribute": "flower structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--flower-structure--batch-0001--fb2cfda9--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the overall structure of the flower head?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "single bloom",
+          "state_id": "single-bloom-0",
+          "visual_description": "a single, distinct flower head with a defined center and surrounding petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "clustered",
+          "state_id": "clustered-1",
+          "visual_description": "multiple small flowers grouped together to form a larger, composite flower head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spike-like",
+          "state_id": "spike-like-2",
+          "visual_description": "a flower head that resembles a spike or elongated structure with pointed tips"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower",
+      "attribute": "petal count",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-count--batch-0001--fb2cfda9--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How many distinct petals are visible on the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "the flower has two or three distinct petals visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the flower has five to ten distinct petals visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "many",
+          "state_id": "many-2",
+          "visual_description": "the flower has more than ten distinct petals visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a visible flower",
+      "attribute": "flower orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--flower-orientation--batch-0001--fb2cfda9--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the orientation of the flower relative to the camera?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "fb2cfda9d4fd24f3",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "front-facing",
+          "state_id": "front-facing-0",
+          "visual_description": "the flower is oriented directly toward the camera, with its center and petals clearly visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "side-facing",
+          "state_id": "side-facing-1",
+          "visual_description": "the flower is oriented at an angle to the camera, showing its side profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "upward-facing",
+          "state_id": "upward-facing-2",
+          "visual_description": "the flower is oriented with its center pointing upward, away from the camera"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower center is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-center--texture--batch-0001--2c4f3a4f--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the texture of the flower's central reproductive structure?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense fuzzy",
+          "state_id": "dense-fuzzy-0",
+          "visual_description": "a center composed of fine, densely packed, hair-like filaments"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "smooth solid",
+          "state_id": "smooth-solid-1",
+          "visual_description": "a center with a uniform, non-fuzzy, solid surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "a center with sharp, pointed, protruding structures"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-shape--form--batch-0001--2c4f3a4f--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the overall shape of the flower's petals?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spike-like",
+          "state_id": "spike-like-0",
+          "visual_description": "petals that are elongated, pointed, and taper to a sharp tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "petals that are broad, rounded, and have a soft, curved edge"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lobed",
+          "state_id": "lobed-2",
+          "visual_description": "petals that are divided into distinct, separate lobes or segments"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower structure is visible",
+      "attribute": "arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-structure--arrangement--batch-0001--2c4f3a4f--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How are the flower's parts arranged around the central axis?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals and other parts arranged in a circular, symmetrical pattern around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-1",
+          "visual_description": "petals and other parts arranged in a non-uniform, irregular pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spike-like",
+          "state_id": "spike-like-2",
+          "visual_description": "a central structure with elongated, pointed appendages radiating outward"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which multiple distinct colors are visible on the flower",
+      "attribute": "hue contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "color-contrast--hue-contrast--batch-0001--2c4f3a4f--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the contrast between the flower's dominant color and its secondary color?",
+      "region": "color contrast",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "a strong, vivid contrast between the primary and secondary colors, such as orange and blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "a subtle, muted contrast between the primary and secondary colors, such as pink and green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-2",
+          "visual_description": "a single dominant hue with minimal or no secondary color variation"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which leaves are visible",
+      "attribute": "leaf shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "leaf-structure--leaf-shape--batch-0001--2c4f3a4f--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the shape of the surrounding leaves?",
+      "region": "leaf structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pinnate",
+          "state_id": "pinnate-0",
+          "visual_description": "leaves with multiple leaflets arranged along a central stem"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "simple",
+          "state_id": "simple-1",
+          "visual_description": "leaves that are single, undivided, and have a smooth margin"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "leaves with sharp, pointed tips and a rigid, stiff appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower head is visible",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-form--form--batch-0001--2c4f3a4f--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the overall form of the flower head?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "2c4f3a4f4ef7722c",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "open",
+          "state_id": "open-0",
+          "visual_description": "a flower head that is fully open, with petals or bracts spread out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "closed",
+          "state_id": "closed-1",
+          "visual_description": "a flower head that is tightly closed, with bracts or petals folded inward"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spike-like",
+          "state_id": "spike-like-2",
+          "visual_description": "a flower head that is elongated and pointed, resembling a spike"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower center is visible",
+      "attribute": "structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-center--structure--batch-0001--0e43c568--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the structural composition of the flower's central reproductive region?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense florets",
+          "state_id": "dense-florets-0",
+          "visual_description": "a tightly packed cluster of fine, thread-like structures forming the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "open petals",
+          "state_id": "open-petals-1",
+          "visual_description": "a central area composed of broad, distinct petals or sepals"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "solid disc",
+          "state_id": "solid-disc-2",
+          "visual_description": "a flat, solid, dark-colored disc occupying the center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "petal-shape--form--batch-0001--0e43c568--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the overall shape of the flower's petals or tepals?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spike-like",
+          "state_id": "spike-like-0",
+          "visual_description": "petals are elongated, pointed, and taper to a sharp tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "petals are broad and rounded at the tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "serrated",
+          "state_id": "serrated-2",
+          "visual_description": "petals have jagged or toothed edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which multiple distinct colors are visible on the flower",
+      "attribute": "hue contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "color-pattern--hue-contrast--batch-0001--0e43c568--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the contrast between the flower's dominant color and its secondary or accent colors?",
+      "region": "color pattern",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "a strong, vivid contrast between the main color and accent colors, such as orange and blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "the colors are similar or muted, with minimal visual distinction between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-2",
+          "visual_description": "the flower displays a single dominant hue with no significant accent or contrasting color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which leaves are visible",
+      "attribute": "leaf type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "leaf-arrangement--leaf-type--batch-0001--0e43c568--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the morphology of the surrounding foliage?",
+      "region": "leaf arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fern-like",
+          "state_id": "fern-like-0",
+          "visual_description": "leaves are long, narrow, and pinnate, resembling fern fronds"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "broad and glossy",
+          "state_id": "broad-and-glossy-1",
+          "visual_description": "leaves are wide, smooth, and have a shiny surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiny and segmented",
+          "state_id": "spiny-and-segmented-2",
+          "visual_description": "leaves are pointed, segmented, and have a rough or spiny texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's orientation relative to the ground is discernible",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-orientation--position--batch-0001--0e43c568--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is the flower oriented upright, drooping, or horizontally?",
+      "region": "flower orientation",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "upright",
+          "state_id": "upright-0",
+          "visual_description": "the flower is growing vertically, facing upward"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "drooping",
+          "state_id": "drooping-1",
+          "visual_description": "the flower hangs downward, with petals curving toward the ground"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "horizontal",
+          "state_id": "horizontal-2",
+          "visual_description": "the flower is positioned sideways, parallel to the ground"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower head is visible",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower-structure--form--batch-0001--0e43c568--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the overall form of the flower head or bloom?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "0e43c568771e2121",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "spike",
+          "state_id": "spike-0",
+          "visual_description": "a tall, elongated structure with pointed, upward-facing elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "a compact, spherical or rounded bloom with no elongated elements"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiny",
+          "state_id": "spiny-2",
+          "visual_description": "a head surrounded by sharp, pointed bracts or scales"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's petals are visible",
+      "attribute": "petal shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-shape--batch-0001--f38c4cb2--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the shape of the flower's petals?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "spike-like",
+          "state_id": "spike-like-0",
+          "visual_description": "petals that are elongated and pointed, resembling spikes or blades"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "petals that are broad and rounded at the tips"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "serrated",
+          "state_id": "serrated-2",
+          "visual_description": "petals with jagged or toothed edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower is surrounded by foliage",
+      "attribute": "color contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--color-contrast--batch-0001--f38c4cb2--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the contrast between the flower's primary color and its surrounding foliage?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "the flower's color is significantly different from the surrounding foliage, creating a strong visual distinction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "the flower's color blends with or is similar to the surrounding foliage, creating a subtle visual distinction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "high saturation",
+          "state_id": "high-saturation-2",
+          "visual_description": "the flower's color is intensely saturated and vibrant, even if the surrounding foliage is similar in tone"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's petals are visible",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--petal-arrangement--batch-0001--f38c4cb2--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How are the petals arranged around the flower's center?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals are arranged in a circular pattern around the center, with equal spacing and symmetry"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-1",
+          "visual_description": "petals are arranged in a non-uniform or irregular pattern around the center"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "concentric",
+          "state_id": "concentric-2",
+          "visual_description": "petals are arranged in multiple layers or rings, with each layer concentric to the previous one"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's central structure is visible",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--central-structure--batch-0001--f38c4cb2--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the appearance of the flower's central structure?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "dense and fuzzy",
+          "state_id": "dense-and-fuzzy-0",
+          "visual_description": "the center is filled with a dense, fuzzy, or hairy texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth and compact",
+          "state_id": "smooth-and-compact-1",
+          "visual_description": "the center is smooth, compact, and lacks visible texture or fuzziness"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spiky and protruding",
+          "state_id": "spiky-and-protruding-2",
+          "visual_description": "the center is composed of numerous thin, spiky, or protruding structures"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower is surrounded by leaves",
+      "attribute": "leaf structure",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--leaf-structure--batch-0001--f38c4cb2--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the shape of the leaves surrounding the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "long and narrow",
+          "state_id": "long-and-narrow-0",
+          "visual_description": "leaves are elongated and narrow, resembling blades or spikes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "wide and broad",
+          "state_id": "wide-and-broad-1",
+          "visual_description": "leaves are broad and wide, with a large surface area"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "compound and segmented",
+          "state_id": "compound-and-segmented-2",
+          "visual_description": "leaves are composed of multiple segments or leaflets, forming a compound structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower is visible",
+      "attribute": "flower form",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "flower--flower-form--batch-0001--f38c4cb2--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall form of the flower?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f38c4cb2b1671830",
+      "source_sample_ids": [
+        "flowers-03336",
+        "flowers-03637",
+        "flowers-04152",
+        "flowers-05874"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "single bloom",
+          "state_id": "single-bloom-0",
+          "visual_description": "the flower is a single, solitary bloom with no other flowers visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "clustered bloom",
+          "state_id": "clustered-bloom-1",
+          "visual_description": "the flower is part of a cluster or group of multiple blooms"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spike-like bloom",
+          "state_id": "spike-like-bloom-2",
+          "visual_description": "the flower is arranged in a spike-like or elongated form, with multiple blooms along a central axis"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible flower structures",
+      "attribute": "symmetry and orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--symmetry-and-orientation--batch-0002--d849a525--00",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the flower's petal structure radially symmetric and oriented outward, or is it asymmetric with a central column or spike?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "a flower with petals arranged in a circular, outward-facing pattern around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "asymmetric with central column",
+          "state_id": "asymmetric-with-central-column-1",
+          "visual_description": "a flower with a central column or spike, and petals arranged asymmetrically around it"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petals",
+      "attribute": "edge morphology",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-shape--edge-morphology--batch-0002--d849a525--01",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the petals smooth and rounded, or do they have serrated, fringed, or spiky edges?",
+      "region": "petal shape",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth and rounded",
+          "state_id": "smooth-and-rounded-0",
+          "visual_description": "petals with no serrations, fringes, or spikes, appearing smooth and rounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "serrated or fringed",
+          "state_id": "serrated-or-fringed-1",
+          "visual_description": "petals with distinct serrated or fringed edges, appearing jagged or toothed"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "petals with sharp, pointed, or spiky edges, appearing stiff and angular"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal coloration",
+      "attribute": "color transition",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-color-gradient--color-transition--batch-0002--d849a525--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Does the flower exhibit a uniform color, or does it show a gradient from a lighter to a darker hue within the petals?",
+      "region": "petal color gradient",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "uniform color",
+          "state_id": "uniform-color-0",
+          "visual_description": "petals displaying a single, consistent color without any visible gradient or variation"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "gradient from light to dark",
+          "state_id": "gradient-from-light-to-dark-1",
+          "visual_description": "petals showing a clear transition from a lighter shade at the edges to a darker shade toward the center"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible central flower structure",
+      "attribute": "central body",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-structure--central-body--batch-0002--d849a525--03",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the flower's central body a flat, open face, or a raised, conical, or spiky structure?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "flat and open",
+          "state_id": "flat-and-open-0",
+          "visual_description": "a flower with a flat, open central face, often with a wide, exposed center"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "raised and conical",
+          "state_id": "raised-and-conical-1",
+          "visual_description": "a flower with a raised, conical central structure, often appearing as a spike or cone"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "a flower with a spiky, bristly, or thorny central structure, often surrounded by spiky petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petals",
+      "attribute": "number of petals",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-count--number-of-petals--batch-0002--d849a525--04",
+      "perspective": "part shape and relative proportions",
+      "question": "How many distinct petals are visible in the flower's bloom?",
+      "region": "petal count",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "three petals",
+          "state_id": "three-petals-0",
+          "visual_description": "a flower with exactly three distinct, visible petals forming a triangular shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "six petals",
+          "state_id": "six-petals-1",
+          "visual_description": "a flower with exactly six distinct, visible petals arranged in two rows"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "many petals",
+          "state_id": "many-petals-2",
+          "visual_description": "a flower with numerous, densely packed, overlapping petals forming a complex, layered structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal surface detail",
+      "attribute": "surface detail",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--surface-detail--batch-0002--d849a525--05",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the petal surface smooth and matte, or does it exhibit fine, visible veins or ridges?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d849a525e1bf5b7b",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth and matte",
+          "state_id": "smooth-and-matte-0",
+          "visual_description": "petals with a uniform, non-reflective surface lacking any visible texture or pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "veined or ridged",
+          "state_id": "veined-or-ridged-1",
+          "visual_description": "petals with fine, visible veins or ridges running across the surface, creating a textured appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petals",
+      "attribute": "color gradient",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal--color-gradient--batch-0002--f44314c2--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the transition of color from the petal's base to its tip?",
+      "region": "petal",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "a petal with consistent color throughout its length, showing no gradient or fading"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "gradual fade",
+          "state_id": "gradual-fade-1",
+          "visual_description": "a petal with a smooth transition from a darker base to a lighter tip, often with a soft edge"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "sudden contrast",
+          "state_id": "sudden-contrast-2",
+          "visual_description": "a petal with a sharp, abrupt change in color between the base and tip, often with a distinct boundary"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal edges",
+      "attribute": "edge texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal--edge-texture--batch-0002--f44314c2--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the texture of the petal edges?",
+      "region": "petal",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a petal edge that is soft, rounded, and lacks any serrations or spines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "serrated",
+          "state_id": "serrated-1",
+          "visual_description": "a petal edge with distinct, sharp, tooth-like projections along its perimeter"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "spiny",
+          "state_id": "spiny-2",
+          "visual_description": "a petal edge covered in fine, rigid, needle-like structures that protrude outward"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible flower structure",
+      "attribute": "petal arrangement",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-structure--petal-arrangement--batch-0002--f44314c2--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "How are the petals arranged around the flower's center?",
+      "region": "flower structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "radial symmetry",
+          "state_id": "radial-symmetry-0",
+          "visual_description": "petals arranged in a circular pattern around the center, with equal spacing and similar orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "conical",
+          "state_id": "conical-1",
+          "visual_description": "petals arranged in a pointed, cone-like structure, often with overlapping or layered appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fan-shaped",
+          "state_id": "fan-shaped-2",
+          "visual_description": "petals arranged in a broad, flat, fan-like spread, often with a central axis and outward radiating petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible flower color",
+      "attribute": "color saturation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--color-saturation--batch-0002--f44314c2--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "How intense is the color of the flower compared to its surroundings?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "desaturated",
+          "state_id": "desaturated-0",
+          "visual_description": "a flower with muted, low-contrast color that blends into the background or appears washed out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "highly saturated",
+          "state_id": "highly-saturated-1",
+          "visual_description": "a flower with vibrant, intense color that stands out sharply against the background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "intermediate",
+          "state_id": "intermediate-2",
+          "visual_description": "a flower with moderate color intensity that is noticeable but not as vivid as highly saturated flowers"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal surfaces",
+      "attribute": "surface sheen",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--surface-sheen--batch-0002--f44314c2--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the surface texture of the flower petals in terms of light reflection?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "matte",
+          "state_id": "matte-0",
+          "visual_description": "a flower surface that appears dull and non-reflective, absorbing most light without specular highlights"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "glossy",
+          "state_id": "glossy-1",
+          "visual_description": "a flower surface that reflects light with sharp, bright highlights, indicating a smooth, waxy texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "semi-glossy",
+          "state_id": "semi-glossy-2",
+          "visual_description": "a flower surface that reflects light with soft, diffused highlights, indicating a slightly waxy or smooth texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal curvature",
+      "attribute": "petal curvature",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower--petal-curvature--batch-0002--f44314c2--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the petal's curvature?",
+      "region": "flower",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "f44314c21534a4de",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "a petal that is mostly planar, with minimal or no curvature, appearing as a flat surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curved inward",
+          "state_id": "curved-inward-1",
+          "visual_description": "a petal that curves inward toward the flower's center, forming a concave shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curved outward",
+          "state_id": "curved-outward-2",
+          "visual_description": "a petal that curves outward away from the flower's center, forming a convex shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-structure--form--batch-0002--3a1b2384--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape of the petals?",
+      "region": "petal structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "ruffled",
+          "state_id": "ruffled-0",
+          "visual_description": "petals with irregular, wavy, or fringed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-1",
+          "visual_description": "petals with straight, even, and unfringed edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiky",
+          "state_id": "spiky-2",
+          "visual_description": "petals with sharp, pointed, or needle-like edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower center is visible",
+      "attribute": "complexity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-center--complexity--batch-0002--3a1b2384--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How complex is the central structure of the flower?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "simple",
+          "state_id": "simple-0",
+          "visual_description": "a flower with a minimal central structure, often a single point or small cluster"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "complex",
+          "state_id": "complex-1",
+          "visual_description": "a flower with a dense, multi-part, or intricate central structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower color is visible",
+      "attribute": "intensity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "color-gradient--intensity--batch-0002--3a1b2384--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How intense is the coloration of the flower?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "light",
+          "state_id": "light-0",
+          "visual_description": "a flower with pale, washed-out, or muted coloration"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a flower with moderate, balanced, and clear coloration"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dark",
+          "state_id": "dark-2",
+          "visual_description": "a flower with deep, saturated, and intense coloration"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the petal arrangement is visible",
+      "attribute": "symmetry",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--symmetry--batch-0002--3a1b2384--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the petal arrangement symmetrical or asymmetrical?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular or radial pattern around a central point"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-1",
+          "visual_description": "petals arranged in a non-uniform or irregular pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower orientation is visible",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-orientation--position--batch-0002--3a1b2384--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the flower facing upward, downward, or sideways?",
+      "region": "flower orientation",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "upward",
+          "state_id": "upward-0",
+          "visual_description": "the flower oriented with its face directed toward the sky"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "downward",
+          "state_id": "downward-1",
+          "visual_description": "the flower oriented with its face directed toward the ground"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "sideways",
+          "state_id": "sideways-2",
+          "visual_description": "the flower oriented horizontally or at an angle, not facing up or down"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petal texture is visible",
+      "attribute": "surface",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--surface--batch-0002--3a1b2384--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the texture of the petal surface?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "3a1b23848e89e38e",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with a uniform, non-ridged, and non-ridged surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "ridged",
+          "state_id": "ridged-1",
+          "visual_description": "petals with distinct, parallel, or linear ridges running along their surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fringed",
+          "state_id": "fringed-2",
+          "visual_description": "petals with fine, hair-like, or serrated edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible outer floral segments",
+      "attribute": "leaf-like vs. petal-like",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-structure--leaf-like-vs-petal-like--batch-0002--bc8b3d0d--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Are the flower's outer segments more leaf-like or petal-like in form?",
+      "region": "petal structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "leaf-like",
+          "state_id": "leaf-like-0",
+          "visual_description": "outer segments are elongated, pointed, and resemble leaves with parallel venation, not petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "petal-like",
+          "state_id": "petal-like-1",
+          "visual_description": "outer segments are broad, rounded, and distinctly petal-shaped with visible petal margins"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible color variation across petals",
+      "attribute": "color transition",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-color-gradient--color-transition--batch-0002--bc8b3d0d--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Does the flower exhibit a smooth color gradient or a distinct two-tone coloration?",
+      "region": "petal color gradient",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth gradient",
+          "state_id": "smooth-gradient-0",
+          "visual_description": "color transitions gradually from one hue to another across the petal surface without abrupt boundaries"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "two-tone",
+          "state_id": "two-tone-1",
+          "visual_description": "color is sharply divided into two distinct zones, such as deep purple at the base and lighter purple or white at the tip"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal structure",
+      "attribute": "petal symmetry",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--petal-symmetry--batch-0002--bc8b3d0d--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the flower's petal arrangement radially symmetric or asymmetrically arranged?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals are arranged in a circular pattern around a central point, with equal spacing and orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "asymmetrically arranged",
+          "state_id": "asymmetrically-arranged-1",
+          "visual_description": "petals are arranged in a non-uniform, irregular pattern with varying angles and lengths"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible flower center",
+      "attribute": "center structure",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-center--center-structure--batch-0002--bc8b3d0d--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the flower's center composed of a dense cluster of small structures or a single, open central point?",
+      "region": "flower center",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dense cluster",
+          "state_id": "dense-cluster-0",
+          "visual_description": "the center is filled with numerous small, tightly packed structures, such as stamens or florets"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "single point",
+          "state_id": "single-point-1",
+          "visual_description": "the center is a single, open, and distinct point with no surrounding structures"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible petal edges",
+      "attribute": "edge texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-edge--edge-texture--batch-0002--bc8b3d0d--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Are the petal edges smooth or fringed with fine, hair-like structures?",
+      "region": "petal edge",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petal edges are clean, unbroken, and lack any fine, hair-like projections"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fringed",
+          "state_id": "fringed-1",
+          "visual_description": "petal edges are lined with fine, hair-like structures that give a fuzzy or serrated appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible flower orientation",
+      "attribute": "form type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-form--form-type--batch-0002--bc8b3d0d--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the flower's overall form upright and erect or drooping and pendulous?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8b3d0de6584456",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "upright",
+          "state_id": "upright-0",
+          "visual_description": "the flower stands vertically, with petals extending outward from a central axis"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "drooping",
+          "state_id": "drooping-1",
+          "visual_description": "the flower hangs downward, with petals curving or bending toward the ground"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-structure--shape--batch-0002--bc8e06ea--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the overall shape of the flower's petals?",
+      "region": "petal structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "ruffled",
+          "state_id": "ruffled-0",
+          "visual_description": "petals with irregular, wavy, or fringed edges that appear soft and undulating"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiked",
+          "state_id": "spiked-1",
+          "visual_description": "petals with sharp, pointed, or needle-like edges that are rigid and angular"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-2",
+          "visual_description": "petals with straight, even, and unbroken edges that appear flat and uniform"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which multiple distinct colors are present on the flower",
+      "attribute": "hue contrast",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-color--hue-contrast--batch-0002--bc8e06ea--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the contrast between the dominant petal color and the secondary or background color?",
+      "region": "petal color",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "high contrast",
+          "state_id": "high-contrast-0",
+          "visual_description": "a strong visual difference between the main color and the secondary color, such as deep purple against white or light blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "low contrast",
+          "state_id": "low-contrast-1",
+          "visual_description": "a subtle or blended transition between colors, with minimal visual distinction between the main and secondary hues"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "monochromatic",
+          "state_id": "monochromatic-2",
+          "visual_description": "all visible parts of the flower share a single dominant hue with no distinct secondary color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the center of the flower is visible",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-form--central-structure--batch-0002--bc8e06ea--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape and prominence of the flower's central reproductive structure?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "prominent and complex",
+          "state_id": "prominent-and-complex-0",
+          "visual_description": "a clearly defined, raised, and intricate central structure with visible stamens or pistils"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "subtle and simple",
+          "state_id": "subtle-and-simple-1",
+          "visual_description": "a central structure that is not visually distinct or is minimally visible, blending into the petals"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "absent",
+          "state_id": "absent-2",
+          "visual_description": "no visible central reproductive structure, or the structure is obscured by surrounding petals"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the flower's overall structure is visible",
+      "attribute": "symmetry",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--symmetry--batch-0002--bc8e06ea--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is the flower's petal arrangement symmetrical or asymmetrical?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radially symmetric",
+          "state_id": "radially-symmetric-0",
+          "visual_description": "petals arranged in a circular or star-like pattern around a central point, with equal spacing and orientation"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "asymmetrical",
+          "state_id": "asymmetrical-1",
+          "visual_description": "petals arranged in a non-uniform pattern, with irregular spacing, orientation, or size"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "unspecified",
+          "state_id": "unspecified-2",
+          "visual_description": "the petal arrangement is not clearly discernible or is obscured by other elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petal surface detail is visible",
+      "attribute": "surface detail",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--surface-detail--batch-0002--bc8e06ea--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the texture of the flower's petals, including visible surface patterns or markings?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth and uniform",
+          "state_id": "smooth-and-uniform-0",
+          "visual_description": "petals with a flat, even surface lacking any visible texture, ridges, or patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "ridged or veined",
+          "state_id": "ridged-or-veined-1",
+          "visual_description": "petals with distinct, visible lines or veins running across their surface, creating a textured appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fringed or serrated",
+          "state_id": "fringed-or-serrated-2",
+          "visual_description": "petals with fine, irregular, or toothed edges that create a frayed or serrated texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the background is visible and distinct from the flower",
+      "attribute": "background",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-context--background--batch-0002--bc8e06ea--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the nature of the background surrounding the flower?",
+      "region": "flower context",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "bc8e06ea96e2be58",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "natural and blurred",
+          "state_id": "natural-and-blurred-0",
+          "visual_description": "a soft, out-of-focus background with green foliage or earth tones, suggesting a garden or wild setting"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "artificial and sharp",
+          "state_id": "artificial-and-sharp-1",
+          "visual_description": "a clear, defined, and non-natural background such as concrete, pavement, or a man-made structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "indistinct",
+          "state_id": "indistinct-2",
+          "visual_description": "the background is either completely obscured or lacks any discernible features"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-structure--shape--batch-0002--d52781e9--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall shape of the flower's petals?",
+      "region": "petal structure",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "ruffled",
+          "state_id": "ruffled-0",
+          "visual_description": "petals with irregular, wavy, or fringed edges that appear soft and undulating"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "spiked",
+          "state_id": "spiked-1",
+          "visual_description": "petals with sharp, pointed, or needle-like edges extending outward"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-2",
+          "visual_description": "petals with straight, even, and unbroken edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals show a clear color gradient",
+      "attribute": "intensity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-color-gradient--intensity--batch-0002--d52781e9--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How does the color intensity vary across the petals?",
+      "region": "petal color gradient",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "petals with consistent color intensity from base to tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "darker at base",
+          "state_id": "darker-at-base-1",
+          "visual_description": "petals with significantly darker coloration near the center or base, fading to lighter at the edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "lighter at base",
+          "state_id": "lighter-at-base-2",
+          "visual_description": "petals with noticeably lighter coloration near the center or base, darkening toward the edges"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the central part of the flower is visible",
+      "attribute": "central structure",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-form--central-structure--batch-0002--d52781e9--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the nature of the flower's central reproductive structure?",
+      "region": "flower form",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "complex",
+          "state_id": "complex-0",
+          "visual_description": "central structure composed of multiple distinct parts, such as stamens or pistils, arranged in a dense cluster"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "simple",
+          "state_id": "simple-1",
+          "visual_description": "central structure appearing as a single, compact, or rounded mass with minimal visible parts"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "open",
+          "state_id": "open-2",
+          "visual_description": "central structure with visible, extended, and distinct parts, such as stamens, protruding outward"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petals are clearly visible and arranged in a discernible pattern",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-arrangement--orientation--batch-0002--d52781e9--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How are the petals arranged relative to each other?",
+      "region": "petal arrangement",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "radial",
+          "state_id": "radial-0",
+          "visual_description": "petals arranged symmetrically around a central point, with each petal extending outward at approximately equal angles"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "conical",
+          "state_id": "conical-1",
+          "visual_description": "petals arranged in a pointed, cone-like structure, with petals overlapping or fanning out from a central axis"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fan-like",
+          "state_id": "fan-like-2",
+          "visual_description": "petals arranged in a broad, flat, or spreading pattern, resembling a fan or a spread-out umbrella"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which petal surface texture is discernible",
+      "attribute": "surface detail",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "petal-texture--surface-detail--batch-0002--d52781e9--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the texture of the petal surface?",
+      "region": "petal texture",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "petals with a uniform, unbroken, and non-ridged surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "ridged",
+          "state_id": "ridged-1",
+          "visual_description": "petals with visible, parallel, or branching lines running across the surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fringed",
+          "state_id": "fringed-2",
+          "visual_description": "petals with fine, hair-like or serrated edges along the margins"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the background is visually distinct from the flower",
+      "attribute": "background",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "flower-context--background--batch-0002--d52781e9--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the nature of the background surrounding the flower?",
+      "region": "flower context",
+      "source_model": "Qwen/Qwen3-VL-4B-Instruct:local-sha256-frozen:bf16",
+      "source_prompt_id": "d52781e924e84872",
+      "source_sample_ids": [
+        "flowers-05947",
+        "flowers-06180",
+        "flowers-06979",
+        "flowers-08115"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "natural",
+          "state_id": "natural-0",
+          "visual_description": "background composed of green foliage, soil, or other plants, indicating a garden or wild setting"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "artificial",
+          "state_id": "artificial-1",
+          "visual_description": "background composed of man-made materials such as concrete, pavement, or plastic"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "blurry",
+          "state_id": "blurry-2",
+          "visual_description": "background with low contrast and indistinct shapes, making it difficult to discern specific objects"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the flower category shown in the image.",
+  "task_name": "flowers102"
+}

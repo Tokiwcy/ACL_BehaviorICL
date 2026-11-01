@@ -1,0 +1,1953 @@
+{
+  "bank_hash": "4d889db5c8d140cb8fd8321c04cc621632273be4b9cb393e25a00ec59c11d96a",
+  "class_names": [
+    "affenpinscher",
+    "afghan hound",
+    "african hunting dog",
+    "airedale",
+    "american staffordshire terrier",
+    "appenzeller",
+    "australian terrier",
+    "basenji",
+    "basset",
+    "beagle",
+    "bedlington terrier",
+    "bernese mountain dog",
+    "black-and-tan coonhound",
+    "blenheim spaniel",
+    "bloodhound",
+    "bluetick",
+    "border collie",
+    "border terrier",
+    "borzoi",
+    "boston bull",
+    "bouvier des flandres",
+    "boxer",
+    "brabancon griffon",
+    "briard",
+    "brittany spaniel",
+    "bull mastiff",
+    "cairn",
+    "cardigan",
+    "chesapeake bay retriever",
+    "chihuahua",
+    "chow",
+    "clumber",
+    "cocker spaniel",
+    "collie",
+    "curly-coated retriever",
+    "dandie dinmont",
+    "dhole",
+    "dingo",
+    "doberman",
+    "english foxhound",
+    "english setter",
+    "english springer",
+    "entlebucher",
+    "eskimo dog",
+    "flat-coated retriever",
+    "french bulldog",
+    "german shepherd",
+    "german short-haired pointer",
+    "giant schnauzer",
+    "golden retriever",
+    "gordon setter",
+    "great dane",
+    "great pyrenees",
+    "greater swiss mountain dog",
+    "groenendael",
+    "ibizan hound",
+    "irish setter",
+    "irish terrier",
+    "irish water spaniel",
+    "irish wolfhound",
+    "italian greyhound",
+    "japanese spaniel",
+    "keeshond",
+    "kelpie",
+    "kerry blue terrier",
+    "komondor",
+    "kuvasz",
+    "labrador retriever",
+    "lakeland terrier",
+    "leonberg",
+    "lhasa",
+    "malamute",
+    "malinois",
+    "maltese dog",
+    "mexican hairless",
+    "miniature pinscher",
+    "miniature poodle",
+    "miniature schnauzer",
+    "newfoundland",
+    "norfolk terrier",
+    "norwegian elkhound",
+    "norwich terrier",
+    "old english sheepdog",
+    "otterhound",
+    "papillon",
+    "pekinese",
+    "pembroke",
+    "pomeranian",
+    "pug",
+    "redbone",
+    "rhodesian ridgeback",
+    "rottweiler",
+    "saint bernard",
+    "saluki",
+    "samoyed",
+    "schipperke",
+    "scotch terrier",
+    "scottish deerhound",
+    "sealyham terrier",
+    "shetland sheepdog",
+    "shih-tzu",
+    "siberian husky",
+    "silky terrier",
+    "soft-coated wheaten terrier",
+    "staffordshire bullterrier",
+    "standard poodle",
+    "standard schnauzer",
+    "sussex spaniel",
+    "tibetan mastiff",
+    "tibetan terrier",
+    "toy poodle",
+    "toy terrier",
+    "vizsla",
+    "walker hound",
+    "weimaraner",
+    "welsh springer spaniel",
+    "west highland white terrier",
+    "whippet",
+    "wire-haired fox terrier",
+    "yorkshire terrier"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images in which the ears are visible",
+      "attribute": "shape and position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ear--shape-and-position--batch-0000--5a1f8696--00",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the shape and position of the ears relative to the head?",
+      "region": "ear",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5a1f869686af056a",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long and drooping",
+          "state_id": "long-and-drooping-0",
+          "visual_description": "ears that are long, hanging down, and covering a significant portion of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short and erect",
+          "state_id": "short-and-erect-1",
+          "visual_description": "ears that are short, standing upright, and positioned on top of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "medium and floppy",
+          "state_id": "medium-and-floppy-2",
+          "visual_description": "ears that are medium in length, hanging down but not covering the head, with a slightly floppy appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the snout is visible",
+      "attribute": "length and width",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "snout--length-and-width--batch-0000--5a1f8696--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How long and wide is the snout relative to the head?",
+      "region": "snout",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5a1f869686af056a",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long and narrow",
+          "state_id": "long-and-narrow-0",
+          "visual_description": "a snout that is elongated and narrow, extending significantly beyond the eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short and broad",
+          "state_id": "short-and-broad-1",
+          "visual_description": "a snout that is short and wide, with a broad muzzle that is not elongated"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "medium and moderate",
+          "state_id": "medium-and-moderate-2",
+          "visual_description": "a snout that is of medium length and width, neither elongated nor broad"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the coat is visible",
+      "attribute": "texture and length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--texture-and-length--batch-0000--5a1f8696--02",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the texture and length of the coat relative to the body?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5a1f869686af056a",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long and flowing",
+          "state_id": "long-and-flowing-0",
+          "visual_description": "a coat that is long, flowing, and appears to cascade down the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short and dense",
+          "state_id": "short-and-dense-1",
+          "visual_description": "a coat that is short, dense, and appears to cover the body tightly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "medium and wavy",
+          "state_id": "medium-and-wavy-2",
+          "visual_description": "a coat that is medium in length, with a wavy or slightly curly texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the body and legs are visible",
+      "attribute": "build and posture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--build-and-posture--batch-0000--5a1f8696--03",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the build and posture of the body relative to the legs?",
+      "region": "body",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5a1f869686af056a",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "slender and tall",
+          "state_id": "slender-and-tall-0",
+          "visual_description": "a body that is slender and tall, with long legs and a lean frame"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "stocky and broad",
+          "state_id": "stocky-and-broad-1",
+          "visual_description": "a body that is stocky and broad, with short legs and a wide frame"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "medium and balanced",
+          "state_id": "medium-and-balanced-2",
+          "visual_description": "a body that is of medium build, with balanced proportions between the torso and legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the tail is visible",
+      "attribute": "length and position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--length-and-position--batch-0000--5a1f8696--04",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the length and position of the tail relative to the body?",
+      "region": "tail",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5a1f869686af056a",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long and hanging",
+          "state_id": "long-and-hanging-0",
+          "visual_description": "a tail that is long and hangs down, extending significantly beyond the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short and docked",
+          "state_id": "short-and-docked-1",
+          "visual_description": "a tail that is short and appears to be docked or cropped"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "medium and carried",
+          "state_id": "medium-and-carried-2",
+          "visual_description": "a tail that is of medium length, carried high or at a moderate angle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the eyes are visible",
+      "attribute": "shape and expression",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eye--shape-and-expression--batch-0000--5a1f8696--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the shape and expression of the eyes relative to the face?",
+      "region": "eye",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "5a1f869686af056a",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "large and round",
+          "state_id": "large-and-round-0",
+          "visual_description": "eyes that are large, round, and appear to be wide open"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small and narrow",
+          "state_id": "small-and-narrow-1",
+          "visual_description": "eyes that are small, narrow, and appear to be closed or half-closed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.5,
+          "label": "medium and alert",
+          "state_id": "medium-and-alert-2",
+          "visual_description": "eyes that are of medium size, alert, and appear to be looking directly at the viewer"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--texture--batch-0000--062be9b9--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "062be9b9d8a06f61",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long and flowing",
+          "state_id": "long-and-flowing-0",
+          "visual_description": "a dog with a long, flowing coat that drapes over its body and legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short and smooth",
+          "state_id": "short-and-smooth-1",
+          "visual_description": "a dog with a short, smooth coat that lies close to the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "curly and dense",
+          "state_id": "curly-and-dense-2",
+          "visual_description": "a dog with a curly, dense coat that forms distinct curls and waves"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat color is visible",
+      "attribute": "color pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--color-pattern--batch-0000--062be9b9--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the pattern of the dog's coat color?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "062be9b9d8a06f61",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a coat of one uniform color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bicolored",
+          "state_id": "bicolored-1",
+          "visual_description": "a dog with a coat of two distinct colors, typically black and white or tan and white"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "tricolored",
+          "state_id": "tricolored-2",
+          "visual_description": "a dog with a coat of three distinct colors, typically black, tan, and white"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat length is visible",
+      "attribute": "coat length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--coat-length--batch-0000--062be9b9--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "How long is the dog's coat?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "062be9b9d8a06f61",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "very long",
+          "state_id": "very-long-0",
+          "visual_description": "a dog with a coat that extends well beyond the legs and covers the entire body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a coat that reaches the ground or is of moderate length, covering the body but not extending beyond the legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-2",
+          "visual_description": "a dog with a coat that is short and close to the body, not extending beyond the legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--ear-shape--batch-0000--062be9b9--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the dog's ears?",
+      "region": "face",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "062be9b9d8a06f61",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long and drooping",
+          "state_id": "long-and-drooping-0",
+          "visual_description": "a dog with long, drooping ears that hang down to the sides of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium and floppy",
+          "state_id": "medium-and-floppy-1",
+          "visual_description": "a dog with medium-sized, floppy ears that hang down from the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short and erect",
+          "state_id": "short-and-erect-2",
+          "visual_description": "a dog with short, erect ears that stand upright on the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--eye-color--batch-0000--062be9b9--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the color of the dog's eyes?",
+      "region": "face",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "062be9b9d8a06f61",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dark brown",
+          "state_id": "dark-brown-0",
+          "visual_description": "a dog with dark brown eyes that appear deep and expressive"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "light brown",
+          "state_id": "light-brown-1",
+          "visual_description": "a dog with light brown eyes that appear lighter and more golden"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "a dog with green eyes that appear bright and alert"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's snout is visible",
+      "attribute": "snout shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--snout-shape--batch-0000--062be9b9--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the dog's snout?",
+      "region": "face",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "062be9b9d8a06f61",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long and narrow",
+          "state_id": "long-and-narrow-0",
+          "visual_description": "a dog with a long, narrow snout that extends forward from the face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium and broad",
+          "state_id": "medium-and-broad-1",
+          "visual_description": "a dog with a medium-length snout that is broad and slightly rounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short and broad",
+          "state_id": "short-and-broad-2",
+          "visual_description": "a dog with a short, broad snout that is wide and flat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--length--batch-0000--4373e27c--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How long is the dog's coat relative to its body?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "4373e27c5df48b6f",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short, close-fitting coat that does not exceed the length of its legs or body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length coat that reaches the dog's paws or mid-legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long, flowing coat that extends well beyond the legs and often covers the entire body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--shape--batch-0000--4373e27c--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ears",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "4373e27c5df48b6f",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "a dog with ears that hang down and are soft and drooping"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pointed",
+          "state_id": "pointed-1",
+          "visual_description": "a dog with ears that are erect and pointed, standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "a dog with ears that are triangular in shape, often with a slight curve"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's face is visible",
+      "attribute": "expression",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--expression--batch-0000--4373e27c--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the dog's facial expression?",
+      "region": "face",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "4373e27c5df48b6f",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "alert",
+          "state_id": "alert-0",
+          "visual_description": "a dog with wide, attentive eyes and an open mouth, indicating excitement or focus"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "relaxed",
+          "state_id": "relaxed-1",
+          "visual_description": "a dog with half-closed eyes and a calm, relaxed expression, often with a closed mouth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "playful",
+          "state_id": "playful-2",
+          "visual_description": "a dog with a wide, open mouth and a joyful expression, often with a tongue out"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "posture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--posture--batch-0000--4373e27c--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the dog's posture?",
+      "region": "body",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "4373e27c5df48b6f",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "standing",
+          "state_id": "standing-0",
+          "visual_description": "a dog with all four legs on the ground, upright and alert"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sitting",
+          "state_id": "sitting-1",
+          "visual_description": "a dog with its hindquarters on the ground and front paws on the ground, in a seated position"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "lying",
+          "state_id": "lying-2",
+          "visual_description": "a dog with its entire body on the ground, often curled or stretched out"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--texture--batch-0000--4373e27c--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "4373e27c5df48b6f",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "curly",
+          "state_id": "curly-0",
+          "visual_description": "a dog with a coat that is curly or wavy, often with a soft, fluffy appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a dog with a coat that is straight and smooth, without curls or waves"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-2",
+          "visual_description": "a dog with a coat that has a wavy texture, often with a slightly rough or coarse appearance"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "color pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--color-pattern--batch-0000--4373e27c--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the pattern of the dog's coat?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "4373e27c5df48b6f",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a coat that is one uniform color, without any markings or patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "patched",
+          "state_id": "patched-1",
+          "visual_description": "a dog with a coat that has distinct patches of different colors, often in a contrasting pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "striped",
+          "state_id": "striped-2",
+          "visual_description": "a dog with a coat that has stripes or bands of color, often running along the body or legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture and length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--texture-and-length--batch-0000--1f7bfebe--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the texture and length of the dog's coat?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "1f7bfebedb2542fe",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long and flowing",
+          "state_id": "long-and-flowing-0",
+          "visual_description": "a dog with a very long, silky, and flowing coat that drapes over its body and legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and dense",
+          "state_id": "short-and-dense-1",
+          "visual_description": "a dog with a short, dense, and tightly packed coat that covers the body without flowing"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium and wavy",
+          "state_id": "medium-and-wavy-2",
+          "visual_description": "a dog with a medium-length coat that has a wavy or slightly curly texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "curly and thick",
+          "state_id": "curly-and-thick-3",
+          "visual_description": "a dog with a thick, curly coat that appears fluffy and voluminous"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "sparse and wiry",
+          "state_id": "sparse-and-wiry-4",
+          "visual_description": "a dog with a sparse, wiry coat that appears rough and not fluffy"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "shape and position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--shape-and-position--batch-0000--1f7bfebe--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "ears",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "1f7bfebedb2542fe",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long and drooping",
+          "state_id": "long-and-drooping-0",
+          "visual_description": "a dog with long, pendulous ears that hang down below the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and erect",
+          "state_id": "short-and-erect-1",
+          "visual_description": "a dog with short, upright ears that stand erect on the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium and floppy",
+          "state_id": "medium-and-floppy-2",
+          "visual_description": "a dog with medium-length ears that are floppy and hang at a moderate angle"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large and pointed",
+          "state_id": "large-and-pointed-3",
+          "visual_description": "a dog with large, pointed ears that stand upright and are sharply angled"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "small and hidden",
+          "state_id": "small-and-hidden-4",
+          "visual_description": "a dog with small ears that are partially hidden by fur or are not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's face is visible",
+      "attribute": "snout and muzzle",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--snout-and-muzzle--batch-0000--1f7bfebe--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the shape and length of the dog's snout and muzzle?",
+      "region": "face",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "1f7bfebedb2542fe",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long and narrow",
+          "state_id": "long-and-narrow-0",
+          "visual_description": "a dog with a long, narrow snout that extends significantly beyond the eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and broad",
+          "state_id": "short-and-broad-1",
+          "visual_description": "a dog with a short, broad snout that is close to the face"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium and slightly curved",
+          "state_id": "medium-and-slightly-curved-2",
+          "visual_description": "a dog with a medium-length snout that has a slight curve or angle"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "flat and wide",
+          "state_id": "flat-and-wide-3",
+          "visual_description": "a dog with a flat, wide snout that is broad and not elongated"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "pointed and narrow",
+          "state_id": "pointed-and-narrow-4",
+          "visual_description": "a dog with a pointed snout that is narrow and tapers to a fine tip"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "build and posture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--build-and-posture--batch-0000--1f7bfebe--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the dog's body build and posture?",
+      "region": "body",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "1f7bfebedb2542fe",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "slender and tall",
+          "state_id": "slender-and-tall-0",
+          "visual_description": "a dog with a slender, tall body that appears lean and elongated"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "stocky and broad",
+          "state_id": "stocky-and-broad-1",
+          "visual_description": "a dog with a stocky, broad body that appears muscular and compact"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium and balanced",
+          "state_id": "medium-and-balanced-2",
+          "visual_description": "a dog with a medium-sized body that is balanced and proportionate"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and compact",
+          "state_id": "short-and-compact-3",
+          "visual_description": "a dog with a short, compact body that appears dense and not tall"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large and powerful",
+          "state_id": "large-and-powerful-4",
+          "visual_description": "a dog with a large, powerful body that appears strong and muscular"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "color and expression",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eyes--color-and-expression--batch-0000--1f7bfebe--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the color and expression of the dog's eyes?",
+      "region": "eyes",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "1f7bfebedb2542fe",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dark and alert",
+          "state_id": "dark-and-alert-0",
+          "visual_description": "a dog with dark, alert eyes that appear focused and attentive"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "light and bright",
+          "state_id": "light-and-bright-1",
+          "visual_description": "a dog with light-colored, bright eyes that appear lively and expressive"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dull and tired",
+          "state_id": "dull-and-tired-2",
+          "visual_description": "a dog with dull, tired eyes that appear relaxed or sleepy"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "glowing and reflective",
+          "state_id": "glowing-and-reflective-3",
+          "visual_description": "a dog with eyes that appear to glow or reflect light, indicating high alertness"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "closed and relaxed",
+          "state_id": "closed-and-relaxed-4",
+          "visual_description": "a dog with eyes that are closed or half-closed, indicating relaxation or rest"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's tail is visible",
+      "attribute": "length and position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--length-and-position--batch-0000--1f7bfebe--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the length and position of the dog's tail?",
+      "region": "tail",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "1f7bfebedb2542fe",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long and curved",
+          "state_id": "long-and-curved-0",
+          "visual_description": "a dog with a long tail that curves upward or downward"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and straight",
+          "state_id": "short-and-straight-1",
+          "visual_description": "a dog with a short tail that is straight and not curved"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium and held high",
+          "state_id": "medium-and-held-high-2",
+          "visual_description": "a dog with a medium-length tail that is held high or upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "hidden and obscured",
+          "state_id": "hidden-and-obscured-3",
+          "visual_description": "a dog with a tail that is hidden or obscured by fur or body position"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fluffy and bushy",
+          "state_id": "fluffy-and-bushy-4",
+          "visual_description": "a dog with a fluffy, bushy tail that appears soft and voluminous"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--shape--batch-0000--6dda44b5--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ears",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "6dda44b518353547",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "a dog with ears that hang down and are soft and drooping"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "triangular",
+          "state_id": "triangular-1",
+          "visual_description": "a dog with ears that are pointed and stand erect or semi-erect"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "large and floppy",
+          "state_id": "large-and-floppy-2",
+          "visual_description": "a dog with large, wide, and drooping ears that cover a significant portion of the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's snout is visible",
+      "attribute": "projection",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "snout--projection--batch-0000--6dda44b5--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How is the dog's snout projected relative to its face?",
+      "region": "snout",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "6dda44b518353547",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short, compact snout that is nearly flush with the face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a snout that is moderately long, extending beyond the face but not excessively"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long, prominent snout that extends significantly beyond the face"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "hue",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eye-color--hue--batch-0000--6dda44b5--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the dominant eye color of the dog?",
+      "region": "eye color",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "6dda44b518353547",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "dark",
+          "state_id": "dark-0",
+          "visual_description": "a dog with dark, deep-set eyes that appear black or very dark brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "light",
+          "state_id": "light-1",
+          "visual_description": "a dog with light-colored eyes that appear amber, yellow, or light brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "a dog with green or emerald-colored eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "build",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body-structure--build--batch-0000--6dda44b5--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the overall body structure of the dog?",
+      "region": "body structure",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "6dda44b518353547",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "compact",
+          "state_id": "compact-0",
+          "visual_description": "a dog with a small, sturdy, and compact body that is short and stocky"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-sized body that is neither particularly short nor tall, with a balanced build"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a tall, elongated body that is long and lean"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's tail is visible",
+      "attribute": "type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--type--batch-0000--6dda44b5--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape and position of the dog's tail?",
+      "region": "tail",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "6dda44b518353547",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "curved",
+          "state_id": "curved-0",
+          "visual_description": "a dog with a tail that curves upward or downward, often held high or low"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a dog with a tail that is straight and held horizontally or slightly upward"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long and bushy",
+          "state_id": "long-and-bushy-2",
+          "visual_description": "a dog with a long, thick, and bushy tail that extends well beyond the body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--texture--batch-0000--0c31318f--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "0c31318f74c4a206",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long and flowing",
+          "state_id": "long-and-flowing-0",
+          "visual_description": "a dog with a long, flowing coat that drapes over its body and legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and smooth",
+          "state_id": "short-and-smooth-1",
+          "visual_description": "a dog with a short, smooth coat that lies close to the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "curly and dense",
+          "state_id": "curly-and-dense-2",
+          "visual_description": "a dog with a curly, dense coat that forms a textured, voluminous appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "woolly and thick",
+          "state_id": "woolly-and-thick-3",
+          "visual_description": "a dog with a woolly, thick coat that appears fluffy and voluminous"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "sparse and wiry",
+          "state_id": "sparse-and-wiry-4",
+          "visual_description": "a dog with a sparse, wiry coat that appears rough and coarse"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "shape and position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--shape-and-position--batch-0000--0c31318f--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "ears",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "0c31318f74c4a206",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long and drooping",
+          "state_id": "long-and-drooping-0",
+          "visual_description": "a dog with long, drooping ears that hang down to the sides of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short and erect",
+          "state_id": "short-and-erect-1",
+          "visual_description": "a dog with short, erect ears that stand upright on the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium and floppy",
+          "state_id": "medium-and-floppy-2",
+          "visual_description": "a dog with medium-length ears that are floppy and hang down from the sides of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large and pointed",
+          "state_id": "large-and-pointed-3",
+          "visual_description": "a dog with large, pointed ears that stand upright and are sharply angled"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "small and folded",
+          "state_id": "small-and-folded-4",
+          "visual_description": "a dog with small, folded ears that are tucked close to the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's face is visible",
+      "attribute": "snout length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--snout-length--batch-0000--0c31318f--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How long is the dog's snout relative to the head?",
+      "region": "face",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "0c31318f74c4a206",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short snout",
+          "state_id": "short-snout-0",
+          "visual_description": "a dog with a short snout that is roughly the same length as the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium snout",
+          "state_id": "medium-snout-1",
+          "visual_description": "a dog with a medium-length snout that is longer than the head but not excessively so"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long snout",
+          "state_id": "long-snout-2",
+          "visual_description": "a dog with a long snout that extends significantly beyond the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "build",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--build--batch-0000--0c31318f--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall body build of the dog?",
+      "region": "body",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "0c31318f74c4a206",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "slender and tall",
+          "state_id": "slender-and-tall-0",
+          "visual_description": "a dog with a slender, tall body that appears lean and elongated"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "stocky and muscular",
+          "state_id": "stocky-and-muscular-1",
+          "visual_description": "a dog with a stocky, muscular body that appears robust and powerful"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "compact and small",
+          "state_id": "compact-and-small-2",
+          "visual_description": "a dog with a compact, small body that appears short and stout"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large and broad",
+          "state_id": "large-and-broad-3",
+          "visual_description": "a dog with a large, broad body that appears wide and heavy"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's color pattern is visible",
+      "attribute": "color distribution",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-pattern--color-distribution--batch-0000--0c31318f--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the distribution of color across the dog's body?",
+      "region": "color pattern",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "0c31318f74c4a206",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "solid color",
+          "state_id": "solid-color-0",
+          "visual_description": "a dog with a single, uniform color covering its entire body"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "two-tone",
+          "state_id": "two-tone-1",
+          "visual_description": "a dog with two distinct colors, typically a primary and secondary color, distributed across its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "multi-tone",
+          "state_id": "multi-tone-2",
+          "visual_description": "a dog with three or more distinct colors distributed across its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "patched",
+          "state_id": "patched-3",
+          "visual_description": "a dog with irregular patches of color that do not follow a consistent pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's posture is visible",
+      "attribute": "stance",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "posture--stance--batch-0000--0c31318f--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the dog's posture or stance?",
+      "region": "posture",
+      "source_model": "D:\\BehaviorICL\\models\\Qwen3-VL-4B-Instruct@local",
+      "source_prompt_id": "0c31318f74c4a206",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359",
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015",
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "standing alert",
+          "state_id": "standing-alert-0",
+          "visual_description": "a dog standing upright with its body straight and head held high"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "sitting upright",
+          "state_id": "sitting-upright-1",
+          "visual_description": "a dog sitting with its body upright and head held high"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "lying down",
+          "state_id": "lying-down-2",
+          "visual_description": "a dog lying down with its body relaxed and head resting on the ground"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "walking",
+          "state_id": "walking-3",
+          "visual_description": "a dog walking with its legs in motion and body in a forward-leaning posture"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "resting",
+          "state_id": "resting-4",
+          "visual_description": "a dog resting with its body relaxed and head resting on its paws or side"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the dog breed shown in the image.",
+  "task_name": "Stanford Dogs breed classification"
+}

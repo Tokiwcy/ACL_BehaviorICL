@@ -1,0 +1,2907 @@
+{
+  "bank_hash": "35e09d7b3769c453d958200fd1d8c09badcab4e5e99e6e22950140662dfe49b0",
+  "class_names": [
+    "707-320",
+    "727-200",
+    "737-200",
+    "737-300",
+    "737-400",
+    "737-500",
+    "737-600",
+    "737-700",
+    "737-800",
+    "737-900",
+    "747-100",
+    "747-200",
+    "747-300",
+    "747-400",
+    "757-200",
+    "757-300",
+    "767-200",
+    "767-300",
+    "767-400",
+    "777-200",
+    "777-300",
+    "a300b4",
+    "a310",
+    "a318",
+    "a319",
+    "a320",
+    "a321",
+    "a330-200",
+    "a330-300",
+    "a340-200",
+    "a340-300",
+    "a340-500",
+    "a340-600",
+    "a380",
+    "an-12",
+    "atr-42",
+    "atr-72",
+    "bae 146-200",
+    "bae 146-300",
+    "bae-125",
+    "beechcraft 1900",
+    "boeing 717",
+    "c-130",
+    "c-47",
+    "cessna 172",
+    "cessna 208",
+    "cessna 525",
+    "cessna 560",
+    "challenger 600",
+    "crj-200",
+    "crj-700",
+    "crj-900",
+    "dc-10",
+    "dc-3",
+    "dc-6",
+    "dc-8",
+    "dc-9-30",
+    "dh-82",
+    "dhc-1",
+    "dhc-6",
+    "dhc-8-100",
+    "dhc-8-300",
+    "dornier 328",
+    "dr-400",
+    "e-170",
+    "e-190",
+    "e-195",
+    "emb-120",
+    "embraer legacy 600",
+    "erj 135",
+    "erj 145",
+    "eurofighter typhoon",
+    "f-16a/b",
+    "f/a-18",
+    "falcon 2000",
+    "falcon 900",
+    "fokker 100",
+    "fokker 50",
+    "fokker 70",
+    "global express",
+    "gulfstream iv",
+    "gulfstream v",
+    "hawk t1",
+    "il-76",
+    "l-1011",
+    "md-11",
+    "md-80",
+    "md-87",
+    "md-90",
+    "metroliner",
+    "model b200",
+    "pa-28",
+    "saab 2000",
+    "saab 340",
+    "spitfire",
+    "sr-20",
+    "tornado",
+    "tu-134",
+    "tu-154",
+    "yak-42"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--fuselage-length--batch-0000--704a5aae--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative length of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "704a5aaed309055b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short-fuselage aircraft, typical of regional jets or small narrow-body planes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-length narrow-body aircraft fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a long-fuselage wide-body or large narrow-body aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_width",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--fuselage-width--batch-0000--704a5aae--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative width of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "704a5aaed309055b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a narrow-body aircraft fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-1",
+          "visual_description": "a wide-body aircraft fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing--wing-shape--batch-0000--704a5aae--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the aircraft wing?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "704a5aaed309055b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "swept-wing",
+          "state_id": "swept-wing-0",
+          "visual_description": "an aircraft with a significantly swept-back wing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "straight-wing",
+          "state_id": "straight-wing-1",
+          "visual_description": "an aircraft with a relatively straight wing"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "engine_count",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engine--engine-count--batch-0000--704a5aae--03",
+      "perspective": "shape and relative proportions",
+      "question": "How many engines are visible on the aircraft?",
+      "region": "engine",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "704a5aaed309055b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "two",
+          "state_id": "two-0",
+          "visual_description": "an aircraft with two engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "three",
+          "state_id": "three-1",
+          "visual_description": "an aircraft with three engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "four",
+          "state_id": "four-2",
+          "visual_description": "an aircraft with four engines"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_height",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--tail-height--batch-0000--704a5aae--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative height of the vertical stabilizer?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "704a5aaed309055b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short vertical stabilizer"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-height vertical stabilizer"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "tall",
+          "state_id": "tall-2",
+          "visual_description": "a tall vertical stabilizer"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-color--batch-0000--57f4fb1d--00",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the aircraft's fuselage livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57f4fb1d634abcb4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The aircraft fuselage is primarily white with colored accents."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "grey",
+          "state_id": "grey-1",
+          "visual_description": "The aircraft fuselage is primarily grey or metallic grey."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "white_with_stripes",
+          "state_id": "white-with-stripes-2",
+          "visual_description": "The aircraft fuselage is white with prominent red or blue stripes."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_logo",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--tail-logo--batch-0000--57f4fb1d--01",
+      "perspective": "color and texture",
+      "question": "What is the primary design or logo on the aircraft tail?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57f4fb1d634abcb4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "globe_logo",
+          "state_id": "globe-logo-0",
+          "visual_description": "The tail features a globe-like logo with a stylized design."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "text_logo",
+          "state_id": "text-logo-1",
+          "visual_description": "The tail features large, bold text (e.g., 'COPA')."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "plain_tail",
+          "state_id": "plain-tail-2",
+          "visual_description": "The tail is mostly plain or has minimal markings."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-text--batch-0000--57f4fb1d--02",
+      "perspective": "color and texture",
+      "question": "What is the primary airline name visible on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57f4fb1d634abcb4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "continental",
+          "state_id": "continental-0",
+          "visual_description": "The word 'Continental' is clearly visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "copa",
+          "state_id": "copa-1",
+          "visual_description": "The word 'COPA' is clearly visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "orca_bay",
+          "state_id": "orca-bay-2",
+          "visual_description": "The text 'ORCA BAY' is visible on the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_stripes",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-stripes--batch-0000--57f4fb1d--03",
+      "perspective": "color and texture",
+      "question": "What is the color and style of the stripes on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57f4fb1d634abcb4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "red_stripes",
+          "state_id": "red-stripes-0",
+          "visual_description": "The aircraft has prominent red stripes along the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue_stripes",
+          "state_id": "blue-stripes-1",
+          "visual_description": "The aircraft has prominent blue stripes or accents."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "no_stripes",
+          "state_id": "no-stripes-2",
+          "visual_description": "The aircraft has no prominent horizontal stripes."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-pattern--batch-0000--57f4fb1d--04",
+      "perspective": "color and texture",
+      "question": "What is the overall pattern of the aircraft livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57f4fb1d634abcb4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid_color",
+          "state_id": "solid-color-0",
+          "visual_description": "The aircraft has a solid, uniform color across most of the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "striped_pattern",
+          "state_id": "striped-pattern-1",
+          "visual_description": "The aircraft has a distinct striped pattern along the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "logo_heavy",
+          "state_id": "logo-heavy-2",
+          "visual_description": "The aircraft livery is dominated by large logos and text."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_engine_count",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing--wing-engine-count--batch-0000--fbc936ce--01",
+      "perspective": "pose and silhouette",
+      "question": "How many engines are mounted under the wings?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fbc936ce4001a8cf",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "one_per_side",
+          "state_id": "one-per-side-0",
+          "visual_description": "an aircraft with one engine mounted under each wing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "two_per_side",
+          "state_id": "two-per-side-1",
+          "visual_description": "an aircraft with two engines mounted under each wing"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_fin_shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--tail-fin-shape--batch-0000--fbc936ce--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape of the vertical tail fin?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fbc936ce4001a8cf",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "trapezoidal",
+          "state_id": "trapezoidal-0",
+          "visual_description": "a standard trapezoidal tail fin"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "scimitar_shaped",
+          "state_id": "scimitar-shaped-1",
+          "visual_description": "a tail fin with a swept-back, curved top edge"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the fuselage is visible",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-text--batch-0000--123cb8ec--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary airline name or text visible on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "123cb8ec592fa3ed",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ORCA BAY",
+          "state_id": "orca-bay-0",
+          "visual_description": "The text 'ORCA BAY' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "Continental",
+          "state_id": "continental-1",
+          "visual_description": "The text 'Continental' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "COPA",
+          "state_id": "copa-2",
+          "visual_description": "The text 'COPA' is visible on the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the tail is visible",
+      "attribute": "tail_livery",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--tail-livery--batch-0000--123cb8ec--01",
+      "perspective": "local visible differences",
+      "question": "What is the design on the vertical stabilizer?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "123cb8ec592fa3ed",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white with blue/red stripes",
+          "state_id": "white-with-blue-red-stripes-0",
+          "visual_description": "The tail is white with horizontal blue and red stripes and a circular logo."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue globe",
+          "state_id": "blue-globe-1",
+          "visual_description": "The tail features a large blue and gold globe-like design."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "red COPA",
+          "state_id": "red-copa-2",
+          "visual_description": "The tail is red with 'COPA' written in large white letters."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the registration number is visible",
+      "attribute": "registration_number",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--registration-number--batch-0000--123cb8ec--02",
+      "perspective": "local visible differences",
+      "question": "What is the registration number visible on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "123cb8ec592fa3ed",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "N7270B",
+          "state_id": "n7270b-0",
+          "visual_description": "The registration number is N7270B."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "N12722",
+          "state_id": "n12722-1",
+          "visual_description": "The registration number is N12722."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "HP-1340CMP",
+          "state_id": "hp-1340cmp-2",
+          "visual_description": "The registration number is HP-1340CMP."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which an aircraft is visible",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-text--batch-0000--32296b7f--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary airline name or text visible on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32296b7fc7766f32",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "ORCA BAY",
+          "state_id": "orca-bay-0",
+          "visual_description": "The text 'ORCA BAY' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "Continental",
+          "state_id": "continental-1",
+          "visual_description": "The text 'Continental' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "COPA",
+          "state_id": "copa-2",
+          "visual_description": "The text 'COPA' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "STAR",
+          "state_id": "star-3",
+          "visual_description": "The text 'STAR' is visible on the tail fin."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which an aircraft is visible",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--livery-color--batch-0000--32296b7f--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color scheme of the aircraft's fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32296b7fc7766f32",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white with red/blue stripes",
+          "state_id": "white-with-red-blue-stripes-0",
+          "visual_description": "The fuselage is primarily white with red and blue stripes."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "white with blue tail",
+          "state_id": "white-with-blue-tail-1",
+          "visual_description": "The fuselage is primarily white with a blue tail fin."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "white with red tail",
+          "state_id": "white-with-red-tail-2",
+          "visual_description": "The fuselage is primarily white with a red tail fin."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "grey",
+          "state_id": "grey-3",
+          "visual_description": "The fuselage is primarily grey."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which an aircraft is visible",
+      "attribute": "registration_number",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--registration-number--batch-0000--32296b7f--02",
+      "perspective": "visibility and missing visual information",
+      "question": "Is a registration number visible on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32296b7fc7766f32",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "yes",
+          "state_id": "yes-0",
+          "visual_description": "A registration number (e.g., N72708, N27729, HP-1340CMP) is visible."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "no",
+          "state_id": "no-1",
+          "visual_description": "No registration number is clearly visible."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which an aircraft is visible",
+      "attribute": "window_count",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage--window-count--batch-0000--32296b7f--03",
+      "perspective": "visibility and missing visual information",
+      "question": "How many windows are visible along the side of the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "32296b7fc7766f32",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "The aircraft has very few windows along the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "many",
+          "state_id": "many-1",
+          "visual_description": "The aircraft has many windows along the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment_type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--environment-type--batch-0000--ff909c4e--00",
+      "perspective": "background and environment",
+      "question": "What is the primary environment shown in the background of the scene?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ff909c4e76ba1ce8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "airport_tarmac",
+          "state_id": "airport-tarmac-0",
+          "visual_description": "an airport tarmac with ground markings and nearby airport infrastructure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "natural_landscape",
+          "state_id": "natural-landscape-1",
+          "visual_description": "a natural landscape with trees and grass"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "urban_setting",
+          "state_id": "urban-setting-2",
+          "visual_description": "an urban setting with buildings and city infrastructure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with visible vegetation",
+      "attribute": "vegetation_density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--vegetation-density--batch-0000--ff909c4e--01",
+      "perspective": "background and environment",
+      "question": "What is the density of vegetation in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ff909c4e76ba1ce8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "sparse vegetation with visible ground or structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "moderate vegetation with visible trees and shrubs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "dense vegetation with a thick forest or tree line"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "weather_conditions",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--weather-conditions--batch-0000--ff909c4e--02",
+      "perspective": "background and environment",
+      "question": "What are the prevailing weather conditions in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ff909c4e76ba1ce8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "clear_sunny",
+          "state_id": "clear-sunny-0",
+          "visual_description": "clear sunny weather with bright lighting"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "overcast_hazy",
+          "state_id": "overcast-hazy-1",
+          "visual_description": "overcast or hazy weather with muted lighting"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "rainy_stormy",
+          "state_id": "rainy-stormy-2",
+          "visual_description": "rainy or stormy weather with visible precipitation"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "infrastructure_presence",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--infrastructure-presence--batch-0000--ff909c4e--03",
+      "perspective": "background and environment",
+      "question": "What type of infrastructure is visible in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ff909c4e76ba1ce8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "no visible infrastructure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "minimal",
+          "state_id": "minimal-1",
+          "visual_description": "minimal infrastructure like small fences or signs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "significant",
+          "state_id": "significant-2",
+          "visual_description": "significant infrastructure like hangars, buildings, and gates"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "terrain_elevation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--terrain-elevation--batch-0000--ff909c4e--04",
+      "perspective": "background and environment",
+      "question": "What is the elevation of the terrain in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ff909c4e76ba1ce8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0056337",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0074464"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "flat",
+          "state_id": "flat-0",
+          "visual_description": "flat terrain with no significant elevation changes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "sloping",
+          "state_id": "sloping-1",
+          "visual_description": "sloping terrain with visible hills or inclines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "mountainous",
+          "state_id": "mountainous-2",
+          "visual_description": "mountainous terrain with high peaks"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_height",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--fuselage-height--batch-0001--c055f26c--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative height of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c055f26cfc69c09a",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a low-profile fuselage height"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a standard-height fuselage for a narrow-body aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "tall",
+          "state_id": "tall-2",
+          "visual_description": "a tall fuselage height, typical of wide-body aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "window_count",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--window-count--batch-0001--c055f26c--02",
+      "perspective": "shape and relative proportions",
+      "question": "How many windows are visible along the side of the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c055f26cfc69c09a",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "a small number of windows, typical of regional jets"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "many",
+          "state_id": "many-1",
+          "visual_description": "a large number of windows, typical of standard commercial narrow-body aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--wing-shape--batch-0001--c055f26c--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the wing?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c055f26cfc69c09a",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "swept",
+          "state_id": "swept-0",
+          "visual_description": "a wing with a significant backward sweep"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "straight",
+          "state_id": "straight-1",
+          "visual_description": "a wing with little to no sweep"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_height",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--tail-height--batch-0001--c055f26c--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative height of the vertical stabilizer?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "c055f26cfc69c09a",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short vertical stabilizer"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a standard-height vertical stabilizer"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "tall",
+          "state_id": "tall-2",
+          "visual_description": "a tall vertical stabilizer"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-color--batch-0001--8d9319ed--00",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the aircraft's fuselage livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8d9319ed3d339a03",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The aircraft fuselage is primarily white."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-1",
+          "visual_description": "The aircraft fuselage is primarily green."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "silver",
+          "state_id": "silver-2",
+          "visual_description": "The aircraft fuselage is primarily silver or metallic grey."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-text--batch-0001--8d9319ed--01",
+      "perspective": "color and texture",
+      "question": "What is the primary text or logo visible on the side of the aircraft?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8d9319ed3d339a03",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "No large text or branding is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "SkyTeam",
+          "state_id": "skyteam-1",
+          "visual_description": "The text 'SKYTEAM' and a logo are visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "Kalula.com",
+          "state_id": "kalula-com-2",
+          "visual_description": "The text 'Kalula.com' is prominently displayed on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "Delta Shuttle",
+          "state_id": "delta-shuttle-3",
+          "visual_description": "The text 'Delta Shuttle' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 5.0,
+          "label": "HELLOS",
+          "state_id": "hellos-4",
+          "visual_description": "The text 'HELLOS' is prominently displayed on the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_design",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--tail-design--batch-0001--8d9319ed--02",
+      "perspective": "color and texture",
+      "question": "What is the design or color of the aircraft's tail fin?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8d9319ed3d339a03",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The tail fin is primarily white."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green_blue",
+          "state_id": "green-blue-1",
+          "visual_description": "The tail fin is green and blue with a curved design."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "delta_widget",
+          "state_id": "delta-widget-2",
+          "visual_description": "The tail fin is dark blue with a red and white 'Delta' widget."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "blue_gold",
+          "state_id": "blue-gold-3",
+          "visual_description": "The tail fin is blue with gold patterns and a large gold emblem."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-texture--batch-0001--8d9319ed--03",
+      "perspective": "color and texture",
+      "question": "What is the texture or pattern of the aircraft's exterior?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8d9319ed3d339a03",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "plain",
+          "state_id": "plain-0",
+          "visual_description": "The aircraft surface is smooth and plain."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "riveted",
+          "state_id": "riveted-1",
+          "visual_description": "The aircraft surface shows visible rivets and panel lines."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--fuselage-length--batch-0001--8456ae77--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the relative length of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8456ae77aed27d3c",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short-fuselage aircraft, typically used for regional flights"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-length fuselage, typical for narrow-body commercial aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a long-fuselage aircraft, typical for wide-body or long-haul narrow-body aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_width",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--fuselage-width--batch-0001--8456ae77--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the relative width of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8456ae77aed27d3c",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a narrow-body aircraft with a single aisle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wide",
+          "state_id": "wide-1",
+          "visual_description": "a wide-body aircraft with two aisles"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--wing-shape--batch-0001--8456ae77--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape of the aircraft wing?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8456ae77aed27d3c",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "swept-wing",
+          "state_id": "swept-wing-0",
+          "visual_description": "an aircraft with wings swept back significantly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "straight-wing",
+          "state_id": "straight-wing-1",
+          "visual_description": "an aircraft with wings that are relatively straight"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--tail-type--batch-0001--8456ae77--03",
+      "perspective": "pose and silhouette",
+      "question": "What is the type of the aircraft tail?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8456ae77aed27d3c",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "conventional",
+          "state_id": "conventional-0",
+          "visual_description": "a standard tail configuration with a vertical stabilizer and horizontal stabilizers"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "T-tail",
+          "state_id": "t-tail-1",
+          "visual_description": "a tail configuration where the horizontal stabilizers are mounted on top of the vertical stabilizer"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "twin-tail",
+          "state_id": "twin-tail-2",
+          "visual_description": "a tail configuration with two vertical stabilizers"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "engine_count",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "engine--engine-count--batch-0001--8456ae77--04",
+      "perspective": "pose and silhouette",
+      "question": "How many engines are visible on the aircraft?",
+      "region": "engine",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8456ae77aed27d3c",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "single",
+          "state_id": "single-0",
+          "visual_description": "a single engine visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "twin",
+          "state_id": "twin-1",
+          "visual_description": "two engines visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "four",
+          "state_id": "four-2",
+          "visual_description": "four engines visible on the aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-color--batch-0001--8456ae77--05",
+      "perspective": "pose and silhouette",
+      "question": "What is the primary color of the aircraft livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "8456ae77aed27d3c",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "an aircraft with a primarily white livery"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "an aircraft with a primarily blue livery"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "an aircraft with a primarily green livery"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-color--batch-0001--e33113e8--00",
+      "perspective": "local visible differences",
+      "question": "What is the primary color of the aircraft's fuselage livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e33113e8bc0d76b6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The aircraft fuselage is primarily white."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "green",
+          "state_id": "green-1",
+          "visual_description": "The aircraft fuselage is primarily green."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "silver",
+          "state_id": "silver-2",
+          "visual_description": "The aircraft fuselage is primarily silver."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-text--batch-0001--e33113e8--01",
+      "perspective": "local visible differences",
+      "question": "What is the primary text or logo visible on the side of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e33113e8bc0d76b6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "SkyTeam",
+          "state_id": "skyteam-0",
+          "visual_description": "The fuselage features the 'SkyTeam' logo."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "Kalula.com",
+          "state_id": "kalula-com-1",
+          "visual_description": "The fuselage features the 'Kalula.com' text."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "Delta Shuttle",
+          "state_id": "delta-shuttle-2",
+          "visual_description": "The fuselage features the 'Delta Shuttle' text."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "HELLOS",
+          "state_id": "hellos-3",
+          "visual_description": "The fuselage features the 'HELLOS' text."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_design",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--tail-design--batch-0001--e33113e8--02",
+      "perspective": "local visible differences",
+      "question": "What is the design or color of the aircraft's tail fin?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e33113e8bc0d76b6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "green_and_blue",
+          "state_id": "green-and-blue-0",
+          "visual_description": "The tail fin is primarily green and blue."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "delta_widget",
+          "state_id": "delta-widget-1",
+          "visual_description": "The tail fin features the Delta 'widget' logo in white on a dark background."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue_with_gold_emblem",
+          "state_id": "blue-with-gold-emblem-2",
+          "visual_description": "The tail fin is blue with a large gold emblem."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "window_count",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--window-count--batch-0001--e33113e8--03",
+      "perspective": "local visible differences",
+      "question": "How many windows are visible in the main passenger cabin section?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e33113e8bc0d76b6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "The aircraft has a small number of windows."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "many",
+          "state_id": "many-1",
+          "visual_description": "The aircraft has a large number of windows."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-color--batch-0001--f016ae2f--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color of the aircraft's fuselage livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f016ae2f99b01b5b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The aircraft fuselage is primarily white."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "The aircraft fuselage is primarily blue."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "The aircraft fuselage is primarily green."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "silver",
+          "state_id": "silver-3",
+          "visual_description": "The aircraft fuselage is primarily silver or metallic grey."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--livery-text--batch-0001--f016ae2f--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary text or logo visible on the side of the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f016ae2f99b01b5b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "No prominent airline name or large text is visible."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "SkyTeam",
+          "state_id": "skyteam-1",
+          "visual_description": "The 'SkyTeam' logo is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "Katula.com",
+          "state_id": "katula-com-2",
+          "visual_description": "The text 'Katula.com' is prominently displayed."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "Delta Shuttle",
+          "state_id": "delta-shuttle-3",
+          "visual_description": "The text 'Delta Shuttle' is visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 5.0,
+          "label": "HELLOS",
+          "state_id": "hellos-4",
+          "visual_description": "The word 'HELLOS' is prominently displayed in large letters."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_design",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--tail-design--batch-0001--f016ae2f--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the design or color of the aircraft's tail fin?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f016ae2f99b01b5b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The tail fin is primarily white."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue_and_green",
+          "state_id": "blue-and-green-1",
+          "visual_description": "The tail fin has a blue and green design."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "blue_and_red",
+          "state_id": "blue-and-red-2",
+          "visual_description": "The tail fin is blue with a red stripe and 'Delta' text."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "blue_and_gold",
+          "state_id": "blue-and-gold-3",
+          "visual_description": "The tail fin is blue with gold accents and a large gold emblem."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "window_count",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--window-count--batch-0001--f016ae2f--03",
+      "perspective": "visibility and missing visual information",
+      "question": "How many windows are visible in the main cabin section shown?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f016ae2f99b01b5b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "few",
+          "state_id": "few-0",
+          "visual_description": "Only a few windows are visible in the frame."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "many",
+          "state_id": "many-1",
+          "visual_description": "A long row of many windows is visible along the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "door_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--door-type--batch-0001--f016ae2f--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What type of door is visible on the side of the aircraft?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "f016ae2f99b01b5b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "No door is clearly visible in the frame."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "passenger_door",
+          "state_id": "passenger-door-1",
+          "visual_description": "A standard passenger door is visible."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "emergency_exit",
+          "state_id": "emergency-exit-2",
+          "visual_description": "An emergency exit door with 'SORTIE EXIT' text is visible."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "weather_conditions",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--weather-conditions--batch-0001--eee67b55--00",
+      "perspective": "background and environment",
+      "question": "What are the weather conditions in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eee67b557d58f0b4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "clear",
+          "state_id": "clear-0",
+          "visual_description": "The sky is clear with visible blue sky and distinct clouds."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "overcast",
+          "state_id": "overcast-1",
+          "visual_description": "The sky is overcast, gray, or hazy with low visibility of the horizon."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "terrain_features",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--terrain-features--batch-0001--eee67b55--01",
+      "perspective": "background and environment",
+      "question": "What are the prominent terrain features in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eee67b557d58f0b4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "mountainous",
+          "state_id": "mountainous-0",
+          "visual_description": "Large mountains are visible in the background."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "flat",
+          "state_id": "flat-1",
+          "visual_description": "The background is relatively flat with no significant mountains."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface_type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "ground--surface-type--batch-0001--eee67b55--02",
+      "perspective": "background and environment",
+      "question": "What is the surface of the ground where the aircraft is located?",
+      "region": "ground",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eee67b557d58f0b4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "concrete_asphalt",
+          "state_id": "concrete-asphalt-0",
+          "visual_description": "The ground is a paved concrete or asphalt runway/tarmac."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "grass",
+          "state_id": "grass-1",
+          "visual_description": "The ground is covered in grass or vegetation."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "infrastructure_presence",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--infrastructure-presence--batch-0001--eee67b55--03",
+      "perspective": "background and environment",
+      "question": "What infrastructure is visible in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "eee67b557d58f0b4",
+      "source_sample_ids": [
+        "fgvc-aircraft-0368505",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0781150"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "No significant airport infrastructure is visible."
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "airport_infrastructure",
+          "state_id": "airport-infrastructure-1",
+          "visual_description": "Airport infrastructure like hangars, gates, or ground equipment is visible."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "engine_count",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engine--engine-count--batch-0002--e64e4a30--03",
+      "perspective": "shape and relative proportions",
+      "question": "How many engines are visible on the aircraft?",
+      "region": "engine",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e64e4a30f4e66da7",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "two",
+          "state_id": "two-0",
+          "visual_description": "an aircraft with two engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "three",
+          "state_id": "three-1",
+          "visual_description": "an aircraft with three engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "four",
+          "state_id": "four-2",
+          "visual_description": "an aircraft with four engines"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_fin_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail--tail-fin-shape--batch-0002--e64e4a30--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the vertical tail fin?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e64e4a30f4e66da7",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "trapezoidal",
+          "state_id": "trapezoidal-0",
+          "visual_description": "a standard trapezoidal tail fin"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "scalloped",
+          "state_id": "scalloped-1",
+          "visual_description": "a tail fin with a distinct curved or scalloped trailing edge"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--livery-color--batch-0002--0abc0ee5--00",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the aircraft's fuselage livery?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0abc0ee5a5d7080f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The aircraft fuselage is primarily white with some colored markings."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "The aircraft fuselage is primarily blue with some white or other colored markings."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "grey",
+          "state_id": "grey-2",
+          "visual_description": "The aircraft fuselage is primarily grey or silver."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_logo_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail--tail-logo-color--batch-0002--0abc0ee5--01",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the logo on the aircraft tail?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0abc0ee5a5d7080f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "red",
+          "state_id": "red-0",
+          "visual_description": "The logo on the tail is primarily red."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "The logo on the tail is primarily blue."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "black",
+          "state_id": "black-2",
+          "visual_description": "The logo on the tail is primarily black."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "text_content",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--text-content--batch-0002--0abc0ee5--02",
+      "perspective": "color and texture",
+      "question": "What is the primary text visible on the side of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0abc0ee5a5d7080f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "American Freighter",
+          "state_id": "american-freighter-0",
+          "visual_description": "The text 'American Freighter' is clearly visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "BOEING",
+          "state_id": "boeing-1",
+          "visual_description": "The text 'BOEING' is clearly visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "TUNISAIR",
+          "state_id": "tunisair-2",
+          "visual_description": "The text 'TUNISAIR' is clearly visible on the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "ADRIA",
+          "state_id": "adria-3",
+          "visual_description": "The text 'ADRIA' is clearly visible on the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--livery-pattern--batch-0002--0abc0ee5--03",
+      "perspective": "color and texture",
+      "question": "What is the pattern of the livery on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0abc0ee5a5d7080f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "The livery is a solid color with text and logos."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "striped",
+          "state_id": "striped-1",
+          "visual_description": "The livery features a pattern of stripes or gradients."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "livery_text_language",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--livery-text-language--batch-0002--0abc0ee5--04",
+      "perspective": "color and texture",
+      "question": "What language is the primary airline name written in on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "0abc0ee5a5d7080f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "English",
+          "state_id": "english-0",
+          "visual_description": "The airline name is written in English characters."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "Arabic",
+          "state_id": "arabic-1",
+          "visual_description": "The airline name is written in Arabic script."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "Mixed",
+          "state_id": "mixed-2",
+          "visual_description": "The airline name is written in both English and Arabic script."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "wing--wing-shape--batch-0002--88f51beb--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the characteristic shape of the wing?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "88f51beb5c4c5253",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "swept-wing",
+          "state_id": "swept-wing-0",
+          "visual_description": "a wing with a significant rearward sweep"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "straight-wing",
+          "state_id": "straight-wing-1",
+          "visual_description": "a wing with little to no visible sweep"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_fin_height",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail--tail-fin-height--batch-0002--88f51beb--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the relative height of the vertical stabilizer?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "88f51beb5c4c5253",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a relatively short vertical stabilizer"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tall",
+          "state_id": "tall-1",
+          "visual_description": "a tall, prominent vertical stabilizer"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "wing--wing-shape--batch-0002--e1720843--02",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the wing's leading edge?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e1720843bf489438",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "a wing with a relatively straight leading edge"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "swept",
+          "state_id": "swept-1",
+          "visual_description": "a wing with a significantly swept-back leading edge"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_fin_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail--tail-fin-shape--batch-0002--e1720843--04",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the vertical tail fin?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e1720843bf489438",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "trapezoidal",
+          "state_id": "trapezoidal-0",
+          "visual_description": "a standard trapezoidal tail fin"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "scalloped",
+          "state_id": "scalloped-1",
+          "visual_description": "a tail fin with a distinct scalloped or curved trailing edge"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "nose_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--nose-shape--batch-0002--e1720843--05",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the aircraft nose?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "e1720843bf489438",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pointed",
+          "state_id": "pointed-0",
+          "visual_description": "a sharply pointed nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "a rounded, blunt nose"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--fuselage-length--batch-0002--d6687a2f--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the relative length of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d6687a2fb3de5295",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short-fuselage aircraft, typically used for short-haul flights"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-length fuselage, typical for narrow-body commercial aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a long-fuselage aircraft, typical for wide-body or long-haul commercial aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "wing_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "wing--wing-shape--batch-0002--d6687a2f--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the shape of the aircraft wing?",
+      "region": "wing",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d6687a2fb3de5295",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "swept-wing",
+          "state_id": "swept-wing-0",
+          "visual_description": "the wing has a significant backward sweep"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "straight-wing",
+          "state_id": "straight-wing-1",
+          "visual_description": "the wing is relatively straight or has very little sweep"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "tail_type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail--tail-type--batch-0002--d6687a2f--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the configuration of the aircraft tail?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d6687a2fb3de5295",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "conventional",
+          "state_id": "conventional-0",
+          "visual_description": "a standard tail configuration with a single vertical stabilizer and horizontal stabilizers"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "T-tail",
+          "state_id": "t-tail-1",
+          "visual_description": "the horizontal stabilizers are mounted on top of the vertical stabilizer"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "engine_count",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engine--engine-count--batch-0002--d6687a2f--03",
+      "perspective": "visibility and missing visual information",
+      "question": "How many engines are visible on the aircraft?",
+      "region": "engine",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d6687a2fb3de5295",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "two",
+          "state_id": "two-0",
+          "visual_description": "the aircraft has two engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "three",
+          "state_id": "three-1",
+          "visual_description": "the aircraft has three engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "four",
+          "state_id": "four-2",
+          "visual_description": "the aircraft has four engines"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "fuselage_diameter",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--fuselage-diameter--batch-0002--d6687a2f--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the relative diameter of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "d6687a2fb3de5295",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow-body",
+          "state_id": "narrow-body-0",
+          "visual_description": "a narrow-body aircraft where the fuselage is only wide enough for one row of seats"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wide-body",
+          "state_id": "wide-body-1",
+          "visual_description": "a wide-body aircraft where the fuselage is wide enough for multiple rows of seats"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the aircraft fuselage is visible",
+      "attribute": "livery_text",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--livery-text--batch-0002--27543915--00",
+      "perspective": "background and environment",
+      "question": "What is the primary text visible on the side of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "27543915d2f43940",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "American Freighter",
+          "state_id": "american-freighter-0",
+          "visual_description": "The text 'American Freighter' is visible on the side of the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "Boeing",
+          "state_id": "boeing-1",
+          "visual_description": "The text 'BOEING' is visible on the side of the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "Tunisair",
+          "state_id": "tunisair-2",
+          "visual_description": "The text 'TUNISAIR' is visible on the side of the fuselage."
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "Adria",
+          "state_id": "adria-3",
+          "visual_description": "The text 'ADRIA' is visible on the side of the fuselage."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the aircraft tail is visible",
+      "attribute": "tail_logo",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail--tail-logo--batch-0002--27543915--01",
+      "perspective": "background and environment",
+      "question": "What is the primary logo or design on the aircraft tail?",
+      "region": "tail",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "27543915d2f43940",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "AA logo",
+          "state_id": "aa-logo-0",
+          "visual_description": "The tail features a stylized 'AA' logo."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "Tunisair logo",
+          "state_id": "tunisair-logo-1",
+          "visual_description": "The tail features a red stylized bird-like logo."
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "Adria logo",
+          "state_id": "adria-logo-2",
+          "visual_description": "The tail features a blue stylized 'A' logo."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the aircraft fuselage is visible",
+      "attribute": "fuselage_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--fuselage-color--batch-0002--27543915--02",
+      "perspective": "background and environment",
+      "question": "What is the primary color of the aircraft fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "27543915d2f43940",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "The fuselage is primarily white."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue and white",
+          "state_id": "blue-and-white-1",
+          "visual_description": "The fuselage is primarily blue and white."
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the aircraft fuselage is visible",
+      "attribute": "livery_pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--livery-pattern--batch-0002--27543915--03",
+      "perspective": "background and environment",
+      "question": "What is the pattern of the livery on the fuselage?",
+      "region": "fuselage",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "27543915d2f43940",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "The livery is solid with text and logos."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "striped",
+          "state_id": "striped-1",
+          "visual_description": "The livery features horizontal stripes or gradients."
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--environment--batch-0002--27543915--04",
+      "perspective": "background and environment",
+      "question": "What is the environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "27543915d2f43940",
+      "source_sample_ids": [
+        "fgvc-aircraft-0809727",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1758606"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "runway",
+          "state_id": "runway-0",
+          "visual_description": "The aircraft is on a runway or taxiway."
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "sky",
+          "state_id": "sky-1",
+          "visual_description": "The aircraft is in flight against a clear sky."
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the aircraft variant shown in the image.",
+  "task_name": "aircraft"
+}

@@ -1,0 +1,3587 @@
+{
+  "bank_hash": "891f05985264f90068b43d74431aed576cc2452e251d4a231020369b1a2df45b",
+  "class_names": [
+    "affenpinscher",
+    "afghan hound",
+    "african hunting dog",
+    "airedale",
+    "american staffordshire terrier",
+    "appenzeller",
+    "australian terrier",
+    "basenji",
+    "basset",
+    "beagle",
+    "bedlington terrier",
+    "bernese mountain dog",
+    "black-and-tan coonhound",
+    "blenheim spaniel",
+    "bloodhound",
+    "bluetick",
+    "border collie",
+    "border terrier",
+    "borzoi",
+    "boston bull",
+    "bouvier des flandres",
+    "boxer",
+    "brabancon griffon",
+    "briard",
+    "brittany spaniel",
+    "bull mastiff",
+    "cairn",
+    "cardigan",
+    "chesapeake bay retriever",
+    "chihuahua",
+    "chow",
+    "clumber",
+    "cocker spaniel",
+    "collie",
+    "curly-coated retriever",
+    "dandie dinmont",
+    "dhole",
+    "dingo",
+    "doberman",
+    "english foxhound",
+    "english setter",
+    "english springer",
+    "entlebucher",
+    "eskimo dog",
+    "flat-coated retriever",
+    "french bulldog",
+    "german shepherd",
+    "german short-haired pointer",
+    "giant schnauzer",
+    "golden retriever",
+    "gordon setter",
+    "great dane",
+    "great pyrenees",
+    "greater swiss mountain dog",
+    "groenendael",
+    "ibizan hound",
+    "irish setter",
+    "irish terrier",
+    "irish water spaniel",
+    "irish wolfhound",
+    "italian greyhound",
+    "japanese spaniel",
+    "keeshond",
+    "kelpie",
+    "kerry blue terrier",
+    "komondor",
+    "kuvasz",
+    "labrador retriever",
+    "lakeland terrier",
+    "leonberg",
+    "lhasa",
+    "malamute",
+    "malinois",
+    "maltese dog",
+    "mexican hairless",
+    "miniature pinscher",
+    "miniature poodle",
+    "miniature schnauzer",
+    "newfoundland",
+    "norfolk terrier",
+    "norwegian elkhound",
+    "norwich terrier",
+    "old english sheepdog",
+    "otterhound",
+    "papillon",
+    "pekinese",
+    "pembroke",
+    "pomeranian",
+    "pug",
+    "redbone",
+    "rhodesian ridgeback",
+    "rottweiler",
+    "saint bernard",
+    "saluki",
+    "samoyed",
+    "schipperke",
+    "scotch terrier",
+    "scottish deerhound",
+    "sealyham terrier",
+    "shetland sheepdog",
+    "shih-tzu",
+    "siberian husky",
+    "silky terrier",
+    "soft-coated wheaten terrier",
+    "staffordshire bullterrier",
+    "standard poodle",
+    "standard schnauzer",
+    "sussex spaniel",
+    "tibetan mastiff",
+    "tibetan terrier",
+    "toy poodle",
+    "toy terrier",
+    "vizsla",
+    "walker hound",
+    "weimaraner",
+    "welsh springer spaniel",
+    "west highland white terrier",
+    "whippet",
+    "wire-haired fox terrier",
+    "yorkshire terrier"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--length--batch-0000--84e0f3bf--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the tail of the dog?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "84e0f3bf22398323",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long tail"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--shape--batch-0000--84e0f3bf--01",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ears",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "84e0f3bf22398323",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "a dog with floppy ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pricked",
+          "state_id": "pricked-1",
+          "visual_description": "a dog with pricked-up ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "droopy",
+          "state_id": "droopy-2",
+          "visual_description": "a dog with droopy ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "thickness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--thickness--batch-0000--84e0f3bf--02",
+      "perspective": "part shape and relative proportions",
+      "question": "How thick is the dog's coat?",
+      "region": "coat",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "84e0f3bf22398323",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "a dog with a thin coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-thickness coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "a dog with a thick coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "expression",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--expression--batch-0000--84e0f3bf--03",
+      "perspective": "part shape and relative proportions",
+      "question": "What expression does the dog have on its face?",
+      "region": "face",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "84e0f3bf22398323",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "happy",
+          "state_id": "happy-0",
+          "visual_description": "a dog with a happy expression"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "neutral",
+          "state_id": "neutral-1",
+          "visual_description": "a dog with a neutral expression"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "sad",
+          "state_id": "sad-2",
+          "visual_description": "a dog with a sad expression"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "legs--length--batch-0000--84e0f3bf--04",
+      "perspective": "part shape and relative proportions",
+      "question": "How long are the dog's legs?",
+      "region": "legs",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "84e0f3bf22398323",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "size",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--size--batch-0000--84e0f3bf--05",
+      "perspective": "part shape and relative proportions",
+      "question": "How large is the dog compared to the surroundings?",
+      "region": "body",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "84e0f3bf22398323",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a dog that appears small compared to the surroundings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog that appears medium-sized compared to the surroundings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a dog that appears large compared to the surroundings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "thickness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--thickness--batch-0000--39562413--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "How thick is the dog's coat?",
+      "region": "coat",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3956241328c35637",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "a dog with a thin coat that appears smooth and close-fitting"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium-thick",
+          "state_id": "medium-thick-1",
+          "visual_description": "a dog with a medium-thickness coat that feels neither too thin nor too heavy"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "a dog with a thick coat that appears dense and fluffy"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--shape--batch-0000--39562413--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ears",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3956241328c35637",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fluffy",
+          "state_id": "fluffy-0",
+          "visual_description": "a dog with fluffy ears that stand out from the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "droopy",
+          "state_id": "droopy-1",
+          "visual_description": "a dog with droopy ears that hang down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pointy",
+          "state_id": "pointy-2",
+          "visual_description": "a dog with pointy ears that are upright"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--color--batch-0000--39562413--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the primary color of the dog's face?",
+      "region": "face",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3956241328c35637",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "a dog with a predominantly white face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a dog with a predominantly brown face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "black",
+          "state_id": "black-2",
+          "visual_description": "a dog with a predominantly black face"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "size",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eyes--size--batch-0000--39562413--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "How large are the dog's eyes?",
+      "region": "eyes",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3956241328c35637",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a dog with small eyes that appear proportionally smaller than the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-sized eyes that appear proportionally average in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a dog with large eyes that appear proportionally larger than the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail--length--batch-0000--39562413--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "How long is the dog's tail?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3956241328c35637",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short tail that is relatively short compared to the body length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length tail that is neither very short nor very long"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long tail that extends far beyond the body length"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "legs--length--batch-0000--39562413--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "How long are the dog's legs?",
+      "region": "legs",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3956241328c35637",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short legs that are relatively short compared to the body length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length legs that are neither very short nor very long"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long legs that extend far beyond the body length"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "the shape of the dog's ears",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ear-shape--the-shape-of-the-dog-s-ears--batch-0000--3658473c--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3658473cf69142b7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "fluffy",
+          "state_id": "fluffy-0",
+          "visual_description": "ears that appear fluffy and rounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "droopy",
+          "state_id": "droopy-1",
+          "visual_description": "ears that hang down loosely"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pointy",
+          "state_id": "pointy-2",
+          "visual_description": "ears that stand upright"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "the color of the dog's eyes",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eye-color--the-color-of-the-dog-s-eyes--batch-0000--3658473c--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3658473cf69142b7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes that are brown in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes that are blue in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "hazel",
+          "state_id": "hazel-2",
+          "visual_description": "eyes that are hazel in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "green",
+          "state_id": "green-3",
+          "visual_description": "eyes that are green in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "other",
+          "state_id": "other-4",
+          "visual_description": "eyes that are any other color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "the color of the dog's nose",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "nose-color--the-color-of-the-dog-s-nose--batch-0000--3658473c--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color is the dog's nose?",
+      "region": "nose color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3658473cf69142b7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a nose that is black in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a nose that is brown in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a nose that is pink in color"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a nose that is any other color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "the posture of the dog's body",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body-posture--the-posture-of-the-dog-s-body--batch-0000--3658473c--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the posture of the dog's body?",
+      "region": "body posture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3658473cf69142b7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "standing",
+          "state_id": "standing-0",
+          "visual_description": "a dog standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sitting",
+          "state_id": "sitting-1",
+          "visual_description": "a dog sitting down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lying down",
+          "state_id": "lying-down-2",
+          "visual_description": "a dog lying down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "walking",
+          "state_id": "walking-3",
+          "visual_description": "a dog walking"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "the dog's posture cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "face color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face-color--face-color--batch-0000--e6d9ff44--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What colors are present on the dog's face?",
+      "region": "face_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "e6d9ff44212d0165",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a solid-colored face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "partially patterned",
+          "state_id": "partially-patterned-1",
+          "visual_description": "a dog with partially patterned face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "fully patterned",
+          "state_id": "fully-patterned-2",
+          "visual_description": "a dog with fully patterned face"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye size",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eye-size--eye-size--batch-0000--e6d9ff44--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How large are the dog's eyes?",
+      "region": "eye_size",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "e6d9ff44212d0165",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a dog with small eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-sized eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a dog with large eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "body type",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body-type--body-type--batch-0000--e6d9ff44--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the general body shape of the dog?",
+      "region": "body_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "e6d9ff44212d0165",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "slender",
+          "state_id": "slender-0",
+          "visual_description": "a dog with a slender body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "muscular",
+          "state_id": "muscular-1",
+          "visual_description": "a dog with a muscular body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "stocky",
+          "state_id": "stocky-2",
+          "visual_description": "a dog with a stocky body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ear-shape--ear-shape--batch-0000--bab182db--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ear_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bab182db9e29ded7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "ears that hang down loosely"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pricked",
+          "state_id": "pricked-1",
+          "visual_description": "ears that stand upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "semi-pricked",
+          "state_id": "semi-pricked-2",
+          "visual_description": "ears that are neither fully pricked nor floppy"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eye-color--eye-color--batch-0000--bab182db--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What color are the dog's eyes?",
+      "region": "eye_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bab182db9e29ded7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes that appear brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes that appear blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "hazel",
+          "state_id": "hazel-2",
+          "visual_description": "eyes that appear hazel"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "eyes that appear any other color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "nose color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "nose-color--nose-color--batch-0000--bab182db--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What color is the dog's nose?",
+      "region": "nose_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bab182db9e29ded7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a nose that appears black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a nose that appears brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a nose that appears pink"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a nose that appears any other color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-length--tail-length--batch-0000--bab182db--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How long is the dog's tail?",
+      "region": "tail_length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bab182db9e29ded7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail that is short compared to the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that is medium-length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail that is long compared to the body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat-pattern--coat-pattern--batch-0000--bab182db--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the pattern of the dog's coat?",
+      "region": "coat_pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bab182db9e29ded7",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a solid-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spotted",
+          "state_id": "spotted-1",
+          "visual_description": "a coat with spots or patches"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "brindle",
+          "state_id": "brindle-2",
+          "visual_description": "a coat with stripes or markings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a coat with any other pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat-length--coat-length--batch-0000--8616770c--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How long is the dog's coat?",
+      "region": "coat_length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8616770cdd69fe18",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ear-shape--ear-shape--batch-0000--8616770c--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ear_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8616770cdd69fe18",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "a dog with floppy ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pricked",
+          "state_id": "pricked-1",
+          "visual_description": "a dog with pricked ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "semi-floppy",
+          "state_id": "semi-floppy-2",
+          "visual_description": "a dog with semi-floppy ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "eye-color--eye-color--batch-0000--8616770c--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What color are the dog's eyes?",
+      "region": "eye_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8616770cdd69fe18",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "a dog with brown eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "a dog with blue eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "hazel",
+          "state_id": "hazel-2",
+          "visual_description": "a dog with hazel eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "green",
+          "state_id": "green-3",
+          "visual_description": "a dog with green eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "other",
+          "state_id": "other-4",
+          "visual_description": "a dog with eyes of another color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "nose color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "nose-color--nose-color--batch-0000--8616770c--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What color is the dog's nose?",
+      "region": "nose_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8616770cdd69fe18",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a dog with a black nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a dog with a brown nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a dog with a pink nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a dog with a nose of another color"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat-pattern--coat-pattern--batch-0000--8616770c--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the pattern of the dog's coat?",
+      "region": "coat_pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8616770cdd69fe18",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a solid-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spotted",
+          "state_id": "spotted-1",
+          "visual_description": "a dog with a spotted coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "brindle",
+          "state_id": "brindle-2",
+          "visual_description": "a dog with a brindle coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "fawn",
+          "state_id": "fawn-3",
+          "visual_description": "a dog with a fawn-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "merle",
+          "state_id": "merle-4",
+          "visual_description": "a dog with a merle coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 5.0,
+          "label": "other",
+          "state_id": "other-5",
+          "visual_description": "a dog with a coat of another pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "fur length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "coat-length--fur-length--batch-0001--885b2226--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the fur on the dog's body?",
+      "region": "coat length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "885b2226c5c10b5b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short fur covering most of its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length fur, covering most of its body but not reaching the ground"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long fur, covering most of its body and reaching the ground"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "ear-shape--ear-size--batch-0001--885b2226--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How large are the dog's ears?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "885b2226c5c10b5b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a dog with small ears that are not very noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-sized ears that are noticeable but not large"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a dog with large ears that are quite noticeable"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "eye-color--eye-color--batch-0001--885b2226--02",
+      "perspective": "part shape and relative proportions",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "885b2226c5c10b5b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "a dog with brown eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "a dog with blue eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterochromia",
+          "state_id": "heterochromia-2",
+          "visual_description": "a dog with different colored eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "nose color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "nose-color--nose-color--batch-0001--885b2226--03",
+      "perspective": "part shape and relative proportions",
+      "question": "What color is the dog's nose?",
+      "region": "nose color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "885b2226c5c10b5b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a dog with a black nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a dog with a brown nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a dog with a pink nose"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail-length--tail-length--batch-0001--885b2226--04",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the dog's tail?",
+      "region": "tail length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "885b2226c5c10b5b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short tail that is not very noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length tail that is noticeable but not very long"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long tail that is quite noticeable"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "body position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body-posture--body-position--batch-0001--885b2226--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the dog's body posture?",
+      "region": "body posture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "885b2226c5c10b5b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "standing",
+          "state_id": "standing-0",
+          "visual_description": "a dog standing upright on all four legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sitting",
+          "state_id": "sitting-1",
+          "visual_description": "a dog sitting with its hind legs folded under its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lying down",
+          "state_id": "lying-down-2",
+          "visual_description": "a dog lying down with its body stretched out"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "fur length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "coat-length--fur-length--batch-0001--5759215d--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "How long is the fur on the dog's body?",
+      "region": "coat length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5759215dea7a34f6",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short fur covering its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length fur covering its body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long fur covering its body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "coat-texture--coat-type--batch-0001--5759215d--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5759215dea7a34f6",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a dog with a smooth coat texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "a dog with a wavy coat texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "a dog with a curly coat texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "ear-shape--ear-shape--batch-0001--5759215d--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the dog's ears?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5759215dea7a34f6",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "a dog with floppy ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pricked",
+          "state_id": "pricked-1",
+          "visual_description": "a dog with pricked ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "semi-pricked",
+          "state_id": "semi-pricked-2",
+          "visual_description": "a dog with semi-pricked ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat pattern",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "coat-pattern--coat-pattern--batch-0001--5759215d--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What pattern does the dog's coat have?",
+      "region": "coat pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5759215dea7a34f6",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a solid-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spotted",
+          "state_id": "spotted-1",
+          "visual_description": "a dog with spots on its coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "striped",
+          "state_id": "striped-2",
+          "visual_description": "a dog with stripes on its coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "flecked",
+          "state_id": "flecked-3",
+          "visual_description": "a dog with flecks of different colors on its coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "other",
+          "state_id": "other-4",
+          "visual_description": "a dog with a coat pattern other than the above"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "body posture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body-posture--body-posture--batch-0001--5759215d--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the dog's body posture?",
+      "region": "body posture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5759215dea7a34f6",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "standing",
+          "state_id": "standing-0",
+          "visual_description": "a dog standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sitting",
+          "state_id": "sitting-1",
+          "visual_description": "a dog sitting down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lying down",
+          "state_id": "lying-down-2",
+          "visual_description": "a dog lying down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "standing with front legs folded",
+          "state_id": "standing-with-front-legs-folded-3",
+          "visual_description": "a dog standing with its front legs folded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "other",
+          "state_id": "other-4",
+          "visual_description": "a dog in a posture other than the above"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "ear-shape--ear-position--batch-0001--ffd01077--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How are the ears positioned on the dog's head?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ffd0107749a13317",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "droopy",
+          "state_id": "droopy-0",
+          "visual_description": "ears hanging down loosely"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "erect",
+          "state_id": "erect-1",
+          "visual_description": "ears standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-2",
+          "visual_description": "ears partially upright but not fully erect"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "eye-color--eye-color--batch-0001--ffd01077--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ffd0107749a13317",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes with brown pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes with blue pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterochromia",
+          "state_id": "heterochromia-2",
+          "visual_description": "eyes with different colors"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "nose color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "nose-color--nose-color--batch-0001--ffd01077--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color is the dog's nose?",
+      "region": "nose color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ffd0107749a13317",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a nose with black pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a nose with brown pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a nose with pink pigmentation"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail-length--tail-length--batch-0001--ffd01077--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How long is the dog's tail?",
+      "region": "tail length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ffd0107749a13317",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail that is short and stubby"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that is medium-length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail that is long and flowing"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "body posture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body-posture--body-posture--batch-0001--ffd01077--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the dog's body posture?",
+      "region": "body posture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ffd0107749a13317",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "standing",
+          "state_id": "standing-0",
+          "visual_description": "a dog standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sitting",
+          "state_id": "sitting-1",
+          "visual_description": "a dog sitting down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lying down",
+          "state_id": "lying-down-2",
+          "visual_description": "a dog lying down"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "hair length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "coat-length--hair-length--batch-0001--1a9e8ed4--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How long is the dog's fur?",
+      "region": "coat length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a9e8ed42cc50247",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short fur"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length fur"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long fur"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "ear-shape--ear-position--batch-0001--1a9e8ed4--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How are the dog's ears positioned?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a9e8ed42cc50247",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "droopy",
+          "state_id": "droopy-0",
+          "visual_description": "ears hanging down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "erect",
+          "state_id": "erect-1",
+          "visual_description": "ears standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-2",
+          "visual_description": "ears slightly raised but not fully upright"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "eye-color--eye-color--batch-0001--1a9e8ed4--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a9e8ed42cc50247",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes with brown irises"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes with blue irises"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterochromia",
+          "state_id": "heterochromia-2",
+          "visual_description": "eyes with different colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "nose color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "nose-color--nose-color--batch-0001--1a9e8ed4--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What color is the dog's nose?",
+      "region": "nose color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a9e8ed42cc50247",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a nose with black pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a nose with brown pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a nose with pink pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible nose"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail-length--tail-length--batch-0001--1a9e8ed4--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How long is the dog's tail?",
+      "region": "tail length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a9e8ed42cc50247",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long",
+          "state_id": "long-0",
+          "visual_description": "a tail longer than the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail about the same length as the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "short",
+          "state_id": "short-2",
+          "visual_description": "a tail shorter than the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible tail"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "body type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body-shape--body-type--batch-0001--1a9e8ed4--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the general shape of the dog's body?",
+      "region": "body shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a9e8ed42cc50247",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long and lean",
+          "state_id": "long-and-lean-0",
+          "visual_description": "a slender, elongated body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium build",
+          "state_id": "medium-build-1",
+          "visual_description": "a balanced, average-sized body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "stocky",
+          "state_id": "stocky-2",
+          "visual_description": "a broad, muscular body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "eye-color--eye-color--batch-0001--c7b9ad1c--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7b9ad1c0534f35b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes with brown pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes with blue pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterochromia",
+          "state_id": "heterochromia-2",
+          "visual_description": "eyes with different colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible eyes due to angle or lighting"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail-length--tail-length--batch-0001--c7b9ad1c--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How long is the dog's tail?",
+      "region": "tail length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7b9ad1c0534f35b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long",
+          "state_id": "long-0",
+          "visual_description": "a tail that extends far beyond the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that is about the same length as the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "short",
+          "state_id": "short-2",
+          "visual_description": "a tail that is shorter than the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible tail"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "coat-texture--coat-texture--batch-0001--c7b9ad1c--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7b9ad1c0534f35b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a coat that feels smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "a coat with wavy strands"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "a coat with tightly curled strands"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible coat texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "face shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "face-shape--face-shape--batch-0001--c7b9ad1c--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the general shape of the dog's face?",
+      "region": "face shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c7b9ad1c0534f35b",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long",
+          "state_id": "long-0",
+          "visual_description": "a face that is elongated"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wide",
+          "state_id": "wide-1",
+          "visual_description": "a face that is broad"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "round",
+          "state_id": "round-2",
+          "visual_description": "a face that is rounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible face shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "ear-shape--ear-position--batch-0001--85413857--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Where are the dog's ears positioned relative to the head?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "854138578efd312f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "droopy",
+          "state_id": "droopy-0",
+          "visual_description": "ears hanging down close to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "erect",
+          "state_id": "erect-1",
+          "visual_description": "ears standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-2",
+          "visual_description": "ears that are neither fully droopy nor fully erect"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "eye-color--eye-color--batch-0001--85413857--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "854138578efd312f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes with brown irises"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes with blue irises"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterochromia",
+          "state_id": "heterochromia-2",
+          "visual_description": "eyes with different colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible eyes due to angle or lighting"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail-length--tail-length--batch-0001--85413857--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How long is the dog's tail?",
+      "region": "tail length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "854138578efd312f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "long",
+          "state_id": "long-0",
+          "visual_description": "a tail that extends far beyond the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that is about the same length as the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "short",
+          "state_id": "short-2",
+          "visual_description": "a tail that is shorter than the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible tail due to angle or lighting"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "body position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body-posture--body-position--batch-0001--85413857--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the dog's body posture?",
+      "region": "body posture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "854138578efd312f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "standing",
+          "state_id": "standing-0",
+          "visual_description": "a dog standing on all four legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sitting",
+          "state_id": "sitting-1",
+          "visual_description": "a dog sitting with hind legs extended"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "lying down",
+          "state_id": "lying-down-2",
+          "visual_description": "a dog lying on the ground"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "absent",
+          "state_id": "absent-3",
+          "visual_description": "no visible body posture due to angle or lighting"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "snout length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "face-shape--snout-length--batch-0001--85413857--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How long is the snout compared to the rest of the face?",
+      "region": "face shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "854138578efd312f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a snout that is relatively short compared to the rest of the face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a snout that is of average length compared to the rest of the face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a snout that is relatively long compared to the rest of the face"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "ear size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "ear-shape--ear-size--batch-0002--5bf40c70--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How large are the dog's ears?",
+      "region": "ear shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5bf40c708a5fb1ec",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a dog with small ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-sized ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a dog with large ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "coat-pattern--coat-pattern--batch-0002--5bf40c70--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What pattern does the dog's coat have?",
+      "region": "coat pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5bf40c708a5fb1ec",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a solid-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spotted",
+          "state_id": "spotted-1",
+          "visual_description": "a dog with a spotted coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "striped",
+          "state_id": "striped-2",
+          "visual_description": "a dog with a striped coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "flecked",
+          "state_id": "flecked-3",
+          "visual_description": "a dog with a flecked coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "other",
+          "state_id": "other-4",
+          "visual_description": "a dog with a coat pattern of another type"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "primary color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "coat-color--primary-color--batch-0002--268fa42f--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the primary coat color of the dog?",
+      "region": "coat_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "268fa42f0b8a10e6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a dog with a predominantly black coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a dog with a predominantly brown coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "white",
+          "state_id": "white-2",
+          "visual_description": "a dog with a predominantly white coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a dog with a coat color not fitting the above categories"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "eye-color--eye-color--batch-0002--268fa42f--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What color are the dog's eyes?",
+      "region": "eye_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "268fa42f0b8a10e6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "a dog with brown eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "a dog with blue eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "hazel",
+          "state_id": "hazel-2",
+          "visual_description": "a dog with hazel eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a dog with eye color not fitting the above categories"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "coat pattern",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "coat-pattern--coat-pattern--batch-0002--268fa42f--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What pattern does the dog's coat have?",
+      "region": "coat_pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "268fa42f0b8a10e6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a dog with a solid-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "spotted",
+          "state_id": "spotted-1",
+          "visual_description": "a dog with a spotted coat pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "brindle",
+          "state_id": "brindle-2",
+          "visual_description": "a dog with a brindle coat pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "a dog with a coat pattern not fitting the above categories"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "body size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body-size--body-size--batch-0002--268fa42f--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the approximate body size of the dog?",
+      "region": "body_size",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "268fa42f0b8a10e6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a dog that appears small in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog that appears medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a dog that appears large in size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "eye-color--eye-color--batch-0002--a037c792--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What color are the dog's eyes?",
+      "region": "eye color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "a037c792ec669d5b",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "eyes with brown pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "eyes with blue pigmentation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterochromia",
+          "state_id": "heterochromia-2",
+          "visual_description": "eyes with two different colors"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail-length--tail-length--batch-0002--a037c792--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How long is the dog's tail?",
+      "region": "tail length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "a037c792ec669d5b",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail that is short compared to the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that is medium-length compared to the body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail that is long compared to the body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images of dogs",
+      "attribute": "coat texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "coat-texture--coat-texture--batch-0002--a037c792--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "a037c792ec669d5b",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a coat that feels smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wiry",
+          "state_id": "wiry-1",
+          "visual_description": "a coat that feels wiry or rough to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "a coat that feels curly or frizzy to the touch"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "primary color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "coat-color--primary-color--batch-0002--52824fc8--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the primary coat color of the dog?",
+      "region": "coat_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "52824fc852570f19",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a dog with a predominantly black coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a dog with a predominantly brown coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "white",
+          "state_id": "white-2",
+          "visual_description": "a dog with a predominantly white coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "tan",
+          "state_id": "tan-3",
+          "visual_description": "a dog with a predominantly tan coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "gray",
+          "state_id": "gray-4",
+          "visual_description": "a dog with a predominantly gray coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-5",
+          "visual_description": "a dog with a mix of colors"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "ear position",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "ear-shape--ear-position--batch-0002--52824fc8--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Where are the dog's ears positioned?",
+      "region": "ear_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "52824fc852570f19",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "droopy",
+          "state_id": "droopy-0",
+          "visual_description": "ears hanging down loosely"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "pricked",
+          "state_id": "pricked-1",
+          "visual_description": "ears standing upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "ears not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "eye size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "eye-shape--eye-size--batch-0002--52824fc8--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How large are the dog's eyes?",
+      "region": "eye_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "52824fc852570f19",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "eyes appear small compared to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "eyes appear medium-sized compared to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "eyes appear large compared to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "eyes not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "tail length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail-length--tail-length--batch-0002--52824fc8--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How long is the dog's tail?",
+      "region": "tail_length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "52824fc852570f19",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "tail not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "nose color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "nose-color--nose-color--batch-0002--52824fc8--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What color is the dog's nose?",
+      "region": "nose_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "52824fc852570f19",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "a dog with a black nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "a dog with a brown nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "pink",
+          "state_id": "pink-2",
+          "visual_description": "a dog with a pink nose"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "nose color not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "coat texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "coat-texture--coat-texture--batch-0002--52824fc8--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat_texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "52824fc852570f19",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a dog with a smooth coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "a dog with a wavy coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "a dog with a curly coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "coat texture not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "eye size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "eye-shape--eye-size--batch-0002--ed9dd921--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How large are the dog's eyes?",
+      "region": "eye_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed9dd9212fa8beff",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "eyes appear small compared to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "eyes appear medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "eyes appear large"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "eyes not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "eye size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "eye-shape--eye-size--batch-0002--7466fa31--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How large are the dog's eyes?",
+      "region": "eye_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "7466fa31c2fa1a8d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "eyes appear small compared to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "eyes appear medium-sized compared to the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "eyes appear large compared to the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "body type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body-shape--body-type--batch-0002--7466fa31--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the general body shape of the dog?",
+      "region": "body_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "7466fa31c2fa1a8d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "slender",
+          "state_id": "slender-0",
+          "visual_description": "a dog with a slender build"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "muscular",
+          "state_id": "muscular-1",
+          "visual_description": "a dog with a muscular build"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "body shape not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing dogs",
+      "attribute": "face shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "face-shape--face-shape--batch-0002--7466fa31--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the overall shape of the dog's face?",
+      "region": "face_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "7466fa31c2fa1a8d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long",
+          "state_id": "long-0",
+          "visual_description": "a dog with a long face"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "square",
+          "state_id": "square-1",
+          "visual_description": "a dog with a square face"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "face shape not clearly visible"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the dog breed shown in the image.",
+  "task_name": "dogs"
+}

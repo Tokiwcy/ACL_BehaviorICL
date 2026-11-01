@@ -1,0 +1,3453 @@
+{
+  "bank_hash": "9ffdc7dc07540a2f974c9b05d0cac03cfc322318359808cc4d5202fe3b5197af",
+  "class_names": [
+    "707-320",
+    "727-200",
+    "737-200",
+    "737-300",
+    "737-400",
+    "737-500",
+    "737-600",
+    "737-700",
+    "737-800",
+    "737-900",
+    "747-100",
+    "747-200",
+    "747-300",
+    "747-400",
+    "757-200",
+    "757-300",
+    "767-200",
+    "767-300",
+    "767-400",
+    "777-200",
+    "777-300",
+    "a300b4",
+    "a310",
+    "a318",
+    "a319",
+    "a320",
+    "a321",
+    "a330-200",
+    "a330-300",
+    "a340-200",
+    "a340-300",
+    "a340-500",
+    "a340-600",
+    "a380",
+    "an-12",
+    "atr-42",
+    "atr-72",
+    "bae 146-200",
+    "bae 146-300",
+    "bae-125",
+    "beechcraft 1900",
+    "boeing 717",
+    "c-130",
+    "c-47",
+    "cessna 172",
+    "cessna 208",
+    "cessna 525",
+    "cessna 560",
+    "challenger 600",
+    "crj-200",
+    "crj-700",
+    "crj-900",
+    "dc-10",
+    "dc-3",
+    "dc-6",
+    "dc-8",
+    "dc-9-30",
+    "dh-82",
+    "dhc-1",
+    "dhc-6",
+    "dhc-8-100",
+    "dhc-8-300",
+    "dornier 328",
+    "dr-400",
+    "e-170",
+    "e-190",
+    "e-195",
+    "emb-120",
+    "embraer legacy 600",
+    "erj 135",
+    "erj 145",
+    "eurofighter typhoon",
+    "f-16a/b",
+    "f/a-18",
+    "falcon 2000",
+    "falcon 900",
+    "fokker 100",
+    "fokker 50",
+    "fokker 70",
+    "global express",
+    "gulfstream iv",
+    "gulfstream v",
+    "hawk t1",
+    "il-76",
+    "l-1011",
+    "md-11",
+    "md-80",
+    "md-87",
+    "md-90",
+    "metroliner",
+    "model b200",
+    "pa-28",
+    "saab 2000",
+    "saab 340",
+    "spitfire",
+    "sr-20",
+    "tornado",
+    "tu-134",
+    "tu-154",
+    "yak-42"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images showing aircraft tails and fuselages",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-fuselage-ratio--length--batch-0000--2c899357--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the tail section compared to the fuselage?",
+      "region": "tail_fuselage_ratio",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c899357544676b1",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail section shorter than the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail section of similar length to the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail section longer than the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft engines",
+      "attribute": "size",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engine-size--size--batch-0000--2c899357--02",
+      "perspective": "part shape and relative proportions",
+      "question": "How large are the engines on the aircraft?",
+      "region": "engine_size",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c899357544676b1",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "engines that appear small in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "engines that appear medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "engines that appear large in size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft fuselages",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage-length--length--batch-0000--2c899357--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the fuselage of the aircraft?",
+      "region": "fuselage_length",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c899357544676b1",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a fuselage that appears short"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a fuselage that appears medium-length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a fuselage that appears long"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft wings",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing-shape--profile--batch-0000--2c899357--04",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the profile of the wing?",
+      "region": "wing_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c899357544676b1",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "wings with straight profiles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "wings with curved profiles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "tapered",
+          "state_id": "tapered-2",
+          "visual_description": "wings with tapered profiles"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft tails",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-shape--profile--batch-0000--2c899357--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the profile of the tail?",
+      "region": "tail_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "2c899357544676b1",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "tails with straight profiles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "tails with curved profiles"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "tapered",
+          "state_id": "tapered-2",
+          "visual_description": "tails with tapered profiles"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft tails",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-fins--shape--batch-0000--1aa4c0db--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the tail fins?",
+      "region": "tail_fins",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1aa4c0db2f5e169f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tapered",
+          "state_id": "tapered-0",
+          "visual_description": "tail fins that taper towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "tail fins that have a rounded shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "tail fins that are triangular in shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engines--position--batch-0000--1aa4c0db--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1aa4c0db2f5e169f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines mounted underneath the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "side-by-side",
+          "state_id": "side-by-side-1",
+          "visual_description": "engines positioned side-by-side under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rear-mounted",
+          "state_id": "rear-mounted-2",
+          "visual_description": "engines mounted at the rear of the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft colors",
+      "attribute": "pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-pattern--pattern--batch-0000--1aa4c0db--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "What pattern does the aircraft have on its body?",
+      "region": "color_pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1aa4c0db2f5e169f",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "a solid color without patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "stripes",
+          "state_id": "stripes-1",
+          "visual_description": "a pattern of horizontal stripes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "logos",
+          "state_id": "logos-2",
+          "visual_description": "a pattern of logos or text"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing both tail and fuselage",
+      "attribute": "ratio",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-fuselage-ratio--ratio--batch-0000--8b6cdfef--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the ratio between the length of the tail and the fuselage?",
+      "region": "tail_fuselage_ratio",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8b6cdfefff2f9a02",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail that is shorter than the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that matches the length of the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail that is longer than the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing engines",
+      "attribute": "configuration",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engine-type--configuration--batch-0000--8b6cdfef--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What configuration do the engines have?",
+      "region": "engine_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8b6cdfefff2f9a02",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "twin-turboprop",
+          "state_id": "twin-turboprop-0",
+          "visual_description": "engines with two propellers"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "twin-turbofan",
+          "state_id": "twin-turbofan-1",
+          "visual_description": "engines with two fans"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "four-turbofan",
+          "state_id": "four-turbofan-2",
+          "visual_description": "engines with four fans"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "jet",
+          "state_id": "jet-3",
+          "visual_description": "engines with jet engines"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft tails",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "registration-number--visibility--batch-0000--8b6cdfef--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Is the registration number clearly visible on the aircraft?",
+      "region": "registration_number",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8b6cdfefff2f9a02",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "the registration number is clearly visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "partially_visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "not_visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft tails",
+      "attribute": "dominant_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "livery-color--dominant-color--batch-0000--8b6cdfef--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8b6cdfefff2f9a02",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "red",
+          "state_id": "red-1",
+          "visual_description": "the dominant color is red"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "blue",
+          "state_id": "blue-2",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "the dominant color is not white, red, or blue"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft fuselages",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage-shape--profile--batch-0000--8b6cdfef--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the profile of the aircraft's fuselage?",
+      "region": "fuselage_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "8b6cdfefff2f9a02",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "the fuselage has a straight profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "the fuselage has a curved profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "tapered",
+          "state_id": "tapered-2",
+          "visual_description": "the fuselage has a tapered profile"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with wings",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing-span--span--batch-0000--b3e28f21--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the span of the wings relative to the length of the fuselage?",
+      "region": "wing_span",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b3e28f2132aa17be",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "wings have a narrow span compared to the fuselage length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "wings have a medium span compared to the fuselage length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "wings have a wide span compared to the fuselage length"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with engines",
+      "attribute": "configuration",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engine-type--configuration--batch-0000--b3e28f21--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What configuration do the engines have?",
+      "region": "engine_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b3e28f2132aa17be",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "twin-engine",
+          "state_id": "twin-engine-0",
+          "visual_description": "two engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "four-engine",
+          "state_id": "four-engine-1",
+          "visual_description": "four engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "jet engine",
+          "state_id": "jet-engine-2",
+          "visual_description": "jet engines integrated into the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with tails",
+      "attribute": "ratio",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-fuselage-ratio--ratio--batch-0000--b3e28f21--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the ratio of the tail height to the fuselage length?",
+      "region": "tail_fuselage_ratio",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b3e28f2132aa17be",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the tail is shorter than the fuselage length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the tail is about equal in length to the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the tail is longer than the fuselage length"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with fuselages",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage-shape--profile--batch-0000--b3e28f21--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the profile of the fuselage?",
+      "region": "fuselage_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b3e28f2132aa17be",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "cylindrical",
+          "state_id": "cylindrical-0",
+          "visual_description": "fuselage has a cylindrical shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tapered",
+          "state_id": "tapered-1",
+          "visual_description": "fuselage tapers towards the rear"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "conical",
+          "state_id": "conical-2",
+          "visual_description": "fuselage has a conical shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with wings",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing-shape--profile--batch-0000--b3e28f21--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the profile of the wing?",
+      "region": "wing_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b3e28f2132aa17be",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "wing has a straight profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "wing has a curved profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "tapered",
+          "state_id": "tapered-2",
+          "visual_description": "wing tapers towards the tips"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with registration numbers",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "registration-number--visibility--batch-0000--b3e28f21--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the registration number clearly visible?",
+      "region": "registration_number",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b3e28f2132aa17be",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "registration number is clearly visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "registration number is partially obscured or unclear"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "registration number is not visible or obscured by other elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft wings",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "wing-span--span--batch-0000--1a5f3706--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How wide is the wing span of the aircraft?",
+      "region": "wing_span",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a5f3706074561c8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "an aircraft with narrow wingspan"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "an aircraft with medium wingspan"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "an aircraft with wide wingspan"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft tails and fuselages",
+      "attribute": "length ratio",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "tail-fuselage-ratio--length-ratio--batch-0000--1a5f3706--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the length ratio between the tail and fuselage?",
+      "region": "tail_fuselage_ratio",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a5f3706074561c8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail shorter than the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "equal",
+          "state_id": "equal-1",
+          "visual_description": "a tail approximately equal in length to the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail longer than the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft engines",
+      "attribute": "configuration",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engine-type--configuration--batch-0000--1a5f3706--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the engine configuration of the aircraft?",
+      "region": "engine_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a5f3706074561c8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "twin-engine",
+          "state_id": "twin-engine-0",
+          "visual_description": "an aircraft with two engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "four-engine",
+          "state_id": "four-engine-1",
+          "visual_description": "an aircraft with four engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "jet",
+          "state_id": "jet-2",
+          "visual_description": "an aircraft with jet engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "propeller",
+          "state_id": "propeller-3",
+          "visual_description": "an aircraft with propeller engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "the engine type is not discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with livery colors",
+      "attribute": "dominant color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "livery-color--dominant-color--batch-0000--1a5f3706--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a5f3706074561c8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "red",
+          "state_id": "red-1",
+          "visual_description": "the dominant color is red"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "blue",
+          "state_id": "blue-2",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "green",
+          "state_id": "green-3",
+          "visual_description": "the dominant color is green"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "yellow",
+          "state_id": "yellow-4",
+          "visual_description": "the dominant color is yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "abstain",
+          "state_id": "abstain-5",
+          "visual_description": "the dominant color cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft fuselages",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fuselage-shape--profile--batch-0000--1a5f3706--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the profile of the aircraft's fuselage?",
+      "region": "fuselage_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1a5f3706074561c8",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a fuselage with a narrow profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a fuselage with a medium profile"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "a fuselage with a wide profile"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft engines",
+      "attribute": "configuration",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "engine-type--configuration--batch-0000--dc4ef546--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What configuration do the engines have?",
+      "region": "engine_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "dc4ef54600409ea6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "twin-turboprop",
+          "state_id": "twin-turboprop-0",
+          "visual_description": "engines with two propellers each"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "twin-turbofan",
+          "state_id": "twin-turbofan-1",
+          "visual_description": "engines with two fans each"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "four-turbofan",
+          "state_id": "four-turbofan-2",
+          "visual_description": "engines with four fans each"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft cockpits",
+      "attribute": "form",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "cockpit-shape--form--batch-0000--dc4ef546--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the shape of the cockpit?",
+      "region": "cockpit_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "dc4ef54600409ea6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a cockpit with a narrow, elongated shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wide",
+          "state_id": "wide-1",
+          "visual_description": "a cockpit with a wide, boxy shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rounded",
+          "state_id": "rounded-2",
+          "visual_description": "a cockpit with a rounded, dome-like shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with registration numbers",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "registration-number--position--batch-0000--dc4ef546--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Where is the registration number located on the aircraft?",
+      "region": "registration_number",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "dc4ef54600409ea6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "on_tail",
+          "state_id": "on-tail-0",
+          "visual_description": "the registration number is on the tail"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "on_fuselage",
+          "state_id": "on-fuselage-1",
+          "visual_description": "the registration number is on the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "on_engine",
+          "state_id": "on-engine-2",
+          "visual_description": "the registration number is on the engine"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the registration number is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with livery colors",
+      "attribute": "dominant_color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "livery-color--dominant-color--batch-0000--dc4ef546--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "dc4ef54600409ea6",
+      "source_sample_ids": [
+        "fgvc-aircraft-0074464",
+        "fgvc-aircraft-0067671",
+        "fgvc-aircraft-0056978",
+        "fgvc-aircraft-0056337"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "red",
+          "state_id": "red-1",
+          "visual_description": "the dominant color is red"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "blue",
+          "state_id": "blue-2",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "green",
+          "state_id": "green-3",
+          "visual_description": "the dominant color is green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "yellow",
+          "state_id": "yellow-4",
+          "visual_description": "the dominant color is yellow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 5.0,
+          "label": "other",
+          "state_id": "other-5",
+          "visual_description": "the dominant color is not white, red, blue, green, or yellow"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full wingspan of the aircraft",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--span--batch-0001--6d665fb9--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How wide is the wing span of the aircraft?",
+      "region": "wing",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "6d665fb9a73d1055",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "an aircraft with relatively narrow wingspans"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "an aircraft with medium wingspans"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "an aircraft with wide wingspans"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full length of the fuselage",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--length--batch-0001--6d665fb9--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the fuselage compared to the wings?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "6d665fb9a73d1055",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "an aircraft with a short fuselage compared to its wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "an aircraft with a medium-length fuselage compared to its wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "an aircraft with a long fuselage compared to its wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the tail fin",
+      "attribute": "size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--size--batch-0001--6d665fb9--02",
+      "perspective": "part shape and relative proportions",
+      "question": "How large is the tail fin compared to the rest of the aircraft?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "6d665fb9a73d1055",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a tail fin that is small compared to the rest of the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail fin that is medium-sized compared to the rest of the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a tail fin that is large compared to the rest of the aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "engines--position--batch-0001--6d665fb9--03",
+      "perspective": "part shape and relative proportions",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "6d665fb9a73d1055",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines located underneath the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "side-by-side",
+          "state_id": "side-by-side-1",
+          "visual_description": "engines located side-by-side under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rear-mounted",
+          "state_id": "rear-mounted-2",
+          "visual_description": "engines mounted at the rear of the aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the registration number",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "registration--visibility--batch-0001--6d665fb9--04",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the registration number clearly visible on the aircraft?",
+      "region": "registration",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "6d665fb9a73d1055",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "the registration number is clearly visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially obscured"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's livery",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "livery--color--batch-0001--6d665fb9--05",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "6d665fb9a73d1055",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "the dominant color is green"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the wingspan",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--span--batch-0001--91a985f0--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "How wide is the wing span of the aircraft?",
+      "region": "wing",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "91a985f0ef08d876",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a narrow wing span"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium wing span"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "a wide wing span"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the tail fin",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--shape--batch-0001--91a985f0--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the general shape of the tail fin?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "91a985f0ef08d876",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tapered",
+          "state_id": "tapered-0",
+          "visual_description": "a tail fin that tapers towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "a tail fin that is rounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "a tail fin that is triangular"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's livery",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "livery--color--batch-0001--91a985f0--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "91a985f0ef08d876",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "a predominantly white aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "a predominantly blue aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "a predominantly green aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "an aircraft with colors other than white, blue, or green"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "engines--position--batch-0001--91a985f0--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "91a985f0ef08d876",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath wings",
+          "state_id": "underneath-wings-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "on top of wings",
+          "state_id": "on-top-of-wings-1",
+          "visual_description": "engines mounted on top of the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "inboard",
+          "state_id": "inboard-2",
+          "visual_description": "engines located inboard of the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "outboard",
+          "state_id": "outboard-3",
+          "visual_description": "engines located outboard of the wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the landing gear",
+      "attribute": "type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "landing-gear--type--batch-0001--91a985f0--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What type of landing gear does the aircraft have?",
+      "region": "landing gear",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "91a985f0ef08d876",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tricycle",
+          "state_id": "tricycle-0",
+          "visual_description": "a tricycle landing gear configuration"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tandem",
+          "state_id": "tandem-1",
+          "visual_description": "a tandem landing gear configuration"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "retractable",
+          "state_id": "retractable-2",
+          "visual_description": "a retractable landing gear configuration"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "fixed",
+          "state_id": "fixed-3",
+          "visual_description": "a fixed landing gear configuration"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full wingspan of the aircraft",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--span--batch-0001--9d7c37ac--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How wide is the wing span of the aircraft?",
+      "region": "wing",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "9d7c37acb7a5e28b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "an aircraft with narrow wingspans"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "an aircraft with medium wingspans"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "an aircraft with wide wingspans"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the tail fin",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--shape--batch-0001--9d7c37ac--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the general shape of the tail fin?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "9d7c37acb7a5e28b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tapered",
+          "state_id": "tapered-0",
+          "visual_description": "a tail fin that tapers towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "a tail fin that is rounded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "a tail fin that is triangular in shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "engines--position--batch-0001--9d7c37ac--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "9d7c37acb7a5e28b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "side-by-side",
+          "state_id": "side-by-side-1",
+          "visual_description": "engines placed side-by-side on the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rear-mounted",
+          "state_id": "rear-mounted-2",
+          "visual_description": "engines mounted at the rear of the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the entire fuselage",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--length--batch-0001--9d7c37ac--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How long is the fuselage of the aircraft?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "9d7c37acb7a5e28b",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a fuselage that is relatively short"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a fuselage that is of medium length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a fuselage that is long"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full wingspan of the aircraft",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--span--batch-0001--76d59069--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How wide is the wing span of the aircraft?",
+      "region": "wing",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "76d590691313e4ad",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "an aircraft with relatively narrow wingspans"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "an aircraft with medium-width wingspans"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "an aircraft with wide wingspans"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the tail fin",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--shape--batch-0001--76d59069--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the general shape of the tail fin?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "76d590691313e4ad",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tapered",
+          "state_id": "tapered-0",
+          "visual_description": "a tail fin that tapers towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "a tail fin that is rounded or bulbous"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "a tail fin that is triangular in shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "engines--position--batch-0001--76d59069--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "76d590691313e4ad",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "side-by-side",
+          "state_id": "side-by-side-1",
+          "visual_description": "engines positioned side-by-side along the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rear-mounted",
+          "state_id": "rear-mounted-2",
+          "visual_description": "engines mounted at the rear of the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the fuselage length",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--length--batch-0001--76d59069--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How long is the fuselage compared to the wings?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "76d590691313e4ad",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a fuselage shorter than the wingspan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a fuselage of similar length to the wingspan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a fuselage longer than the wingspan"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's livery",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "livery--color--batch-0001--76d59069--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "76d590691313e4ad",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "predominantly white aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "predominantly blue aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "predominantly green aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full length of the fuselage",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--length--batch-0001--f5df1a1e--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How long is the fuselage compared to the wings?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f5df1a1eaf16e1c3",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short fuselage where it is shorter than the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium fuselage where it matches the length of the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a long fuselage where it extends beyond the wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the tail fin",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "tail--shape--batch-0001--f5df1a1e--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the general shape of the tail fin?",
+      "region": "tail",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f5df1a1eaf16e1c3",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tapered",
+          "state_id": "tapered-0",
+          "visual_description": "a tail fin that tapers towards the end"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "a tail fin that is rounded or bulbous"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "a tail fin that is triangular in shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the registration number",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "registration--visibility--batch-0001--f5df1a1e--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is the registration number clearly visible?",
+      "region": "registration",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f5df1a1eaf16e1c3",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "the registration number is clearly visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially obscured or unclear"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible or obscured by other elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's livery",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "livery--color--batch-0001--f5df1a1e--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f5df1a1eaf16e1c3",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "the dominant color is green"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "the dominant color is something else"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full wingspan of the aircraft",
+      "attribute": "span",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "wing--span--batch-0001--ed9a0ee4--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How wide is the wing span of the aircraft?",
+      "region": "wing",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed9a0ee4b287d783",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a narrow wing span where the wings do not extend far out from the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium wing span where the wings extend moderately out from the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "a wide wing span where the wings extend far out from the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the full length of the fuselage",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fuselage--length--batch-0001--ed9a0ee4--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How long is the fuselage compared to the wings?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed9a0ee4b287d783",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a short fuselage where the length is shorter than the wingspan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium fuselage where the length matches the wingspan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a long fuselage where the length exceeds the wingspan"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "engines--position--batch-0001--ed9a0ee4--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed9a0ee4b287d783",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "side-by-side",
+          "state_id": "side-by-side-1",
+          "visual_description": "engines mounted side-by-side on the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rear-mounted",
+          "state_id": "rear-mounted-2",
+          "visual_description": "engines mounted at the rear of the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the registration number",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "registration--visibility--batch-0001--ed9a0ee4--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the registration number clearly visible?",
+      "region": "registration",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed9a0ee4b287d783",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "the registration number is clearly visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially obscured or difficult to read"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible or obscured by other elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's livery",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "livery--color--batch-0001--ed9a0ee4--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "ed9a0ee4b287d783",
+      "source_sample_ids": [
+        "fgvc-aircraft-0781150",
+        "fgvc-aircraft-0748299",
+        "fgvc-aircraft-0438658",
+        "fgvc-aircraft-0368505"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "green",
+          "state_id": "green-2",
+          "visual_description": "the dominant color is green"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "the dominant color is not white, blue, or green"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing engine placement",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engines--position--batch-0002--5041fb72--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5041fb72310a6cb9",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath wings",
+          "state_id": "underneath-wings-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "on top of wings",
+          "state_id": "on-top-of-wings-1",
+          "visual_description": "engines mounted on top of the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "inboard",
+          "state_id": "inboard-2",
+          "visual_description": "engines located inboard of the wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the fuselage length",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--length--batch-0002--5041fb72--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How long is the fuselage compared to the wings?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5041fb72310a6cb9",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a fuselage shorter than the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "equal",
+          "state_id": "equal-1",
+          "visual_description": "a fuselage equal in length to the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a fuselage longer than the wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the landing gear",
+      "attribute": "type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "landing-gear--type--batch-0002--5041fb72--04",
+      "perspective": "part shape and relative proportions",
+      "question": "What type of landing gear does the aircraft have?",
+      "region": "landing gear",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5041fb72310a6cb9",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tricycle",
+          "state_id": "tricycle-0",
+          "visual_description": "a tricycle landing gear configuration"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tandem",
+          "state_id": "tandem-1",
+          "visual_description": "a tandem landing gear configuration"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "retractable",
+          "state_id": "retractable-2",
+          "visual_description": "a retractable landing gear configuration"
+        }
+      ]
+    },
+    {
+      "applies_to": "images where the registration number is visible",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "registration--visibility--batch-0002--5041fb72--05",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the registration number clearly visible?",
+      "region": "registration",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5041fb72310a6cb9",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "yes",
+          "state_id": "yes-0",
+          "visual_description": "the registration number is clearly visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "no",
+          "state_id": "no-1",
+          "visual_description": "the registration number is not clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the tail fins",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail-fins--shape--batch-0002--5903ff1d--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the shape of the tail fins?",
+      "region": "tail_fins",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5903ff1d023c666c",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tapered",
+          "state_id": "tapered-0",
+          "visual_description": "tail fins that gradually narrow towards the tip"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rounded",
+          "state_id": "rounded-1",
+          "visual_description": "tail fins that have a rounded shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "triangular",
+          "state_id": "triangular-2",
+          "visual_description": "tail fins that form a triangular shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engines",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engines--position--batch-0002--5903ff1d--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5903ff1d023c666c",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "side-by-side",
+          "state_id": "side-by-side-1",
+          "visual_description": "engines positioned side-by-side on the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rear-mounted",
+          "state_id": "rear-mounted-2",
+          "visual_description": "engines mounted at the rear of the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images where the registration number is present",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "registration-number--visibility--batch-0002--5903ff1d--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the registration number clearly visible on the aircraft?",
+      "region": "registration_number",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5903ff1d023c666c",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "clearly visible",
+          "state_id": "clearly-visible-0",
+          "visual_description": "the registration number is easily readable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially obscured"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's color scheme",
+      "attribute": "dominant_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "color-scheme--dominant-color--batch-0002--5903ff1d--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the dominant color of the aircraft's color scheme?",
+      "region": "color_scheme",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "5903ff1d023c666c",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "predominantly white aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "predominantly blue aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "predominantly red aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "aircraft with colors other than white, blue, or red"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing aircraft with livery colors",
+      "attribute": "dominant color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "livery-color--dominant-color--batch-0002--bc4bd700--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bc4bd700aa0ce254",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dominant color is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "the dominant color is red"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "ratio",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail-fuselage-ratio--ratio--batch-0002--569c78ca--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the ratio of the tail height to the fuselage length?",
+      "region": "tail_fuselage_ratio",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "569c78ca5ae2799f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail that is shorter than the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail that matches the fuselage length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail that is longer than the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "configuration",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engine-type--configuration--batch-0002--569c78ca--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What configuration do the engines have?",
+      "region": "engine_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "569c78ca5ae2799f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "twin-engine",
+          "state_id": "twin-engine-0",
+          "visual_description": "aircraft with two engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "four-engine",
+          "state_id": "four-engine-1",
+          "visual_description": "aircraft with four engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "jet",
+          "state_id": "jet-2",
+          "visual_description": "aircraft with jet engines"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "registration-number--position--batch-0002--569c78ca--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Where is the registration number located on the aircraft?",
+      "region": "registration_number",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "569c78ca5ae2799f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "on_tail",
+          "state_id": "on-tail-0",
+          "visual_description": "registration number on the tail section"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "on_fuselage",
+          "state_id": "on-fuselage-1",
+          "visual_description": "registration number on the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "on_wing",
+          "state_id": "on-wing-2",
+          "visual_description": "registration number on the wing"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "registration number not visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "cockpit-window--shape--batch-0002--569c78ca--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What is the shape of the cockpit windows?",
+      "region": "cockpit_window",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "569c78ca5ae2799f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rectangular",
+          "state_id": "rectangular-0",
+          "visual_description": "windows with rectangular shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "oval",
+          "state_id": "oval-1",
+          "visual_description": "windows with oval shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curved",
+          "state_id": "curved-2",
+          "visual_description": "windows with curved shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "windows not clearly defined"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "landing-gear-type--type--batch-0002--569c78ca--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "What type of landing gear does the aircraft have?",
+      "region": "landing_gear_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "569c78ca5ae2799f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tricycle",
+          "state_id": "tricycle-0",
+          "visual_description": "landing gear with nose wheel and main wheels"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tandem",
+          "state_id": "tandem-1",
+          "visual_description": "landing gear with two main wheels side by side"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "landing gear type not clearly defined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the engine placement",
+      "attribute": "position",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engine--position--batch-0002--c64309ef--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Where are the engines located on the aircraft?",
+      "region": "engine",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c64309ef3aebcd2f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "underneath",
+          "state_id": "underneath-0",
+          "visual_description": "engines mounted under the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "on top",
+          "state_id": "on-top-1",
+          "visual_description": "engines mounted on top of the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "inboard",
+          "state_id": "inboard-2",
+          "visual_description": "engines mounted inboard of the wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the length of the fuselage relative to the wings",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage--length--batch-0002--c64309ef--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How long is the fuselage compared to the wings?",
+      "region": "fuselage",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c64309ef3aebcd2f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the fuselage is shorter than the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "equal",
+          "state_id": "equal-1",
+          "visual_description": "the fuselage is about the same length as the wings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the fuselage is longer than the wings"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the landing gear",
+      "attribute": "type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "landing-gear--type--batch-0002--c64309ef--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What type of landing gear does the aircraft have?",
+      "region": "landing gear",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c64309ef3aebcd2f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "tricycle",
+          "state_id": "tricycle-0",
+          "visual_description": "a tricycle landing gear configuration with three wheels"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tandem",
+          "state_id": "tandem-1",
+          "visual_description": "a tandem landing gear configuration with two wheels"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "retractable",
+          "state_id": "retractable-2",
+          "visual_description": "a retractable landing gear configuration that retracts into the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the registration number",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "registration--visibility--batch-0002--c64309ef--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is the registration number clearly visible on the aircraft?",
+      "region": "registration",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "c64309ef3aebcd2f",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "the registration number is clearly visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially obscured or not fully visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible or obscured by other elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing both the tail and fuselage",
+      "attribute": "length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "tail-fuselage-ratio--length--batch-0002--4caf402c--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How long is the tail section compared to the fuselage?",
+      "region": "tail_fuselage_ratio",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "4caf402c50ba6492",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a tail section that is shorter than the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a tail section that matches the length of the fuselage"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a tail section that is longer than the fuselage"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing engines",
+      "attribute": "configuration",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "engine-type--configuration--batch-0002--4caf402c--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What configuration do the engines have?",
+      "region": "engine_type",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "4caf402c50ba6492",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "twin-engine",
+          "state_id": "twin-engine-0",
+          "visual_description": "aircraft equipped with two engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "four-engine",
+          "state_id": "four-engine-1",
+          "visual_description": "aircraft equipped with four engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "jet engine",
+          "state_id": "jet-engine-2",
+          "visual_description": "aircraft equipped with jet engines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "propeller engine",
+          "state_id": "propeller-engine-3",
+          "visual_description": "aircraft equipped with propeller engines"
+        }
+      ]
+    },
+    {
+      "applies_to": "images where the registration number is present",
+      "attribute": "visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "registration-number--visibility--batch-0002--4caf402c--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the registration number clearly visible?",
+      "region": "registration_number",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "4caf402c50ba6492",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "visible",
+          "state_id": "visible-0",
+          "visual_description": "the registration number is clearly visible on the aircraft"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "partially visible",
+          "state_id": "partially-visible-1",
+          "visual_description": "the registration number is partially obscured or not fully visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "not visible",
+          "state_id": "not-visible-2",
+          "visual_description": "the registration number is not visible on the aircraft"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the aircraft's livery",
+      "attribute": "dominant color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "livery-color--dominant-color--batch-0002--4caf402c--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the dominant color of the aircraft's livery?",
+      "region": "livery_color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "4caf402c50ba6492",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "white",
+          "state_id": "white-0",
+          "visual_description": "the dominant color of the livery is white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dominant color of the livery is blue"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "red",
+          "state_id": "red-2",
+          "visual_description": "the dominant color of the livery is red"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "other",
+          "state_id": "other-3",
+          "visual_description": "the dominant color of the livery is not white, blue, or red"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing the fuselage",
+      "attribute": "profile",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fuselage-shape--profile--batch-0002--4caf402c--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the profile of the aircraft's fuselage?",
+      "region": "fuselage_shape",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "4caf402c50ba6492",
+      "source_sample_ids": [
+        "fgvc-aircraft-1758606",
+        "fgvc-aircraft-1726606",
+        "fgvc-aircraft-1353293",
+        "fgvc-aircraft-0809727"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "a fuselage that is relatively narrow"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a fuselage that is medium in width"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "a fuselage that is wide"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the aircraft variant shown in the image.",
+  "task_name": "aircraft"
+}

@@ -1,0 +1,64 @@
+{
+  "datasets": [
+    "dtd",
+    "aircraft",
+    "cub",
+    "dogs",
+    "flowers102"
+  ],
+  "shots": [
+    1,
+    2
+  ],
+  "main_seed": 42,
+  "qwen3_repeat_seeds": [
+    42,
+    17,
+    73
+  ],
+  "alpha_grid": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.5,
+    0.65,
+    0.8,
+    1
+  ],
+  "folds": 5,
+  "calibration_seed": 42,
+  "tie_rule": "larger parent mass",
+  "factor_weights": "uniform",
+  "targets": [
+    {
+      "family": "qwen3",
+      "model": "Qwen/Qwen3-VL-4B-Instruct",
+      "dtype": "bfloat16",
+      "quantization": "none"
+    },
+    {
+      "family": "qwen25",
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "dtype": "bfloat16",
+      "quantization": "nf4-double"
+    },
+    {
+      "family": "gemma4",
+      "model": "google/gemma-4-12B-it",
+      "dtype": "bfloat16",
+      "quantization": "nf4-double"
+    }
+  ],
+  "qwen_processor": {
+    "min_pixels": 65536,
+    "max_pixels": 401408
+  },
+  "gemma_max_soft_tokens": 280,
+  "paper_main_cells": 180,
+  "paper_main_pairs": 75,
+  "auxiliary_cells": 90,
+  "auxiliary_pairs": 60,
+  "higher_shot_policy": "historical fixed two-shot coefficients, not independently recalibrated"
+}

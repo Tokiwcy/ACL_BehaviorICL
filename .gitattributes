@@ -1,14 +1,2 @@
-# Frozen scientific files/audits must survive Windows/Linux checkout byte-for-byte.
-.gitattributes text eol=lf
-.gitignore text eol=lf
-handoff/local_publish_manifest_*.json text eol=lf
-scripts/** -text
-tests/** -text
-analysis/** -text
-handoff/local_evidence/** -text
-handoff/tam_upstream_receipt.json -text
-artifacts/** -text
-requirements.txt -text
-*.md text eol=lf
-*.yml text eol=lf
-*.yaml text eol=lf
+* -text
+

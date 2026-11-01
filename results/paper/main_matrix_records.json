@@ -1,0 +1,1642 @@
+{
+  "rows": [
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 1,
+      "method": "RICES",
+      "display_label": "RICES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 76.06382978723404,
+          "sd": null,
+          "runs": [
+            76.06382978723404
+          ]
+        },
+        "aircraft": {
+          "mean": 56.61566156615662,
+          "sd": null,
+          "runs": [
+            56.61566156615662
+          ]
+        },
+        "cub": {
+          "mean": 74.30120984564039,
+          "sd": null,
+          "runs": [
+            74.30120984564039
+          ]
+        },
+        "dogs": {
+          "mean": 72.73892773892774,
+          "sd": null,
+          "runs": [
+            72.73892773892774
+          ]
+        },
+        "flowers102": {
+          "mean": 92.7467880956253,
+          "sd": null,
+          "runs": [
+            92.7467880956253
+          ]
+        },
+        "mean": {
+          "mean": 74.49328340671681,
+          "sd": null,
+          "runs": [
+            74.49328340671681
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 1,
+      "method": "MUIER",
+      "display_label": "+MUIER",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 76.27659574468085,
+          "sd": null,
+          "runs": [
+            76.27659574468085
+          ]
+        },
+        "aircraft": {
+          "mean": 61.44614461446145,
+          "sd": null,
+          "runs": [
+            61.44614461446145
+          ]
+        },
+        "cub": {
+          "mean": 71.00542344597413,
+          "sd": null,
+          "runs": [
+            71.00542344597413
+          ]
+        },
+        "dogs": {
+          "mean": 76.48018648018649,
+          "sd": null,
+          "runs": [
+            76.48018648018649
+          ]
+        },
+        "flowers102": {
+          "mean": 90.95787932997236,
+          "sd": null,
+          "runs": [
+            90.95787932997236
+          ]
+        },
+        "mean": {
+          "mean": 75.23324592305505,
+          "sd": null,
+          "runs": [
+            75.23324592305505
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 1,
+      "method": "RICES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 77.55319148936171,
+          "sd": null,
+          "runs": [
+            77.55319148936171
+          ]
+        },
+        "aircraft": {
+          "mean": 65.37653765376538,
+          "sd": null,
+          "runs": [
+            65.37653765376538
+          ]
+        },
+        "cub": {
+          "mean": 75.38589904046725,
+          "sd": null,
+          "runs": [
+            75.38589904046725
+          ]
+        },
+        "dogs": {
+          "mean": 74.37062937062937,
+          "sd": null,
+          "runs": [
+            74.37062937062937
+          ]
+        },
+        "flowers102": {
+          "mean": 93.15335826963734,
+          "sd": null,
+          "runs": [
+            93.15335826963734
+          ]
+        },
+        "mean": {
+          "mean": 77.1679231647722,
+          "sd": null,
+          "runs": [
+            77.1679231647722
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 1,
+      "method": "MUIER+DecisionICL",
+      "display_label": "+MUIER+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 77.55319148936171,
+          "sd": null,
+          "runs": [
+            77.55319148936171
+          ]
+        },
+        "aircraft": {
+          "mean": 64.74647464746475,
+          "sd": null,
+          "runs": [
+            64.74647464746475
+          ]
+        },
+        "cub": {
+          "mean": 71.90237797246559,
+          "sd": null,
+          "runs": [
+            71.90237797246559
+          ]
+        },
+        "dogs": {
+          "mean": 76.77156177156176,
+          "sd": null,
+          "runs": [
+            76.77156177156176
+          ]
+        },
+        "flowers102": {
+          "mean": 92.7467880956253,
+          "sd": null,
+          "runs": [
+            92.7467880956253
+          ]
+        },
+        "mean": {
+          "mean": 76.74407879529582,
+          "sd": null,
+          "runs": [
+            76.74407879529582
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 2,
+      "method": "RICES",
+      "display_label": "RICES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 77.87234042553192,
+          "sd": null,
+          "runs": [
+            77.87234042553192
+          ]
+        },
+        "aircraft": {
+          "mean": 59.1959195919592,
+          "sd": null,
+          "runs": [
+            59.1959195919592
+          ]
+        },
+        "cub": {
+          "mean": 79.09887359198999,
+          "sd": null,
+          "runs": [
+            79.09887359198999
+          ]
+        },
+        "dogs": {
+          "mean": 77.41258741258741,
+          "sd": null,
+          "runs": [
+            77.41258741258741
+          ]
+        },
+        "flowers102": {
+          "mean": 97.25158562367865,
+          "sd": null,
+          "runs": [
+            97.25158562367865
+          ]
+        },
+        "mean": {
+          "mean": 78.16626132914944,
+          "sd": null,
+          "runs": [
+            78.16626132914944
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 2,
+      "method": "MUIER",
+      "display_label": "+MUIER",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 78.40425531914894,
+          "sd": null,
+          "runs": [
+            78.40425531914894
+          ]
+        },
+        "aircraft": {
+          "mean": 62.76627662766276,
+          "sd": null,
+          "runs": [
+            62.76627662766276
+          ]
+        },
+        "cub": {
+          "mean": 75.51105548602419,
+          "sd": null,
+          "runs": [
+            75.51105548602419
+          ]
+        },
+        "dogs": {
+          "mean": 81.42191142191142,
+          "sd": null,
+          "runs": [
+            81.42191142191142
+          ]
+        },
+        "flowers102": {
+          "mean": 94.16165230118719,
+          "sd": null,
+          "runs": [
+            94.16165230118719
+          ]
+        },
+        "mean": {
+          "mean": 78.4530302311869,
+          "sd": null,
+          "runs": [
+            78.4530302311869
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 2,
+      "method": "RICES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 78.77659574468086,
+          "sd": null,
+          "runs": [
+            78.77659574468086
+          ]
+        },
+        "aircraft": {
+          "mean": 65.70657065706571,
+          "sd": null,
+          "runs": [
+            65.70657065706571
+          ]
+        },
+        "cub": {
+          "mean": 80.76762619941593,
+          "sd": null,
+          "runs": [
+            80.76762619941593
+          ]
+        },
+        "dogs": {
+          "mean": 78.24009324009324,
+          "sd": null,
+          "runs": [
+            78.24009324009324
+          ]
+        },
+        "flowers102": {
+          "mean": 97.28411123759962,
+          "sd": null,
+          "runs": [
+            97.28411123759962
+          ]
+        },
+        "mean": {
+          "mean": 80.15499941577107,
+          "sd": null,
+          "runs": [
+            80.15499941577107
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 2,
+      "method": "MUIER+DecisionICL",
+      "display_label": "+MUIER+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 79.04255319148936,
+          "sd": null,
+          "runs": [
+            79.04255319148936
+          ]
+        },
+        "aircraft": {
+          "mean": 65.25652565256526,
+          "sd": null,
+          "runs": [
+            65.25652565256526
+          ]
+        },
+        "cub": {
+          "mean": 76.42886942010847,
+          "sd": null,
+          "runs": [
+            76.42886942010847
+          ]
+        },
+        "dogs": {
+          "mean": 81.56177156177155,
+          "sd": null,
+          "runs": [
+            81.56177156177155
+          ]
+        },
+        "flowers102": {
+          "mean": 96.66612457310131,
+          "sd": null,
+          "runs": [
+            96.66612457310131
+          ]
+        },
+        "mean": {
+          "mean": 79.79116887980719,
+          "sd": null,
+          "runs": [
+            79.79116887980719
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 2,
+      "method": "CIRCLES",
+      "display_label": "CIRCLES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 77.18085106382979,
+          "sd": null,
+          "runs": [
+            77.18085106382979
+          ]
+        },
+        "aircraft": {
+          "mean": 57.0957095709571,
+          "sd": null,
+          "runs": [
+            57.0957095709571
+          ]
+        },
+        "cub": {
+          "mean": 75.61535252398832,
+          "sd": null,
+          "runs": [
+            75.61535252398832
+          ]
+        },
+        "dogs": {
+          "mean": 74.14918414918415,
+          "sd": null,
+          "runs": [
+            74.14918414918415
+          ]
+        },
+        "flowers102": {
+          "mean": 94.55195966823874,
+          "sd": null,
+          "runs": [
+            94.55195966823874
+          ]
+        },
+        "mean": {
+          "mean": 75.71861139523962,
+          "sd": null,
+          "runs": [
+            75.71861139523962
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen3-VL-4B BF16",
+      "shots": 2,
+      "method": "CIRCLES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 78.98936170212765,
+          "sd": null,
+          "runs": [
+            78.98936170212765
+          ]
+        },
+        "aircraft": {
+          "mean": 65.55655565556555,
+          "sd": null,
+          "runs": [
+            65.55655565556555
+          ]
+        },
+        "cub": {
+          "mean": 77.0546516478932,
+          "sd": null,
+          "runs": [
+            77.0546516478932
+          ]
+        },
+        "dogs": {
+          "mean": 74.94172494172494,
+          "sd": null,
+          "runs": [
+            74.94172494172494
+          ]
+        },
+        "flowers102": {
+          "mean": 96.04813790860302,
+          "sd": null,
+          "runs": [
+            96.04813790860302
+          ]
+        },
+        "mean": {
+          "mean": 78.51808637118287,
+          "sd": null,
+          "runs": [
+            78.51808637118287
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 1,
+      "method": "RICES",
+      "display_label": "RICES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 65.05319148936171,
+          "sd": null,
+          "runs": [
+            65.05319148936171
+          ]
+        },
+        "aircraft": {
+          "mean": 51.365136513651365,
+          "sd": null,
+          "runs": [
+            51.365136513651365
+          ]
+        },
+        "cub": {
+          "mean": 70.33792240300374,
+          "sd": null,
+          "runs": [
+            70.33792240300374
+          ]
+        },
+        "dogs": {
+          "mean": 68.65967365967366,
+          "sd": null,
+          "runs": [
+            68.65967365967366
+          ]
+        },
+        "flowers102": {
+          "mean": 94.4055944055944,
+          "sd": null,
+          "runs": [
+            94.4055944055944
+          ]
+        },
+        "mean": {
+          "mean": 69.96430369425697,
+          "sd": null,
+          "runs": [
+            69.96430369425697
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 1,
+      "method": "MUIER",
+      "display_label": "+MUIER",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 66.54255319148936,
+          "sd": null,
+          "runs": [
+            66.54255319148936
+          ]
+        },
+        "aircraft": {
+          "mean": 53.615361536153614,
+          "sd": null,
+          "runs": [
+            53.615361536153614
+          ]
+        },
+        "cub": {
+          "mean": 67.06299541093033,
+          "sd": null,
+          "runs": [
+            67.06299541093033
+          ]
+        },
+        "dogs": {
+          "mean": 74.4988344988345,
+          "sd": null,
+          "runs": [
+            74.4988344988345
+          ]
+        },
+        "flowers102": {
+          "mean": 91.86859651975932,
+          "sd": null,
+          "runs": [
+            91.86859651975932
+          ]
+        },
+        "mean": {
+          "mean": 70.71766823143342,
+          "sd": null,
+          "runs": [
+            70.71766823143342
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 1,
+      "method": "RICES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 66.64893617021276,
+          "sd": null,
+          "runs": [
+            66.64893617021276
+          ]
+        },
+        "aircraft": {
+          "mean": 53.58535853585359,
+          "sd": null,
+          "runs": [
+            53.58535853585359
+          ]
+        },
+        "cub": {
+          "mean": 72.54901960784314,
+          "sd": null,
+          "runs": [
+            72.54901960784314
+          ]
+        },
+        "dogs": {
+          "mean": 72.52913752913753,
+          "sd": null,
+          "runs": [
+            72.52913752913753
+          ]
+        },
+        "flowers102": {
+          "mean": 94.90974142136933,
+          "sd": null,
+          "runs": [
+            94.90974142136933
+          ]
+        },
+        "mean": {
+          "mean": 72.04443865288327,
+          "sd": null,
+          "runs": [
+            72.04443865288327
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 1,
+      "method": "MUIER+DecisionICL",
+      "display_label": "+MUIER+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 67.81914893617021,
+          "sd": null,
+          "runs": [
+            67.81914893617021
+          ]
+        },
+        "aircraft": {
+          "mean": 54.60546054605461,
+          "sd": null,
+          "runs": [
+            54.60546054605461
+          ]
+        },
+        "cub": {
+          "mean": 69.35753024614101,
+          "sd": null,
+          "runs": [
+            69.35753024614101
+          ]
+        },
+        "dogs": {
+          "mean": 75.08158508158508,
+          "sd": null,
+          "runs": [
+            75.08158508158508
+          ]
+        },
+        "flowers102": {
+          "mean": 93.73881932021467,
+          "sd": null,
+          "runs": [
+            93.73881932021467
+          ]
+        },
+        "mean": {
+          "mean": 72.12050882603312,
+          "sd": null,
+          "runs": [
+            72.12050882603312
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 2,
+      "method": "RICES",
+      "display_label": "RICES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 66.86170212765957,
+          "sd": null,
+          "runs": [
+            66.86170212765957
+          ]
+        },
+        "aircraft": {
+          "mean": 57.15571557155715,
+          "sd": null,
+          "runs": [
+            57.15571557155715
+          ]
+        },
+        "cub": {
+          "mean": 75.63621193158114,
+          "sd": null,
+          "runs": [
+            75.63621193158114
+          ]
+        },
+        "dogs": {
+          "mean": 72.49417249417249,
+          "sd": null,
+          "runs": [
+            72.49417249417249
+          ]
+        },
+        "flowers102": {
+          "mean": 97.10522036103431,
+          "sd": null,
+          "runs": [
+            97.10522036103431
+          ]
+        },
+        "mean": {
+          "mean": 73.85060449720093,
+          "sd": null,
+          "runs": [
+            73.85060449720093
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 2,
+      "method": "MUIER",
+      "display_label": "+MUIER",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 69.41489361702128,
+          "sd": null,
+          "runs": [
+            69.41489361702128
+          ]
+        },
+        "aircraft": {
+          "mean": 58.895889588958894,
+          "sd": null,
+          "runs": [
+            58.895889588958894
+          ]
+        },
+        "cub": {
+          "mean": 72.31956612432207,
+          "sd": null,
+          "runs": [
+            72.31956612432207
+          ]
+        },
+        "dogs": {
+          "mean": 77.93706293706293,
+          "sd": null,
+          "runs": [
+            77.93706293706293
+          ]
+        },
+        "flowers102": {
+          "mean": 94.24296633598959,
+          "sd": null,
+          "runs": [
+            94.24296633598959
+          ]
+        },
+        "mean": {
+          "mean": 74.56207572067095,
+          "sd": null,
+          "runs": [
+            74.56207572067095
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 2,
+      "method": "RICES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 70.42553191489361,
+          "sd": null,
+          "runs": [
+            70.42553191489361
+          ]
+        },
+        "aircraft": {
+          "mean": 62.43624362436243,
+          "sd": null,
+          "runs": [
+            62.43624362436243
+          ]
+        },
+        "cub": {
+          "mean": 78.99457655402587,
+          "sd": null,
+          "runs": [
+            78.99457655402587
+          ]
+        },
+        "dogs": {
+          "mean": 75.4079254079254,
+          "sd": null,
+          "runs": [
+            75.4079254079254
+          ]
+        },
+        "flowers102": {
+          "mean": 97.75573263945357,
+          "sd": null,
+          "runs": [
+            97.75573263945357
+          ]
+        },
+        "mean": {
+          "mean": 77.00400202813218,
+          "sd": null,
+          "runs": [
+            77.00400202813218
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 2,
+      "method": "MUIER+DecisionICL",
+      "display_label": "+MUIER+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 71.17021276595744,
+          "sd": null,
+          "runs": [
+            71.17021276595744
+          ]
+        },
+        "aircraft": {
+          "mean": 61.95619561956196,
+          "sd": null,
+          "runs": [
+            61.95619561956196
+          ]
+        },
+        "cub": {
+          "mean": 75.53191489361703,
+          "sd": null,
+          "runs": [
+            75.53191489361703
+          ]
+        },
+        "dogs": {
+          "mean": 78.92773892773893,
+          "sd": null,
+          "runs": [
+            78.92773892773893
+          ]
+        },
+        "flowers102": {
+          "mean": 97.34916246544152,
+          "sd": null,
+          "runs": [
+            97.34916246544152
+          ]
+        },
+        "mean": {
+          "mean": 76.98704493446337,
+          "sd": null,
+          "runs": [
+            76.98704493446337
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 2,
+      "method": "CIRCLES",
+      "display_label": "CIRCLES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 70.42553191489361,
+          "sd": null,
+          "runs": [
+            70.42553191489361
+          ]
+        },
+        "aircraft": {
+          "mean": 50.10501050105011,
+          "sd": null,
+          "runs": [
+            50.10501050105011
+          ]
+        },
+        "cub": {
+          "mean": 66.6040884438882,
+          "sd": null,
+          "runs": [
+            66.6040884438882
+          ]
+        },
+        "dogs": {
+          "mean": 64.94172494172494,
+          "sd": null,
+          "runs": [
+            64.94172494172494
+          ]
+        },
+        "flowers102": {
+          "mean": 87.80289477963896,
+          "sd": null,
+          "runs": [
+            87.80289477963896
+          ]
+        },
+        "mean": {
+          "mean": 67.97585011623917,
+          "sd": null,
+          "runs": [
+            67.97585011623917
+          ]
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-VL-7B NF4",
+      "shots": 2,
+      "method": "CIRCLES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 72.97872340425532,
+          "sd": null,
+          "runs": [
+            72.97872340425532
+          ]
+        },
+        "aircraft": {
+          "mean": 60.99609960996099,
+          "sd": null,
+          "runs": [
+            60.99609960996099
+          ]
+        },
+        "cub": {
+          "mean": 73.73800584063413,
+          "sd": null,
+          "runs": [
+            73.73800584063413
+          ]
+        },
+        "dogs": {
+          "mean": 70.95571095571096,
+          "sd": null,
+          "runs": [
+            70.95571095571096
+          ]
+        },
+        "flowers102": {
+          "mean": 93.57619125060985,
+          "sd": null,
+          "runs": [
+            93.57619125060985
+          ]
+        },
+        "mean": {
+          "mean": 74.44894621223425,
+          "sd": null,
+          "runs": [
+            74.44894621223425
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 1,
+      "method": "RICES",
+      "display_label": "RICES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 72.18085106382979,
+          "sd": null,
+          "runs": [
+            72.18085106382979
+          ]
+        },
+        "aircraft": {
+          "mean": 51.48514851485149,
+          "sd": null,
+          "runs": [
+            51.48514851485149
+          ]
+        },
+        "cub": {
+          "mean": 73.61284939507719,
+          "sd": null,
+          "runs": [
+            73.61284939507719
+          ]
+        },
+        "dogs": {
+          "mean": 62.30769230769231,
+          "sd": null,
+          "runs": [
+            62.30769230769231
+          ]
+        },
+        "flowers102": {
+          "mean": 90.89282810213042,
+          "sd": null,
+          "runs": [
+            90.89282810213042
+          ]
+        },
+        "mean": {
+          "mean": 70.09587387671624,
+          "sd": null,
+          "runs": [
+            70.09587387671624
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 1,
+      "method": "MUIER",
+      "display_label": "+MUIER",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 73.82978723404256,
+          "sd": null,
+          "runs": [
+            73.82978723404256
+          ]
+        },
+        "aircraft": {
+          "mean": 57.81578157815782,
+          "sd": null,
+          "runs": [
+            57.81578157815782
+          ]
+        },
+        "cub": {
+          "mean": 69.39924906132666,
+          "sd": null,
+          "runs": [
+            69.39924906132666
+          ]
+        },
+        "dogs": {
+          "mean": 69.97668997668998,
+          "sd": null,
+          "runs": [
+            69.97668997668998
+          ]
+        },
+        "flowers102": {
+          "mean": 89.3478614408847,
+          "sd": null,
+          "runs": [
+            89.3478614408847
+          ]
+        },
+        "mean": {
+          "mean": 72.07387385822034,
+          "sd": null,
+          "runs": [
+            72.07387385822034
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 1,
+      "method": "RICES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 74.04255319148936,
+          "sd": null,
+          "runs": [
+            74.04255319148936
+          ]
+        },
+        "aircraft": {
+          "mean": 56.70567056705671,
+          "sd": null,
+          "runs": [
+            56.70567056705671
+          ]
+        },
+        "cub": {
+          "mean": 75.84480600750939,
+          "sd": null,
+          "runs": [
+            75.84480600750939
+          ]
+        },
+        "dogs": {
+          "mean": 66.96969696969697,
+          "sd": null,
+          "runs": [
+            66.96969696969697
+          ]
+        },
+        "flowers102": {
+          "mean": 91.5270775735892,
+          "sd": null,
+          "runs": [
+            91.5270775735892
+          ]
+        },
+        "mean": {
+          "mean": 73.01796086186832,
+          "sd": null,
+          "runs": [
+            73.01796086186832
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 1,
+      "method": "MUIER+DecisionICL",
+      "display_label": "+MUIER+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 75.58510638297872,
+          "sd": null,
+          "runs": [
+            75.58510638297872
+          ]
+        },
+        "aircraft": {
+          "mean": 59.70597059705971,
+          "sd": null,
+          "runs": [
+            59.70597059705971
+          ]
+        },
+        "cub": {
+          "mean": 71.8397997496871,
+          "sd": null,
+          "runs": [
+            71.8397997496871
+          ]
+        },
+        "dogs": {
+          "mean": 70.60606060606061,
+          "sd": null,
+          "runs": [
+            70.60606060606061
+          ]
+        },
+        "flowers102": {
+          "mean": 91.57586599447065,
+          "sd": null,
+          "runs": [
+            91.57586599447065
+          ]
+        },
+        "mean": {
+          "mean": 73.86256066605137,
+          "sd": null,
+          "runs": [
+            73.86256066605137
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 2,
+      "method": "RICES",
+      "display_label": "RICES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 73.08510638297872,
+          "sd": null,
+          "runs": [
+            73.08510638297872
+          ]
+        },
+        "aircraft": {
+          "mean": 52.02520252025202,
+          "sd": null,
+          "runs": [
+            52.02520252025202
+          ]
+        },
+        "cub": {
+          "mean": 74.42636629119733,
+          "sd": null,
+          "runs": [
+            74.42636629119733
+          ]
+        },
+        "dogs": {
+          "mean": 66.82983682983684,
+          "sd": null,
+          "runs": [
+            66.82983682983684
+          ]
+        },
+        "flowers102": {
+          "mean": 94.87721580744837,
+          "sd": null,
+          "runs": [
+            94.87721580744837
+          ]
+        },
+        "mean": {
+          "mean": 72.24874556634265,
+          "sd": null,
+          "runs": [
+            72.24874556634265
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 2,
+      "method": "MUIER",
+      "display_label": "+MUIER",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 75.1063829787234,
+          "sd": null,
+          "runs": [
+            75.1063829787234
+          ]
+        },
+        "aircraft": {
+          "mean": 59.82598259825983,
+          "sd": null,
+          "runs": [
+            59.82598259825983
+          ]
+        },
+        "cub": {
+          "mean": 70.60909470171048,
+          "sd": null,
+          "runs": [
+            70.60909470171048
+          ]
+        },
+        "dogs": {
+          "mean": 74.86013986013987,
+          "sd": null,
+          "runs": [
+            74.86013986013987
+          ]
+        },
+        "flowers102": {
+          "mean": 92.34021792161326,
+          "sd": null,
+          "runs": [
+            92.34021792161326
+          ]
+        },
+        "mean": {
+          "mean": 74.54836361208936,
+          "sd": null,
+          "runs": [
+            74.54836361208936
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 2,
+      "method": "RICES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 74.57446808510639,
+          "sd": null,
+          "runs": [
+            74.57446808510639
+          ]
+        },
+        "aircraft": {
+          "mean": 59.07590759075908,
+          "sd": null,
+          "runs": [
+            59.07590759075908
+          ]
+        },
+        "cub": {
+          "mean": 77.47183979974969,
+          "sd": null,
+          "runs": [
+            77.47183979974969
+          ]
+        },
+        "dogs": {
+          "mean": 71.64335664335665,
+          "sd": null,
+          "runs": [
+            71.64335664335665
+          ]
+        },
+        "flowers102": {
+          "mean": 95.56025369978859,
+          "sd": null,
+          "runs": [
+            95.56025369978859
+          ]
+        },
+        "mean": {
+          "mean": 75.66516516375208,
+          "sd": null,
+          "runs": [
+            75.66516516375208
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 2,
+      "method": "MUIER+DecisionICL",
+      "display_label": "+MUIER+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 76.32978723404256,
+          "sd": null,
+          "runs": [
+            76.32978723404256
+          ]
+        },
+        "aircraft": {
+          "mean": 61.776177617761775,
+          "sd": null,
+          "runs": [
+            61.776177617761775
+          ]
+        },
+        "cub": {
+          "mean": 73.90488110137672,
+          "sd": null,
+          "runs": [
+            73.90488110137672
+          ]
+        },
+        "dogs": {
+          "mean": 75.8041958041958,
+          "sd": null,
+          "runs": [
+            75.8041958041958
+          ]
+        },
+        "flowers102": {
+          "mean": 95.08863229793462,
+          "sd": null,
+          "runs": [
+            95.08863229793462
+          ]
+        },
+        "mean": {
+          "mean": 76.5807348110623,
+          "sd": null,
+          "runs": [
+            76.5807348110623
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 2,
+      "method": "CIRCLES",
+      "display_label": "CIRCLES base",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 71.96808510638299,
+          "sd": null,
+          "runs": [
+            71.96808510638299
+          ]
+        },
+        "aircraft": {
+          "mean": 35.013501350135016,
+          "sd": null,
+          "runs": [
+            35.013501350135016
+          ]
+        },
+        "cub": {
+          "mean": 64.97705465164789,
+          "sd": null,
+          "runs": [
+            64.97705465164789
+          ]
+        },
+        "dogs": {
+          "mean": 53.07692307692308,
+          "sd": null,
+          "runs": [
+            53.07692307692308
+          ]
+        },
+        "flowers102": {
+          "mean": 86.17661408359083,
+          "sd": null,
+          "runs": [
+            86.17661408359083
+          ]
+        },
+        "mean": {
+          "mean": 62.24243565373596,
+          "sd": null,
+          "runs": [
+            62.24243565373596
+          ]
+        }
+      }
+    },
+    {
+      "model": "Gemma4 12B NF4",
+      "shots": 2,
+      "method": "CIRCLES+DecisionICL",
+      "display_label": "+DecisionICL",
+      "n": 1,
+      "values": {
+        "dtd": {
+          "mean": 75.2659574468085,
+          "sd": null,
+          "runs": [
+            75.2659574468085
+          ]
+        },
+        "aircraft": {
+          "mean": 46.144614461446146,
+          "sd": null,
+          "runs": [
+            46.144614461446146
+          ]
+        },
+        "cub": {
+          "mean": 72.92448894451398,
+          "sd": null,
+          "runs": [
+            72.92448894451398
+          ]
+        },
+        "dogs": {
+          "mean": 62.05128205128205,
+          "sd": null,
+          "runs": [
+            62.05128205128205
+          ]
+        },
+        "flowers102": {
+          "mean": 92.0474873963246,
+          "sd": null,
+          "runs": [
+            92.0474873963246
+          ]
+        },
+        "mean": {
+          "mean": 69.68676606007506,
+          "sd": null,
+          "runs": [
+            69.68676606007506
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "Qwen3-VL-4B BF16": {
+      "overall_mean_gain_pp": 2.0623648682962683,
+      "settings": [
+        {
+          "base": "RICES",
+          "shots": 1,
+          "base_mean": 74.49328340671681,
+          "decision_mean": 77.1679231647722
+        },
+        {
+          "base": "RICES",
+          "shots": 2,
+          "base_mean": 78.16626132914944,
+          "decision_mean": 80.15499941577107
+        },
+        {
+          "base": "MUIER",
+          "shots": 1,
+          "base_mean": 75.23324592305505,
+          "decision_mean": 76.74407879529582
+        },
+        {
+          "base": "MUIER",
+          "shots": 2,
+          "base_mean": 78.4530302311869,
+          "decision_mean": 79.79116887980719
+        },
+        {
+          "base": "CIRCLES",
+          "shots": 2,
+          "base_mean": 75.71861139523962,
+          "decision_mean": 78.51808637118287
+        }
+      ]
+    },
+    "Qwen2.5-VL-7B NF4": {
+      "overall_mean_gain_pp": 3.1068876787889477,
+      "settings": [
+        {
+          "base": "RICES",
+          "shots": 1,
+          "base_mean": 69.96430369425697,
+          "decision_mean": 72.04443865288327
+        },
+        {
+          "base": "RICES",
+          "shots": 2,
+          "base_mean": 73.85060449720093,
+          "decision_mean": 77.00400202813218
+        },
+        {
+          "base": "MUIER",
+          "shots": 1,
+          "base_mean": 70.71766823143342,
+          "decision_mean": 72.12050882603312
+        },
+        {
+          "base": "MUIER",
+          "shots": 2,
+          "base_mean": 74.56207572067095,
+          "decision_mean": 76.98704493446337
+        },
+        {
+          "base": "CIRCLES",
+          "shots": 2,
+          "base_mean": 67.97585011623917,
+          "decision_mean": 74.44894621223425
+        }
+      ]
+    },
+    "Gemma4 12B NF4": {
+      "overall_mean_gain_pp": 3.5207789991409095,
+      "settings": [
+        {
+          "base": "RICES",
+          "shots": 1,
+          "base_mean": 70.09587387671624,
+          "decision_mean": 73.01796086186832
+        },
+        {
+          "base": "RICES",
+          "shots": 2,
+          "base_mean": 72.24874556634265,
+          "decision_mean": 75.66516516375208
+        },
+        {
+          "base": "MUIER",
+          "shots": 1,
+          "base_mean": 72.07387385822034,
+          "decision_mean": 73.86256066605137
+        },
+        {
+          "base": "MUIER",
+          "shots": 2,
+          "base_mean": 74.54836361208936,
+          "decision_mean": 76.5807348110623
+        },
+        {
+          "base": "CIRCLES",
+          "shots": 2,
+          "base_mean": 62.24243565373596,
+          "decision_mean": 69.68676606007506
+        }
+      ]
+    }
+  },
+  "aggregation": "Original accepted seed42 evaluation for all targets. Dataset means weight five datasets equally. All repeated-run values and sample SDs remain in the supplement."
+}

@@ -1,0 +1,3948 @@
+{
+  "bank_hash": "105ec26a9ce1e411b47bdc211b0a22071f1d3a2fa5b7a5f73156facc760c912c",
+  "class_names": [
+    "banded",
+    "blotchy",
+    "braided",
+    "bubbly",
+    "bumpy",
+    "chequered",
+    "cobwebbed",
+    "cracked",
+    "crosshatched",
+    "crystalline",
+    "dotted",
+    "fibrous",
+    "flecked",
+    "freckled",
+    "frilly",
+    "gauzy",
+    "grid",
+    "grooved",
+    "honeycombed",
+    "interlaced",
+    "knitted",
+    "lacelike",
+    "lined",
+    "marbled",
+    "matted",
+    "meshed",
+    "paisley",
+    "perforated",
+    "pitted",
+    "pleated",
+    "polka-dotted",
+    "porous",
+    "potholed",
+    "scaly",
+    "smeared",
+    "spiralled",
+    "sprinkled",
+    "stained",
+    "stratified",
+    "striped",
+    "studded",
+    "swirly",
+    "veined",
+    "waffled",
+    "woven",
+    "wrinkled",
+    "zigzagged"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images showing stripes",
+      "attribute": "width variation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "stripes--width-variation--batch-0000--1c7f0e39--00",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the stripes of similar width throughout the image?",
+      "region": "stripes",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1c7f0e39b625f9fd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "stripes of consistent width"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-1",
+          "visual_description": "stripes of varying widths"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "stripes are not clearly defined or uniform"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing bubbles",
+      "attribute": "size distribution",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "bubbles--size-distribution--batch-0000--1c7f0e39--01",
+      "perspective": "part shape and relative proportions",
+      "question": "Is there a wide range of bubble sizes within the image?",
+      "region": "bubbles",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1c7f0e39b625f9fd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "bubbles of similar size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-1",
+          "visual_description": "bubbles vary significantly in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "no bubbles are present or their size cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing lines",
+      "attribute": "alignment",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "lines--alignment--batch-0000--1c7f0e39--02",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the lines in the image parallel to each other?",
+      "region": "lines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1c7f0e39b625f9fd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "parallel",
+          "state_id": "parallel-0",
+          "visual_description": "lines run parallel to each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "interlaced",
+          "state_id": "interlaced-1",
+          "visual_description": "lines intersect or weave together"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "lines are not clearly defined or do not form a pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a mesh structure",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "mesh--density--batch-0000--1c7f0e39--03",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the mesh in the image dense or sparse?",
+      "region": "mesh",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1c7f0e39b625f9fd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "mesh appears tightly packed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-1",
+          "visual_description": "mesh appears loosely spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the mesh is not clearly defined or does not form a recognizable pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing fibers",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fibers--orientation--batch-0000--1c7f0e39--04",
+      "perspective": "part shape and relative proportions",
+      "question": "Do the fibers run in a consistent direction?",
+      "region": "fibers",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1c7f0e39b625f9fd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "aligned",
+          "state_id": "aligned-0",
+          "visual_description": "fibers run in a single direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random",
+          "state_id": "random-1",
+          "visual_description": "fibers appear to be randomly oriented"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "fibers are not clearly defined or do not form a pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a pattern",
+      "attribute": "regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern--regularity--batch-0000--1c7f0e39--05",
+      "perspective": "part shape and relative proportions",
+      "question": "Is the pattern in the image regular or irregular?",
+      "region": "pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1c7f0e39b625f9fd",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "regular",
+          "state_id": "regular-0",
+          "visual_description": "pattern appears uniform and predictable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-1",
+          "visual_description": "pattern lacks uniformity and predictability"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "pattern is not clearly defined or does not form a recognizable structure"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing stripes",
+      "attribute": "color variation within stripes",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "stripes--color-variation-within-stripes--batch-0000--bb3b8fe5--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is there significant variation in color intensity within each stripe?",
+      "region": "stripes",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bb3b8fe5cb522451",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "stripes with minimal color variation within them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "stripes with moderate color variation within them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "stripes with significant color variation within them"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a background",
+      "attribute": "uniformity of background",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--uniformity-of-background--batch-0000--bb3b8fe5--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the background uniform in color?",
+      "region": "background",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bb3b8fe5cb522451",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly uniform",
+          "state_id": "highly-uniform-0",
+          "visual_description": "a background where colors blend seamlessly without distinct boundaries"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately uniform",
+          "state_id": "moderately-uniform-1",
+          "visual_description": "a background where colors have some differentiation but still blend somewhat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "highly varied",
+          "state_id": "highly-varied-2",
+          "visual_description": "a background where colors are distinctly separated and do not blend"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing surfaces",
+      "attribute": "smoothness of surface",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "surface--smoothness-of-surface--batch-0000--bb3b8fe5--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the surface smooth or rough?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bb3b8fe5cb522451",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a surface that appears flat and lacks noticeable texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "a surface that appears uneven and has visible texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with patterns",
+      "attribute": "regularity of pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern--regularity-of-pattern--batch-0000--bb3b8fe5--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the pattern regular or irregular?",
+      "region": "pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bb3b8fe5cb522451",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly regular",
+          "state_id": "highly-regular-0",
+          "visual_description": "a pattern that repeats consistently and predictably"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately regular",
+          "state_id": "moderately-regular-1",
+          "visual_description": "a pattern that repeats with some variation but remains recognizable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "highly irregular",
+          "state_id": "highly-irregular-2",
+          "visual_description": "a pattern that does not repeat consistently and appears random"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with edges",
+      "attribute": "sharpness of edges",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "edges--sharpness-of-edges--batch-0000--bb3b8fe5--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "Are the edges sharp or blurred?",
+      "region": "edges",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bb3b8fe5cb522451",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sharp",
+          "state_id": "sharp-0",
+          "visual_description": "edges that are clearly defined and distinct"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "blurred",
+          "state_id": "blurred-1",
+          "visual_description": "edges that are not clearly defined and appear soft"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color variations",
+      "attribute": "strength of color gradient",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-gradient--strength-of-color-gradient--batch-0000--bb3b8fe5--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is there a strong or weak color gradient?",
+      "region": "color gradient",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "bb3b8fe5cb522451",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "strong",
+          "state_id": "strong-0",
+          "visual_description": "a color gradient where transitions between colors are abrupt and noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "weak",
+          "state_id": "weak-1",
+          "visual_description": "a color gradient where transitions between colors are smooth and subtle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with stripes",
+      "attribute": "width of stripes",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "stripe-width--width-of-stripes--batch-0000--18b491f8--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the width of the stripes in the image?",
+      "region": "stripe width",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "18b491f878bf8839",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "narrow",
+          "state_id": "narrow-0",
+          "visual_description": "stripes are very thin and close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "stripes are of moderate width"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "wide",
+          "state_id": "wide-2",
+          "visual_description": "stripes are wide and spaced apart"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with patterns",
+      "attribute": "density of pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern-density--density-of-pattern--batch-0000--18b491f8--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How densely packed are the elements of the pattern?",
+      "region": "pattern density",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "18b491f878bf8839",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "elements are widely spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "elements are moderately close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "elements are closely packed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color",
+      "attribute": "range of colors",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-variation--range-of-colors--batch-0000--18b491f8--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How many distinct colors are present in the image?",
+      "region": "color variation",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "18b491f878bf8839",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "monochromatic",
+          "state_id": "monochromatic-0",
+          "visual_description": "all colors are the same"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "few",
+          "state_id": "few-1",
+          "visual_description": "only a few distinct colors are used"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "many",
+          "state_id": "many-2",
+          "visual_description": "a wide range of colors are used"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surfaces",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "surface-texture--smoothness--batch-0000--18b491f8--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How smooth does the surface appear?",
+      "region": "surface texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "18b491f878bf8839",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-0",
+          "visual_description": "surface appears uneven and bumpy"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "smooth",
+          "state_id": "smooth-1",
+          "visual_description": "surface appears even and flat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "intermediate",
+          "state_id": "intermediate-2",
+          "visual_description": "surface has some texture but is not extremely rough or smooth"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with patterns",
+      "attribute": "alignment of elements",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern-orientation--alignment-of-elements--batch-0000--18b491f8--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "Are the elements of the pattern aligned in a specific direction?",
+      "region": "pattern orientation",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "18b491f878bf8839",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random",
+          "state_id": "random-0",
+          "visual_description": "elements are scattered without a clear alignment"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "elements run horizontally across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "vertical",
+          "state_id": "vertical-2",
+          "visual_description": "elements run vertically down the image"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with patterns",
+      "attribute": "level of detail",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern-complexity--level-of-detail--batch-0000--18b491f8--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How complex is the pattern in the image?",
+      "region": "pattern complexity",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "18b491f878bf8839",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "simple",
+          "state_id": "simple-0",
+          "visual_description": "pattern consists of basic shapes or lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "pattern includes more intricate details"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "complex",
+          "state_id": "complex-2",
+          "visual_description": "pattern features highly detailed and elaborate designs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing surfaces",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "surface--pattern-density--batch-0000--b9111d99--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the pattern dense or sparse on the surface?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b9111d994c403820",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "a surface with closely packed patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-1",
+          "visual_description": "a surface with widely spaced patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the surface lacks a discernible pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing lines",
+      "attribute": "alignment",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "lines--alignment--batch-0000--b9111d99--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Are the lines parallel or intersecting?",
+      "region": "lines",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b9111d994c403820",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "parallel",
+          "state_id": "parallel-0",
+          "visual_description": "lines running in the same direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "intersecting",
+          "state_id": "intersecting-1",
+          "visual_description": "lines crossing each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "lines are not clearly aligned or intersecting"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing bubbles",
+      "attribute": "shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "bubbles--shape--batch-0000--b9111d99--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Are the bubbles rounded or irregularly shaped?",
+      "region": "bubbles",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b9111d994c403820",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "bubbles with smooth, rounded edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-1",
+          "visual_description": "bubbles with uneven, irregular shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "bubbles are not clearly defined or distinct"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing fibers",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "fibers--orientation--batch-0000--b9111d99--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Do the fibers run in a specific direction or are they random?",
+      "region": "fibers",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b9111d994c403820",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "aligned",
+          "state_id": "aligned-0",
+          "visual_description": "fibers running in a consistent direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "random",
+          "state_id": "random-1",
+          "visual_description": "fibers oriented in various directions"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "fibers are not clearly aligned or random"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing grids",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "grid--density--batch-0000--b9111d99--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "Is the grid dense or sparse?",
+      "region": "grid",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b9111d994c403820",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "a grid with closely spaced lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-1",
+          "visual_description": "a grid with widely spaced lines"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the grid is not clearly defined or dense/sparse"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a stripe pattern",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "stripe-pattern--orientation--batch-0000--b834adea--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the orientation of the stripes in the image?",
+      "region": "stripe pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b834adea7a16c1ec",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "vertical",
+          "state_id": "vertical-0",
+          "visual_description": "stripes running vertically"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-1",
+          "visual_description": "stripes running horizontally"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "stripes running diagonally"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "stripes are not clearly defined or oriented"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a surface texture",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "surface-texture--smoothness--batch-0000--b834adea--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How smooth does the surface appear?",
+      "region": "surface texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b834adea7a16c1ec",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "very smooth",
+          "state_id": "very-smooth-0",
+          "visual_description": "a surface that appears completely flat and smooth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately smooth",
+          "state_id": "moderately-smooth-1",
+          "visual_description": "a surface that appears mostly flat but has some minor imperfections"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "rough",
+          "state_id": "rough-2",
+          "visual_description": "a surface that appears uneven and has many small bumps or ridges"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the surface is not clearly defined as smooth or rough"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a pattern",
+      "attribute": "density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern-density--density--batch-0000--b834adea--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How densely packed are the elements in the pattern?",
+      "region": "pattern density",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b834adea7a16c1ec",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "elements are widely spaced out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "elements are moderately close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "elements are very close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the pattern is not clearly defined as sparse, moderate, or dense"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color variation",
+      "attribute": "uniformity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color-variation--uniformity--batch-0000--b834adea--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How uniform are the colors within the image?",
+      "region": "color variation",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b834adea7a16c1ec",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly uniform",
+          "state_id": "highly-uniform-0",
+          "visual_description": "colors are very similar and blend seamlessly"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately uniform",
+          "state_id": "moderately-uniform-1",
+          "visual_description": "colors are somewhat similar but have noticeable differences"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "highly varied",
+          "state_id": "highly-varied-2",
+          "visual_description": "colors are very different and stand out distinctly"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the image does not show significant color variation"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a pattern",
+      "attribute": "regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern-regularity--regularity--batch-0000--b834adea--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How regular is the pattern?",
+      "region": "pattern regularity",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b834adea7a16c1ec",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "highly regular",
+          "state_id": "highly-regular-0",
+          "visual_description": "pattern elements are arranged in a precise and consistent manner"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderately regular",
+          "state_id": "moderately-regular-1",
+          "visual_description": "pattern elements are arranged in a somewhat consistent manner but have some irregularities"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "highly irregular",
+          "state_id": "highly-irregular-2",
+          "visual_description": "pattern elements are arranged randomly and do not follow a consistent pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the pattern is not clearly defined as regular or irregular"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with contrasting elements",
+      "attribute": "strength",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "contrast--strength--batch-0000--b834adea--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How strong is the contrast between the elements in the image?",
+      "region": "contrast",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b834adea7a16c1ec",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "contrast is weak and elements blend together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "contrast is noticeable but not very strong"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "contrast is very strong and elements stand out distinctly"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the image does not show significant contrast between elements"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with stripes",
+      "attribute": "width variation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "stripe--width-variation--batch-0000--b7d8539a--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Are the stripes of similar width throughout the image?",
+      "region": "stripe",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b7d8539aaf614693",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "stripes of consistent width"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-1",
+          "visual_description": "stripes of varying width"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "stripes are not clearly defined or uniform"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surfaces",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "surface--pattern-density--batch-0000--b7d8539a--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the pattern dense or sparse on the surface?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b7d8539aaf614693",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "dense",
+          "state_id": "dense-0",
+          "visual_description": "high concentration of patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-1",
+          "visual_description": "low concentration of patterns"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "pattern density cannot be determined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with patterns",
+      "attribute": "regularity",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "pattern--regularity--batch-0000--b7d8539a--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the pattern regular or irregular?",
+      "region": "pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b7d8539aaf614693",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "regular",
+          "state_id": "regular-0",
+          "visual_description": "pattern follows a predictable, uniform structure"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-1",
+          "visual_description": "pattern lacks predictability and uniformity"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "pattern is not discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with color variations",
+      "attribute": "gradation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "color--gradation--batch-0000--b7d8539a--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is there a gradient of colors within the image?",
+      "region": "color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b7d8539aaf614693",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "no gradation",
+          "state_id": "no-gradation-0",
+          "visual_description": "colors are distinct and separate"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slight gradation",
+          "state_id": "slight-gradation-1",
+          "visual_description": "colors blend slightly but remain distinct"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "strong gradation",
+          "state_id": "strong-gradation-2",
+          "visual_description": "colors blend smoothly into each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "graduation of colors is not observable"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with structured patterns",
+      "attribute": "orientation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "structure--orientation--batch-0000--b7d8539a--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the structure horizontal, vertical, or diagonal?",
+      "region": "structure",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b7d8539aaf614693",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "structures run parallel to the top and bottom edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "structures run parallel to the left and right edges"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "structures run at an angle"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "structure orientation is not clear"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surfaces",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "surface--smoothness--batch-0000--b7d8539a--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the surface smooth or rough?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "b7d8539aaf614693",
+      "source_sample_ids": [
+        "dtd-banded_0049",
+        "dtd-blotchy_0057",
+        "dtd-braided_0102",
+        "dtd-bubbly_0111"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "surface appears flat and even"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "surface has visible texture or bumps"
+        },
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "surface smoothness is not discernible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing bubbles",
+      "attribute": "bubble size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "bubbly--bubble-size--batch-0001--f870202c--00",
+      "perspective": "part shape and relative proportions",
+      "question": "What is the size of the bubbles in the image?",
+      "region": "bubbly",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f870202cdff761a7",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "bubbles that are small and closely packed together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "bubbles that are medium-sized and moderately spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "bubbles that are large and widely spaced"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a grid pattern",
+      "attribute": "grid density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "chequered--grid-density--batch-0001--f870202c--01",
+      "perspective": "part shape and relative proportions",
+      "question": "How dense is the grid pattern?",
+      "region": "chequered",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f870202cdff761a7",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "a grid with large gaps between squares"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a grid with medium gaps between squares"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "a grid with small gaps between squares"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a web",
+      "attribute": "thread thickness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "cobwebbed--thread-thickness--batch-0001--f870202c--02",
+      "perspective": "part shape and relative proportions",
+      "question": "How thick are the threads in the web?",
+      "region": "cobwebbed",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f870202cdff761a7",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "threads that are thin and delicate"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "threads that are medium-thick"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "threads that are thick and robust"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing cracked ground",
+      "attribute": "crack depth",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "cracked--crack-depth--batch-0001--f870202c--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How deep are the cracks in the ground?",
+      "region": "cracked",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f870202cdff761a7",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "shallow",
+          "state_id": "shallow-0",
+          "visual_description": "cracks that are shallow and barely noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "cracks that are medium-depth"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "deep",
+          "state_id": "deep-2",
+          "visual_description": "cracks that are deep and wide"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing fibers",
+      "attribute": "fiber length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fibrous--fiber-length--batch-0001--f870202c--04",
+      "perspective": "part shape and relative proportions",
+      "question": "How long are the fibers in the material?",
+      "region": "fibrous",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f870202cdff761a7",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "fibers that are short and close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "fibers that are medium-length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "fibers that are long and spread apart"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing lines",
+      "attribute": "line spacing",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "lined--line-spacing--batch-0001--f870202c--05",
+      "perspective": "part shape and relative proportions",
+      "question": "How far apart are the lines in the pattern?",
+      "region": "lined",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "f870202cdff761a7",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "close",
+          "state_id": "close-0",
+          "visual_description": "lines that are very close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines that are moderately spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "far",
+          "state_id": "far-2",
+          "visual_description": "lines that are far apart"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "dominant color",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "color--dominant-color--batch-0001--161645f5--00",
+      "perspective": "color, markings, material, and texture",
+      "question": "What is the dominant color in the image?",
+      "region": "color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "161645f5753a4456",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "pink",
+          "state_id": "pink-0",
+          "visual_description": "an image dominated by pink hues"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "red and beige",
+          "state_id": "red-and-beige-1",
+          "visual_description": "an image with red and beige checkered squares"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "gray and white",
+          "state_id": "gray-and-white-2",
+          "visual_description": "an image with gray spider web"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "brown",
+          "state_id": "brown-3",
+          "visual_description": "an image of cracked earth"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern type",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "markings--pattern-type--batch-0001--161645f5--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "What pattern is present on the surface?",
+      "region": "markings",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "161645f5753a4456",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "bubbly",
+          "state_id": "bubbly-0",
+          "visual_description": "a surface with rounded protrusions"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "chequered",
+          "state_id": "chequered-1",
+          "visual_description": "a surface with alternating red and beige squares"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "cobwebbed",
+          "state_id": "cobwebbed-2",
+          "visual_description": "a surface resembling a spider web"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "cracked",
+          "state_id": "cracked-3",
+          "visual_description": "a surface with deep fissures"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "material appearance",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "material--material-appearance--batch-0001--161645f5--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "What does the material look like?",
+      "region": "material",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "161645f5753a4456",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "soft",
+          "state_id": "soft-0",
+          "visual_description": "a material that appears soft and spongy"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "hard",
+          "state_id": "hard-1",
+          "visual_description": "a material that appears hard and rigid"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "fibrous",
+          "state_id": "fibrous-2",
+          "visual_description": "a material with fine, thread-like structures"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "porous",
+          "state_id": "porous-3",
+          "visual_description": "a material with many small holes"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "surface roughness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "texture--surface-roughness--batch-0001--161645f5--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "How rough is the surface?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "161645f5753a4456",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a surface that feels smooth to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "rough",
+          "state_id": "rough-1",
+          "visual_description": "a surface that feels rough to the touch"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "wrinkled",
+          "state_id": "wrinkled-2",
+          "visual_description": "a surface with many wrinkles"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "bumpy",
+          "state_id": "bumpy-3",
+          "visual_description": "a surface with small bumps"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "pattern--pattern-density--batch-0001--161645f5--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "How densely packed are the patterns?",
+      "region": "pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "161645f5753a4456",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "patterns are spread out"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "dense",
+          "state_id": "dense-1",
+          "visual_description": "patterns are closely packed together"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "pattern orientation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "pattern--pattern-orientation--batch-0001--161645f5--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "In what direction do the patterns run?",
+      "region": "pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "161645f5753a4456",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "patterns run horizontally"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "patterns run vertically"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "patterns run diagonally"
+        },
+        {
+          "abstain": false,
+          "coordinate": null,
+          "label": "random",
+          "state_id": "random-3",
+          "visual_description": "patterns appear randomly"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing cracks",
+      "attribute": "crack depth",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "cracked--crack-depth--batch-0001--533ef69f--02",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How deep are the cracks in the image?",
+      "region": "cracked",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "533ef69f1b7acea1",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "shallow",
+          "state_id": "shallow-0",
+          "visual_description": "cracks that are shallow and barely noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "cracks that are medium-depth and noticeable but not deep"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "deep",
+          "state_id": "deep-2",
+          "visual_description": "cracks that are deep and prominent"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a cobweb",
+      "attribute": "thread thickness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "cobwebbed--thread-thickness--batch-0001--533ef69f--03",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How thick are the threads in the cobweb?",
+      "region": "cobwebbed",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "533ef69f1b7acea1",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "threads that are thin and delicate"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "threads that are medium-thickness and slightly thicker than thin"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "threads that are thick and robust"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing fibers",
+      "attribute": "fiber arrangement",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fibrous--fiber-arrangement--batch-0001--533ef69f--04",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How are the fibers arranged in the image?",
+      "region": "fibrous",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "533ef69f1b7acea1",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "parallel",
+          "state_id": "parallel-0",
+          "visual_description": "fibers that run parallel to each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "interlaced",
+          "state_id": "interlaced-1",
+          "visual_description": "fibers that are interwoven and intertwined"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "random",
+          "state_id": "random-2",
+          "visual_description": "fibers that appear randomly arranged"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing pores",
+      "attribute": "pore size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "porous--pore-size--batch-0001--533ef69f--05",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "What is the size of the pores in the image?",
+      "region": "porous",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "533ef69f1b7acea1",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "pores that are small and closely packed together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "pores that are medium-sized and moderately spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "pores that are large and widely spaced"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with a chequered pattern",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "chequered--pattern-density--batch-0001--1621538e--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How dense is the chequered pattern?",
+      "region": "chequered",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1621538efb7c7382",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "a chequered pattern with large gaps between squares"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "a chequered pattern with medium gaps between squares"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "a chequered pattern with small gaps between squares"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a cobweb",
+      "attribute": "thread thickness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "cobwebbed--thread-thickness--batch-0001--1621538e--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How thick are the threads in the cobweb?",
+      "region": "cobwebbed",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1621538efb7c7382",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "threads that are thin and delicate"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "threads that are medium-thick and slightly robust"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "threads that are thick and sturdy"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing cracked ground",
+      "attribute": "crack depth",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "cracked--crack-depth--batch-0001--1621538e--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How deep are the cracks in the ground?",
+      "region": "cracked",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1621538efb7c7382",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "shallow",
+          "state_id": "shallow-0",
+          "visual_description": "cracks that are shallow and barely noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "cracks that are medium-depth and noticeable but not deep"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "deep",
+          "state_id": "deep-2",
+          "visual_description": "cracks that are deep and significant"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing fibrous textures",
+      "attribute": "fiber length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fibrous--fiber-length--batch-0001--1621538e--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How long are the fibers in the material?",
+      "region": "fibrous",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1621538efb7c7382",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "fibers that are short and close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "fibers that are medium-length and moderately spread out"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "fibers that are long and widely distributed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a meshed structure",
+      "attribute": "mesh tightness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "meshed--mesh-tightness--batch-0001--1621538e--05",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How tight is the mesh in the image?",
+      "region": "meshed",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "1621538efb7c7382",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "loose",
+          "state_id": "loose-0",
+          "visual_description": "a mesh where the spaces between the mesh are wide and open"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tight",
+          "state_id": "tight-1",
+          "visual_description": "a mesh where the spaces between the mesh are narrow and close"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--pattern-density--batch-0001--23da5734--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How densely packed are the surface features?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "23da5734539bff05",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "features are widely spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "features are moderately close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "features are closely packed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "shape variation",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--shape-variation--batch-0001--23da5734--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the variation in shape of the surface features?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "23da5734539bff05",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "all features have similar shapes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-1",
+          "visual_description": "features vary significantly in shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "complex",
+          "state_id": "complex-2",
+          "visual_description": "features have intricate and varied shapes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "size consistency",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--size-consistency--batch-0001--23da5734--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is there uniformity in the size of the surface features?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "23da5734539bff05",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "consistent",
+          "state_id": "consistent-0",
+          "visual_description": "features are of similar size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "variable",
+          "state_id": "variable-1",
+          "visual_description": "features vary in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "heterogeneous",
+          "state_id": "heterogeneous-2",
+          "visual_description": "features differ greatly in size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "alignment",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--alignment--batch-0001--23da5734--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is there a discernible alignment pattern among the surface features?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "23da5734539bff05",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "random",
+          "state_id": "random-0",
+          "visual_description": "features appear randomly distributed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "aligned",
+          "state_id": "aligned-1",
+          "visual_description": "features are aligned in a specific direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "structured",
+          "state_id": "structured-2",
+          "visual_description": "features form a structured pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--contrast--batch-0001--23da5734--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How much contrast exists between the surface features and the background?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "23da5734539bff05",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "features blend into the background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "features stand out but are not sharply defined"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "features are sharply defined and distinct from the background"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "smoothness",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--smoothness--batch-0001--23da5734--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How smooth are the surface features?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "23da5734539bff05",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "rough",
+          "state_id": "rough-0",
+          "visual_description": "features have a rough texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "smooth",
+          "state_id": "smooth-1",
+          "visual_description": "features have a smooth texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "bumpy",
+          "state_id": "bumpy-2",
+          "visual_description": "features have a bumpy texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images with surface features",
+      "attribute": "contrast",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "surface--contrast--batch-0001--dfc7b994--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How much contrast exists between the surface features and the background?",
+      "region": "surface",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "dfc7b9945323f9c4",
+      "source_sample_ids": [
+        "dtd-bumpy_0163",
+        "dtd-chequered_0215",
+        "dtd-cobwebbed_0054",
+        "dtd-cracked_0083"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "low",
+          "state_id": "low-0",
+          "visual_description": "features blend into the background"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "features stand out but are not sharply defined"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "high",
+          "state_id": "high-2",
+          "visual_description": "features are sharply defined against the background"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--pattern-density--batch-0002--19d51557--00",
+      "perspective": "part shape and relative proportions",
+      "question": "How densely packed are the lines or dots in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "19d51557a5004fca",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "lines or dots are widely spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines or dots are moderately close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "lines or dots are closely packed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line direction",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-direction--batch-0002--19d51557--01",
+      "perspective": "part shape and relative proportions",
+      "question": "In what direction do the lines run?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "19d51557a5004fca",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "lines run horizontally across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "lines run vertically down the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "lines run diagonally across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "random",
+          "state_id": "random-3",
+          "visual_description": "lines run in various directions"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line thickness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-thickness--batch-0002--19d51557--02",
+      "perspective": "part shape and relative proportions",
+      "question": "How thick are the lines in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "19d51557a5004fca",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "lines are very thin and barely noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "lines are of medium thickness"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "lines are thick and prominent"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line spacing",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-spacing--batch-0002--19d51557--03",
+      "perspective": "part shape and relative proportions",
+      "question": "How far apart are the lines in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "19d51557a5004fca",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "close",
+          "state_id": "close-0",
+          "visual_description": "lines are very close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines are moderately spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "far",
+          "state_id": "far-2",
+          "visual_description": "lines are far apart"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line regularity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-regularity--batch-0002--19d51557--04",
+      "perspective": "part shape and relative proportions",
+      "question": "How regular are the lines in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "19d51557a5004fca",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "lines vary in size and shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "regular",
+          "state_id": "regular-1",
+          "visual_description": "lines are uniform in size and shape"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-orientation--batch-0002--19d51557--05",
+      "perspective": "part shape and relative proportions",
+      "question": "Are the lines horizontal, vertical, or diagonal?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "19d51557a5004fca",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "lines run horizontally across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "lines run vertically down the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "lines run diagonally across the image"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a material",
+      "attribute": "material sheen",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "material--material-sheen--batch-0002--74685c74--01",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is there a noticeable sheen on the material?",
+      "region": "material",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "74685c74747dd936",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "no sheen",
+          "state_id": "no-sheen-0",
+          "visual_description": "the material appears matte and lacks any reflective quality"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "slight sheen",
+          "state_id": "slight-sheen-1",
+          "visual_description": "there is a faint reflection on the material, indicating a slight sheen"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "strong sheen",
+          "state_id": "strong-sheen-2",
+          "visual_description": "the material reflects light strongly, giving it a glossy appearance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the material is not clearly visible or the image is too dark to discern sheen"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a color gradient or variation",
+      "attribute": "color variation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "color--color-variation--batch-0002--74685c74--02",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is there significant variation in the color within the texture?",
+      "region": "color",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "74685c74747dd936",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "uniform",
+          "state_id": "uniform-0",
+          "visual_description": "the color is consistent throughout the texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate variation",
+          "state_id": "moderate-variation-1",
+          "visual_description": "there is some variation in color, but it is not extreme"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "high variation",
+          "state_id": "high-variation-2",
+          "visual_description": "the texture shows significant differences in color, creating a dynamic pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the texture is too uniform or the image is too dark to discern color variation"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing marked textures",
+      "attribute": "marking size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "markings--marking-size--batch-0002--74685c74--03",
+      "perspective": "color, markings, material, and texture",
+      "question": "Are the markings large enough to be easily seen?",
+      "region": "markings",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "74685c74747dd936",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the markings are small and require close inspection to see"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the markings are of moderate size, easily visible without magnification"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the markings are large and prominent, easily seen even from a distance"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the markings are too small or the image is too dark to discern size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a material",
+      "attribute": "material surface",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "material--material-surface--batch-0002--74685c74--04",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the surface of the material smooth or rough?",
+      "region": "material",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "74685c74747dd936",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the surface appears flat and untextured"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "slightly rough",
+          "state_id": "slightly-rough-1",
+          "visual_description": "there are minor imperfections or bumps on the surface"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "rough",
+          "state_id": "rough-2",
+          "visual_description": "the surface is uneven and has many small protrusions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the surface is not clearly visible or the image is too dark to discern texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a pattern",
+      "attribute": "pattern regularity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "pattern--pattern-regularity--batch-0002--74685c74--05",
+      "perspective": "color, markings, material, and texture",
+      "question": "Is the pattern consistent across the entire image?",
+      "region": "pattern",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "74685c74747dd936",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "highly irregular",
+          "state_id": "highly-irregular-0",
+          "visual_description": "the pattern varies significantly from area to area"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderately irregular",
+          "state_id": "moderately-irregular-1",
+          "visual_description": "there are some variations in the pattern, but overall it is relatively consistent"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "highly regular",
+          "state_id": "highly-regular-2",
+          "visual_description": "the pattern is consistent and uniform throughout the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the pattern is too complex or the image is too dark to discern regularity"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--pattern-density--batch-0002--eb8a0324--00",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How densely packed are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "eb8a0324aa0d4158",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "lines are widely spaced, allowing clear visibility of spaces between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines are moderately close together, creating a balanced pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "lines are closely packed, making the pattern appear solid"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line thickness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-thickness--batch-0002--eb8a0324--01",
+      "perspective": "pose, viewpoint, silhouette, and spatial structure",
+      "question": "How thick are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "eb8a0324aa0d4158",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "lines are very fine and barely noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "lines are of average thickness, easily discernible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "lines are broad and prominent"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--pattern-density--batch-0002--3380930e--00",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How densely packed are the lines or dots in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3380930e22887e5b",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "lines or dots are widely spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines or dots are moderately close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "lines or dots are closely packed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the texture lacks a discernible pattern"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line direction",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-direction--batch-0002--3380930e--01",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "In what direction do the lines run?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3380930e22887e5b",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "lines run horizontally across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "lines run vertically down the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "lines run diagonally across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "lines are not clearly directional"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line thickness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-thickness--batch-0002--3380930e--02",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How thick are the lines in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3380930e22887e5b",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "lines are very thin and barely noticeable"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "lines are of medium thickness"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "lines are thick and prominent"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "lines are not clearly defined"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line spacing",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-spacing--batch-0002--3380930e--03",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How far apart are the lines in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3380930e22887e5b",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "close",
+          "state_id": "close-0",
+          "visual_description": "lines are very close together"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines are moderately spaced"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "far",
+          "state_id": "far-2",
+          "visual_description": "lines are far apart"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "lines are not clearly separated"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing textures",
+      "attribute": "line regularity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-regularity--batch-0002--3380930e--04",
+      "perspective": "fine-grained contrasts between easily confused classes",
+      "question": "How regular are the lines in the texture?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "3380930e22887e5b",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "irregular",
+          "state_id": "irregular-0",
+          "visual_description": "lines vary in shape and size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "irregular but consistent",
+          "state_id": "irregular-but-consistent-1",
+          "visual_description": "lines are irregular but follow a consistent pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "regular",
+          "state_id": "regular-2",
+          "visual_description": "lines are uniform in shape and size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "lines are not clearly defined as regular or irregular"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--pattern-density--batch-0002--20e415af--00",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How densely packed are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "20e415afbc880538",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "lines are widely spaced, allowing clear visibility of spaces between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines are moderately close together, creating a balanced pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "lines are very close together, making the pattern appear solid"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the pattern is too complex or unclear to determine density"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line thickness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-thickness--batch-0002--20e415af--01",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How thick are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "20e415afbc880538",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "lines are fine and delicate"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "lines are of average thickness"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "lines are broad and prominent"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the lines are too indistinct to determine thickness"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-orientation--batch-0002--20e415af--02",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "What is the general direction of the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "20e415afbc880538",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "lines run parallel to the top and bottom edges of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "lines run parallel to the left and right edges of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "lines form diagonal lines across the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "random",
+          "state_id": "random-3",
+          "visual_description": "lines do not follow a consistent direction"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-4",
+          "visual_description": "the lines are too irregular to determine orientation"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line spacing",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-spacing--batch-0002--20e415af--03",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "How far apart are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "20e415afbc880538",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "close",
+          "state_id": "close-0",
+          "visual_description": "lines are very near each other"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines are neither too close nor too far apart"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "far",
+          "state_id": "far-2",
+          "visual_description": "lines are spread out, leaving significant space between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the lines are too close together to determine spacing"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line curvature",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-curvature--batch-0002--20e415af--04",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Are the lines forming the pattern straight or curved?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "20e415afbc880538",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "lines are perfectly straight and uniform"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "lines have some degree of curve or bend"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "wavy",
+          "state_id": "wavy-2",
+          "visual_description": "lines are irregular and undulating"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-3",
+          "visual_description": "the lines are too abstract to determine curvature"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line continuity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-continuity--batch-0002--20e415af--05",
+      "perspective": "negative evidence: visible cues that argue against a plausible class",
+      "question": "Is the line pattern continuous or broken?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "20e415afbc880538",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "lines form a seamless pattern without breaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "broken",
+          "state_id": "broken-1",
+          "visual_description": "lines are interrupted by gaps or breaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "abstain",
+          "state_id": "abstain-2",
+          "visual_description": "the pattern is too fragmented to determine continuity"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "pattern density",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--pattern-density--batch-0002--850cbf65--00",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How densely packed are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "850cbf650e2dd930",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sparse",
+          "state_id": "sparse-0",
+          "visual_description": "lines are widely spaced, allowing clear visibility of spaces between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines are moderately close together, creating a balanced pattern"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "lines are very close together, making the pattern appear solid"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line thickness",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-thickness--batch-0002--850cbf65--01",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How thick are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "850cbf650e2dd930",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "thin",
+          "state_id": "thin-0",
+          "visual_description": "lines are fine and delicate"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "lines are of average thickness"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "thick",
+          "state_id": "thick-2",
+          "visual_description": "lines are broad and prominent"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line orientation",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-orientation--batch-0002--850cbf65--02",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "What is the general direction of the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "850cbf650e2dd930",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "horizontal",
+          "state_id": "horizontal-0",
+          "visual_description": "lines run parallel to the top and bottom edges of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "vertical",
+          "state_id": "vertical-1",
+          "visual_description": "lines run parallel to the left and right edges of the image"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "diagonal",
+          "state_id": "diagonal-2",
+          "visual_description": "lines form diagonal lines across the image"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line spacing",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-spacing--batch-0002--850cbf65--03",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "How far apart are the lines forming the pattern?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "850cbf650e2dd930",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tight",
+          "state_id": "tight-0",
+          "visual_description": "lines are very close together, leaving little space between them"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "moderate",
+          "state_id": "moderate-1",
+          "visual_description": "lines have a balanced distance, neither too close nor too far apart"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "loose",
+          "state_id": "loose-2",
+          "visual_description": "lines are spread out, creating more space between them"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line curvature",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-curvature--batch-0002--850cbf65--04",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Are the lines forming the pattern straight or curved?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "850cbf650e2dd930",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "straight",
+          "state_id": "straight-0",
+          "visual_description": "lines are perfectly straight and do not bend"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curved",
+          "state_id": "curved-1",
+          "visual_description": "lines have some degree of curve or bend"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "wavy",
+          "state_id": "wavy-2",
+          "visual_description": "lines are irregular and undulating"
+        }
+      ]
+    },
+    {
+      "applies_to": "images showing a patterned texture",
+      "attribute": "line continuity",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "texture--line-continuity--batch-0002--850cbf65--05",
+      "perspective": "context cues the model actually uses, including potentially spurious background cues",
+      "question": "Is the line pattern continuous or broken?",
+      "region": "texture",
+      "source_model": "Qwen/Qwen2.5-VL-7B-Instruct:nf4-double-bf16-official",
+      "source_prompt_id": "850cbf650e2dd930",
+      "source_sample_ids": [
+        "dtd-crosshatched_0172",
+        "dtd-crystalline_0180",
+        "dtd-dotted_0145",
+        "dtd-fibrous_0156"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "continuous",
+          "state_id": "continuous-0",
+          "visual_description": "lines form a seamless pattern without breaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "broken",
+          "state_id": "broken-1",
+          "visual_description": "lines are interrupted by gaps or breaks"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "interrupted",
+          "state_id": "interrupted-2",
+          "visual_description": "lines are partially broken but still form a recognizable pattern"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the texture category shown in the image.",
+  "task_name": "dtd"
+}

@@ -1,0 +1,3441 @@
+{
+  "bank_hash": "a2ac43b6a537e98054231df8dfcd6e0881895cdf1a6e711dc5ac30eaed9c878d",
+  "class_names": [
+    "affenpinscher",
+    "afghan hound",
+    "african hunting dog",
+    "airedale",
+    "american staffordshire terrier",
+    "appenzeller",
+    "australian terrier",
+    "basenji",
+    "basset",
+    "beagle",
+    "bedlington terrier",
+    "bernese mountain dog",
+    "black-and-tan coonhound",
+    "blenheim spaniel",
+    "bloodhound",
+    "bluetick",
+    "border collie",
+    "border terrier",
+    "borzoi",
+    "boston bull",
+    "bouvier des flandres",
+    "boxer",
+    "brabancon griffon",
+    "briard",
+    "brittany spaniel",
+    "bull mastiff",
+    "cairn",
+    "cardigan",
+    "chesapeake bay retriever",
+    "chihuahua",
+    "chow",
+    "clumber",
+    "cocker spaniel",
+    "collie",
+    "curly-coated retriever",
+    "dandie dinmont",
+    "dhole",
+    "dingo",
+    "doberman",
+    "english foxhound",
+    "english setter",
+    "english springer",
+    "entlebucher",
+    "eskimo dog",
+    "flat-coated retriever",
+    "french bulldog",
+    "german shepherd",
+    "german short-haired pointer",
+    "giant schnauzer",
+    "golden retriever",
+    "gordon setter",
+    "great dane",
+    "great pyrenees",
+    "greater swiss mountain dog",
+    "groenendael",
+    "ibizan hound",
+    "irish setter",
+    "irish terrier",
+    "irish water spaniel",
+    "irish wolfhound",
+    "italian greyhound",
+    "japanese spaniel",
+    "keeshond",
+    "kelpie",
+    "kerry blue terrier",
+    "komondor",
+    "kuvasz",
+    "labrador retriever",
+    "lakeland terrier",
+    "leonberg",
+    "lhasa",
+    "malamute",
+    "malinois",
+    "maltese dog",
+    "mexican hairless",
+    "miniature pinscher",
+    "miniature poodle",
+    "miniature schnauzer",
+    "newfoundland",
+    "norfolk terrier",
+    "norwegian elkhound",
+    "norwich terrier",
+    "old english sheepdog",
+    "otterhound",
+    "papillon",
+    "pekinese",
+    "pembroke",
+    "pomeranian",
+    "pug",
+    "redbone",
+    "rhodesian ridgeback",
+    "rottweiler",
+    "saint bernard",
+    "saluki",
+    "samoyed",
+    "schipperke",
+    "scotch terrier",
+    "scottish deerhound",
+    "sealyham terrier",
+    "shetland sheepdog",
+    "shih-tzu",
+    "siberian husky",
+    "silky terrier",
+    "soft-coated wheaten terrier",
+    "staffordshire bullterrier",
+    "standard poodle",
+    "standard schnauzer",
+    "sussex spaniel",
+    "tibetan mastiff",
+    "tibetan terrier",
+    "toy poodle",
+    "toy terrier",
+    "vizsla",
+    "walker hound",
+    "weimaraner",
+    "welsh springer spaniel",
+    "west highland white terrier",
+    "whippet",
+    "wire-haired fox terrier",
+    "yorkshire terrier"
+  ],
+  "discovery_seed": 42,
+  "discovery_split": "train",
+  "factor_scope": "task",
+  "groups": [
+    {
+      "applies_to": "images in which the dog's head is visible",
+      "attribute": "head shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--head-shape--batch-0000--a3da58f2--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall shape of the dog's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a3da58f2c67f3708",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "a dog with a rounded, blocky head shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "elongated",
+          "state_id": "elongated-1",
+          "visual_description": "a dog with a long, tapering muzzle and elongated head shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wedge-shaped",
+          "state_id": "wedge-shaped-2",
+          "visual_description": "a dog with a distinctively tapered, wedge-shaped head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--ear-length--batch-0000--a3da58f2--01",
+      "perspective": "shape and relative proportions",
+      "question": "How long are the dog's ears relative to the head?",
+      "region": "ears",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a3da58f2c67f3708",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short ears that do not reach the jawline"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length ears that reach the mid-cheek"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with very long, pendulous ears that hang down past the jawline"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coat-length--batch-0000--a3da58f2--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the length of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a3da58f2c67f3708",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short, smooth coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long, flowing, or feathered coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body proportions",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--body-proportions--batch-0000--a3da58f2--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative proportion of the dog's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a3da58f2c67f3708",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "compact",
+          "state_id": "compact-0",
+          "visual_description": "a dog with a short, stocky, and compact body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "balanced",
+          "state_id": "balanced-1",
+          "visual_description": "a dog with a standard, well-proportioned body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elongated",
+          "state_id": "elongated-2",
+          "visual_description": "a dog with a long, lean, and stretched body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--eye-shape--batch-0000--a3da58f2--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the dog's eyes?",
+      "region": "face",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a3da58f2c67f3708",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "round",
+          "state_id": "round-0",
+          "visual_description": "a dog with large, round eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "almond-shaped",
+          "state_id": "almond-shaped-1",
+          "visual_description": "a dog with almond-shaped eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "droopy",
+          "state_id": "droopy-2",
+          "visual_description": "a dog with heavy-lidded, droopy eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's legs are visible",
+      "attribute": "leg length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--leg-length--batch-0000--a3da58f2--05",
+      "perspective": "shape and relative proportions",
+      "question": "What is the length of the dog's legs relative to its body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a3da58f2c67f3708",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short legs relative to its body size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length legs relative to its body size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long, slender legs relative to its body size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--texture--batch-0000--fc00b950--00",
+      "perspective": "color and texture",
+      "question": "What is the texture of the dog's coat?",
+      "region": "coat",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fc00b9502715c3cb",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short-smooth",
+          "state_id": "short-smooth-0",
+          "visual_description": "a dog with a short, smooth, or sleek coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium-textured",
+          "state_id": "medium-textured-1",
+          "visual_description": "a dog with a medium-length coat that appears slightly textured"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long-flowing",
+          "state_id": "long-flowing-2",
+          "visual_description": "a dog with a long, flowing, or silky coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "long-wavy",
+          "state_id": "long-wavy-3",
+          "visual_description": "a dog with a long, wavy, or curly coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "color_pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "coat--color-pattern--batch-0000--fc00b950--01",
+      "perspective": "color and texture",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "coat",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fc00b9502715c3cb",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid-color",
+          "state_id": "solid-color-0",
+          "visual_description": "a dog with a solid-colored coat (e.g., all black, all white, or all brown)"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "bi-color",
+          "state_id": "bi-color-1",
+          "visual_description": "a dog with a two-color coat pattern (e.g., black and white, brown and white)"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "tri-color",
+          "state_id": "tri-color-2",
+          "visual_description": "a dog with a three-color coat pattern (e.g., black, white, and tan)"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "ears--ear-length--batch-0000--fc00b950--02",
+      "perspective": "color and texture",
+      "question": "How long are the dog's ears relative to its head?",
+      "region": "ears",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fc00b9502715c3cb",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short, upright, or button-like ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length floppy ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with very long, heavy, floppy ears that hang down significantly"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle_length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "face--muzzle-length--batch-0000--fc00b950--03",
+      "perspective": "color and texture",
+      "question": "What is the length of the dog's muzzle relative to its head?",
+      "region": "face",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fc00b9502715c3cb",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short, snub-nosed muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long, prominent muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body_build",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--body-build--batch-0000--fc00b950--04",
+      "perspective": "color and texture",
+      "question": "What is the general body build of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "fc00b9502715c3cb",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small-slender",
+          "state_id": "small-slender-0",
+          "visual_description": "a small, slender, or dainty dog"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium-athletic",
+          "state_id": "medium-athletic-1",
+          "visual_description": "a medium-sized, athletic, or well-proportioned dog"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large-heavy",
+          "state_id": "large-heavy-2",
+          "visual_description": "a large, heavy-set, or powerful dog"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--ear-length--batch-0000--316c2115--00",
+      "perspective": "pose and silhouette",
+      "question": "How long are the ears relative to the head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "316c211511427183",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has short ears that do not reach the jawline"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has medium-length ears that reach the jawline"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has long, floppy ears that hang down significantly past the jawline"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coat-length--batch-0000--316c2115--01",
+      "perspective": "pose and silhouette",
+      "question": "How long is the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "316c211511427183",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, smooth coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, flowing coat that covers the body and legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body proportions",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--body-proportions--batch-0000--316c2115--03",
+      "perspective": "pose and silhouette",
+      "question": "What is the overall body silhouette of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "316c211511427183",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "compact",
+          "state_id": "compact-0",
+          "visual_description": "the dog has a compact, stocky body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "balanced",
+          "state_id": "balanced-1",
+          "visual_description": "the dog has a balanced, athletic body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "elongated",
+          "state_id": "elongated-2",
+          "visual_description": "the dog has a long, slender body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--eye-shape--batch-0000--316c2115--04",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape of the dog's eyes?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "316c211511427183",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "round",
+          "state_id": "round-0",
+          "visual_description": "the dog has round eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "almond",
+          "state_id": "almond-1",
+          "visual_description": "the dog has almond-shaped eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "droopy",
+          "state_id": "droopy-2",
+          "visual_description": "the dog has droopy, soulful eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle shape",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--muzzle-shape--batch-0000--b9a7a44c--01",
+      "perspective": "local visible differences",
+      "question": "What is the shape of the dog's muzzle?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "b9a7a44cd6ee4397",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short and rounded",
+          "state_id": "short-and-rounded-0",
+          "visual_description": "the dog has a short, rounded muzzle typical of brachycephalic breeds"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium and blocky",
+          "state_id": "medium-and-blocky-1",
+          "visual_description": "the dog has a medium-length, blocky muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long and tapered",
+          "state_id": "long-and-tapered-2",
+          "visual_description": "the dog has a long, tapered muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coat-length--batch-0000--b9a7a44c--02",
+      "perspective": "local visible differences",
+      "question": "How long is the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "b9a7a44cd6ee4397",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, smooth coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, flowing coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "coat texture",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coat-texture--batch-0000--b9a7a44c--03",
+      "perspective": "local visible differences",
+      "question": "What is the texture of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "b9a7a44cd6ee4397",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the dog has a smooth, flat coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "the dog has a wavy coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "the dog has a curly or very textured coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--eye-color--batch-0000--b9a7a44c--04",
+      "perspective": "local visible differences",
+      "question": "What is the color of the dog's eyes?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "b9a7a44cd6ee4397",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "the dog has brown eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dog has blue eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "amber",
+          "state_id": "amber-2",
+          "visual_description": "the dog has amber or light-colored eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog is visible",
+      "attribute": "body size",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--body-size--batch-0000--b9a7a44c--05",
+      "perspective": "local visible differences",
+      "question": "What is the relative size of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "b9a7a44cd6ee4397",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the dog is small in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog is medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the dog is large in size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat length",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coat-length--batch-0000--3abce6b4--01",
+      "perspective": "visibility and missing visual information",
+      "question": "How long is the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3abce6b4e9a2635e",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, smooth coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, flowing coat, especially on the legs and tail"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body proportions",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--body-proportions--batch-0000--3abce6b4--03",
+      "perspective": "visibility and missing visual information",
+      "question": "What are the body proportions of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3abce6b4e9a2635e",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short-limbed",
+          "state_id": "short-limbed-0",
+          "visual_description": "the dog has short legs and a long body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "balanced",
+          "state_id": "balanced-1",
+          "visual_description": "the dog has balanced proportions between height and length"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tall-limbed",
+          "state_id": "tall-limbed-2",
+          "visual_description": "the dog has long legs relative to its body length"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye color",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "head--eye-color--batch-0000--3abce6b4--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the color of the dog's eyes?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3abce6b4e9a2635e",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "brown",
+          "state_id": "brown-0",
+          "visual_description": "the dog has brown eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blue",
+          "state_id": "blue-1",
+          "visual_description": "the dog has blue eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "amber",
+          "state_id": "amber-2",
+          "visual_description": "the dog has amber or golden-colored eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat color pattern",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "body--coat-color-pattern--batch-0000--3abce6b4--05",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "3abce6b4e9a2635e",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "solid",
+          "state_id": "solid-0",
+          "visual_description": "the dog has a solid-colored coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bi-color",
+          "state_id": "bi-color-1",
+          "visual_description": "the dog has a coat with two distinct colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tri-color",
+          "state_id": "tri-color-2",
+          "visual_description": "the dog has a coat with three distinct colors (e.g., black, white, and tan)"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "setting",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--setting--batch-0000--afb0d0df--00",
+      "perspective": "background and environment",
+      "question": "What is the primary environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "afb0d0df4fac4fc0",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "indoor",
+          "state_id": "indoor-0",
+          "visual_description": "an indoor setting with domestic furniture, flooring, or walls"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "outdoor",
+          "state_id": "outdoor-1",
+          "visual_description": "an outdoor setting with grass, trees, sky, or natural scenery"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "lighting",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--lighting--batch-0000--afb0d0df--01",
+      "perspective": "background and environment",
+      "question": "What is the primary lighting condition of the scene?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "afb0d0df4fac4fc0",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "natural",
+          "state_id": "natural-0",
+          "visual_description": "natural daylight or outdoor lighting"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "artificial",
+          "state_id": "artificial-1",
+          "visual_description": "indoor artificial lighting or studio lighting"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "vegetation",
+      "discovery_batch_id": "batch-0000",
+      "group_id": "background--vegetation--batch-0000--afb0d0df--02",
+      "perspective": "background and environment",
+      "question": "Is there significant vegetation visible in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "afb0d0df4fac4fc0",
+      "source_sample_ids": [
+        "stanford-dogs-01828",
+        "stanford-dogs-02074",
+        "stanford-dogs-02169",
+        "stanford-dogs-05359"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "no vegetation visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "some",
+          "state_id": "some-1",
+          "visual_description": "some grass or small plants visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dense",
+          "state_id": "dense-2",
+          "visual_description": "dense trees, bushes, or foliage visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's head is visible",
+      "attribute": "head shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--head-shape--batch-0001--cb6b6421--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the overall shape of the dog's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cb6b6421e772bb7f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "rounded",
+          "state_id": "rounded-0",
+          "visual_description": "a dog with a rounded, smooth head shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "blocky",
+          "state_id": "blocky-1",
+          "visual_description": "a dog with a blocky, square-ish head shape"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pointed",
+          "state_id": "pointed-2",
+          "visual_description": "a dog with a pointed or wedge-shaped head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--muzzle-length--batch-0001--cb6b6421--01",
+      "perspective": "shape and relative proportions",
+      "question": "How long is the dog's muzzle relative to its head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cb6b6421e772bb7f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short, snub-nosed muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long, elongated muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--ear-shape--batch-0001--cb6b6421--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cb6b6421e772bb7f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "upright",
+          "state_id": "upright-0",
+          "visual_description": "a dog with ears that stand upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-1",
+          "visual_description": "a dog with ears that hang down flat against the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "folded",
+          "state_id": "folded-2",
+          "visual_description": "a dog with ears that fold over at the top"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "coat texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--coat-texture--batch-0001--cb6b6421--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the texture of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cb6b6421e772bb7f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "a dog with a smooth, flat coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "a dog with a wavy coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "a dog with a curly or very textured coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wire-haired",
+          "state_id": "wire-haired-3",
+          "visual_description": "a dog with a rough, wire-haired coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body proportions",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-proportions--batch-0001--cb6b6421--04",
+      "perspective": "shape and relative proportions",
+      "question": "What are the relative proportions of the dog's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cb6b6421e772bb7f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "compact",
+          "state_id": "compact-0",
+          "visual_description": "a dog with a compact, stocky body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "balanced",
+          "state_id": "balanced-1",
+          "visual_description": "a dog with a balanced, proportional body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "lean",
+          "state_id": "lean-2",
+          "visual_description": "a dog with a lean, athletic body"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-3",
+          "visual_description": "a dog with a long, slender body"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's legs are visible",
+      "attribute": "leg length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--leg-length--batch-0001--cb6b6421--05",
+      "perspective": "shape and relative proportions",
+      "question": "How long are the dog's legs relative to its body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "cb6b6421e772bb7f",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with short legs relative to its body size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with medium-length legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with long legs relative to its body size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fur--texture--batch-0001--57e0841e--00",
+      "perspective": "color and texture",
+      "question": "What is the texture of the dog's coat?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57e0841e1a8f7f20",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "curly",
+          "state_id": "curly-0",
+          "visual_description": "a dog with a curly or woolly coat texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "a dog with a wavy coat texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "straight",
+          "state_id": "straight-2",
+          "visual_description": "a dog with a straight, smooth coat texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "wire-haired",
+          "state_id": "wire-haired-3",
+          "visual_description": "a dog with a coarse, wiry, or bristly coat texture"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "color_pattern",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fur--color-pattern--batch-0001--57e0841e--01",
+      "perspective": "color and texture",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57e0841e1a8f7f20",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_white",
+          "state_id": "solid-white-0",
+          "visual_description": "a dog with a solid white coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid_black",
+          "state_id": "solid-black-1",
+          "visual_description": "a dog with a solid black coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "solid_tan",
+          "state_id": "solid-tan-2",
+          "visual_description": "a dog with a solid tan or golden coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "tricolor",
+          "state_id": "tricolor-3",
+          "visual_description": "a dog with a tricolor coat (black, white, and tan)"
+        },
+        {
+          "abstain": false,
+          "coordinate": 4.0,
+          "label": "bi_color",
+          "state_id": "bi-color-4",
+          "visual_description": "a dog with a bi-color coat (e.g., black and tan, or black and white)"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "color_intensity",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fur--color-intensity--batch-0001--57e0841e--02",
+      "perspective": "color and texture",
+      "question": "How saturated are the colors in the dog's coat?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57e0841e1a8f7f20",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pale",
+          "state_id": "pale-0",
+          "visual_description": "a dog with very light, washed-out, or pale coat colors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "vibrant",
+          "state_id": "vibrant-1",
+          "visual_description": "a dog with deep, saturated, and vibrant coat colors"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's head is visible",
+      "attribute": "fur_texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--fur-texture--batch-0001--ea554405--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the texture of the fur on the dog's head and face?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea55440508d079aa",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "curly",
+          "state_id": "curly-0",
+          "visual_description": "the dog has curly or woolly fur on its head and face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "the dog has wavy fur on its head and face"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "straight",
+          "state_id": "straight-2",
+          "visual_description": "the dog has straight, smooth fur on its head and face"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body_proportions",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-proportions--batch-0001--ea554405--01",
+      "perspective": "pose and silhouette",
+      "question": "What is the overall body shape and proportion of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea55440508d079aa",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small_and_compact",
+          "state_id": "small-and-compact-0",
+          "visual_description": "the dog has a small, compact body with short legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium_proportioned",
+          "state_id": "medium-proportioned-1",
+          "visual_description": "the dog has a medium-sized body with proportional legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large_and_tall",
+          "state_id": "large-and-tall-2",
+          "visual_description": "the dog has a large, tall body with long legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--ear-shape--batch-0001--ea554405--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea55440508d079aa",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pointed",
+          "state_id": "pointed-0",
+          "visual_description": "the dog has upright, pointed ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "floppy",
+          "state_id": "floppy-1",
+          "visual_description": "the dog has large, floppy ears that hang down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "button",
+          "state_id": "button-2",
+          "visual_description": "the dog has small, rounded ears that sit close to the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle_length",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--muzzle-length--batch-0001--ea554405--03",
+      "perspective": "pose and silhouette",
+      "question": "How long is the dog's muzzle relative to its head size?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea55440508d079aa",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, snub muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, prominent muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's rear is visible",
+      "attribute": "tail_visibility",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--tail-visibility--batch-0001--ea554405--04",
+      "perspective": "pose and silhouette",
+      "question": "Is the dog's tail visible in the image?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea55440508d079aa",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "hidden",
+          "state_id": "hidden-0",
+          "visual_description": "the dog's tail is not visible or is tucked"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "visible",
+          "state_id": "visible-1",
+          "visual_description": "the dog's tail is clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's head is visible",
+      "attribute": "fur_texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--fur-texture--batch-0001--172de84a--00",
+      "perspective": "local visible differences",
+      "question": "What is the texture of the fur on the dog's head and face?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "172de84a5dff8e14",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "curly",
+          "state_id": "curly-0",
+          "visual_description": "the dog has curly or woolly fur, often appearing in tight loops or tight waves"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "the dog has wavy fur that forms loose undulations"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "straight",
+          "state_id": "straight-2",
+          "visual_description": "the dog has straight, smooth, or slightly feathered fur"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's face is visible",
+      "attribute": "facial_hair_style",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--facial-hair-style--batch-0001--172de84a--01",
+      "perspective": "local visible differences",
+      "question": "What is the style of the hair on the dog's face and muzzle?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "172de84a5dff8e14",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the face has short, smooth hair without prominent facial furnishings"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "bearded",
+          "state_id": "bearded-1",
+          "visual_description": "the dog has a distinct beard and mustache-like hair around the muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "shaggy",
+          "state_id": "shaggy-2",
+          "visual_description": "the face has long, messy, or overgrown hair covering the muzzle and eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat_color_pattern",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--coat-color-pattern--batch-0001--172de84a--02",
+      "perspective": "local visible differences",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "172de84a5dff8e14",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_white",
+          "state_id": "solid-white-0",
+          "visual_description": "the dog has a solid white coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid_colored",
+          "state_id": "solid-colored-1",
+          "visual_description": "the dog has a solid color other than white (e.g., black, tan, brown)"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "multi_colored",
+          "state_id": "multi-colored-2",
+          "visual_description": "the dog has a multi-colored coat with distinct patches of different colors (e.g., black and tan, tri-color)"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--ear-shape--batch-0001--172de84a--03",
+      "perspective": "local visible differences",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "172de84a5dff8e14",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "pointed",
+          "state_id": "pointed-0",
+          "visual_description": "the dog has upright, triangular, pointed ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "floppy",
+          "state_id": "floppy-1",
+          "visual_description": "the dog has medium-sized ears that hang down to the side of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long_droopy",
+          "state_id": "long-droopy-2",
+          "visual_description": "the dog has long, heavy ears that hang down significantly"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog is visible",
+      "attribute": "body_size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-size--batch-0001--172de84a--04",
+      "perspective": "local visible differences",
+      "question": "What is the relative size of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "172de84a5dff8e14",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the dog is small enough to fit easily in a lap or small chair"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog is of medium size, larger than a lap dog but smaller than a large breed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the dog is large or very large in stature"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fur--texture--batch-0001--6990501a--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the texture of the dog's coat?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6990501a333eb137",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "curly",
+          "state_id": "curly-0",
+          "visual_description": "a dog with a curly or woolly coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "a dog with a wavy coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "straight",
+          "state_id": "straight-2",
+          "visual_description": "a dog with a straight, smooth coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "color_pattern",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "fur--color-pattern--batch-0001--6990501a--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6990501a333eb137",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_white",
+          "state_id": "solid-white-0",
+          "visual_description": "a dog with a solid white coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "solid_black",
+          "state_id": "solid-black-1",
+          "visual_description": "a dog with a solid black coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "multi_color",
+          "state_id": "multi-color-2",
+          "visual_description": "a dog with a multi-colored coat (e.g., black, tan, white, or grey)"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "head--ear-shape--batch-0001--6990501a--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6990501a333eb137",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "a dog with floppy, hanging ears"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "pointed",
+          "state_id": "pointed-1",
+          "visual_description": "a dog with upright, pointed ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body_size",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "body--body-size--batch-0001--6990501a--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the relative size of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "6990501a333eb137",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a small dog, likely a toy or companion breed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-sized dog"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a large dog"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "setting",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--setting--batch-0001--a88112f4--00",
+      "perspective": "background and environment",
+      "question": "What is the primary environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a88112f4fe2095cb",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "indoor",
+          "state_id": "indoor-0",
+          "visual_description": "an indoor setting such as a living room, car interior, or hallway"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "outdoor",
+          "state_id": "outdoor-1",
+          "visual_description": "an outdoor setting such as a yard, park, or street"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "furniture",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--furniture--batch-0001--a88112f4--01",
+      "perspective": "background and environment",
+      "question": "What type of furniture is visible in the scene?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a88112f4fe2095cb",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "no furniture is clearly visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "seating",
+          "state_id": "seating-1",
+          "visual_description": "a chair, sofa, or armchair is visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "stairs",
+          "state_id": "stairs-2",
+          "visual_description": "a staircase or stairs are visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "flooring",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--flooring--batch-0001--a88112f4--02",
+      "perspective": "background and environment",
+      "question": "What is the visible floor surface?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a88112f4fe2095cb",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "carpet",
+          "state_id": "carpet-0",
+          "visual_description": "a carpeted floor"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "tile",
+          "state_id": "tile-1",
+          "visual_description": "a tiled floor"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wood",
+          "state_id": "wood-2",
+          "visual_description": "a wooden floor"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "lighting",
+      "discovery_batch_id": "batch-0001",
+      "group_id": "background--lighting--batch-0001--a88112f4--03",
+      "perspective": "background and environment",
+      "question": "What is the lighting condition of the scene?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a88112f4fe2095cb",
+      "source_sample_ids": [
+        "stanford-dogs-05483",
+        "stanford-dogs-07347",
+        "stanford-dogs-07763",
+        "stanford-dogs-15015"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "bright",
+          "state_id": "bright-0",
+          "visual_description": "brightly lit environment"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "dim",
+          "state_id": "dim-1",
+          "visual_description": "dimly lit or indoor lighting"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "dark",
+          "state_id": "dark-2",
+          "visual_description": "dark or low-light environment"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle_length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--muzzle-length--batch-0002--2377a34c--00",
+      "perspective": "shape and relative proportions",
+      "question": "What is the length of the muzzle relative to the head size?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2377a34cfad1dd7d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "a dog with a short, blunt muzzle relative to its head size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a dog with a medium-length muzzle relative to its head size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "a dog with a long, elongated muzzle relative to its head size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--ear-shape--batch-0002--2377a34c--01",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2377a34cfad1dd7d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "the dog has large, floppy ears that hang down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-1",
+          "visual_description": "the dog has ears that are partially upright and partially folded"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "erect",
+          "state_id": "erect-2",
+          "visual_description": "the dog has large, upright, pointed ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body_proportions",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-proportions--batch-0002--2377a34c--02",
+      "perspective": "shape and relative proportions",
+      "question": "What is the relative proportion of the dog's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2377a34cfad1dd7d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "a small, compact dog with short legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "a medium-sized dog with balanced proportions"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "a large, tall dog with long legs"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's face is visible",
+      "attribute": "facial_hair",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--facial-hair--batch-0002--2377a34c--03",
+      "perspective": "shape and relative proportions",
+      "question": "What is the amount of hair on the dog's face?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2377a34cfad1dd7d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the dog has a smooth face with very little hair"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "scruffy",
+          "state_id": "scruffy-1",
+          "visual_description": "the dog has a scruffy face with some visible hair"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "shaggy",
+          "state_id": "shaggy-2",
+          "visual_description": "the dog has a very shaggy face with long, thick hair"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--eye-shape--batch-0002--2377a34c--04",
+      "perspective": "shape and relative proportions",
+      "question": "What is the shape of the dog's eyes?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "2377a34cfad1dd7d",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "round",
+          "state_id": "round-0",
+          "visual_description": "the dog has large, round eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "almond",
+          "state_id": "almond-1",
+          "visual_description": "the dog has almond-shaped eyes"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "slanted",
+          "state_id": "slanted-2",
+          "visual_description": "the dog has narrow, slanted eyes"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's fur is visible",
+      "attribute": "texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fur--texture--batch-0002--442a2bc8--00",
+      "perspective": "color and texture",
+      "question": "What is the texture of the dog's fur?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "442a2bc8de480975",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the dog's fur appears smooth and sleek"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "the dog's fur has a wavy texture"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "the dog's fur is curly or frizzy"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wire-haired",
+          "state_id": "wire-haired-3",
+          "visual_description": "the dog's fur is coarse and wire-haired"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's fur is visible",
+      "attribute": "color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "fur--color--batch-0002--442a2bc8--01",
+      "perspective": "color and texture",
+      "question": "What is the primary color of the dog's coat?",
+      "region": "fur",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "442a2bc8de480975",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "black",
+          "state_id": "black-0",
+          "visual_description": "the dog's coat is primarily black"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "brown",
+          "state_id": "brown-1",
+          "visual_description": "the dog's coat is primarily brown"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "white",
+          "state_id": "white-2",
+          "visual_description": "the dog's coat is primarily white"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "multi-colored",
+          "state_id": "multi-colored-3",
+          "visual_description": "the dog's coat has multiple colors like tan, white, and black"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--ear-shape--batch-0002--442a2bc8--02",
+      "perspective": "color and texture",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "442a2bc8de480975",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "the dog has long, floppy ears that hang down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-1",
+          "visual_description": "the dog's ears are partially upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "erect",
+          "state_id": "erect-2",
+          "visual_description": "the dog has large, upright, pointed ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle_length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--muzzle-length--batch-0002--442a2bc8--03",
+      "perspective": "color and texture",
+      "question": "How long is the dog's muzzle relative to its head size?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "442a2bc8de480975",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, snub muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, elongated muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "build",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--build--batch-0002--442a2bc8--04",
+      "perspective": "color and texture",
+      "question": "What is the general body build of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "442a2bc8de480975",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": -1.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the dog is small and compact"
+        },
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog is of medium size and build"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the dog is large and sturdy"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--ear-shape--batch-0002--57407250--00",
+      "perspective": "pose and silhouette",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57407250823c9db6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "the dog has long, floppy ears that hang down towards the sides of the head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "upright",
+          "state_id": "upright-1",
+          "visual_description": "the dog has large, pointed ears that stand upright on top of the head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--muzzle-length--batch-0002--57407250--01",
+      "perspective": "pose and silhouette",
+      "question": "How long is the dog's muzzle relative to its head size?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57407250823c9db6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, blunt muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, elongated muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's coat is visible",
+      "attribute": "coat texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--coat-texture--batch-0002--57407250--02",
+      "perspective": "pose and silhouette",
+      "question": "What is the texture of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57407250823c9db6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the dog has a short, smooth, and sleek coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wavy",
+          "state_id": "wavy-1",
+          "visual_description": "the dog has a medium-length, slightly wavy coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "the dog has a thick, curly, or very textured coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "shaggy",
+          "state_id": "shaggy-3",
+          "visual_description": "the dog has a long, shaggy, or wire-haired coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-size--batch-0002--57407250--03",
+      "perspective": "pose and silhouette",
+      "question": "What is the relative size of the dog's body?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57407250823c9db6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the dog is small in size, typical of a toy or small breed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog is medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the dog is large in size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's face is visible",
+      "attribute": "facial hair",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--facial-hair--batch-0002--57407250--04",
+      "perspective": "pose and silhouette",
+      "question": "Does the dog have prominent facial hair or a beard?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "57407250823c9db6",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "the dog has no prominent facial hair or beard"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "some",
+          "state_id": "some-1",
+          "visual_description": "the dog has some visible facial hair or a slight beard"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "prominent",
+          "state_id": "prominent-2",
+          "visual_description": "the dog has a very prominent, thick beard and bushy eyebrows"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's head is visible",
+      "attribute": "fur_texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--fur-texture--batch-0002--a678bd9c--00",
+      "perspective": "local visible differences",
+      "question": "What is the texture of the fur on the dog's head and face?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a678bd9c57fadd44",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the dog has smooth, short, or sleek fur on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wiry",
+          "state_id": "wiry-1",
+          "visual_description": "the dog has wiry, coarse, or textured fur on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "the dog has curly or very textured fur on its head"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "shaggy",
+          "state_id": "shaggy-3",
+          "visual_description": "the dog has long, shaggy, or bushy fur on its head"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--ear-shape--batch-0002--a678bd9c--01",
+      "perspective": "local visible differences",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a678bd9c57fadd44",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "the dog has long, floppy ears that hang down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-1",
+          "visual_description": "the dog has ears that are partially upright"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "erect",
+          "state_id": "erect-2",
+          "visual_description": "the dog has large, upright, pointed ears"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--coat-color--batch-0002--a678bd9c--02",
+      "perspective": "local visible differences",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a678bd9c57fadd44",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_black",
+          "state_id": "solid-black-0",
+          "visual_description": "the dog has a solid black coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black_and_tan",
+          "state_id": "black-and-tan-1",
+          "visual_description": "the dog has a black coat with tan markings on the face and legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "bi_color",
+          "state_id": "bi-color-2",
+          "visual_description": "the dog has a white and tan or white and brown coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "tricolor",
+          "state_id": "tricolor-3",
+          "visual_description": "the dog has a white, black, and tan coat"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body_size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-size--batch-0002--a678bd9c--04",
+      "perspective": "local visible differences",
+      "question": "What is the relative size of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "a678bd9c57fadd44",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "small",
+          "state_id": "small-0",
+          "visual_description": "the dog is small, like a toy or small terrier"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog is medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "large",
+          "state_id": "large-2",
+          "visual_description": "the dog is large or large-breed"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's head is visible",
+      "attribute": "fur_texture",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--fur-texture--batch-0002--ea28e750--00",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the texture of the fur on the dog's head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea28e75008f801cb",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "smooth",
+          "state_id": "smooth-0",
+          "visual_description": "the dog's head has smooth, short, or sleek fur"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "wiry",
+          "state_id": "wiry-1",
+          "visual_description": "the dog's head has wiry, coarse, or bristly fur"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "curly",
+          "state_id": "curly-2",
+          "visual_description": "the dog's head has curly or woolly fur"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "shaggy",
+          "state_id": "shaggy-3",
+          "visual_description": "the dog's head has long, shaggy, or feathered fur"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's ears are visible",
+      "attribute": "ear_shape",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--ear-shape--batch-0002--ea28e750--01",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the shape and position of the dog's ears?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea28e75008f801cb",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "floppy",
+          "state_id": "floppy-0",
+          "visual_description": "the dog has long, floppy ears that hang down"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "semi-erect",
+          "state_id": "semi-erect-1",
+          "visual_description": "the dog has ears that stand up partially and fold over"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "erect",
+          "state_id": "erect-2",
+          "visual_description": "the dog has ears that stand straight up"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "coat_color",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--coat-color--batch-0002--ea28e750--02",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the primary color pattern of the dog's coat?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea28e75008f801cb",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "solid_black",
+          "state_id": "solid-black-0",
+          "visual_description": "the dog has a solid black coat"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "black_and_tan",
+          "state_id": "black-and-tan-1",
+          "visual_description": "the dog has a black coat with tan markings on the face and legs"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "bi_color",
+          "state_id": "bi-color-2",
+          "visual_description": "the dog has a coat with two distinct colors, such as white and tan"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "tricolor",
+          "state_id": "tricolor-3",
+          "visual_description": "the dog has a coat with three colors, typically black, white, and tan"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's body is visible",
+      "attribute": "body_size",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "body--body-size--batch-0002--ea28e750--03",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the relative size of the dog?",
+      "region": "body",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea28e75008f801cb",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "toy",
+          "state_id": "toy-0",
+          "visual_description": "the dog is very small, like a toy breed"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "small",
+          "state_id": "small-1",
+          "visual_description": "the dog is small in size"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "medium",
+          "state_id": "medium-2",
+          "visual_description": "the dog is medium-sized"
+        },
+        {
+          "abstain": false,
+          "coordinate": 3.0,
+          "label": "large",
+          "state_id": "large-3",
+          "visual_description": "the dog is large in size"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's muzzle is visible",
+      "attribute": "muzzle_length",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--muzzle-length--batch-0002--ea28e750--04",
+      "perspective": "visibility and missing visual information",
+      "question": "What is the length of the dog's muzzle relative to its head?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea28e75008f801cb",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "short",
+          "state_id": "short-0",
+          "visual_description": "the dog has a short, blunt muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "medium",
+          "state_id": "medium-1",
+          "visual_description": "the dog has a medium-length muzzle"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "long",
+          "state_id": "long-2",
+          "visual_description": "the dog has a long, pointed muzzle"
+        }
+      ]
+    },
+    {
+      "applies_to": "images in which the dog's eyes are visible",
+      "attribute": "eye_visibility",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "head--eye-visibility--batch-0002--ea28e750--05",
+      "perspective": "visibility and missing visual information",
+      "question": "How visible are the dog's eyes?",
+      "region": "head",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "ea28e75008f801cb",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "hidden",
+          "state_id": "hidden-0",
+          "visual_description": "the dog's eyes are hidden by long hair or fur"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "visible",
+          "state_id": "visible-1",
+          "visual_description": "the dog's eyes are clearly visible"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "environment_type",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--environment-type--batch-0002--792221d5--00",
+      "perspective": "background and environment",
+      "question": "What is the primary environment shown in the background?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "792221d5abdf4ce1",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "indoor",
+          "state_id": "indoor-0",
+          "visual_description": "an indoor setting with furniture like beds or wooden floors"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "outdoor",
+          "state_id": "outdoor-1",
+          "visual_description": "an outdoor setting such as a park, field, or training area"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "ground_surface",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--ground-surface--batch-0002--792221d5--01",
+      "perspective": "background and environment",
+      "question": "What is the primary surface of the ground?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "792221d5abdf4ce1",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "grass",
+          "state_id": "grass-0",
+          "visual_description": "a ground surface covered in grass or vegetation"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "sand",
+          "state_id": "sand-1",
+          "visual_description": "a ground surface made of sand or dirt"
+        },
+        {
+          "abstain": false,
+          "coordinate": 2.0,
+          "label": "wood",
+          "state_id": "wood-2",
+          "visual_description": "a ground surface made of wooden planks or flooring"
+        }
+      ]
+    },
+    {
+      "applies_to": "all images",
+      "attribute": "objects_present",
+      "discovery_batch_id": "batch-0002",
+      "group_id": "background--objects-present--batch-0002--792221d5--02",
+      "perspective": "background and environment",
+      "question": "Are there specific training or play structures visible?",
+      "region": "background",
+      "source_model": "google/gemma-4-12B-it",
+      "source_prompt_id": "792221d5abdf4ce1",
+      "source_sample_ids": [
+        "stanford-dogs-15225",
+        "stanford-dogs-17103",
+        "stanford-dogs-17261",
+        "stanford-dogs-20445"
+      ],
+      "states": [
+        {
+          "abstain": false,
+          "coordinate": 0.0,
+          "label": "none",
+          "state_id": "none-0",
+          "visual_description": "no specific training equipment or structures are visible"
+        },
+        {
+          "abstain": false,
+          "coordinate": 1.0,
+          "label": "structures",
+          "state_id": "structures-1",
+          "visual_description": "training equipment like tunnels, jumps, or poles are visible"
+        }
+      ]
+    }
+  ],
+  "protocol_version": "dgdr-cleanroom-v1",
+  "task_instruction": "Identify the dog breed shown in the image.",
+  "task_name": "dogs"
+}
